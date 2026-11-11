@@ -1,0 +1,36 @@
+{
+  "note": "Configured native model and effort labels do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [
+    {
+      "source_line": 149,
+      "source_record_sha256": "799cd4cdb8725c1d2c2ad21da995bbdbd47186545eaa93718ecaf20b53dd183f",
+      "timestamp": "2026-11-10T12:33:01.377Z",
+      "source_fields": {
+        "turn_id": "01a1c572-8dab-7b02-a83f-e68629effba6",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_sha256": {
+        "turn_id": "e74cfea9afbd2953aa7dcfcf0825ecf6dc34ff341dbeb0e538a6d00e356bdba7",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    },
+    {
+      "source_line": 163,
+      "source_record_sha256": "450d17c6995159510ece86b1df30708cf772c5f8b34d4dd5024cec592fdbe636",
+      "timestamp": "2026-11-10T12:34:43.126Z",
+      "source_fields": {
+        "turn_id": "01a1c574-1b19-71f1-99a3-f2ad775a22f2",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_sha256": {
+        "turn_id": "398582be5b9c89e4bc552b03d4a802fe080fdfaf742846337005c34b259985a2",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    }
+  ],
+  "delegation_activity_labels": []
+}

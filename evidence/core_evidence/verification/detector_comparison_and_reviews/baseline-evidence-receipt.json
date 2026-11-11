@@ -1,0 +1,38 @@
+[
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runs/baseline_detection_02/RESULTS.json",
+    "copy": "outputs/detector-comparison-review/baseline-evidence/RESULTS.json",
+    "sha256": "55309ff5d5348ac4f5e39415a287c973614c89e00ae29dc9099c8035702bd00e",
+    "matches_original_manifest": true
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runs/baseline_detection_02/preprocessing.json",
+    "copy": "outputs/detector-comparison-review/baseline-evidence/preprocessing.json",
+    "sha256": "f0f82be5cfb2e3afb834477e949364f17e7086e1fad318345a0c262c1c3b6721",
+    "matches_original_manifest": true
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runs/baseline_detection_02/model_loads.json",
+    "copy": "outputs/detector-comparison-review/baseline-evidence/model_loads.json",
+    "sha256": "bd728254e5d8d78dbcaca24ec2bfbb2af3614f97ba31aed7045a15f58eba4ee2",
+    "matches_original_manifest": true
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/records/detector_02_command.json",
+    "copy": "outputs/detector-comparison-review/baseline-evidence/detector_02_command.json",
+    "sha256": "8d56dbf1df1f267e94b7f908fbdf8adcc12a09f7c0d3e72ccd56e7afd8943135",
+    "matches_original_manifest": true
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/records/detector_02.stdout",
+    "copy": "outputs/detector-comparison-review/baseline-evidence/detector_02.stdout",
+    "sha256": "65011fd6edb601c858383eca39d96efcb90226efe320171f38edac4ef10a421e",
+    "matches_original_manifest": true
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/records/detector_02.stderr",
+    "copy": "outputs/detector-comparison-review/baseline-evidence/detector_02.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matches_original_manifest": true
+  }
+]

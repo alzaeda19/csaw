@@ -1,0 +1,63 @@
+{
+  "scope": "Descriptive comparison of two different designs and approximate graphs. Not calibrated security risk, design equivalence or proof of Trojan absence.",
+  "same_checkpoint_and_config_records": true,
+  "same_feature_vocabulary_bytes": true,
+  "baseline_rerun": false,
+  "baseline_result_source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runs/baseline_detection_02/RESULTS.json",
+  "baseline_result_sha256": "55309ff5d5348ac4f5e39415a287c973614c89e00ae29dc9099c8035702bd00e",
+  "clean_aes_result_source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/runs/clean_aes_detection/RESULTS.json",
+  "per_model": [
+    {
+      "model": "HT1",
+      "baseline_prediction": "CLEAN",
+      "baseline_prob_trojan": 0.07584279775619507,
+      "clean_aes_prediction": "CLEAN",
+      "clean_aes_prob_trojan": 0.048238418996334076,
+      "difference_percentage_points": -2.7604378759860992
+    },
+    {
+      "model": "HT2",
+      "baseline_prediction": "CLEAN",
+      "baseline_prob_trojan": 0.3551684319972992,
+      "clean_aes_prediction": "CLEAN",
+      "clean_aes_prob_trojan": 0.04757138341665268,
+      "difference_percentage_points": -30.75970485806465
+    },
+    {
+      "model": "HT3",
+      "baseline_prediction": "CLEAN",
+      "baseline_prob_trojan": 0.2161092758178711,
+      "clean_aes_prediction": "CLEAN",
+      "clean_aes_prob_trojan": 0.16328798234462738,
+      "difference_percentage_points": -5.282129347324371
+    },
+    {
+      "model": "HT4",
+      "baseline_prediction": "CLEAN",
+      "baseline_prob_trojan": 0.04644026607275009,
+      "clean_aes_prediction": "CLEAN",
+      "clean_aes_prob_trojan": 0.023782268166542053,
+      "difference_percentage_points": -2.265799790620804
+    }
+  ],
+  "baseline_ensemble": {
+    "model_count": 4,
+    "trojan_votes": 0,
+    "triggered_models": [],
+    "verdict": "CLEAN",
+    "rule": "Any model voting1 yields TROJAN, as in supplied notebook",
+    "mean_prob_trojan": 0.17339019291102886,
+    "max_prob_trojan": 0.3551684319972992,
+    "min_prob_trojan": 0.04644026607275009
+  },
+  "clean_aes_ensemble": {
+    "model_count": 4,
+    "trojan_votes": 0,
+    "triggered_models": [],
+    "verdict": "CLEAN",
+    "rule": "Any model voting1 yields TROJAN, as in supplied notebook",
+    "mean_prob_trojan": 0.07072001323103905,
+    "max_prob_trojan": 0.16328798234462738,
+    "min_prob_trojan": 0.023782268166542053
+  }
+}

@@ -1,0 +1,22 @@
+Recovered a structural RTL candidate directly from the verified original bitstream. No cipher was guessed and no fixture replaced the target.
+
+- **Original harness:** BUSY/LED checks pass; all three data checks fail because it samples before the recovered MISO register updates.
+- **Separate post-edge sampling variant:** original readback, encryption and decryption values pass.
+- **Timing:** four cycles including launch passes; four additional cycles fails.
+- Physical board wiring remains unverified, and IceStorm’s optional input-enable check fails on the clock pad. Full target correctness remains unestablished.
+
+All originals and prior intake/harness files are unchanged.
+
+Saved in:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_recovery_2026-11-06/`
+
+`REPORT.md` contains mapping evidence and limitations. Raw output, adapters, diffs, commands, failures, waveforms and hashes are retained separately. Transcript/model-identification limits are documented.
+
+Reproduce from the restart directory:
+
+```sh
+python3 baseline_recovery_2026-11-06/reproduce.py
+python3 baseline_recovery_2026-11-06/records/audit_preservation.py
+```
+
+The offline reproduction confirmed the documented mixed pass/fail outcomes.

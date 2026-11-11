@@ -1,0 +1,67 @@
+{
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-20-46-01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5.jsonl",
+  "snapshot_read_started_utc": "2026-11-07T17:32:19.157390Z",
+  "snapshot_read_finished_utc": "2026-11-07T17:32:19.157856Z",
+  "source_snapshot_bytes": 767832,
+  "source_snapshot_sha256": "13da8c1b423b37b9d00cec744abd47b7c25d73f6570cdb3f6b032d4af17f3c97",
+  "complete_source_lines": 269,
+  "trailing_incomplete_bytes_not_parsed": 0,
+  "label": "decode_regenerated_baseline",
+  "first_in_scope_line": 1,
+  "minimum_timestamp": "2026-11-07T17:20:00",
+  "exported_counts": {
+    "agent_message_readable_envelope": 7,
+    "custom_tool_call": 29,
+    "command_execution": 37,
+    "custom_tool_call_output": 29,
+    "function_call": 8,
+    "function_call_output": 8,
+    "assistant_final_answer": 1
+  },
+  "excluded_counts": {
+    "session_meta": 1,
+    "response_item:additional_tools": 1,
+    "response_item:message": 4,
+    "platform_environment_user_context": 1,
+    "world_state": 1,
+    "turn_context_payload_except_model_labels": 1,
+    "event_msg": 39,
+    "inter_agent_communication_metadata": 7,
+    "token_usage_record": 38,
+    "event_item:Reasoning": 23,
+    "response_item:reasoning": 23,
+    "event_item:SubAgentActivity": 5,
+    "event_item:AgentMessage": 1
+  },
+  "exported_records": 119,
+  "first_exported_timestamp": "2026-11-07T17:20:48.915Z",
+  "last_exported_timestamp": "2026-11-07T17:25:50.350Z",
+  "lifecycle": [
+    {
+      "source_line": 2,
+      "source_record_sha256": "794ed1e593bf06a53f288ab4f97386c3788638972b515126b0172046caf069f3",
+      "timestamp": "2026-11-07T17:20:46.970Z",
+      "source_fields": {
+        "type": "task_started",
+        "turn_id": "01a1b706-ed6c-7ee2-bcb2-df401128eeb2"
+      }
+    },
+    {
+      "source_line": 269,
+      "source_record_sha256": "0772a918b6ecc405e59c262698a094f08e5f3afdd42fc132c0548e0cf585a5db",
+      "timestamp": "2026-11-07T17:25:50.601Z",
+      "source_fields": {
+        "type": "task_complete",
+        "turn_id": "01a1b706-ed6c-7ee2-bcb2-df401128eeb2"
+      }
+    }
+  ],
+  "significant_omissions_and_gaps": 15,
+  "integrity": {
+    "pass": true,
+    "records_verified": 119,
+    "retained_fields_verified": 862,
+    "method": "Every exported field compared to its exact native source field; projected content lists preserve exact selected original items with source indices. Raw source-record SHA-256 covers the complete original line including newline.",
+    "source_line_hashes_verified": true
+  }
+}

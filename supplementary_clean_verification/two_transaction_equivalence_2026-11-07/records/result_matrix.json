@@ -1,0 +1,78 @@
+[
+  {
+    "modes": "00",
+    "operations": "Encryption \u2192 encryption",
+    "assertions": "PASS",
+    "solver_states": 141,
+    "output_equivalence_states": [
+      1,
+      139
+    ],
+    "final_read_states": [
+      70,
+      139
+    ],
+    "payload_pairs": "all 2^64 independently selected pairs",
+    "coverage": "PASS both goals and complete trace audit",
+    "proof_label": "pair_00_v2",
+    "assertion_seconds": 183.68,
+    "cover_seconds": 65.72
+  },
+  {
+    "modes": "01",
+    "operations": "Encryption \u2192 decryption",
+    "assertions": "PASS",
+    "solver_states": 141,
+    "output_equivalence_states": [
+      1,
+      139
+    ],
+    "final_read_states": [
+      70,
+      139
+    ],
+    "payload_pairs": "all 2^64 independently selected pairs",
+    "coverage": "PASS both goals and complete trace audit",
+    "proof_label": "pair_01_v2",
+    "assertion_seconds": 196.22,
+    "cover_seconds": 66.89
+  },
+  {
+    "modes": "10",
+    "operations": "Decryption \u2192 encryption",
+    "assertions": "PASS",
+    "solver_states": 141,
+    "output_equivalence_states": [
+      1,
+      139
+    ],
+    "final_read_states": [
+      70,
+      139
+    ],
+    "payload_pairs": "all 2^64 independently selected pairs",
+    "coverage": "PASS both goals and complete trace audit",
+    "proof_label": "pair_10_retry_01",
+    "assertion_seconds": 295.16,
+    "cover_seconds": 69.13
+  },
+  {
+    "modes": "11",
+    "operations": "Decryption \u2192 decryption",
+    "assertions": "PASS",
+    "solver_states": 141,
+    "output_equivalence_states": [
+      1,
+      139
+    ],
+    "final_read_states": [
+      70,
+      139
+    ],
+    "payload_pairs": "all 2^64 independently selected pairs",
+    "coverage": "PASS both goals and complete trace audit",
+    "proof_label": "pair_11_retry_01",
+    "assertion_seconds": 303.79,
+    "cover_seconds": 65.31
+  }
+]

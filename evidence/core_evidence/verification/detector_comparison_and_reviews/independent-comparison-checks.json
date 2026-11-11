@@ -1,0 +1,32 @@
+{
+  "checks": {
+    "command_completed": true,
+    "runner_hash": true,
+    "stdout_hash": true,
+    "stderr_hash": true,
+    "same_model_records": true,
+    "same_feature_vocabulary": true,
+    "HT1_checkpoint": true,
+    "HT1_config": true,
+    "HT1_scores": true,
+    "HT1_comparison": true,
+    "HT2_checkpoint": true,
+    "HT2_config": true,
+    "HT2_scores": true,
+    "HT2_comparison": true,
+    "HT3_checkpoint": true,
+    "HT3_config": true,
+    "HT3_scores": true,
+    "HT3_comparison": true,
+    "HT4_checkpoint": true,
+    "HT4_config": true,
+    "HT4_scores": true,
+    "HT4_comparison": true,
+    "ensemble": true,
+    "mean_score": true,
+    "source_dependency_hashes": true
+  },
+  "all_pass": true,
+  "method": "Read-only numeric/hash checks; no inference rerun",
+  "prior_inspection_failure": "First read used HT1/model.pth instead of model_HT1/model.pth; FileNotFoundError, corrected path, no artifacts changed."
+}

@@ -1,0 +1,10 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user requests: resolve the sampling and cycle-count issues and expand baseline tests using only original materials. Preserve AI logs, keep the user's repository unchanged, and do not use any solution comparison.
+
+Continue from your own existing original-materials requirements, recovered baseline and harness evidence in this clean chat. Use only the original materials already verified in your clean workspace and your independently derived artifacts; reverify their hashes. Do not read other chats, quarantined prior work, published solutions or later solution-containing revisions. No findings or solution comparison from the requesting chat are included here.
+
+Investigate and document the sampling semantics and cycle-count convention from permitted evidence. Distinguish specification ambiguity, simulator event scheduling, observed implementation behavior and any unresolved physical-board timing; do not silently redefine an oracle to obtain a pass. Preserve the prior failing harness and every run. Implement justified changes in a new version or separate experiment within your existing separate workspace, leaving the user's project repository and original materials unchanged.
+
+Expand normal-operation baseline tests with traceable requirements and independently justified expectations or invariants. Clearly label fixture-only checks, supplied known-answer vectors, additional functional checks, and behavior that remains untested. Keep this to baseline conformance testing, without attack implementation. Preserve exact visible AI prompts/responses and command/output records available to you, source hashes, diffs, failures and model metadata when available; disclose unavailable transcript/metadata instead of reconstructing it. Report what passes, what fails, what remains unresolved, and the locations of reproducible tests and AI logs.</input>
+</codex_delegation>

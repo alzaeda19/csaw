@@ -1,0 +1,10 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user requests: investigate the remaining clock-input validation failure using only original materials. Preserve AI logs and failures, keep the user's repository unchanged, and do not use the solution comparison.
+
+Continue from your own clean-chat evidence and independently derived artifacts. Reverify original input hashes against the receipt. Do not read other chats, solution comparisons, quarantined prior work, published solutions, later target revisions or the user's project repository. No solution material or technical diagnosis from the requesting chat is included here.
+
+Reproduce the clock-input validation failure you previously documented in a fresh experiment directory within the separate restart workspace. Investigate the failing check, its assumptions and the relevant configuration using the allowlisted original inputs and existing pinned generic tool sources. Distinguish a tool/check limitation from an unsupported configuration or recovery-fidelity problem only as the evidence permits. Keep conclusions about the model, tooling and physical hardware separate; report unknowns explicitly. Do not force a passing result by disabling the check, changing the original bitstream or silently editing the recovered baseline. Any diagnostic instrumentation must be isolated, retain its exact diff and preserve the unmodified failing run.
+
+Preserve every prior artifact, failure and log. Retain available exact visible prompts/responses, commands, outputs, versions, hashes, diffs and new failed attempts; disclose missing native transcript and model metadata rather than reconstructing them. This is baseline validation diagnosis only. Report the supported cause, what passes and still fails, implications for confidence in the recovered baseline, unresolved hardware questions and reproducible artifact/AI-log locations.</input>
+</codex_delegation>

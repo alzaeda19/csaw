@@ -1,0 +1,130 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "CHILD_CUTOFF_STATUS.json": {
+      "bytes": 3744,
+      "sha256": "a19a9d45464591eabcce5f23b8790827b9bcce1cfecdce2f70b809f92115a631"
+    },
+    "README.md": {
+      "bytes": 2748,
+      "sha256": "0b04e16ae017b5235c49afe326d9970e883b71c0aceb3178e93f72456c4de761"
+    },
+    "RECOVERY_MANIFEST.json": {
+      "bytes": 15321,
+      "sha256": "691c6b7dda266ca58efcd801b0dcd9719a013668a4cfd0e0d30d31bb91b3a0dc"
+    },
+    "baseline_root_completion/VISIBLE_MESSAGES.md": {
+      "bytes": 2253,
+      "sha256": "7e25dcd89e49a0841096520b9cd7a27c4650750377501ae5d856f5449e284b74"
+    },
+    "baseline_root_completion/bounded_source_line_inventory.json": {
+      "bytes": 24003,
+      "sha256": "f21e119f36928e30dce96a74f814afa98ef8a1122f1cbb4262116e52c30986bd"
+    },
+    "baseline_root_completion/configured_model_records.json": {
+      "bytes": 129,
+      "sha256": "dad7c8509869daa73ac881cf725086df3e7feb643a9605b1ba5d7da74021e14b"
+    },
+    "baseline_root_completion/export_manifest.json": {
+      "bytes": 2474,
+      "sha256": "f842597add5846e0fb5c691e9b3930aee6c027d14e4fc0126d110e74e616247f"
+    },
+    "baseline_root_completion/field_integrity_verification.json": {
+      "bytes": 533,
+      "sha256": "d8278b3687c019462e7cbb93d5a3acdd899248f2279cea518c8a73f9df5989db"
+    },
+    "baseline_root_completion/omissions_and_gaps.json": {
+      "bytes": 16924,
+      "sha256": "9903d7499704e317c79a4282f223865cef6b5855b050150cfb81c4d4b7f55543"
+    },
+    "baseline_root_completion/source_line_index.json": {
+      "bytes": 7051,
+      "sha256": "6f2f3d4987f05bcd57fbf2cfb6ed36551951edfe8337e485bf93bd11e37053c1"
+    },
+    "baseline_root_completion/visible_events.jsonl": {
+      "bytes": 77729,
+      "sha256": "ffca593605e49a1bbd0cdf4b5ac36b2c94f2e6ed2e00f959a7bc527cc50a4a69"
+    },
+    "clean_aes_before_followup/VISIBLE_MESSAGES.md": {
+      "bytes": 554,
+      "sha256": "71e040e7de32456db280bd544b3bbda0b1d9daa8cc05b7cdb06975ef53eb36e3"
+    },
+    "clean_aes_before_followup/bounded_source_line_inventory.json": {
+      "bytes": 9244,
+      "sha256": "b2328436d166c836cdcabb0180aeb1b4af2bc9a05b7ba4afa5acb3272641d599"
+    },
+    "clean_aes_before_followup/configured_model_records.json": {
+      "bytes": 1001,
+      "sha256": "e9c742a4fd415dedff6c76280ab8e2c3e71a3c1ad2279cd438554581ee8488b8"
+    },
+    "clean_aes_before_followup/export_manifest.json": {
+      "bytes": 2493,
+      "sha256": "6268e27d77ff48034152396a96a94deed385ec5397ac001bd4a3202f0ee9da76"
+    },
+    "clean_aes_before_followup/field_integrity_verification.json": {
+      "bytes": 532,
+      "sha256": "18eb336ea766d7c068bbcddbf6195e4ea2d7470a06e5eef5c343e02a84fcfbbf"
+    },
+    "clean_aes_before_followup/omissions_and_gaps.json": {
+      "bytes": 7570,
+      "sha256": "f141d80243ca9c8c0b1da1bdb334d9a8f558a27c9cf576f238e48354a5359567"
+    },
+    "clean_aes_before_followup/source_line_index.json": {
+      "bytes": 1568,
+      "sha256": "313d83958a25d97c432bbaed704562ca1489ab0996eddd30981161b64c6dd472"
+    },
+    "clean_aes_before_followup/visible_events.jsonl": {
+      "bytes": 5143,
+      "sha256": "94d91b52cde3de2a18115703e30c88391ab6e41dc41b7d5fa624f61a56ee2b0a"
+    },
+    "clean_aes_completion_followup/VISIBLE_MESSAGES.md": {
+      "bytes": 4692,
+      "sha256": "05de6e032ab63fe4db5903abeacf7f26edd1d66f694ef8cfeed760cbc92d76e6"
+    },
+    "clean_aes_completion_followup/bounded_source_line_inventory.json": {
+      "bytes": 38005,
+      "sha256": "b6d6e73b0c2916ef965bf6df137a6f7aafcc5f9e938cae74daaa8812d9e01fcd"
+    },
+    "clean_aes_completion_followup/configured_model_records.json": {
+      "bytes": 129,
+      "sha256": "dad7c8509869daa73ac881cf725086df3e7feb643a9605b1ba5d7da74021e14b"
+    },
+    "clean_aes_completion_followup/export_manifest.json": {
+      "bytes": 2632,
+      "sha256": "3809c90459a13f4f80876a8eacfba3904b586bf72552924596c7ea0bf457a871"
+    },
+    "clean_aes_completion_followup/field_integrity_verification.json": {
+      "bytes": 534,
+      "sha256": "69357599a6e378505be1c90acbf8ed2203c7b05595b0c96ff476c718a0c1d2a7"
+    },
+    "clean_aes_completion_followup/omissions_and_gaps.json": {
+      "bytes": 28559,
+      "sha256": "08424de191d131ce2177b353a5fbc72213140bc1f160ced9728550782e11ebdd"
+    },
+    "clean_aes_completion_followup/source_line_index.json": {
+      "bytes": 12561,
+      "sha256": "791be550b986ffcf93b36e1ee3a83d30cfda298cc280d28d81f25e32ecaec8a6"
+    },
+    "clean_aes_completion_followup/visible_events.jsonl": {
+      "bytes": 181984,
+      "sha256": "1b52a4b2915a2dddbc1880aaed7b7c4e2b0b3f2b04a45e4a15bd3e36a9030200"
+    },
+    "preservation/old_files_before.json": {
+      "bytes": 1878565,
+      "sha256": "be1b72bd44215a73b5128dc6106fa14e312a3362879226ff6d244a9f3c9575d9"
+    },
+    "preservation/old_files_unchanged.json": {
+      "bytes": 1088,
+      "sha256": "142a5b62619d39f445b1bd171ea19db41635534bf7c0f450211c6c710e3a7732"
+    },
+    "recover_detector_tails.py": {
+      "bytes": 22490,
+      "sha256": "de25b8f5606a6ebc9255283872bec677db8e9105be44057e09dbc17625c08e42"
+    }
+  },
+  "exclusions": [
+    "HASH_MANIFEST.json",
+    "RECOVERY_INDEX.json"
+  ],
+  "note": "Index records this manifest hash. Consistency hashes do not make files immutable."
+}

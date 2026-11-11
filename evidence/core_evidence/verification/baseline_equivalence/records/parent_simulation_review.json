@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "case": "host_50khz",
+      "identical_checkpoints": 26336,
+      "unknown_output_checkpoints": 0,
+      "baseline_completion": [
+        "COMPLETE transactions=88 checks=6726 failures=0"
+      ],
+      "decoded_completion": [
+        "COMPLETE transactions=88 checks=6726 failures=0"
+      ],
+      "known_matches": 8,
+      "known_mismatches": 0
+    },
+    {
+      "case": "host_1mhz",
+      "identical_checkpoints": 26336,
+      "unknown_output_checkpoints": 0,
+      "baseline_completion": [
+        "COMPLETE transactions=88 checks=6726 failures=0"
+      ],
+      "decoded_completion": [
+        "COMPLETE transactions=88 checks=6726 failures=0"
+      ],
+      "known_matches": 8,
+      "known_mismatches": 0
+    },
+    {
+      "case": "paused_host_1mhz",
+      "identical_checkpoints": 26868,
+      "unknown_output_checkpoints": 0,
+      "baseline_completion": [
+        "COMPLETE transactions=88 checks=6992 failures=0"
+      ],
+      "decoded_completion": [
+        "COMPLETE transactions=88 checks=6992 failures=0"
+      ],
+      "known_matches": 8,
+      "known_mismatches": 0
+    },
+    {
+      "case": "immediate_read_1mhz",
+      "identical_checkpoints": 24928,
+      "unknown_output_checkpoints": 0,
+      "baseline_completion": [
+        "COMPLETE transactions=88 checks=6366 failures=0"
+      ],
+      "decoded_completion": [
+        "COMPLETE transactions=88 checks=6366 failures=0"
+      ],
+      "known_matches": 0,
+      "known_mismatches": 8
+    }
+  ],
+  "simulation_files_hashed": 88,
+  "hash_mismatches": [],
+  "pass": true
+}

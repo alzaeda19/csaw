@@ -1,0 +1,62 @@
+[
+  {
+    "label": "iverilog_version",
+    "argv": [
+      "/opt/homebrew/bin/iverilog",
+      "-V"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/runs/20261110T123203.879963Z",
+    "start_utc": "2026-11-10T12:32:03.895308+00:00",
+    "end_utc": "2026-11-10T12:32:03.916961+00:00",
+    "exit_code": 0,
+    "stdout_sha256": "ca23091099109d3237b10e6336dbb5b325dda94c3c52cd4111d924bd60227f5d",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "vvp_version",
+    "argv": [
+      "/opt/homebrew/bin/vvp",
+      "-V"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/runs/20261110T123203.879963Z",
+    "start_utc": "2026-11-10T12:32:03.917125+00:00",
+    "end_utc": "2026-11-10T12:32:03.927611+00:00",
+    "exit_code": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "60359f21f36fe47d30e34fd6e00eb24640751c19101c3cc107d31be3e56d46d6"
+  },
+  {
+    "label": "compile",
+    "argv": [
+      "/opt/homebrew/bin/iverilog",
+      "-g2012",
+      "-s",
+      "test_aes_128",
+      "-I",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/sources/designs/aes_128",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/runs/20261110T123203.879963Z/clean_aes.vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/sources/designs/aes_128/aes_128.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/sources/testbenches/tb_aes_128.v"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/runs/20261110T123203.879963Z",
+    "start_utc": "2026-11-10T12:32:03.927789+00:00",
+    "end_utc": "2026-11-10T12:32:04.082070+00:00",
+    "exit_code": 0,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "label": "simulate",
+    "argv": [
+      "/opt/homebrew/bin/vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/runs/20261110T123203.879963Z/clean_aes.vvp"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/runs/20261110T123203.879963Z",
+    "start_utc": "2026-11-10T12:32:04.082281+00:00",
+    "end_utc": "2026-11-10T12:32:04.396483+00:00",
+    "exit_code": 0,
+    "stdout_sha256": "599497d19c951e0025a03ff01d37ed72c28fd1bed16f36796adaf19ac7336014",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

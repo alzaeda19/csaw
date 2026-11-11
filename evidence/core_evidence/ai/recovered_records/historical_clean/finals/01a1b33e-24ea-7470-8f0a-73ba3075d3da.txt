@@ -1,0 +1,19 @@
+Implemented an **intentional model-level readiness repair** in a separate derivative. It captures the result on the completion clock without delaying BUSY or requiring an extra host clock.
+
+- The unchanged baseline’s **14 boundary failures** are preserved; the repaired version passes all **1,122 checks**.
+- Host sequences, reset/repeated operations, 50 kHz/1 MHz invariants and ROM checks pass. Across **432 operations**, repaired results match baseline host-read results.
+- All six originals and **11,933 earlier artifact files** remain unchanged.
+
+This derivative is **not exact recovery or verified hardware**; synthesis, resource fit and physical timing remain untested.
+
+Artifacts, patch, waveforms and AI logs:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/result_readiness_repair_2026-11-06`
+
+See `REPORT.md`, `readiness_repair.diff`, and `AI_RECORD.md`. From the restart root, use fresh labels:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 result_readiness_repair_2026-11-06/run.py --candidate baseline --label reproduce_baseline_01
+PYTHONDONTWRITEBYTECODE=1 python3 result_readiness_repair_2026-11-06/run.py --candidate repaired --label reproduce_repaired_01
+```
+
+The baseline command is expected to fail. Further test commands and remaining sampling/counting limitations are in `REPORT.md`.

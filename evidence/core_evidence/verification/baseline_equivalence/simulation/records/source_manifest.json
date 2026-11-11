@@ -1,0 +1,54 @@
+{
+  "copied_utc": "2026-11-07T17:23:29.252459+00:00",
+  "files": {
+    "baseline.v": {
+      "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/baseline.v",
+      "bytes": 1213314,
+      "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765"
+    },
+    "baseline_protocol_dut.sv": {
+      "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/protocol_dut.sv",
+      "bytes": 465,
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089"
+    },
+    "regenerated_compatible.v": {
+      "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/decode/regenerated_compatible.v",
+      "bytes": 1283506,
+      "sha256": "887dc396321cf66f960376c7cedfe5e817d4ebda6246066708506ad8ad8e4cfc"
+    },
+    "regenerated_protocol_dut.sv": {
+      "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/decode/regenerated_protocol_dut.sv",
+      "bytes": 554,
+      "sha256": "e76a783bf2d7902d116669db59b5b11a3070fed79f4b7e4b6b0f0b5f9be486da"
+    },
+    "cells_sim.v": {
+      "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/share/yosys/ice40/cells_sim.v",
+      "bytes": 153943,
+      "sha256": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527"
+    },
+    "reference_normal_tb.sv": {
+      "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_confirmation_2026-11-06/tb/normal_tb.sv",
+      "bytes": 7103,
+      "sha256": "7d21bd632f7b19516c7272cde6bcc527e66a6b40b1bf07c4dc52fc616ee2a06f"
+    },
+    "original_host.py": {
+      "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/spi_ice40_crypto_ip_test.py",
+      "bytes": 3661,
+      "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99"
+    },
+    "original_interface.md": {
+      "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/ice40_cryptographic_IP.md",
+      "bytes": 3339,
+      "sha256": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25"
+    },
+    "original_source_receipt.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/SOURCE_RECEIPT.json",
+      "bytes": 5629,
+      "sha256": "5222086907d1db8f0f0264210f2a916f76795151728a0710e5b9bf5cec66f32d"
+    }
+  },
+  "bench": {
+    "bytes": 5955,
+    "sha256": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5"
+  }
+}

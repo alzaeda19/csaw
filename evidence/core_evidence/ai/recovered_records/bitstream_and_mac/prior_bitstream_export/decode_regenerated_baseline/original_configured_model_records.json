@@ -1,0 +1,59 @@
+{
+  "note": "Native configured model/effort labels only; these do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [
+    {
+      "source_line": 10,
+      "source_record_sha256": "e4cb58a56791226057352015e9786cfd4b83229a672e2fd0c937583f307d7b5d",
+      "timestamp": "2026-11-07T17:20:48.912Z",
+      "source_fields": {
+        "turn_id": "01a1b706-ed6c-7ee2-bcb2-df401128eeb2",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    }
+  ],
+  "delegation_activity_labels": [
+    {
+      "source_line": 93,
+      "source_record_sha256": "ddc474e683408e54dd3f1e3bf60be4a2f438ac7e1822b54affa648e61136c82e",
+      "timestamp": "2026-11-07T17:22:21.684Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_15c53349a2724291979ae2bb132b99d7",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+        "agent_path": "/root/baseline_bitstream_simulation",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 98,
+      "source_record_sha256": "de72e94ae61ebaed6c5ae2b899e804bc571fa1f1d71ad8e5e18de66035792993",
+      "timestamp": "2026-11-07T17:22:28.004Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_55f9dc824dc4437987538d4301d4e22e",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+        "agent_path": "/root/baseline_mapped_formal",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 207,
+      "source_record_sha256": "ff522e2fa0ab87198db3dbe86995ec6281bd874512c0a11902153b7d56015ba4",
+      "timestamp": "2026-11-07T17:24:25.608Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_e2a27ba88ddb4a889cbc77f5466cdf22",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+        "agent_path": "/root/baseline_mapped_formal",
+        "model": null,
+        "reasoning_effort": null
+      }
+    }
+  ]
+}

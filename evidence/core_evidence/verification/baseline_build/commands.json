@@ -1,0 +1,82 @@
+[
+  {
+    "stage": "synthesis",
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/yosys",
+      "-Q",
+      "-T",
+      "-l",
+      "yosys.log",
+      "-s",
+      "flow.ys"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z",
+    "utc_start": "2026-11-07T17:15:11.692746+00:00",
+    "utc_finish": "2026-11-07T17:15:13.447814+00:00",
+    "returncode": 0
+  },
+  {
+    "stage": "place_route",
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/nextpnr-ice40",
+      "--up5k",
+      "--package",
+      "sg48",
+      "--json",
+      "mapped_clean.json",
+      "--freq",
+      "1",
+      "--seed",
+      "1",
+      "--report",
+      "timing_report.json",
+      "--detailed-timing-report",
+      "--log",
+      "nextpnr.log",
+      "--write",
+      "physical_netlist.json",
+      "--asc",
+      "baseline_assumed_sg48_auto_pins.asc"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z",
+    "utc_start": "2026-11-07T17:15:13.447969+00:00",
+    "utc_finish": "2026-11-07T17:15:15.272628+00:00",
+    "returncode": 0
+  },
+  {
+    "stage": "pack",
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/icepack",
+      "baseline_assumed_sg48_auto_pins.asc",
+      "baseline_assumed_sg48_auto_pins.bin"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z",
+    "utc_start": "2026-11-07T17:15:15.272842+00:00",
+    "utc_finish": "2026-11-07T17:15:15.457530+00:00",
+    "returncode": 0
+  },
+  {
+    "stage": "unpack_verify",
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/iceunpack",
+      "baseline_assumed_sg48_auto_pins.bin",
+      "verification_unpacked.asc"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z",
+    "utc_start": "2026-11-07T17:15:15.457709+00:00",
+    "utc_finish": "2026-11-07T17:15:15.623730+00:00",
+    "returncode": 0
+  },
+  {
+    "stage": "repack_verify",
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/icepack",
+      "verification_unpacked.asc",
+      "verification_repacked.bin"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z",
+    "utc_start": "2026-11-07T17:15:15.623933+00:00",
+    "utc_finish": "2026-11-07T17:15:15.631662+00:00",
+    "returncode": 0
+  }
+]

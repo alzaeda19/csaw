@@ -1,0 +1,14 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user requests: fix the missing 5K IPCON and DSP support in a separate tool copy, using only original materials. Preserve logs and failures, keep the user's repository unchanged, and do not use the solution comparison.
+
+Continue from your own clean-chat diagnosis and independently derived artifacts. Reverify original hashes against the receipt. Use only the allowlisted original challenge materials, your own clean artifacts and existing pinned generic tool sources/documentation. Do not read other chats, solution comparisons, quarantined prior work, published solutions, later target revisions or the user's project repository. No solution material or implementation details from the requesting chat are supplied here.
+
+Create a fresh experiment directory inside the separate restart workspace and a distinct copy of the relevant pinned tool code. Implement the missing 5K IPCON/DSP support in that copy. Preserve the original converter, pinned tools, original bitstream, recovered baseline, prior tests, all failing runs and their logs unchanged. Record exact source identities and a reviewable patch against the pinned original. This request authorizes tool implementation in that isolated copy, not edits to the user's repository or baseline target.
+
+Derive the required representation, routing and configuration behavior from the permitted evidence. Do not treat placeholder tiles, omitted configuration, disabled assertions or silently ignored fields as completed support. Reject or explicitly report unsupported semantics; if the permitted sources leave a genuine implementation gap, document it rather than inventing behavior. Distinguish structural coverage, successful conversion, round-trip data preservation and functional/hardware equivalence.
+
+Add focused regression tests for the implemented support and reproduce the unmodified failure as a control. Check the existing supported-device controls, complete original-derived input, relevant side-tile configuration/routing and malformed/unsupported cases as appropriate. Where the format permits, verify conversion/round-trip preservation without promoting generated control files to the challenge baseline. Preserve negative tests and every unexpected failure. Report exact passes, remaining failures and supported scope; a passing invocation alone is not full hardware validation.
+
+Retain available exact visible prompts/responses, commands, outputs, diffs, source/tool versions, hashes and failed attempts. Explicitly disclose unavailable native transcript and model metadata instead of reconstructing them. Keep this to baseline tool support and verification, with no attack implementation or board programming. Finish with reproducible commands and artifact/AI-log locations.</input>
+</codex_delegation>

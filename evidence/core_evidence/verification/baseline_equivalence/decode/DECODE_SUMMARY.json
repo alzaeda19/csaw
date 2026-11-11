@@ -1,0 +1,115 @@
+{
+  "status": "DECODED_AND_SYNTAX_CHECKED; functional equivalence handled separately",
+  "finished_utc": "2026-11-07T17:25:41.011302+00:00",
+  "binary_sha256": "fa823078f0fef95a3b093b3db547a50030864c81c80a17ef445e86206cbc5fb7",
+  "artifacts": {
+    "actual_binary_unpacked.asc": {
+      "bytes": 735239,
+      "sha256": "f071d63fa3853f662b58e6310152e7b5b27570b0ca8c9c5d631601fb74bb2840"
+    },
+    "regenerated_raw.v": {
+      "bytes": 1283498,
+      "sha256": "ec920772bf2fa88a86d98417635a2fb634c99ddfdc9647b4ad43a173e5ed9ccc"
+    },
+    "regenerated_compatible.v": {
+      "bytes": 1283506,
+      "sha256": "887dc396321cf66f960376c7cedfe5e817d4ebda6246066708506ad8ad8e4cfc"
+    },
+    "regenerated_protocol_dut.sv": {
+      "bytes": 554,
+      "sha256": "e76a783bf2d7902d116669db59b5b11a3070fed79f4b7e4b6b0f0b5f9be486da"
+    },
+    "compatibility.diff": {
+      "bytes": 867,
+      "sha256": "04e0dc282677d36a2d7414f1262bfb309af977225b969ed1106dc33c7c0b2fbc"
+    },
+    "io_mapping_evidence.json": {
+      "bytes": 3924,
+      "sha256": "6002df461612ece0439166d4a80a4e03547817edb35acdf39cbefa7e85a20c02"
+    },
+    "physical_decoded_correspondence_v3.json": {
+      "bytes": 1275982,
+      "sha256": "6343f550c67f0a96fc12b213441e8f5929476e79c9a7d29f92f3efe9ef9574fd"
+    }
+  },
+  "all_inputs_unchanged": true,
+  "input_recheck": {
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/BUILD_SUMMARY.json": true,
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/protocol_dut.sv": true,
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/baseline_assumed_sg48_auto_pins.asc": true,
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/baseline_assumed_sg48_auto_pins.bin": true,
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/physical_netlist.json": true,
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/commands.json": true,
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/mapped_clean.json": true,
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/baseline.v": true,
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/flow.ys": true
+  },
+  "tool_versions": {
+    "python": "Python 3.12.1",
+    "icestorm_git_revision": "00da9c3e6ceff056248e3451dd6fd3210d6ceec9",
+    "icestorm_tracked_source_status": "clean",
+    "iverilog": "Icarus Verilog version 14.0 (devel) (s20260301-831-g1cb990b6f-dirty)"
+  },
+  "ports": {
+    "SCK": "io_6_31_0",
+    "RST_N": "io_18_0_0",
+    "MOSI": "io_17_0_0",
+    "NORM_CS_N": "io_18_0_1",
+    "START": "io_13_0_1",
+    "ENC_DEC": "io_16_0_0",
+    "MISO": "io_8_31_1",
+    "BUSY": "io_15_0_0",
+    "ICE_LED": "io_9_0_0"
+  },
+  "port_validation": "All 9 PACKAGE_PIN connections and NEXTPNR_BEL coordinates matched decoded top directions, PAD/data-path comments and actual ASC PINTYPE bits.",
+  "compatibility_change": "Two declaration-only edits: output io_8_31_1 to output reg io_8_31_1; reg io_8_31_1 = 0 to initial io_8_31_1 = 0. Reverse-edit reproduces raw bytes exactly.",
+  "compile": {
+    "status": "PASS",
+    "top": "protocol_dut",
+    "options": [
+      "-g2012",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS"
+    ],
+    "primitive_model": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/share/yosys/ice40/cells_sim.v",
+    "primitive_model_is_stub": false
+  },
+  "state_correspondence": {
+    "active_path": "physical_decoded_correspondence_v3.json",
+    "physical_and_decoded_ff_counts": 71,
+    "physical_and_decoded_ram_counts": 4,
+    "checks": "All FF output coordinates bijective; active FF enable, reset/set polarity, sync/async and clock polarity match ASC; decoded clock ownership agrees with always statements. RAM modes, clock polarities and all 16 INIT blocks match for all four instances. Does not prove next-state or routed connectivity equivalence."
+  },
+  "preserved_attempts": [
+    {
+      "file": "finalize_records.stderr.txt",
+      "classification": "Initial manifest finalization encountered a concurrently added input handoff note absent from initial receipt. v2 rechecks exactly the nine initially recorded inputs; no design input changed."
+    },
+    {
+      "file": "iceunpack_help.stderr.txt",
+      "classification": "Help invocation returns exit 1; actual unpack succeeds."
+    },
+    {
+      "file": "raw_compile.stderr.txt",
+      "classification": "Raw decoder ANSI output net/body reg declaration conflict; compatibility copy fixes declarations only."
+    },
+    {
+      "file": "physical_correspondence.stderr.txt",
+      "classification": "Unresolved direct LUT_INIT encoding comparison, not evidence of design mismatch. 1315/1443 LUT_INIT values differ before accounting for any LUT input permutation; no LUT functional equivalence claim."
+    },
+    {
+      "file": "physical_decoded_correspondence.json",
+      "classification": "Superseded v2 supplemental mapping: comment-block parser incorrectly assigned header-declared clock net comments to preceding wire. Preserved; DO NOT USE. v3 fixes ownership and asserts every FF clock against its decoded always statement. RTL/adapter unaffected."
+    }
+  ],
+  "provenance_limits": "Task context and authoring tool calls are visible in the current agent transcript; commands.jsonl records executed decode/validation subprocess argv, UTC times, exit status and stdout/stderr hashes. Initial read-only exploration calls were not independently timestamped in commands.jsonl. No claims about inaccessible prior chats or model internals.",
+  "constraints": {
+    "source_candidate_changed": false,
+    "decoder_tool_patched": false,
+    "prior_clock_validator_tool_used": false,
+    "board_programmed": false,
+    "board_pins_claimed": false,
+    "network_used": false,
+    "functional_edits": false,
+    "build_rerun": false
+  }
+}

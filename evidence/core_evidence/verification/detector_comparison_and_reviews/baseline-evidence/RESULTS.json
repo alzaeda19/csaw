@@ -1,0 +1,81 @@
+{
+  "candidate": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/inputs/recovered_baseline/baseline.v",
+  "candidate_sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+  "per_model": {
+    "HT1": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9241572022438049,
+      "prob_trojan": 0.07584279775619507,
+      "log_probabilities": [
+        -0.07887311279773712,
+        -2.579092502593994
+      ],
+      "logits": [
+        1.2850234508514404,
+        -1.2151957750320435
+      ]
+    },
+    "HT2": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.6448315382003784,
+      "prob_trojan": 0.3551684319972992,
+      "log_probabilities": [
+        -0.43876615166664124,
+        -1.035163164138794
+      ],
+      "logits": [
+        0.2594108581542969,
+        -0.3369861841201782
+      ]
+    },
+    "HT3": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.7838907837867737,
+      "prob_trojan": 0.2161092758178711,
+      "log_probabilities": [
+        -0.24348558485507965,
+        -1.5319710969924927
+      ],
+      "logits": [
+        0.6241012811660767,
+        -0.6643842458724976
+      ]
+    },
+    "HT4": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9535597562789917,
+      "prob_trojan": 0.04644026607275009,
+      "log_probabilities": [
+        -0.04755321145057678,
+        -3.0695884227752686
+      ],
+      "logits": [
+        1.5072299242019653,
+        -1.5148050785064697
+      ]
+    }
+  },
+  "ensemble": {
+    "model_count": 4,
+    "trojan_votes": 0,
+    "triggered_models": [],
+    "verdict": "CLEAN",
+    "rule": "Any model voting1 yields TROJAN, as in supplied notebook",
+    "mean_prob_trojan": 0.17339019291102886,
+    "max_prob_trojan": 0.3551684319972992,
+    "min_prob_trojan": 0.04644026607275009
+  },
+  "preprocessing_route": "heuristic_fallback",
+  "source_unchanged": true,
+  "scope": "One unchanged baseline candidate. Extracted-graph classification only; no generation, optimization, training, key work or board actions. Scores are not calibrated compromise probabilities.",
+  "limitations": [
+    "Four external RAM behavioral definitions absent; primitive internals not modeled by heuristic.",
+    "Heuristic assignment graph omits full HDL elaboration, sequential/control semantics.",
+    "Applicability/calibration on this recovered netlist unvalidated.",
+    "Not proof of absence of Trojans or physical-board security; separate from functional equivalence."
+  ]
+}

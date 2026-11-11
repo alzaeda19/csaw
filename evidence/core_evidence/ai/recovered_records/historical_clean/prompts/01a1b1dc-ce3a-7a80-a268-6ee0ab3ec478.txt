@@ -1,0 +1,10 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user requests: investigate why the result needs an extra clock after BUSY falls, using only original materials. Preserve AI logs and failures, keep the user's repository unchanged, and do not use the solution comparison.
+
+Continue solely from your own clean-chat evidence and independently derived artifacts. Reverify the original materials against their receipt and keep them immutable. Do not read other chats, quarantined prior work, published solutions, solution comparisons, later target revisions or the user's project repository. No solution comparison or technical diagnosis from the requesting chat is supplied here.
+
+Investigate the cause of the result-readiness discrepancy you documented. Trace the relevant original-derived behavior and design focused normal-operation experiments that can distinguish supported explanations. Separate observations about the recovered model from claims about the original hardware, document alternative explanations and limits, and do not silently change the written requirement or expected values. Preserve the unchanged baseline candidate, every prior failing harness/run and the immediate-extraction failure. Put new diagnostics and experiments in a fresh directory within your existing separate restart workspace; do not patch the target merely to make the test pass.
+
+Retain available exact visible prompts/responses, commands, outputs, waveforms, versions, input hashes, diffs and failed attempts. Explicitly disclose unavailable native transcript or model metadata; do not reconstruct missing logs. Stay within baseline conformance diagnosis. Report the evidence for the cause, what is resolved versus uncertain, what passes/fails, and locations of reproducible artifacts and AI records.</input>
+</codex_delegation>

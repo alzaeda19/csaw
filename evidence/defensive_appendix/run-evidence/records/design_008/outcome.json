@@ -1,0 +1,143 @@
+{
+  "design_id": "design_008",
+  "status": "scored",
+  "source_sha256": "0536ab09c29a23c1cad96e7b3da67b4b1154beec0047ed610876aa0eb4df5e2c",
+  "per_model": {
+    "HT1": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.5695311427116394,
+      "prob_trojan": 0.4304688274860382,
+      "log_probabilities": [
+        -0.5629417896270752,
+        -0.842880368232727
+      ],
+      "logits": [
+        0.21925389766693115,
+        -0.0606846809387207
+      ]
+    },
+    "HT2": {
+      "prediction": 1,
+      "label": "TROJAN",
+      "prob_clean": 0.165640190243721,
+      "prob_trojan": 0.8343597650527954,
+      "log_probabilities": [
+        -1.7979373931884766,
+        -0.1810905933380127
+      ],
+      "logits": [
+        -0.9638645648956299,
+        0.6529822945594788
+      ]
+    },
+    "HT3": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.6114243268966675,
+      "prob_trojan": 0.3885757327079773,
+      "log_probabilities": [
+        -0.4919641315937042,
+        -0.9452672004699707
+      ],
+      "logits": [
+        0.179207444190979,
+        -0.27409565448760986
+      ]
+    },
+    "HT4": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.7382996678352356,
+      "prob_trojan": 0.26170027256011963,
+      "log_probabilities": [
+        -0.3034054934978485,
+        -1.3405554294586182
+      ],
+      "logits": [
+        0.5134530067443848,
+        -0.5236968994140625
+      ]
+    }
+  },
+  "ensemble": {
+    "prediction": 1,
+    "label": "TROJAN",
+    "trojan_votes": 1,
+    "triggered_models": [
+      "HT2"
+    ],
+    "rule": "any model argmax=1"
+  },
+  "preprocessing": {
+    "source_sha256": "0536ab09c29a23c1cad96e7b3da67b4b1154beec0047ed610876aa0eb4df5e2c",
+    "source_bytes": 1101,
+    "source_lines": 45,
+    "route": "exact_DFG",
+    "exact_extraction": {
+      "status": "success",
+      "nodes": 41,
+      "edges": 46
+    },
+    "large_lookup_entries": 0,
+    "graph_extraction_seconds": 0.4186527079436928,
+    "graph_nodes": 41,
+    "graph_edges": 46,
+    "weakly_connected_components": 3,
+    "raw_label_counts": {
+      "CounterX": 1,
+      "branch": 3,
+      "'d0": 2,
+      "plus": 2,
+      "CounterXmaxed": 1,
+      "'d1": 2,
+      "eq": 2,
+      "'d800": 1,
+      "CounterY": 1,
+      "CounterYmaxed": 1,
+      "'d525": 1,
+      "inDisplayArea": 1,
+      "land": 3,
+      "lessthan": 4,
+      "'d480": 1,
+      "'d640": 1,
+      "vga_h_sync": 1,
+      "unot": 2,
+      "HS": 1,
+      "vga_HS": 1,
+      "greaterthan": 2,
+      "'d656": 1,
+      "'d752": 1,
+      "vga_v_sync": 1,
+      "VS": 1,
+      "vga_VS": 1,
+      "'d490": 1,
+      "'d492": 1
+    },
+    "feature_counts": {
+      "5": 4,
+      "13": 3,
+      "9": 12,
+      "17": 2,
+      "18": 2,
+      "16": 5,
+      "23": 3,
+      "27": 4,
+      "12": 2,
+      "1": 2,
+      "25": 2
+    },
+    "preprocessed_sha256": "0536ab09c29a23c1cad96e7b3da67b4b1154beec0047ed610876aa0eb4df5e2c",
+    "preprocessing": "Existing topModule.v passthrough; no flattening/renaming/underscore removal.",
+    "dataset_pickle_loaded": false,
+    "truth_label_accessed": false,
+    "placeholder_label": 0,
+    "messages": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Existing_Designs_2026-11-10_180906Z/runs/design_008/graph_input/topModule.v , 41 , 46 , 0.4169189929962158"
+    ]
+  },
+  "source_unchanged": true,
+  "command_receipt": "records/design_008/command.json",
+  "exit_code": 0,
+  "parent_failure_reason": null
+}

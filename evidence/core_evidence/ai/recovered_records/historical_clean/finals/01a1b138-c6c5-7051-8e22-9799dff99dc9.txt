@@ -1,0 +1,19 @@
+Built and verified the protocol testbench and simulation runner in:
+
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/protocol_harness_2026-11-06/`
+
+- **26/26 infrastructure checks passed**, including rejection of missing DUTs, compile failures, protocol faults, data mismatches and timeouts.
+- **All real-target checks remain unrun.** Fixture passes are explicitly labelled infrastructure-only.
+- All six originals and the prior intake records remain unchanged.
+- Timing, clock-edge semantics, key handling, algorithm and broader-vector correctness remain unresolved.
+
+`README.md` contains reproduction instructions; `TRACEABILITY.md` maps checks to original source lines; `RESULTS.md` records outcomes. Commands, versions, failures, waveforms, source snapshots and output hashes are retained under `records/` and `runs/`.
+
+To reproduce:
+
+```sh
+cd /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06
+python3 protocol_harness_2026-11-06/tests/acceptance.py
+```
+
+Exact serving-model identification and raw transcript export remain unavailable; those limits are documented.

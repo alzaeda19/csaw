@@ -1,0 +1,16 @@
+Executed successfully on **macOS 26.2 / Apple Silicon**, using the existing bundled toolchain.
+
+| Test | Actual result |
+|---|---|
+| Infrastructure acceptance | **26/26 passed**, exit 0 |
+| No DUT supplied | Expected `MISSING_DUT`, exit 2 |
+| Good fixture | `HARNESS_ONLY_PASS`, exit 0 |
+| Bad encryption fixture | Expected `SIMULATION_FAILED`, exit 4 |
+
+Tools executed: Icarus/VVP 14.0-devel, Yosys 0.70+344, and nextpnr 0.11.1-88. The corrected toolchain path and reusable access script are documented in the [technical handoff](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/mac_infrastructure_execution_2026-11-07_20261107T170940Z/TECHNICAL_HANDOFF.md).
+
+I also exported [authentic clean-chat records](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/mac_infrastructure_execution_2026-11-07_20261107T170940Z/records/transcripts/clean_native_visible/VISIBLE_MESSAGES.md): **17 requests, 81 progress messages and 17 final responses**, with native source hashes and an index covering all 17 tasks.
+
+The export is filtered to visible records; existing tool-output truncation remains. The earlier mixed coordinating history and separate Claude conversation were not exported. Details are in the [export status](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/mac_infrastructure_execution_2026-11-07_20261107T170940Z/TRANSCRIPT_EXPORT_STATUS.md).
+
+All six originals and your repository remain unchanged. No recovered cryptographic RTL was modified or simulated, and no presentation was prepared. New files are confined to the [isolated execution folder](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/mac_infrastructure_execution_2026-11-07_20261107T170940Z).

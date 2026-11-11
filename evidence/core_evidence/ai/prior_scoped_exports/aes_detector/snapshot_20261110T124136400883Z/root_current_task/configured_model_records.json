@@ -1,0 +1,121 @@
+{
+  "note": "Configured native model and effort labels do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [],
+  "delegation_activity_labels": [
+    {
+      "source_line": 1418,
+      "source_record_sha256": "cbc5159bec669c4467d3740243ac8fb638f266fb5b0d996993f540c087ba950a",
+      "timestamp": "2026-11-10T12:36:02.684Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_2db56aabdd884162bdbda7f90abe8118",
+        "kind": "started",
+        "agent_thread_id": "01a1c575-51f3-7180-8c7f-b5a947543973",
+        "agent_path": "/root/clean_aes_detector_review",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "9c16bc8d4a47c843dd4f7e631aad0846ad8a125ebc9f351c1a0f62d159c6e7b7",
+        "kind": "66967c3c8be87735db13483ffcf1634b42ed82f19718e488c07e01322ef6d23b",
+        "agent_thread_id": "c8d5376e22d41039202e86cb7dc5b9dbcd375c81ccb38238b60bac064d921963",
+        "agent_path": "a8b2e27c263a1b0d8c065604158f119f8049df60c57aae263901c35587ae5db6",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "reasoning_effort": "168ca465deb3cd1d4c688dc5b1be70beed3a7810e61fe005d4e08ac128aa3aa5"
+      }
+    },
+    {
+      "source_line": 1461,
+      "source_record_sha256": "9fe470ac7288bcd1aa74a94624b897c9c9d06513342d771694ca647af0364bd9",
+      "timestamp": "2026-11-10T12:37:40.682Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_1f853ae2bc9046f3948d514c914a8cb0",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c575-51f3-7180-8c7f-b5a947543973",
+        "agent_path": "/root/clean_aes_detector_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "775846abbfd9a32e5e59cb70ab1416c4303416f33d48392061ca95a0383c18ae",
+        "kind": "2b1f2c7771d1eae17a63ecf0de4a8c97c535781445a35f32e78db3d53fa8d28b",
+        "agent_thread_id": "c8d5376e22d41039202e86cb7dc5b9dbcd375c81ccb38238b60bac064d921963",
+        "agent_path": "a8b2e27c263a1b0d8c065604158f119f8049df60c57aae263901c35587ae5db6",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 1477,
+      "source_record_sha256": "23eb59892574e851f14d5f4c34f77f8eec3c8223aac89ce74674f4074f6105c3",
+      "timestamp": "2026-11-10T12:38:32.062Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_e870ce4f1a22418c9aac31eef79ba4f5",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c575-51f3-7180-8c7f-b5a947543973",
+        "agent_path": "/root/clean_aes_detector_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "c368e2a4b112f3d2fa133e9cd4619676709f5d0f95a7106d7dba5b8be3247c59",
+        "kind": "2b1f2c7771d1eae17a63ecf0de4a8c97c535781445a35f32e78db3d53fa8d28b",
+        "agent_thread_id": "c8d5376e22d41039202e86cb7dc5b9dbcd375c81ccb38238b60bac064d921963",
+        "agent_path": "a8b2e27c263a1b0d8c065604158f119f8049df60c57aae263901c35587ae5db6",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 1517,
+      "source_record_sha256": "4b03bb0b4f47b832a4994f2ea176300b43955e1e3e650e1e301e9bbe4b5b5ac2",
+      "timestamp": "2026-11-10T12:40:06.970Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_78eb19aebdf04ea090c17459853f9917",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c575-51f3-7180-8c7f-b5a947543973",
+        "agent_path": "/root/clean_aes_detector_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "48ccc8b8528ffc0e3c68ee2bdec10d1fa261f892f0ff11ee6290446cd1b74ac1",
+        "kind": "2b1f2c7771d1eae17a63ecf0de4a8c97c535781445a35f32e78db3d53fa8d28b",
+        "agent_thread_id": "c8d5376e22d41039202e86cb7dc5b9dbcd375c81ccb38238b60bac064d921963",
+        "agent_path": "a8b2e27c263a1b0d8c065604158f119f8049df60c57aae263901c35587ae5db6",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 1521,
+      "source_record_sha256": "079711d3133a3bb3cd2d1902ac372f67c3b900c2456f1e85017ce1a97630cabe",
+      "timestamp": "2026-11-10T12:40:22.475Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c575-51fc-7172-b15e-0711de9a419a",
+        "kind": "completed",
+        "agent_thread_id": "01a1c575-51f3-7180-8c7f-b5a947543973",
+        "agent_path": "/root/clean_aes_detector_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "9116e63e9d8158443b2be847a28d14d3bf426cbe5faa2edfb31e2ea99b6848bc",
+        "kind": "7093fda846e50b267da144f7b3683ee1dd8838506939f6052b7370dd01fa2ad0",
+        "agent_thread_id": "c8d5376e22d41039202e86cb7dc5b9dbcd375c81ccb38238b60bac064d921963",
+        "agent_path": "a8b2e27c263a1b0d8c065604158f119f8049df60c57aae263901c35587ae5db6",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    }
+  ]
+}

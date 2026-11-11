@@ -1,0 +1,392 @@
+[
+  {
+    "source_line": 13,
+    "source_record_sha256": "0f4fa179254eed32bf2b09c7a52f7218446d75fab41b700cfc4575bbc524392b",
+    "timestamp": "2026-11-10T12:36:03.681Z",
+    "category": "agent_message_readable_envelope"
+  },
+  {
+    "source_line": 17,
+    "source_record_sha256": "65199e701676a0d4114a4ea59c89c451440f880f320cc71feea6db3087866720",
+    "timestamp": "2026-11-10T12:36:11.931Z",
+    "category": "assistant_commentary"
+  },
+  {
+    "source_line": 18,
+    "source_record_sha256": "9138c1daebe4c085ac8933aa2e28ea40f4582e351672dfbfb1f8ddd11b9a280f",
+    "timestamp": "2026-11-10T12:36:12.693Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 19,
+    "source_record_sha256": "acb84a63c375698bbc2be20e701e311cff917f5315422b527225b5836b67d1da",
+    "timestamp": "2026-11-10T12:36:12.791Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 21,
+    "source_record_sha256": "a72831db8111058f6d0f4b13778a23a83bef343de5fc187c43243a76955d4a92",
+    "timestamp": "2026-11-10T12:36:12.879Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 25,
+    "source_record_sha256": "b4e913266138fcc3e6cdb6686ad78df7df1a2847a8acd62de6f048721b6615f2",
+    "timestamp": "2026-11-10T12:36:18.032Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 27,
+    "source_record_sha256": "8f241b162c88bb6cd15179369732b1367ede9f42aab325ad6b7daff11aa4b334",
+    "timestamp": "2026-11-10T12:36:18.084Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 28,
+    "source_record_sha256": "db2a2c30905ad81e2ffe7bb45178344adc439d44806493f6889aac31fde07f95",
+    "timestamp": "2026-11-10T12:36:18.088Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 29,
+    "source_record_sha256": "00dfe6ad6ffe4208323cb88403795c363b7b63052dc08a52f29afe0e7b50314b",
+    "timestamp": "2026-11-10T12:36:18.090Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 33,
+    "source_record_sha256": "df02e7c019bec4d332393c78fb7fe7978a1d99f55b6653b422f5715f095454ae",
+    "timestamp": "2026-11-10T12:36:25.182Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 35,
+    "source_record_sha256": "fcbb112e84f046352a8d34e2a6cda26062584514b33a9f932c402cebee6e7641",
+    "timestamp": "2026-11-10T12:36:25.261Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 36,
+    "source_record_sha256": "e2eb5d632e54515a7d5ec164bef52bbf72bf4d2d8b25d87f4fa397d6cbeacace",
+    "timestamp": "2026-11-10T12:36:25.309Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 37,
+    "source_record_sha256": "38f7275bd67b19acf1098ef130e373182dbc8ae7eb7bb94247adf60551d8ced6",
+    "timestamp": "2026-11-10T12:36:25.311Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 39,
+    "source_record_sha256": "d7131dcc1947114ee659920aca0f4df9b5d67906229e55a866556e9ca838a54b",
+    "timestamp": "2026-11-10T12:36:31.854Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 41,
+    "source_record_sha256": "8db71e6062e2773ca1a0a1785722f5fe624a750237010f9ac0d19eef9b9516d7",
+    "timestamp": "2026-11-10T12:36:31.908Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 42,
+    "source_record_sha256": "068c144158c6a01f13349d63a3930645caa6b05aa8a9b30d7f46fe6478cb0af7",
+    "timestamp": "2026-11-10T12:36:31.909Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 43,
+    "source_record_sha256": "a5b45798e911892d66a3d41ee797fc49b923ff71db0fee5293fd921f88927a9b",
+    "timestamp": "2026-11-10T12:36:31.910Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 44,
+    "source_record_sha256": "1a34f116099e6bdef268fcba9ced304e957705759b480b3c50d21d5749932f40",
+    "timestamp": "2026-11-10T12:36:31.912Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 45,
+    "source_record_sha256": "c6223d8b0ee345295dffb70672b0731175346382ccd3708d2362c7363583f41b",
+    "timestamp": "2026-11-10T12:36:31.913Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 49,
+    "source_record_sha256": "51dfa370af1e4113bfd24e315d2bab5f5b6928ba9f0b66aaff23ade5d2e36cbb",
+    "timestamp": "2026-11-10T12:36:35.557Z",
+    "category": "function_call"
+  },
+  {
+    "source_line": 52,
+    "source_record_sha256": "2507d3f0f478f8dfba04b909b2a73e88c447f1aad95ba620c67eca34f68efc54",
+    "timestamp": "2026-11-10T12:36:35.653Z",
+    "category": "function_call_output"
+  },
+  {
+    "source_line": 56,
+    "source_record_sha256": "772dbcc1c2ca3a43e03e4583ecb4289ff20d375723d25e40622f74db9108f8b4",
+    "timestamp": "2026-11-10T12:36:40.439Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 58,
+    "source_record_sha256": "f0985e652f26efe20007ed6c0cf7d9dcd1a70c2b39e0b6fac4b4f3998fd87feb",
+    "timestamp": "2026-11-10T12:36:40.501Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 59,
+    "source_record_sha256": "331e59b59ffa37a3a2aa11f52b7470f662d1d1a647de63af88f8952cf65185a9",
+    "timestamp": "2026-11-10T12:36:40.503Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 64,
+    "source_record_sha256": "3cba1e66ae5f9bb3f7c27648e1b8b15585af8313714ff4a8006dda4634d2d135",
+    "timestamp": "2026-11-10T12:36:44.817Z",
+    "category": "assistant_commentary"
+  },
+  {
+    "source_line": 65,
+    "source_record_sha256": "5fae93ba01e6061110d64561f15c584abd334a4b82dc45b48bc39cf69110693e",
+    "timestamp": "2026-11-10T12:36:44.819Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 67,
+    "source_record_sha256": "5aa3808d9a4142d8d18a179df8ecf35f5176a0a5fd2e7d321e56914755b44ed9",
+    "timestamp": "2026-11-10T12:36:44.872Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 68,
+    "source_record_sha256": "2342591d64f755be9934824151b77ef2628456cf59a9974329b84b12263905c7",
+    "timestamp": "2026-11-10T12:36:44.874Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 72,
+    "source_record_sha256": "640cdcfc497e510a7b8b23398903ae9e44ebbc532ed7f790b24028e581e22e8b",
+    "timestamp": "2026-11-10T12:36:54.313Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 74,
+    "source_record_sha256": "02e22206592a43eeece6ce417c84794654bbf5b16ec6ecfd554bae83e91df70e",
+    "timestamp": "2026-11-10T12:36:54.432Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 75,
+    "source_record_sha256": "f6be229d2f5b51469144d5ed7cdc1902e612ab0993621f1d7f9d46bee350a495",
+    "timestamp": "2026-11-10T12:36:54.434Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 79,
+    "source_record_sha256": "186f71f4b498faf191d243ec61e3926d54e287bc19a5757c65e8017e43f21659",
+    "timestamp": "2026-11-10T12:36:59.407Z",
+    "category": "function_call"
+  },
+  {
+    "source_line": 82,
+    "source_record_sha256": "52d6a3a252811d1d58456f3b52ea43fb79506c246adc91ed5a6a24bb853b0b7f",
+    "timestamp": "2026-11-10T12:36:59.626Z",
+    "category": "function_call_output"
+  },
+  {
+    "source_line": 86,
+    "source_record_sha256": "5880f4d3752154303fd8caf8e35efe1889cd9fc368b0e7e273ec8b666c2bce82",
+    "timestamp": "2026-11-10T12:37:15.682Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 88,
+    "source_record_sha256": "8de269ac05d9e35c070c2ca009b31e524b6fb8754ded1d3b0877bcb351968999",
+    "timestamp": "2026-11-10T12:37:15.724Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 89,
+    "source_record_sha256": "d7e721a0134611df60d73ff967b804d4eba4ab1a01c2cb38da06ab8993f3d4b2",
+    "timestamp": "2026-11-10T12:37:15.726Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 93,
+    "source_record_sha256": "2e1b3ff9a781defc0eae47f457e042b7302bed4345293f8da5d4d4847c941181",
+    "timestamp": "2026-11-10T12:37:18.716Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 95,
+    "source_record_sha256": "4d614f4b2fc6736850e5f4160a3544b30f840e74aff56b01ad5d8b9563c069a4",
+    "timestamp": "2026-11-10T12:37:18.768Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 96,
+    "source_record_sha256": "eedbe00c15af2d64aa2263283642ffbdadb042d0e2b80e34a53a98eac9852c22",
+    "timestamp": "2026-11-10T12:37:18.770Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 100,
+    "source_record_sha256": "03e7fe33508705822b7cc43ead8558c58c73d159bec3785fd7063916a37a93e2",
+    "timestamp": "2026-11-10T12:37:23.367Z",
+    "category": "function_call"
+  },
+  {
+    "source_line": 103,
+    "source_record_sha256": "50f28d18230f23b63437fdf3301730c63a21f34a21bd7349123a06f63a69f12f",
+    "timestamp": "2026-11-10T12:37:23.369Z",
+    "category": "function_call_output"
+  },
+  {
+    "source_line": 107,
+    "source_record_sha256": "ddfeb6fd82c4ec88f743b7a3f12facc7778c76ea2743d0fc00efe3845af706ea",
+    "timestamp": "2026-11-10T12:37:28.320Z",
+    "category": "function_call"
+  },
+  {
+    "source_line": 110,
+    "source_record_sha256": "15575145095d1660c0afcd87a598fe7ac5210e4ce7e7b7210c404afcfe95cfca",
+    "timestamp": "2026-11-10T12:37:40.687Z",
+    "category": "function_call_output"
+  },
+  {
+    "source_line": 113,
+    "source_record_sha256": "050ec8e62942fc2ab243070cdfab8c2909b41b34a64bae8761c552f815823e14",
+    "timestamp": "2026-11-10T12:37:40.689Z",
+    "category": "agent_message_readable_envelope"
+  },
+  {
+    "source_line": 114,
+    "source_record_sha256": "f7c76a432a8e3eaee855afb32f84a729cb5ff3a4ede5bf94d1cc9a8945aa4810",
+    "timestamp": "2026-11-10T12:37:45.526Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 115,
+    "source_record_sha256": "f0adc4976ce00ab4bb1d90d886fbefb2c587c2733c6f1f3023a9bfe08725a0b8",
+    "timestamp": "2026-11-10T12:37:45.586Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 116,
+    "source_record_sha256": "93e760886084918c93ccc801ec09ec1b6657d1958ee228f616ea5b9970cbf0b9",
+    "timestamp": "2026-11-10T12:37:45.587Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 118,
+    "source_record_sha256": "107affe60876d6bc944ceb3847239a136bba6c1ed446c7d4aa4abd1489c413fc",
+    "timestamp": "2026-11-10T12:37:45.668Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 123,
+    "source_record_sha256": "b8d65ed09bdaf35236c8bde44c501b8249f68f233220796165e2095aa111b9ce",
+    "timestamp": "2026-11-10T12:38:03.569Z",
+    "category": "assistant_commentary"
+  },
+  {
+    "source_line": 124,
+    "source_record_sha256": "35804a7b9804ae19d56ae4d4eef6e058bb75259579fb59a21266887a369ab7b0",
+    "timestamp": "2026-11-10T12:38:03.570Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 126,
+    "source_record_sha256": "64e57a852810abbc79c1737de8454c74b2a3879f8e889af6c3f39b601247c98b",
+    "timestamp": "2026-11-10T12:38:03.619Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 127,
+    "source_record_sha256": "194806172f71fbd90ed6557c513a09d0c817baf651e41d76c5a98db743afa852",
+    "timestamp": "2026-11-10T12:38:03.621Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 131,
+    "source_record_sha256": "26f98aad5eae526fce3b67d7869c734bfc0cd788b39bb76fe804390521d3c85d",
+    "timestamp": "2026-11-10T12:39:01.224Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 133,
+    "source_record_sha256": "cfb3bf9d58701abefa9489bcc38593fd6977f8ca430f97c3163b404b7eaa9e0e",
+    "timestamp": "2026-11-10T12:39:01.239Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 136,
+    "source_record_sha256": "57420405dfc9080610ae12b2f2a8bbf8dca9a8694b5932fd2319ae03e7df7b0c",
+    "timestamp": "2026-11-10T12:39:01.241Z",
+    "category": "agent_message_readable_envelope"
+  },
+  {
+    "source_line": 139,
+    "source_record_sha256": "a15fc8ca21dd7414b5e1124cba5a42fa9b9a609f4f4c14dd33bba91f51af981f",
+    "timestamp": "2026-11-10T12:39:05.279Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 140,
+    "source_record_sha256": "1a7a185c299900a12aee4a43fc1625779919579f772abf1d72c86961dfadb736",
+    "timestamp": "2026-11-10T12:39:05.349Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 142,
+    "source_record_sha256": "0468a6e500125b4f199a51e310a00c671aaff9dc6277c0f501682d6bc3b823fb",
+    "timestamp": "2026-11-10T12:39:05.440Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 146,
+    "source_record_sha256": "016ba36b75bb91aed41968608e367d2a216a50ffb930473917b59e8f49ca635c",
+    "timestamp": "2026-11-10T12:40:06.976Z",
+    "category": "custom_tool_call"
+  },
+  {
+    "source_line": 148,
+    "source_record_sha256": "04ec5c4014b2f683338ed91f0e97a5575d12fdae056222527910ad5d9b45dea9",
+    "timestamp": "2026-11-10T12:40:07.115Z",
+    "category": "command_execution"
+  },
+  {
+    "source_line": 149,
+    "source_record_sha256": "59d2426f643f26efb644dbc1cd7558de8753b84fe363591f36b55e2eb18eba86",
+    "timestamp": "2026-11-10T12:40:07.118Z",
+    "category": "custom_tool_call_output"
+  },
+  {
+    "source_line": 152,
+    "source_record_sha256": "31c497068d0bb51298c0f76d97dc92341bb67e6890752b09ec60460cd5f2bd5b",
+    "timestamp": "2026-11-10T12:40:07.119Z",
+    "category": "agent_message_readable_envelope"
+  },
+  {
+    "source_line": 153,
+    "source_record_sha256": "a90f5114615b07c666f9b35b8eb6881d85770559853f2d748ffacf213ee5af7f",
+    "timestamp": "2026-11-10T12:40:11.135Z",
+    "category": "function_call"
+  },
+  {
+    "source_line": 156,
+    "source_record_sha256": "5bb9ef134010a5181934e2c555a437c2e9fb52f5428513c84c154dda360ffd5e",
+    "timestamp": "2026-11-10T12:40:11.261Z",
+    "category": "function_call_output"
+  },
+  {
+    "source_line": 161,
+    "source_record_sha256": "81196cc664d4113c61168e8754254b0059fda43b90606fc986de595f275b53cc",
+    "timestamp": "2026-11-10T12:40:22.243Z",
+    "category": "assistant_final_answer"
+  }
+]

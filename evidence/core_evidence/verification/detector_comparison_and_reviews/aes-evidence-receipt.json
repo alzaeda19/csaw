@@ -1,0 +1,42 @@
+[
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/COMPARISON.json",
+    "copy": "outputs/detector-comparison-review/aes-evidence/COMPARISON.json",
+    "sha256": "b978bc68ca1a3e291602ea79df5e4d3860d311e0ec08e153cf8406bdf98173d7"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/runs/clean_aes_detection/RESULTS.json",
+    "copy": "outputs/detector-comparison-review/aes-evidence/RESULTS.json",
+    "sha256": "9ac0258ade2de7202b690ac85485ffa6cd27bba04000331a370c27bd00806acd"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/runs/clean_aes_detection/preprocessing.json",
+    "copy": "outputs/detector-comparison-review/aes-evidence/preprocessing.json",
+    "sha256": "e2b46f1c26487ede6b27e1632bfedf702ee3ef04d4d85bfddd2c0d149f0b59e6"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/runs/clean_aes_detection/dependency_handling.json",
+    "copy": "outputs/detector-comparison-review/aes-evidence/dependency_handling.json",
+    "sha256": "5befcd268aeb6bc780a68e185ad94fefbdd311c8bfd278f953fdab9ec35d8a6c"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/runs/clean_aes_detection/model_loads.json",
+    "copy": "outputs/detector-comparison-review/aes-evidence/model_loads.json",
+    "sha256": "bd728254e5d8d78dbcaca24ec2bfbb2af3614f97ba31aed7045a15f58eba4ee2"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/records/detector_command.json",
+    "copy": "outputs/detector-comparison-review/aes-evidence/detector_command.json",
+    "sha256": "ae5b6f263130a2cd8dd9e7e9e74a6dff8a25cace84370173d29557e7377c00ad"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/records/detector.stdout",
+    "copy": "outputs/detector-comparison-review/aes-evidence/detector.stdout",
+    "sha256": "b1fa4aab23a459c9d5d8049e52ad1f193a9d6aedb7e9c0a7a625a04c310495b5"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/records/detector.stderr",
+    "copy": "outputs/detector-comparison-review/aes-evidence/detector.stderr",
+    "sha256": "cace1071573ef725e762e8856427937617c8c67e5d0784c45c0e854e56a803a8"
+  }
+]

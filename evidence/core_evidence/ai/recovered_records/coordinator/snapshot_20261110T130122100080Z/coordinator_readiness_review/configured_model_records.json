@@ -1,0 +1,96 @@
+{
+  "note": "Configured native model and effort labels do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [
+    {
+      "source_line": 11,
+      "source_record_sha256": "ce0fe44186d46f9951253390de9867680b80f1d8623117e28f23aeb0ac2e441d",
+      "timestamp": "2026-11-10T12:35:15.647Z",
+      "source_fields": {
+        "turn_id": "01a1c563-aac7-7aa3-9d63-3ca2676c8cfe",
+        "model": "gpt-6.1-sol",
+        "effort": "low"
+      },
+      "source_field_sha256": {
+        "turn_id": "38c2ded6e5e57907bea74c818cfeb7a9370c71f05073d0950a2d5129bbf383bd",
+        "model": "2da8faee9a3ed7401be88eab08f9f50de122763b54cdce94dced4c0d06e0ee4f",
+        "effort": "364bb7082249ee9fbc5247ee49735c4246f271b82c2745a35107ddda0d7cabcc"
+      }
+    },
+    {
+      "source_line": 36,
+      "source_record_sha256": "02ee0ef5b35d65d335d7c14bb47431401be02948ce403dcaca103361387c0333",
+      "timestamp": "2026-11-10T12:35:15.648Z",
+      "source_fields": {
+        "turn_id": "01a1c570-7962-7c71-8f85-e08896dd1021",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "source_field_sha256": {
+        "turn_id": "7859cb8960dd8c564129b0fedb0a67e895232b6e55d6f625b36da14f62a10ca9",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "b57c4299afe3cda154124bdb96ceaf618a9d8d9cd8d2c8f6580ff26faa5fe5ca"
+      }
+    },
+    {
+      "source_line": 73,
+      "source_record_sha256": "c7bd7dfab55b643c27ecddd900b0ccdcda73d965f0dd3b69f8c982452b0aeef7",
+      "timestamp": "2026-11-10T12:35:15.649Z",
+      "source_fields": {
+        "turn_id": "01a1c572-8dab-7b02-a83f-e68629effba6",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_sha256": {
+        "turn_id": "e74cfea9afbd2953aa7dcfcf0825ecf6dc34ff341dbeb0e538a6d00e356bdba7",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    },
+    {
+      "source_line": 81,
+      "source_record_sha256": "b9f4e66c777bb40bbbd768fcb8a8ede81e3195e5cd689ef871cb02187c5a1718",
+      "timestamp": "2026-11-10T12:35:15.649Z",
+      "source_fields": {
+        "turn_id": "01a1c574-1b19-71f1-99a3-f2ad775a22f2",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_sha256": {
+        "turn_id": "398582be5b9c89e4bc552b03d4a802fe080fdfaf742846337005c34b259985a2",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    },
+    {
+      "source_line": 103,
+      "source_record_sha256": "68b2f6950f1a714328132e020715a4101b3292aa04c9aaa691550cee42cbb4d2",
+      "timestamp": "2026-11-10T12:35:17.020Z",
+      "source_fields": {
+        "turn_id": "01a1c574-9a56-7d91-abe8-da5657e6d7d8",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_sha256": {
+        "turn_id": "138ca8dcc6cf75bebc0f5647955a2523893997afa48c3dab3b341829a9dec15b",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    },
+    {
+      "source_line": 126,
+      "source_record_sha256": "2b357b63191e0400d1c7be8eed6737535ae294c2b32ba30eadc6692e9d3c1c62",
+      "timestamp": "2026-11-10T12:58:35.815Z",
+      "source_fields": {
+        "turn_id": "01a1c589-f69e-70f3-9447-2b0ad896624a",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_sha256": {
+        "turn_id": "6aaca6234221be57f9d9d33561449d53da40c9ebeb99df8f25eeb995d3da2b79",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    }
+  ],
+  "delegation_activity_labels": []
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-V"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/records",
+    "started_utc": "2026-11-07T17:23:29.267973+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:29.323641+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "-V"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/records",
+    "started_utc": "2026-11-07T17:23:29.324315+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:29.338935+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-g2012",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+      "-Wall",
+      "-s",
+      "paired_normal_tb",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline/sim.vvp",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources/paired_normal_tb.sv",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources/baseline.v",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources/baseline_protocol_dut.sv",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources/cells_sim.v"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline",
+    "started_utc": "2026-11-07T17:23:29.339449+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:29.445342+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-g2012",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+      "-Wall",
+      "-s",
+      "paired_normal_tb",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded/sim.vvp",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources/paired_normal_tb.sv",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources/regenerated_compatible.v",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources/regenerated_protocol_dut.sv",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources/cells_sim.v"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded",
+    "started_utc": "2026-11-07T17:23:29.445865+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:29.551633+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "-n",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline/sim.vvp",
+      "+half_ps=10000000",
+      "+sample_ps=1000",
+      "+immediate=0",
+      "+pauses=0"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline/host_50khz",
+    "started_utc": "2026-11-07T17:23:29.552218+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:30.523023+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "-n",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded/sim.vvp",
+      "+half_ps=10000000",
+      "+sample_ps=1000",
+      "+immediate=0",
+      "+pauses=0"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded/host_50khz",
+    "started_utc": "2026-11-07T17:23:30.551729+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:31.517579+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "-n",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline/sim.vvp",
+      "+half_ps=500000",
+      "+sample_ps=1000",
+      "+immediate=0",
+      "+pauses=0"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline/host_1mhz",
+    "started_utc": "2026-11-07T17:23:31.578383+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:32.558448+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "-n",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded/sim.vvp",
+      "+half_ps=500000",
+      "+sample_ps=1000",
+      "+immediate=0",
+      "+pauses=0"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded/host_1mhz",
+    "started_utc": "2026-11-07T17:23:32.584961+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:33.537291+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "-n",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline/sim.vvp",
+      "+half_ps=500000",
+      "+sample_ps=1000",
+      "+immediate=0",
+      "+pauses=1"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline/paused_host_1mhz",
+    "started_utc": "2026-11-07T17:23:33.600045+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:34.569655+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "-n",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded/sim.vvp",
+      "+half_ps=500000",
+      "+sample_ps=1000",
+      "+immediate=0",
+      "+pauses=1"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded/paused_host_1mhz",
+    "started_utc": "2026-11-07T17:23:34.596832+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:35.574067+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "-n",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline/sim.vvp",
+      "+half_ps=500000",
+      "+sample_ps=1000",
+      "+immediate=1",
+      "+pauses=0"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/baseline/immediate_read_1mhz",
+    "started_utc": "2026-11-07T17:23:35.640109+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:36.525078+00:00"
+  },
+  {
+    "argv": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "-n",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded/sim.vvp",
+      "+half_ps=500000",
+      "+sample_ps=1000",
+      "+immediate=1",
+      "+pauses=0"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/runs/decoded/immediate_read_1mhz",
+    "started_utc": "2026-11-07T17:23:36.551037+00:00",
+    "returncode": 0,
+    "finished_utc": "2026-11-07T17:23:37.429161+00:00"
+  }
+]

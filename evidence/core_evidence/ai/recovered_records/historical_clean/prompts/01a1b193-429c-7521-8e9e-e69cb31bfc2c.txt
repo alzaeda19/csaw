@@ -1,0 +1,8 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>Continue your original-materials baseline work. Resolve the serial sampling and processing-cycle-count questions using only your allowlisted original challenge materials, your independently recovered baseline, and permitted tool documentation. Do not read other chats, published solutions or reference diagrams, quarantine/comparison reports, or the user's project repository. This follow-up supplies no solution-derived findings.
+
+Expand normal-operation baseline tests with traceable requirements and independent expected results or explicitly justified invariants. Preserve earlier failing runs and distinguish infrastructure checks, supplied-vector checks, timing interpretations, and untested behavior. Do not tune the candidate or expected values merely to force passes. If the original evidence cannot settle a question, document the uncertainty precisely rather than inventing a requirement. Limit this task to normal baseline protocol/functional verification; do not implement Trojan or attack behavior.
+
+Work only in your existing separate restart workspace. Recheck original-material hashes before and after, keep all previous evidence intact, record the exact follow-up prompt and available AI interactions/commands/outputs, label unavailable transcript or model metadata honestly, and keep the user's repository unchanged. Run appropriate tests, report what passes/fails/remains untested and any AI-log gaps, and provide a reproducible report. Do not import context from the coordinating chat.</input>
+</codex_delegation>

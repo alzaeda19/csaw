@@ -1,0 +1,35 @@
+{
+  "prepared_utc": "2026-11-11T14:51:57.276172+00:00",
+  "classification": "PARTIAL_SUBMISSION_FOR_INSTRUCTOR_REVIEW",
+  "professor_scope_decision": "pending per user report",
+  "mandatory_modified_rtl_present": false,
+  "mandatory_demonstration_testbench_present": false,
+  "comprehensive_ai_log_coverage_established": false,
+  "full_original_technical_brief_compliance_established": false,
+  "submitted": false,
+  "professor_message_sent": false,
+  "paper5_included": false,
+  "current_course_upload_destination_verified": false,
+  "csaw_deadline_verified_this_task": false,
+  "old_project_or_evidence_modified": false,
+  "historical_tests_or_detector_inference_rerun": false,
+  "source_bundles": [
+    {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_partial_submission_2026-11-10",
+      "copy": "core_evidence",
+      "manifest": "PACKAGE_HASHES.json",
+      "manifest_sha256": "993c9a7b7f8c6e1dc1130c6cde1ea7298168c63ba4ab258e19656ba052416fc0",
+      "verified_listed_files": 451
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/toy-dataset-detector-evaluation",
+      "copy": "defensive_appendix",
+      "manifest": "OUTPUT_HASHES.json",
+      "manifest_sha256": "3eb3388dd41693fb68361b845c1fefab275dac4b6eafee3532edb2b43bfc4fb8",
+      "verified_listed_files": 288
+    }
+  ],
+  "source_copy_pairs": 741,
+  "previously_recorded_csaw_deadline": "2026-11-13 15:00 America/New_York",
+  "deadline_provenance": "Reported by the existing project orchestrator as a prior user-provided deadline; not freshly confirmed with instructor."
+}

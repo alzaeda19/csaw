@@ -1,0 +1,118 @@
+{
+  "note": "Configured native model and effort labels do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [],
+  "delegation_activity_labels": [
+    {
+      "source_line": 1132,
+      "source_record_sha256": "329255232921cbb15ebcdd951f0f99328586fd29f5a7b2517fefdfc0badbafc0",
+      "timestamp": "2026-11-10T12:20:57.726Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_486661e95557410388fce7f2e85df3e7",
+        "kind": "started",
+        "agent_thread_id": "01a1c567-82f5-7f61-b1f6-2db0a3c60a6d",
+        "agent_path": "/root/detector_environment",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      }
+    },
+    {
+      "source_line": 1137,
+      "source_record_sha256": "b7a18c9e9c94278c5544d586b81c75f652ba0759b649c13c2ee9a993b2919e4e",
+      "timestamp": "2026-11-10T12:21:05.127Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_f965aea1b64e4a3f8f622c29b029b522",
+        "kind": "started",
+        "agent_thread_id": "01a1c567-9fdc-7ee2-b95e-95151460b5a9",
+        "agent_path": "/root/detector_input_audit",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      }
+    },
+    {
+      "source_line": 1186,
+      "source_record_sha256": "2670b99f4df0af677350088dc408cb1f94beed8eea91d58f2037c9be4ae38044",
+      "timestamp": "2026-11-10T12:22:44.742Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_07db7467225f43c4b0e148729ff4658f",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c567-82f5-7f61-b1f6-2db0a3c60a6d",
+        "agent_path": "/root/detector_environment",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 1191,
+      "source_record_sha256": "9e18dd66b5ae8608f57937f6d2d3fe912e894b3af6a888482a5841e63e2868b5",
+      "timestamp": "2026-11-10T12:22:47.990Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_e45223d1e5bb49bdb6341cbd647010ba",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c567-9fdc-7ee2-b95e-95151460b5a9",
+        "agent_path": "/root/detector_input_audit",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 1207,
+      "source_record_sha256": "0b3e30a95a2c511b6fe5bac634e433f6252a0e4a1926b726d00289920124ff13",
+      "timestamp": "2026-11-10T12:23:54.963Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c567-9fe6-7dc2-8f09-cb6771120c08",
+        "kind": "completed",
+        "agent_thread_id": "01a1c567-9fdc-7ee2-b95e-95151460b5a9",
+        "agent_path": "/root/detector_input_audit",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 1208,
+      "source_record_sha256": "7e8a5e995e35169d69f3e53722e995686267d86b9c0e48ea778ad1ac816f4f30",
+      "timestamp": "2026-11-10T12:24:06.009Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c567-82fe-7e31-b304-6b20abc5bd79",
+        "kind": "completed",
+        "agent_thread_id": "01a1c567-82f5-7f61-b1f6-2db0a3c60a6d",
+        "agent_path": "/root/detector_environment",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 1245,
+      "source_record_sha256": "87b1e25a613ea50af42c9cdbe19c92d6aafcfc7095876c1fd4ff15ccddf2c1b4",
+      "timestamp": "2026-11-10T12:25:33.028Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_1637b41b542e4088b1faebf630a247fc",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c567-9fdc-7ee2-b95e-95151460b5a9",
+        "agent_path": "/root/detector_input_audit",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 1282,
+      "source_record_sha256": "ea6b4bf8a1c34736cebe77fe927677bae6a2d33a9f78fe30fcf8ef4e53fea279",
+      "timestamp": "2026-11-10T12:26:59.341Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c56b-b664-71c1-8c2c-738dba990839",
+        "kind": "completed",
+        "agent_thread_id": "01a1c567-9fdc-7ee2-b95e-95151460b5a9",
+        "agent_path": "/root/detector_input_audit",
+        "model": null,
+        "reasoning_effort": null
+      }
+    }
+  ]
+}

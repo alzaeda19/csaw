@@ -1,0 +1,19 @@
+The recovered model needs **one extra CS-high clock after BUSY falls** before its result can be read. BUSY falls on the fourth clock including launch; immediate extraction fails the original pair in both directions. This conflicts with the interface’s load-on-falling-edge statement. The candidate and expected values remain unchanged.
+
+Post-update sampling matches the recovered MISO register and the [official generic SoftSPI call order](https://github.com/micropython/micropython/blob/4ce2dd2cdab6e57f3982fc899f15a2103d71b0be/drivers/bus/softspi.c). Actual board firmware and physical timing remain unknown.
+
+- **106-word suites:** 1,288 assertions pass at 50 kHz; 1,720 pass at 1 MHz with pauses. These include readback and inverse invariants—not independent cipher answers.
+- **25 scenarios:** 19 pass, three fail and three block extraction. All outcomes and earlier failures are preserved.
+- All six originals pass before/after hash checks; prior evidence is unchanged.
+
+Saved report and records:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_followup_2026-11-06/`
+
+From the restart directory, reproduce with:
+
+```sh
+python3 baseline_followup_2026-11-06/study.py
+python3 baseline_followup_2026-11-06/records/audit_preservation.py
+```
+
+Raw transcript export and exact serving-model identification remain unavailable; the logging gaps are documented.

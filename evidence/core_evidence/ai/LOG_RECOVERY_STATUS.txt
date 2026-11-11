@@ -1,0 +1,19 @@
+BOUNDED AI LOG RECOVERY — COMPLETE WITH RESIDUAL GAPS
+
+The new recovered_records bundle contains 2,271 distinct visible native records: 378 additional records relative to the checked prior exports, plus 1,893 existing records reverified/carried forward. These counts apply to recovered_records only; do not add earlier scoped-export counts because records overlap. Records are not the same as conversations or unique commands.
+
+What was recovered or located:
+- All 17 historical clean-stage prompts and final replies are directly portable. They already existed in a November 7 export; they are not newly reconstructed responses. This includes baseline_recovery and baseline_followup, previously marked missing by an older index.
+- Four root final replies were recovered from later records: Mac execution, bitstream verification, baseline detector and clean AES detector.
+- Additional clean AES setup, comparison, readiness review and bounded current-work records were preserved.
+
+Start recovered_records/README.md and RECOVERY_INDEX.json for exact source/thread/line mappings. The new recovery manifest was independently checked before copying: 189 files matched its supplied SHA256 manifest. SOURCE_COPY_RECEIPTS.json gives original-to-submission locations and hashes. Historical source fields were independently verified by the recovery orchestrator; packaging rechecked file bytes, not every native session field.
+
+Remaining limits:
+- Encrypted collaboration bodies remain unreadable. They were not decrypted or invented.
+- Originally truncated tool outputs cannot be restored from these captures.
+- Mixed earlier history, pre-clean/solution-contaminated material, hidden reasoning, and system/developer/platform messages are excluded.
+- Other unmapped chats and original Claude conversations were not enumerated/exported. The separate Claude review input/output retained in verification is available, but does not replace missing original Claude histories.
+- Current coordinator snapshot cutoff: 2026-11-10 13:01:10.860 UTC (08:01:10.860 Eastern). Readiness child has a separate recorded cutoff. Later recovery/final packaging/final chat replies are outside those snapshots.
+
+This narrows the AI-log gap; it does not establish complete project-wide transcript coverage or fulfillment of the comprehensive-log grading requirement. Prior indexes remain byte-identical historical records and may describe gaps now narrowed by this supplement. Nothing was fabricated to fill missing conversation content.

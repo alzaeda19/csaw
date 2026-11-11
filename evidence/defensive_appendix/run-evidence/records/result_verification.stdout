@@ -1,0 +1,42 @@
+{
+  "utc": "2026-11-10T18:17:51.221413+00:00",
+  "all_pass": true,
+  "model_rows": 92,
+  "scored_designs": 23,
+  "recomputed_confusions": {
+    "HT1": {
+      "TP": 9,
+      "FN": 5,
+      "FP": 5,
+      "TN": 4
+    },
+    "HT2": {
+      "TP": 6,
+      "FN": 8,
+      "FP": 6,
+      "TN": 3
+    },
+    "HT3": {
+      "TP": 0,
+      "FN": 14,
+      "FP": 1,
+      "TN": 8
+    },
+    "HT4": {
+      "TP": 4,
+      "FN": 10,
+      "FP": 2,
+      "TN": 7
+    },
+    "ensemble": {
+      "TP": 9,
+      "FN": 5,
+      "FP": 7,
+      "TN": 2
+    }
+  },
+  "preservation_checks": 152,
+  "repository_unchanged": true,
+  "frozen_runner_hashes_match": true,
+  "no_inference_rerun": true
+}

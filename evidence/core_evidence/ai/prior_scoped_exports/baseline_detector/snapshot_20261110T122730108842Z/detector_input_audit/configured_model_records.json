@@ -1,0 +1,26 @@
+{
+  "note": "Configured native model and effort labels do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [
+    {
+      "source_line": 10,
+      "source_record_sha256": "56493b67ed5077a12bbaea686ae7075f55bb3bb62071e44ee4cced9e81f01f34",
+      "timestamp": "2026-11-10T12:21:06.097Z",
+      "source_fields": {
+        "turn_id": "01a1c567-9fe6-7dc2-8f09-cb6771120c08",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    },
+    {
+      "source_line": 112,
+      "source_record_sha256": "2ede7dc8b9a9777b8b0adee820f6341fba21b4831dc1b3f1385ad4d6ad91e362",
+      "timestamp": "2026-11-10T12:25:33.111Z",
+      "source_fields": {
+        "turn_id": "01a1c56b-b664-71c1-8c2c-738dba990839",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    }
+  ],
+  "delegation_activity_labels": []
+}

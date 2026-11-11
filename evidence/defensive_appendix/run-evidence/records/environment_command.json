@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/bin/python",
+    "-c",
+    "import sys,platform,json,importlib.metadata,torch; print(json.dumps({'executable':sys.executable,'python':sys.version,'system':platform.platform(),'machine':platform.machine(),'torch_path':torch.__file__,'versions':{k:importlib.metadata.version(k) for k in ['torch','torch-geometric','numpy','networkx','pyverilog','pygraphviz','PyYAML']}},indent=2))"
+  ],
+  "exit_code": 0,
+  "utc": "2026-11-10T18:14:30.657966+00:00"
+}

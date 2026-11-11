@@ -1,0 +1,58 @@
+{
+  "archive_sha256": "3912fd8e7afca470b57132c5af34215967c1b0e579ef2c0bc345de6a448c2832",
+  "files": [
+    {
+      "path": "sources/designs/aes_128/aes_128.v",
+      "sha256": "60835b67fb0c424ab4a1a5d7ee11a2b5a7301bf45677def9653f7491c92cb1a6",
+      "matches_orchestrator_input": true,
+      "system_tasks": [],
+      "includes": [
+        "round.v",
+        "table.v"
+      ]
+    },
+    {
+      "path": "sources/designs/aes_128/round.v",
+      "sha256": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+      "matches_orchestrator_input": true,
+      "system_tasks": [],
+      "includes": []
+    },
+    {
+      "path": "sources/designs/aes_128/table.v",
+      "sha256": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157",
+      "matches_orchestrator_input": true,
+      "system_tasks": [],
+      "includes": []
+    },
+    {
+      "path": "sources/testbenches/tb_aes_128.v",
+      "sha256": "3d46061c957cea3ebd049f767928d5b6746c2a329eb4403040d7c1f969c378a5",
+      "matches_orchestrator_input": true,
+      "system_tasks": [
+        "$display",
+        "$finish",
+        "$time"
+      ],
+      "includes": []
+    }
+  ],
+  "orchestrator_log_hashes_verified": {
+    "compile": true,
+    "simulate": true,
+    "iverilog_version": true,
+    "vvp_version": true,
+    "host": true
+  },
+  "orchestrator_result": {
+    "scope": "Unmodified supplied clean AES reference, five supplied expected-value vectors only; no notebook execution, detector use, generated hardware, key recovery, or comparison with CSAW recovered baseline.",
+    "compile_exit": 0,
+    "simulation_exit": 0,
+    "pass_lines": 5,
+    "fail_lines": 0,
+    "summary_passes_5": true,
+    "summary_fails_0": true,
+    "pass": true,
+    "sources_unchanged": true
+  }
+}

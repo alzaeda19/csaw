@@ -1,0 +1,6 @@
+read_verilog -sv sources/baseline.v sources/protocol_dut.sv
+synth_ice40 -device u -top protocol_dut -json mapped.json
+delete t:$scopeinfo
+check -assert -mapped -nolatches
+write_json mapped_clean.json
+tee -o mapped_stat.json stat -json

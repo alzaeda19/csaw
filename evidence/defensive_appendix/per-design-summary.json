@@ -1,0 +1,692 @@
+[
+  {
+    "design_id": "design_001",
+    "design": "PIC16F84",
+    "family": "PIC16F84",
+    "truth": 0,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.6075280904769897
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.5159155130386353
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.28634870052337646
+      },
+      "HT4": {
+        "prediction": 1,
+        "score": 0.6354759335517883
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_002",
+    "design": "RC5",
+    "family": "RC5",
+    "truth": 0,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.6695111393928528
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.6515262722969055
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.2269628793001175
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.08970826119184494
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_003",
+    "design": "RC6",
+    "family": "RC6",
+    "truth": 0,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.6531311273574829
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.6515262722969055
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.2269628793001175
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.08970826119184494
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_004",
+    "design": "RS232",
+    "family": "RS232",
+    "truth": 0,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.8330113887786865
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.5365912318229675
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.138243168592453
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.26271945238113403
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_005",
+    "design": "det_1011",
+    "family": "det_1011",
+    "truth": 0,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 0,
+        "score": 0.14806710183620453
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.08770928531885147
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.024045463651418686
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.021940045058727264
+      },
+      "Ensemble": {
+        "prediction": 0,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_006",
+    "design": "spi_master",
+    "family": "spi_master",
+    "truth": 0,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.6007084250450134
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.8009899258613586
+      },
+      "HT3": {
+        "prediction": 1,
+        "score": 0.6709396839141846
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.18927808105945587
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_007",
+    "design": "syncRAM",
+    "family": "syncRAM",
+    "truth": 0,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 0,
+        "score": 0.05444930121302605
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.2892717123031616
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.20595332980155945
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.006664101034402847
+      },
+      "Ensemble": {
+        "prediction": 0,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_008",
+    "design": "vga",
+    "family": "vga",
+    "truth": 0,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 0,
+        "score": 0.4304688274860382
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.8343597650527954
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.3885757327079773
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.26170027256011963
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_009",
+    "design": "xtea",
+    "family": "xtea",
+    "truth": 0,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 0,
+        "score": 0.2044452279806137
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.42125800251960754
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.20655882358551025
+      },
+      "HT4": {
+        "prediction": 1,
+        "score": 0.9679168462753296
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_010",
+    "design": "PIC16F84-T100",
+    "family": "PIC16F84",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.896357536315918
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.5159155130386353
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.47100335359573364
+      },
+      "HT4": {
+        "prediction": 1,
+        "score": 0.6354759335517883
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_011",
+    "design": "PIC16F84-T200",
+    "family": "PIC16F84",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.896357536315918
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.5159155130386353
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.47100335359573364
+      },
+      "HT4": {
+        "prediction": 1,
+        "score": 0.6354759335517883
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_012",
+    "design": "PIC16F84-T300",
+    "family": "PIC16F84",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.896357536315918
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.5159155130386353
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.47100335359573364
+      },
+      "HT4": {
+        "prediction": 1,
+        "score": 0.6354759335517883
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_013",
+    "design": "PIC16F84-T400",
+    "family": "PIC16F84",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.896357536315918
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.5159155130386353
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.47100335359573364
+      },
+      "HT4": {
+        "prediction": 1,
+        "score": 0.6354759335517883
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_014",
+    "design": "RS232-T100",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.7228475213050842
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.49748554825782776
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.138243168592453
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.26271945238113403
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_015",
+    "design": "RS232-T200",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.767744779586792
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.25555822253227234
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.07945422828197479
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.26272451877593994
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_016",
+    "design": "RS232-T300",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.8310876488685608
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.5366833806037903
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.18753263354301453
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.2164117991924286
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_017",
+    "design": "RS232-T400",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.8122522830963135
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.3795439898967743
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.18753263354301453
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.19514447450637817
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_018",
+    "design": "RS232-T500",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 1,
+        "score": 0.827180027961731
+      },
+      "HT2": {
+        "prediction": 1,
+        "score": 0.5366833806037903
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.18753263354301453
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.251033753156662
+      },
+      "Ensemble": {
+        "prediction": 1,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_019",
+    "design": "RS232-T600",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 0,
+        "score": 0.10404796898365021
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.4067818522453308
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.21266517043113708
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.03196319192647934
+      },
+      "Ensemble": {
+        "prediction": 0,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_020",
+    "design": "RS232-T700",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 0,
+        "score": 0.10404796898365021
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.4067818522453308
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.21266517043113708
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.03196319192647934
+      },
+      "Ensemble": {
+        "prediction": 0,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_021",
+    "design": "RS232-T800",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 0,
+        "score": 0.04140124097466469
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.4023483991622925
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.21266517043113708
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.03196197375655174
+      },
+      "Ensemble": {
+        "prediction": 0,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_022",
+    "design": "RS232-T900",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 0,
+        "score": 0.10690198093652725
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.4067818522453308
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.21266517043113708
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.03196319192647934
+      },
+      "Ensemble": {
+        "prediction": 0,
+        "score": null
+      }
+    }
+  },
+  {
+    "design_id": "design_023",
+    "design": "RS232-T901",
+    "family": "RS232",
+    "truth": 1,
+    "status": "scored",
+    "route": "exact_DFG",
+    "outputs": {
+      "HT1": {
+        "prediction": 0,
+        "score": 0.10409978032112122
+      },
+      "HT2": {
+        "prediction": 0,
+        "score": 0.4066426753997803
+      },
+      "HT3": {
+        "prediction": 0,
+        "score": 0.21266517043113708
+      },
+      "HT4": {
+        "prediction": 0,
+        "score": 0.028703227639198303
+      },
+      "Ensemble": {
+        "prediction": 0,
+        "score": null
+      }
+    }
+  }
+]

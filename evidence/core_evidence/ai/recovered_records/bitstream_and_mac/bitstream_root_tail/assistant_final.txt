@@ -1,0 +1,21 @@
+**Functional equivalence passed within the documented digital-model assumptions.** These checks ran on your Mac against the actual regenerated binary.
+
+| Check | Result |
+|---|---|
+| All 135 state bits and three outputs | **PASS**, under the explicit matching-state relation |
+| Full transaction, every 32-bit payload, both modes | **PASS**, allowing independent initial RAM read states |
+| 352 simulated transactions per model, including all mode transitions | **PASS**, zero differences |
+| Original-host known-answer checks | **24/24 pass per model** |
+
+**The baseline readiness failure remains:** reading immediately when BUSY falls produced **8/8 known-answer failures in both models**. The regenerated image preserves that behavior; equivalence does not fix it.
+
+This does **not** establish board readiness. Automatic pins, assumed package, electrical requirements and external timing still need authoritative validation.
+
+Saved evidence:
+
+- [Technical report and board handoff](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/REPORT.md)
+- [AI records and gaps](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/AI_RECORD.md)
+
+All **358 evidence files** were hashed and verified. Failures and timeouts remain preserved. The AI export contains **597 records**, with encrypted message bodies and the snapshot cutoff explicitly documented.
+
+Your repository and six original challenge files remain unchanged. No solutions were consulted, and no board was programmed.

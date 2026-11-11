@@ -1,0 +1,1672 @@
+{
+  "utc": "2026-11-07T17:28:55.263630+00:00",
+  "inputs_unchanged": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/baseline.v",
+      "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "bytes": 1213314
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/protocol_dut.sv",
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "bytes": 465
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/mapped_clean.json",
+      "sha256": "419168e479327f0ade4c8e8026719d80963fb18838eaf90e964ee4b492d84492",
+      "bytes": 2334202
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/share/yosys/ice40/cells_sim.v",
+      "sha256": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+      "bytes": 153943
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "bytes": 370
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/yosys",
+      "sha256": "2f9ccb27f821a8da68d45b6ac6b6093338404c205d75d9cb2cee0a049326761e",
+      "bytes": 25957712
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/eqy",
+      "sha256": "ce7ac19aa7451e6322b7ba12f945826d2cfeb885ff58bf632bafd1d5bad00bf8",
+      "bytes": 406
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/eqy",
+      "sha256": "5e89cf936cefb2c0d1179113f3d0c3086bcc9b9af3f6b6c67e7a509c4e51873b",
+      "bytes": 56427
+    }
+  ],
+  "models": {
+    "gold": {
+      "cell_counts": {
+        "$dff": 75,
+        "$mux": 4307,
+        "$reduce_bool": 1,
+        "$reduce_and": 1,
+        "$reduce_or": 35,
+        "$not": 5,
+        "$logic_not": 436,
+        "$and": 4
+      },
+      "state_bits": 135,
+      "initialized_zero_state_bits": 71,
+      "independent_unspecified_RAM_read_state_bits": 64,
+      "RAM_read_registers": [
+        {
+          "name": "recovered.ram40_6_11.RDATA_I",
+          "bits": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "init": null
+        },
+        {
+          "name": "recovered.ram40_6_5.RDATA_I",
+          "bits": [
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137
+          ],
+          "init": null
+        },
+        {
+          "name": "recovered.ram40_6_7.RDATA_I",
+          "bits": [
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105
+          ],
+          "init": null
+        },
+        {
+          "name": "recovered.ram40_6_9.RDATA_I",
+          "bits": [
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73
+          ],
+          "init": null
+        }
+      ],
+      "all_clock_ports_positive_SCK": true,
+      "blackboxes": 0,
+      "unexpanded_memories": 0,
+      "json_sha256": "389627d8536a02832457d96fea0e1aa27dbb0fde08bc0ba5960dd2ca4898fe37",
+      "rtlil_sha256": "9fe1dfbcb6762d40bfd07d005dcbfbc47738074649e01cfeb5fa495e9e00c1a0"
+    },
+    "gate": {
+      "cell_counts": {
+        "$dff": 75,
+        "$mux": 5536,
+        "$reduce_or": 32,
+        "$and": 4,
+        "$not": 4
+      },
+      "state_bits": 135,
+      "initialized_zero_state_bits": 71,
+      "independent_unspecified_RAM_read_state_bits": 64,
+      "RAM_read_registers": [
+        {
+          "name": "recovered.ram40_6_11.RDATA_I",
+          "bits": [
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165
+          ],
+          "init": null
+        },
+        {
+          "name": "recovered.ram40_6_5.RDATA_I",
+          "bits": [
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129
+          ],
+          "init": null
+        },
+        {
+          "name": "recovered.ram40_6_7.RDATA_I",
+          "bits": [
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97
+          ],
+          "init": null
+        },
+        {
+          "name": "recovered.ram40_6_9.RDATA_I",
+          "bits": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41
+          ],
+          "init": null
+        }
+      ],
+      "all_clock_ports_positive_SCK": true,
+      "blackboxes": 0,
+      "unexpanded_memories": 0,
+      "json_sha256": "d40688be7bc5f616ecdd094b586506f6abcfb420f34a0d1316e980cdefdb528a",
+      "rtlil_sha256": "83770877abab02bdcebba1625d1fa0657b1ad84bd581c72ee9516e74ce9087a2"
+    },
+    "decoded": {
+      "cell_counts": {
+        "$dff": 75,
+        "$mux": 4513,
+        "$reduce_bool": 1,
+        "$reduce_and": 1,
+        "$reduce_or": 33,
+        "$not": 5,
+        "$logic_not": 421,
+        "$and": 4
+      },
+      "state_bits": 135,
+      "initialized_zero_state_bits": 71,
+      "independent_unspecified_RAM_read_state_bits": 64,
+      "RAM_read_registers": [
+        {
+          "name": "regenerated.ram40_6_11.RDATA_I",
+          "bits": [
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107
+          ],
+          "init": null
+        },
+        {
+          "name": "regenerated.ram40_6_13.RDATA_I",
+          "bits": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75
+          ],
+          "init": null
+        },
+        {
+          "name": "regenerated.ram40_6_7.RDATA_I",
+          "bits": [
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171
+          ],
+          "init": null
+        },
+        {
+          "name": "regenerated.ram40_6_9.RDATA_I",
+          "bits": [
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139
+          ],
+          "init": null
+        }
+      ],
+      "all_clock_ports_positive_SCK": true,
+      "blackboxes": 0,
+      "unexpanded_memories": 0,
+      "json_sha256": "1885146192394a45ae9434c7a9dbcd20d8e6b017d39691ac99f245e021eab0be",
+      "rtlil_sha256": "6277feb6d3e5d92dad171e64f77e6ba3c1890dc4ed4709d63b739310d72f81c2"
+    }
+  },
+  "transitions": {
+    "mapped": {
+      "status": "PASS",
+      "comparator_widths": [
+        1,
+        1,
+        1,
+        135
+      ],
+      "assert_cells": 1,
+      "assume_cells": 0,
+      "independent_anyseq_undef_bits": 1,
+      "state_correspondence": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_mapped_state_correspondence.json",
+      "proof_result": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+          "-Q",
+          "-T",
+          "-s",
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_mapped_undef_independent.ys"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_mapped_undef_independent",
+        "utc_start": "2026-11-07T17:27:01.421025+00:00",
+        "timeout_seconds": 240,
+        "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "PYTHONNOUSERSITE": "1",
+          "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+          "LC_ALL": "C",
+          "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+          "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+          "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+        },
+        "returncode": 0,
+        "timed_out": false,
+        "utc_finish": "2026-11-07T17:27:07.010659+00:00",
+        "stdout_sha256": "11e8dc93e8105ba8f7ddc6686c193c7a11c121d75127abdc68dff790a528c246",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "scope": "Arbitrary paired 135-bit current state and arbitrary common inputs. Includes every next-state bit and all3 outputs. Initial-state sets match under relation (71 zeros,64 unspecified RAM read bits); no claim of same powerup trace for independent choices of the unspecified bits."
+    },
+    "decoded": {
+      "status": "PASS",
+      "comparator_widths": [
+        1,
+        1,
+        1,
+        135
+      ],
+      "assert_cells": 1,
+      "assume_cells": 0,
+      "independent_anyseq_undef_bits": 2,
+      "state_correspondence": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded_state_correspondence.json",
+      "proof_result": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+          "-Q",
+          "-T",
+          "-s",
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded_undef_independent.ys"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded_undef_independent",
+        "utc_start": "2026-11-07T17:27:01.421034+00:00",
+        "timeout_seconds": 240,
+        "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "PYTHONNOUSERSITE": "1",
+          "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+          "LC_ALL": "C",
+          "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+          "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+          "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+        },
+        "returncode": 0,
+        "timed_out": false,
+        "utc_finish": "2026-11-07T17:27:05.275239+00:00",
+        "stdout_sha256": "b13ef95220ee418482f7aac8afed594d8e4997b5166bcf237aacfa8757b2efa8",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "scope": "Arbitrary paired 135-bit current state and arbitrary common inputs. Includes every next-state bit and all3 outputs. Initial-state sets match under relation (71 zeros,64 unspecified RAM read bits); no claim of same powerup trace for independent choices of the unspecified bits."
+    }
+  },
+  "transactions": {
+    "0": {
+      "status": "PASS",
+      "coverage": {
+        "mode": 0,
+        "assert_cells": 5,
+        "cover_cells": 1,
+        "assume_cells": 0,
+        "all_models_expanded": true,
+        "RAM_read_registers": {
+          "gold": [
+            {
+              "name": "g.recovered.ram40_6_11.RDATA_I",
+              "bits": [
+                299,
+                300,
+                301,
+                302,
+                303,
+                304,
+                305,
+                306,
+                307,
+                308,
+                309,
+                310,
+                311,
+                312,
+                313,
+                314
+              ],
+              "init": null
+            },
+            {
+              "name": "g.recovered.ram40_6_5.RDATA_I",
+              "bits": [
+                395,
+                396,
+                397,
+                398,
+                399,
+                400,
+                401,
+                402,
+                403,
+                404,
+                405,
+                406,
+                407,
+                408,
+                409,
+                410
+              ],
+              "init": null
+            },
+            {
+              "name": "g.recovered.ram40_6_7.RDATA_I",
+              "bits": [
+                363,
+                364,
+                365,
+                366,
+                367,
+                368,
+                369,
+                370,
+                371,
+                372,
+                373,
+                374,
+                375,
+                376,
+                377,
+                378
+              ],
+              "init": null
+            },
+            {
+              "name": "g.recovered.ram40_6_9.RDATA_I",
+              "bits": [
+                331,
+                332,
+                333,
+                334,
+                335,
+                336,
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344,
+                345,
+                346
+              ],
+              "init": null
+            }
+          ],
+          "gate": [
+            {
+              "name": "t.regenerated.ram40_6_11.RDATA_I",
+              "bits": [
+                13147,
+                13148,
+                13149,
+                13150,
+                13151,
+                13152,
+                13153,
+                13154,
+                13155,
+                13156,
+                13157,
+                13158,
+                13159,
+                13160,
+                13161,
+                13162
+              ],
+              "init": null
+            },
+            {
+              "name": "t.regenerated.ram40_6_13.RDATA_I",
+              "bits": [
+                13115,
+                13116,
+                13117,
+                13118,
+                13119,
+                13120,
+                13121,
+                13122,
+                13123,
+                13124,
+                13125,
+                13126,
+                13127,
+                13128,
+                13129,
+                13130
+              ],
+              "init": null
+            },
+            {
+              "name": "t.regenerated.ram40_6_7.RDATA_I",
+              "bits": [
+                13211,
+                13212,
+                13213,
+                13214,
+                13215,
+                13216,
+                13217,
+                13218,
+                13219,
+                13220,
+                13221,
+                13222,
+                13223,
+                13224,
+                13225,
+                13226
+              ],
+              "init": null
+            },
+            {
+              "name": "t.regenerated.ram40_6_9.RDATA_I",
+              "bits": [
+                13179,
+                13180,
+                13181,
+                13182,
+                13183,
+                13184,
+                13185,
+                13186,
+                13187,
+                13188,
+                13189,
+                13190,
+                13191,
+                13192,
+                13193,
+                13194
+              ],
+              "init": null
+            }
+          ]
+        },
+        "RAM_read_initial_states_independent": true,
+        "RAM_output_numeric_bit_sets_disjoint": true,
+        "payload": "shared arbitrary stable anyconst 32-bit word",
+        "clock": "every formal transition is one rising SCK edge; all state clocks audited equal SCK, positive polarity",
+        "schedule": {
+          "reset_cycle": 0,
+          "deassert_reset_cycle": 1,
+          "load_cycles": [
+            2,
+            33
+          ],
+          "launch_cycle": 34,
+          "seven_extra_clock_cycles": [
+            35,
+            41
+          ],
+          "read_cycles": [
+            42,
+            73
+          ],
+          "final_observation_state": 74,
+          "solver_states": 76
+        },
+        "compared_outputs": [
+          "MISO",
+          "BUSY",
+          "ICE_LED"
+        ],
+        "comparison_states": [
+          1,
+          74
+        ],
+        "final_read": "31 registered samples plus final MISO = 32 bits",
+        "source_sha256": {
+          "gold_prepared.il": "9fe1dfbcb6762d40bfd07d005dcbfbc47738074649e01cfeb5fa495e9e00c1a0",
+          "decoded_prepared.il": "6277feb6d3e5d92dad171e64f77e6ba3c1890dc4ed4709d63b739310d72f81c2"
+        },
+        "limitations": [
+          "bounded exact protocol schedule, not all-sequence equivalence",
+          "functional digital model only; no analog/timing or board-programming claim",
+          "no independent specification of computed output, only equality between artifacts"
+        ]
+      },
+      "trace": {
+        "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_compact_cover.vcd",
+        "sha256": "1ca44c77980beeffa5a05326440491751e05df7f5eb4fe0a8a50a92ac3460882",
+        "bytes": 119134,
+        "final_cycle": 74,
+        "samples_registered": 31,
+        "final_bit_observed_separately": true,
+        "final_32bit_values_equal": true,
+        "all_three_external_outputs_equal": true,
+        "mode": 0,
+        "reset_deasserted": true,
+        "final_read_CS_inactive": true,
+        "trace_timescale": "1 ns as emitted by SMTBMC; abstract steps, not timing simulation"
+      }
+    },
+    "1": {
+      "status": "PASS",
+      "coverage": {
+        "mode": 1,
+        "assert_cells": 5,
+        "cover_cells": 1,
+        "assume_cells": 0,
+        "all_models_expanded": true,
+        "RAM_read_registers": {
+          "gold": [
+            {
+              "name": "g.recovered.ram40_6_11.RDATA_I",
+              "bits": [
+                299,
+                300,
+                301,
+                302,
+                303,
+                304,
+                305,
+                306,
+                307,
+                308,
+                309,
+                310,
+                311,
+                312,
+                313,
+                314
+              ],
+              "init": null
+            },
+            {
+              "name": "g.recovered.ram40_6_5.RDATA_I",
+              "bits": [
+                395,
+                396,
+                397,
+                398,
+                399,
+                400,
+                401,
+                402,
+                403,
+                404,
+                405,
+                406,
+                407,
+                408,
+                409,
+                410
+              ],
+              "init": null
+            },
+            {
+              "name": "g.recovered.ram40_6_7.RDATA_I",
+              "bits": [
+                363,
+                364,
+                365,
+                366,
+                367,
+                368,
+                369,
+                370,
+                371,
+                372,
+                373,
+                374,
+                375,
+                376,
+                377,
+                378
+              ],
+              "init": null
+            },
+            {
+              "name": "g.recovered.ram40_6_9.RDATA_I",
+              "bits": [
+                331,
+                332,
+                333,
+                334,
+                335,
+                336,
+                337,
+                338,
+                339,
+                340,
+                341,
+                342,
+                343,
+                344,
+                345,
+                346
+              ],
+              "init": null
+            }
+          ],
+          "gate": [
+            {
+              "name": "t.regenerated.ram40_6_11.RDATA_I",
+              "bits": [
+                13147,
+                13148,
+                13149,
+                13150,
+                13151,
+                13152,
+                13153,
+                13154,
+                13155,
+                13156,
+                13157,
+                13158,
+                13159,
+                13160,
+                13161,
+                13162
+              ],
+              "init": null
+            },
+            {
+              "name": "t.regenerated.ram40_6_13.RDATA_I",
+              "bits": [
+                13115,
+                13116,
+                13117,
+                13118,
+                13119,
+                13120,
+                13121,
+                13122,
+                13123,
+                13124,
+                13125,
+                13126,
+                13127,
+                13128,
+                13129,
+                13130
+              ],
+              "init": null
+            },
+            {
+              "name": "t.regenerated.ram40_6_7.RDATA_I",
+              "bits": [
+                13211,
+                13212,
+                13213,
+                13214,
+                13215,
+                13216,
+                13217,
+                13218,
+                13219,
+                13220,
+                13221,
+                13222,
+                13223,
+                13224,
+                13225,
+                13226
+              ],
+              "init": null
+            },
+            {
+              "name": "t.regenerated.ram40_6_9.RDATA_I",
+              "bits": [
+                13179,
+                13180,
+                13181,
+                13182,
+                13183,
+                13184,
+                13185,
+                13186,
+                13187,
+                13188,
+                13189,
+                13190,
+                13191,
+                13192,
+                13193,
+                13194
+              ],
+              "init": null
+            }
+          ]
+        },
+        "RAM_read_initial_states_independent": true,
+        "RAM_output_numeric_bit_sets_disjoint": true,
+        "payload": "shared arbitrary stable anyconst 32-bit word",
+        "clock": "every formal transition is one rising SCK edge; all state clocks audited equal SCK, positive polarity",
+        "schedule": {
+          "reset_cycle": 0,
+          "deassert_reset_cycle": 1,
+          "load_cycles": [
+            2,
+            33
+          ],
+          "launch_cycle": 34,
+          "seven_extra_clock_cycles": [
+            35,
+            41
+          ],
+          "read_cycles": [
+            42,
+            73
+          ],
+          "final_observation_state": 74,
+          "solver_states": 76
+        },
+        "compared_outputs": [
+          "MISO",
+          "BUSY",
+          "ICE_LED"
+        ],
+        "comparison_states": [
+          1,
+          74
+        ],
+        "final_read": "31 registered samples plus final MISO = 32 bits",
+        "source_sha256": {
+          "gold_prepared.il": "9fe1dfbcb6762d40bfd07d005dcbfbc47738074649e01cfeb5fa495e9e00c1a0",
+          "decoded_prepared.il": "6277feb6d3e5d92dad171e64f77e6ba3c1890dc4ed4709d63b739310d72f81c2"
+        },
+        "limitations": [
+          "bounded exact protocol schedule, not all-sequence equivalence",
+          "functional digital model only; no analog/timing or board-programming claim",
+          "no independent specification of computed output, only equality between artifacts"
+        ]
+      },
+      "trace": {
+        "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_compact_cover.vcd",
+        "sha256": "f0d2274827ee1d127b2752c8fee3718fcbdc2619f777e9b2116b97adc01ebf57",
+        "bytes": 119134,
+        "final_cycle": 74,
+        "samples_registered": 31,
+        "final_bit_observed_separately": true,
+        "final_32bit_values_equal": true,
+        "all_three_external_outputs_equal": true,
+        "mode": 1,
+        "reset_deasserted": true,
+        "final_read_CS_inactive": true,
+        "trace_timescale": "1 ns as emitted by SMTBMC; abstract steps, not timing simulation"
+      }
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-07_20261107T172039Z/formal/baseline_mapped/audit_prepare.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/audit_prepare",
+      "utc_start": "2026-11-07T17:22:43.041215+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 1,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:22:43.061567+00:00",
+      "stdout_sha256": "069f663707189a11b6320f0c5f8367cc642293be47cc4595fbc6558ad6fe37c0",
+      "stderr_sha256": "06ca65570a18dea876a6b5dd7931e0a407d01853bacdec18b66dd45c07fbd8a7",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/audit_prepare/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/audit_prepare.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/audit_prepare_02",
+      "utc_start": "2026-11-07T17:22:49.011269+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:22:49.416339+00:00",
+      "stdout_sha256": "f41484355bef0730b83e7a4945a4f86717fc59fbabfbe94b23f3d0a397e58507",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/audit_prepare_02/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/builtin.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/builtin_equiv",
+      "utc_start": "2026-11-07T17:23:04.617487+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 124,
+      "timed_out": true,
+      "utc_finish": "2026-11-07T17:27:04.664214+00:00",
+      "stdout_sha256": "7f264bc8c4947b3d2eed8ccbf0b31ba1d6f3cbe2c2403792a2b223daba27ff77",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/builtin_equiv/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/decoded_prepare.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/decoded_prepare",
+      "utc_start": "2026-11-07T17:23:39.380600+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:23:50.602187+00:00",
+      "stdout_sha256": "71c45110d84d35c8f0cff44990f0b02ecf4d6c502e2eea0f02ac94ac655ccd9c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/decoded_prepare/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys-smtbmc",
+        "-s",
+        "bitwuzla",
+        "-t",
+        "76",
+        "--presat",
+        "--dump-vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_counterexample.vcd",
+        "--dump-yw",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_counterexample.yw",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0.smt2"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_bmc",
+      "utc_start": "2026-11-07T17:23:54.738357+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "6503a39b52b1c6bb2b6caf140ff46c430f50b5dc5a2ac86f87b0e5a5a7908206",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:24:18.823451+00:00",
+      "stdout_sha256": "d7b141b843ff80882f9be8e9793e334c33895f0df2b8aecab62f596e23c58288",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_bmc/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys-smtbmc",
+        "-s",
+        "bitwuzla",
+        "-t",
+        "76",
+        "--presat",
+        "-c",
+        "--dump-vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_compact_cover.vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_compact.smt2"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_compact_cover",
+      "utc_start": "2026-11-07T17:27:28.243749+00:00",
+      "timeout_seconds": 120,
+      "tool_wrapper_sha256": "6503a39b52b1c6bb2b6caf140ff46c430f50b5dc5a2ac86f87b0e5a5a7908206",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:27:55.187937+00:00",
+      "stdout_sha256": "9825890b318a0c0c39cc9b39cfca2c359adb8270bdc0db3ae2cbae48c04d6021",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_compact_cover/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_compact.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_compact_prepare",
+      "utc_start": "2026-11-07T17:27:19.587099+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:27:19.826521+00:00",
+      "stdout_sha256": "0f867bc7875173f1b40e9c8acba9c9e5af5a61dd86bd486278f4c8b5ad2c7c40",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_compact_prepare/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys-smtbmc",
+        "-s",
+        "bitwuzla",
+        "-t",
+        "76",
+        "--presat",
+        "-c",
+        "--dump-vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_cover.vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0.smt2"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_cover",
+      "utc_start": "2026-11-07T17:24:18.824435+00:00",
+      "timeout_seconds": 120,
+      "tool_wrapper_sha256": "6503a39b52b1c6bb2b6caf140ff46c430f50b5dc5a2ac86f87b0e5a5a7908206",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:25:40.288549+00:00",
+      "stdout_sha256": "f4ad739015bec121bf27ed92ae6bd3e4f497778a2d93b84775652621dc400ae6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_cover/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_prepare",
+      "utc_start": "2026-11-07T17:23:54.353452+00:00",
+      "timeout_seconds": 60,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:23:54.692721+00:00",
+      "stdout_sha256": "ab167af9e9e5bd3940594994dbdb8b43a1951d0b93d26a628e9baae8ec1afb1f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode0_prepare/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys-smtbmc",
+        "-s",
+        "bitwuzla",
+        "-t",
+        "76",
+        "--presat",
+        "--dump-vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_counterexample.vcd",
+        "--dump-yw",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_counterexample.yw",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1.smt2"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_bmc",
+      "utc_start": "2026-11-07T17:23:54.746248+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "6503a39b52b1c6bb2b6caf140ff46c430f50b5dc5a2ac86f87b0e5a5a7908206",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:24:36.265052+00:00",
+      "stdout_sha256": "efcd371ff442e3bd8c692c88a1dbb5ded658ef41d48cbdeda8daa5ebd5aa3f4a",
+      "stderr_sha256": "80f1570959f7a06f94f7d7d5fb48a22f238c04c934319d50ab85e236d0fb8041",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_bmc/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys-smtbmc",
+        "-s",
+        "bitwuzla",
+        "-t",
+        "76",
+        "--presat",
+        "-c",
+        "--dump-vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_compact_cover.vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_compact.smt2"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_compact_cover",
+      "utc_start": "2026-11-07T17:27:28.243843+00:00",
+      "timeout_seconds": 120,
+      "tool_wrapper_sha256": "6503a39b52b1c6bb2b6caf140ff46c430f50b5dc5a2ac86f87b0e5a5a7908206",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:27:56.805080+00:00",
+      "stdout_sha256": "a7c1b48c624aae28e023776937436551e0f23aa70172b436506dcc92311632f9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_compact_cover/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_compact.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_compact_prepare",
+      "utc_start": "2026-11-07T17:27:19.587082+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:27:19.826813+00:00",
+      "stdout_sha256": "6a4e440260ec8e38afdb6bba5e4f895ae73873de8ac79edc6fb48019f04e6ff5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_compact_prepare/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys-smtbmc",
+        "-s",
+        "bitwuzla",
+        "-t",
+        "76",
+        "--presat",
+        "-c",
+        "--dump-vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_cover.vcd",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1.smt2"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_cover",
+      "utc_start": "2026-11-07T17:24:36.266153+00:00",
+      "timeout_seconds": 120,
+      "tool_wrapper_sha256": "6503a39b52b1c6bb2b6caf140ff46c430f50b5dc5a2ac86f87b0e5a5a7908206",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 124,
+      "timed_out": true,
+      "utc_finish": "2026-11-07T17:26:36.556633+00:00",
+      "stdout_sha256": "481a60d6eaedae47f64e583a58d17bec37adf265b723e5749626a18ea314283c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_cover/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_prepare",
+      "utc_start": "2026-11-07T17:23:54.353384+00:00",
+      "timeout_seconds": 60,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:23:54.699772+00:00",
+      "stdout_sha256": "6039a559b54b9a7883f8659303545ecf86a50365a22763b9acc2fb276b0423f6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/direct_transaction_mode1_prepare/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/eqy",
+        "-j",
+        "2",
+        "-d",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/eqy_01/work",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/proof.eqy"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/eqy_01",
+      "utc_start": "2026-11-07T17:21:50.980470+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "ce7ac19aa7451e6322b7ba12f945826d2cfeb885ff58bf632bafd1d5bad00bf8",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 1,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:22:02.547490+00:00",
+      "stdout_sha256": "1501ff610fa74476738b410d6965e6f3ce696a81fb5aae83590933c4eff037fa",
+      "stderr_sha256": "ca5a0256b2cd900bbb247432f3868efae75347bc9c5bf1b7b15ad21489b11a79",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/eqy_01/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/eqy",
+        "-j",
+        "2",
+        "-d",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/eqy_02/work",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/proof_02.eqy"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/eqy_02",
+      "utc_start": "2026-11-07T17:22:19.565621+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "ce7ac19aa7451e6322b7ba12f945826d2cfeb885ff58bf632bafd1d5bad00bf8",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 1,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:22:33.034855+00:00",
+      "stdout_sha256": "292080f67ea9708de70ba29bc403c3c90b990f8634b71d4e7376176669197d76",
+      "stderr_sha256": "5d1a23d1fdfed5c6b7bedbc59dab00aab5e6ebc39c186850aae8463153212ca3",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/eqy_02/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/bitwuzla",
+        "--version"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/solver_version",
+      "utc_start": "2026-11-07T17:27:48.392350+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "060d3661be1ad72bb27eca4d6cac2f9346c7e74012f1d90d77d6498a4afc8bfa",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:27:48.411261+00:00",
+      "stdout_sha256": "179a5390966e85c2071a87c1b31de13df67460665196f6529f8c4986842f81e5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/solver_version/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-p",
+        "help hierarchy; help delete; help sat; help equiv_induct; version"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/tool_help_01",
+      "utc_start": "2026-11-07T17:22:09.473699+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 1,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:22:09.493247+00:00",
+      "stdout_sha256": "12455e25e7d37908c94ae4124bebef8894c93f2df2ad052eb1df7f15a8ae0d1e",
+      "stderr_sha256": "bf22651da609971ad4263103b81e1ed15639d076327f42422f6745ab8eb056c0",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/tool_help_01/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded_proof",
+      "utc_start": "2026-11-07T17:26:06.018349+00:00",
+      "timeout_seconds": 120,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:26:09.194644+00:00",
+      "stdout_sha256": "779255f606a3dde6b250b8068a856ab4449e7c38e24cbd450df61ba30232ec5c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded_proof/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded_undef_independent.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded_undef_independent",
+      "utc_start": "2026-11-07T17:27:01.421034+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:27:05.275239+00:00",
+      "stdout_sha256": "b13ef95220ee418482f7aac8afed594d8e4997b5166bcf237aacfa8757b2efa8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded_undef_independent/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_mapped.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_mapped_proof",
+      "utc_start": "2026-11-07T17:25:37.811398+00:00",
+      "timeout_seconds": 120,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:25:42.038206+00:00",
+      "stdout_sha256": "25e38141e19c1f59c600c377aaadfcf80c6f04345a406182caf08edb5dec740e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_mapped_proof/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-Q",
+        "-T",
+        "-s",
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_mapped_undef_independent.ys"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_mapped_undef_independent",
+      "utc_start": "2026-11-07T17:27:01.421025+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:27:07.010659+00:00",
+      "stdout_sha256": "11e8dc93e8105ba8f7ddc6686c193c7a11c121d75127abdc68dff790a528c246",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_mapped_undef_independent/result.json"
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+        "-V"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/yosys_version",
+      "utc_start": "2026-11-07T17:27:48.251929+00:00",
+      "timeout_seconds": 240,
+      "tool_wrapper_sha256": "8a6175ee88d6412c3d792c47d0750b8707a8e12cc2222c1322546d47cd85edb9",
+      "environment_overrides": {
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0DazMqN:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS",
+        "LC_ALL": "C",
+        "XDG_CONFIG_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/config",
+        "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/cache",
+        "XDG_DATA_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/state/data"
+      },
+      "returncode": 0,
+      "timed_out": false,
+      "utc_finish": "2026-11-07T17:27:48.323325+00:00",
+      "stdout_sha256": "6a8f43eec7c8c62478ccc91570484997418c476877c8afce2d37d19010d4a2fc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/yosys_version/result.json"
+    }
+  ],
+  "additional_identities": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/decode/regenerated_raw.v",
+      "bytes": 1283498,
+      "sha256": "ec920772bf2fa88a86d98417635a2fb634c99ddfdc9647b4ad43a173e5ed9ccc"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/decode/regenerated_compatible.v",
+      "bytes": 1283506,
+      "sha256": "887dc396321cf66f960376c7cedfe5e817d4ebda6246066708506ad8ad8e4cfc"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/decode/regenerated_protocol_dut.sv",
+      "bytes": 554,
+      "sha256": "e76a783bf2d7902d116669db59b5b11a3070fed79f4b7e4b6b0f0b5f9be486da"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/decode/physical_decoded_correspondence_v3.json",
+      "bytes": 1275982,
+      "sha256": "6343f550c67f0a96fc12b213441e8f5929476e79c9a7d29f92f3efe9ef9574fd"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys-smtbmc",
+      "bytes": 415,
+      "sha256": "6503a39b52b1c6bb2b6caf140ff46c430f50b5dc5a2ac86f87b0e5a5a7908206"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/yosys-smtbmc",
+      "bytes": 75361,
+      "sha256": "0192f63913bdff347912602315504d5a6ed9e3ff8fbf0dbcdc7c33e5b66681d9"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/bitwuzla",
+      "bytes": 320,
+      "sha256": "060d3661be1ad72bb27eca4d6cac2f9346c7e74012f1d90d77d6498a4afc8bfa"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/bitwuzla",
+      "bytes": 3780112,
+      "sha256": "bb475e5f4e6000e0835021a0c3c9e650623192b05101e4a1d4e939ca5733db88"
+    }
+  ]
+}

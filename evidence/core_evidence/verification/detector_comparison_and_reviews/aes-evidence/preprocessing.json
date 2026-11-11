@@ -1,0 +1,68 @@
+{
+  "candidate_sha256": "60835b67fb0c424ab4a1a5d7ee11a2b5a7301bf45677def9653f7491c92cb1a6",
+  "candidate_bytes": 2758,
+  "candidate_lines": 98,
+  "candidate_module": "aes_128",
+  "included_source_files": [
+    "aes_128.v",
+    "round.v",
+    "table.v"
+  ],
+  "testbench_included": false,
+  "source_dependency_hashes": [
+    {
+      "file": "aes_128.v",
+      "source_sha256": "60835b67fb0c424ab4a1a5d7ee11a2b5a7301bf45677def9653f7491c92cb1a6",
+      "includes": [
+        "round.v",
+        "table.v"
+      ],
+      "prepared_sha256": "90674096d4980effd8727d331719323b2e3aa7e00a8fb061aec50283f36b483f",
+      "removed_include_directives_only": true
+    },
+    {
+      "file": "round.v",
+      "source_sha256": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+      "includes": [],
+      "prepared_sha256": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+      "removed_include_directives_only": true
+    },
+    {
+      "file": "table.v",
+      "source_sha256": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157",
+      "includes": [],
+      "prepared_sha256": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157",
+      "removed_include_directives_only": true
+    }
+  ],
+  "exact_extraction_attempted": false,
+  "route": "heuristic_large_lookup_direct",
+  "large_lookup_entries": 512,
+  "exact_timeout_seconds": 30,
+  "elapsed_seconds": 0.01399716711603105,
+  "messages": [
+    "[HW2GRAPH] Large lookup table detected (512 entries); using heuristic DFG directly."
+  ],
+  "preprocessed_sha256": "d77df4b1fe52b74cf9a27583118f0823523a25ee10ce83277743d2b6a302882f",
+  "graph_nodes": 835,
+  "graph_edges": 1121,
+  "weakly_connected_components": 3,
+  "raw_label_counts": {
+    "signal": 301,
+    "branch": 513,
+    "xor": 17,
+    "concat": 4
+  },
+  "feature_counts": {
+    "1": 6,
+    "13": 513,
+    "16": 283,
+    "20": 17,
+    "5": 12,
+    "0": 4
+  },
+  "fallback_assignment_count": 534,
+  "dataset_cache_loaded": false,
+  "dataset_cache_omission": "Cache supplies training graphs and fixed feature count only; last appended candidate is the sole inference graph. Same37-feature mapping preserved.",
+  "preprocessing": "Unchanged HW2GRAPH concatenates .v, removes line comments, removes underscores globally, renames top. Only disposable graph_input transformed."
+}

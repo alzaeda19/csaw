@@ -1,0 +1,94 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "SNAPSHOT_MANIFEST.json": {
+      "bytes": 7314,
+      "sha256": "be1c8b2003412d632240fa0bc51a1aa0ba8b8dcb86140a13fa6a68bcd4aa6481"
+    },
+    "course_package_review/VISIBLE_MESSAGES.md": {
+      "bytes": 7276,
+      "sha256": "18f01c7f19e3e9ad5eefe94bdfe324e3176ac8c82309e2534c67aa05479e6672"
+    },
+    "course_package_review/configured_model_records.json": {
+      "bytes": 859,
+      "sha256": "6286223e3bca9194b480df115fedf3382658b36802c7960d354460665aa51dd9"
+    },
+    "course_package_review/export_manifest.json": {
+      "bytes": 1918,
+      "sha256": "afa4d0008a54891e5b75bf0fe04e3f21323d3bf27b64878f332e348d8df87030"
+    },
+    "course_package_review/field_integrity_verification.json": {
+      "bytes": 332,
+      "sha256": "d5aa7489cf18b59debb542a5f0113ba736c82ec41ae3e76c47646e51a9212dde"
+    },
+    "course_package_review/omissions_and_gaps.json": {
+      "bytes": 1517,
+      "sha256": "db91c577266dd6d10ef6277401ab1453edd8f026f9554dac4c3df415f429896d"
+    },
+    "course_package_review/source_line_index.json": {
+      "bytes": 6966,
+      "sha256": "368f6ce8ccf1a9b1482cde77528431e53c1ef70ac44965bc110dc0bec680d6a0"
+    },
+    "course_package_review/visible_events.jsonl": {
+      "bytes": 211748,
+      "sha256": "fe697ffe007b1a016304ae95ab82c21bba9fa78cb7276bed778c1ce965479d68"
+    },
+    "meeting_requirement_review/VISIBLE_MESSAGES.md": {
+      "bytes": 4931,
+      "sha256": "ca86a29411a90633b6506cdfdfb8d8dd75cb51868175fac63187a049d36ca983"
+    },
+    "meeting_requirement_review/configured_model_records.json": {
+      "bytes": 526,
+      "sha256": "6b3d19b10c19bb5796da3550e57aed639254bd905e6103b3d376f0ca7ddc639a"
+    },
+    "meeting_requirement_review/export_manifest.json": {
+      "bytes": 1927,
+      "sha256": "7ebbc4dbb12b5e4688ae329636b1cf02b0df3d72f9a33055e494c1029b253cb6"
+    },
+    "meeting_requirement_review/field_integrity_verification.json": {
+      "bytes": 332,
+      "sha256": "c81900968beac84f5394f05fa409e1abfadf7939b31cfdaff0d16205b9ae8ce6"
+    },
+    "meeting_requirement_review/omissions_and_gaps.json": {
+      "bytes": 760,
+      "sha256": "6afb2086b52e1fadd28196fe2b5647e706b6302c81a9b726ec6c8b9419efe6a7"
+    },
+    "meeting_requirement_review/source_line_index.json": {
+      "bytes": 6545,
+      "sha256": "512dfe155420c923f56bfb46176a0a75787e7e5e27188959d01162ca8d0dd343"
+    },
+    "meeting_requirement_review/visible_events.jsonl": {
+      "bytes": 210040,
+      "sha256": "f1d40d0245fb20687ac0c18622430f0432e018bbf685d512417ebff91cdd435c"
+    },
+    "root_current_task/VISIBLE_MESSAGES.md": {
+      "bytes": 15750,
+      "sha256": "18dbcea18a8cca7d043d31d27b65995d92fe3bd6a76a6b863194089140f29364"
+    },
+    "root_current_task/configured_model_records.json": {
+      "bytes": 3356,
+      "sha256": "8674694d4e2a9164b985b872fb83e37a19a3c6a6b9716e31a6cebd9497e12ef4"
+    },
+    "root_current_task/export_manifest.json": {
+      "bytes": 1757,
+      "sha256": "253522bfb197be27435d348d990e3c0bdc9ce4951d3641141f92b6abdf45b514"
+    },
+    "root_current_task/field_integrity_verification.json": {
+      "bytes": 332,
+      "sha256": "b0f1f7fe5c31d4b0d86b6be7d4c694c0222cb97cbcf3abb8a41f05e105750390"
+    },
+    "root_current_task/omissions_and_gaps.json": {
+      "bytes": 3051,
+      "sha256": "9bd799e17fcf2f9122ef72109bf1c3bcb9de080b0d09fcf4650b1c87f98aab02"
+    },
+    "root_current_task/source_line_index.json": {
+      "bytes": 14866,
+      "sha256": "8f21732db8081569ce99bacde188131e4fc98fbc58956dfe035377cfbbf20834"
+    },
+    "root_current_task/visible_events.jsonl": {
+      "bytes": 1187965,
+      "sha256": "6c6507566dd5e9bb7881264b50bb0829eccb746887a793ec8186220080d41a7c"
+    }
+  },
+  "note": "This hash manifest excludes itself; its hash is recorded in the stable export index."
+}

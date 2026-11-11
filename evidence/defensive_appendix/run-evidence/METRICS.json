@@ -1,0 +1,97 @@
+{
+  "coverage": {
+    "total": 23,
+    "scored": 23,
+    "unscored": 0,
+    "model_rows": 92,
+    "scored_model_rows": 92,
+    "scored_routes": {
+      "exact_DFG": 23
+    },
+    "exact_extraction_status_counts": {
+      "success": 23
+    }
+  },
+  "metrics": {
+    "HT1": {
+      "TP": 9,
+      "FN": 5,
+      "FP": 5,
+      "TN": 4,
+      "scored_designs": 23,
+      "total_designs": 23,
+      "scored_positive_denominator": 14,
+      "total_positive_designs": 14,
+      "scored_negative_denominator": 9,
+      "total_negative_designs": 9,
+      "recall_on_scored": 0.6428571428571429,
+      "false_positive_rate_on_scored": 0.5555555555555556,
+      "unscored_positive": 0,
+      "unscored_negative": 0
+    },
+    "HT2": {
+      "TP": 6,
+      "FN": 8,
+      "FP": 6,
+      "TN": 3,
+      "scored_designs": 23,
+      "total_designs": 23,
+      "scored_positive_denominator": 14,
+      "total_positive_designs": 14,
+      "scored_negative_denominator": 9,
+      "total_negative_designs": 9,
+      "recall_on_scored": 0.42857142857142855,
+      "false_positive_rate_on_scored": 0.6666666666666666,
+      "unscored_positive": 0,
+      "unscored_negative": 0
+    },
+    "HT3": {
+      "TP": 0,
+      "FN": 14,
+      "FP": 1,
+      "TN": 8,
+      "scored_designs": 23,
+      "total_designs": 23,
+      "scored_positive_denominator": 14,
+      "total_positive_designs": 14,
+      "scored_negative_denominator": 9,
+      "total_negative_designs": 9,
+      "recall_on_scored": 0.0,
+      "false_positive_rate_on_scored": 0.1111111111111111,
+      "unscored_positive": 0,
+      "unscored_negative": 0
+    },
+    "HT4": {
+      "TP": 4,
+      "FN": 10,
+      "FP": 2,
+      "TN": 7,
+      "scored_designs": 23,
+      "total_designs": 23,
+      "scored_positive_denominator": 14,
+      "total_positive_designs": 14,
+      "scored_negative_denominator": 9,
+      "total_negative_designs": 9,
+      "recall_on_scored": 0.2857142857142857,
+      "false_positive_rate_on_scored": 0.2222222222222222,
+      "unscored_positive": 0,
+      "unscored_negative": 0
+    },
+    "ensemble": {
+      "TP": 9,
+      "FN": 5,
+      "FP": 7,
+      "TN": 2,
+      "scored_designs": 23,
+      "total_designs": 23,
+      "scored_positive_denominator": 14,
+      "total_positive_designs": 14,
+      "scored_negative_denominator": 9,
+      "total_negative_designs": 9,
+      "recall_on_scored": 0.6428571428571429,
+      "false_positive_rate_on_scored": 0.7777777777777778,
+      "unscored_positive": 0,
+      "unscored_negative": 0
+    }
+  }
+}

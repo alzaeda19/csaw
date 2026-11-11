@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "/usr/local/bin/npm",
+    "install",
+    "--prefix",
+    "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/claude-review/isolated-cli",
+    "--no-audit",
+    "--no-fund",
+    "--ignore-scripts",
+    "--save-exact",
+    "@anthropic-ai/claude-code@2.1.322"
+  ],
+  "start_utc": "2026-11-11T17:10:42.566575+00:00",
+  "official_package_reference": "https://github.com/anthropics/claude-code/blob/main/README.md",
+  "global_tooling_changed": false,
+  "scripts_disabled": true,
+  "exit_code": 0,
+  "end_utc": "2026-11-11T17:10:45.998693+00:00",
+  "stdout_sha256": "bf14b7a2bc076990244fa3239536925868dfe5ad05089c7d459b5fa482abfc72",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

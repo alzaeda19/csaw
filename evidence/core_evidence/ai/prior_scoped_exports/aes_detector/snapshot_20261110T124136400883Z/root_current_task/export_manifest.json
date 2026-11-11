@@ -1,0 +1,49 @@
+{
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+  "snapshot_read_started_utc": "2026-11-10T12:41:36.393556Z",
+  "snapshot_read_finished_utc": "2026-11-10T12:41:36.397013Z",
+  "source_snapshot_bytes": 8323814,
+  "source_snapshot_sha256": "7638d7ad76c0b0008a9d7e63af75aa4cde8eb3aa753a01c47cee2bb58390242e",
+  "complete_source_lines": 1527,
+  "trailing_incomplete_bytes_not_parsed": 0,
+  "label": "root_current_task",
+  "first_in_scope_line": 1397,
+  "minimum_timestamp": "2026-11-10T12:35:05.647Z",
+  "last_in_scope_source_line": 1527,
+  "bounded_source_cutoff_timestamp": "2026-11-10T12:40:57.925Z",
+  "exported_records": 49,
+  "exported_counts": {
+    "initiating_delegation": 1,
+    "assistant_commentary": 2,
+    "custom_tool_call": 12,
+    "command_execution": 7,
+    "custom_tool_call_output": 12,
+    "function_call": 5,
+    "function_call_output": 7,
+    "agent_message_readable_envelope": 3
+  },
+  "excluded_counts": {
+    "event_item:FunctionCallOutput": 3,
+    "event_item:Reasoning": 14,
+    "response_item:reasoning": 14,
+    "event_item:AgentMessage": 2,
+    "token_usage_record": 17,
+    "event_item:McpToolCall": 3,
+    "tool_discovery_documentation_elements": 1,
+    "event_msg": 18,
+    "world_state": 2,
+    "inter_agent_communication_metadata": 3,
+    "event_item:SubAgentActivity": 1
+  },
+  "last_exported_timestamp": "2026-11-10T12:40:57.925Z",
+  "integrity": {
+    "pass": true,
+    "metadata_fields_verified": 35,
+    "retained_field_hash_algorithm": "SHA-256 of UTF-8 JSON with ensure_ascii=False, sort_keys=True, separators=(comma, colon)",
+    "records_verified": 49,
+    "retained_fields_verified": 299,
+    "source_line_hashes_verified": true,
+    "method": "Saved JSONL re-read; every retained field compared to the exact original native field or selected original list elements. SHA-256 verified against each full original source line, including newline."
+  },
+  "significant_omissions_and_gaps": 9
+}

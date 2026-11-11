@@ -1,0 +1,20 @@
+[
+  {
+    "source_line": 13,
+    "source_record_sha256": "f509b46fd3a2945f8ebe1bff83be6cdbed1d19f9ece1495486320071f2d61ec9",
+    "timestamp": "2026-11-10T12:10:43.953Z",
+    "reason": "Encrypted or nontext collaboration body unavailable; only native readable envelope retained. No decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 57,
+    "source_record_sha256": "5c087137c7f0a9f0a124f1bc500e5643048d1ba07e64f1be2505ca4fd8cf8fc4",
+    "timestamp": "2026-11-10T12:11:24.555Z",
+    "reason": "Readable collaboration argument body unavailable. Original argument string retained verbatim; no decryption or reconstruction attempted.",
+    "encrypted_argument_fields": [
+      "message"
+    ]
+  }
+]

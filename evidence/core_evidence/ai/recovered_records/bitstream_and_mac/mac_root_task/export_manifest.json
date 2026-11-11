@@ -1,0 +1,55 @@
+{
+  "label": "mac_root_task",
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+  "read_started_utc": "2026-11-10T13:02:24.081926Z",
+  "read_finished_utc": "2026-11-10T13:02:24.085059Z",
+  "prefix_through_native_line": 295,
+  "prefix_bytes": 3872106,
+  "prefix_sha256": "30cccb945dcad82fe731cf92ed530f261bfed5e1a5422fa6621714b2a03e638c",
+  "note": "Hash covers raw prefix for source consistency only. Earlier prefix content is not exported. Later native records are neither needed nor parsed by this exporter.",
+  "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+  "source_turn_id": "01a1b6fb-f66a-7551-9e37-a44d7c515aab",
+  "first_in_scope_line": 50,
+  "last_in_scope_line": 295,
+  "scope_policy": "Exact task bounds only; root records before/after these bounds excluded from visible export.",
+  "comparison": {
+    "old_root_export_records": null,
+    "status": "No prior root-task native visible export exists in the Mac execution evidence. This is first recovery of the bounded root task, not an inferred delta from its separate clean-worker snapshot.",
+    "prior_status_file": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/mac_infrastructure_execution_2026-11-07_20261107T170940Z/TRANSCRIPT_EXPORT_STATUS.md",
+    "separate_clean_worker_snapshot_manifest": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/mac_infrastructure_execution_2026-11-07_20261107T170940Z/records/transcripts/clean_native_visible/export_manifest.json"
+  },
+  "new_exported_records": 89,
+  "new_exported_counts": {
+    "user_message": 1,
+    "assistant_commentary": 6,
+    "custom_tool_call": 26,
+    "command_execution": 22,
+    "custom_tool_call_output": 25,
+    "function_call": 3,
+    "function_call_output": 3,
+    "agent_message_visible_fields": 2,
+    "assistant_final_answer": 1
+  },
+  "first_exported_timestamp": "2026-11-07T17:08:48.397Z",
+  "last_exported_timestamp": "2026-11-07T17:17:59.666Z",
+  "native_final_line": 292,
+  "final_recovered": true,
+  "lifecycle": [
+    {
+      "source_line": 295,
+      "source_record_sha256": "016d0dd9cd0e009373c89b2d019b347069406523feca5afe9e838d091527854d",
+      "timestamp": "2026-11-07T17:17:59.679Z",
+      "source_fields": {
+        "type": "task_complete",
+        "turn_id": "01a1b6fb-f66a-7551-9e37-a44d7c515aab"
+      }
+    }
+  ],
+  "integrity": {
+    "pass": true,
+    "new_records_verified": 89,
+    "retained_fields_verified": 600,
+    "source_line_hashes_verified": true,
+    "method": "Every retained field compared to its exact native field/list indices; SHA-256 covers original full native line including newline."
+  }
+}

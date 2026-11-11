@@ -1,0 +1,45 @@
+{
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+  "snapshot_read_started_utc": "2026-11-10T12:27:30.102645Z",
+  "snapshot_read_finished_utc": "2026-11-10T12:27:30.105539Z",
+  "source_snapshot_bytes": 7663494,
+  "source_snapshot_sha256": "2ca6e077ebb75db25e868057ba5a3a3516072471b876e62fbce2af422b84b033",
+  "complete_source_lines": 1297,
+  "trailing_incomplete_bytes_not_parsed": 0,
+  "label": "root_current_task",
+  "first_in_scope_line": 1102,
+  "minimum_timestamp": "2026-11-10T12:20:14.739Z",
+  "exported_records": 80,
+  "exported_counts": {
+    "user_message": 1,
+    "assistant_commentary": 3,
+    "custom_tool_call": 14,
+    "command_execution": 17,
+    "custom_tool_call_output": 14,
+    "function_call": 10,
+    "function_call_output": 10,
+    "agent_message_readable_envelope": 10,
+    "file_change_record": 1
+  },
+  "excluded_counts": {
+    "event_item:UserMessage": 1,
+    "event_item:AgentMessage": 3,
+    "token_usage_record": 24,
+    "event_msg": 24,
+    "event_item:Reasoning": 20,
+    "response_item:reasoning": 20,
+    "world_state": 3,
+    "inter_agent_communication_metadata": 11,
+    "event_item:SubAgentActivity": 1,
+    "other_agent_message": 1
+  },
+  "last_exported_timestamp": "2026-11-10T12:27:25.766Z",
+  "integrity": {
+    "pass": true,
+    "records_verified": 80,
+    "retained_fields_verified": 531,
+    "source_line_hashes_verified": true,
+    "method": "Saved JSONL re-read; every retained field compared to the exact original native field or selected original list elements. SHA-256 verified against each full original source line, including newline."
+  },
+  "significant_omissions_and_gaps": 18
+}

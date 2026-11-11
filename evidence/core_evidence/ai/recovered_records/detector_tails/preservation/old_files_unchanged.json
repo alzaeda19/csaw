@@ -1,0 +1,35 @@
+{
+  "pass": true,
+  "verified_utc": "2026-11-10T13:03:46.292621Z",
+  "roots": {
+    "baseline": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z",
+    "clean_aes": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z"
+  },
+  "entries_verified": {
+    "baseline": 7740,
+    "clean_aes": 129
+  },
+  "regular_files_verified": {
+    "baseline": 7737,
+    "clean_aes": 129
+  },
+  "symlinks_verified": {
+    "baseline": 3,
+    "clean_aes": 0
+  },
+  "before_inventory_canonical_sha256": "8a26c1d229a68658ca0aa552db017cbd8d02481b2f294d8a6cdc91c3c74dbd33",
+  "after_inventory_canonical_sha256": "8a26c1d229a68658ca0aa552db017cbd8d02481b2f294d8a6cdc91c3c74dbd33",
+  "changes": {
+    "baseline": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    },
+    "clean_aes": {
+      "added": [],
+      "removed": [],
+      "changed": []
+    }
+  },
+  "method": "Full regular-file hashes and symlink targets inventoried before/after. No source directories modified; directory symlinks not traversed. Access times not checked."
+}

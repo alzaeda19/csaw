@@ -1,0 +1,19 @@
+The supported cause is a **checker polarity mismatch**: `icebox_vlog -R` assumes active-low input-enable bits, while the pinned tool tree’s 5K I/O decoder/encoder uses active-high behavior. The original clock bit is set; the same disagreement affects all six routed inputs.
+
+- **Still fails:** the original `-R` check and the context-only diagnostic copy, with the assertion intact.
+- **Passes:** byte-identical unpack/repack, the isolated I/O audit, and single-driver checks with unchanged recovered logic.
+- **Separate failure:** the full high-level converter encounters an unsupported IPCON geometry assumption.
+
+This explains why the checker rejects the configuration; it does **not** certify the physical clock or complete recovery fidelity. Earlier readiness failures remain unchanged.
+
+All six originals and every prior artifact are preserved. Report, exact commands, failures, hashes, diffs and AI records:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/clock_input_validation_2026-11-06/`
+
+Reproduce from the restart directory:
+
+```sh
+python3 clock_input_validation_2026-11-06/tests.py
+python3 clock_input_validation_2026-11-06/records/audit_preservation.py
+```
+
+Native transcript export and exact serving-model metadata remain unavailable; those gaps are disclosed.

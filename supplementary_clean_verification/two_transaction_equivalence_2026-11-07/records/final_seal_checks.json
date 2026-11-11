@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+    "two_transaction_equivalence_2026-11-07/analysis/seal.py"
+  ],
+  "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06",
+  "utc_start": "2026-11-07T16:07:57.568392+00:00",
+  "checks_completed_utc": "2026-11-07T16:08:04.366189+00:00",
+  "universal_assertion_certificates": 4,
+  "complete_final_witnesses": 4,
+  "retained_early_witnesses": 4,
+  "read_words_audited": 8,
+  "original_files_unchanged": 6,
+  "prior_artifacts_unchanged": 34737,
+  "prior_trees_unchanged": 16,
+  "unsuccessful_formal_attempts_preserved": 12,
+  "unrestricted_or_unbounded_equivalence": "not proved",
+  "manifest_scope": "all assessment files/symlink targets except OUTPUT_HASHES.json itself; direct native sealing envelope is not independently exported"
+}

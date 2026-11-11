@@ -1,0 +1,19 @@
+[
+  {
+    "tool": "iverilog",
+    "status": "probed",
+    "argv": [
+      "/opt/homebrew/bin/iverilog",
+      "-V"
+    ],
+    "exit_code": 0,
+    "binary_sha256": "9ef7463c91ae7045fe1a1f93e9a9a57c37bde96b9501ed962e4acad5a923011a",
+    "utc": "2026-11-10T18:16:30.164554+00:00",
+    "note": "Version probe only. dot CLI may differ from PyGraphviz linked wheel library."
+  },
+  {
+    "tool": "dot",
+    "status": "not_found_on_recorded_PATH",
+    "exit_code": null
+  }
+]

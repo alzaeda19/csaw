@@ -1,0 +1,13 @@
+Requirement,Status,Evidence,Limit or next decision
+Original source provenance,Documented,Original six-file receipts; prior preservation checks,No published solutions allowed
+Recovered RTL and regenerated bitstream,Documented with conditions,Retained baseline/binary equivalence report,Digital model/state-relation assumptions; not independent algorithm correctness
+Normal-operation behavior,Partially verified,24/24 original-host known-answer checks per model; immediate-read 8/8 failures per model,Disclose host schedule and retained failure
+Clean AES teaching reference,Verified separately,Five supplied tests passed; original source hashes match,Does not validate CSAW cipher or baseline
+Four detectors on baseline,Completed with limitations,All four CLEAN; heuristic graph,Missing RAM-body semantics; unvalidated calibration
+Four detectors on clean AES,Completed with limitations,Four CLEAN votes; 25 independent evidence checks passed,Heuristic large-table graph; not security certification or baseline equivalence
+Required modified-design artifact,Not established,No verified completed artifact in reviewed evidence,Instructor-approved alternative not established
+Required demonstration testbench,Not established,Clean tests and detector inference do not establish this deliverable,No attack implementation included in this task
+Comprehensive AI records,Bounded recovery completed; global completeness unproven,ai/LOG_RECOVERY_STATUS.txt; ai/recovered_records/RECOVERY_INDEX.json: 378 additional + 1893 prior records,"Unreadable encrypted content, truncation, unenumerated histories and cutoff gaps disclosed"
+Final technical brief/submission archive,Partial package prepared; full-assignment completion not established,README_START_HERE.txt; TECHNICAL_BRIEF.txt; PACKAGE_HASHES.json and final ZIP when sealed,Two core deliverables unfinished; transcript limits disclosed
+Independent key recovery,Not established; bonus under original qualifier,Original qualifier README bonus section,Course-specific override not established
+Physical board validation,Not performed; not core qualifier prerequisite,Original qualifier is simulation-only,Required only if course explicitly adds it

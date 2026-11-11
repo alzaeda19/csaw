@@ -1,0 +1,16 @@
+Requirement or evidence,Current status,Evidence,Limitation
+Required Trojan-modified RTL,Absent / unfinished,core_evidence/rtl/UNFINISHED_REQUIRED_MODIFICATION.txt,Not replaced by baseline reference or detector results
+Required demonstration testbench,Absent / unfinished,core_evidence/tb/UNFINISHED_REQUIRED_DEMONSTRATION.txt,Ordinary tests do not demonstrate the required behavior
+Comprehensive GenAI transcripts,Bounded records available; completeness unproven,AI_RECORD_INDEX.md,Encrypted/truncated/unmapped/post-cutoff gaps remain
+Original technical brief requirements,Brief provided for completed work; full compliance not established,TECHNICAL_SUMMARY.md; core_evidence/TECHNICAL_BRIEF.txt,Missing modification/demonstration and full recovered-cipher explanation not established
+Recovered RTL and regenerated bitstream,Documented with conditions,core_evidence/TECHNICAL_BRIEF.txt,Digital model and state-relation assumptions; not board validation
+Normal-operation evidence,Partial / known failure retained,core_evidence/TECHNICAL_BRIEF.txt,24/24 original-host known-answer cases pass per model; first-BUSY-low read fails8/8 per model
+Separate clean AES reference,Five supplied tests pass,core_evidence/verification/clean_aes_reference/README.txt,Different design; not proof of recovered CSAW cipher correctness
+Earlier clean/baseline four-detector evaluations,Completed with graph limitations,core_evidence/TECHNICAL_BRIEF.txt,Heuristic/fallback extraction; CLEAN is not absence proof
+Existing clean/infected design detector study,Completed / distinct defensive appendix,defensive_appendix/REPORT.txt,14 infected and9 clean; detected9 missed5 false alarms7; unknown training overlap
+Independent key recovery,Not established; original qualifier bonus,core_evidence/course_instructions/original_qualifier_README.md,No claim of independently recovered secret key
+Physical-board validation,Not performed; not required by original simulation-only qualifier,core_evidence/course_instructions/original_qualifier_README.md,Later course-specific requirement not established
+Alternative defensive scope,Professor response/approval pending,SUBMISSION_NOTE.txt,No acceptance inferred from silence
+Local submission preparation,Prepared for partial/instructor review,README.md; VALIDATION.json,Does not establish original assignment completion
+Email / portal submission,Not sent / not uploaded,SUBMISSION_STATUS.json,Current course destination and CSAW due time not verified; Paper5 deadline is separate
+CSAW planning deadline,"Previously recorded: November13,2026,3PM Eastern",SUBMISSION_STATUS.json,Orchestrator reports prior user date; no fresh instructor confirmation; Paper5 is separate

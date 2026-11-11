@@ -1,0 +1,18 @@
+Fixed repeated-tile validation in a fresh isolated tool copy. Every declaration is validated before reuse; valid repetitions still retain their state.
+
+- **209 declaration checks and 108 CLI checks pass.** Pre-fix failures are preserved.
+- Existing **2,321 focused cases and 38 integration checks pass**.
+- Original configuration is preserved; restoring the known empty-comment wrapper reproduces all original bytes. Hardware equivalence remains untested.
+- All six originals and **10,956 earlier artifact files** remain unchanged.
+
+Artifacts, diff, commands and AI logs:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/repeated_tile_validation_2026-11-06`
+
+See `REPORT.md`, `parser_fix.diff`, and `AI_RECORD.md`. From the restart workspace root, reproduce with fresh output names:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 repeated_tile_validation_2026-11-06/analysis/repeated_tiles.py reproduce_repeated_01
+PYTHONDONTWRITEBYTECODE=1 python3 repeated_tile_validation_2026-11-06/analysis/cli_regressions.py reproduce_cli_01
+```
+
+`REPORT.md` also includes commands for both inherited suites.

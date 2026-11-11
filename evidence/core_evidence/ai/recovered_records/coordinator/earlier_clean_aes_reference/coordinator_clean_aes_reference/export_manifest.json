@@ -1,0 +1,53 @@
+{
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-16-45-01a1c563-aa79-7e12-ae2f-72d867d1e3da.jsonl",
+  "snapshot_read_started_utc": "2026-11-10T13:02:02.155241Z",
+  "snapshot_read_finished_utc": "2026-11-10T13:02:02.156530Z",
+  "source_snapshot_bytes": 1759405,
+  "source_snapshot_sha256": "fa550af0344519cff6dca01544fa0268a94a3fdf1bbc85d3904327d644bfdc79",
+  "complete_source_lines": 546,
+  "trailing_incomplete_bytes_not_parsed": 0,
+  "native_thread_id": "01a1c563-aa79-7e12-ae2f-72d867d1e3da",
+  "label": "coordinator_clean_aes_reference",
+  "first_in_scope_line": 73,
+  "minimum_timestamp": "2026-11-10T12:30:45.130Z",
+  "last_in_scope_source_line": 167,
+  "bounded_source_cutoff_timestamp": "2026-11-10T12:34:43.130Z",
+  "exported_records": 32,
+  "exported_counts": {
+    "user_message": 1,
+    "assistant_commentary": 3,
+    "custom_tool_call": 8,
+    "command_execution": 6,
+    "custom_tool_call_output": 7,
+    "file_change_record": 1,
+    "function_call_output": 4,
+    "assistant_final_answer": 2
+  },
+  "excluded_counts": {
+    "event_item:UserMessage": 1,
+    "response_item:configuration_update": 2,
+    "event_msg": 17,
+    "event_item:AgentMessage": 5,
+    "token_usage_record": 10,
+    "tool_discovery_documentation_elements": 1,
+    "event_item:McpToolCall": 6,
+    "event_item:Reasoning": 6,
+    "response_item:reasoning": 6,
+    "scoped_sensitive_or_history_output": 1,
+    "event_item:FunctionCallOutput": 2,
+    "response_item:message": 4,
+    "world_state": 1,
+    "turn_context_except_configured_model_labels": 2
+  },
+  "last_exported_timestamp": "2026-11-10T12:34:43.130Z",
+  "integrity": {
+    "pass": true,
+    "metadata_fields_verified": 6,
+    "retained_field_hash_algorithm": "SHA-256 of UTF-8 JSON with ensure_ascii=False, sort_keys=True, separators=(comma, colon)",
+    "records_verified": 32,
+    "retained_fields_verified": 205,
+    "source_line_hashes_verified": true,
+    "method": "Saved JSONL re-read; every retained field compared to the exact original native field or selected original list elements. SHA-256 verified against each full original source line, including newline."
+  },
+  "significant_omissions_and_gaps": 2
+}

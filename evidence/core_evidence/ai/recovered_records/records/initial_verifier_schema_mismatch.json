@@ -1,0 +1,8 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 python3 records/verify_recovery.py",
+  "observed_exit_code": 1,
+  "observed_error": "AssertionError at historical_clean/visible_events.jsonl native line18 payload type",
+  "cause": "Prior historical exporter normalizes native CommandExecution to command_execution. Parent verifier initially required exact equality for this schema label. No source field content was changed by recovery.",
+  "resolution": "Validate explicit normalization separately; require exact equality for all other retained fields.",
+  "record_kind": "Authored factual receipt of tool output; not a verbatim native transcript."
+}

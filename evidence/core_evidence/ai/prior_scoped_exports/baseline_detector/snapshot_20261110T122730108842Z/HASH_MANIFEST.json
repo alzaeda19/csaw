@@ -1,0 +1,94 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "SNAPSHOT_MANIFEST.json": {
+      "bytes": 7458,
+      "sha256": "50f81f899cff9d333aacb74a09c1c9b424efaa807a19b83a4de644978b12ffd4"
+    },
+    "detector_environment/VISIBLE_MESSAGES.md": {
+      "bytes": 1923,
+      "sha256": "02736573ed4ca970f8b37d71f13759fbdd865e90c7dc98a7f6303d3087755b38"
+    },
+    "detector_environment/configured_model_records.json": {
+      "bytes": 526,
+      "sha256": "903a23bc86ff3a3cb0d7785e78fe8994e92194c3847c184bdc6219f2b7f46c4a"
+    },
+    "detector_environment/export_manifest.json": {
+      "bytes": 1950,
+      "sha256": "4c38fbc25e6bbb1247ab2b025e8d91c42083fafd4f4f06ee719567ea04b495ad"
+    },
+    "detector_environment/field_integrity_verification.json": {
+      "bytes": 332,
+      "sha256": "96f0a883bd80242ae12fb4937e699ee433cb7edf9d6a05a49f89caba398f99fa"
+    },
+    "detector_environment/omissions_and_gaps.json": {
+      "bytes": 2286,
+      "sha256": "06a54f58f1898c29956a78abf4f50ea83e55f98c406ee3a17338c3b9231e5ecc"
+    },
+    "detector_environment/source_line_index.json": {
+      "bytes": 11196,
+      "sha256": "9c981451df693e32894c26f575275ca4ecc337b6600469bf050323662e6df380"
+    },
+    "detector_environment/visible_events.jsonl": {
+      "bytes": 219462,
+      "sha256": "3285d95cf70a8112d55c91648ade587a41766b383b7b8140a52f10af68f490ba"
+    },
+    "detector_input_audit/VISIBLE_MESSAGES.md": {
+      "bytes": 3884,
+      "sha256": "69ab6fb8a642c40f7ce0350a290a50ba56ad60d2fc60388be33010c2f309d985"
+    },
+    "detector_input_audit/configured_model_records.json": {
+      "bytes": 860,
+      "sha256": "9741af0d1395e17565af1d8760533819f56588767dcb99aeb9ee9bac14585e1c"
+    },
+    "detector_input_audit/export_manifest.json": {
+      "bytes": 1952,
+      "sha256": "d1488dce733628b58e76fcad7f7ffd240c7aa76ce51dab4ed3a6441f57e5f8e2"
+    },
+    "detector_input_audit/field_integrity_verification.json": {
+      "bytes": 332,
+      "sha256": "067982a35b7f63f1037758eef9bee68b3030296d6c0723d99fe62d6850b02f3a"
+    },
+    "detector_input_audit/omissions_and_gaps.json": {
+      "bytes": 2276,
+      "sha256": "66ad4a7611ffd8fa68608de604ac4f62ab668410c5dd08eee680512067e7bb2f"
+    },
+    "detector_input_audit/source_line_index.json": {
+      "bytes": 14155,
+      "sha256": "7d103ebb6469efaea8ac1f69746beed7a6c9859b1dd0952716f497fd18f5792c"
+    },
+    "detector_input_audit/visible_events.jsonl": {
+      "bytes": 341576,
+      "sha256": "5c40d08e0da80aa974eaa5a8b204812e582b50c8a6e93617beb3aaa8f520c704"
+    },
+    "root_current_task/VISIBLE_MESSAGES.md": {
+      "bytes": 6592,
+      "sha256": "fd4b1139825820c2791291677d6b97152f442019aed6ffb122a125d012af14b5"
+    },
+    "root_current_task/configured_model_records.json": {
+      "bytes": 4374,
+      "sha256": "63aca1001a8b1da3347a988a9e47173b8eef26f7a55443a43fa9772bb4181305"
+    },
+    "root_current_task/export_manifest.json": {
+      "bytes": 1765,
+      "sha256": "dbf2f8fb62cc832c2c37c5b0156fffcba806cd32d3a48179ee185a07818e708d"
+    },
+    "root_current_task/field_integrity_verification.json": {
+      "bytes": 332,
+      "sha256": "26c56e93af178d3d8e59e63d1d86d283fd6ba4ff793a87e710b75703dc7d978c"
+    },
+    "root_current_task/omissions_and_gaps.json": {
+      "bytes": 6758,
+      "sha256": "d149109a70b75510453c8f7cc0b9f68c9f30feef85922556938f7fcf04c25b96"
+    },
+    "root_current_task/source_line_index.json": {
+      "bytes": 17088,
+      "sha256": "b7db132cc4eab87a2c54b4b03fb9e381903c7e91a95cabb156610bda91ae509a"
+    },
+    "root_current_task/visible_events.jsonl": {
+      "bytes": 330995,
+      "sha256": "ecc9d811fd1e509dce3ddc6d1a07bf2f518d7887eb6f04a2fc2277a18e83b5fe"
+    }
+  },
+  "note": "This hash manifest excludes itself; its hash is recorded in the stable export index."
+}

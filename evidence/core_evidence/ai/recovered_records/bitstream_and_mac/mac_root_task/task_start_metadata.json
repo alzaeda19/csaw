@@ -1,0 +1,21 @@
+[
+  {
+    "source_line": 48,
+    "source_record_sha256": "d92e9c19c233dfd0dfba40ff382e332d762974788fc5db73f9e78c805a941000",
+    "timestamp": "2026-11-07T17:08:48.372Z",
+    "source_fields": {
+      "type": "task_started",
+      "turn_id": "01a1b6fb-f66a-7551-9e37-a44d7c515aab"
+    }
+  },
+  {
+    "source_line": 49,
+    "source_record_sha256": "6097daf6307c1d94cf3ba1e313e30e33871272e4137c9e79eff55e269433d582",
+    "timestamp": "2026-11-07T17:08:48.395Z",
+    "source_fields": {
+      "turn_id": "01a1b6fb-f66a-7551-9e37-a44d7c515aab",
+      "model": "gpt-6-astra",
+      "effort": "ultra"
+    }
+  }
+]

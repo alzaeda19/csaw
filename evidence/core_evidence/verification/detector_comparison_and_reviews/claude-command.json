@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/opt/homebrew/bin/claude",
+    "--print",
+    "--safe-mode",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--disable-slash-commands",
+    "--no-session-persistence",
+    "--permission-mode",
+    "default",
+    "--output-format",
+    "json",
+    "--max-budget-usd",
+    "3"
+  ],
+  "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/council-review",
+  "start_utc": "2026-11-10T12:36:23.391097+00:00",
+  "end_utc": "2026-11-10T12:37:40.350294+00:00",
+  "exit_code": 0,
+  "input_sha256": "16350e9d9c41f53eb3d3b4060766fc6d105299f8ad39a7c9b7241a1633e23ffd",
+  "stdout_sha256": "32aa71834af7d793b792a04ebe97711b3174757f4ca6cd253f402e81a9ef89c7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,378 @@
+{
+  "significant_omissions": [
+    {
+      "source_line": 55,
+      "source_record_sha256": "07c8de1cc529693ba5615495490f79f1e6c66c7ee38864095b1c75571896d811",
+      "timestamp": "2026-11-07T17:08:54.605Z",
+      "reason": "Local AGENTS.md instruction output omitted in full."
+    },
+    {
+      "source_line": 59,
+      "source_record_sha256": "31a5e8ee4033c8a5885065051a68b2f3be595b719075563293c696b02852eca7",
+      "timestamp": "2026-11-07T17:08:54.635Z",
+      "reason": "Combined duplicate tool output includes AGENTS.md instructions; omitted in full. Other command results from this call remain in native command-execution records."
+    },
+    {
+      "source_line": 91,
+      "source_record_sha256": "4ce439a27a47e18a889dd97796be10f893455bf3375b8aa9dd2056a64cb0f092",
+      "timestamp": "2026-11-07T17:10:15.794Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 103,
+      "source_record_sha256": "781626ef84885cdca9f7cee7c10e44077b3af005f38764c0cf72a108084852ed",
+      "timestamp": "2026-11-07T17:10:41.788Z",
+      "call_id": "call_d9930da95e964b67bf49489133948f48",
+      "reason": "Original arguments string omitted because it embeds an encrypted collaboration body; no ciphertext decrypted and no missing body reconstructed."
+    },
+    {
+      "source_line": 160,
+      "source_record_sha256": "c434bd17d78e0e8d9fed5ae312d426d08062dfa0b9d54d79e58a10b64509fcb4",
+      "timestamp": "2026-11-07T17:11:52.825Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 161,
+      "source_record_sha256": "2f0d59859d5b9ef93769baa6054530f42739515a2f73dee7cf01c7d171c76a3f",
+      "timestamp": "2026-11-07T17:11:52.837Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 180,
+      "source_record_sha256": "1d8b1ad1d8e3b026a7f0c99251fa3408ac92f43e688749fd0cd5d73970bbaf57",
+      "timestamp": "2026-11-07T17:12:18.811Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 189,
+      "source_record_sha256": "69fdcd10e6d41cb981e3ed4052010386692dada5d87f20213a9b3fbebc4d3c99",
+      "timestamp": "2026-11-07T17:12:36.673Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 190,
+      "source_record_sha256": "5a47fd6443eb05f8e140f9bcd4d696337f2e15fff47c4d74ac30c401c2feb569",
+      "timestamp": "2026-11-07T17:12:36.678Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 204,
+      "source_record_sha256": "80e28223c71fab2aac4ec8d64ec66df789e25d7bb91415b126e0763b3b995bb0",
+      "timestamp": "2026-11-07T17:13:45.300Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 231,
+      "source_record_sha256": "d9911011581eec5bf0f74848cd35a0a2ade28199730499d442adae6a885f49ce",
+      "timestamp": "2026-11-07T17:15:27.217Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 232,
+      "source_record_sha256": "4628bcac07db1908859fdfa2047f16c2db9a2b41302a628ca08c63fba60f9e93",
+      "timestamp": "2026-11-07T17:15:27.223Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 240,
+      "source_record_sha256": "e78f63e94bdef4e1b3470d7c7134fdf2f0183a9324a01481ff0c92dba7ecb92b",
+      "timestamp": "2026-11-07T17:15:44.520Z",
+      "call_id": "call_f17cb773d9e34d2b9d0f393d0fe04e95",
+      "reason": "Original arguments string omitted because it embeds an encrypted collaboration body; no ciphertext decrypted and no missing body reconstructed."
+    },
+    {
+      "source_line": 246,
+      "source_record_sha256": "a9d4884f255fb528bf51f82be95bac520c6b7e4ecf4474a906add63c20de739d",
+      "timestamp": "2026-11-07T17:16:13.434Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 247,
+      "source_record_sha256": "211aec4e85b4a3c8240ee7f7152fc20f5f8758597d54b8fcdf5e87c3cd646c84",
+      "timestamp": "2026-11-07T17:16:13.438Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 254,
+      "source_record_sha256": "997f7b4835356ed7bcdc44c11cab9a244a011466d0e6506a1976740a3286661a",
+      "timestamp": "2026-11-07T17:16:44.477Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 263,
+      "source_record_sha256": "1e018337e26d4d8e036f4bf0270ae1593e2c7b142fe36d82e7079ce8eddae28f",
+      "timestamp": "2026-11-07T17:17:07.194Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 284,
+      "source_record_sha256": "8a05cc2d2317a96a7d4692cfefb3c8db5f0239b5737fc523793d9e7750119ea1",
+      "timestamp": "2026-11-07T17:17:50.066Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 285,
+      "source_record_sha256": "33b6815b6e1d83a7616c9eee7d977612c9fb578f0f35c0493e6bf5bf29a81719",
+      "timestamp": "2026-11-07T17:17:50.069Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    }
+  ],
+  "excluded_type_counts": {
+    "event_item:UserMessage": 1,
+    "event_item:AgentMessage": 7,
+    "explicit_scope_exclusion": 2,
+    "token_usage_record": 30,
+    "event_msg": 30,
+    "event_item:Reasoning": 30,
+    "response_item:reasoning": 30,
+    "event_item:FileChange": 14,
+    "world_state": 1,
+    "event_item:McpToolCall": 4,
+    "inter_agent_communication_metadata": 2,
+    "event_item:CollabAgentToolCall": 1
+  },
+  "truncation_and_limits_observed": [
+    {
+      "source_line": 54,
+      "source_record_sha256": "d1b5c53eb93741fba40221056cc53586922fac76d736274494882a5bcbf0fcc9",
+      "timestamp": "2026-11-07T17:08:54.551Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 63,
+      "source_record_sha256": "04b9f030656763225102e15b1ed0495a4b3ee7eecf71a19362224782621ebe8a",
+      "timestamp": "2026-11-07T17:09:13.277Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 68,
+      "source_record_sha256": "470ac982f7ef7c8be7dce6acfd5eca2838739c0ff348de449b90aa856ee5803d",
+      "timestamp": "2026-11-07T17:09:13.382Z",
+      "markers": [
+        "truncated output",
+        "tokens truncated"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 74,
+      "source_record_sha256": "f67968893fcb2ef81dd616e4335692affb97ba965610acd715697907aa284177",
+      "timestamp": "2026-11-07T17:09:24.229Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 82,
+      "source_record_sha256": "6437392f3c689a8a28c1bdf356cc6fc7b90355361e0692d6e6808b09c0b18079",
+      "timestamp": "2026-11-07T17:09:40.646Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 94,
+      "source_record_sha256": "532cd90af78896fdd8c74188cf8830937c338cbd4c12485306797d226016f2c6",
+      "timestamp": "2026-11-07T17:10:18.180Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 109,
+      "source_record_sha256": "e21ed1ae00984dc01675bc3451dd952570f1de2cd5efdaace6bf2032e58ac9a8",
+      "timestamp": "2026-11-07T17:10:47.024Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 116,
+      "source_record_sha256": "6a8647027aba8126ee954cf3ad96168dfc21d146cfc7fece709f34a9fafbafc6",
+      "timestamp": "2026-11-07T17:10:50.831Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 119,
+      "source_record_sha256": "3a7f3d50d716b35ec96a3c35ea152091f8f3d9553cee93b8cd77d6b24b5fa5bd",
+      "timestamp": "2026-11-07T17:10:50.908Z",
+      "markers": [
+        "maxOutputCharsPerItem"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 123,
+      "source_record_sha256": "448f030b9ec57232150373e82f87af652db63e8c767dacf63722b62c65839616",
+      "timestamp": "2026-11-07T17:11:07.046Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 131,
+      "source_record_sha256": "ff211f4dd9aa24dfe5280867fdf63fc619e81f0161e4f484daca2c96ad092495",
+      "timestamp": "2026-11-07T17:11:24.253Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 138,
+      "source_record_sha256": "90070dab738c7c392d7646769e60f4e2927896085908a867186fe766ef5f2b32",
+      "timestamp": "2026-11-07T17:11:31.583Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 145,
+      "source_record_sha256": "80a9d806dd3466929b0a4f9c9ddea11429501eb950841e8a6ad92c4e168639a9",
+      "timestamp": "2026-11-07T17:11:42.229Z",
+      "markers": [
+        "maxOutputCharsPerItem"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 148,
+      "source_record_sha256": "8580358b481509ee87aa0b21a03dde7daa7945f2a9bfa21aa5ea9aa97b8c1efa",
+      "timestamp": "2026-11-07T17:11:42.249Z",
+      "markers": [
+        "maxOutputCharsPerItem"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 152,
+      "source_record_sha256": "ff3cc517f099b328864246a5aabfd588b686ef2775f81489b5483b8aa701bd53",
+      "timestamp": "2026-11-07T17:11:47.432Z",
+      "markers": [
+        "maxOutputCharsPerItem"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 170,
+      "source_record_sha256": "297228b1cf6a58bcff638ec4b815df35edc9560a31f436aeb204edcb98a853e8",
+      "timestamp": "2026-11-07T17:12:10.255Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 178,
+      "source_record_sha256": "39383f495e0aed9b04b599b8e6bbf3dc5ae14be72ca15707cc0f096e05193cbb",
+      "timestamp": "2026-11-07T17:12:18.769Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 186,
+      "source_record_sha256": "68ed7edfbc84777ab4a4e52915b28ac551159f8c3752871b9b72f7b973736162",
+      "timestamp": "2026-11-07T17:12:36.602Z",
+      "markers": [
+        "max_output_tokens",
+        "maxOutputCharsPerItem"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 196,
+      "source_record_sha256": "45bc20f6fb7d383f5ed78f682684a677f6a1b43c0e115738dd294b7cfb769e17",
+      "timestamp": "2026-11-07T17:13:13.839Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 202,
+      "source_record_sha256": "1b547bb561f12421edb66966063b37686c289676281e1fa34ec422085e7d61ad",
+      "timestamp": "2026-11-07T17:13:45.290Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 212,
+      "source_record_sha256": "0da5723176b38171ae7f2c1fc05aba2a0ad153d1f834a5081798b2ffad8231cb",
+      "timestamp": "2026-11-07T17:14:12.537Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 223,
+      "source_record_sha256": "cb79b9896f4af4229af3cc26dcc1c0c4ed14ad406f68364f09492911224d2711",
+      "timestamp": "2026-11-07T17:14:45.866Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 245,
+      "source_record_sha256": "8c62467e665e784f5479d92987941b3f045c6bca60f2b97946c663853ec99007",
+      "timestamp": "2026-11-07T17:16:13.422Z",
+      "markers": [
+        "maxOutputCharsPerItem"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 253,
+      "source_record_sha256": "7afaefeebaa07d3a641c7ad7097536418b87b01b335e463f575db728f3d0baa8",
+      "timestamp": "2026-11-07T17:16:44.469Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 273,
+      "source_record_sha256": "79c34415776eba419cec5600255b63ec4212d72d3333af6bb7374c28a110c32b",
+      "timestamp": "2026-11-07T17:17:23.777Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 281,
+      "source_record_sha256": "df8c5996276c5561ec56948b1db289364eee5f8e6f8f590cfa69187751967e07",
+      "timestamp": "2026-11-07T17:17:49.976Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    }
+  ],
+  "limits": [
+    "Unavailable encrypted message bodies were not decrypted or reconstructed.",
+    "No hidden reasoning, system/developer messages, world-state or compaction payloads exported.",
+    "File-change payloads omitted, including intermediate API history copies; exact visible tool calls/results are retained subject to explicit omissions.",
+    "No full command output was reconstructed where a native record was already shortened."
+  ]
+}

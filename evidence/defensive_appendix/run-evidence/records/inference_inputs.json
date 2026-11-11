@@ -1,0 +1,425 @@
+{
+  "schema_version": "1.0",
+  "inputs": [
+    {
+      "design_id": "design_001",
+      "source_path": "inputs/design_001/topModule.v",
+      "sha256": "148858176f0c6e8196430225128d55455ec7bc5f454a05df136ce373c18aa3f3",
+      "bytes": 51011,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_002",
+      "source_path": "inputs/design_002/topModule.v",
+      "sha256": "44594ceaf8bce003fb2c04b9c511ca95b80f5b1dd2007f54fd34930675a761df",
+      "bytes": 8333,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_003",
+      "source_path": "inputs/design_003/topModule.v",
+      "sha256": "6f5f42c20e9670a58b561581d766032218147f5db5a5b8b003c3051439a155e0",
+      "bytes": 10994,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_004",
+      "source_path": "inputs/design_004/topModule.v",
+      "sha256": "9dac898e2e6a7339c084b19cf92af33aeb0fc702f92edb05a96a8f08523d7370",
+      "bytes": 7583,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_005",
+      "source_path": "inputs/design_005/topModule.v",
+      "sha256": "362a3067d3a9e6153fd627c003aa81c245bd9db7f800d5d551b9dd9ae33f38a4",
+      "bytes": 977,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_006",
+      "source_path": "inputs/design_006/topModule.v",
+      "sha256": "5cbf908c384052fee8f80227df7dd1ae4e66cc3ec418b726a5cc99bc1177c414",
+      "bytes": 4031,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [
+          {
+            "token": "`timescale",
+            "line": 1,
+            "disposition": "benign_declarative"
+          }
+        ],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_007",
+      "source_path": "inputs/design_007/topModule.v",
+      "sha256": "f44fac9ff5f8731ea2d9a6651bb861970418b93896eb3392a0b67b2c17abfc33",
+      "bytes": 789,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_008",
+      "source_path": "inputs/design_008/topModule.v",
+      "sha256": "0536ab09c29a23c1cad96e7b3da67b4b1154beec0047ed610876aa0eb4df5e2c",
+      "bytes": 1101,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_009",
+      "source_path": "inputs/design_009/topModule.v",
+      "sha256": "36c7f5936921bcba39140e4bfbde2a444cf06933e8405eecd2dd6b38727c3fad",
+      "bytes": 8459,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_010",
+      "source_path": "inputs/design_010/topModule.v",
+      "sha256": "d5f832032c9b3643714f78527a0205797e453c3e85419cb0b87e8589ee6bf176",
+      "bytes": 52124,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_011",
+      "source_path": "inputs/design_011/topModule.v",
+      "sha256": "dab512ffba46ad6db43b2cb51900ba023a3207c7b9e5d3536cc40e2ad5f5d9b8",
+      "bytes": 52429,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_012",
+      "source_path": "inputs/design_012/topModule.v",
+      "sha256": "d311fb4216a368e43c50297bc58eef5c74520722cda57489eb8c129b6a7d8f4c",
+      "bytes": 52507,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_013",
+      "source_path": "inputs/design_013/topModule.v",
+      "sha256": "1fff84cc0159290c7f5c257761b5f1b6598be2508ecf76a72c53b551954efc57",
+      "bytes": 52522,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_014",
+      "source_path": "inputs/design_014/topModule.v",
+      "sha256": "758efa4b11402f7e62edfed2e08e6404904037dbd6707b0d705bb15daf6ff530",
+      "bytes": 8243,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_015",
+      "source_path": "inputs/design_015/topModule.v",
+      "sha256": "dab11441dbbd081b11dff197a682ad5866515c8dac616de73f127a07dd5b2b57",
+      "bytes": 8112,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_016",
+      "source_path": "inputs/design_016/topModule.v",
+      "sha256": "6c8d5dacbc1940d327d1fd8da0d07dc54faf593e596631066bdbd0b4c0479d52",
+      "bytes": 7475,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_017",
+      "source_path": "inputs/design_017/topModule.v",
+      "sha256": "736bac5f81cba848bfc167d3fcda320fd574ddd8290f529cfd51a94aaca29658",
+      "bytes": 7888,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_018",
+      "source_path": "inputs/design_018/topModule.v",
+      "sha256": "946b21db176b8505e791571153962fd9381309e29c7e3732cb7833893319c18d",
+      "bytes": 8025,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_019",
+      "source_path": "inputs/design_019/topModule.v",
+      "sha256": "eed252059ebdb6ef302e78ffa1ca67e23f34c2c57647955ecf5a5d27e99983e6",
+      "bytes": 9137,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_020",
+      "source_path": "inputs/design_020/topModule.v",
+      "sha256": "0210e258d5158caf5dd98465ad433c9f66cb9a76a425b64a47a4c0c838cfccfe",
+      "bytes": 9339,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_021",
+      "source_path": "inputs/design_021/topModule.v",
+      "sha256": "7af9017af582200bcbbed5afa9da9b66f474cab0f22693883d6c63afe74a162e",
+      "bytes": 8166,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_022",
+      "source_path": "inputs/design_022/topModule.v",
+      "sha256": "9dfb21a60f5a562c54bddcaa5b78b9921886dabf545ef378762669f5049b2cad",
+      "bytes": 7619,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    },
+    {
+      "design_id": "design_023",
+      "source_path": "inputs/design_023/topModule.v",
+      "sha256": "657138908e23b907c93e83e15fbafbe29c41c05cee8e05092432ed3471caac11",
+      "bytes": 9546,
+      "eligible": true,
+      "rejection_reasons": [],
+      "screen": {
+        "encoding": "utf-8",
+        "compiler_directives": [],
+        "system_tasks": [],
+        "benign_pure_expressions": [],
+        "foreign_or_dynamic_markers": [],
+        "comment_stripped": true,
+        "line_numbers": "original_source_1_based",
+        "source_executed": false
+      }
+    }
+  ]
+}

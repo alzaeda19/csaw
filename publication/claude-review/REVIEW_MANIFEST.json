@@ -1,0 +1,171 @@
+{
+  "created_utc": "2026-11-11T17:14:12.634133+00:00",
+  "scope": "Top-level small review records only; isolated installed CLI directory intentionally excluded.",
+  "files": [
+    {
+      "path": "ERRORS_AND_REFINEMENTS.md",
+      "bytes": 3236,
+      "sha256": "1953db83e30ef16b25a961b7974ebbf61b35403e9b0cecdcc5944f369db45629"
+    },
+    {
+      "path": "RESULT.json",
+      "bytes": 800,
+      "sha256": "9103f44c2fb67b3bff4f264bfdaa03de20e58ae8c381f7dd01a6b5eed7b5bfcd"
+    },
+    {
+      "path": "REVIEW_SUMMARY.md",
+      "bytes": 6464,
+      "sha256": "f7f8b28f3eb16456c83840f6a08862121c9dc7d963c610d592686a06800ec21b"
+    },
+    {
+      "path": "brief-followup-receipt.json",
+      "bytes": 464,
+      "sha256": "813d4f694ea5b10d6ae25a3423e6821a2d4357c4e8506c5907cf94fbfd81fb29"
+    },
+    {
+      "path": "global-cli-help-command.json",
+      "bytes": 415,
+      "sha256": "3edcc08c121c41f2084992eda62fc2909c3eb05db0b8e311ab6eaa642962b9c6"
+    },
+    {
+      "path": "global-cli-help-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "global-cli-help-stdout.txt",
+      "bytes": 15808,
+      "sha256": "37f479647b2ca7370d972d6febaf94bfb9ea11eaa59c22c4d5812a9569ae6bd9"
+    },
+    {
+      "path": "global-cli-version-command.json",
+      "bytes": 418,
+      "sha256": "d243404b7d36af296c94e5fb856ed6f81b1b8ad119e05d9be82b0282f9ac2db8"
+    },
+    {
+      "path": "global-cli-version-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "global-cli-version-stdout.txt",
+      "bytes": 22,
+      "sha256": "65219306e64ae28f41289df4d37158986975713c6916b1eed722f41094582646"
+    },
+    {
+      "path": "historical-review-read-receipts.json",
+      "bytes": 1068,
+      "sha256": "71cf97632ac904feb3886429308000e7bf637c2f3da08ba5964802ad8cbe1284"
+    },
+    {
+      "path": "isolated-cli-package-lock.json",
+      "bytes": 5090,
+      "sha256": "8c28ab34d8f5e854aa34e29eadb6123c0627eb139892d08993dd9680585b1f32"
+    },
+    {
+      "path": "isolated-cli-version.json",
+      "bytes": 544,
+      "sha256": "940e3a79bd4c1c9d4d7d04353b8f997f8f0332fe8b2513fa85735af26ff073b2"
+    },
+    {
+      "path": "isolated-install-command.json",
+      "bytes": 794,
+      "sha256": "f79357a9c2d9976e9014deed62a4c194b6d6d9ffd4668fb8ef3a66ec01b2bd7e"
+    },
+    {
+      "path": "isolated-install-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "isolated-install-stdout.txt",
+      "bytes": 24,
+      "sha256": "bf14b7a2bc076990244fa3239536925868dfe5ad05089c7d459b5fa482abfc72"
+    },
+    {
+      "path": "isolated-wrapper-error.json",
+      "bytes": 402,
+      "sha256": "3ce30e972ef72af4648bcc75b5ed373fa24f5951160022f5ffba8d15c05af4db"
+    },
+    {
+      "path": "opus55-readiness-review-command.json",
+      "bytes": 1667,
+      "sha256": "69e5d087d0132874fc2e5ec974997ebd450fc36ca104e16d68f34e4a1b86fac9"
+    },
+    {
+      "path": "opus55-readiness-review-prompt.txt",
+      "bytes": 15178,
+      "sha256": "159f4ff0c3e743caa46d143d47e79cb235f332735285b2fda741a26b1f747ada"
+    },
+    {
+      "path": "opus55-readiness-review-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "opus55-readiness-review-stdout.json",
+      "bytes": 9934,
+      "sha256": "85a81ac18303185abb2ed683ceb95b66c36b33b5f75dda5a8b259eb16d561f52"
+    },
+    {
+      "path": "opus55-readiness-review.md",
+      "bytes": 7929,
+      "sha256": "91dd78b4f6801d69846b764d6c40605808813ef14e22e115245fb3975086ffa2"
+    },
+    {
+      "path": "readiness-review-command.json",
+      "bytes": 1467,
+      "sha256": "11d576e6e953ae8d1a048f1daf9ea30a61ae48bbaf7d7706bc036b13282aedce"
+    },
+    {
+      "path": "readiness-review-prompt.txt",
+      "bytes": 15178,
+      "sha256": "159f4ff0c3e743caa46d143d47e79cb235f332735285b2fda741a26b1f747ada"
+    },
+    {
+      "path": "readiness-review-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "readiness-review-stdout.json",
+      "bytes": 8792,
+      "sha256": "c1072697375af85ac101671a4ef45871df1bd30b76eaad42f3fef3df5b5255c9"
+    },
+    {
+      "path": "readiness-review.md",
+      "bytes": 7291,
+      "sha256": "3a67da2c8cc9463c7bca2329ca32b2c2d1160d02c7e41258a6e98c25327f351c"
+    },
+    {
+      "path": "requested-model-probe-command.json",
+      "bytes": 1493,
+      "sha256": "4d50ab7ccaf1c7e5e03ccc29bc729d0a93333c4e609033c8b9fb6372283c99c1"
+    },
+    {
+      "path": "requested-model-probe-prompt.txt",
+      "bytes": 137,
+      "sha256": "0274479086986d93483c590884e1f440d02d2907373ebccb6c55858cbc89ddea"
+    },
+    {
+      "path": "requested-model-probe-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "requested-model-probe-stdout.json",
+      "bytes": 885,
+      "sha256": "929613f8927ada8fa442455537d6d686f4ba2b9088435db77375e331f40e59b2"
+    },
+    {
+      "path": "review-source-receipts.json",
+      "bytes": 1121,
+      "sha256": "8817286dac7818cab3b0a87d920c79f8c44299119c6c42496bb18f966114942c"
+    },
+    {
+      "path": "run_review.py",
+      "bytes": 5735,
+      "sha256": "69be0bda9aeed384d7f40186a06e26cbc154269b99ccb309852061dad4b2fe2e"
+    }
+  ]
+}

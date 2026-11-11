@@ -1,0 +1,19 @@
+{
+  "note": "Native configuration labels only; not provider authentication of serving weights or sampling parameters.",
+  "records": [
+    {
+      "source_line": 830,
+      "source_record_sha256": "0b93d0cf08000572517d9b093b2f79f10501a240917446dc1442a513ee81ac01",
+      "timestamp": "2026-11-07T17:33:13.288Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1b70e-3272-7171-8f23-aef002490226",
+        "kind": "completed",
+        "agent_thread_id": "01a1b70e-3268-76f1-b25a-33eef85b7c8b",
+        "agent_path": "/root/bitstream_records_export",
+        "model": null,
+        "reasoning_effort": null
+      }
+    }
+  ]
+}

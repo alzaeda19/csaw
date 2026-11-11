@@ -1,0 +1,35 @@
+{
+  "included_files_in_copy_order": [
+    "aes_128.v",
+    "round.v",
+    "table.v"
+  ],
+  "testbench_included": false,
+  "method": "Copy all three original module files; remove include directive lines only, matching notebook cell13. HW2GRAPH then concatenates each file once.",
+  "files": [
+    {
+      "file": "aes_128.v",
+      "source_sha256": "60835b67fb0c424ab4a1a5d7ee11a2b5a7301bf45677def9653f7491c92cb1a6",
+      "includes": [
+        "round.v",
+        "table.v"
+      ],
+      "prepared_sha256": "90674096d4980effd8727d331719323b2e3aa7e00a8fb061aec50283f36b483f",
+      "removed_include_directives_only": true
+    },
+    {
+      "file": "round.v",
+      "source_sha256": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+      "includes": [],
+      "prepared_sha256": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+      "removed_include_directives_only": true
+    },
+    {
+      "file": "table.v",
+      "source_sha256": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157",
+      "includes": [],
+      "prepared_sha256": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157",
+      "removed_include_directives_only": true
+    }
+  ]
+}

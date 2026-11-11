@@ -1,0 +1,131 @@
+{
+  "utc": "2026-11-10T13:06:07.789097+00:00",
+  "all_pass": true,
+  "visible_records_verified": 2271,
+  "unique_native_record_ids": 2271,
+  "retained_fields_verified": 15753,
+  "final_answer_records": 36,
+  "source_files": 7,
+  "sessions": [
+    {
+      "path": "bitstream_and_mac/bitstream_root_tail/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 18,
+      "finals": 1,
+      "first_native_line": 806,
+      "last_native_line": 855
+    },
+    {
+      "path": "bitstream_and_mac/mac_root_task/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 89,
+      "finals": 1,
+      "first_native_line": 50,
+      "last_native_line": 292
+    },
+    {
+      "path": "bitstream_and_mac/prior_bitstream_export/baseline_bitstream_simulation/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-21-03-01a1b707-2fc7-79b0-b5e2-9e50d150a248.jsonl",
+      "records": 120,
+      "finals": 3,
+      "first_native_line": 13,
+      "last_native_line": 284
+    },
+    {
+      "path": "bitstream_and_mac/prior_bitstream_export/baseline_mapped_formal/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-20-54-01a1b707-0a23-7ac0-8c93-f0a811f11e5d.jsonl",
+      "records": 163,
+      "finals": 1,
+      "first_native_line": 13,
+      "last_native_line": 386
+    },
+    {
+      "path": "bitstream_and_mac/prior_bitstream_export/decode_regenerated_baseline/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-20-46-01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5.jsonl",
+      "records": 117,
+      "finals": 1,
+      "first_native_line": 13,
+      "last_native_line": 266
+    },
+    {
+      "path": "bitstream_and_mac/prior_bitstream_export/root_current_task/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 187,
+      "finals": 0,
+      "first_native_line": 324,
+      "last_native_line": 803
+    },
+    {
+      "path": "coordinator/earlier_clean_aes_reference/coordinator_clean_aes_reference/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-16-45-01a1c563-aa79-7e12-ae2f-72d867d1e3da.jsonl",
+      "records": 32,
+      "finals": 2,
+      "first_native_line": 73,
+      "last_native_line": 167
+    },
+    {
+      "path": "coordinator/snapshot_20261110T130122100080Z/coordinator_current_clean_work/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-16-45-01a1c563-aa79-7e12-ae2f-72d867d1e3da.jsonl",
+      "records": 125,
+      "finals": 3,
+      "first_native_line": 168,
+      "last_native_line": 500
+    },
+    {
+      "path": "coordinator/snapshot_20261110T130122100080Z/coordinator_readiness_review/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-35-15-01a1c574-9a3c-73d2-aa19-6b294a9719e1.jsonl",
+      "records": 73,
+      "finals": 5,
+      "first_native_line": 13,
+      "last_native_line": 161
+    },
+    {
+      "path": "detector_tails/baseline_root_completion/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 14,
+      "finals": 1,
+      "first_native_line": 1301,
+      "last_native_line": 1336
+    },
+    {
+      "path": "detector_tails/clean_aes_before_followup/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 3,
+      "finals": 0,
+      "first_native_line": 1539,
+      "last_native_line": 1542
+    },
+    {
+      "path": "detector_tails/clean_aes_completion_followup/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 25,
+      "finals": 1,
+      "first_native_line": 1544,
+      "last_native_line": 1605
+    },
+    {
+      "path": "historical_clean/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/06/rollout-2026-11-06T09-08-41-01a1b130-b28f-70c3-b80d-a7129910ee45.jsonl",
+      "records": 1305,
+      "finals": 17,
+      "first_native_line": 13,
+      "last_native_line": 3555
+    }
+  ],
+  "sub_bundle_file_hashes_verified": 166,
+  "prior_detector_evidence_and_source_hash_checks": 392,
+  "repository_unchanged": true,
+  "repository_after": {
+    "status": {
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "head": {
+      "exit": 0,
+      "stdout": "a3006f61f55fd8b6a232377d292fcec3138bf1ae\n",
+      "stderr": ""
+    }
+  },
+  "limitations": "Checks validate retained local fields, hashes and scope; not global conversation completeness or provider attestation. No tests/inference/historical commands executed."
+}

@@ -1,0 +1,68 @@
+{
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-20-54-01a1b707-0a23-7ac0-8c93-f0a811f11e5d.jsonl",
+  "snapshot_read_started_utc": "2026-11-07T17:32:19.149460Z",
+  "snapshot_read_finished_utc": "2026-11-07T17:32:19.149552Z",
+  "source_snapshot_bytes": 1144107,
+  "source_snapshot_sha256": "592cd6b98ce02d9248ec070fa0741393963565a5d4356026686b743a82351a77",
+  "complete_source_lines": 389,
+  "trailing_incomplete_bytes_not_parsed": 0,
+  "label": "baseline_mapped_formal",
+  "first_in_scope_line": 1,
+  "minimum_timestamp": "2026-11-07T17:20:00",
+  "exported_counts": {
+    "agent_message_readable_envelope": 7,
+    "custom_tool_call": 41,
+    "command_execution": 57,
+    "custom_tool_call_output": 41,
+    "function_call": 9,
+    "function_call_output": 9,
+    "assistant_final_answer": 1
+  },
+  "excluded_counts": {
+    "session_meta": 1,
+    "response_item:additional_tools": 1,
+    "response_item:message": 4,
+    "platform_environment_user_context": 1,
+    "world_state": 1,
+    "turn_context_payload_except_model_labels": 1,
+    "event_msg": 52,
+    "inter_agent_communication_metadata": 7,
+    "token_usage_record": 51,
+    "event_item:Reasoning": 43,
+    "response_item:reasoning": 43,
+    "event_item:FileChange": 7,
+    "event_item:SubAgentActivity": 8,
+    "event_item:AgentMessage": 1
+  },
+  "exported_records": 165,
+  "first_exported_timestamp": "2026-11-07T17:20:55.759Z",
+  "last_exported_timestamp": "2026-11-07T17:30:06.312Z",
+  "lifecycle": [
+    {
+      "source_line": 2,
+      "source_record_sha256": "3cc989195bed017847f012300f5a3b4a8391458dff743143dc83d0f6b5982ce6",
+      "timestamp": "2026-11-07T17:20:54.326Z",
+      "source_fields": {
+        "type": "task_started",
+        "turn_id": "01a1b707-0a2c-7261-8d85-c0f883515d80"
+      }
+    },
+    {
+      "source_line": 389,
+      "source_record_sha256": "a9ac83fa9887126133e93385579e83a456d3666f879d56f93e9ec6e1b5eb4d0c",
+      "timestamp": "2026-11-07T17:30:06.565Z",
+      "source_fields": {
+        "type": "task_complete",
+        "turn_id": "01a1b707-0a2c-7261-8d85-c0f883515d80"
+      }
+    }
+  ],
+  "significant_omissions_and_gaps": 16,
+  "integrity": {
+    "pass": true,
+    "records_verified": 165,
+    "retained_fields_verified": 1233,
+    "method": "Every exported field compared to its exact native source field; projected content lists preserve exact selected original items with source indices. Raw source-record SHA-256 covers the complete original line including newline.",
+    "source_line_hashes_verified": true
+  }
+}

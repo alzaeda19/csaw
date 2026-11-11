@@ -1,0 +1,49 @@
+{
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-20-57-01a1c567-82f5-7f61-b1f6-2db0a3c60a6d.jsonl",
+  "snapshot_read_started_utc": "2026-11-10T12:27:30.115079Z",
+  "snapshot_read_finished_utc": "2026-11-10T12:27:30.115276Z",
+  "source_snapshot_bytes": 500467,
+  "source_snapshot_sha256": "0be141d87405570c0fbd3343e5a99eabdddbc9da627583f5cda39010c4366069",
+  "complete_source_lines": 140,
+  "trailing_incomplete_bytes_not_parsed": 0,
+  "native_thread_id": "01a1c567-82f5-7f61-b1f6-2db0a3c60a6d",
+  "root_delegation_agent_path": "/root/detector_environment",
+  "label": "detector_environment",
+  "first_in_scope_line": 1,
+  "minimum_timestamp": "2026-11-10T12:20:14.739Z",
+  "exported_records": 53,
+  "exported_counts": {
+    "agent_message_readable_envelope": 2,
+    "custom_tool_call": 14,
+    "command_execution": 12,
+    "custom_tool_call_output": 14,
+    "file_change_record": 2,
+    "function_call": 4,
+    "function_call_output": 4,
+    "assistant_final_answer": 1
+  },
+  "excluded_counts": {
+    "session_meta": 1,
+    "event_msg": 22,
+    "response_item:additional_tools": 1,
+    "response_item:message": 4,
+    "platform_environment_context": 1,
+    "world_state": 1,
+    "turn_context_except_configured_model_labels": 1,
+    "inter_agent_communication_metadata": 2,
+    "token_usage_record": 19,
+    "event_item:Reasoning": 15,
+    "response_item:reasoning": 15,
+    "event_item:SubAgentActivity": 4,
+    "event_item:AgentMessage": 1
+  },
+  "last_exported_timestamp": "2026-11-10T12:24:05.786Z",
+  "integrity": {
+    "pass": true,
+    "records_verified": 53,
+    "retained_fields_verified": 359,
+    "source_line_hashes_verified": true,
+    "method": "Saved JSONL re-read; every retained field compared to the exact original native field or selected original list elements. SHA-256 verified against each full original source line, including newline."
+  },
+  "significant_omissions_and_gaps": 6
+}

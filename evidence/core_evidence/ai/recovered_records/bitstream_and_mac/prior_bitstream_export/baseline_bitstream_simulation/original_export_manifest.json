@@ -1,0 +1,86 @@
+{
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-21-03-01a1b707-2fc7-79b0-b5e2-9e50d150a248.jsonl",
+  "snapshot_read_started_utc": "2026-11-07T17:32:19.140632Z",
+  "snapshot_read_finished_utc": "2026-11-07T17:32:19.140800Z",
+  "source_snapshot_bytes": 1229250,
+  "source_snapshot_sha256": "b67c6900aadb4bf665c813fa642831bbb9facfc91aeaabdc5ff5b7a30d4db830",
+  "complete_source_lines": 287,
+  "trailing_incomplete_bytes_not_parsed": 0,
+  "label": "baseline_bitstream_simulation",
+  "first_in_scope_line": 1,
+  "minimum_timestamp": "2026-11-07T17:20:00",
+  "exported_counts": {
+    "agent_message_readable_envelope": 5,
+    "custom_tool_call": 28,
+    "command_execution": 40,
+    "custom_tool_call_output": 28,
+    "function_call": 9,
+    "function_call_output": 9,
+    "assistant_final_answer": 3
+  },
+  "excluded_counts": {
+    "session_meta": 1,
+    "response_item:additional_tools": 1,
+    "response_item:message": 4,
+    "platform_environment_user_context": 1,
+    "world_state": 1,
+    "turn_context_payload_except_model_labels": 2,
+    "event_msg": 41,
+    "inter_agent_communication_metadata": 5,
+    "token_usage_record": 40,
+    "event_item:Reasoning": 25,
+    "response_item:reasoning": 25,
+    "event_item:SubAgentActivity": 7,
+    "event_item:FileChange": 3,
+    "event_item:AgentMessage": 3
+  },
+  "exported_records": 122,
+  "first_exported_timestamp": "2026-11-07T17:21:04.840Z",
+  "last_exported_timestamp": "2026-11-07T17:28:08.891Z",
+  "lifecycle": [
+    {
+      "source_line": 2,
+      "source_record_sha256": "7da6e9490b77a52e80adf0ccb5eb402550d6fdad04b689cf11a20c241720d263",
+      "timestamp": "2026-11-07T17:21:03.966Z",
+      "source_fields": {
+        "type": "task_started",
+        "turn_id": "01a1b707-2fd6-7310-adac-833ac9f5ce66"
+      }
+    },
+    {
+      "source_line": 169,
+      "source_record_sha256": "edc2bcb28b86b76ae857168ccb8c987a728cc73f9849bd1689b104e6d34bf799",
+      "timestamp": "2026-11-07T17:24:55.040Z",
+      "source_fields": {
+        "type": "task_complete",
+        "turn_id": "01a1b707-2fd6-7310-adac-833ac9f5ce66"
+      }
+    },
+    {
+      "source_line": 170,
+      "source_record_sha256": "43260a9a39917b0b86307f2ae49ff358b89ff8bf21f14139df4fcee29b5b11a5",
+      "timestamp": "2026-11-07T17:25:13.178Z",
+      "source_fields": {
+        "type": "task_started",
+        "turn_id": "01a1b70a-fd4d-7ab0-b2f3-ffa141d610f4"
+      }
+    },
+    {
+      "source_line": 287,
+      "source_record_sha256": "15d8a87f4a28a9322cce575a73e9c671205ca36b2f677b28903f6e83e70fdbe1",
+      "timestamp": "2026-11-07T17:28:08.908Z",
+      "source_fields": {
+        "type": "task_complete",
+        "turn_id": "01a1b70a-fd4d-7ab0-b2f3-ffa141d610f4"
+      }
+    }
+  ],
+  "significant_omissions_and_gaps": 14,
+  "integrity": {
+    "pass": true,
+    "records_verified": 122,
+    "retained_fields_verified": 899,
+    "method": "Every exported field compared to its exact native source field; projected content lists preserve exact selected original items with source indices. Raw source-record SHA-256 covers the complete original line including newline.",
+    "source_line_hashes_verified": true
+  }
+}

@@ -1,0 +1,49 @@
+Frozen four-detector evaluation of existing course-package designs
+November 10, 2026
+
+All 23 designs were scored successfully: 14 labeled Trojan-infected and 9 labeled clean. Four models produced 92 individual predictions. The supplied any-positive-vote ensemble detected 9/14 infected designs (64.3%), missed 5/14, and falsely flagged 7/9 clean designs (77.8%). It correctly left 2/9 clean designs unflagged.
+
+Model       TP  FN  FP  TN   Recall      False-positive rate
+HT1          9   5   5   4    64.3%        55.6%
+HT2          6   8   6   3    42.9%        66.7%
+HT3          0  14   1   8     0.0%        11.1%
+HT4          4  10   2   7    28.6%        22.2%
+Ensemble     9   5   7   2    64.3%        77.8%
+
+TP=infected flagged; FN=infected missed; FP=clean flagged; TN=clean unflagged. Recall denominator is 14; false-positive denominator is 9. Coverage is 23/23, so no cases are silently excluded.
+
+INTERPRETATION
+This is direct evidence of missed detections and false alarms on the supplied labeled toy dataset. It does not show a reliable security guarantee. On this set, the ensemble detected no additional positives beyond HT1 but added two clean-design false alarms. No model, threshold, input or ensemble rule was tuned in response to the results.
+Family detail: the ensemble flagged all four infected PIC16F84 variants AND the one clean PIC16F84 control. For RS232 it flagged five of ten infected variants AND the clean RS232 control. Thus positive classifications alone do not demonstrate that the detector distinguishes the modification from its clean base. The seven other clean controls contributed five further false alarms. Family metrics and all per-design results are included.
+
+WHAT RAN
+The trojan orchestrator ran one bounded evaluation per supplied RTL file in a new isolated workspace. No hardware simulation, payload activation, new Trojan generation, training, adaptive evasion, published-solution lookup or board action occurred. The existing CSAW repository and previous partial submission were not changed.
+Input: only TJ-RTL-toy/*/*/topModule.v from the nested hw2vec/assets/datasets.zip in the original professor ZIP. Dataset hashes, the 23 individual hashes, and original four checkpoint/config identities are recorded in dataset-manifest.json and frozen-model-manifest.json. Directory labels TjFree=0 and TjIn=1 are supplied ground truth for scoring, not independently activated/verified infection claims. The benchmark has 4 PIC16F84 and 10 RS232 infected variants plus 9 clean controls; byte hashes are distinct but family variants are correlated.
+Workers received neutral design IDs, paths and source hashes, not the external truth labels. Models loaded strictly with weights_only=True, on CPU in evaluation mode, using the preserved 37-feature vocabulary. The graph-cache pickle was not loaded. The supplied argmax and any-positive-vote rule were unchanged.
+All 23 used the parser-based path recorded as exact_DFG, with no fallback, timeout or unscored result. This route label means graph extraction completed, not that the graph models every hardware behavior or proves security. The supplied topModule.v files passed through without the flatten/rename/underscore-removal step used for differently named earlier AES/CSAW inputs. Earlier AES and CSAW results are not part of the 23-design denominator.
+Fixed resource limits: 30-second graph extraction deadline, 75-second worker wall limit, 60-second CPU limit, sampled 2 GiB process-group memory guard, two concurrent workers. No retries. The memory guard is sampled, not a kernel-enforced address-space bound.
+
+INDEPENDENT VERIFICATION
+The coordinating chat independently checked the original archive-to-source/label mappings, all 23 command log hashes, four frozen checkpoint/config identities in each scored run, 92 logits-to-probability/argmax calculations, 23 ensemble votes, and confusion matrices. Its independently calculated metrics match the orchestrator exactly. No inference was rerun for this verification.
+An initial verifier assertion omitted a null supervisor metadata field; the schema check was corrected, with all actual worker result fields still required to match. This did not change predictions or rerun the experiment. A separate post-run version probe reported a missing dot command; it was outside inference and is not an inference failure. The orchestrator retains that failure and correction.
+
+LIMITATIONS AND COURSE STATUS
+No item-level training manifest establishes that these examples were unseen by these four course checkpoints. The upstream HW2VEC example trains/tests on this toy set; the course README describes separate retraining data. Treat overlap as unknown, not absent. This is not a held-out generalization result.
+The small dataset is dominated by related RS232 variants; it cannot establish general detection rates, calibration or functional Trojan activation. Filename suffixes such as T100 are not a documented mapping to detector HT1 types. Model scores are not calibrated probabilities of compromise.
+The requested benchmark evaluation is complete. Instructor approval of a changed assignment scope remains pending. This report does not claim completion of the original modified-design/demonstration requirements.
+
+FILES
+per-design-predictions.csv: every scored design/model and ensemble prediction, label, score and route.
+independent-metrics.json: overall and family confusion matrices and rates.
+independent-checks.json: verification scope and command checks.
+run-evidence/: unchanged copies of aggregate and per-design outcomes, commands, extraction metadata, policies and runner source. These historical runners use the original recorded paths/runtime; this compact bundle is not a standalone detector installation.
+METHOD.txt: fixed scope/metric definitions and independent provenance review findings.
+evidence-copy-receipt.json: source paths and exact copied-byte hashes.
+
+Authoritative isolated execution directory:
+/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Existing_Designs_2026-11-10_180906Z/
+
+FINALIZED ORCHESTRATOR RECORDS
+The original experiment was sealed after this report was prepared. Its OUTPUT_HASHES.json SHA-256 is 10f1a19d4e056f60cdc178d316d3eafb7c0a3393dddb377d420d1cda1f6eae58; all 507 listed files were verified against that seal. The compact bundle now includes the final orchestrator REPORT.md, AI_RECORD.md, readable per-design CSV, parent verification, independent method review, and bounded current-task AI export under run-evidence/. The source/copy receipt covers every copied evidence file. No inference was rerun and all results are unchanged.
+The AI export contains 236 visible records with explicit boundaries and omissions. Its root cutoff is 2026-11-10 18:18:34.359 UTC (1:18:34.359 PM Eastern). The exporter session, encrypted bodies, mixed history and later packaging/final messages are excluded. This is not a claim of complete AI logs. See run-evidence/AI_RECORD.md and records/current_task_transcripts/README.md within run-evidence/.
+The source manifest describes the full original experiment; this compact bundle intentionally omits model weights, input RTL, full graph artifacts and the shared runtime. FINALIZATION_RECEIPT.json documents this packaging update.

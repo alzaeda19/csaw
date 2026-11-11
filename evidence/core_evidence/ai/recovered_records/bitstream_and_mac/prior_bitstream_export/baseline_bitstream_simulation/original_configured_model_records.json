@@ -1,0 +1,55 @@
+{
+  "note": "Native configured model/effort labels only; these do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [
+    {
+      "source_line": 10,
+      "source_record_sha256": "d2a42583208fe8f3ab39017cd4573a24817d242ba9c408d920273cd72d20bcaa",
+      "timestamp": "2026-11-07T17:21:04.838Z",
+      "source_fields": {
+        "turn_id": "01a1b707-2fd6-7310-adac-833ac9f5ce66",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    },
+    {
+      "source_line": 171,
+      "source_record_sha256": "1531ad252f46742a9c865c21f1257f98ce44d0f9cf975edbe72edfd1a73ca75a",
+      "timestamp": "2026-11-07T17:25:13.266Z",
+      "source_fields": {
+        "turn_id": "01a1b70a-fd4d-7ab0-b2f3-ffa141d610f4",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    }
+  ],
+  "delegation_activity_labels": [
+    {
+      "source_line": 34,
+      "source_record_sha256": "f0002852ea0dc72a93a8464acddbbe340d2fef2f46356219cb6207304185c598",
+      "timestamp": "2026-11-07T17:21:17.345Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_593e88837a744390954f9ba1e2b1c4ca",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+        "agent_path": "/root/decode_regenerated_baseline",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 161,
+      "source_record_sha256": "7c4195dcfa384ae2d5899ae68be212578a519b640befa003127342e88685d38a",
+      "timestamp": "2026-11-07T17:24:48.780Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_8eb69708cda64a7e85f97597bf158873",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+        "agent_path": "/root/decode_regenerated_baseline",
+        "model": null,
+        "reasoning_effort": null
+      }
+    }
+  ]
+}

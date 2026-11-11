@@ -1,0 +1,95 @@
+{
+  "utc": "2026-11-07T16:08:04.365864+00:00",
+  "pass": true,
+  "matrix": [
+    {
+      "modes": "00",
+      "assertion_proof": "pair_00_v2",
+      "assertion_result": "PASS",
+      "cover_result": "PASS final witness + early witness and complete trace audit",
+      "coverage_states": {
+        "equivalence": [
+          1,
+          139
+        ],
+        "word_checks": [
+          70,
+          139
+        ],
+        "solver_bound": 141
+      },
+      "original_V2_cover": "SAT goals70/139; TIMEOUT during export at600s, retained"
+    },
+    {
+      "modes": "01",
+      "assertion_proof": "pair_01_v2",
+      "assertion_result": "PASS",
+      "cover_result": "PASS final witness + early witness and complete trace audit",
+      "coverage_states": {
+        "equivalence": [
+          1,
+          139
+        ],
+        "word_checks": [
+          70,
+          139
+        ],
+        "solver_bound": 141
+      },
+      "original_V2_cover": "SAT goals70/139; TIMEOUT during export at600s, retained"
+    },
+    {
+      "modes": "10",
+      "assertion_proof": "pair_10_retry_01",
+      "assertion_result": "PASS",
+      "cover_result": "PASS final witness + early witness and complete trace audit",
+      "coverage_states": {
+        "equivalence": [
+          1,
+          139
+        ],
+        "word_checks": [
+          70,
+          139
+        ],
+        "solver_bound": 141
+      },
+      "original_V2_cover": "SAT goals70/139; TIMEOUT during export at600s, retained"
+    },
+    {
+      "modes": "11",
+      "assertion_proof": "pair_11_retry_01",
+      "assertion_result": "PASS",
+      "cover_result": "PASS final witness + early witness and complete trace audit",
+      "coverage_states": {
+        "equivalence": [
+          1,
+          139
+        ],
+        "word_checks": [
+          70,
+          139
+        ],
+        "solver_bound": 141
+      },
+      "original_V2_cover": "SAT goals70/139; TIMEOUT during export at600s, retained"
+    }
+  ],
+  "failures_preserved": {
+    "initial_checker_failures_then_export_timeouts": 6,
+    "V2_assertion_timeouts": 2,
+    "V2_cover_export_timeouts": 4
+  },
+  "unproven": [
+    "unrestricted post-reset inputs",
+    "unbounded or more than two transactions",
+    "other idle spacings or mode-change points",
+    "four-state simulation and physical timing",
+    "cipher functional correctness"
+  ],
+  "log_gaps": [
+    "no native envelope export",
+    "no exact serving-model/build metadata",
+    "some direct setup/search/inline generation envelopes only summarized"
+  ]
+}

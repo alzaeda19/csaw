@@ -1,0 +1,485 @@
+{
+  "note": "Only selected IDs, current delegation mapping and model configuration labels. Configured model labels do not authenticate serving weights or actual inference parameters.",
+  "records": [
+    {
+      "source_line": 2011,
+      "source_record_sha256": "49fb5bece6679e2e8de37c4a4879b01c758a86459f232440e5364d8cf6191244",
+      "timestamp": "2026-11-10T18:09:34.943Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_1a46c7a2a4a845a886cdd29257b56e03",
+        "kind": "started",
+        "agent_thread_id": "01a1c6a6-aed2-7af0-ab4f-13de67b17a82",
+        "agent_path": "/root/existing_design_intake",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      },
+      "source_paths": {
+        "type": [
+          "payload",
+          "item",
+          "type"
+        ],
+        "id": [
+          "payload",
+          "item",
+          "id"
+        ],
+        "kind": [
+          "payload",
+          "item",
+          "kind"
+        ],
+        "agent_thread_id": [
+          "payload",
+          "item",
+          "agent_thread_id"
+        ],
+        "agent_path": [
+          "payload",
+          "item",
+          "agent_path"
+        ],
+        "model": [
+          "payload",
+          "item",
+          "model"
+        ],
+        "reasoning_effort": [
+          "payload",
+          "item",
+          "reasoning_effort"
+        ]
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "6d18699a1fcfe0cc7e943f2e903a3f8c95d036bd88a94efe6bf8aa1705937b5a",
+        "kind": "66967c3c8be87735db13483ffcf1634b42ed82f19718e488c07e01322ef6d23b",
+        "agent_thread_id": "29ad7330843aa394d1036413fd6207a86ab3c0249e4c938f5fac31613256e456",
+        "agent_path": "34dfa6b897d501cc530d73ebb9e9f7d01270cfba2cb22594c618c5488a7a158c",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "reasoning_effort": "168ca465deb3cd1d4c688dc5b1be70beed3a7810e61fe005d4e08ac128aa3aa5"
+      }
+    },
+    {
+      "source_line": 2016,
+      "source_record_sha256": "ab2f689e03c13652f26d2a9a049f933b9b20466718d26fbdc0ed7c55b6437c6b",
+      "timestamp": "2026-11-10T18:09:41.242Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_b88fd93fa6e44c089106517b6bb6f24c",
+        "kind": "started",
+        "agent_thread_id": "01a1c6a6-c76e-75a3-bd8e-79c02e59aa36",
+        "agent_path": "/root/existing_detector_method_review",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      },
+      "source_paths": {
+        "type": [
+          "payload",
+          "item",
+          "type"
+        ],
+        "id": [
+          "payload",
+          "item",
+          "id"
+        ],
+        "kind": [
+          "payload",
+          "item",
+          "kind"
+        ],
+        "agent_thread_id": [
+          "payload",
+          "item",
+          "agent_thread_id"
+        ],
+        "agent_path": [
+          "payload",
+          "item",
+          "agent_path"
+        ],
+        "model": [
+          "payload",
+          "item",
+          "model"
+        ],
+        "reasoning_effort": [
+          "payload",
+          "item",
+          "reasoning_effort"
+        ]
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "12e15083e4d7d9b15ee70c2b9294e448a6e6308c2e46abb17d592d07ca4f8e8a",
+        "kind": "66967c3c8be87735db13483ffcf1634b42ed82f19718e488c07e01322ef6d23b",
+        "agent_thread_id": "2695cb8184f131f0a771de01903db1072ae9b203901d3aa8d8bb670d92548682",
+        "agent_path": "fff47c2455ff845dcb25708d1cc08e254a92461985bc4d2297b7bf0d8566c9b9",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "reasoning_effort": "168ca465deb3cd1d4c688dc5b1be70beed3a7810e61fe005d4e08ac128aa3aa5"
+      }
+    },
+    {
+      "source_line": 2070,
+      "source_record_sha256": "26c213aa0356af5ff1e0d8e0993792c969d47671fc353636b81004d58293128a",
+      "timestamp": "2026-11-10T18:11:09.889Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c6a6-aede-78b3-8132-2a112704e9f7",
+        "kind": "completed",
+        "agent_thread_id": "01a1c6a6-aed2-7af0-ab4f-13de67b17a82",
+        "agent_path": "/root/existing_design_intake",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_paths": {
+        "type": [
+          "payload",
+          "item",
+          "type"
+        ],
+        "id": [
+          "payload",
+          "item",
+          "id"
+        ],
+        "kind": [
+          "payload",
+          "item",
+          "kind"
+        ],
+        "agent_thread_id": [
+          "payload",
+          "item",
+          "agent_thread_id"
+        ],
+        "agent_path": [
+          "payload",
+          "item",
+          "agent_path"
+        ],
+        "model": [
+          "payload",
+          "item",
+          "model"
+        ],
+        "reasoning_effort": [
+          "payload",
+          "item",
+          "reasoning_effort"
+        ]
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "4e41b56daa05827b16d0131e314feb2602e87af53e866bbff1d5bb054cde9f8a",
+        "kind": "7093fda846e50b267da144f7b3683ee1dd8838506939f6052b7370dd01fa2ad0",
+        "agent_thread_id": "29ad7330843aa394d1036413fd6207a86ab3c0249e4c938f5fac31613256e456",
+        "agent_path": "34dfa6b897d501cc530d73ebb9e9f7d01270cfba2cb22594c618c5488a7a158c",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 2100,
+      "source_record_sha256": "3dabd3ba1f6a55c4db2f47c8c2d565d0261eb47893aed56a5b667c3b33ddd472",
+      "timestamp": "2026-11-10T18:12:39.920Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_1be6563e68e54072868d9ba84659124a",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c6a6-c76e-75a3-bd8e-79c02e59aa36",
+        "agent_path": "/root/existing_detector_method_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_paths": {
+        "type": [
+          "payload",
+          "item",
+          "type"
+        ],
+        "id": [
+          "payload",
+          "item",
+          "id"
+        ],
+        "kind": [
+          "payload",
+          "item",
+          "kind"
+        ],
+        "agent_thread_id": [
+          "payload",
+          "item",
+          "agent_thread_id"
+        ],
+        "agent_path": [
+          "payload",
+          "item",
+          "agent_path"
+        ],
+        "model": [
+          "payload",
+          "item",
+          "model"
+        ],
+        "reasoning_effort": [
+          "payload",
+          "item",
+          "reasoning_effort"
+        ]
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "75c3d59069a8712aadd49e4793c1521715a8fae444c6f3a2be76a42fad2c508a",
+        "kind": "2b1f2c7771d1eae17a63ecf0de4a8c97c535781445a35f32e78db3d53fa8d28b",
+        "agent_thread_id": "2695cb8184f131f0a771de01903db1072ae9b203901d3aa8d8bb670d92548682",
+        "agent_path": "fff47c2455ff845dcb25708d1cc08e254a92461985bc4d2297b7bf0d8566c9b9",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 2125,
+      "source_record_sha256": "e8a47b2487251d343364184d087309f8edd0fb0d4d5eebfe4a91ccd8fde964c6",
+      "timestamp": "2026-11-10T18:14:19.510Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_16447cb064a047bb9e4da92a907f983f",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c6a6-c76e-75a3-bd8e-79c02e59aa36",
+        "agent_path": "/root/existing_detector_method_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_paths": {
+        "type": [
+          "payload",
+          "item",
+          "type"
+        ],
+        "id": [
+          "payload",
+          "item",
+          "id"
+        ],
+        "kind": [
+          "payload",
+          "item",
+          "kind"
+        ],
+        "agent_thread_id": [
+          "payload",
+          "item",
+          "agent_thread_id"
+        ],
+        "agent_path": [
+          "payload",
+          "item",
+          "agent_path"
+        ],
+        "model": [
+          "payload",
+          "item",
+          "model"
+        ],
+        "reasoning_effort": [
+          "payload",
+          "item",
+          "reasoning_effort"
+        ]
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "154e260f018138db9255a54368528965c909faf069fab9b69e48512dd6f6c29d",
+        "kind": "2b1f2c7771d1eae17a63ecf0de4a8c97c535781445a35f32e78db3d53fa8d28b",
+        "agent_thread_id": "2695cb8184f131f0a771de01903db1072ae9b203901d3aa8d8bb670d92548682",
+        "agent_path": "fff47c2455ff845dcb25708d1cc08e254a92461985bc4d2297b7bf0d8566c9b9",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 2177,
+      "source_record_sha256": "17b8304fbc506cfdf64b56fdec065fd8b0cb79acad56dcee7d017ae30c93ed3d",
+      "timestamp": "2026-11-10T18:15:48.416Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_5270370bb62149ba85311b5488b1687c",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c6a6-c76e-75a3-bd8e-79c02e59aa36",
+        "agent_path": "/root/existing_detector_method_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_paths": {
+        "type": [
+          "payload",
+          "item",
+          "type"
+        ],
+        "id": [
+          "payload",
+          "item",
+          "id"
+        ],
+        "kind": [
+          "payload",
+          "item",
+          "kind"
+        ],
+        "agent_thread_id": [
+          "payload",
+          "item",
+          "agent_thread_id"
+        ],
+        "agent_path": [
+          "payload",
+          "item",
+          "agent_path"
+        ],
+        "model": [
+          "payload",
+          "item",
+          "model"
+        ],
+        "reasoning_effort": [
+          "payload",
+          "item",
+          "reasoning_effort"
+        ]
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "3c5655abcdc315c2a8e730a1575ae0a8c919897ea1024b88fbbcf4acc30183e2",
+        "kind": "2b1f2c7771d1eae17a63ecf0de4a8c97c535781445a35f32e78db3d53fa8d28b",
+        "agent_thread_id": "2695cb8184f131f0a771de01903db1072ae9b203901d3aa8d8bb670d92548682",
+        "agent_path": "fff47c2455ff845dcb25708d1cc08e254a92461985bc4d2297b7bf0d8566c9b9",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 2243,
+      "source_record_sha256": "be34935df2dd56b0005ad224030dfdc7807b6154e81b53cf53692fcaaa9ad649",
+      "timestamp": "2026-11-10T18:17:54.733Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_b41813687b4445f8bc1b35191b91f6cc",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c6a6-c76e-75a3-bd8e-79c02e59aa36",
+        "agent_path": "/root/existing_detector_method_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_paths": {
+        "type": [
+          "payload",
+          "item",
+          "type"
+        ],
+        "id": [
+          "payload",
+          "item",
+          "id"
+        ],
+        "kind": [
+          "payload",
+          "item",
+          "kind"
+        ],
+        "agent_thread_id": [
+          "payload",
+          "item",
+          "agent_thread_id"
+        ],
+        "agent_path": [
+          "payload",
+          "item",
+          "agent_path"
+        ],
+        "model": [
+          "payload",
+          "item",
+          "model"
+        ],
+        "reasoning_effort": [
+          "payload",
+          "item",
+          "reasoning_effort"
+        ]
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "4f39e5a4d97a4ba05824b5a3b5db645f7e0a35501b18a4aa884c999dead326c0",
+        "kind": "2b1f2c7771d1eae17a63ecf0de4a8c97c535781445a35f32e78db3d53fa8d28b",
+        "agent_thread_id": "2695cb8184f131f0a771de01903db1072ae9b203901d3aa8d8bb670d92548682",
+        "agent_path": "fff47c2455ff845dcb25708d1cc08e254a92461985bc4d2297b7bf0d8566c9b9",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 2268,
+      "source_record_sha256": "4bb069f30de5b604e5c5d90d499a2d9de4b307d6266de58c2efdd8fbafd251fb",
+      "timestamp": "2026-11-10T18:18:34.359Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c6a6-c77a-7522-b98f-72b05721996e",
+        "kind": "completed",
+        "agent_thread_id": "01a1c6a6-c76e-75a3-bd8e-79c02e59aa36",
+        "agent_path": "/root/existing_detector_method_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_paths": {
+        "type": [
+          "payload",
+          "item",
+          "type"
+        ],
+        "id": [
+          "payload",
+          "item",
+          "id"
+        ],
+        "kind": [
+          "payload",
+          "item",
+          "kind"
+        ],
+        "agent_thread_id": [
+          "payload",
+          "item",
+          "agent_thread_id"
+        ],
+        "agent_path": [
+          "payload",
+          "item",
+          "agent_path"
+        ],
+        "model": [
+          "payload",
+          "item",
+          "model"
+        ],
+        "reasoning_effort": [
+          "payload",
+          "item",
+          "reasoning_effort"
+        ]
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "9448b9f9106f139c45e9a6beaa280a633d0380623f409553415ec234213a528a",
+        "kind": "7093fda846e50b267da144f7b3683ee1dd8838506939f6052b7370dd01fa2ad0",
+        "agent_thread_id": "2695cb8184f131f0a771de01903db1072ae9b203901d3aa8d8bb670d92548682",
+        "agent_path": "fff47c2455ff845dcb25708d1cc08e254a92461985bc4d2297b7bf0d8566c9b9",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    }
+  ]
+}

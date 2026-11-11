@@ -1,0 +1,107 @@
+{
+  "created_utc": "2026-11-11T14:53:55.094776+00:00",
+  "content_checks_all_pass": true,
+  "source_copy_pairs_verified": 741,
+  "source_copy_bytes": 46374026,
+  "reading_guide_links_verified": [
+    {
+      "document": "README.md",
+      "target": "SUBMISSION_NOTE.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "REQUIREMENTS_STATUS.csv"
+    },
+    {
+      "document": "README.md",
+      "target": "TECHNICAL_SUMMARY.md"
+    },
+    {
+      "document": "README.md",
+      "target": "core_evidence/TECHNICAL_BRIEF.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "core_evidence/README_START_HERE.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "defensive_appendix/REPORT.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "AI_RECORD_INDEX.md"
+    },
+    {
+      "document": "README.md",
+      "target": "correspondence/UNSENT_PROFESSOR_FOLLOWUP.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "core_evidence/course_instructions/original_qualifier_README.md"
+    },
+    {
+      "document": "TECHNICAL_SUMMARY.md",
+      "target": "core_evidence/TECHNICAL_BRIEF.txt"
+    },
+    {
+      "document": "TECHNICAL_SUMMARY.md",
+      "target": "defensive_appendix/REPORT.txt"
+    },
+    {
+      "document": "AI_RECORD_INDEX.md",
+      "target": "core_evidence/ai/LOG_RECOVERY_STATUS.txt"
+    },
+    {
+      "document": "AI_RECORD_INDEX.md",
+      "target": "core_evidence/ai/recovered_records/RECOVERY_INDEX.json"
+    },
+    {
+      "document": "AI_RECORD_INDEX.md",
+      "target": "defensive_appendix/run-evidence/AI_RECORD.md"
+    },
+    {
+      "document": "AI_RECORD_INDEX.md",
+      "target": "defensive_appendix/run-evidence/records/current_task_transcripts/EXPORT_INDEX.json"
+    }
+  ],
+  "detector_confusion_rows_checked_against_saved_metrics": {
+    "HT1": [
+      9,
+      5,
+      5,
+      4
+    ],
+    "HT2": [
+      6,
+      8,
+      6,
+      3
+    ],
+    "HT3": [
+      0,
+      14,
+      1,
+      8
+    ],
+    "HT4": [
+      4,
+      10,
+      2,
+      7
+    ],
+    "Ensemble": [
+      9,
+      5,
+      7,
+      2
+    ]
+  },
+  "submitted": false,
+  "professor_message_sent": false,
+  "original_assignment_complete": false,
+  "old_sources_modified": false,
+  "historical_code_or_inference_executed": false,
+  "independent_review": "INDEPENDENT_REVIEW.md",
+  "scope": "Content consistency and labeled partial-readiness checks; ZIP integrity verified by the packaging command after manifest creation."
+}

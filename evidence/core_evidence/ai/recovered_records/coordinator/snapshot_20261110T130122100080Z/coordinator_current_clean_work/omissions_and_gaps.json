@@ -1,0 +1,53 @@
+[
+  {
+    "source_line": 175,
+    "source_record_sha256": "59304eb5ab619235142d6d27bde3c6482eadd0b0302104ea94a78cdb93300a23",
+    "timestamp": "2026-11-10T12:34:52.473Z",
+    "reason": "Tool-discovery documentation omitted; other original output list elements retained exactly.",
+    "omitted_output_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 188,
+    "source_record_sha256": "c3e2edf9c191351138596a87efe8ae9d92f152aa4df2b3f0b046f288c18f199e",
+    "timestamp": "2026-11-10T12:35:15.636Z",
+    "reason": "Readable collaboration argument body unavailable. Encrypted argument field excluded; no decryption or reconstruction attempted.",
+    "encrypted_argument_fields": [
+      "message"
+    ]
+  },
+  {
+    "source_line": 295,
+    "source_record_sha256": "71cf8fcf94499e3a3a31eb1d7455d5af0f3f8e56b074ef82771b28343b6f3edf",
+    "timestamp": "2026-11-10T12:38:31.171Z",
+    "reason": "Entire chat-read result omitted because it may include mixed earlier chat history. Native line hash retained; no historical body copied."
+  },
+  {
+    "source_line": 421,
+    "source_record_sha256": "2da87be65dc4eab84252a825626a66874cdf0721a17dfba603e044c09b5a33c9",
+    "timestamp": "2026-11-10T12:58:14.901Z",
+    "reason": "Tool-discovery documentation omitted; other original output list elements retained exactly.",
+    "omitted_output_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 430,
+    "source_record_sha256": "b314bed6fce2ad81af7a5b0874de572d325d9825ab640941e1fb2d1a056c31b0",
+    "timestamp": "2026-11-10T12:58:35.546Z",
+    "reason": "Readable collaboration argument body unavailable. Encrypted argument field excluded; no decryption or reconstruction attempted.",
+    "encrypted_argument_fields": [
+      "message"
+    ]
+  },
+  {
+    "source_line": 460,
+    "source_record_sha256": "bda46e1add8a25d9af14eea55a722382e2630a7338cc4eb7503a5d8a2a303691",
+    "timestamp": "2026-11-10T12:59:29.173Z",
+    "reason": "Encrypted or nontext collaboration body unavailable; only native readable envelope retained. No decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  }
+]

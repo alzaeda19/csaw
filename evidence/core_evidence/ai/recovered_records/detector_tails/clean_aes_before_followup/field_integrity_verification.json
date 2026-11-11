@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "records_verified": 3,
+  "retained_fields_verified": 15,
+  "raw_line_hashes_include_original_newline": true,
+  "field_hash_algorithm": "SHA-256 of UTF-8 JSON, ensure_ascii=False, sort_keys=True, separators=(comma, colon)",
+  "duplicate_prior_source_lines_exported": 0,
+  "duplicate_recovery_source_lines_exported": 0,
+  "method": "Reread saved JSONL; compare each retained field to exact native field/selected original list elements and each raw source-line SHA-256. No detector execution or model/API calls."
+}

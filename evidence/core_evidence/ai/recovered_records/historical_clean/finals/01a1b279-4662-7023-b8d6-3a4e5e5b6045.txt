@@ -1,0 +1,17 @@
+Implemented isolated 5k IPCON/DSP conversion support, with the geometry guard retained and unsupported side fields rejected.
+
+- **2,321 focused cases and 38 integration checks pass.**
+- The complete original configuration survives conversion. Restoring its empty-comment wrapper reproduces all **104,090 bytes exactly**; direct packing omits that four-byte wrapper.
+- All six originals and 10,381 earlier artifact files remain unchanged. Failures and provenance limits are retained. Hardware equivalence remains untested.
+
+Artifacts are in:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/side_tile_tool_support_2026-11-06`
+
+See `REPORT.md`, `tool_patch.diff`, and `AI_RECORD.md`.
+
+Reproduce from the restart workspace root using fresh output names:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 side_tile_tool_support_2026-11-06/analysis/focused_tests_03.py reproduce_focused_01
+PYTHONDONTWRITEBYTECODE=1 python3 side_tile_tool_support_2026-11-06/analysis/integration_tests_04.py reproduce_integration_01
+```

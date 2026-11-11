@@ -1,0 +1,12 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user's exact current request is: "Have the clean chat fix the repeated-tile validation gap and add regression tests using only original materials. Preserve logs and failures, keep my repository unchanged, and don’t send it the solution comparison."
+
+Continue from your own original-materials artifacts and isolated tool implementation. Reverify the six originals against their receipt. Do not read other chats, solution comparisons, quarantine/prior external work, published solutions, later target revisions or the user's project repository. No solution comparison is included in this message.
+
+Scope of the requested defensive fix: inspect repeated tile declarations and ensure every declaration receives the intended type, coordinate and device validation, including reuse of an existing tile. Confirm the behavior from your own local source and tests. Implement the correction in a fresh version of your separate tool copy, preserving the previous version, pinned original tools, original materials, recovered baseline, prior tests and all failures unchanged. Retain a reviewable diff and source hashes. Do not silently change legitimate repeated-declaration behavior; justify it from permitted source semantics.
+
+Add focused regression tests for validation consistency across declaration ordering, supported device/tile types, valid repeated declarations and malformed or unsupported requests as appropriate. Preserve pre-fix failing regression evidence. Recheck relevant existing focused/integration tests and original configuration/packed-byte preservation, continuing to distinguish configuration preservation from the known comment-wrapper normalization and from hardware equivalence. Report what now passes, what still fails or remains untested, and any compatibility limitations. Keep the work scoped to defensive parser validation and baseline tooling.
+
+Save this exact accessible task message before context compaction if possible, plus available visible responses, exact command/output records, versions, hashes, diffs and failed attempts. Retain rather than rewrite earlier partial logs; disclose unavailable native transcript, timing or model metadata without reconstructing it. Finish with reproducible commands and artifact/AI-log locations.</input>
+</codex_delegation>

@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/bin/python",
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/run_aes_detectors.py"
+  ],
+  "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "MPLBACKEND": "Agg",
+    "MPLCONFIGDIR": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/runtime/matplotlib",
+    "TMPDIR": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/runtime/tmp",
+    "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/runtime/cache",
+    "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/bin:/opt/homebrew/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0K3NmH4:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS"
+  },
+  "environment_removed": [
+    "PYTHONNOUSERSITE",
+    "PYTHONPATH"
+  ],
+  "start_utc": "2026-11-10T12:37:14.813109+00:00",
+  "finish_utc": "2026-11-10T12:37:27.262606+00:00",
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout_sha256": "b1fa4aab23a459c9d5d8049e52ad1f193a9d6aedb7e9c0a7a625a04c310495b5",
+  "stderr_sha256": "cace1071573ef725e762e8856427937617c8c67e5d0784c45c0e854e56a803a8",
+  "runner_sha256": "d5ca1367c87d4cfc9762df0143d5d33663afa5abb0cb44525fe49e4f5a272913"
+}

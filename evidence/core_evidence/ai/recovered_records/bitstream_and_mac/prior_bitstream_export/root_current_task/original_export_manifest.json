@@ -1,0 +1,51 @@
+{
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+  "snapshot_read_started_utc": "2026-11-07T17:32:19.125153Z",
+  "snapshot_read_finished_utc": "2026-11-07T17:32:19.125757Z",
+  "source_snapshot_bytes": 5438428,
+  "source_snapshot_sha256": "566490949f75d71f03f9995b05df9a6a4a5d3bd465986b8e8004e941a6318563",
+  "complete_source_lines": 804,
+  "trailing_incomplete_bytes_not_parsed": 0,
+  "label": "root_current_task",
+  "first_in_scope_line": 324,
+  "minimum_timestamp": "2026-11-07T17:19:54.511Z",
+  "exported_counts": {
+    "user_message": 1,
+    "assistant_commentary": 8,
+    "custom_tool_call": 37,
+    "command_execution": 33,
+    "custom_tool_call_output": 37,
+    "function_call": 25,
+    "function_call_output": 23,
+    "agent_message_readable_envelope": 27
+  },
+  "excluded_counts": {
+    "event_item:UserMessage": 1,
+    "event_item:AgentMessage": 8,
+    "token_usage_record": 63,
+    "event_msg": 63,
+    "event_item:Reasoning": 47,
+    "response_item:reasoning": 47,
+    "world_state": 5,
+    "inter_agent_communication_metadata": 27,
+    "event_item:FileChange": 2,
+    "aggregate_collaboration_state_event": 1,
+    "compacted": 1,
+    "turn_context_payload_except_model_labels": 1,
+    "event_item:ContextCompaction": 1,
+    "unrelated_list_agents_output": 1,
+    "event_item:SubAgentActivity": 5
+  },
+  "exported_records": 191,
+  "first_exported_timestamp": "2026-11-07T17:19:54.511Z",
+  "last_exported_timestamp": "2026-11-07T17:32:17.844Z",
+  "lifecycle": [],
+  "significant_omissions_and_gaps": 46,
+  "integrity": {
+    "pass": true,
+    "records_verified": 191,
+    "retained_fields_verified": 1212,
+    "method": "Every exported field compared to its exact native source field; projected content lists preserve exact selected original items with source indices. Raw source-record SHA-256 covers the complete original line including newline.",
+    "source_line_hashes_verified": true
+  }
+}

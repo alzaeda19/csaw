@@ -1,0 +1,91 @@
+{
+  "format_version": 1,
+  "updated_utc": "2026-11-10T12:27:30.126175Z",
+  "current_snapshot": "snapshot_20261110T122730108842Z",
+  "snapshot_manifest": "snapshot_20261110T122730108842Z/SNAPSHOT_MANIFEST.json",
+  "snapshot_manifest_sha256": "50f81f899cff9d333aacb74a09c1c9b424efaa807a19b83a4de644978b12ffd4",
+  "hash_manifest": "snapshot_20261110T122730108842Z/HASH_MANIFEST.json",
+  "hash_manifest_sha256": "fa49325411478e8c98c03893baf4fdcd0b0314a115398b04bf828c00d5f133d8",
+  "export_implementation_sha256": "f75fdb2ce72cdadf60c403a77749993c72e63ea4017b6a7550999d893aba8193",
+  "all_exported_field_and_raw_line_checks_passed": true,
+  "exported_records": 200,
+  "session_count": 3,
+  "snapshot_export_started_utc": "2026-11-10T12:27:30.088418Z",
+  "snapshot_export_finished_utc": "2026-11-10T12:27:30.124586Z",
+  "root_marker_source_line": 1102,
+  "root_marker_timestamp": "2026-11-10T12:20:14.739Z",
+  "retained_fields_verified": 1410,
+  "sessions": [
+    {
+      "label": "root_current_task",
+      "exported_records": 80,
+      "exported_counts": {
+        "user_message": 1,
+        "assistant_commentary": 3,
+        "custom_tool_call": 14,
+        "command_execution": 17,
+        "custom_tool_call_output": 14,
+        "function_call": 10,
+        "function_call_output": 10,
+        "agent_message_readable_envelope": 10,
+        "file_change_record": 1
+      },
+      "source_snapshot_bytes": 7663494,
+      "source_snapshot_sha256": "2ca6e077ebb75db25e868057ba5a3a3516072471b876e62fbce2af422b84b033",
+      "complete_source_lines": 1297,
+      "snapshot_read_started_utc": "2026-11-10T12:27:30.102645Z",
+      "snapshot_read_finished_utc": "2026-11-10T12:27:30.105539Z",
+      "last_exported_timestamp": "2026-11-10T12:27:25.766Z",
+      "significant_omissions_and_gaps": 18
+    },
+    {
+      "label": "detector_environment",
+      "exported_records": 53,
+      "exported_counts": {
+        "agent_message_readable_envelope": 2,
+        "custom_tool_call": 14,
+        "command_execution": 12,
+        "custom_tool_call_output": 14,
+        "file_change_record": 2,
+        "function_call": 4,
+        "function_call_output": 4,
+        "assistant_final_answer": 1
+      },
+      "source_snapshot_bytes": 500467,
+      "source_snapshot_sha256": "0be141d87405570c0fbd3343e5a99eabdddbc9da627583f5cda39010c4366069",
+      "complete_source_lines": 140,
+      "snapshot_read_started_utc": "2026-11-10T12:27:30.115079Z",
+      "snapshot_read_finished_utc": "2026-11-10T12:27:30.115276Z",
+      "last_exported_timestamp": "2026-11-10T12:24:05.786Z",
+      "significant_omissions_and_gaps": 6
+    },
+    {
+      "label": "detector_input_audit",
+      "exported_records": 67,
+      "exported_counts": {
+        "agent_message_readable_envelope": 3,
+        "assistant_commentary": 4,
+        "custom_tool_call": 13,
+        "command_execution": 26,
+        "custom_tool_call_output": 13,
+        "function_call": 3,
+        "function_call_output": 3,
+        "assistant_final_answer": 2
+      },
+      "source_snapshot_bytes": 656155,
+      "source_snapshot_sha256": "0e09b9867d2b5fa6677f98959646484dcefa0717c8d9dceeff0b302f9dd50fd5",
+      "complete_source_lines": 162,
+      "snapshot_read_started_utc": "2026-11-10T12:27:30.119480Z",
+      "snapshot_read_finished_utc": "2026-11-10T12:27:30.119732Z",
+      "last_exported_timestamp": "2026-11-10T12:26:59.329Z",
+      "significant_omissions_and_gaps": 6
+    }
+  ],
+  "checksum_inventory": "CHECKSUMS.sha256",
+  "checksum_inventory_self_excluded": true,
+  "post_cutoff_exclusions": [
+    "Root final reply",
+    "Final report completion and package checksum sealing",
+    "Any activity appended after each source snapshot"
+  ]
+}

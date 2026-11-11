@@ -1,0 +1,144 @@
+{
+  "note": "Configured native model and effort labels do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [
+    {
+      "source_line": 382,
+      "source_record_sha256": "58481cac6a4d3b63c44f7c5b8bb4b436e74266bc7bd1b7988aaf6c086c1ac1a8",
+      "timestamp": "2026-11-10T12:43:55.615Z",
+      "source_fields": {
+        "turn_id": "01a1c57c-893d-7c33-b481-f979d668c69e",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_sha256": {
+        "turn_id": "a7b1868f125348b2983c47d0b764298097389fdbf1712c6a96e43dfb7bde0482",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    },
+    {
+      "source_line": 395,
+      "source_record_sha256": "f8e65fe6bff2f9601e8a1628412c04752a851647a9986edaf45727645d912992",
+      "timestamp": "2026-11-10T12:56:19.789Z",
+      "source_fields": {
+        "turn_id": "01a1c587-e40c-7701-a8c5-f3c4f2e36a3a",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_sha256": {
+        "turn_id": "107791dc4a4beeca0775b735d3730b5b0421be3dac116744fd88cad0f60b4864",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    },
+    {
+      "source_line": 411,
+      "source_record_sha256": "e05b8a64ad11d116c7fc2913f137d82ff77137adaeba6d8728e787a0f66f6c57",
+      "timestamp": "2026-11-10T12:57:54.927Z",
+      "source_fields": {
+        "turn_id": "01a1c589-57c1-7ac1-b3fc-33cbae1ae677",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_sha256": {
+        "turn_id": "bd41abb46d983e93934b6294b65d2b34588f731f704c82d5d9f5826bea571036",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    }
+  ],
+  "delegation_activity_labels": [
+    {
+      "source_line": 190,
+      "source_record_sha256": "d3d672edeb1c6ba9318ba48fb46867c4ccdcf2a2007c4deb60eb24ad280a5f30",
+      "timestamp": "2026-11-10T12:35:15.671Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_a291fcbc1e254007a78159d7eb5cf316",
+        "kind": "started",
+        "agent_thread_id": "01a1c574-9a3c-73d2-aa19-6b294a9719e1",
+        "agent_path": "/root/readiness_review",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "44d3b14ee458ff83eaeb08d6271c73b404c93839702c3a6e1288b5df7c49942e",
+        "kind": "66967c3c8be87735db13483ffcf1634b42ed82f19718e488c07e01322ef6d23b",
+        "agent_thread_id": "02b97c3b0d5b8ea460b848182cd03ff251f2e8b1a480a4e7f76e8a0b5b7f4d1e",
+        "agent_path": "6c4a83cc2ff79ae9330f7f00aa2928307b79100ba9b8415132123d810945bbea",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "reasoning_effort": "168ca465deb3cd1d4c688dc5b1be70beed3a7810e61fe005d4e08ac128aa3aa5"
+      }
+    },
+    {
+      "source_line": 212,
+      "source_record_sha256": "814e6c685c233f1051f48cc3b111e3d2ebf1ee2d6abff9fb0d6bccc7ca50e2ab",
+      "timestamp": "2026-11-10T12:35:56.453Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c574-9a56-7d91-abe8-da5657e6d7d8",
+        "kind": "completed",
+        "agent_thread_id": "01a1c574-9a3c-73d2-aa19-6b294a9719e1",
+        "agent_path": "/root/readiness_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "11a0174c1e4f666016ab6b1f04bffa10f0fb9db3df018da03e389d2ac539e2f9",
+        "kind": "7093fda846e50b267da144f7b3683ee1dd8838506939f6052b7370dd01fa2ad0",
+        "agent_thread_id": "02b97c3b0d5b8ea460b848182cd03ff251f2e8b1a480a4e7f76e8a0b5b7f4d1e",
+        "agent_path": "6c4a83cc2ff79ae9330f7f00aa2928307b79100ba9b8415132123d810945bbea",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 431,
+      "source_record_sha256": "9bb6ba1c2b197a0e8b438b275e9d1192f3be3f3d26646a512c665eb33c343111",
+      "timestamp": "2026-11-10T12:58:35.551Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_a927d588830b44fbac3840c4902dc86a",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c574-9a3c-73d2-aa19-6b294a9719e1",
+        "agent_path": "/root/readiness_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "df2d08ea0b3666ec522ee72611bafd66f8e70bcfb025e9dfa90c5ce601c5d675",
+        "kind": "2b1f2c7771d1eae17a63ecf0de4a8c97c535781445a35f32e78db3d53fa8d28b",
+        "agent_thread_id": "02b97c3b0d5b8ea460b848182cd03ff251f2e8b1a480a4e7f76e8a0b5b7f4d1e",
+        "agent_path": "6c4a83cc2ff79ae9330f7f00aa2928307b79100ba9b8415132123d810945bbea",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    },
+    {
+      "source_line": 461,
+      "source_record_sha256": "3238fd51477abdf4b35265872b5789222aec28812cb48e3847e1936b207e7810",
+      "timestamp": "2026-11-10T12:59:38.061Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c589-f69e-70f3-9447-2b0ad896624a",
+        "kind": "completed",
+        "agent_thread_id": "01a1c574-9a3c-73d2-aa19-6b294a9719e1",
+        "agent_path": "/root/readiness_review",
+        "model": null,
+        "reasoning_effort": null
+      },
+      "source_field_sha256": {
+        "type": "2d25f4779c2cbe796b17388e1d447d2de4f4f2737ad08f28930a90f38d47275b",
+        "id": "5a67c9c39665a41a1f9015ad7f89d2942fa34442672c231af8bab65e9e565f47",
+        "kind": "7093fda846e50b267da144f7b3683ee1dd8838506939f6052b7370dd01fa2ad0",
+        "agent_thread_id": "02b97c3b0d5b8ea460b848182cd03ff251f2e8b1a480a4e7f76e8a0b5b7f4d1e",
+        "agent_path": "6c4a83cc2ff79ae9330f7f00aa2928307b79100ba9b8415132123d810945bbea",
+        "model": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "reasoning_effort": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      }
+    }
+  ]
+}

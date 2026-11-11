@@ -1,0 +1,14 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user authorizes this next task: “Have the clean chat run post-synthesis regression and equivalence checks on the repaired derivative using only original materials. Preserve AI logs and failures, keep my repository unchanged, and don’t send it the solution comparison.”
+
+Continue from your own clean-chat materials and independently derived artifacts. No solution comparison or other parent-chat technical findings are being supplied. Reverify the original-material hashes and obey your existing original-materials boundary. Keep /Users/al-zayedal-hassan/Documents/llm4chipdesign-hw unchanged.
+
+Use a fresh assessment folder in your clean restart workspace. Preserve the repaired RTL, original recovered baseline, existing synthesis outputs, prior tests, logs, and all failures unchanged. The equivalence target is the repaired derivative RTL versus its synthesized netlist—not equivalence between the intentional repair and the original bitstream.
+
+Run meaningful post-synthesis functional regression using your existing original-materials requirements and harness: supplied known vectors and applicable immediate-read/host-clock, cycle-count, reset, repeated-operation, and expanded regression cases. Record exactly which tests are applicable, passed, failed, blocked, or untested. Preserve identical stimulus and explicit observation semantics across RTL and synthesized candidates. Account explicitly for the simulation primitive/library versions and initialization semantics; do not silently replace or weaken checks to obtain a pass.
+
+Attempt suitable formal or sequential equivalence checks with available tools. Document the proof scope, initialization/reset assumptions, RAM contents and modeling, clock assumptions, unsupported primitives, unproven partitions, failures, and timeouts. Distinguish complete proof, bounded evidence, and simulation agreement. Blackboxed or unconstrained outputs must not be counted as proven behavior. If a discrepancy appears, preserve and diagnose it; do not alter the repaired candidate merely to make this assessment pass.
+
+This is functional verification only: no board programming or attack implementation. Preserve the exact current task prompt, available AI interaction records, command outputs and failures, tool/source/candidate hashes, and reproducible commands. Disclose native transcript or model-metadata gaps without reconstructing them. Finish with a concise evidence-linked report of passes, failures, remaining untested behavior, equivalence coverage, and AI-log gaps.</input>
+</codex_delegation>

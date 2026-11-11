@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "prior_records_verified_against_native": 1309,
+  "retained_records": 1305,
+  "retained_record_texts_exactly_match_corresponding_prior_jsonl_records": true,
+  "native_payload_comparison": "Every retained payload value matches its native source value except command_execution payload.type, which is prior-export schema metadata normalized from native payload.item.type = CommandExecution. Command timestamp fields are taken from the enclosing native event payload, while remaining command fields are taken from payload.item.",
+  "normalized_command_type_records": 388,
+  "other_payload_value_normalizations_found": 0,
+  "retained_final_files_equal_prior_files": 17,
+  "eligible_native_visible_lines_exactly_match_retained_lines": true,
+  "all_prior_hashes_unchanged": true,
+  "newly_recovered_events": 0
+}

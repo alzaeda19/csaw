@@ -1,0 +1,32 @@
+{
+  "note": "Native configured model/effort labels only, not authentication of serving weights or inference.",
+  "records": [
+    {
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+      "source_line": 1532,
+      "source_record_sha256": "bb916b43b9191d1e36f98f81078331fe872a025eedb77892fa16645dcf557c4e",
+      "timestamp": "2026-11-10T12:42:06.598Z",
+      "source_ordinal": 4529,
+      "source_fields": {
+        "turn_id": "01a1c574-7304-7ed3-b015-818926ff617e",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_field_locations": {
+        "turn_id": [
+          "payload",
+          "turn_id"
+        ],
+        "model": [
+          "payload",
+          "model"
+        ],
+        "effort": [
+          "payload",
+          "effort"
+        ]
+      }
+    }
+  ]
+}

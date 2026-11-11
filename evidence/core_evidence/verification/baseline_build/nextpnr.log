@@ -1,0 +1,313 @@
+Warning: No PCF file specified; IO pins will be placed automatically
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:     1370 LCs used as LUT4 only
+Info:       68 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:        3 LCs used as DFF only
+Info: Packing carries..
+Info:        0 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:        0 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting SCK$SB_IO_IN (fanout 75)
+Info: promoting RST_N_SB_LUT4_I3_O [reset] (fanout 64)
+Info: promoting $PACKER_GND_NET (fanout 4)
+Info: Constraining chains...
+Info:        0 LCs used to legalise carry chains.
+Info: Checksum: 0x8a875eb7
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:    1443/   5280    27%
+Info: 	        ICESTORM_RAM:       4/     30    13%
+Info: 	               SB_IO:       9/     39    23%
+Info: 	               SB_GB:       3/      8    37%
+Info: 	        ICESTORM_PLL:       0/      1     0%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+Info: 	        ICESTORM_DSP:       0/      8     0%
+Info: 	      ICESTORM_HFOSC:       0/      1     0%
+Info: 	      ICESTORM_LFOSC:       0/      1     0%
+Info: 	              SB_I2C:       0/      2     0%
+Info: 	              SB_SPI:       0/      2     0%
+Info: 	              IO_I3C:       0/      2     0%
+Info: 	         SB_LEDDA_IP:       0/      1     0%
+Info: 	         SB_RGBA_DRV:       0/      1     0%
+Info: 	      ICESTORM_SPRAM:       0/      4     0%
+Info: 	      SB_FILTER_50NS:       0/      2     0%
+
+Info: Placed 0 cells based on constraints.
+Info: Creating initial analytic placement for 1450 cells, random placement wirelen = 34026.
+Info:     at initial placer iter 0, wirelen = 74
+Info:     at initial placer iter 1, wirelen = 74
+Info:     at initial placer iter 2, wirelen = 74
+Info:     at initial placer iter 3, wirelen = 74
+Info: Running main analytical placer, max placement attempts per cell = 266085.
+Info:     at iteration #1, type ALL: wirelen solved = 74, spread = 7504, legal = 7641; time = 0.01s
+Info:     at iteration #2, type ALL: wirelen solved = 195, spread = 5242, legal = 5826; time = 0.01s
+Info:     at iteration #3, type ALL: wirelen solved = 377, spread = 5045, legal = 5555; time = 0.01s
+Info:     at iteration #4, type ALL: wirelen solved = 468, spread = 4318, legal = 4632; time = 0.01s
+Info:     at iteration #5, type ALL: wirelen solved = 682, spread = 4204, legal = 4465; time = 0.01s
+Info:     at iteration #6, type ALL: wirelen solved = 893, spread = 4235, legal = 4479; time = 0.01s
+Info:     at iteration #7, type ALL: wirelen solved = 761, spread = 3834, legal = 4096; time = 0.01s
+Info:     at iteration #8, type ALL: wirelen solved = 972, spread = 3788, legal = 4008; time = 0.01s
+Info:     at iteration #9, type ALL: wirelen solved = 1036, spread = 3780, legal = 3999; time = 0.01s
+Info:     at iteration #10, type ALL: wirelen solved = 1042, spread = 4026, legal = 4203; time = 0.01s
+Info:     at iteration #11, type ALL: wirelen solved = 1171, spread = 3867, legal = 4058; time = 0.01s
+Info:     at iteration #12, type ALL: wirelen solved = 1266, spread = 3724, legal = 3912; time = 0.01s
+Info:     at iteration #13, type ALL: wirelen solved = 1325, spread = 3843, legal = 3975; time = 0.01s
+Info:     at iteration #14, type ALL: wirelen solved = 1328, spread = 4066, legal = 4187; time = 0.01s
+Info:     at iteration #15, type ALL: wirelen solved = 1359, spread = 3906, legal = 4023; time = 0.01s
+Info:     at iteration #16, type ALL: wirelen solved = 1457, spread = 3699, legal = 3861; time = 0.01s
+Info:     at iteration #17, type ALL: wirelen solved = 1450, spread = 3686, legal = 3870; time = 0.01s
+Info:     at iteration #18, type ALL: wirelen solved = 1525, spread = 3977, legal = 4022; time = 0.01s
+Info:     at iteration #19, type ALL: wirelen solved = 1615, spread = 3836, legal = 3879; time = 0.01s
+Info:     at iteration #20, type ALL: wirelen solved = 1707, spread = 3841, legal = 3884; time = 0.01s
+Info:     at iteration #21, type ALL: wirelen solved = 1781, spread = 3986, legal = 4155; time = 0.01s
+Info: HeAP Placer Time: 0.29s
+Info:   of which solving equations: 0.22s
+Info:   of which spreading cells: 0.02s
+Info:   of which strict legalisation: 0.01s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 3003, wirelen = 3861
+Info:   at iteration #5: temp = 0.000000, timing cost = 3334, wirelen = 3341
+Info:   at iteration #10: temp = 0.000000, timing cost = 3284, wirelen = 3185
+Info:   at iteration #15: temp = 0.000000, timing cost = 3151, wirelen = 3097
+Info:   at iteration #20: temp = 0.000000, timing cost = 3159, wirelen = 3043
+Info:   at iteration #25: temp = 0.000000, timing cost = 3074, wirelen = 3024
+Info:   at iteration #27: temp = 0.000000, timing cost = 3185, wirelen = 3020 
+Info: SA placement time 0.51s
+
+Info: Max frequency for clock 'SCK$SB_IO_IN_$glb_clk': 36.57 MHz (PASS at 1.00 MHz)
+
+Info: Clock '$PACKER_GND_NET_$glb_clk' has no interior paths
+
+Info: Max delay <async>                       -> <async>                      : 17.29 ns
+Info: Max delay <async>                       -> posedge SCK$SB_IO_IN_$glb_clk: 28.34 ns
+Info: Max delay posedge SCK$SB_IO_IN_$glb_clk -> <async>                      : 15.28 ns
+
+Info: Slack histogram:
+Info:  legend: times are in ps
+Info:          * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [972653, 973822) |***** 
+Info: [973822, 974991) |************************************* 
+Info: [974991, 976160) |******************************************* 
+Info: [976160, 977329) |********************* 
+Info: [977329, 978498) |* 
+Info: [978498, 979667) |** 
+Info: [979667, 980836) |* 
+Info: [980836, 982005) | 
+Info: [982005, 983174) | 
+Info: [983174, 984343) |************* 
+Info: [984343, 985512) |******************* 
+Info: [985512, 986681) | 
+Info: [986681, 987850) |******* 
+Info: [987850, 989019) |********************* 
+Info: [989019, 990188) |******************************************* 
+Info: [990188, 991357) |********************************* 
+Info: [991357, 992526) |******************* 
+Info: [992526, 993695) |** 
+Info: [993695, 994864) |******* 
+Info: [994864, 996033) |****************************** 
+Info: Checksum: 0x131f80f7
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 5245 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |       42        957 |   42   957 |      4342|       0.16       0.16|
+Info:       2000 |      225       1774 |  183   817 |      3642|       0.05       0.21|
+Info:       3000 |      399       2600 |  174   826 |      3032|       0.05       0.26|
+Info:       4000 |      625       3374 |  226   774 |      2380|       0.04       0.30|
+Info:       5000 |     1105       3894 |  480   520 |      2075|       0.05       0.35|
+Info:       6000 |     1519       4480 |  414   586 |      1633|       0.05       0.40|
+Info:       7000 |     1989       5010 |  470   530 |      1314|       0.06       0.46|
+Info:       8000 |     2465       5534 |  476   524 |      1036|       0.06       0.52|
+Info:       9000 |     2963       6036 |  498   502 |       678|       0.06       0.59|
+Info:      10000 |     3538       6461 |  575   425 |       533|       0.07       0.65|
+Info:      11000 |     3856       7143 |  318   682 |        34|       0.11       0.76|
+Info:      11064 |     3886       7178 |   30    35 |         0|       0.01       0.78|
+Info: Routing complete.
+Info: Router1 time 0.78s
+Info: Checksum: 0xfac94599
+
+Info: Critical path report for clock 'SCK$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source recovered.n846_SB_DFFESR_Q_D_SB_LUT4_O_LC.O
+Info:    routing  1.76  3.15 Net recovered.n846 (8,12) -> (8,11)
+Info:                          Sink recovered.n844_SB_LUT4_I2_LC.I1
+Info:                          Defined in:
+Info:                               sources/baseline.v:27242.5-27242.9
+Info:      logic  1.23  4.38 Source recovered.n844_SB_LUT4_I2_LC.O
+Info:    routing  3.49  7.88 Net recovered.n844_SB_LUT4_I2_O[2] (8,11) -> (3,7)
+Info:                          Sink recovered.n909_SB_LUT4_I2_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  8.75 Source recovered.n909_SB_LUT4_I2_LC.O
+Info:    routing  3.06  11.81 Net recovered.n1037_SB_LUT4_I1_O[0] (3,7) -> (4,2)
+Info:                          Sink recovered.n887_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_1_LC.I2
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  13.01 Source recovered.n887_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_1_LC.O
+Info:    routing  3.06  16.07 Net recovered.n887_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3[0] (4,2) -> (4,7)
+Info:                          Sink recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_2_I2_SB_LUT4_I1_I3_SB_LUT4_I3_O_SB_LUT4_O_1_LC.I1
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.23  17.30 Source recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_2_I2_SB_LUT4_I1_I3_SB_LUT4_I3_O_SB_LUT4_O_1_LC.O
+Info:    routing  1.76  19.06 Net recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_2_I2_SB_LUT4_I1_I3_SB_LUT4_I3_O[1] (4,7) -> (5,7)
+Info:                          Sink recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  20.27 Source recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  22.03 Net recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_I3[2] (5,7) -> (5,6)
+Info:                          Sink recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  22.90 Source recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_LC.O
+Info:    routing  1.76  24.66 Net recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O[3] (5,6) -> (5,5)
+Info:                          Sink recovered.n450_SB_DFFESR_Q_R_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  25.54 Source recovered.n450_SB_DFFESR_Q_R_SB_LUT4_O_LC.O
+Info:    routing  2.28  27.81 Net recovered.n450_SB_DFFESR_Q_R (5,5) -> (5,5)
+Info:                          Sink recovered.n450_SB_DFFESR_Q_D_SB_LUT4_O_LC.SR
+Info:      setup  0.10  27.91 Source recovered.n450_SB_DFFESR_Q_D_SB_LUT4_O_LC.SR
+Info: 8.98 ns logic, 18.93 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source RST_N$sb_io.D_IN_0
+Info:    routing  5.98  5.98 Net RST_N$SB_IO_IN (18,0) -> (8,14)
+Info:                          Sink recovered.n842_SB_LUT4_I1_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  6.86 Source recovered.n842_SB_LUT4_I1_LC.O
+Info:    routing  2.41  9.27 Net recovered.n842_SB_LUT4_I1_O[2] (8,14) -> (8,11)
+Info:                          Sink START_SB_LUT4_I1_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  10.14 Source START_SB_LUT4_I1_LC.O
+Info:    routing  1.76  11.90 Net START_SB_LUT4_I1_O (8,11) -> (8,10)
+Info:                          Sink BUSY_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               sources/baseline.v:42887.3-42899.2
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:1490.16-1490.21
+Info:      logic  0.87  12.77 Source BUSY_SB_LUT4_O_LC.O
+Info:    routing  4.79  17.57 Net ICE_LED$SB_IO_OUT (8,10) -> (15,0)
+Info:                          Sink BUSY$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               sources/protocol_dut.sv:4.19-4.26
+Info: 2.62 ns logic, 14.94 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge SCK$SB_IO_IN_$glb_clk':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source RST_N$sb_io.D_IN_0
+Info:    routing  5.33  5.33 Net RST_N$SB_IO_IN (18,0) -> (8,11)
+Info:                          Sink recovered.n844_SB_LUT4_I2_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  6.21 Source recovered.n844_SB_LUT4_I2_LC.O
+Info:    routing  3.49  9.70 Net recovered.n844_SB_LUT4_I2_O[2] (8,11) -> (3,7)
+Info:                          Sink recovered.n909_SB_LUT4_I2_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  10.58 Source recovered.n909_SB_LUT4_I2_LC.O
+Info:    routing  3.06  13.63 Net recovered.n1037_SB_LUT4_I1_O[0] (3,7) -> (4,2)
+Info:                          Sink recovered.n887_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_1_LC.I2
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  14.84 Source recovered.n887_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3_SB_LUT4_O_1_LC.O
+Info:    routing  3.06  17.90 Net recovered.n887_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_I3[0] (4,2) -> (4,7)
+Info:                          Sink recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_2_I2_SB_LUT4_I1_I3_SB_LUT4_I3_O_SB_LUT4_O_1_LC.I1
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.23  19.13 Source recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_2_I2_SB_LUT4_I1_I3_SB_LUT4_I3_O_SB_LUT4_O_1_LC.O
+Info:    routing  1.76  20.89 Net recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_O_1_I2_SB_LUT4_I3_O_SB_LUT4_O_2_I2_SB_LUT4_I1_I3_SB_LUT4_I3_O[1] (4,7) -> (5,7)
+Info:                          Sink recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_LC.I2
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  1.21  22.09 Source recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_I3_SB_LUT4_O_LC.O
+Info:    routing  1.76  23.85 Net recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_I3[2] (5,7) -> (5,6)
+Info:                          Sink recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  24.73 Source recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O_SB_LUT4_O_1_LC.O
+Info:    routing  1.76  26.49 Net recovered.n576_SB_DFFESR_Q_D_SB_LUT4_O_I3_SB_LUT4_O_1_I3_SB_LUT4_O_1_I3_SB_LUT4_I2_I3_SB_LUT4_I2_O_SB_LUT4_I3_O[3] (5,6) -> (5,5)
+Info:                          Sink recovered.n450_SB_DFFESR_Q_R_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  27.36 Source recovered.n450_SB_DFFESR_Q_R_SB_LUT4_O_LC.O
+Info:    routing  2.28  29.64 Net recovered.n450_SB_DFFESR_Q_R (5,5) -> (5,5)
+Info:                          Sink recovered.n450_SB_DFFESR_Q_D_SB_LUT4_O_LC.SR
+Info:      setup  0.10  29.74 Source recovered.n450_SB_DFFESR_Q_D_SB_LUT4_O_LC.SR
+Info: 7.24 ns logic, 22.50 ns routing
+
+Info: Critical path report for cross-domain path 'posedge SCK$SB_IO_IN_$glb_clk' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  1.39  1.39 Source recovered.n842_SB_DFFESR_Q_D_SB_LUT4_O_LC.O
+Info:    routing  1.76  3.15 Net recovered.n842 (8,14) -> (8,14)
+Info:                          Sink recovered.n842_SB_LUT4_I1_LC.I1
+Info:                          Defined in:
+Info:                               sources/baseline.v:27142.5-27142.9
+Info:      logic  1.23  4.38 Source recovered.n842_SB_LUT4_I1_LC.O
+Info:    routing  2.41  6.79 Net recovered.n842_SB_LUT4_I1_O[2] (8,14) -> (8,11)
+Info:                          Sink START_SB_LUT4_I1_LC.I3
+Info:                          Defined in:
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.87  7.66 Source START_SB_LUT4_I1_LC.O
+Info:    routing  1.76  9.43 Net START_SB_LUT4_I1_O (8,11) -> (8,10)
+Info:                          Sink BUSY_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               sources/baseline.v:42887.3-42899.2
+Info:                               /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v:1490.16-1490.21
+Info:      logic  0.87  10.30 Source BUSY_SB_LUT4_O_LC.O
+Info:    routing  4.79  15.09 Net ICE_LED$SB_IO_OUT (8,10) -> (15,0)
+Info:                          Sink BUSY$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               sources/protocol_dut.sv:4.19-4.26
+Info: 4.37 ns logic, 10.72 ns routing
+
+Info: Max frequency for clock 'SCK$SB_IO_IN_$glb_clk': 35.82 MHz (PASS at 1.00 MHz)
+
+Info: Clock '$PACKER_GND_NET_$glb_clk' has no interior paths
+
+Info: Max delay <async>                       -> <async>                      : 17.57 ns
+Info: Max delay <async>                       -> posedge SCK$SB_IO_IN_$glb_clk: 29.74 ns
+Info: Max delay posedge SCK$SB_IO_IN_$glb_clk -> <async>                      : 15.09 ns
+
+Info: Slack histogram:
+Info:  legend: times are in ps
+Info:          * represents 1 endpoint(s)
+Info:          + represents [1,1) endpoint(s)
+Info: [972086, 973283) |**** 
+Info: [973283, 974480) |************************ 
+Info: [974480, 975677) |*********************************************** 
+Info: [975677, 976874) |**************************** 
+Info: [976874, 978071) |**** 
+Info: [978071, 979268) |** 
+Info: [979268, 980465) |* 
+Info: [980465, 981662) | 
+Info: [981662, 982859) | 
+Info: [982859, 984056) |***************************** 
+Info: [984056, 985253) |*** 
+Info: [985253, 986450) |* 
+Info: [986450, 987647) |********* 
+Info: [987647, 988844) |***************************** 
+Info: [988844, 990041) |****************************************** 
+Info: [990041, 991238) |**************** 
+Info: [991238, 992435) |************************** 
+Info: [992435, 993632) |** 
+Info: [993632, 994829) |***** 
+Info: [994829, 996026) |******************************** 
+
+1 warning, 0 errors
+
+Info: Program finished normally.

@@ -1,0 +1,38 @@
+
+-- Executing script file `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/formal/baseline_mapped/transition_decoded_undef_independent.ys' --
+
+1. Executing JSON frontend.
+Importing module transition from JSON tree.
+
+2. Executing SETUNDEF pass (replace undef values with defined constants).
+
+3. Executing JSON backend.
+
+4. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up SAT problem:
+Final constraint equation: { } = { }
+Import def constraint for this timestep: \in_ENC_DEC
+Import def constraint for this timestep: \in_START
+Import def constraint for this timestep: \in_NORM_CS_N
+Import def constraint for this timestep: \in_MOSI
+Import def constraint for this timestep: \in_RST_N
+Import def constraint for this timestep: \in_SCK
+Import def constraint for this timestep: \in_state
+Imported 9778 cells to SAT database.
+Import proof for assert: $auto$miter.cc:268:create_miter_equiv$10 when 1'1.
+
+Solving problem with 524101 variables and 1418900 clauses..
+SAT proof finished - no model found: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

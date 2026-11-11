@@ -1,0 +1,91 @@
+host_50khz True checkpoint mismatches 0 full pin mismatches 0
+host_1mhz True checkpoint mismatches 0 full pin mismatches 0
+paused_host_1mhz True checkpoint mismatches 0 full pin mismatches 0
+immediate_read_1mhz True checkpoint mismatches 0 full pin mismatches 0
+{
+  "started_utc": "2026-11-07T17:23:29.246959+00:00",
+  "finished_utc": "2026-11-07T17:23:37.489144+00:00",
+  "all_cases_pass": true,
+  "input_sources_unchanged": true,
+  "cases": [
+    {
+      "name": "host_50khz",
+      "pass": true,
+      "checkpoints": {
+        "baseline_rows": 26336,
+        "decoded_rows": 26336,
+        "equal": true,
+        "mismatch_count": 0
+      },
+      "full_pin_trace": {
+        "union_timestamps": 15502,
+        "equal": true,
+        "mismatch_count": 0
+      },
+      "values_equal": true,
+      "latencies_equal": true,
+      "known_matches_baseline": 8,
+      "known_mismatches_baseline": 0
+    },
+    {
+      "name": "host_1mhz",
+      "pass": true,
+      "checkpoints": {
+        "baseline_rows": 26336,
+        "decoded_rows": 26336,
+        "equal": true,
+        "mismatch_count": 0
+      },
+      "full_pin_trace": {
+        "union_timestamps": 15502,
+        "equal": true,
+        "mismatch_count": 0
+      },
+      "values_equal": true,
+      "latencies_equal": true,
+      "known_matches_baseline": 8,
+      "known_mismatches_baseline": 0
+    },
+    {
+      "name": "paused_host_1mhz",
+      "pass": true,
+      "checkpoints": {
+        "baseline_rows": 26868,
+        "decoded_rows": 26868,
+        "equal": true,
+        "mismatch_count": 0
+      },
+      "full_pin_trace": {
+        "union_timestamps": 15502,
+        "equal": true,
+        "mismatch_count": 0
+      },
+      "values_equal": true,
+      "latencies_equal": true,
+      "known_matches_baseline": 8,
+      "known_mismatches_baseline": 0
+    },
+    {
+      "name": "immediate_read_1mhz",
+      "pass": true,
+      "checkpoints": {
+        "baseline_rows": 24928,
+        "decoded_rows": 24928,
+        "equal": true,
+        "mismatch_count": 0
+      },
+      "full_pin_trace": {
+        "union_timestamps": 14798,
+        "equal": true,
+        "mismatch_count": 0
+      },
+      "values_equal": true,
+      "latencies_equal": true,
+      "known_matches_baseline": 0,
+      "known_mismatches_baseline": 8
+    }
+  ],
+  "scope": "Finite nine-functional-port behavioral regression of baseline RTL against decoded regenerated baseline bitstream. Not formal equivalence, independent cipher validation, or board validation.",
+  "trace_policy": "All nine ports from time zero through completion. Checkpoints before/after rising/falling clocks, CS/START transitions and pauses. Full VCD compared after delta-cycle settling at every union timestamp, retaining x/z with no masks or ignored initialization window.",
+  "primitive_model": "Unmodified OSS CAD Suite Yosys cells_sim.v; real SB_RAM40_4K INIT/address/RE/RCLKE/RCLK semantics. NO_ICE40_DEFAULT_ASSIGNMENTS permits Icarus syntax; no functional cells replaced."
+}

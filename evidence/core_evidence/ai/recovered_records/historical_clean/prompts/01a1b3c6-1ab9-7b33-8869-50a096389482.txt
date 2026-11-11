@@ -1,0 +1,16 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user authorizes this next task: “Have the clean chat extend the reset-only equivalence check to a full transaction using only original materials. Preserve logs and failures, keep my repository unchanged, and don’t send it the solution comparison.”
+
+Continue solely from your own permitted original materials, independently derived requirements, and preserved verification artifacts. No solution comparison or external-chat findings are supplied. Reverify original hashes and keep /Users/al-zayedal-hassan/Documents/llm4chipdesign-hw unchanged.
+
+In a fresh assessment folder, extend the repaired-RTL versus synthesized-netlist equivalence assessment from reset through a complete input-load, launch, computation, and serial-result-read transaction. Derive the required steps and observation points from your own original-materials requirements. Cover both encryption and decryption and state explicitly whether the payload is symbolic/arbitrary or restricted. Preserve all candidates, models, earlier outputs, logs, failures, and timeout results unchanged.
+
+Keep the implementations' initially unspecified RAM read state independent for this reset-only obligation. Do not silently couple state, initialize unknown bits to zero, assume output equality, blackbox functional logic, or mask checks to get a pass. Account for any checker initialization/gating and distinguish solver steps from actual compared transaction cycles. Demonstrate that the complete transaction and final read checks are reachable and exercised; a vacuous proof is not completion.
+
+You may improve verification strategy, use justified decomposition or prove state convergence, and try suitable available solvers within recorded resource bounds. If a protocol-constrained transaction proof is useful, record every added assumption and distinguish that result from the broader reset-only/unrestricted-input obligation. Any intermediate lemma or abstraction must have a justified relationship to the preserved candidates; simulation or a cover trace alone is not equivalence proof.
+
+Do not change the repaired design or synthesized candidate to make this assessment pass. Preserve and diagnose counterexamples, tool errors, timeouts and remaining unproven obligations. No board programming or attack implementation.
+
+Save the exact accessible task message and available AI interaction records, exact commands and outputs, source/model/tool hashes, assumptions, bounds, and reproducible commands with fresh labels. Disclose native transcript/model-metadata gaps without reconstructing records. Finish with an evidence-linked report clearly separating full-transaction proof, conditional or bounded proof, simulation/coverage evidence, failures, and unproven behavior.</input>
+</codex_delegation>

@@ -1,0 +1,19 @@
+The cause is traced in the **recovered model**: the correct result is already at the parallel inputs when BUSY falls, but the serial-buffer load enable becomes active only after that clock edge. The next **CS-high SCK edge** loads it. Starting a CS-low read instead selects shifting of the old input word.
+
+This rules out unfinished computation for the supplied pair and a MISO-only sampling explanation. Waiting 1 ms without SCK or toggling CS does not load the buffer.
+
+Across 12 focused scenarios, **164 diagnostic assertions pass**. Original known-answer assertions remain **12 passes and 12 failures**, preserving the immediate-extraction discrepancy. No target or expected value was changed.
+
+All six originals and every prior artifact remain unchanged. Hardware equivalence, physical timing and the earlier input-enable issue remain unverified.
+
+Report, waveforms, source maps and AI records:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/readiness_diagnosis_2026-11-06/`
+
+From the restart directory:
+
+```sh
+python3 readiness_diagnosis_2026-11-06/tests.py
+python3 readiness_diagnosis_2026-11-06/records/audit_preservation.py
+```
+
+Native transcript export and exact serving-model metadata remain unavailable; those gaps are disclosed.

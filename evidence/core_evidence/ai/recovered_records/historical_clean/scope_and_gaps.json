@@ -1,0 +1,229 @@
+{
+  "scope": "Only the 17 original clean stages in the unchanged known native source, lines 1–3558.",
+  "coordinating_thread_excluded": {
+    "thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+    "reason": "Mixed/pre-clean or potentially solution-contaminated history. Not opened by this recovery task. Only sender IDs and envelopes already received in the clean thread retained."
+  },
+  "platform_context_exclusions_relative_to_prior_export": [
+    {
+      "source_line": 8,
+      "source_record_sha256": "b27c67d773d1856523860d6ddc241510c198410d86a21675a0339cef0536e1f5",
+      "timestamp": "2026-11-06T14:08:42.514Z",
+      "category": "user_role_message",
+      "reason": "Platform-supplied user-role context; body omitted from this new export."
+    },
+    {
+      "source_line": 82,
+      "source_record_sha256": "66813ddac826fb93f0f92a489ccc2903cf7aeb425e69ffb1852c472c54d1cfc0",
+      "timestamp": "2026-11-06T14:17:30.602Z",
+      "category": "user_role_message",
+      "reason": "Platform-supplied user-role context; body omitted from this new export."
+    },
+    {
+      "source_line": 2004,
+      "source_record_sha256": "f9fbe9c4955a16952f82147757937cd174c28d53b669033d4c24fba914ae6879",
+      "timestamp": "2026-11-07T01:02:18.635Z",
+      "category": "user_role_message",
+      "reason": "Platform-supplied user-role context; body omitted from this new export."
+    },
+    {
+      "source_line": 2803,
+      "source_record_sha256": "c2b4b4118da2456dcdd270b71f9de654db6c6e52bc010dda70692838f2e64fff",
+      "timestamp": "2026-11-07T15:38:17.886Z",
+      "category": "user_role_message",
+      "reason": "Platform-supplied user-role context; body omitted from this new export."
+    }
+  ],
+  "native_excluded_record_metadata_counts": {
+    "session_meta:None": 1,
+    "event_msg:task_started": 17,
+    "response_item:additional_tools": 3,
+    "response_item:message:developer": 10,
+    "response_item:message:user": 4,
+    "world_state:None": 7,
+    "turn_context:None": 19,
+    "event_msg:thread_settings_applied": 20,
+    "event_msg:item_completed": 720,
+    "token_usage_record:None": 420,
+    "event_msg:token_count": 421,
+    "response_item:reasoning": 592,
+    "event_msg:task_complete": 17,
+    "compacted:None": 2
+  },
+  "original_tool_truncations": [
+    {
+      "source_line": 21,
+      "source_record_sha256": "ea523f0190cd77ee337f8bf0127f38c12a23c87d2323ddfd5f2b0e0dd369d9ba",
+      "turn_id": "01a1b130-b2df-7e21-8650-495415b95742",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 397,
+      "source_record_sha256": "0d58654686bf3db68450391f72f824a9fc9c99d2048b73512ea268167f5f7adc",
+      "turn_id": "01a1b177-6f8e-73f2-853f-64c8d11e662d",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 463,
+      "source_record_sha256": "4f5e2360b60ab6f01d425a04721e8064897583228c53475a194317a2f959a2a3",
+      "turn_id": "01a1b193-429c-7521-8e9e-e69cb31bfc2c",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 521,
+      "source_record_sha256": "a60c36b62ac1b3850f336ca1f6fb17b89a83255352ca0a70f467f0310aaa57e9",
+      "turn_id": "01a1b193-429c-7521-8e9e-e69cb31bfc2c",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 901,
+      "source_record_sha256": "5a574ab8694252b380e466c06f002abf235e3833ca5d36d277b6f15b404b6aad",
+      "turn_id": "01a1b1f9-ca50-7801-b06b-cbf599a2e051",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 1206,
+      "source_record_sha256": "0197baeebb519ccd8c45fc486a1de70892995846846c4fadcb883c1850c90cca",
+      "turn_id": "01a1b279-4662-7023-b8d6-3a4e5e5b6045",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 1388,
+      "source_record_sha256": "c2ab439064d9193674b3038b720f8437ee968b362015a5050aa190d3a02e1aa5",
+      "turn_id": "01a1b279-4662-7023-b8d6-3a4e5e5b6045",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 1439,
+      "source_record_sha256": "d97fff44c3a2d2c6c7ec9cbe8216023e8d8e17eb4e12f6ea2861282670deed19",
+      "turn_id": "01a1b2e5-3dda-7182-957f-bdab968975b4",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 1719,
+      "source_record_sha256": "1108083927431c450b8325b9e6ab2237cca9011e8d304694849d0b278846853e",
+      "turn_id": "01a1b33e-24ea-7470-8f0a-73ba3075d3da",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 1947,
+      "source_record_sha256": "b3656cd7b37cdb35271645df92916a5e26080a39e943bfa7dfd55e17097da71e",
+      "turn_id": "01a1b360-737d-7b21-b197-5a096c32ca9d",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 1975,
+      "source_record_sha256": "6db1c40533e2887341b3653427c0867fded10681fd92053ca3a2e878826035fc",
+      "turn_id": "01a1b360-737d-7b21-b197-5a096c32ca9d",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 2148,
+      "source_record_sha256": "26d31825b8720fcff7ab77ba06c37507bb8994cc026fd048af04f28cc2324c28",
+      "turn_id": "01a1b387-1ae3-7593-bd4d-c7715b687319",
+      "category": "command_execution",
+      "markers": [
+        "Original persistence truncation marker"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    },
+    {
+      "source_line": 2149,
+      "source_record_sha256": "636b8da0b84c288208aec969a03c11f771ce8c00cf1e38786b63280ac0cc5a5a",
+      "turn_id": "01a1b387-1ae3-7593-bd4d-c7715b687319",
+      "category": "custom_tool_call_output",
+      "markers": [
+        "Original tool warning: truncated output"
+      ],
+      "status": "Original shortened output retained exactly; no missing bytes reconstructed."
+    }
+  ],
+  "compactions": [
+    {
+      "source_line": 1162,
+      "timestamp": "2026-11-06T20:09:10.719Z",
+      "note": "Internal compaction payload omitted; earlier chronological visible records retained."
+    },
+    {
+      "source_line": 2744,
+      "timestamp": "2026-11-07T02:24:50.553Z",
+      "note": "Internal compaction payload omitted; earlier chronological visible records retained."
+    }
+  ],
+  "cutoff": {
+    "last_native_line": 3558,
+    "last_native_timestamp": "2026-11-07T16:08:25.725Z",
+    "appended_native_lines_since_prior_export": 0,
+    "observed_completed_turns": 17,
+    "observed_finals": 17
+  },
+  "remaining_gaps": [
+    "Original human prompts and broader conversation in the mixed coordinating thread are outside scope; received delegation envelopes are retained.",
+    "Original tool truncations and persistence cutoff markers remain. This is not a promise of every tool byte ever generated.",
+    "Internal reasoning, developer/system instructions, internal replacement context and opaque internal metadata are excluded.",
+    "No plaintext is inferred from opaque/encrypted bodies, and no missing body is decrypted or reconstructed.",
+    "Exact serving-model identity and undisclosed inference parameters are not authenticated by local logs.",
+    "The absence of a final capture in older stage records is resolved by the already-existing Nov 7 clean export; those historical files remain untouched."
+  ],
+  "record_preservation_note": "AGENTS.md/SKILL.md text encountered as ordinary visible tool-file output remains source evidence; raw developer-role and platform context payloads are omitted.",
+  "redactions": {
+    "body_redactions": 0,
+    "entire_platform_context_records_omitted": 4,
+    "secret_pattern_findings": 0,
+    "screen_scope": [
+      "private_key",
+      "openai_style_token",
+      "github_token",
+      "aws_access_key",
+      "slack_token",
+      "credential_assignment",
+      "system_developer_markup",
+      "encrypted_reasoning_field"
+    ],
+    "screen_limit": "Pattern screening does not establish absence of every possible secret format."
+  }
+}

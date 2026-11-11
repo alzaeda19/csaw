@@ -1,0 +1,37 @@
+{
+  "design_id": "design_001",
+  "argv": [
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/bin/python",
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Existing_Designs_2026-11-10_180906Z/evaluate_one.py",
+    "design_001"
+  ],
+  "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Existing_Designs_2026-11-10_180906Z",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "MPLBACKEND": "Agg",
+    "MPLCONFIGDIR": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Existing_Designs_2026-11-10_180906Z/runtime/matplotlib/design_001",
+    "TMPDIR": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Existing_Designs_2026-11-10_180906Z/runtime/tmp/design_001",
+    "XDG_CACHE_HOME": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Existing_Designs_2026-11-10_180906Z/runtime/cache/design_001",
+    "PATH": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/bin:/opt/homebrew/bin:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.asdf/shims:/usr/local/opt/asdf/libexec/bin:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/al-zayedal-hassan/.codex/tmp/arg0-macos/codex-arg0K3NmH4:/Applications/ChatGPT.app/Contents/Resources/codex-cli/codex-path:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/usr/local/lib/ruby/gems/3.4.0/bin:/usr/local/opt/ruby/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/al-zayedal-hassan/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources:/Applications/ChatGPT.app/Contents/Resources/codex-cli/CodexCLI.app/Contents/MacOS"
+  },
+  "environment_removed": [
+    "PYTHONNOUSERSITE",
+    "PYTHONPATH"
+  ],
+  "start_utc": "2026-11-10T18:14:30.687971+00:00",
+  "finish_utc": "2026-11-10T18:14:46.494390+00:00",
+  "elapsed_seconds": 15.806346249999478,
+  "exit_code": 0,
+  "parent_failure_reason": null,
+  "peak_observed_process_group_rss_kib": 516016,
+  "rss_samples": 71,
+  "rss_poll_seconds": 0.2,
+  "worker_wall_limit_seconds": 75,
+  "graph_extraction_limit_seconds": 30,
+  "group_rss_limit_kib": 2097152,
+  "memory_limit_note": "Parent sampled process-group RSS guard; not a kernel-enforced address-space limit.",
+  "process_group_cleanup_attempted": true,
+  "stdout_sha256": "63eb2ecc54a831b08585b7e511abf2d197181aa5d913fd2b284e721629f4e978",
+  "stderr_sha256": "cace1071573ef725e762e8856427937617c8c67e5d0784c45c0e854e56a803a8",
+  "worker_sha256": "e6eda732010bb0a6aa8ac5e35224c3bbc00e37b12f3b1f5bbe96ed31025c06d2"
+}

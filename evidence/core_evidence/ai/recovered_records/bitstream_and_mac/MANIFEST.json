@@ -1,0 +1,199 @@
+{
+  "created_at_utc": "2026-11-10T13:02:24.145871Z",
+  "recovery_started_utc": "2026-11-10T13:02:23.982984Z",
+  "sessions": [
+    {
+      "label": "bitstream_root_tail",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "read_started_utc": "2026-11-10T13:02:24.066548Z",
+      "read_finished_utc": "2026-11-10T13:02:24.069294Z",
+      "prefix_through_native_line": 858,
+      "prefix_bytes": 5568544,
+      "prefix_sha256": "935ea74d7b2a81b8834f07a2bf01b9734c55b61ab269d640bfc4ab23bbf5ef1d",
+      "note": "Hash covers raw prefix for source consistency only. Earlier prefix content is not exported. Later native records are neither needed nor parsed by this exporter.",
+      "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+      "source_turn_id": "01a1b706-2061-70e2-95ed-221d16000221",
+      "first_in_scope_line": 805,
+      "last_in_scope_line": 858,
+      "scope_policy": "Exact task bounds only; root records before/after these bounds excluded from visible export.",
+      "comparison": {
+        "old_manifest": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/root_current_task/export_manifest.json",
+        "old_records": 191,
+        "old_cutoff_native_line": 804,
+        "old_snapshot_prefix_hash_matches": true,
+        "old_record_hashes_match": true,
+        "old_retained_fields_match": true,
+        "old_fields_verified": 1212,
+        "old_final_records": 0
+      },
+      "new_exported_records": 18,
+      "new_exported_counts": {
+        "function_call_output": 1,
+        "custom_tool_call": 6,
+        "custom_tool_call_output": 6,
+        "agent_message_visible_fields": 2,
+        "command_execution": 2,
+        "assistant_final_answer": 1
+      },
+      "first_exported_timestamp": "2026-11-07T17:32:27.854Z",
+      "last_exported_timestamp": "2026-11-07T17:34:16.287Z",
+      "native_final_line": 855,
+      "final_recovered": true,
+      "lifecycle": [
+        {
+          "source_line": 858,
+          "source_record_sha256": "b91dfe3defd4622badc2a46a67b3b4485bce2d8d3fb6076ec78d86c8fa781568",
+          "timestamp": "2026-11-07T17:34:16.294Z",
+          "source_fields": {
+            "type": "task_complete",
+            "turn_id": "01a1b706-2061-70e2-95ed-221d16000221"
+          }
+        }
+      ],
+      "integrity": {
+        "pass": true,
+        "new_records_verified": 18,
+        "retained_fields_verified": 103,
+        "source_line_hashes_verified": true,
+        "method": "Every retained field compared to its exact native field/list indices; SHA-256 covers original full native line including newline."
+      }
+    },
+    {
+      "label": "mac_root_task",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "read_started_utc": "2026-11-10T13:02:24.081926Z",
+      "read_finished_utc": "2026-11-10T13:02:24.085059Z",
+      "prefix_through_native_line": 295,
+      "prefix_bytes": 3872106,
+      "prefix_sha256": "30cccb945dcad82fe731cf92ed530f261bfed5e1a5422fa6621714b2a03e638c",
+      "note": "Hash covers raw prefix for source consistency only. Earlier prefix content is not exported. Later native records are neither needed nor parsed by this exporter.",
+      "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+      "source_turn_id": "01a1b6fb-f66a-7551-9e37-a44d7c515aab",
+      "first_in_scope_line": 50,
+      "last_in_scope_line": 295,
+      "scope_policy": "Exact task bounds only; root records before/after these bounds excluded from visible export.",
+      "comparison": {
+        "old_root_export_records": null,
+        "status": "No prior root-task native visible export exists in the Mac execution evidence. This is first recovery of the bounded root task, not an inferred delta from its separate clean-worker snapshot.",
+        "prior_status_file": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/mac_infrastructure_execution_2026-11-07_20261107T170940Z/TRANSCRIPT_EXPORT_STATUS.md",
+        "separate_clean_worker_snapshot_manifest": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/mac_infrastructure_execution_2026-11-07_20261107T170940Z/records/transcripts/clean_native_visible/export_manifest.json"
+      },
+      "new_exported_records": 89,
+      "new_exported_counts": {
+        "user_message": 1,
+        "assistant_commentary": 6,
+        "custom_tool_call": 26,
+        "command_execution": 22,
+        "custom_tool_call_output": 25,
+        "function_call": 3,
+        "function_call_output": 3,
+        "agent_message_visible_fields": 2,
+        "assistant_final_answer": 1
+      },
+      "first_exported_timestamp": "2026-11-07T17:08:48.397Z",
+      "last_exported_timestamp": "2026-11-07T17:17:59.666Z",
+      "native_final_line": 292,
+      "final_recovered": true,
+      "lifecycle": [
+        {
+          "source_line": 295,
+          "source_record_sha256": "016d0dd9cd0e009373c89b2d019b347069406523feca5afe9e838d091527854d",
+          "timestamp": "2026-11-07T17:17:59.679Z",
+          "source_fields": {
+            "type": "task_complete",
+            "turn_id": "01a1b6fb-f66a-7551-9e37-a44d7c515aab"
+          }
+        }
+      ],
+      "integrity": {
+        "pass": true,
+        "new_records_verified": 89,
+        "retained_fields_verified": 600,
+        "source_line_hashes_verified": true,
+        "method": "Every retained field compared to its exact native field/list indices; SHA-256 covers original full native line including newline."
+      }
+    },
+    {
+      "label": "baseline_bitstream_simulation",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-21-03-01a1b707-2fc7-79b0-b5e2-9e50d150a248.jsonl",
+      "source_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+      "comparison": {
+        "old_manifest": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_bitstream_simulation/export_manifest.json",
+        "old_records": 122,
+        "old_cutoff_native_line": 287,
+        "old_snapshot_prefix_hash_matches": true,
+        "old_record_hashes_match": true,
+        "old_retained_fields_match": true,
+        "old_fields_verified": 899,
+        "old_final_records": 3
+      },
+      "new_exported_records": 0,
+      "final_status": "All task finals already present in old snapshot; no native records after old cutoff.",
+      "native_source_bytes": 1229250,
+      "native_source_lines": 287,
+      "native_source_sha256": "b67c6900aadb4bf665c813fa642831bbb9facfc91aeaabdc5ff5b7a30d4db830"
+    },
+    {
+      "label": "baseline_mapped_formal",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-20-54-01a1b707-0a23-7ac0-8c93-f0a811f11e5d.jsonl",
+      "source_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+      "comparison": {
+        "old_manifest": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_mapped_formal/export_manifest.json",
+        "old_records": 165,
+        "old_cutoff_native_line": 389,
+        "old_snapshot_prefix_hash_matches": true,
+        "old_record_hashes_match": true,
+        "old_retained_fields_match": true,
+        "old_fields_verified": 1233,
+        "old_final_records": 1
+      },
+      "new_exported_records": 0,
+      "final_status": "All task finals already present in old snapshot; no native records after old cutoff.",
+      "native_source_bytes": 1144107,
+      "native_source_lines": 389,
+      "native_source_sha256": "592cd6b98ce02d9248ec070fa0741393963565a5d4356026686b743a82351a77"
+    },
+    {
+      "label": "decode_regenerated_baseline",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-20-46-01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5.jsonl",
+      "source_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+      "comparison": {
+        "old_manifest": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/decode_regenerated_baseline/export_manifest.json",
+        "old_records": 119,
+        "old_cutoff_native_line": 269,
+        "old_snapshot_prefix_hash_matches": true,
+        "old_record_hashes_match": true,
+        "old_retained_fields_match": true,
+        "old_fields_verified": 862,
+        "old_final_records": 1
+      },
+      "new_exported_records": 0,
+      "final_status": "All task finals already present in old snapshot; no native records after old cutoff.",
+      "native_source_bytes": 767832,
+      "native_source_lines": 269,
+      "native_source_sha256": "13da8c1b423b37b9d00cec744abd47b7c25d73f6570cdb3f6b032d4af17f3c97"
+    }
+  ],
+  "new_records_total": 107,
+  "old_bitstream_records_total": 597,
+  "old_bitstream_plus_new_tail_records": 615,
+  "new_mac_root_records": 89,
+  "new_finals_recovered": 2,
+  "prior_files_unchanged": true,
+  "scope_notes": [
+    "Bitstream root recovery begins strictly after old native snapshot line804 and ends at task_complete858; final855 recovered.",
+    "Mac root recovery is first export of exact initiating user message50 through task_complete295; final292 recovered. Its separate clean-worker transcript is handled outside this folder.",
+    "Three previously listed bitstream children were already complete; entire native file hashes and old fields match the old snapshot; no new child records exist.",
+    "No broad root history export. No Nov10/course/solution-sensitive task records exported. No ciphertext decrypted. No missing text reconstructed.",
+    "No experiments, tests, simulations, repository changes, external AI calls or historical commands executed by this recovery.",
+    "Source-line hashes establish consistency with retained local native records, not independent provider attestation."
+  ],
+  "carried_forward_prior_bitstream_export": {
+    "original_records": 597,
+    "carried_records": 587,
+    "whole_instruction_output_records_omitted": 10,
+    "encrypted_argument_fields_omitted": 46
+  },
+  "carried_forward_prior_bitstream_manifest": "prior_bitstream_export/MANIFEST.json",
+  "portable_visible_record_count": 694
+}

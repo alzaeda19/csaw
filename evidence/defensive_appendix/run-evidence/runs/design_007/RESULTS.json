@@ -1,0 +1,125 @@
+{
+  "design_id": "design_007",
+  "status": "scored",
+  "source_sha256": "f44fac9ff5f8731ea2d9a6651bb861970418b93896eb3392a0b67b2c17abfc33",
+  "per_model": {
+    "HT1": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9455506801605225,
+      "prob_trojan": 0.05444930121302605,
+      "log_probabilities": [
+        -0.05598778277635574,
+        -2.91048526763916
+      ],
+      "logits": [
+        1.4567451477050781,
+        -1.397752285003662
+      ]
+    },
+    "HT2": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.7107282876968384,
+      "prob_trojan": 0.2892717123031616,
+      "log_probabilities": [
+        -0.3414650857448578,
+        -1.2403888702392578
+      ],
+      "logits": [
+        0.37580955028533936,
+        -0.5231142640113831
+      ]
+    },
+    "HT3": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.7940466403961182,
+      "prob_trojan": 0.20595332980155945,
+      "log_probabilities": [
+        -0.2306130826473236,
+        -1.5801056623458862
+      ],
+      "logits": [
+        0.6442723274230957,
+        -0.7052201628684998
+      ]
+    },
+    "HT4": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9933358430862427,
+      "prob_trojan": 0.006664101034402847,
+      "log_probabilities": [
+        -0.00668645603582263,
+        -5.011020183563232
+      ],
+      "logits": [
+        2.500882148742676,
+        -2.503451347351074
+      ]
+    }
+  },
+  "ensemble": {
+    "prediction": 0,
+    "label": "CLEAN",
+    "trojan_votes": 0,
+    "triggered_models": [],
+    "rule": "any model argmax=1"
+  },
+  "preprocessing": {
+    "source_sha256": "f44fac9ff5f8731ea2d9a6651bb861970418b93896eb3392a0b67b2c17abfc33",
+    "source_bytes": 789,
+    "source_lines": 78,
+    "route": "exact_DFG",
+    "exact_extraction": {
+      "status": "success",
+      "nodes": 32,
+      "edges": 32
+    },
+    "large_lookup_entries": 0,
+    "graph_extraction_seconds": 0.4181119161657989,
+    "graph_nodes": 32,
+    "graph_edges": 32,
+    "weakly_connected_components": 6,
+    "raw_label_counts": {
+      "_rn0_SRAM": 1,
+      "SRAM": 2,
+      "_rn1_dataOut": 1,
+      "pointer": 1,
+      "Addr": 1,
+      "ADR": 1,
+      "'d8": 3,
+      "DAT": 1,
+      "dataOut": 2,
+      "branch": 3,
+      "eq": 5,
+      "CS": 1,
+      "1'd1": 3,
+      "land": 2,
+      "WE": 1,
+      "RD": 1,
+      "1'd0": 2,
+      "DPTH": 1
+    },
+    "feature_counts": {
+      "16": 5,
+      "1": 6,
+      "30": 1,
+      "5": 2,
+      "9": 8,
+      "13": 3,
+      "18": 5,
+      "23": 2
+    },
+    "preprocessed_sha256": "f44fac9ff5f8731ea2d9a6651bb861970418b93896eb3392a0b67b2c17abfc33",
+    "preprocessing": "Existing topModule.v passthrough; no flattening/renaming/underscore removal.",
+    "dataset_pickle_loaded": false,
+    "truth_label_accessed": false,
+    "placeholder_label": 0,
+    "messages": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Existing_Designs_2026-11-10_180906Z/runs/design_007/graph_input/topModule.v , 32 , 32 , 0.41677284240722656"
+    ]
+  },
+  "source_unchanged": true
+}

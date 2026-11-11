@@ -1,0 +1,12 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user requests: investigate the remaining IPCON geometry failure using only original materials. Preserve AI logs and failures, keep the user's repository unchanged, and do not use the solution comparison.
+
+Continue from your own clean-chat findings and independently derived artifacts. Reverify original hashes against the receipt and keep those inputs immutable. Do not read other chats, solution comparisons, quarantined prior work, published solutions, later target revisions or the user's project repository. No solution material or technical diagnosis from the requesting chat is included here.
+
+Reproduce the IPCON geometry failure you documented using the unchanged converter and original-derived input, in a fresh experiment directory within the separate restart workspace. Investigate the failing geometry assumptions and relevant device/tile support using only the allowlisted originals and existing pinned generic tool sources. Establish what the evidence supports about tool coverage versus malformed input or recovery fidelity, and explain how this affects confidence in the baseline. Distinguish a bounded component inspection from successful whole-device conversion or hardware validation.
+
+Keep the original failing command, assertion and outputs. Do not remove assertions, omit unsupported tiles or alter the original input merely to obtain a passing conversion. Any diagnostic instrumentation must be isolated, preserve the failing behavior and retain exact source identities and diffs. Leave the recovered baseline, prior tools, tests, runs and failures unchanged. Keep the investigation scoped to baseline/tool validation.
+
+Preserve available exact visible prompts/responses, commands, outputs, versions, hashes, diagnostic diffs and failed attempts. Disclose unavailable native transcripts/model metadata rather than reconstructing records. Report the supported cause, what passes and still fails, unresolved questions, and reproducible artifact/AI-log locations.</input>
+</codex_delegation>

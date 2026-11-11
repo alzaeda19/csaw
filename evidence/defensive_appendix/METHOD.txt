@@ -1,0 +1,15 @@
+Defensive evaluation of professor-supplied existing hardware benchmark designs
+
+Scope fixed before results: all 23 topModule.v files under TJ-RTL-toy in bundled hw2vec/assets/datasets.zip: 9 TjFree and 14 TjIn. Positives comprise four PIC16F84 variants and ten RS232 variants. Each family has one included clean reference; seven other clean designs are additional controls. All 23 source byte hashes are distinct. Prior clean AES and CSAW runs are NOT part of this denominator.
+
+Labels inherited from package: TjFree=0, TjIn=1. No payload activation or functional adjudication of labels. Original four model_HT1–4 weights/configs remain frozen, with recorded identities. No generation, adaptive evasion, training or threshold tuning. Filename suffixes such as T100 do not establish membership of the course HT1 detector type.
+
+One scheduled graph-analysis evaluation per design, four models, supplied any-positive-vote ensemble. Labels joined only for external scoring, not logits. Extraction failure, timeout, empty/invalid graph or missing model result remains unscored. Record coverage and graph route for every design.
+
+TP: labeled infected and flagged. FN: labeled infected classified clean. FP: labeled clean flagged. TN: labeled clean classified clean. Recall=TP/(TP+FN); false-positive rate=FP/(FP+TN); precision=TP/(TP+FP). Undefined denominators remain undefined. Give counts and actual scored denominators, plus scheduled/scored/unscored coverage. Do not silently classify failed files as clean.
+
+Family summaries are descriptive: related variants count as individual files, and each clean control is counted only once in the main confusion matrix. The 10 RS232 variants dominate positive counts.
+
+Training overlap is unresolved: the course README describes retrained Robust-GNN4TJ models using VeriGen/GHOST data, while upstream HW2VEC documentation uses this toy dataset for training and testing. No item-level training manifest connects these exact four course weights to these 23 files. This is a frozen-model evaluation of a bundled labeled toy dataset, NOT a demonstrated held-out test.
+
+This small evaluation does not certify unseen-design performance or hardware security. Graph preprocessing may omit semantics; scores are not calibrated compromise probabilities. Source RTL is graph-analysis data only, not deployed or activated. Results remain separate from CSAW and the previous partial submission. Acceptance of changed coursework scope remains the instructor's decision.

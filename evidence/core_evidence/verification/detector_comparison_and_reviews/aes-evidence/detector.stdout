@@ -1,0 +1,11 @@
+MODEL_LOADED HT1
+MODEL_LOADED HT2
+MODEL_LOADED HT3
+MODEL_LOADED HT4
+[HW2GRAPH] Large lookup table detected (512 entries); using heuristic DFG directly.
+
+DETECTOR_RESULT {"HT1": {"prediction": 0, "label": "CLEAN", "prob_clean": 0.9517616033554077, "prob_trojan": 0.048238418996334076, "log_probabilities": [-0.04944067820906639, -3.031599521636963], "logits": [1.5392239093780518, -1.4429349899291992]}}
+DETECTOR_RESULT {"HT2": {"prediction": 0, "label": "CLEAN", "prob_clean": 0.9524285793304443, "prob_trojan": 0.04757138341665268, "log_probabilities": [-0.04874016344547272, -3.0455238819122314], "logits": [1.5095641613006592, -1.4872195720672607]}}
+DETECTOR_RESULT {"HT3": {"prediction": 0, "label": "CLEAN", "prob_clean": 0.8367120623588562, "prob_trojan": 0.16328798234462738, "log_probabilities": [-0.17827530205249786, -1.8122398853302002], "logits": [0.7931451797485352, -0.8408193588256836]}}
+DETECTOR_RESULT {"HT4": {"prediction": 0, "label": "CLEAN", "prob_clean": 0.9762177467346191, "prob_trojan": 0.023782268166542053, "log_probabilities": [-0.02406959980726242, -3.7388150691986084], "logits": [1.8710038661956787, -1.8437416553497314]}}
+ALL_FOUR_COMPLETE {"model_count": 4, "trojan_votes": 0, "triggered_models": [], "verdict": "CLEAN", "rule": "Any model voting1 yields TROJAN, as in supplied notebook", "mean_prob_trojan": 0.07072001323103905, "max_prob_trojan": 0.16328798234462738, "min_prob_trojan": 0.023782268166542053}

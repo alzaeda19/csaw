@@ -1,0 +1,161 @@
+{
+  "export_started_utc": "2026-11-10T12:16:41.805632Z",
+  "export_finished_utc": "2026-11-10T12:16:41.853525Z",
+  "root_chat_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+  "exact_user_marker": "okay so i have the entire meeting transcript and new documents to use to complete this project.",
+  "root_marker_source_line": 869,
+  "root_marker_timestamp": "2026-11-10T12:10:01.467Z",
+  "scope": "Available visible records from the exact current user message onward, and the two review-agent sessions identified by scoped native delegation metadata.",
+  "sessions": [
+    {
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "snapshot_read_started_utc": "2026-11-10T12:16:41.827625Z",
+      "snapshot_read_finished_utc": "2026-11-10T12:16:41.830652Z",
+      "source_snapshot_bytes": 6966857,
+      "source_snapshot_sha256": "8ed9ab0e14e185360f03731ce066b933babf89c04d6f2530d18c377678618eb0",
+      "complete_source_lines": 1037,
+      "trailing_incomplete_bytes_not_parsed": 0,
+      "label": "root_current_task",
+      "first_in_scope_line": 869,
+      "minimum_timestamp": "2026-11-10T12:10:01.467Z",
+      "exported_records": 70,
+      "exported_counts": {
+        "user_message": 2,
+        "assistant_commentary": 4,
+        "custom_tool_call": 14,
+        "command_execution": 13,
+        "custom_tool_call_output": 14,
+        "function_call": 6,
+        "function_call_output": 6,
+        "agent_message_readable_envelope": 6,
+        "image_view_record": 4,
+        "file_change_record": 1
+      },
+      "excluded_counts": {
+        "event_item:UserMessage": 2,
+        "event_item:AgentMessage": 5,
+        "token_usage_record": 21,
+        "event_msg": 21,
+        "event_item:Reasoning": 17,
+        "response_item:reasoning": 17,
+        "world_state": 3,
+        "inter_agent_communication_metadata": 6,
+        "event_item:SubAgentActivity": 1
+      },
+      "last_exported_timestamp": "2026-11-10T12:16:38.441Z",
+      "integrity": {
+        "pass": true,
+        "records_verified": 70,
+        "retained_fields_verified": 447,
+        "source_line_hashes_verified": true,
+        "method": "Saved JSONL re-read; every retained field compared to the exact original native field or selected original list elements. SHA-256 verified against each full original source line, including newline."
+      },
+      "significant_omissions_and_gaps": 8
+    },
+    {
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-10-52-01a1c55e-48c5-7051-b694-f285d03643f5.jsonl",
+      "snapshot_read_started_utc": "2026-11-10T12:16:41.844855Z",
+      "snapshot_read_finished_utc": "2026-11-10T12:16:41.845396Z",
+      "source_snapshot_bytes": 450929,
+      "source_snapshot_sha256": "acc1462280f18301cc506b7e212afbb4a99bec213fc76563fa7a5729b24f9454",
+      "complete_source_lines": 84,
+      "trailing_incomplete_bytes_not_parsed": 0,
+      "native_thread_id": "01a1c55e-48c5-7051-b694-f285d03643f5",
+      "root_delegation_agent_path": "/root/course_package_review",
+      "label": "course_package_review",
+      "first_in_scope_line": 1,
+      "minimum_timestamp": "2026-11-10T12:10:01.467Z",
+      "exported_records": 33,
+      "exported_counts": {
+        "agent_message_readable_envelope": 2,
+        "custom_tool_call": 6,
+        "command_execution": 13,
+        "custom_tool_call_output": 6,
+        "function_call": 2,
+        "function_call_output": 2,
+        "assistant_final_answer": 2
+      },
+      "excluded_counts": {
+        "session_meta": 1,
+        "event_msg": 15,
+        "response_item:additional_tools": 1,
+        "response_item:message": 4,
+        "platform_environment_context": 1,
+        "world_state": 1,
+        "turn_context_except_configured_model_labels": 2,
+        "inter_agent_communication_metadata": 2,
+        "token_usage_record": 10,
+        "event_item:Reasoning": 5,
+        "response_item:reasoning": 5,
+        "event_item:SubAgentActivity": 2,
+        "event_item:AgentMessage": 2
+      },
+      "last_exported_timestamp": "2026-11-10T12:13:05.997Z",
+      "integrity": {
+        "pass": true,
+        "records_verified": 33,
+        "retained_fields_verified": 258,
+        "source_line_hashes_verified": true,
+        "method": "Saved JSONL re-read; every retained field compared to the exact original native field or selected original list elements. SHA-256 verified against each full original source line, including newline."
+      },
+      "significant_omissions_and_gaps": 4
+    },
+    {
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-10-42-01a1c55e-217f-7b01-987d-cc849a3eb52b.jsonl",
+      "snapshot_read_started_utc": "2026-11-10T12:16:41.850051Z",
+      "snapshot_read_finished_utc": "2026-11-10T12:16:41.850443Z",
+      "source_snapshot_bytes": 451585,
+      "source_snapshot_sha256": "00618033bee01873114a3552d8c7a64e03b5bb132fc25fb4641ef62114547b4c",
+      "complete_source_lines": 82,
+      "trailing_incomplete_bytes_not_parsed": 0,
+      "native_thread_id": "01a1c55e-217f-7b01-987d-cc849a3eb52b",
+      "root_delegation_agent_path": "/root/meeting_requirement_review",
+      "label": "meeting_requirement_review",
+      "first_in_scope_line": 1,
+      "minimum_timestamp": "2026-11-10T12:10:01.467Z",
+      "exported_records": 31,
+      "exported_counts": {
+        "agent_message_readable_envelope": 1,
+        "custom_tool_call": 9,
+        "command_execution": 9,
+        "custom_tool_call_output": 9,
+        "function_call": 1,
+        "function_call_output": 1,
+        "assistant_final_answer": 1
+      },
+      "excluded_counts": {
+        "session_meta": 1,
+        "event_msg": 14,
+        "response_item:additional_tools": 1,
+        "response_item:message": 4,
+        "platform_environment_context": 1,
+        "world_state": 1,
+        "turn_context_except_configured_model_labels": 1,
+        "inter_agent_communication_metadata": 1,
+        "event_item:Reasoning": 7,
+        "response_item:reasoning": 7,
+        "token_usage_record": 11,
+        "event_item:SubAgentActivity": 1,
+        "event_item:AgentMessage": 1
+      },
+      "last_exported_timestamp": "2026-11-10T12:12:16.758Z",
+      "integrity": {
+        "pass": true,
+        "records_verified": 31,
+        "retained_fields_verified": 219,
+        "source_line_hashes_verified": true,
+        "method": "Saved JSONL re-read; every retained field compared to the exact original native field or selected original list elements. SHA-256 verified against each full original source line, including newline."
+      },
+      "significant_omissions_and_gaps": 2
+    }
+  ],
+  "missing_sessions": [],
+  "gaps": [
+    "Encrypted collaboration bodies were not decrypted or reconstructed.",
+    "Root final reply and all post-snapshot activity are outside this bounded export.",
+    "Earlier mixed history, reasoning, system/developer instructions, platform context, and compaction payloads are excluded.",
+    "Image-view paths and native tool records are retained; binary images are not copied into this transcript export.",
+    "The export-worker session is outside the requested two-review-agent export scope."
+  ],
+  "immutable_flags_used": false
+}

@@ -1,0 +1,14 @@
+All four mode pairs pass for two transactions with one initial reset and no intervening reset.
+
+| Mode pair | Universal proof | Reachability |
+|---|---|---|
+| Encryption → encryption | [PASS](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/pair_00_v2/bmc.stdout) | [PASS](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/cover_00_final_01/cover.stdout) |
+| Encryption → decryption | [PASS](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/pair_01_v2/bmc.stdout) | [PASS](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/cover_01_final_01/cover.stdout) |
+| Decryption → encryption | [PASS](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/pair_10_retry_01/bmc.stdout) | [PASS](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/cover_10_final_01/cover.stdout) |
+| Decryption → decryption | [PASS](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/pair_11_retry_01/bmc.stdout) | [PASS](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/cover_11_final_01/cover.stdout) |
+
+Coverage: all 2^64 independent payload pairs per mode pair, independent initial RAM read states, 141 solver states, and one explicit idle clock between operations. [Both complete reads were audited](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/records/trace_audit.json).
+
+The corrected checker error and all timeouts are preserved. Unrestricted and unbounded equivalence remain unproved. Originals, candidates, and earlier artifacts are unchanged; your repository was not accessed.
+
+[Report and reproduction commands](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/REPORT.md) · [AI record](/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/AI_RECORD.md). AI-log gaps include the native export and exact serving-model version.

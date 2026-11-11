@@ -1,0 +1,78 @@
+{
+  "generated_at_utc": "2026-11-10T13:06:07.444845+00:00",
+  "purpose": "Self-contained verified re-export of already-existing authentic clean historical records.",
+  "source": {
+    "path": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/06/rollout-2026-11-06T09-08-41-01a1b130-b28f-70c3-b80d-a7129910ee45.jsonl",
+    "thread_id": "01a1b130-b28f-70c3-b80d-a7129910ee45",
+    "bytes": 12631040,
+    "lines": 3558,
+    "sha256": "4bb5b8d928bbb926cedcea5456b81d609493b6c3fe0906d0346d764f9d41dfdf"
+  },
+  "prior_export": {
+    "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/mac_infrastructure_execution_2026-11-07_20261107T170940Z/records/transcripts/clean_native_visible",
+    "source_sha256_at_prior_export": "4bb5b8d928bbb926cedcea5456b81d609493b6c3fe0906d0346d764f9d41dfdf",
+    "native_source_unchanged": true,
+    "visible_events_sha256": "4591c4f1d2e50b038a3b8973b0ae70995bcc1c2c54a55aee78d7cec080ee085f",
+    "counts": {
+      "user_role_message": 4,
+      "delegated_task": 17,
+      "assistant_commentary": 81,
+      "custom_tool_call": 393,
+      "command_execution": 388,
+      "custom_tool_call_output": 393,
+      "function_call": 8,
+      "function_call_output": 8,
+      "assistant_final_answer": 17
+    },
+    "total_events": 1309
+  },
+  "new_export": {
+    "total_events": 1305,
+    "counts": {
+      "delegated_task": 17,
+      "assistant_commentary": 81,
+      "custom_tool_call": 393,
+      "command_execution": 388,
+      "custom_tool_call_output": 393,
+      "function_call": 8,
+      "function_call_output": 8,
+      "assistant_final_answer": 17
+    },
+    "distinct_clean_turns": 17,
+    "newly_recovered_events": 0,
+    "already_exported_events_reverified_and_copied": 1305,
+    "prior_platform_context_events_omitted": 4,
+    "newly_recovered_finals": 0,
+    "already_exported_finals_reverified_and_copied": 17
+  },
+  "counting_note": "Counts are native record counts, including distinct command execution and tool-result records; not counts of unique logical commands.",
+  "field_identity": "Each retained JSONL record text exactly matches its corresponding prior-export JSONL record. All retained payload values equal their native source values except the explicitly normalized command type described below. Native source-line hashes retain original line ending bytes.",
+  "export_schema_metadata": {
+    "command_type_normalization": {
+      "applies_to_category": "command_execution",
+      "native_path": "payload.item.type",
+      "native_value": "CommandExecution",
+      "export_path": "payload.type",
+      "export_value": "command_execution",
+      "purpose": "Prior exporter schema label; not a verbatim native type field."
+    },
+    "command_field_layout": "Command fields other than type are copied unchanged from native payload.item; started_at_ms and completed_at_ms are copied unchanged from the enclosing native payload. Layout is flattened by the prior exporter.",
+    "record_wrapper": "source_line, source_record_sha256, category and the association of turn_id are exporter index metadata; timestamp is copied from the native record.",
+    "other_payload_value_normalizations_found": 0
+  },
+  "scope_and_gaps": "scope_and_gaps.json",
+  "phase_index": "phase_index.json",
+  "prior_input_hashes": "prior_artifact_hashes.json",
+  "all_source_and_prior_artifacts_unchanged": true,
+  "legacy_index_gaps_satisfied_by_existing_2026_11_07_export": [
+    "baseline_recovery final capture",
+    "baseline_followup final capture",
+    "protocol_harness final listed absent in table",
+    "source_intake final listed absent in table"
+  ],
+  "limitations": [
+    "A local matching hash establishes consistency, not independent provider attestation.",
+    "No original workspace record, source file, repository or CSAW artifact modified.",
+    "No experiment/test reruns and no model calls."
+  ]
+}

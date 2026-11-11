@@ -1,0 +1,33 @@
+[
+  {
+    "source_line": 13,
+    "source_record_sha256": "1207c9c743733f46ee12eaca3cdad07cd2de661e66d037022be046555965fcda",
+    "timestamp": "2026-11-10T18:09:36.058Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 33,
+    "source_record_sha256": "135714f187de9c22412c3075a3c823cc679d7d52225213007e038fba9d0cc288",
+    "timestamp": "2026-11-10T18:10:05.434Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  },
+  {
+    "source_line": 47,
+    "source_record_sha256": "342e860183a152dec2b06fbea571c57b2857e34ec69a5930601185b8d4cf7d59",
+    "timestamp": "2026-11-10T18:10:58.980Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  }
+]

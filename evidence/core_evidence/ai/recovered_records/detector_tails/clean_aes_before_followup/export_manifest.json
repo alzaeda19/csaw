@@ -1,0 +1,46 @@
+{
+  "label": "clean_aes_before_followup",
+  "experiment": "clean_aes",
+  "first": 1528,
+  "last": 1543,
+  "end_reason": "Ends immediately before incoming same-task coordinator delegation at line 1544.",
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+  "source_snapshot_bytes": 9575272,
+  "source_snapshot_sha256": "6ed654dfbedf4374ff50ab6b47f20b53fdd4b6f1b1acb03113dbe70771beb61c",
+  "complete_source_lines": 1820,
+  "trailing_incomplete_bytes_omitted": 0,
+  "snapshot_read_utc": "2026-11-10T13:03:45.685599Z",
+  "native_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+  "parent_thread_id": null,
+  "agent_path": null,
+  "prior_snapshot_manifest": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/records/current_task_transcripts/snapshot_20261110T124136400883Z/SNAPSHOT_MANIFEST.json",
+  "prior_snapshot_manifest_sha256": "b636155e9346e408c0c63f8b199c81c86b2623d3c61ff3f1dd0a5724943d4e55",
+  "prior_complete_source_lines": 1527,
+  "prior_snapshot_prefix_sha256_verified": true,
+  "first_in_scope_timestamp": "2026-11-10T12:42:02.220Z",
+  "last_in_scope_timestamp": "2026-11-10T12:42:13.449Z",
+  "bounded_source_bytes": 435354,
+  "bounded_source_sha256": "b09207cafed6300bd9832df9f500f57eb28a0f22bed5ce4f70029c6580b2a3e9",
+  "exported_records": 3,
+  "exported_counts": {
+    "assistant_commentary": 1,
+    "custom_tool_call": 1,
+    "custom_tool_call_output": 1
+  },
+  "excluded_counts": {
+    "Nonvisible, duplicate UI event, aggregate collaboration state, or out-of-scope record excluded in full.": 11,
+    "Compaction and replacement history excluded in full.": 1,
+    "Turn context excluded except exact turn/model/effort labels in separate metadata; configured model does not authenticate serving weights.": 1
+  },
+  "omission_and_gap_entries": 13,
+  "integrity": {
+    "pass": true,
+    "records_verified": 3,
+    "retained_fields_verified": 15,
+    "raw_line_hashes_include_original_newline": true,
+    "field_hash_algorithm": "SHA-256 of UTF-8 JSON, ensure_ascii=False, sort_keys=True, separators=(comma, colon)",
+    "duplicate_prior_source_lines_exported": 0,
+    "duplicate_recovery_source_lines_exported": 0,
+    "method": "Reread saved JSONL; compare each retained field to exact native field/selected original list elements and each raw source-line SHA-256. No detector execution or model/API calls."
+  }
+}

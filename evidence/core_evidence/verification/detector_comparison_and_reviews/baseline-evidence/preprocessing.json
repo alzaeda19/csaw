@@ -1,0 +1,36 @@
+{
+  "candidate_sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+  "candidate_bytes": 1213314,
+  "candidate_lines": 45711,
+  "candidate_module": "chip",
+  "adapter_used": false,
+  "external_SB_RAM40_4K_instances": 4,
+  "external_RAM_definitions_supplied": false,
+  "route": "heuristic_fallback",
+  "large_lookup_entries": 0,
+  "exact_timeout_seconds": 30,
+  "elapsed_seconds": 0.6266414159908891,
+  "messages": [
+    "[HW2GRAPH] DFG generation failed, will fallback to heuristic: No such module: SBRAM404K",
+    "[HW2GRAPH] Using heuristic DFG fallback (syntax may be wrong).",
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runs/baseline_detection_02/graph_input/topModule.v , 5728 , 10947 , 0.5835351943969727"
+  ],
+  "preprocessed_sha256": "3ed684eb72e7875b52a9ca5695be58bd84c5d22955dad736e4bb8ced4289700e",
+  "graph_nodes": 5728,
+  "graph_edges": 10947,
+  "weakly_connected_components": 1,
+  "raw_label_counts": {
+    "signal": 2848,
+    "branch": 2880
+  },
+  "feature_counts": {
+    "5": 2771,
+    "13": 2880,
+    "1": 38,
+    "16": 39
+  },
+  "fallback_assignment_count": 2880,
+  "dataset_cache_loaded": false,
+  "dataset_cache_omission": "Cache supplies training graphs and fixed feature count only; last appended candidate is the sole inference graph. Same37-feature mapping preserved.",
+  "preprocessing": "Unchanged HW2GRAPH concatenates .v, removes line comments, removes underscores globally, renames top. Only disposable graph_input transformed."
+}

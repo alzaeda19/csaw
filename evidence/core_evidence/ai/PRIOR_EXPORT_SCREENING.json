@@ -1,0 +1,19 @@
+{
+  "scope": "Prior staged files only; new recovery not yet included",
+  "visible_event_categories": {
+    "initiating_delegation": 1,
+    "assistant_commentary": 16,
+    "custom_tool_call": 96,
+    "command_execution": 116,
+    "custom_tool_call_output": 96,
+    "function_call": 36,
+    "function_call_output": 38,
+    "agent_message_readable_envelope": 31,
+    "user_message": 4,
+    "assistant_final_answer": 7,
+    "image_view_record": 4,
+    "file_change_record": 4
+  },
+  "common_api_token_pattern_candidates": [],
+  "limitations": "Pattern screening is not a guarantee that all private content is absent. Authored export scopes separately exclude reasoning/system/developer records."
+}

@@ -1,0 +1,13 @@
+All six originals passed byte-size, SHA-256 and Git blob-ID checks against the receipt. Originals were unchanged; the existing repository was not accessed. Neither the host program nor the bitstream was executed.
+
+Saved under:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/source_intake_2026-11-06/`
+
+- `PROTOCOL_REQUIREMENTS.md`: exact source-line references, stated requirements, host behavior, assumptions, unknowns and 13 normal-operation checks.
+- `verification.json`: expected and computed hashes.
+- `records/`: interaction summaries, command ledger, versions, repeat-verification script and results.
+- `OUTPUT_HASHES.json`: verified hashes for 12 generated files.
+
+Unresolved questions include four-cycle timing versus seven additional host clocks, clock-edge semantics, key handling and the algorithm. Only one expected plaintext/ciphertext pair is supplied. Target checks remain **not run**.
+
+The saved interaction record is partial, not a raw transcript export; exact serving-model identification was unavailable. These limits are documented.

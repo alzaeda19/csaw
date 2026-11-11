@@ -1,0 +1,42 @@
+{
+  "status": "SUCCESS_CONDITIONAL_BUILD",
+  "source": "Recovered baseline, not repaired derivative",
+  "source_hashes": {
+    "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+    "protocol_dut.sv": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089"
+  },
+  "device": "iCE40-UP5K",
+  "package": "SG48 ASSUMED; original package unverified",
+  "pins": "Automatically allocated by nextpnr; NO board pin mapping or PCF supplied",
+  "clock_mhz": 1,
+  "seed": 1,
+  "external_timing": "UNCONSTRAINED",
+  "board_programming": "NOT_PERFORMED; artifact not verified for actual board",
+  "equivalence": "No functional or formal equivalence established by this build",
+  "originals_and_prior_checked_artifacts_unchanged": true,
+  "original_binary_sha256": "5fa5fda9768c36808780398d8e24d125d860aacc62b61af8b4c5124dd759ddbe",
+  "artifacts": {
+    "verification_unpacked.asc": {
+      "bytes": 735239,
+      "sha256": "f071d63fa3853f662b58e6310152e7b5b27570b0ca8c9c5d631601fb74bb2840"
+    },
+    "baseline_assumed_sg48_auto_pins.asc": {
+      "bytes": 2378783,
+      "sha256": "34c94641f1befd50305fa9759c40e5f909fe4a5775c18134715602e2cba57bdf"
+    },
+    "baseline_assumed_sg48_auto_pins.bin": {
+      "bytes": 104090,
+      "sha256": "fa823078f0fef95a3b093b3db547a50030864c81c80a17ef445e86206cbc5fb7"
+    },
+    "verification_repacked.bin": {
+      "bytes": 104090,
+      "sha256": "fa823078f0fef95a3b093b3db547a50030864c81c80a17ef445e86206cbc5fb7"
+    }
+  },
+  "tools": {
+    "yosys": "2f9ccb27f821a8da68d45b6ac6b6093338404c205d75d9cb2cee0a049326761e",
+    "nextpnr-ice40": "670b5e8844c8aba66f2da4d81818b4c514e9922c10a9bfe07ace9bdb7b5bc6f0",
+    "icepack": "0798aa98256217bbcf1eede824e95e3e9168003f9eee8c2f6318d4160c5b873a",
+    "iceunpack": "0798aa98256217bbcf1eede824e95e3e9168003f9eee8c2f6318d4160c5b873a"
+  }
+}

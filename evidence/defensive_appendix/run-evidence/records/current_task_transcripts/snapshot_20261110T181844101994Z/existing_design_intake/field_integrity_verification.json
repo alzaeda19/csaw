@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "records_verified": 21,
+  "retained_fields_verified": 150,
+  "identity_values_verified": 42,
+  "metadata_fields_verified": 3,
+  "source_line_hashes_verified": true,
+  "method": "Saved JSONL re-read; each retained value compared with its exact native field or selected original list elements; source identity references and original source-line SHA-256 including newline verified.",
+  "retained_field_hash_algorithm": "SHA-256 of UTF-8 JSON, ensure_ascii=False, sort_keys=True, separators=(comma, colon)"
+}

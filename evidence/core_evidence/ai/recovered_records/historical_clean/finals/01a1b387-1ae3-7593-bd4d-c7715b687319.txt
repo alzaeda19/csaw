@@ -1,0 +1,23 @@
+**Synthesis passes. Device fit and timing are conditional; board validation remains blocked.**
+
+| Result | Baseline | Repaired |
+|---|---:|---:|
+|LUT4s|1,438|2,903|
+|Packed UP5K logic cells|1,443/5,280|2,920/5,280 (55.3%)|
+|Estimated internal Fmax|35.82 MHz|29.25 MHz|
+
+Both retain 71 FFs and four EBRs. Both route and meet the **1 MHz internal target** under the tested hypothetical SG48/automatic-pin setup. Missing original package/pin and external-delay constraints prevent claiming original-board fit or external timing closure. Hardware and synthesis equivalence were not tested.
+
+Candidate hashes, all six originals and **13,129 earlier files** remain unchanged.
+
+Artifacts:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06`
+
+See `REPORT.md`, `PROGRESS_BRIEF.md`, and `AI_RECORD.md`. Reproduce from the restart root with fresh labels:
+
+```sh
+python3 synthesis_fit_timing_2026-11-06/analysis/synthesize_02.py --candidate repaired --stage synthesize --label reproduce_synthesis_01
+python3 synthesis_fit_timing_2026-11-06/analysis/place_route.py --candidate repaired --label reproduce_route_01
+```
+
+The route command uses the preserved mapped netlist, as documented in the report.

@@ -1,0 +1,481 @@
+{
+  "all_pass": true,
+  "entries": [
+    {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/sources/designs/aes_128/aes_128.v",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/inputs/aes_128/aes_128.v",
+      "expected_sha256": "60835b67fb0c424ab4a1a5d7ee11a2b5a7301bf45677def9653f7491c92cb1a6",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/sources/designs/aes_128/round.v",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/inputs/aes_128/round.v",
+      "expected_sha256": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/sources/designs/aes_128/table.v",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/inputs/aes_128/table.v",
+      "expected_sha256": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference/sources/testbenches/tb_aes_128.v",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/inputs/aes_128/tb_aes_128.v",
+      "expected_sha256": "3d46061c957cea3ebd049f767928d5b6746c2a329eb4403040d7c1f969c378a5",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/2601.17178v3.pdf",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/2601.17178v3.pdf",
+      "expected_sha256": "ea024121b7682990fb88ba5f4e6b3b77fd16d5e228a596afc436a5d0d1716d44",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/README.md",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/README.md",
+      "expected_sha256": "4bc5516f9677054df673ce07831216aa4336ee1e976228720d4c4e7ea98e4e3d",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/TrojanGYM_Overview_Slides.pdf",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/TrojanGYM_Overview_Slides.pdf",
+      "expected_sha256": "99d145fabb6f206c30f782018730e30fbf500f90b2a186338df4db3f7d7c06dd",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/TrojanGYM_Overview_Slides.pptx",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/TrojanGYM_Overview_Slides.pptx",
+      "expected_sha256": "3ec8f2342db155a6ec25e5aab5253367474e548540da995bf759e24ffcef6f82",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/dfg_tj_rtl.pkl",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/dfg_tj_rtl.pkl",
+      "expected_sha256": "fb9692b87815b9a3b1c41858409a7f0750eec06e1bf56f76c775b81c0c66c8ab",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/ghost_portkey_trojangym.ipynb",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/ghost_portkey_trojangym.ipynb",
+      "expected_sha256": "e516e6c33d14b72b16ec399815d8071ac804541034a611326177602da420a74f",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/.gitignore",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/.gitignore",
+      "expected_sha256": "79b6f8054f8ef5e9e78c18174bf57caf29b11410166b9268d6923e87520eb88f",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/.travis.yml",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/.travis.yml",
+      "expected_sha256": "fb95f533cce1b7b9db9c2d2fda81fa36eec8738dfda0efe7427e83797baed306",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/LICENSE",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/LICENSE",
+      "expected_sha256": "3ed1838d3d019317bc7bd60715d16f232253fc49bc4317bda5e5680984c13bf2",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/README.md",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/README.md",
+      "expected_sha256": "cd2bb30895b3e093eee3e0f42fb4860b43c47ef6c4c0bd861972a4761d54ec28",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/assets/datasets.zip",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/assets/datasets.zip",
+      "expected_sha256": "6d66928a5fc73870e58d7265d4aa01b03788106c4bd1107d68b8fd73fcceec44",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/assets/pretrained_AST_IP_RTL/model.cfg",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/assets/pretrained_AST_IP_RTL/model.cfg",
+      "expected_sha256": "8a6c24bfd64ca86cc84e31e7d249aa8e35476ca7c00f063f6cecf15032b68c09",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/assets/pretrained_AST_IP_RTL/model.pth",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/assets/pretrained_AST_IP_RTL/model.pth",
+      "expected_sha256": "ca1c124342073330af42b628af3fc26fa3678d9fe8d715e8f2a242d08c100cd6",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/assets/pretrained_AST_TJ_RTL/model.cfg",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/assets/pretrained_AST_TJ_RTL/model.cfg",
+      "expected_sha256": "9c8b6f7170d657424fc17c034fc53a340b4c0089967b06c9752eb1378e548c14",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/assets/pretrained_AST_TJ_RTL/model.pth",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/assets/pretrained_AST_TJ_RTL/model.pth",
+      "expected_sha256": "a9af64e0d76e6d16c821bb997800fe9a928ddcd6ef82c92b73a4e7c5aacf3127",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/assets/pretrained_DFG_IP_RTL/model.cfg",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/assets/pretrained_DFG_IP_RTL/model.cfg",
+      "expected_sha256": "98c86c7d494934f89d12c3aa5366576e045abc94d15309b7ef077f2f63cea617",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/assets/pretrained_DFG_IP_RTL/model.pth",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/assets/pretrained_DFG_IP_RTL/model.pth",
+      "expected_sha256": "f31b622681895623e1e82e7aaa2afaf604f8f0e5fa72c44a34b6c876f9de06de",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/assets/pretrained_DFG_TJ_RTL/model.cfg",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/assets/pretrained_DFG_TJ_RTL/model.cfg",
+      "expected_sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/assets/pretrained_DFG_TJ_RTL/model.pth",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/assets/pretrained_DFG_TJ_RTL/model.pth",
+      "expected_sha256": "0eca43a2d54d11a1db6a3290d5d885c4052e1bdcaff1364bbbb070d678bab727",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/examples/example_gnn4ip.yaml",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/examples/example_gnn4ip.yaml",
+      "expected_sha256": "e44b297f6605576781cc129df318b787f209c75651ba0a9f9d8c8feab0aae2bf",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/examples/example_gnn4tj.yaml",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/examples/example_gnn4tj.yaml",
+      "expected_sha256": "5c58296c606c3972fa6f2bbc6aaa03b91f547455d4b62f72d2936accf54dea5c",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/examples/use_case_1.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/examples/use_case_1.py",
+      "expected_sha256": "86c2524473478484d282f93d7d08956671939cb00f9b7d71e4d6af591a80721e",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/examples/use_case_2.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/examples/use_case_2.py",
+      "expected_sha256": "c1627aad37b4b56cf243d6bc4022019e5278844932f6ba0ae4e337ca3d3e47aa",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/examples/use_case_3.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/examples/use_case_3.py",
+      "expected_sha256": "1a80bb0223723c2408f9c883753b6e6d90114735b52691d62ace94950fb9c49e",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/figures/archi.png",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/figures/archi.png",
+      "expected_sha256": "7fa2a0ee3cfdac0bfb495d36567066d4f11f56b0c0e2491be7341cb279f7d824",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/__init__.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/__init__.py",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/__pycache__/__init__.cpython-310.pyc",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/__pycache__/__init__.cpython-310.pyc",
+      "expected_sha256": "93bc631b6dd7310695013e36c430ca011f1d979cbee06bb93ea4130ab3e99966",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/__pycache__/config.cpython-310.pyc",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/__pycache__/config.cpython-310.pyc",
+      "expected_sha256": "8cccac114be1c9b9764d34f81f2b08d93a0f6d3f78633b98b772ef6484b60a17",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/__pycache__/hw2graph.cpython-310.pyc",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/__pycache__/hw2graph.cpython-310.pyc",
+      "expected_sha256": "ab8125834db305d87f25c0db3c46b47d13b3fc8f11f8d7bf8e3dc5e0502bf04a",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/__pycache__/utilities.cpython-310.pyc",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/__pycache__/utilities.cpython-310.pyc",
+      "expected_sha256": "b2c70479a2abe9629fda2fc709f44bb3f246aa72fb62ecd6f7699e4bcf6c0c6c",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/_version.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/_version.py",
+      "expected_sha256": "2b94a20dd10660ca5da974e1aeac13a84089241390353403ae7a5cd8ae66ccab",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/config.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/config.py",
+      "expected_sha256": "35e5556e0973b37e52fa3f2604c7d9020f433025d66ac5d50ff56be9cc99e89e",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/configs/DFG-IP-NetList.yaml",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/configs/DFG-IP-NetList.yaml",
+      "expected_sha256": "2a3af6e43b5f36534c0c0227d38464e1c9149870d2be0a8c2d104f27e5834961",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/configs/IP-RTL.yaml",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/configs/IP-RTL.yaml",
+      "expected_sha256": "71c2bcabc78282e4a063367e68e55c7f94ece88c907f671bca7d9f5d4deb2453",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/configs/TJ-RTL.yaml",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/configs/TJ-RTL.yaml",
+      "expected_sha256": "5c58296c606c3972fa6f2bbc6aaa03b91f547455d4b62f72d2936accf54dea5c",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/graph2vec/__init__.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/graph2vec/__init__.py",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/graph2vec/__pycache__/__init__.cpython-310.pyc",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/graph2vec/__pycache__/__init__.cpython-310.pyc",
+      "expected_sha256": "d0df70cd6822c40d301f4822ba8896bb1c6159347594c38732daf722c88881c6",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/graph2vec/__pycache__/models.cpython-310.pyc",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/graph2vec/__pycache__/models.cpython-310.pyc",
+      "expected_sha256": "3f6ffe6de6971e26072157b26ab26093214b50436f49d244574b19c40849dcdc",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/graph2vec/__pycache__/trainers.cpython-310.pyc",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/graph2vec/__pycache__/trainers.cpython-310.pyc",
+      "expected_sha256": "bbccf9c77a7415042a0634e1e49cb3eb2f0d7d63a35a788e07315d4485a53c8a",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/graph2vec/models.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/graph2vec/models.py",
+      "expected_sha256": "0202896d3c7d2093c689d16808e8c47e9e28bd0e59ac6bd987f2ac06099860e2",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/graph2vec/trainers.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/graph2vec/trainers.py",
+      "expected_sha256": "e7b881a7f3ea828041c84c71f76951174728511d088f3bf686cc04211915f2b3",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/hw2graph.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/hw2graph.py",
+      "expected_sha256": "456ef034f9d5517b8b0b507585c142c57914cf6dd06a392eea7589ce7eba72f8",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/scripts/exp1.sh",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/scripts/exp1.sh",
+      "expected_sha256": "7a20fb62690dca3fae58c6f7633b412bf53a87ff356ed14f8c3386fd23009775",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/scripts/graph_processer.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/scripts/graph_processer.py",
+      "expected_sha256": "fb9f79a0434c6808c5579757165c13664920df1877d62e460548a10dfbfb890f",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/hw2vec/utilities.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/hw2vec/utilities.py",
+      "expected_sha256": "89c7bb6c45f84851283368fbfb22fdf40265f2b3bf3b40a4658209ab612fc465",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/requirements.txt",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/requirements.txt",
+      "expected_sha256": "cff3aaee55419a6106ae06cb656d30a75539a352865e388b689a38f940476a2c",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/requirements_dev.txt",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/requirements_dev.txt",
+      "expected_sha256": "45eea3df8e56b8da237a8c2c4d98ace8d550cee7e31a134d93ccdc0bb7cf00a0",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/hw2vec/setup.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/hw2vec/setup.py",
+      "expected_sha256": "f5c08a682426c6cf338ddd0a36eb046fce34e6163fc1409eb8338c14f6cbcbe6",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/model_HT1/model.cfg",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/model_HT1/model.cfg",
+      "expected_sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/model_HT1/model.pth",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/model_HT1/model.pth",
+      "expected_sha256": "5e75ed6a97c5019ee4526178c08eadb086a47bcc919086cbdfd54b7691b7a8b6",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/model_HT2/model.cfg",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/model_HT2/model.cfg",
+      "expected_sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/model_HT2/model.pth",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/model_HT2/model.pth",
+      "expected_sha256": "5da0f0c15091eb1f371c50a1a2323136dfee7145318afba0801e903823c02a33",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/model_HT3/model.cfg",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/model_HT3/model.cfg",
+      "expected_sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/model_HT3/model.pth",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/model_HT3/model.pth",
+      "expected_sha256": "4cc70e4d3c534cdacd5b740fb88f1fd5f0f8f9aa3a213ff5798074ffcc3a0264",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/model_HT4/model.cfg",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/model_HT4/model.cfg",
+      "expected_sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/model_HT4/model.pth",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/model_HT4/model.pth",
+      "expected_sha256": "a7208ee7e5e5a6567d51a7e102af26758337206be7c6880a7ba79599cf36f7ea",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/requirements.txt",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/requirements.txt",
+      "expected_sha256": "7c98603a1cd8235b68be1cd4e50f5f7b18384593c5e38a22ada1ac8db7f57ab3",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/slides_assets/build_slides.py",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/slides_assets/build_slides.py",
+      "expected_sha256": "aecef97227f7f72762b17874d721192b17c39b38895ab76fc1a1c1e5bee8fa86",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/slides_assets/nyu_tandon_logo_cropped.png",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/slides_assets/nyu_tandon_logo_cropped.png",
+      "expected_sha256": "402688a4b3ca7ed1afda2278e6fb8505d08373b4e2fcefa6722acc1b4d7e69ed",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/slides_assets/nyu_tandon_official.png",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/slides_assets/nyu_tandon_official.png",
+      "expected_sha256": "3166ef01172a6f2e7e7551fa55298241d3211a6cde9c23ad9f36e864bfc5fc8b",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/trojangym_portkey_runs/designs/aes_128/aes_128.v",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/trojangym_portkey_runs/designs/aes_128/aes_128.v",
+      "expected_sha256": "60835b67fb0c424ab4a1a5d7ee11a2b5a7301bf45677def9653f7491c92cb1a6",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/trojangym_portkey_runs/designs/aes_128/round.v",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/trojangym_portkey_runs/designs/aes_128/round.v",
+      "expected_sha256": "a9c7504563285ded97dc072a653547938b457ea1918b006651d168c61a4ef362",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/trojangym_portkey_runs/designs/aes_128/table.v",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/trojangym_portkey_runs/designs/aes_128/table.v",
+      "expected_sha256": "36171c0297f95a036285d418b9be3a0d4c4d4e5248a8f0a6133ed7956b37b157",
+      "source_unchanged": true,
+      "copy_matches": true
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/trojangym_portkey_runs/testbenches/tb_aes_128.v",
+      "copy": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/package/trojangym_portkey_runs/testbenches/tb_aes_128.v",
+      "expected_sha256": "3d46061c957cea3ebd049f767928d5b6746c2a329eb4403040d7c1f969c378a5",
+      "source_unchanged": true,
+      "copy_matches": true
+    }
+  ]
+}

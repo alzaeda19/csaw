@@ -1,0 +1,158 @@
+[
+  {
+    "modes": "00",
+    "original_early_cover_witness_verified": true,
+    "trace": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/cover_00_final_01",
+    "transactions": [
+      {
+        "transaction": 1,
+        "payload": "00000000",
+        "loaded_state": 34,
+        "ready_state": 38,
+        "read_observation_states": [
+          39,
+          70
+        ],
+        "read_bits": 32,
+        "registered_prefix_samples": 31,
+        "final_check_state": 70,
+        "word": "08abd043"
+      },
+      {
+        "transaction": 2,
+        "payload": "00000000",
+        "loaded_state": 103,
+        "ready_state": 107,
+        "read_observation_states": [
+          108,
+          139
+        ],
+        "read_bits": 32,
+        "registered_prefix_samples": 31,
+        "final_check_state": 139,
+        "word": "08abd043"
+      }
+    ],
+    "all_phase_and_data_checks_pass": true,
+    "no_intervening_reset": true,
+    "CS_high_idle_edge": 70,
+    "classification": "existential witness, not universal assertion proof"
+  },
+  {
+    "modes": "01",
+    "original_early_cover_witness_verified": true,
+    "trace": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/cover_01_final_01",
+    "transactions": [
+      {
+        "transaction": 1,
+        "payload": "00000000",
+        "loaded_state": 34,
+        "ready_state": 38,
+        "read_observation_states": [
+          39,
+          70
+        ],
+        "read_bits": 32,
+        "registered_prefix_samples": 31,
+        "final_check_state": 70,
+        "word": "08abd043"
+      },
+      {
+        "transaction": 2,
+        "payload": "00000000",
+        "loaded_state": 103,
+        "ready_state": 107,
+        "read_observation_states": [
+          108,
+          139
+        ],
+        "read_bits": 32,
+        "registered_prefix_samples": 31,
+        "final_check_state": 139,
+        "word": "c42c8e6a"
+      }
+    ],
+    "all_phase_and_data_checks_pass": true,
+    "no_intervening_reset": true,
+    "CS_high_idle_edge": 70,
+    "classification": "existential witness, not universal assertion proof"
+  },
+  {
+    "modes": "10",
+    "original_early_cover_witness_verified": true,
+    "trace": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/cover_10_final_01",
+    "transactions": [
+      {
+        "transaction": 1,
+        "payload": "00000000",
+        "loaded_state": 34,
+        "ready_state": 38,
+        "read_observation_states": [
+          39,
+          70
+        ],
+        "read_bits": 32,
+        "registered_prefix_samples": 31,
+        "final_check_state": 70,
+        "word": "c42c8e6a"
+      },
+      {
+        "transaction": 2,
+        "payload": "00000000",
+        "loaded_state": 103,
+        "ready_state": 107,
+        "read_observation_states": [
+          108,
+          139
+        ],
+        "read_bits": 32,
+        "registered_prefix_samples": 31,
+        "final_check_state": 139,
+        "word": "08abd043"
+      }
+    ],
+    "all_phase_and_data_checks_pass": true,
+    "no_intervening_reset": true,
+    "CS_high_idle_edge": 70,
+    "classification": "existential witness, not universal assertion proof"
+  },
+  {
+    "modes": "11",
+    "original_early_cover_witness_verified": true,
+    "trace": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/two_transaction_equivalence_2026-11-07/formal/cover_11_final_01",
+    "transactions": [
+      {
+        "transaction": 1,
+        "payload": "00000000",
+        "loaded_state": 34,
+        "ready_state": 38,
+        "read_observation_states": [
+          39,
+          70
+        ],
+        "read_bits": 32,
+        "registered_prefix_samples": 31,
+        "final_check_state": 70,
+        "word": "c42c8e6a"
+      },
+      {
+        "transaction": 2,
+        "payload": "00000000",
+        "loaded_state": 103,
+        "ready_state": 107,
+        "read_observation_states": [
+          108,
+          139
+        ],
+        "read_bits": 32,
+        "registered_prefix_samples": 31,
+        "final_check_state": 139,
+        "word": "c42c8e6a"
+      }
+    ],
+    "all_phase_and_data_checks_pass": true,
+    "no_intervening_reset": true,
+    "CS_high_idle_edge": 70,
+    "classification": "existential witness, not universal assertion proof"
+  }
+]

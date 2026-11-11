@@ -1,0 +1,31 @@
+{
+  "note": "Native configured model/effort labels only; these do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [
+    {
+      "source_line": 10,
+      "source_record_sha256": "1bc4345730002fe0fd9e20bdbe0720c00ede8d12d0d3fa43c3544ae55160437a",
+      "timestamp": "2026-11-07T17:20:55.757Z",
+      "source_fields": {
+        "turn_id": "01a1b707-0a2c-7261-8d85-c0f883515d80",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    }
+  ],
+  "delegation_activity_labels": [
+    {
+      "source_line": 154,
+      "source_record_sha256": "91cb88372453be2d03e5c2bc06c1c501f7e964018d938f2a825a9f91b581354a",
+      "timestamp": "2026-11-07T17:22:53.573Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_516fca2ff384454eab0e2ed6f3fba4b6",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+        "agent_path": "/root/decode_regenerated_baseline",
+        "model": null,
+        "reasoning_effort": null
+      }
+    }
+  ]
+}

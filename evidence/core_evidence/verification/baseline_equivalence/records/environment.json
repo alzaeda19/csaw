@@ -1,0 +1,23 @@
+{
+  "utc": "2026-11-07T17:22:24.746097+00:00",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "python": "3.12.1 (v3.12.1:2305ca5144, Dec  7 2023, 17:23:38) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "executable": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+  "uname": {
+    "argv": [
+      "uname",
+      "-srm"
+    ],
+    "exit": 0,
+    "stdout": "Darwin 25.2.0 arm64\n",
+    "stderr": ""
+  },
+  "macos": {
+    "argv": [
+      "sw_vers"
+    ],
+    "exit": 0,
+    "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.2\nBuildVersion:\t\t25C56\n",
+    "stderr": ""
+  }
+}

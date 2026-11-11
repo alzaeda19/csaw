@@ -1,0 +1,74 @@
+{
+  "significant_omissions": [
+    {
+      "source_line": 805,
+      "source_record_sha256": "bc409456c4d9c0fa8619c929bb8da1d484ec79ee8c6c53b436c10bec7ed7873c",
+      "timestamp": "2026-11-07T17:32:27.851Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 815,
+      "source_record_sha256": "9e1a85c91d27834c6c06a7df2e7c1ce0595d797937ed4d1d5505811f32a9ec92",
+      "timestamp": "2026-11-07T17:32:46.978Z",
+      "reason": "Non-visible or encrypted content elements omitted; no decryption or reconstruction.",
+      "field": "content",
+      "omitted_content_indices": [
+        1
+      ]
+    },
+    {
+      "source_line": 819,
+      "source_record_sha256": "b9c0b141b204cc9d50e18f638acd9feff92ccfa13013b1f5c2ec6758fbede8d7",
+      "timestamp": "2026-11-07T17:33:00.931Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 841,
+      "source_record_sha256": "847b2519874940bbb463e3c454889854e0088b72998479e9a187131c745721c6",
+      "timestamp": "2026-11-07T17:33:50.106Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    },
+    {
+      "source_line": 848,
+      "source_record_sha256": "33701ba5171e277f05c1a87b3cd22b49f9c8e73bf4964b679dd9e27ec05e860a",
+      "timestamp": "2026-11-07T17:33:58.466Z",
+      "reason": "Aggregate collaboration state or file-change payload excluded; may duplicate hidden/internal or unrelated content. Corresponding visible tool records retained where available."
+    }
+  ],
+  "excluded_type_counts": {
+    "event_item:CollabAgentToolCall": 1,
+    "event_msg": 8,
+    "event_item:Reasoning": 6,
+    "response_item:reasoning": 6,
+    "token_usage_record": 7,
+    "inter_agent_communication_metadata": 2,
+    "event_item:FileChange": 3,
+    "event_item:AgentMessage": 1
+  },
+  "truncation_and_limits_observed": [
+    {
+      "source_line": 825,
+      "source_record_sha256": "71a2cc19cc384bf05e410a46aab20012dc8f345afc4db4d2bf8cfcea5f1eca98",
+      "timestamp": "2026-11-07T17:33:09.488Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    },
+    {
+      "source_line": 846,
+      "source_record_sha256": "c7ecfa87c89a370197bb596b5339e1a8db503926717ea68b8a62d15e9b2d3353",
+      "timestamp": "2026-11-07T17:33:58.454Z",
+      "markers": [
+        "max_output_tokens"
+      ],
+      "note": "Original truncation marker or output-size limit retained unchanged. Presence of a configured limit alone does not prove actual truncation."
+    }
+  ],
+  "limits": [
+    "Unavailable encrypted message bodies were not decrypted or reconstructed.",
+    "No hidden reasoning, system/developer messages, world-state or compaction payloads exported.",
+    "File-change payloads omitted, including intermediate API history copies; exact visible tool calls/results are retained subject to explicit omissions.",
+    "No full command output was reconstructed where a native record was already shortened."
+  ]
+}

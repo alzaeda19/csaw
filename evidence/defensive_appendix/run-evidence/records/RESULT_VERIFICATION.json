@@ -1,0 +1,182 @@
+{
+  "utc": "2026-11-10T18:17:51.221413+00:00",
+  "all_pass": true,
+  "design_checks": [
+    {
+      "design_id": "design_001",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_002",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_003",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_004",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_005",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_006",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_007",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_008",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_009",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_010",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_011",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_012",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_013",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_014",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_015",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_016",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_017",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_018",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_019",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_020",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_021",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_022",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    },
+    {
+      "design_id": "design_023",
+      "status": "scored",
+      "all_checks_pass": true,
+      "route": "exact_DFG"
+    }
+  ],
+  "model_rows": 92,
+  "scored_designs": 23,
+  "recomputed_confusions": {
+    "HT1": {
+      "TP": 9,
+      "FN": 5,
+      "FP": 5,
+      "TN": 4
+    },
+    "HT2": {
+      "TP": 6,
+      "FN": 8,
+      "FP": 6,
+      "TN": 3
+    },
+    "HT3": {
+      "TP": 0,
+      "FN": 14,
+      "FP": 1,
+      "TN": 8
+    },
+    "HT4": {
+      "TP": 4,
+      "FN": 10,
+      "FP": 2,
+      "TN": 7
+    },
+    "ensemble": {
+      "TP": 9,
+      "FN": 5,
+      "FP": 7,
+      "TN": 2
+    }
+  },
+  "preservation_checks": 152,
+  "repository_unchanged": true,
+  "frozen_runner_hashes_match": true,
+  "no_inference_rerun": true
+}

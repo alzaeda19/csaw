@@ -1,0 +1,14 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user's exact current request is: "Have the clean chat fix the ROM disabled-read test gap and rerun the tests using only original materials. Preserve logs and failures, keep my repository unchanged, and don’t send it the solution comparison."
+
+Continue from your own clean-chat ROM/readiness artifacts. Reverify the original materials against their receipt. Use only the six originals, your own original-derived artifacts and already-pinned generic tools/documentation. Do not read other chats, solution comparisons, quarantined prior work, published solutions, later target revisions or the user's project repository. No solution comparison is included here.
+
+Inspect and strengthen the ROM disabled-read coverage in a fresh test version within a fresh separate experiment directory. The test must distinguish retaining a previously read value from erroneously reading a new value while reads are disabled; demonstrate that its stimulus makes those outcomes different for each tested ROM. Derive expected address/data/control behavior from permitted source semantics and original contents, with no guessed or substituted expected values. Cover the relevant read-enable/clock-enable hold and resume behavior as appropriate, and preserve a clearly labelled test-sensitivity control if needed. Keep synthetic test controls separate from the real candidate and primitive.
+
+Preserve the earlier test source, test results, failures, original inputs, recovered baseline, repaired derivative and all existing tool copies unchanged. This request is a test-coverage correction; do not silently modify target behavior or relabel earlier limited checks as stronger evidence. If stronger tests expose a new implementation failure, preserve and report it explicitly.
+
+Run the strengthened ROM checks and relevant readiness boundary, normal-operation and differential regression suites against the same recorded candidates in fresh run directories. Retain baseline failing controls and expected blocked/negative cases. Report actual passes, failures, blocked outcomes, remaining coverage limits and whether any candidate hashes changed. Continue to distinguish simulation evidence from synthesis, hardware resource fit, physical timing and equivalence.
+
+Save this exact accessible task message before compaction if possible. Preserve available visible responses, exact commands/outputs, versions, hashes, diffs, waveforms and failed attempts. Keep native-transcript, model-metadata and timing gaps disclosed rather than reconstructing missing records. Finish with reproducible commands and artifact/AI-log locations. No repository changes, board programming or attack implementation.</input>
+</codex_delegation>

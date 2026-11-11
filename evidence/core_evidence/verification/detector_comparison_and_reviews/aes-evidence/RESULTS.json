@@ -1,0 +1,81 @@
+{
+  "candidate": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/inputs/aes_128/aes_128.v",
+  "candidate_sha256": "60835b67fb0c424ab4a1a5d7ee11a2b5a7301bf45677def9653f7491c92cb1a6",
+  "per_model": {
+    "HT1": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9517616033554077,
+      "prob_trojan": 0.048238418996334076,
+      "log_probabilities": [
+        -0.04944067820906639,
+        -3.031599521636963
+      ],
+      "logits": [
+        1.5392239093780518,
+        -1.4429349899291992
+      ]
+    },
+    "HT2": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9524285793304443,
+      "prob_trojan": 0.04757138341665268,
+      "log_probabilities": [
+        -0.04874016344547272,
+        -3.0455238819122314
+      ],
+      "logits": [
+        1.5095641613006592,
+        -1.4872195720672607
+      ]
+    },
+    "HT3": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.8367120623588562,
+      "prob_trojan": 0.16328798234462738,
+      "log_probabilities": [
+        -0.17827530205249786,
+        -1.8122398853302002
+      ],
+      "logits": [
+        0.7931451797485352,
+        -0.8408193588256836
+      ]
+    },
+    "HT4": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9762177467346191,
+      "prob_trojan": 0.023782268166542053,
+      "log_probabilities": [
+        -0.02406959980726242,
+        -3.7388150691986084
+      ],
+      "logits": [
+        1.8710038661956787,
+        -1.8437416553497314
+      ]
+    }
+  },
+  "ensemble": {
+    "model_count": 4,
+    "trojan_votes": 0,
+    "triggered_models": [],
+    "verdict": "CLEAN",
+    "rule": "Any model voting1 yields TROJAN, as in supplied notebook",
+    "mean_prob_trojan": 0.07072001323103905,
+    "max_prob_trojan": 0.16328798234462738,
+    "min_prob_trojan": 0.023782268166542053
+  },
+  "preprocessing_route": "heuristic_large_lookup_direct",
+  "source_unchanged": true,
+  "scope": "One unchanged professor-supplied clean AES reference, all three module files included. Graph classification only; no generation, optimization, training, key work or board actions. Scores are not calibrated compromise probabilities.",
+  "limitations": [
+    "Large lookup-table heuristic shortcut used; exact semantic dataflow extraction skipped by supplied package policy.",
+    "Heuristic assignment graph omits full HDL elaboration, sequential/control semantics.",
+    "Calibration and full semantic coverage on this supplied clean AES reference unvalidated.",
+    "Not proof of absence of Trojans or physical-board security; separate from functional equivalence."
+  ]
+}

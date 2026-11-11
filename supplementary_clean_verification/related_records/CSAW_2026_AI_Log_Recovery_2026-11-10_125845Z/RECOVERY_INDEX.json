@@ -1,0 +1,242 @@
+{
+  "created_utc": "2026-11-10T13:07:55.475084+00:00",
+  "status": "BOUNDED_RECOVERY_COMPLETE_WITH_RESIDUAL_GAPS",
+  "additional_records_relative_to_checked_exports": 378,
+  "existing_records_reverified_and_carried_forward": 1893,
+  "unique_native_records_in_portable_bundle": 2271,
+  "final_answer_records_in_bundle": 36,
+  "counting_note": "Native records, not unique conversations or commands. New means not included in the specific prior exports checked; it does not mean the native source was previously absent. One source user request is intentionally counted as carried forward.",
+  "coverage": [
+    {
+      "scope": "historical_clean",
+      "additional_records": 0,
+      "existing_records": 1305
+    },
+    {
+      "scope": "prior_bitstream_projection",
+      "additional_records": 0,
+      "existing_records": 587
+    },
+    {
+      "scope": "mac_root_task",
+      "additional_records": 89,
+      "existing_records": 0
+    },
+    {
+      "scope": "bitstream_root_tail",
+      "additional_records": 18,
+      "existing_records": 0
+    },
+    {
+      "scope": "detector_tails",
+      "additional_records": 42,
+      "existing_records": 0
+    },
+    {
+      "scope": "coordinator_clean_aes_reference",
+      "additional_records": 32,
+      "existing_records": 0
+    },
+    {
+      "scope": "coordinator_comparison_current_work_and_readiness_child",
+      "additional_records": 197,
+      "existing_records": 1
+    }
+  ],
+  "sessions": [
+    {
+      "path": "bitstream_and_mac/bitstream_root_tail/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 18,
+      "finals": 1,
+      "first_native_line": 806,
+      "last_native_line": 855,
+      "manifest": "bitstream_and_mac/bitstream_root_tail/export_manifest.json",
+      "last_exported_timestamp": "2026-11-07T17:34:16.287Z",
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+      "source_turn_id": "01a1b706-2061-70e2-95ed-221d16000221",
+      "scope_note": "Exact task bounds only; root records before/after these bounds excluded from visible export."
+    },
+    {
+      "path": "bitstream_and_mac/mac_root_task/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 89,
+      "finals": 1,
+      "first_native_line": 50,
+      "last_native_line": 292,
+      "manifest": "bitstream_and_mac/mac_root_task/export_manifest.json",
+      "last_exported_timestamp": "2026-11-07T17:17:59.666Z",
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+      "source_turn_id": "01a1b6fb-f66a-7551-9e37-a44d7c515aab",
+      "scope_note": "Exact task bounds only; root records before/after these bounds excluded from visible export."
+    },
+    {
+      "path": "bitstream_and_mac/prior_bitstream_export/baseline_bitstream_simulation/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-21-03-01a1b707-2fc7-79b0-b5e2-9e50d150a248.jsonl",
+      "records": 120,
+      "finals": 3,
+      "first_native_line": 13,
+      "last_native_line": 284,
+      "manifest": "bitstream_and_mac/prior_bitstream_export/baseline_bitstream_simulation/projection_manifest.json",
+      "last_exported_timestamp": null,
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "bitstream_and_mac/prior_bitstream_export/baseline_mapped_formal/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-20-54-01a1b707-0a23-7ac0-8c93-f0a811f11e5d.jsonl",
+      "records": 163,
+      "finals": 1,
+      "first_native_line": 13,
+      "last_native_line": 386,
+      "manifest": "bitstream_and_mac/prior_bitstream_export/baseline_mapped_formal/projection_manifest.json",
+      "last_exported_timestamp": null,
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "bitstream_and_mac/prior_bitstream_export/decode_regenerated_baseline/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-20-46-01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5.jsonl",
+      "records": 117,
+      "finals": 1,
+      "first_native_line": 13,
+      "last_native_line": 266,
+      "manifest": "bitstream_and_mac/prior_bitstream_export/decode_regenerated_baseline/projection_manifest.json",
+      "last_exported_timestamp": null,
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "bitstream_and_mac/prior_bitstream_export/root_current_task/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 187,
+      "finals": 0,
+      "first_native_line": 324,
+      "last_native_line": 803,
+      "manifest": "bitstream_and_mac/prior_bitstream_export/root_current_task/projection_manifest.json",
+      "last_exported_timestamp": null,
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "coordinator/earlier_clean_aes_reference/coordinator_clean_aes_reference/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-16-45-01a1c563-aa79-7e12-ae2f-72d867d1e3da.jsonl",
+      "records": 32,
+      "finals": 2,
+      "first_native_line": 73,
+      "last_native_line": 167,
+      "manifest": "coordinator/earlier_clean_aes_reference/coordinator_clean_aes_reference/export_manifest.json",
+      "last_exported_timestamp": "2026-11-10T12:34:43.130Z",
+      "bounded_source_cutoff_timestamp": "2026-11-10T12:34:43.130Z",
+      "source_thread_id": "01a1c563-aa79-7e12-ae2f-72d867d1e3da",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "coordinator/snapshot_20261110T130122100080Z/coordinator_current_clean_work/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-16-45-01a1c563-aa79-7e12-ae2f-72d867d1e3da.jsonl",
+      "records": 125,
+      "finals": 3,
+      "first_native_line": 168,
+      "last_native_line": 500,
+      "manifest": "coordinator/snapshot_20261110T130122100080Z/coordinator_current_clean_work/export_manifest.json",
+      "last_exported_timestamp": "2026-11-10T13:01:10.859Z",
+      "bounded_source_cutoff_timestamp": "2026-11-10T13:01:10.860Z",
+      "source_thread_id": "01a1c563-aa79-7e12-ae2f-72d867d1e3da",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "coordinator/snapshot_20261110T130122100080Z/coordinator_readiness_review/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-35-15-01a1c574-9a3c-73d2-aa19-6b294a9719e1.jsonl",
+      "records": 73,
+      "finals": 5,
+      "first_native_line": 13,
+      "last_native_line": 161,
+      "manifest": "coordinator/snapshot_20261110T130122100080Z/coordinator_readiness_review/export_manifest.json",
+      "last_exported_timestamp": "2026-11-10T12:59:38.053Z",
+      "bounded_source_cutoff_timestamp": "2026-11-10T12:59:38.059Z",
+      "source_thread_id": "01a1c574-9a3c-73d2-aa19-6b294a9719e1",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "detector_tails/baseline_root_completion/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 14,
+      "finals": 1,
+      "first_native_line": 1301,
+      "last_native_line": 1336,
+      "manifest": "detector_tails/baseline_root_completion/export_manifest.json",
+      "last_exported_timestamp": null,
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "detector_tails/clean_aes_before_followup/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 3,
+      "finals": 0,
+      "first_native_line": 1539,
+      "last_native_line": 1542,
+      "manifest": "detector_tails/clean_aes_before_followup/export_manifest.json",
+      "last_exported_timestamp": null,
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "detector_tails/clean_aes_completion_followup/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-02-34-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1b6f6-401f-7221-94ed-de4507c582f4.jsonl",
+      "records": 25,
+      "finals": 1,
+      "first_native_line": 1544,
+      "last_native_line": 1605,
+      "manifest": "detector_tails/clean_aes_completion_followup/export_manifest.json",
+      "last_exported_timestamp": null,
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+      "source_turn_id": null,
+      "scope_note": null
+    },
+    {
+      "path": "historical_clean/visible_events.jsonl",
+      "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/06/rollout-2026-11-06T09-08-41-01a1b130-b28f-70c3-b80d-a7129910ee45.jsonl",
+      "records": 1305,
+      "finals": 17,
+      "first_native_line": 13,
+      "last_native_line": 3555,
+      "manifest": "historical_clean/export_manifest.json",
+      "last_exported_timestamp": null,
+      "bounded_source_cutoff_timestamp": null,
+      "source_thread_id": "01a1b130-b28f-70c3-b80d-a7129910ee45",
+      "source_turn_id": null,
+      "scope_note": null
+    }
+  ],
+  "known_unavailable_or_excluded": [
+    "Encrypted collaboration bodies unavailable in plaintext; no decryption/reconstruction.",
+    "Original output truncation and omitted compaction content not restored.",
+    "Mixed prior-history chat outputs and pre-clean/solution-contaminated history excluded.",
+    "Hidden reasoning/system/developer/platform content excluded.",
+    "Current recovery worker sessions, this root final and submission packaging after scoped cutoffs not recursively exported.",
+    "Other unenumerated chats and original Claude conversations not checked; global log completeness unproven."
+  ],
+  "verification": "records/FINAL_VERIFICATION.json",
+  "summary": "README.md",
+  "ai_record": "AI_RECORD.md",
+  "output_manifest": "OUTPUT_HASHES.json"
+}

@@ -1,0 +1,99 @@
+{
+  "started_utc": "2026-11-07T17:24:39.963594+00:00",
+  "finished_utc": "2026-11-07T17:24:40.319496+00:00",
+  "output_knownness": [
+    {
+      "model": "baseline",
+      "case": "host_50khz",
+      "unknown_output_checkpoints": 0,
+      "unknown_transaction_results": 0,
+      "completion": [
+        "COMPLETE transactions=88 checks=6726 failures=0"
+      ]
+    },
+    {
+      "model": "baseline",
+      "case": "host_1mhz",
+      "unknown_output_checkpoints": 0,
+      "unknown_transaction_results": 0,
+      "completion": [
+        "COMPLETE transactions=88 checks=6726 failures=0"
+      ]
+    },
+    {
+      "model": "baseline",
+      "case": "paused_host_1mhz",
+      "unknown_output_checkpoints": 0,
+      "unknown_transaction_results": 0,
+      "completion": [
+        "COMPLETE transactions=88 checks=6992 failures=0"
+      ]
+    },
+    {
+      "model": "baseline",
+      "case": "immediate_read_1mhz",
+      "unknown_output_checkpoints": 0,
+      "unknown_transaction_results": 0,
+      "completion": [
+        "COMPLETE transactions=88 checks=6366 failures=0"
+      ]
+    },
+    {
+      "model": "decoded",
+      "case": "host_50khz",
+      "unknown_output_checkpoints": 0,
+      "unknown_transaction_results": 0,
+      "completion": [
+        "COMPLETE transactions=88 checks=6726 failures=0"
+      ]
+    },
+    {
+      "model": "decoded",
+      "case": "host_1mhz",
+      "unknown_output_checkpoints": 0,
+      "unknown_transaction_results": 0,
+      "completion": [
+        "COMPLETE transactions=88 checks=6726 failures=0"
+      ]
+    },
+    {
+      "model": "decoded",
+      "case": "paused_host_1mhz",
+      "unknown_output_checkpoints": 0,
+      "unknown_transaction_results": 0,
+      "completion": [
+        "COMPLETE transactions=88 checks=6992 failures=0"
+      ]
+    },
+    {
+      "model": "decoded",
+      "case": "immediate_read_1mhz",
+      "unknown_output_checkpoints": 0,
+      "unknown_transaction_results": 0,
+      "completion": [
+        "COMPLETE transactions=88 checks=6366 failures=0"
+      ]
+    }
+  ],
+  "comparator_negative_check": {
+    "classification": "infrastructure-only in-memory perturbation, never a target simulation",
+    "changed_port": "MISO",
+    "timestamp": 38500002,
+    "detected_mismatches": 1,
+    "actual_artifacts_modified": false
+  },
+  "original_receipt_verification": [
+    {
+      "file": "original_host.py",
+      "receipt_match": true,
+      "bytes": 3661,
+      "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99"
+    },
+    {
+      "file": "original_interface.md",
+      "receipt_match": true,
+      "bytes": 3339,
+      "sha256": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25"
+    }
+  ]
+}

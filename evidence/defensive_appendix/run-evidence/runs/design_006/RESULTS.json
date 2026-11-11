@@ -1,0 +1,169 @@
+{
+  "design_id": "design_006",
+  "status": "scored",
+  "source_sha256": "5cbf908c384052fee8f80227df7dd1ae4e66cc3ec418b726a5cc99bc1177c414",
+  "per_model": {
+    "HT1": {
+      "prediction": 1,
+      "label": "TROJAN",
+      "prob_clean": 0.39929160475730896,
+      "prob_trojan": 0.6007084250450134,
+      "log_probabilities": [
+        -0.9180632829666138,
+        -0.5096456408500671
+      ],
+      "logits": [
+        -0.15170073509216309,
+        0.25671690702438354
+      ]
+    },
+    "HT2": {
+      "prediction": 1,
+      "label": "TROJAN",
+      "prob_clean": 0.19901010394096375,
+      "prob_trojan": 0.8009899258613586,
+      "log_probabilities": [
+        -1.6143996715545654,
+        -0.22190691530704498
+      ],
+      "logits": [
+        -0.8567806482315063,
+        0.5357120633125305
+      ]
+    },
+    "HT3": {
+      "prediction": 1,
+      "label": "TROJAN",
+      "prob_clean": 0.32906028628349304,
+      "prob_trojan": 0.6709396839141846,
+      "log_probabilities": [
+        -1.1115143299102783,
+        -0.39907601475715637
+      ],
+      "logits": [
+        -0.40154021978378296,
+        0.3108980655670166
+      ]
+    },
+    "HT4": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.8107219338417053,
+      "prob_trojan": 0.18927808105945587,
+      "log_probabilities": [
+        -0.2098301500082016,
+        -1.664538025856018
+      ],
+      "logits": [
+        0.7208320498466492,
+        -0.7338757514953613
+      ]
+    }
+  },
+  "ensemble": {
+    "prediction": 1,
+    "label": "TROJAN",
+    "trojan_votes": 3,
+    "triggered_models": [
+      "HT1",
+      "HT2",
+      "HT3"
+    ],
+    "rule": "any model argmax=1"
+  },
+  "preprocessing": {
+    "source_sha256": "5cbf908c384052fee8f80227df7dd1ae4e66cc3ec418b726a5cc99bc1177c414",
+    "source_bytes": 4031,
+    "source_lines": 135,
+    "route": "exact_DFG",
+    "exact_extraction": {
+      "status": "success",
+      "nodes": 144,
+      "edges": 195
+    },
+    "large_lookup_entries": 0,
+    "graph_extraction_seconds": 0.4527228749357164,
+    "graph_nodes": 144,
+    "graph_edges": 195,
+    "weakly_connected_components": 3,
+    "raw_label_counts": {
+      "_rn0_out_data": 1,
+      "data": 7,
+      "_rn1_out_data": 1,
+      "buf": 4,
+      "_rn2_out_data": 1,
+      "concat": 2,
+      "7'd0": 1,
+      "busy": 1,
+      "_rn3_out_data": 1,
+      "div": 1,
+      "_rn4_out_data": 1,
+      "branch": 30,
+      "ulnot": 6,
+      "land": 7,
+      "wr": 1,
+      "cs": 1,
+      "eq": 8,
+      "'d1": 7,
+      "'d0": 11,
+      "addr": 1,
+      "2'd0": 3,
+      "rd": 1,
+      "greatereq": 7,
+      "cnt": 2,
+      "'d17": 2,
+      "clk_cnt": 1,
+      "plus": 2,
+      "clk_div": 1,
+      "in_buf": 1,
+      "2'd2": 2,
+      "sll": 2,
+      "mod": 2,
+      "'d2": 2,
+      "mosi": 1,
+      "mosi_buf": 1,
+      "partselect": 2,
+      "'d7": 3,
+      "out_buf": 1,
+      "8'd0": 1,
+      "miso": 1,
+      "out_data": 1,
+      "lor": 6,
+      "2'd1": 1,
+      "sclk": 1,
+      "sclk_buf": 1,
+      "unot": 1,
+      "greaterthan": 1,
+      "lessthan": 1
+    },
+    "feature_counts": {
+      "16": 14,
+      "1": 18,
+      "0": 2,
+      "9": 33,
+      "5": 2,
+      "13": 30,
+      "7": 6,
+      "23": 7,
+      "18": 8,
+      "24": 7,
+      "17": 2,
+      "26": 2,
+      "31": 2,
+      "10": 2,
+      "21": 6,
+      "12": 1,
+      "25": 1,
+      "27": 1
+    },
+    "preprocessed_sha256": "5cbf908c384052fee8f80227df7dd1ae4e66cc3ec418b726a5cc99bc1177c414",
+    "preprocessing": "Existing topModule.v passthrough; no flattening/renaming/underscore removal.",
+    "dataset_pickle_loaded": false,
+    "truth_label_accessed": false,
+    "placeholder_label": 0,
+    "messages": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Existing_Designs_2026-11-10_180906Z/runs/design_006/graph_input/topModule.v , 144 , 195 , 0.44575977325439453"
+    ]
+  },
+  "source_unchanged": true
+}

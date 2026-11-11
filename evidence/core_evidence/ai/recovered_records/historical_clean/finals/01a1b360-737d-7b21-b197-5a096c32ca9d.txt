@@ -1,0 +1,18 @@
+Fixed the ROM disabled-read **test coverage**, with no candidate changes.
+
+- **67,584 strengthened checks pass** using demonstrably different held/new values for all four ROMs.
+- All **eight synthetic omitted-enable controls** are detected. The earlier ignore-RE coverage failure is preserved.
+- Readiness and differential regressions reproduce: repaired boundary **1,122 pass**, baseline **14 failures retained**, and **864 comparisons pass**.
+- Candidate hashes, all six originals and **12,472 earlier artifact files** remain unchanged.
+
+Artifacts, test diff, waveforms and AI logs:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/rom_disabled_read_coverage_2026-11-06`
+
+See `REPORT.md`, `rom_test_coverage.diff`, and `AI_RECORD.md`. From the restart root, use fresh labels:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 rom_disabled_read_coverage_2026-11-06/analysis/strong_rom_test.py reproduce_rom_01
+PYTHONDONTWRITEBYTECODE=1 python3 rom_disabled_read_coverage_2026-11-06/analysis/test_matrix.py reproduce_matrix_01
+```
+
+The report includes sensitivity/differential commands and remaining limits. This is simulation evidence; hardware timing, resource fit and equivalence remain unverified.

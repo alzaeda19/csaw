@@ -1,0 +1,44 @@
+Clean AES detector comparison and project readiness — November 10, 2026
+
+RESULT: All four supplied detectors completed on the clean AES reference. Each returned CLEAN, with 0/4 Trojan votes. The retained recovered-baseline run also has 0/4 votes. Baseline inference was not rerun.
+
+Model       Clean AES P(Trojan)    Baseline P(Trojan)    Both votes
+HT1         0.04823842             0.07584280           CLEAN
+HT2         0.04757138             0.35516843           CLEAN
+HT3         0.16328798             0.21610928           CLEAN
+HT4         0.02378227             0.04644027           CLEAN
+
+Mean score: AES 0.07072001; baseline 0.17339019.
+
+These are uncalibrated model scores on different approximate graphs, not probabilities of compromise, accuracy estimates, a security ranking or proof of Trojan absence. A two-design comparison with no independently labeled positive examples cannot establish detector sensitivity or general false-positive rates.
+
+WHAT RAN
+The trojan orchestrator ran the original four checkpoints once in a new isolated directory. It used all three AES source files (aes_128.v, round.v, table.v), nine module definitions; the functional testbench was excluded from detector input. Only disposable copies had include directives removed before concatenation, following the supplied detector preparation. Original module contents remain unchanged.
+AES: 512 lookup-table entries selected the package heuristic shortcut; exact extraction was not attempted. Graph: 835 nodes, 1121 edges, three weak components. Baseline: exact extraction previously failed on absent RAM module definitions, then fell back to a heuristic graph with 5728 nodes and 10947 edges. Neither graph provides complete hierarchy/instance, memory, case/control or timing semantics.
+Same checkpoint/config records and 37-feature vocabulary were used. Strict weights-only CPU evaluation was retained. The graph-cache pickle and generation notebook were not executed. The detector environment was reused from the prior isolated detector workspace; it depends on some shared packages and is not a fully self-contained installation. Exact environment records remain in the authoritative run folders.
+
+INDEPENDENT CHECKS
+I verified 25 command/hash/model/numerical checks: original-source dependency hashes, checkpoint/config file identities, same baseline feature vocabulary, logits-to-probability calculations, argmax votes, comparison deltas and ensemble arithmetic. The new process exited 0 with no timeout. Stderr contained only a Matplotlib font-cache message. All baseline evidence copied here matched its prior sealed manifest. These checks reviewed saved evidence; they did not rerun inference.
+
+IS THE PROJECT COMPLETE? NO, COMPLETION IS NOT ESTABLISHED.
+The evidence supports conditional baseline-to-regenerated-bitstream digital-model equivalence, earlier host-scheduled checks, the separate five-vector AES functional test and both limited detector evaluations. It does not establish the required modified-design and demonstration artifacts, complete authentic AI records, or a complete final submission mapped to the course requirements. The original qualifier warns of disqualification for missing AI logs.
+The unchanged baseline still has the documented immediate-BUSY-low read failure: 8/8 known-answer mismatches per model. Equivalence means both models share that behavior. Passing all_cases_pass is not proof that every specification check passes.
+Independent key recovery is bonus under the original competition instructions. Physical board validation is not required for the original simulation-only preliminary phase. Neither should be invented as a core blocker unless the course explicitly adds it. Course scope and deadline details should be confirmed from instructor instructions.
+
+COUNCIL-STYLE REVIEW
+A separate read-only Codex reviewer assessed readiness. Claude Code 2.1.187 was available and authenticated and completed a separate review with all tools, plugins and MCP access disabled. It received only the prepared report packet. The raw prompt, response, command/exit record and source hashes are included. Claude used two review perspectives within ONE reviewer; this was not two independent Claude agents. Its review preceded the new AES detector result, and its statements that AES detection was pending reflect that earlier snapshot. The new detector numbers were checked separately as described above.
+Both reviewers conclude that assignment completion is not established. Their findings do not certify security or instructor acceptance. The raw Claude response uses some broad wording about evidence being established; it did not itself inspect raw artifacts or rerun proofs. Treat its conclusions as review of supplied reports, not independent experimental verification.
+
+PRIORITY SAFE ACTIONS
+1. Obtain the instructor decision on whether a defensive verification/detection submission can satisfy an alternative to the outstanding required artifacts.
+2. Use requirements-checklist.csv to map each mandatory item to a concrete artifact and mark absent/unverified items honestly.
+3. Recover authentic available transcripts/chat links and disclose encrypted, unavailable and cutoff gaps; do not replace them with invented transcripts.
+4. Finish the technical brief/evidence bundle with known failures, proof assumptions, environment limitations and source attribution. Do not label it a completed assignment until the deliverable gaps are resolved.
+
+PRESERVATION AND LOCATIONS
+No Trojan generation, adaptive evasion, training, published solutions or repository/CSAW modifications were part of this task. Claude was used only for the user-requested report review, not to generate hardware. New detector outputs and prior baseline evidence remain separate.
+AES detector run: /Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/
+Baseline evidence: /Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runs/baseline_detection_02/
+Clean AES functional setup: /Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/clean-aes-reference
+
+This folder contains compact evidence copies and authored review records, not a complete authentic transcript export or the full executable detector environment.

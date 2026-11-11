@@ -1,0 +1,17 @@
+Corrected the clock/input-enable checker in a fresh isolated copy. The unchanged original now passes `-R -D`; recovered logic is byte-identical under the documented comment normalization.
+
+- **798 mapping cases, 18 CLI cases and 13 integration checks pass.** Invalid-input and driver failures still propagate.
+- Supports 1k/5k/8k/384 policies; `-R` explicitly rejects u4k/lm4k.
+- All six originals and **11,677 earlier artifact files** remain unchanged. Hardware correctness and timing remain untested.
+
+Artifacts, patch and AI logs:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/clock_input_validator_fix_2026-11-06`
+
+See `REPORT.md`, `clock_input_validator.diff`, and `AI_RECORD.md`. From the restart root, reproduce with fresh output names:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 clock_input_validator_fix_2026-11-06/analysis/original_test.py reproduce_original_01
+PYTHONDONTWRITEBYTECODE=1 python3 clock_input_validator_fix_2026-11-06/analysis/component_tests_02.py reproduce_mapping_01
+```
+
+`REPORT.md` includes the CLI, integration and compatibility commands.

@@ -1,0 +1,66 @@
+{
+  "label": "baseline_bitstream_simulation",
+  "status": "Existing records carried forward; not new recovery. Safe field projection of prior visible export.",
+  "original_export_file": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_bitstream_simulation/visible_events.jsonl",
+  "original_export_sha256": "bb2fa0ba82b68220e386e33b09db2c7295f8ab5237e82fcc8a571dfb04b4e6ab",
+  "original_record_count": 122,
+  "carried_record_count": 120,
+  "whole_records_omitted": 2,
+  "encrypted_argument_fields_omitted": 9,
+  "carried_counts": {
+    "agent_message_readable_envelope": 5,
+    "custom_tool_call": 28,
+    "command_execution": 39,
+    "custom_tool_call_output": 27,
+    "function_call": 9,
+    "function_call_output": 9,
+    "assistant_final_answer": 3
+  },
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-21-03-01a1b707-2fc7-79b0-b5e2-9e50d150a248.jsonl",
+  "first_in_scope_line": 1,
+  "last_in_scope_line": 287,
+  "verification": {
+    "pass": true,
+    "source_line_hashes_verified": 120,
+    "retained_fields_verified": 874,
+    "original_manifest_and_messages_hash_verified": true
+  },
+  "original_files_carried": [
+    {
+      "source_file": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_bitstream_simulation/export_manifest.json",
+      "portable_file": "original_export_manifest.json",
+      "sha256": "a83ffa00f1e0d4d2996a942d14226e6a4b72c792af5be1b77a0d993859b6d81d",
+      "bytes": 3175
+    },
+    {
+      "source_file": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_bitstream_simulation/omissions_and_gaps.json",
+      "portable_file": "original_omissions_and_gaps.json",
+      "sha256": "3de5736d12bd8eef4f07dd7149075e88417c544c8bbcb922405bf480490f3c76",
+      "bytes": 5965
+    },
+    {
+      "source_file": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_bitstream_simulation/configured_model_records.json",
+      "portable_file": "original_configured_model_records.json",
+      "sha256": "445c56f0a3dc300869a0ed5f213d144f2f8567dc3f74978a668d9ff05768d545",
+      "bytes": 1909
+    },
+    {
+      "source_file": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_bitstream_simulation/field_integrity_verification.json",
+      "portable_file": "original_field_integrity_verification.json",
+      "sha256": "528306c87d31d2e81c063c58dc2fc7dad941b29ef6fb2234d915f1ef69b34ed5",
+      "bytes": 362
+    },
+    {
+      "source_file": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_bitstream_simulation/VISIBLE_MESSAGES.md",
+      "portable_file": "original_VISIBLE_MESSAGES.md",
+      "sha256": "24592e3f684a41903ed88ffa1dc35c1b1327c625d438e3b84945f3a99183efdd",
+      "bytes": 5876
+    }
+  ],
+  "limits": [
+    "Original manifests describe the historical snapshot before this additional filtering.",
+    "Original readable messages contain no omitted instruction tool outputs or encrypted argument strings.",
+    "Native raw session history was not copied."
+  ],
+  "source_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248"
+}

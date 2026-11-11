@@ -1,0 +1,18 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user authorizes this next task: “Have the clean chat check equivalence for two consecutive transactions without reset and all mode transitions, using only original materials. Preserve logs and failures, keep my repo unchanged, and don’t send the solution comparison.”
+
+Continue solely from your own permitted original materials, independently derived protocol requirements, and preserved clean verification artifacts. No solution comparison or other-chat technical findings are supplied. Reverify the original-material hashes and keep /Users/al-zayedal-hassan/Documents/llm4chipdesign-hw unchanged.
+
+In a fresh assessment folder, check the repaired RTL against its preserved synthesized netlist through two complete consecutive transactions, with an initial reset and no intervening reset. Cover all four mode combinations: encryption→encryption, encryption→decryption, decryption→encryption, and decryption→decryption. Use two independent arbitrary 32-bit payloads, each stable for its transaction; do not restrict them to known constants or make the second payload depend on the first result.
+
+Derive the schedule, allowed mode-change point, sampling and required bound from your own original-materials requirements. Include both complete input loads, launches, computations and 32-bit result reads. Record any idle clocks or spacing between transactions explicitly. Preserve the retained DUT state between transactions without a hidden flush, reinitialization, or reset.
+
+Keep initially unspecified RAM read states independent between RTL and netlist, and document the remaining source-defined initial conditions. Assert the relevant output/status equivalence throughout the sequence and both complete read results. Verify that both transactions and final checks are reached, with correctly counted samples and nonvacuous checks. Distinguish universal assertion proofs from existential cover traces and simulation evidence.
+
+You may use a justified proof decomposition or available solver strategy with recorded resource bounds, but do not assume the equality being proved, silently couple states, blackbox functional logic, or weaken checks to obtain success. State all protocol constraints and distinguish this bounded two-transaction result from unrestricted or unbounded equivalence. Preserve and diagnose any counterexamples, timeouts, tool errors or unproven obligations.
+
+Do not alter either design candidate or overwrite earlier artifacts, logs or failures. No board programming or attack implementation.
+
+Preserve the exact accessible task, accessible user-visible progress and final responses verbatim where available, command arguments, timings, outputs, failures, candidate/model/tool hashes, assumptions and reproduction commands. Clearly label any activity summary as a summary, not a transcript; disclose native export and model-metadata gaps without inventing records. Finish with an evidence-linked four-mode result matrix, precise proof coverage, remaining failures/unproven behavior and AI-log gaps.</input>
+</codex_delegation>

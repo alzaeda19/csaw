@@ -1,0 +1,61 @@
+{
+  "note": "Native configuration labels only; not provider authentication of serving weights or sampling parameters.",
+  "records": [
+    {
+      "source_line": 105,
+      "source_record_sha256": "38dfb8c3ff7cb6855210556a216670e862ee45ea960d4fb0631ea18a61a6582c",
+      "timestamp": "2026-11-07T17:10:41.807Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_d9930da95e964b67bf49489133948f48",
+        "kind": "started",
+        "agent_thread_id": "01a1b6fd-b182-7712-a967-7e94f3f0b910",
+        "agent_path": "/root/mac_infrastructure_results_check",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      }
+    },
+    {
+      "source_line": 165,
+      "source_record_sha256": "ad6769d1b3db2899cda68542d0c9730134f7663d95ae8775bec2acf0709f1de1",
+      "timestamp": "2026-11-07T17:12:00.967Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1b6fd-b18f-7311-8b7d-58144388c130",
+        "kind": "completed",
+        "agent_thread_id": "01a1b6fd-b182-7712-a967-7e94f3f0b910",
+        "agent_path": "/root/mac_infrastructure_results_check",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 241,
+      "source_record_sha256": "5e02f2b19f1023d40733205b81621966bc956785fbab63815187cde9f0520265",
+      "timestamp": "2026-11-07T17:15:44.523Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_f17cb773d9e34d2b9d0f393d0fe04e95",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b6fd-b182-7712-a967-7e94f3f0b910",
+        "agent_path": "/root/mac_infrastructure_results_check",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 266,
+      "source_record_sha256": "641314b8995ed2251d41dbe5b134f9abebd653fec436766349426940ff396915",
+      "timestamp": "2026-11-07T17:17:21.575Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1b702-500a-7f10-8e11-78bd605cce04",
+        "kind": "completed",
+        "agent_thread_id": "01a1b6fd-b182-7712-a967-7e94f3f0b910",
+        "agent_path": "/root/mac_infrastructure_results_check",
+        "model": null,
+        "reasoning_effort": null
+      }
+    }
+  ]
+}

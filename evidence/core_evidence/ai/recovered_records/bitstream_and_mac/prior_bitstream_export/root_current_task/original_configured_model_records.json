@@ -1,0 +1,255 @@
+{
+  "note": "Native configured model/effort labels only; these do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [
+    {
+      "source_line": 622,
+      "source_record_sha256": "2d73c907bd6227b7def3100cb9de64dd3a8221a09c06690288138ed09c371013",
+      "timestamp": "2026-11-07T17:27:51.700Z",
+      "source_fields": {
+        "turn_id": "01a1b706-2061-70e2-95ed-221d16000221",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      }
+    }
+  ],
+  "delegation_activity_labels": [
+    {
+      "source_line": 351,
+      "source_record_sha256": "2b56e6cc4cd9b37127e7eb599aef9771614a3cf42172f5a9f96c31d8d976f932",
+      "timestamp": "2026-11-07T17:20:46.956Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_b82e0927352b48ebb280d490f86a6a24",
+        "kind": "started",
+        "agent_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+        "agent_path": "/root/decode_regenerated_baseline",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      }
+    },
+    {
+      "source_line": 357,
+      "source_record_sha256": "11b9afbd1c36029b86ab9de68beb808490f7dd94e5afba39ceeb28828737cf8c",
+      "timestamp": "2026-11-07T17:20:54.316Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_22119e9198e34729b45cb90cf2af79db",
+        "kind": "started",
+        "agent_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+        "agent_path": "/root/baseline_mapped_formal",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      }
+    },
+    {
+      "source_line": 363,
+      "source_record_sha256": "4a62955faec1b9f948763781e5db7077cd1af3eb1008c8ea46f3935b030346f5",
+      "timestamp": "2026-11-07T17:21:03.958Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_3e611b8abd48490fa112b5741172e289",
+        "kind": "started",
+        "agent_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+        "agent_path": "/root/baseline_bitstream_simulation",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      }
+    },
+    {
+      "source_line": 371,
+      "source_record_sha256": "fd76dda810be1bc93039716fbc7db83a564b151e69c63ecf0a2a851ffa4971c4",
+      "timestamp": "2026-11-07T17:21:10.920Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_61e9ade13d3a4c9fab0fbd4b5390e9dd",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+        "agent_path": "/root/decode_regenerated_baseline",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 385,
+      "source_record_sha256": "9bedb43e72a04ce9cb0d3ab6ccfb3d7b93a19b9a0d8913172ed3f9e1a2620f3f",
+      "timestamp": "2026-11-07T17:21:23.020Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_91fe8804ef3a45e0b8acb744ced3ab32",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+        "agent_path": "/root/baseline_bitstream_simulation",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 405,
+      "source_record_sha256": "9e463e764dbb055deea2d169da81204b9aa3252b2bee7eb64cbcfc7fac3951ca",
+      "timestamp": "2026-11-07T17:21:53.498Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_3674c6b13dca4db0bf67705ce1061d24",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+        "agent_path": "/root/baseline_mapped_formal",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 456,
+      "source_record_sha256": "1d8ef15ea2fa2e57d6b1e3cc233464e9f46fc919b96d9af1f1e3de21d06223e7",
+      "timestamp": "2026-11-07T17:22:59.277Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_6dd1347caa184fb39de7caaa5dc8e717",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+        "agent_path": "/root/decode_regenerated_baseline",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 489,
+      "source_record_sha256": "8280a476b5eba300d0475d03d9d9d9b1f1f8e760b103db1065a98433a32197bb",
+      "timestamp": "2026-11-07T17:23:55.296Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_eafbbfe108eb406886c3aad2a32cd196",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+        "agent_path": "/root/decode_regenerated_baseline",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 506,
+      "source_record_sha256": "d2812f6e8346462a354c58166162771324036ee8d94bfc52baca2d9fe4677ce6",
+      "timestamp": "2026-11-07T17:24:20.783Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_e5a4ed5a7e394d248bea1902a6ec5760",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+        "agent_path": "/root/baseline_mapped_formal",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 539,
+      "source_record_sha256": "2f28af70a31beeb7b98a64c9264084df2c5da724d2e101f8472377def0ab1719",
+      "timestamp": "2026-11-07T17:24:55.042Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1b707-2fd6-7310-adac-833ac9f5ce66",
+        "kind": "completed",
+        "agent_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+        "agent_path": "/root/baseline_bitstream_simulation",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 549,
+      "source_record_sha256": "0236eec0dc6163d60e3ac22d6e4600acb2e06aca5fbcf40183b7c6e525b73901",
+      "timestamp": "2026-11-07T17:25:04.052Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_a3389e820f1f4837917d2dd30d6c3627",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+        "agent_path": "/root/baseline_mapped_formal",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 558,
+      "source_record_sha256": "fa38fd1dd570882ae10b3548d8dd53b0139b3a8d715f4e7e3462b74313c3d178",
+      "timestamp": "2026-11-07T17:25:13.165Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_7ae562c614fc45519176f19f1498b770",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+        "agent_path": "/root/baseline_bitstream_simulation",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 577,
+      "source_record_sha256": "cb154993ad9693b9476cf43f8325bd70250b9d82eecfec0ae4128a0a12638cb5",
+      "timestamp": "2026-11-07T17:25:50.604Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1b706-ed6c-7ee2-bcb2-df401128eeb2",
+        "kind": "completed",
+        "agent_thread_id": "01a1b706-ed61-7c12-b8ef-0e2aaaaef8e5",
+        "agent_path": "/root/decode_regenerated_baseline",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 606,
+      "source_record_sha256": "edf51ef5f423f16c1edaebf061ffd52099cdd7ef4506cf83543a1bc5dcb51d4f",
+      "timestamp": "2026-11-07T17:26:34.169Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_46cd216fdbb942f1858585f5214a2455",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+        "agent_path": "/root/baseline_bitstream_simulation",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 636,
+      "source_record_sha256": "7d317b84c27abcfab37d1f5a7517c64fe5c511686c27fb5f49ff66c1825c85e9",
+      "timestamp": "2026-11-07T17:28:08.910Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1b70a-fd4d-7ab0-b2f3-ffa141d610f4",
+        "kind": "completed",
+        "agent_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+        "agent_path": "/root/baseline_bitstream_simulation",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 647,
+      "source_record_sha256": "c72abe3e238067c8886569fe34428027f2bf42d79aa14744c52d1cd983ff1d19",
+      "timestamp": "2026-11-07T17:28:15.879Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_a61c37020008451fb17f7098e7478c41",
+        "kind": "interacted",
+        "agent_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+        "agent_path": "/root/baseline_mapped_formal",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 732,
+      "source_record_sha256": "0051ed56efd9375fcb57faa2d97f562f45c9248e90bd7d3c2c640c9b0ed38d2f",
+      "timestamp": "2026-11-07T17:30:06.568Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1b707-0a2c-7261-8d85-c0f883515d80",
+        "kind": "completed",
+        "agent_thread_id": "01a1b707-0a23-7ac0-8c93-f0a811f11e5d",
+        "agent_path": "/root/baseline_mapped_formal",
+        "model": null,
+        "reasoning_effort": null
+      }
+    }
+  ]
+}

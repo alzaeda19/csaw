@@ -1,0 +1,19 @@
+The failure is a **5K tile-coverage gap in this converter**. The original-derived input contains all 828 expected tiles, but the converter constructs only 768 objects, omitting **28 IPCON and 32 DSP tiles**. Its unchanged assertion detects the first omission at `(0,1)`.
+
+- Original and context-only diagnostic conversions **still fail** at the same assertion.
+- Empty 5K controls reproduce that failure; encoder-generated 1K and 8K controls pass.
+- Bounded tile inspection and the unchanged-logic driver check pass, without establishing whole-device conversion or hardware correctness.
+
+No assertion was removed, input tile omitted or baseline changed. All six originals pass before/after hash checks; every prior artifact and failure is preserved. The earlier clock-input and readiness issues are not cleared by this finding.
+
+Report, reproducible experiments, diffs and AI records:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/ipcon_geometry_validation_2026-11-06/`
+
+From the restart directory:
+
+```sh
+python3 ipcon_geometry_validation_2026-11-06/tests.py
+python3 ipcon_geometry_validation_2026-11-06/records/audit_preservation.py
+```
+
+Native transcript export and exact serving-model metadata remain unavailable; those gaps are disclosed.

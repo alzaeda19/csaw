@@ -1,0 +1,8 @@
+{
+  "observed_shell_exit_code": 1,
+  "error": "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+  "cause": "Initial version-probe helper passed a missing optional executable to subprocess instead of recording not-found. Corrected version probe logs absent tools explicitly.",
+  "not_part_of_detector_evaluation": true,
+  "no_design_rerun": true,
+  "record_kind": "Authored receipt of actual tool error; full visible tool output retained in current-task native records."
+}

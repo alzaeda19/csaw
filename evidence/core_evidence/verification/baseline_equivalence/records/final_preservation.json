@@ -1,0 +1,203 @@
+{
+  "utc": "2026-11-07T17:30:14.082398+00:00",
+  "file_checks": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z/sources/baseline.v",
+      "kind": "source",
+      "expected": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "actual": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/baseline.v",
+      "kind": "copy",
+      "expected": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "actual": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z/sources/protocol_dut.sv",
+      "kind": "source",
+      "expected": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "actual": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/protocol_dut.sv",
+      "kind": "copy",
+      "expected": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "actual": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z/baseline_assumed_sg48_auto_pins.bin",
+      "kind": "source",
+      "expected": "fa823078f0fef95a3b093b3db547a50030864c81c80a17ef445e86206cbc5fb7",
+      "actual": "fa823078f0fef95a3b093b3db547a50030864c81c80a17ef445e86206cbc5fb7",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/baseline_assumed_sg48_auto_pins.bin",
+      "kind": "copy",
+      "expected": "fa823078f0fef95a3b093b3db547a50030864c81c80a17ef445e86206cbc5fb7",
+      "actual": "fa823078f0fef95a3b093b3db547a50030864c81c80a17ef445e86206cbc5fb7",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z/physical_netlist.json",
+      "kind": "source",
+      "expected": "34ccfb44a200db30abb965879ae48659b23caf32ce7f10bab9bb5aa06acaf737",
+      "actual": "34ccfb44a200db30abb965879ae48659b23caf32ce7f10bab9bb5aa06acaf737",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/physical_netlist.json",
+      "kind": "copy",
+      "expected": "34ccfb44a200db30abb965879ae48659b23caf32ce7f10bab9bb5aa06acaf737",
+      "actual": "34ccfb44a200db30abb965879ae48659b23caf32ce7f10bab9bb5aa06acaf737",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z/mapped_clean.json",
+      "kind": "source",
+      "expected": "419168e479327f0ade4c8e8026719d80963fb18838eaf90e964ee4b492d84492",
+      "actual": "419168e479327f0ade4c8e8026719d80963fb18838eaf90e964ee4b492d84492",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/mapped_clean.json",
+      "kind": "copy",
+      "expected": "419168e479327f0ade4c8e8026719d80963fb18838eaf90e964ee4b492d84492",
+      "actual": "419168e479327f0ade4c8e8026719d80963fb18838eaf90e964ee4b492d84492",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z/baseline_assumed_sg48_auto_pins.asc",
+      "kind": "source",
+      "expected": "34c94641f1befd50305fa9759c40e5f909fe4a5775c18134715602e2cba57bdf",
+      "actual": "34c94641f1befd50305fa9759c40e5f909fe4a5775c18134715602e2cba57bdf",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/baseline_assumed_sg48_auto_pins.asc",
+      "kind": "copy",
+      "expected": "34c94641f1befd50305fa9759c40e5f909fe4a5775c18134715602e2cba57bdf",
+      "actual": "34c94641f1befd50305fa9759c40e5f909fe4a5775c18134715602e2cba57bdf",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z/BUILD_SUMMARY.json",
+      "kind": "source",
+      "expected": "9b60bd3d01afc6fdd6aa7491bef5dd947a18eff9b6f9eb218bc3b0edb5a83ecf",
+      "actual": "9b60bd3d01afc6fdd6aa7491bef5dd947a18eff9b6f9eb218bc3b0edb5a83ecf",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/BUILD_SUMMARY.json",
+      "kind": "copy",
+      "expected": "9b60bd3d01afc6fdd6aa7491bef5dd947a18eff9b6f9eb218bc3b0edb5a83ecf",
+      "actual": "9b60bd3d01afc6fdd6aa7491bef5dd947a18eff9b6f9eb218bc3b0edb5a83ecf",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z/commands.json",
+      "kind": "source",
+      "expected": "de31433054e9393e89541271dc6373e82158328892352c6e2f9462157fb625b4",
+      "actual": "de31433054e9393e89541271dc6373e82158328892352c6e2f9462157fb625b4",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/commands.json",
+      "kind": "copy",
+      "expected": "de31433054e9393e89541271dc6373e82158328892352c6e2f9462157fb625b4",
+      "actual": "de31433054e9393e89541271dc6373e82158328892352c6e2f9462157fb625b4",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_build_20261107T171511Z/flow.ys",
+      "kind": "source",
+      "expected": "272a6a15d2905388f72135a0e20fd50b1601693fb74efea916c5f24472d090b4",
+      "actual": "272a6a15d2905388f72135a0e20fd50b1601693fb74efea916c5f24472d090b4",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/flow.ys",
+      "kind": "copy",
+      "expected": "272a6a15d2905388f72135a0e20fd50b1601693fb74efea916c5f24472d090b4",
+      "actual": "272a6a15d2905388f72135a0e20fd50b1601693fb74efea916c5f24472d090b4",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-07/referenced-chatgpt-conversation-this-is-an/outputs/BITSTREAM_VERIFICATION_HANDOFF.txt",
+      "kind": "source",
+      "expected": "b917b1798feeb725f0d8e46016848b575f6ffe9abed234701355c0c1cd7a5d58",
+      "actual": "b917b1798feeb725f0d8e46016848b575f6ffe9abed234701355c0c1cd7a5d58",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/inputs/BITSTREAM_VERIFICATION_HANDOFF.txt",
+      "kind": "copy",
+      "expected": "b917b1798feeb725f0d8e46016848b575f6ffe9abed234701355c0c1cd7a5d58",
+      "actual": "b917b1798feeb725f0d8e46016848b575f6ffe9abed234701355c0c1cd7a5d58",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/README.md",
+      "kind": "original_challenge_file",
+      "expected": "5044d9558161e7fec40ae7d4cb8c15b678cfda982afcf914f9e318ac3bb76902",
+      "actual": "5044d9558161e7fec40ae7d4cb8c15b678cfda982afcf914f9e318ac3bb76902",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/README.md",
+      "kind": "original_challenge_file",
+      "expected": "72833c7880d7c4ea2af74bdeff9c001716ea087bca609f8d53699546b6ff4e08",
+      "actual": "72833c7880d7c4ea2af74bdeff9c001716ea087bca609f8d53699546b6ff4e08",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/ice40_cryptographic_IP.md",
+      "kind": "original_challenge_file",
+      "expected": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25",
+      "actual": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/spi_ice40_crypto_ip_test.py",
+      "kind": "original_challenge_file",
+      "expected": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+      "actual": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/ice40_bitstream.bin",
+      "kind": "original_challenge_file",
+      "expected": "5fa5fda9768c36808780398d8e24d125d860aacc62b61af8b4c5124dd759ddbe",
+      "actual": "5fa5fda9768c36808780398d8e24d125d860aacc62b61af8b4c5124dd759ddbe",
+      "pass": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/LICENSE",
+      "kind": "original_challenge_file",
+      "expected": "0afca3145596cd005f6f6ed977313ea31928094fc5b4aaabc21bb765ea369d09",
+      "actual": "0afca3145596cd005f6f6ed977313ea31928094fc5b4aaabc21bb765ea369d09",
+      "pass": true
+    }
+  ],
+  "all_file_checks_pass": true,
+  "repo_path": "/Users/al-zayedal-hassan/Documents/llm4chipdesign-hw",
+  "repository_after": {
+    "status": {
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "head": {
+      "exit": 0,
+      "stdout": "a3006f61f55fd8b6a232377d292fcec3138bf1ae\n",
+      "stderr": ""
+    }
+  },
+  "repository_matches_before": true,
+  "scope": "Direct hash comparison for six original challenge files, nine original build inputs and their copies, plus user handoff and its copy. Repository HEAD and tracked/untracked status compared read-only. No claim that every unrelated workspace file was hashed."
+}

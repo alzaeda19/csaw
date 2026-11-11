@@ -1,0 +1,210 @@
+[
+  {
+    "source_line": 1997,
+    "source_record_sha256": "b93507c4e65318db97b4b6a43745d6cd75dcd834f2816cfe2dbeec0f95cf2cb5",
+    "timestamp": "2026-11-10T18:09:06.780Z",
+    "reason": "Tool-discovery documentation or encrypted/potential credential-bearing output elements excluded; other original elements retained exactly.",
+    "omitted_output_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2003,
+    "source_record_sha256": "b730945e9cd82bfe56f378959a45ebea7f6443977365711035eeecb8a7806f58",
+    "timestamp": "2026-11-10T18:09:13.814Z",
+    "reason": "Full read_thread result excluded to prevent mixed earlier conversation export."
+  },
+  {
+    "source_line": 2005,
+    "source_record_sha256": "c35c2fd222a11f51ea95f66411c126bce80d6040fc9fd568e616993111a3c013",
+    "timestamp": "2026-11-10T18:09:13.899Z",
+    "reason": "Combined read_thread output excluded in full to prevent mixed prior-history retention; independently recorded command outputs remain eligible."
+  },
+  {
+    "source_line": 2009,
+    "source_record_sha256": "a4be911a638156730c72c488f07e47f38a46fdf839ea226268673431cb885a1a",
+    "timestamp": "2026-11-10T18:09:34.927Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  },
+  {
+    "source_line": 2015,
+    "source_record_sha256": "71434d7c0ad0f960c30ecf32513ee2032a3f792aed6a0edb6bf6efe47e97b4eb",
+    "timestamp": "2026-11-10T18:09:41.225Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  },
+  {
+    "source_line": 2036,
+    "source_record_sha256": "eb7b607fa608fa67dc4004a809ecb168ff59263a6701de2c96708272b90a8566",
+    "timestamp": "2026-11-10T18:10:07.939Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2038,
+    "source_record_sha256": "dee6498fc90c5c4f996b69512dc0a10ee57fa79ceae5e38a0d3ca52898836050",
+    "timestamp": "2026-11-10T18:10:07.940Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2046,
+    "source_record_sha256": "6cbf63a939ee109cf99494ac7f2e02ec79b09787cb8312b08550d7ed5e9a6ba7",
+    "timestamp": "2026-11-10T18:10:26.332Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2082,
+    "source_record_sha256": "1a0af00fef74601f1cc9f7065975f92e7c28b3409d6c9a489b29577233f61062",
+    "timestamp": "2026-11-10T18:11:46.995Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2084,
+    "source_record_sha256": "5f28f6945d94d39e646fe15ca8c0867fa9bac44497457a8310a5c7eb2220933a",
+    "timestamp": "2026-11-10T18:11:46.996Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2086,
+    "source_record_sha256": "f3ce4cf8cbdf5bbcbfde6cd382f8f3dc0803e02699695835c41f51330651e235",
+    "timestamp": "2026-11-10T18:11:46.997Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2096,
+    "source_record_sha256": "202bb56d23b316cbf635bec5d863b5b87d86b7012eaf9ce33aad7f7205b27793",
+    "timestamp": "2026-11-10T18:12:36.576Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2099,
+    "source_record_sha256": "6bede77a69c7edd11b8a267ef1b984abd6e07e8f79ffe899ba2587c12efdf0e1",
+    "timestamp": "2026-11-10T18:12:39.915Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  },
+  {
+    "source_line": 2124,
+    "source_record_sha256": "ac252f2cd7a45b5e2e27b557df5e8b41c3cf7f32291c7d040fdcd508179fa394",
+    "timestamp": "2026-11-10T18:14:19.507Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  },
+  {
+    "source_line": 2140,
+    "source_record_sha256": "0689708ecb94c5b51135b4799fa8827940cf3297021d86e5a0b6b97af9b3cb88",
+    "timestamp": "2026-11-10T18:14:36.285Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2148,
+    "source_record_sha256": "f6aa4fe132f624826c3035f4893236786c87813e945983924160a5b7e2ae2e30",
+    "timestamp": "2026-11-10T18:15:06.941Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  },
+  {
+    "source_line": 2166,
+    "source_record_sha256": "f131a5eb3c955fe50f0b9bcd60ad94932c10355a3e9a091de7d533e49fa7fecb",
+    "timestamp": "2026-11-10T18:15:32.143Z",
+    "reason": "Agent-message body outside the current intake/method-review scope excluded, including export-worker traffic."
+  },
+  {
+    "source_line": 2176,
+    "source_record_sha256": "9b3239e6958fe3ff4bb86e1a550d732c427fbced585cdf7258fa861405ea5088",
+    "timestamp": "2026-11-10T18:15:48.414Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  },
+  {
+    "source_line": 2191,
+    "source_record_sha256": "667a18df5ce76d308541adc5bc672e46db5a8d7fed5e981c886fff6c287bbe43",
+    "timestamp": "2026-11-10T18:15:58.348Z",
+    "reason": "Agent-message body outside the current intake/method-review scope excluded, including export-worker traffic."
+  },
+  {
+    "source_line": 2213,
+    "source_record_sha256": "754e689481396f6733bccfafecd1517c0cd6ea11f5d358a585ea376d34c89eec",
+    "timestamp": "2026-11-10T18:17:04.356Z",
+    "reason": "Agent-message body outside the current intake/method-review scope excluded, including export-worker traffic."
+  },
+  {
+    "source_line": 2215,
+    "source_record_sha256": "ff2d65d65673ae0822945234bc9ff8ad14f90524c8d2a7ed2e326db4083eda53",
+    "timestamp": "2026-11-10T18:17:04.357Z",
+    "reason": "Encrypted, nontext, or potential credential-bearing content blocks excluded; no decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 2242,
+    "source_record_sha256": "19835a958cc54df1e8a4601aac8f3eccdb22f46201f5621c8609e91877e4df02",
+    "timestamp": "2026-11-10T18:17:54.730Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  },
+  {
+    "source_line": 2247,
+    "source_record_sha256": "971be403992fd01d9f0d68b92891b47556f8ff5c66b3853351982cb6248e6ae8",
+    "timestamp": "2026-11-10T18:17:59.815Z",
+    "reason": "Encrypted body excluded; no decryption or reconstruction attempted.",
+    "omitted_field_path": [
+      "payload",
+      "arguments"
+    ],
+    "omitted_indices": null
+  }
+]

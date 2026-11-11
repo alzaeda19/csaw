@@ -1,0 +1,11 @@
+{
+  "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Clean_AES_2026-11-10_123555Z/records/current_task_transcripts/export_current_visible.py",
+  "sha256": "37c07324c99af33cc51cd78ad8daac206b73583cb9f352666f196d64158d32d5",
+  "adaptations": [
+    "New destination; only coordinator task scope from verified line168",
+    "Allow coordinator finals",
+    "Drop read_thread result bodies that can contain older mixed history",
+    "Drop encrypted collaboration argument fields; preserve invocation metadata",
+    "Preserve source field mappings and hashes; add thread/turn metadata separately"
+  ]
+}

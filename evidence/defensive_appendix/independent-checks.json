@@ -1,0 +1,128 @@
+{
+  "all_checks_pass": true,
+  "source_manifest_pairs_verified": 23,
+  "models_identity_verified": 4,
+  "per_model_prediction_rows": 115,
+  "per_design_command_checks": [
+    {
+      "design_id": "design_001",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_002",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_003",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_004",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_005",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_006",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_007",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_008",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_009",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_010",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_011",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_012",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_013",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_014",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_015",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_016",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_017",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_018",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_019",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_020",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_021",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_022",
+      "exit_code": 0,
+      "streams_verified": true
+    },
+    {
+      "design_id": "design_023",
+      "exit_code": 0,
+      "streams_verified": true
+    }
+  ],
+  "scope": "Source/label/coverage/model/command/numeric verification on retained artifacts",
+  "orchestrator_metrics_match_independent_counts": true,
+  "model_scored_rows": 92,
+  "ensemble_predictions_checked": 23,
+  "reviewer_schema_note": "An initial audit assertion omitted the null parent_failure_reason supervisor metadata key. Schema handling corrected; all original worker result fields still required to match exactly. No detector result or execution was changed."
+}

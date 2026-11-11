@@ -1,0 +1,11 @@
+Professor,
+
+I wanted to clarify my project status before submitting. I have recovered a baseline design, regenerated a bitstream, and documented their equivalence within stated digital-model assumptions. I also verified the supplied clean AES reference and evaluated it and the recovered baseline with the four TrojanGYM detectors. These detector results have limitations and do not prove the designs are Trojan-free.
+
+Two required pieces remain unfinished: the AI-generated Trojan-modified RTL and a demonstration testbench showing its activation and intended behavior while preserving normal operation. The AI-assisted work completed so far covers recovery, functional verification and defensive detector evaluation; it has not produced those two deliverables.
+
+I have organized the completed work into a clearly labeled partial submission and collected the available original AI records. The package discloses remaining transcript gaps, known test failures and other limitations. I have kept published solutions out of the clean project.
+
+Could you advise whether a defensive verification/detection alternative is acceptable, or whether we can agree on an adjusted scope for the two unfinished requirements? I do not want to present the current work as a completed version of the full assignment.
+
+Thank you.

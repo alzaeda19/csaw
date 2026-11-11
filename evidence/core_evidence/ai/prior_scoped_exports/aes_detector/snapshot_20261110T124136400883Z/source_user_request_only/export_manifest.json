@@ -1,0 +1,31 @@
+{
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-16-45-01a1c563-aa79-7e12-ae2f-72d867d1e3da.jsonl",
+  "snapshot_read_started_utc": "2026-11-10T12:41:36.415319Z",
+  "snapshot_read_finished_utc": "2026-11-10T12:41:36.415794Z",
+  "source_snapshot_bytes": 1434230,
+  "source_snapshot_sha256": "d176c0fd7bb69aa8c42ea75863e2d522212bcec6386cc6686b16143c95007266",
+  "complete_source_lines": 379,
+  "trailing_incomplete_bytes_not_parsed": 0,
+  "native_thread_id": "01a1c563-aa79-7e12-ae2f-72d867d1e3da",
+  "label": "source_user_request_only",
+  "first_in_scope_line": 168,
+  "minimum_timestamp": "2026-11-10T12:34:43.131Z",
+  "last_in_scope_source_line": 168,
+  "bounded_source_cutoff_timestamp": "2026-11-10T12:34:43.131Z",
+  "exported_records": 1,
+  "exported_counts": {
+    "user_message": 1
+  },
+  "excluded_counts": {},
+  "last_exported_timestamp": "2026-11-10T12:34:43.131Z",
+  "integrity": {
+    "pass": true,
+    "metadata_fields_verified": 0,
+    "retained_field_hash_algorithm": "SHA-256 of UTF-8 JSON with ensure_ascii=False, sort_keys=True, separators=(comma, colon)",
+    "records_verified": 1,
+    "retained_fields_verified": 4,
+    "source_line_hashes_verified": true,
+    "method": "Saved JSONL re-read; every retained field compared to the exact original native field or selected original list elements. SHA-256 verified against each full original source line, including newline."
+  },
+  "significant_omissions_and_gaps": 0
+}

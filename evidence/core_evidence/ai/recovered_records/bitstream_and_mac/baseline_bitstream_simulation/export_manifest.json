@@ -1,0 +1,20 @@
+{
+  "label": "baseline_bitstream_simulation",
+  "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/07/rollout-2026-11-07T12-21-03-01a1b707-2fc7-79b0-b5e2-9e50d150a248.jsonl",
+  "source_thread_id": "01a1b707-2fc7-79b0-b5e2-9e50d150a248",
+  "comparison": {
+    "old_manifest": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_bitstream_simulation/export_manifest.json",
+    "old_records": 122,
+    "old_cutoff_native_line": 287,
+    "old_snapshot_prefix_hash_matches": true,
+    "old_record_hashes_match": true,
+    "old_retained_fields_match": true,
+    "old_fields_verified": 899,
+    "old_final_records": 3
+  },
+  "new_exported_records": 0,
+  "final_status": "All task finals already present in old snapshot; no native records after old cutoff.",
+  "native_source_bytes": 1229250,
+  "native_source_lines": 287,
+  "native_source_sha256": "b67c6900aadb4bf665c813fa642831bbb9facfc91aeaabdc5ff5b7a30d4db830"
+}

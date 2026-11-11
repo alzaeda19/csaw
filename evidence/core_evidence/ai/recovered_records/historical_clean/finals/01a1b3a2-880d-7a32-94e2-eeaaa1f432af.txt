@@ -1,0 +1,21 @@
+**Post-synthesis simulation agrees; formal equivalence passes within an explicit initialization scope.**
+
+- All **28 runs** reproduce expected outcomes; all **14 RTL/netlist observation pairs** match.
+- The common boundary bench passes **1,115 checks** on each. Seven optimized-away D monitors remain explicitly untested; the full RTL bench passes all 1,122.
+- Formal proof covers all next-state bits in the **135-bit model and three outputs**, conditional on matched initial states, including paired undefined RAM read registers.
+- Independent-reset checking passes **8 steps**. The 80-step attempt timed out; EQY partitioning crashed. Unconditional power-up equivalence remains unproved.
+
+No candidate discrepancy was found in completed checks. Sources and earlier artifacts remain unchanged.
+
+Evidence and AI-log limitations:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/post_synthesis_verification_2026-11-06`
+
+`REPORT.md` links the logs, proof scope, failures and hashes. Reproduce from the restart root with fresh labels:
+
+```sh
+python3 post_synthesis_verification_2026-11-06/analysis/simulation_matrix.py reproduce_sim_01
+python3 post_synthesis_verification_2026-11-06/analysis/transition_proof.py reproduce_transition_01
+python3 post_synthesis_verification_2026-11-06/analysis/bmc8.py reproduce_reset8_01
+```
+
+This does not establish equivalence to the original bitstream or physical hardware.

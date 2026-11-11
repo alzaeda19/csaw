@@ -1,0 +1,90 @@
+{
+  "note": "Configured native model and effort labels do not authenticate serving weights or actual inference parameters.",
+  "turn_context_labels": [],
+  "delegation_activity_labels": [
+    {
+      "source_line": 892,
+      "source_record_sha256": "4a06e4f4972b50706ceefe0d5b4bb9f4d741363c9af2dc995c28dd9fbd9d4f88",
+      "timestamp": "2026-11-10T12:10:42.954Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_b46006c39e44434aaab0e1783367d75f",
+        "kind": "started",
+        "agent_thread_id": "01a1c55e-217f-7b01-987d-cc849a3eb52b",
+        "agent_path": "/root/meeting_requirement_review",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      }
+    },
+    {
+      "source_line": 898,
+      "source_record_sha256": "11058750e19aff6644c4d20ad756f2a70511c474937187c405839508890d66cd",
+      "timestamp": "2026-11-10T12:10:53.008Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_8caab3c8a7cb4e80898b555d3506087c",
+        "kind": "started",
+        "agent_thread_id": "01a1c55e-48c5-7051-b694-f285d03643f5",
+        "agent_path": "/root/course_package_review",
+        "model": "gpt-6-astra",
+        "reasoning_effort": "xhigh"
+      }
+    },
+    {
+      "source_line": 939,
+      "source_record_sha256": "d8e7150924594fe65430879aa30777252e05a6b643174b8be3bed65823b457af",
+      "timestamp": "2026-11-10T12:12:16.990Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c55e-218a-7051-b60c-8b640d768b8e",
+        "kind": "completed",
+        "agent_thread_id": "01a1c55e-217f-7b01-987d-cc849a3eb52b",
+        "agent_path": "/root/meeting_requirement_review",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 950,
+      "source_record_sha256": "11b28a6b07aad2561de19dabfaae90b814a4d2024beb9e51a3d6fdcd88d5e309",
+      "timestamp": "2026-11-10T12:12:22.674Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c55e-48d0-78c3-83c9-79f6ad12905c",
+        "kind": "completed",
+        "agent_thread_id": "01a1c55e-48c5-7051-b694-f285d03643f5",
+        "agent_path": "/root/course_package_review",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 962,
+      "source_record_sha256": "7a9d5c7d5b59155b0b3ce49b2b29820e3ee3585ea9c55b5a0648e302934bc00b",
+      "timestamp": "2026-11-10T12:12:48.239Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "call_5825b641b24f4382bffabc547864b49a",
+        "kind": "interacted",
+        "agent_thread_id": "01a1c55e-48c5-7051-b694-f285d03643f5",
+        "agent_path": "/root/course_package_review",
+        "model": null,
+        "reasoning_effort": null
+      }
+    },
+    {
+      "source_line": 971,
+      "source_record_sha256": "4eb76bfda18022cda6e63a9a87b9be96e69e4b135a51f32ba512c91f95f5c527",
+      "timestamp": "2026-11-10T12:13:06.002Z",
+      "source_fields": {
+        "type": "SubAgentActivity",
+        "id": "subagent-completed-01a1c560-0aef-7d72-9764-5ff9ec268117",
+        "kind": "completed",
+        "agent_thread_id": "01a1c55e-48c5-7051-b694-f285d03643f5",
+        "agent_path": "/root/course_package_review",
+        "model": null,
+        "reasoning_effort": null
+      }
+    }
+  ]
+}

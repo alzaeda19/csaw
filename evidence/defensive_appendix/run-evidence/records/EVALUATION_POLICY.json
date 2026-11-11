@@ -1,0 +1,38 @@
+{
+  "frozen_before_execution_utc": "2026-11-10T18:14:05.539890+00:00",
+  "dataset": "23 supplied TJ-RTL-toy topModule.v files only",
+  "passes": 1,
+  "model_ids": [
+    "HT1",
+    "HT2",
+    "HT3",
+    "HT4"
+  ],
+  "model_reference": "records/expected_model_loads.json",
+  "vocabulary_reference": "records/expected_feature_vocabulary.json",
+  "truth": "Directory labels joined only after worker inference; no truth labels passed to workers",
+  "prediction": "Two-class log_softmax + argmax; any-positive-vote ensemble; no tuning",
+  "package_policy": "Exact DFG first unless supplied >=128-entry lookup shortcut; ordinary parser failure may use unchanged package fallback and is reported separately. Timeout/resource/empty/dummy/non-finite/partial output remains unscored.",
+  "exact_timeout_seconds": 30,
+  "worker_wall_seconds": 75,
+  "worker_cpu_seconds": 60,
+  "process_group_rss_guard_GiB": 2,
+  "rss_guard_note": "Sampled parent monitor, not kernel-enforced RSS bound",
+  "max_concurrent_workers": 2,
+  "no_retries": true,
+  "preprocessing": "Existing topModule.v passthrough as implemented by supplied package",
+  "no_execution_scope": [
+    "HDL simulation",
+    "payload activation",
+    "generation",
+    "training",
+    "unsafe dataset pickle deserialization",
+    "published solutions",
+    "board programming",
+    "repository modification"
+  ],
+  "source_hashes": {
+    "evaluate_one.py": "e6eda732010bb0a6aa8ac5e35224c3bbc00e37b12f3b1f5bbe96ed31025c06d2",
+    "run_dataset.py": "d05e650ab51db6dfc19ba9e97da9309cdb0e121af61c54b53585f1540eb1b97b"
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "experiment": "baseline",
+    "label": "detector_environment",
+    "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-20-57-01a1c567-82f5-7f61-b1f6-2db0a3c60a6d.jsonl",
+    "source_snapshot_bytes": 500467,
+    "source_snapshot_sha256": "0be141d87405570c0fbd3343e5a99eabdddbc9da627583f5cda39010c4366069",
+    "complete_source_lines": 140,
+    "trailing_incomplete_bytes_omitted": 0,
+    "snapshot_read_utc": "2026-11-10T13:03:45.689315Z",
+    "native_thread_id": "01a1c567-82f5-7f61-b1f6-2db0a3c60a6d",
+    "parent_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+    "agent_path": "/root/detector_environment",
+    "prior_complete_source_lines": 140,
+    "prior_snapshot_prefix_sha256_verified": true,
+    "new_complete_source_lines": 0,
+    "recovered_records": 0,
+    "prior_export_already_retained_final_records": [
+      {
+        "source_line": 137,
+        "source_record_sha256": "4bdf4549f6687fa7c241a97b18ab9d648f95967e8f6f357f61d5054f0e486567",
+        "timestamp": "2026-11-10T12:24:05.786Z"
+      }
+    ],
+    "status": "No post-snapshot lines available; prior child finals already exported and not duplicated."
+  },
+  {
+    "experiment": "baseline",
+    "label": "detector_input_audit",
+    "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-21-05-01a1c567-9fdc-7ee2-b95e-95151460b5a9.jsonl",
+    "source_snapshot_bytes": 656155,
+    "source_snapshot_sha256": "0e09b9867d2b5fa6677f98959646484dcefa0717c8d9dceeff0b302f9dd50fd5",
+    "complete_source_lines": 162,
+    "trailing_incomplete_bytes_omitted": 0,
+    "snapshot_read_utc": "2026-11-10T13:03:45.690546Z",
+    "native_thread_id": "01a1c567-9fdc-7ee2-b95e-95151460b5a9",
+    "parent_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+    "agent_path": "/root/detector_input_audit",
+    "prior_complete_source_lines": 162,
+    "prior_snapshot_prefix_sha256_verified": true,
+    "new_complete_source_lines": 0,
+    "recovered_records": 0,
+    "prior_export_already_retained_final_records": [
+      {
+        "source_line": 107,
+        "source_record_sha256": "a15d752422ca83802b8cc06d4d51b3a7486b7e6a5b557a86da439821429173d4",
+        "timestamp": "2026-11-10T12:23:54.726Z"
+      },
+      {
+        "source_line": 159,
+        "source_record_sha256": "bfa42b96738c425c0eed94ff1388da5d27a621c285454feb2084a4dd4ba5f0b5",
+        "timestamp": "2026-11-10T12:26:59.329Z"
+      }
+    ],
+    "status": "No post-snapshot lines available; prior child finals already exported and not duplicated."
+  },
+  {
+    "experiment": "clean_aes",
+    "label": "clean_aes_detector_review",
+    "source_file": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/10/rollout-2026-11-10T07-36-02-01a1c575-51f3-7180-8c7f-b5a947543973.jsonl",
+    "source_snapshot_bytes": 677305,
+    "source_snapshot_sha256": "7bbcf6e7349fb579f89b36122cbfe8a8a837a192e71fc11c4750bb6e5430bfb9",
+    "complete_source_lines": 164,
+    "trailing_incomplete_bytes_omitted": 0,
+    "snapshot_read_utc": "2026-11-10T13:03:45.695282Z",
+    "native_thread_id": "01a1c575-51f3-7180-8c7f-b5a947543973",
+    "parent_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+    "agent_path": "/root/clean_aes_detector_review",
+    "prior_complete_source_lines": 164,
+    "prior_snapshot_prefix_sha256_verified": true,
+    "new_complete_source_lines": 0,
+    "recovered_records": 0,
+    "prior_export_already_retained_final_records": [
+      {
+        "source_line": 161,
+        "source_record_sha256": "81196cc664d4113c61168e8754254b0059fda43b90606fc986de595f275b53cc",
+        "timestamp": "2026-11-10T12:40:22.243Z"
+      }
+    ],
+    "status": "No post-snapshot lines available; prior child finals already exported and not duplicated."
+  }
+]

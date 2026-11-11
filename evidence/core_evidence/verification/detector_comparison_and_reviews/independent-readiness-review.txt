@@ -1,0 +1,31 @@
+Independent Codex readiness review — November 10, 2026
+Reviewer: separate read-only readiness_review agent. No source edits, simulations or external research.
+
+Verdict: full assignment completion and submission readiness are not established.
+
+Evidence-backed status:
+- Recovered-baseline vs regenerated-binary equivalence is documented within an explicit digital model, state relation and primitive assumptions.
+- Original-host known-answer checks passed 24/24 per model. Immediate-BUSY-low reads failed 8/8 per model. Equality preserves this known failure.
+- The separate clean AES reference passed five supplied vectors; no equivalence to the CSAW design is established.
+- Four baseline detectors classified a heuristic graph CLEAN. Missing RAM semantics and coarse features limit that conclusion.
+- Required modified RTL and demonstration testbench are not established by the reviewed records.
+- Comprehensive AI interactions are not established: encrypted/unavailable bodies, truncated outputs and snapshot cutoffs are disclosed.
+- A complete final submission archive and brief are not established by these reports.
+- Board verification is not required by the original simulation-only qualifier. Independent key recovery is bonus credit under those instructions.
+
+Priority actions:
+1. Confirm course submission scope and whether defensive verification/detection can satisfy an alternative approved by the instructor. A review cannot approve that substitution.
+2. Map each mandatory requirement to a concrete artifact and evidence; identify absent/unverified artifacts honestly.
+3. Gather authentic available transcripts or chat-history links, disclose remaining gaps, and avoid presenting summaries as full transcripts.
+4. Retain the immediate-read failure and describe the verified host schedule. all_cases_pass denotes model agreement/protocol assertions, not universal known-answer correctness.
+5. Report detector preprocessing, checkpoint identities, environment and calibration limitations. New AES results must identify all source dependencies and be kept separate from the recovered baseline.
+
+Reviewed sources:
+/Users/al-zayedal-hassan/Documents/CSAW_2026_Course_Update_2026-11-10/REVIEW_AND_REQUIREMENTS.md
+/Users/al-zayedal-hassan/Documents/CSAW_2026_Course_Update_2026-11-10/AI_RECORD.md
+/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/REPORT.md
+/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/AI_RECORD.md
+/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/README.md
+/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/REPORT.md
+
+This summary is an authored review record, not a complete native transcript or independent reproduction of the earlier proofs.

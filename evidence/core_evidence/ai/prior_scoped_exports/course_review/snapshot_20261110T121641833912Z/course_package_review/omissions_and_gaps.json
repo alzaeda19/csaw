@@ -1,0 +1,38 @@
+[
+  {
+    "source_line": 13,
+    "source_record_sha256": "74e79ea07f7dc0570875b0b2c1d3fe4ff49c8cb75773baaa3066369ac2f848ac",
+    "timestamp": "2026-11-10T12:10:54.246Z",
+    "reason": "Encrypted or nontext collaboration body unavailable; only native readable envelope retained. No decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  },
+  {
+    "source_line": 38,
+    "source_record_sha256": "35fc48ffca98e41f32b6679fd9d3673abdd6284067b83b11ef6eb11587db7b8c",
+    "timestamp": "2026-11-10T12:11:26.458Z",
+    "reason": "Readable collaboration argument body unavailable. Original argument string retained verbatim; no decryption or reconstruction attempted.",
+    "encrypted_argument_fields": [
+      "message"
+    ]
+  },
+  {
+    "source_line": 59,
+    "source_record_sha256": "6025426878938c316df1e309843724fd130e3e1813e826562434aeb5bd892539",
+    "timestamp": "2026-11-10T12:11:59.549Z",
+    "reason": "Readable collaboration argument body unavailable. Original argument string retained verbatim; no decryption or reconstruction attempted.",
+    "encrypted_argument_fields": [
+      "message"
+    ]
+  },
+  {
+    "source_line": 72,
+    "source_record_sha256": "bb7fbfce09cff9b351496f90913dd5c23c253668c0c50c8179cd201b2f4a50bd",
+    "timestamp": "2026-11-10T12:12:48.323Z",
+    "reason": "Encrypted or nontext collaboration body unavailable; only native readable envelope retained. No decryption or reconstruction attempted.",
+    "omitted_content_indices": [
+      1
+    ]
+  }
+]

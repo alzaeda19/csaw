@@ -1,0 +1,86 @@
+{
+  "scanned_files": 753,
+  "hits": [
+    {
+      "path": "core_evidence/verification/baseline_equivalence/simulation/records/iverilog_version.stdout",
+      "kind": "email",
+      "count": 4
+    },
+    {
+      "path": "core_evidence/verification/baseline_equivalence/simulation/records/vvp_version.stderr",
+      "kind": "email",
+      "count": 1
+    },
+    {
+      "path": "core_evidence/verification/clean_aes_reference/sources/testbenches/tb_aes_128.v",
+      "kind": "email",
+      "count": 1
+    },
+    {
+      "path": "core_evidence/verification/clean_aes_reference/sources/designs/aes_128/table.v",
+      "kind": "email",
+      "count": 1
+    },
+    {
+      "path": "core_evidence/verification/clean_aes_reference/sources/designs/aes_128/aes_128.v",
+      "kind": "email",
+      "count": 1
+    },
+    {
+      "path": "core_evidence/verification/clean_aes_reference/sources/designs/aes_128/round.v",
+      "kind": "email",
+      "count": 1
+    },
+    {
+      "path": "core_evidence/verification/clean_aes_reference/runs/20261110T123203.879963Z/iverilog_version.stdout",
+      "kind": "email",
+      "count": 4
+    },
+    {
+      "path": "core_evidence/verification/clean_aes_reference/runs/20261110T123203.879963Z/vvp_version.stderr",
+      "kind": "email",
+      "count": 1
+    },
+    {
+      "path": "core_evidence/ai/prior_scoped_exports/course_review/snapshot_20261110T121641833912Z/course_package_review/visible_events.jsonl",
+      "kind": "email",
+      "count": 4
+    },
+    {
+      "path": "core_evidence/ai/prior_scoped_exports/baseline_detector/snapshot_20261110T122730108842Z/detector_environment/visible_events.jsonl",
+      "kind": "email",
+      "count": 8
+    },
+    {
+      "path": "core_evidence/ai/recovered_records/historical_clean/visible_events.jsonl",
+      "kind": "email",
+      "count": 21
+    },
+    {
+      "path": "core_evidence/ai/recovered_records/bitstream_and_mac/prior_bitstream_export/decode_regenerated_baseline/visible_events.jsonl",
+      "kind": "email",
+      "count": 4
+    },
+    {
+      "path": "core_evidence/ai/recovered_records/bitstream_and_mac/prior_bitstream_export/baseline_bitstream_simulation/visible_events.jsonl",
+      "kind": "email",
+      "count": 4
+    },
+    {
+      "path": "core_evidence/ai/recovered_records/coordinator/earlier_clean_aes_reference/coordinator_clean_aes_reference/visible_events.jsonl",
+      "kind": "email",
+      "count": 8
+    },
+    {
+      "path": "core_evidence/ai/recovered_records/coordinator/snapshot_20261110T130122100080Z/coordinator_readiness_review/visible_events.jsonl",
+      "kind": "email",
+      "count": 7
+    },
+    {
+      "path": "defensive_appendix/run-evidence/records/iverilog_version.stdout",
+      "kind": "email",
+      "count": 4
+    }
+  ],
+  "note": "Pattern-based triage only; paths/counts retained, matching values not emitted."
+}

@@ -1,0 +1,21 @@
+Fresh reproduction confirms the model-level findings:
+
+- **Sampling:** post-update sampling passes the original values; pre-update sampling fails.
+- **Cycle count:** BUSY falls after four clocks including launch. The result requires a fifth CS-high clock. Immediate extraction fails both original known-answer checks, preserving the specification/model discrepancy.
+- **Expanded tests:** the 106-word invariant suites pass 1,288 assertions at 50 kHz and 1,720 at 1 MHz with pauses. These do not establish complete cipher correctness.
+
+Infrastructure checks pass **7/7**. The 25-scenario study reproduces **19 passes, three failures and three blocked extractions**, with each outcome classified explicitly. No candidate or expected value was changed.
+
+All six original hashes pass before/after verification; every prior artifact remains unchanged.
+
+Fresh tests, report and logs:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_confirmation_2026-11-06/`
+
+From the restart directory, reproduce with:
+
+```sh
+python3 baseline_confirmation_2026-11-06/study.py
+python3 baseline_confirmation_2026-11-06/records/audit_preservation.py
+```
+
+Physical timing, firmware, wiring and the earlier input-enable issue remain unresolved. Exact model identification and native transcript export are unavailable; logging gaps are disclosed.

@@ -1,0 +1,34 @@
+{
+  "note": "Only selected IDs, current delegation mapping and model configuration labels. Configured model labels do not authenticate serving weights or actual inference parameters.",
+  "records": [
+    {
+      "source_line": 10,
+      "source_record_sha256": "07956f68e29ba9ffddac3697007569017338cd38d6293f42411180a3a4c2072a",
+      "timestamp": "2026-11-10T18:09:42.616Z",
+      "source_fields": {
+        "turn_id": "01a1c6a6-c77a-7522-b98f-72b05721996e",
+        "model": "gpt-6-astra",
+        "effort": "ultra"
+      },
+      "source_paths": {
+        "turn_id": [
+          "payload",
+          "turn_id"
+        ],
+        "model": [
+          "payload",
+          "model"
+        ],
+        "effort": [
+          "payload",
+          "effort"
+        ]
+      },
+      "source_field_sha256": {
+        "turn_id": "01341ce33c44426dc748cd851588c678802ba426feaef30b4d8a4bfdd26ec02d",
+        "model": "c1ffe835cdc1eb3263891bbc4bcc609803f1e0c563f8903ea64d7c5145748b54",
+        "effort": "e5c4eb89c17b3350875c064ac177103d77081d68860beaffbdb826c88462eb41"
+      }
+    }
+  ]
+}

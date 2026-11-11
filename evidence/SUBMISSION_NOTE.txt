@@ -1,0 +1,13 @@
+CSAW — partial submission for instructor review
+November 11, 2026
+
+This package contains the completed baseline recovery/build verification, separate clean AES tests, four-detector evaluations and available AI records.
+
+The later defensive study evaluates existing designs from the supplied package: 14 labeled Trojan-infected designs and nine clean controls. The combined detectors identified nine infected designs, missed five and falsely flagged seven clean designs. The report documents the dataset and model limitations.
+
+The required Trojan-modified RTL and demonstration testbench remain unfinished. AI-record completeness and the full original technical-brief requirements are also not established. The package preserves known test failures and clearly separates ordinary verification from the missing demonstration.
+
+Acceptance of the defensive study as an alternative scope is still pending. This package should not be treated as a completed submission under the original requirements. It has been prepared locally and has not been submitted or sent.
+
+Planning reference: the project orchestrator reports a previously recorded CSAW deadline of November 13, 2026, at 3 PM Eastern; no new instructor confirmation was obtained in this preparation task. Paper 5 is separate.
+

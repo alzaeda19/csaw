@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-11-11T17:14:12.630320+00:00",
+  "requested_model": "claude-opus-5-5",
+  "requested_model_verified_in_result": true,
+  "review_success": true,
+  "review_kind": "document-only submission readiness",
+  "verdict": "partial instructor review; original assignment completion not established",
+  "main_review_cost_usd": 0.15305199999999997,
+  "fallback_models": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-4-8"
+  ],
+  "fallback_cost_usd": 0.20846299999999998,
+  "probe_cost_usd": 0,
+  "global_cli_unchanged": "2.1.187",
+  "isolated_cli": "2.1.322",
+  "source_files_modified": false,
+  "tests_rerun": false,
+  "attack_artifacts_created": false,
+  "messages_sent_to_professor": false,
+  "repository_written_by_this_agent": false,
+  "full_transcript_coverage_claimed": false
+}

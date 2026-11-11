@@ -1,0 +1,16 @@
+<codex_delegation>
+  <source_thread_id>01a1b0ad-f593-7f90-a689-b621984f7cb4</source_thread_id>
+  <input>The user's exact current request is: "Have the clean chat check synthesis, resource fit and timing for the repaired derivative using only original materials. Preserve logs and failures, keep my repository unchanged, and don’t send it the solution comparison. also prepare a 5 minute presentation on the progress in a new chat"
+
+Your task in THIS clean chat is the synthesis/resource/timing assessment. A separate presentation chat is being created independently; do not contact it or read other chats. No solution comparison or implementation details from the requesting chat are included here.
+
+Continue from your own clean original-materials artifacts and the recorded repaired derivative. Reverify the six originals and candidate hashes. Use only the originals, your clean artifacts and pinned generic tool sources/documentation. Do not access the user repository, quarantined prior work, published solutions, later target revisions or solution comparisons. Keep every previous source, tool copy, test, run and log unchanged; create a fresh assessment folder in the separate restart workspace.
+
+Assess whether the unchanged repaired derivative synthesizes, what resources it requires, whether it fits the original target device, and what timing can actually be established. Separate elaboration, synthesis, target mapping, place/route fit, constrained timing analysis and physical-board validation. Use target/device, clock and pin/package constraints only when supported by original evidence. Do not invent physical mappings, mark unconstrained paths as passing, or equate synthesis estimates with routed/hardware results. If pin/package information is absent, state precisely which device-level or conditional checks remain possible and which conclusions are blocked. Preserve tool warnings, inferred latches/clock issues, resource overuse, failed runs and unconstrained-path reports.
+
+Use the available installed/pinned toolchain. If additional generic tools are necessary and obtainable, restrict acquisition to official generic tooling, pin/record its identity, and keep it separate from target-design evidence. Do not fetch later challenge content. Report tool availability/support limitations honestly. This request is assessment, not redesign: do not alter the repaired derivative to obtain fit or timing success. Any necessary wrapper/constraint/tool-compatibility adaptation must be separate, explained and preserved, with its effect on confidence documented.
+
+Where feasible compare the unchanged recovered baseline using the same assessment conditions to distinguish inherited/tool limitations from repair overhead. Report actual counts/capacity units and constraint-qualified timing results, not guesses. No board programming or attack implementation.
+
+Save this exact accessible task message before compaction if possible. Preserve available visible responses, exact commands/outputs, versions, source hashes, constraints, generated reports, diffs and failures. Keep AI-log/model/native transcript gaps disclosed. Finish with a concise verified pass/fail/blocked summary suitable for a progress presentation, clear resource/timing limits, reproducible commands and artifact/AI-log locations.</input>
+</codex_delegation>

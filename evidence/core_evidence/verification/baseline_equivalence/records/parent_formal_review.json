@@ -1,0 +1,83 @@
+{
+  "utc": "2026-11-07T17:29:26.083207+00:00",
+  "pass": true,
+  "checks": [
+    {
+      "run": "transition_decoded_proof",
+      "returncode": 0,
+      "timed_out": false,
+      "required_success_marker": "SUCCESS!",
+      "marker_present": true,
+      "stdout_sha256_matches": true,
+      "stderr_sha256_matches": true
+    },
+    {
+      "run": "transition_decoded_undef_independent",
+      "returncode": 0,
+      "timed_out": false,
+      "required_success_marker": "SUCCESS!",
+      "marker_present": true,
+      "stdout_sha256_matches": true,
+      "stderr_sha256_matches": true
+    },
+    {
+      "run": "transition_mapped_proof",
+      "returncode": 0,
+      "timed_out": false,
+      "required_success_marker": "SUCCESS!",
+      "marker_present": true,
+      "stdout_sha256_matches": true,
+      "stderr_sha256_matches": true
+    },
+    {
+      "run": "transition_mapped_undef_independent",
+      "returncode": 0,
+      "timed_out": false,
+      "required_success_marker": "SUCCESS!",
+      "marker_present": true,
+      "stdout_sha256_matches": true,
+      "stderr_sha256_matches": true
+    },
+    {
+      "run": "direct_transaction_mode0_bmc",
+      "returncode": 0,
+      "timed_out": false,
+      "required_success_marker": "Status: PASSED",
+      "marker_present": true,
+      "stdout_sha256_matches": true,
+      "stderr_sha256_matches": true
+    },
+    {
+      "run": "direct_transaction_mode1_bmc",
+      "returncode": 0,
+      "timed_out": false,
+      "required_success_marker": "Status: PASSED",
+      "marker_present": true,
+      "stdout_sha256_matches": true,
+      "stderr_sha256_matches": true
+    },
+    {
+      "run": "direct_transaction_mode0_compact_cover",
+      "returncode": 0,
+      "timed_out": false,
+      "required_success_marker": "Status: PASSED",
+      "marker_present": true,
+      "stdout_sha256_matches": true,
+      "stderr_sha256_matches": true
+    },
+    {
+      "run": "direct_transaction_mode1_compact_cover",
+      "returncode": 0,
+      "timed_out": false,
+      "required_success_marker": "Status: PASSED",
+      "marker_present": true,
+      "stdout_sha256_matches": true,
+      "stderr_sha256_matches": true
+    }
+  ],
+  "relation_bits": 135,
+  "unique_gold_and_gate_bits": 135,
+  "zero_initialized_pairs": 71,
+  "unspecified_RAM_state_pairs": 64,
+  "scope": "Parent verification of actual result/log hashes, proof-success markers and state-pair cardinality. Separate independent agent reviewed model construction; this record does not claim a separate solver rerun."
+}
