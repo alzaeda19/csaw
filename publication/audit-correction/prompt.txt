@@ -1,0 +1,172 @@
+The user asks to pass verified corrections to Claude Code. Revise ONLY the supplied records-and-claims audit, based on the source facts below. You have no tools. Do not analyze any cipher or design logic, repair RTL, generate hardware modifications or attacks, or infer missing evidence. Keep the original assignment gaps unchanged and retain the valid raw-log absence finding.
+
+Return ONLY valid JSON with two string fields: audit_findings_md and revision_note_md.
+
+Required corrections:
+1. The repaired mapped netlist DOES exist, is manifested, and is a Yosys netlist JSON, not merely formal proof result JSON. Use the exact verified path, size and hash. Do not claim a separate Verilog-format mapped netlist is included.
+2. readiness-review-stdout.json contains BOTH claude-opus-4-8 and claude-haiku-4-5-20251001. The separate Opus5.5 review contains claude-opus-5-5. Do not claim the new fallback review was Haiku-only. Older archived review is a separate record.
+3. The two-transaction supplement has the listed four records; avoid saying only one result file exists. This remains a selected record subset, not full proof dependencies/raw solver logs.
+4. Audit files were added AFTER the original 842-entry manifest and original 843-file inventory; scope the old 20-file sample and coverage check as the earlier reviewer-reported result. Do not claim the current expanded working tree is fully manifested or that you reran checks.
+5. Preserve that raw readiness/ROM/synthesis run logs are not packaged and historical reports are not fresh independent reruns. A hash match proves integrity only. No new course approval/submission or completed original deliverables.
+6. Clearly attribute your revision as a new tool-disabled Claude Code document correction using supplied verified facts, retaining the original configured Opus4.8 audit attribution as historical. Do not rewrite its authentic session record. revision_note_md should explain this revision and the preserved originals.
+
+VERIFIED SOURCE FACTS:
+{
+  "netlist_path": "supplementary_clean_verification/synthesis_fit_timing_2026-11-06/runs/synthesize_repaired_02/mapped_clean.json",
+  "netlist_bytes": 3963320,
+  "netlist_sha256": "b9274fdac6870c7b04b67d73ae0206dab97d7f1d9da22793071aef823658e2d7",
+  "netlist_in_existing_manifest": true,
+  "netlist_top_keys": [
+    "creator",
+    "modules"
+  ],
+  "has_protocol_dut_module": true,
+  "model_records": {
+    "readiness-review-stdout.json": {
+      "modelUsage_keys": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "is_error": false
+    },
+    "opus55-readiness-review-stdout.json": {
+      "modelUsage_keys": [
+        "claude-opus-5-5"
+      ],
+      "is_error": false
+    }
+  },
+  "two_transaction_record_files": [
+    "trace_audit.json",
+    "completion_review.json",
+    "result_matrix.json",
+    "final_seal_checks.json"
+  ]
+}
+
+ORIGINAL AUDIT:
+# AUDIT_FINDINGS — records and claim verification
+
+Prepared 2026-11-11 for the `csaw` partial-submission repository.
+Configured model: Claude Opus 4.8 (serving model may differ; no new inference was run against any design).
+
+## Scope and method
+Records and claim verification only. No cipher analysis, no design alignment, no RTL repair,
+no hardware modification, no TrojanGYM, no published solutions, no archived-script execution,
+no commits or pushes, no submission. Integrity was checked by independent `sha256` re-hashing,
+not by running `tools/verify_evidence.py`. Per instruction, matching hashes are treated as
+evidence of file integrity only, never of functional correctness.
+
+## 1. Artifact inventory (provenance + hashes)
+
+| Design | Path | sha256 (first 16) | size | Notes |
+|---|---|---|---|---|
+| Recovered baseline RTL | `evidence/core_evidence/rtl/baseline_reference/baseline.v` | `180b895d9e3ada5f` | 45,711 lines | Byte-identical copy at `supplementary_clean_verification/baseline_recovery_2026-11-06/adapters/recovered_iverilog.v` (same hash). |
+| Readiness-repaired RTL | `supplementary_clean_verification/result_readiness_repair_2026-11-06/derivative/recovered_readiness_repaired.v` | `bed2bda6d9521812` | 45,945 lines | Distinct from baseline (+234 lines). Documented as an intentional normal-operation timing repair, not exact recovery. |
+| Regenerated/decoded RTL | `evidence/core_evidence/verification/baseline_equivalence/decode/regenerated_raw.v` | `ec920772bf2fa88a` | 48,250 lines | Decoded from the rebuilt bitstream. |
+| Separate clean AES reference | `evidence/core_evidence/verification/clean_aes_reference/sources/designs/aes_128/` (`aes_128.v`, `round.v`, `table.v`) + `sources/testbenches/tb_aes_128.v` | — | present | A different design from the CSAW baseline. Not analyzed here. |
+| Mapped netlist | NOT packaged as a netlist file | — | — | Represented only by formal-proof result JSONs under `evidence/core_evidence/verification/baseline_equivalence/formal/baseline_mapped/`. The mapped-netlist artifact itself is absent. |
+
+The four designs are distinct by hash (baseline / repaired / regenerated independently confirmed).
+Distinctness supports the repository's "keep these distinct" framing. It establishes nothing about
+any functional relationship between them, which was not examined.
+
+## 2. Repository integrity (independent)
+- `REPOSITORY_MANIFEST.json`: 842 entries, each `{path, bytes, sha256}`.
+- Independent re-hash of a random 20-file sample: **20/20 match, 0 mismatch, 0 missing.**
+- Coverage: every non-`.git` file on disk is listed except the manifest itself (843 on disk vs 842 listed; `in_manifest_not_on_disk = 0`).
+- Caveat: this is file-integrity evidence only, not correctness of any design or test.
+
+## 3. Claim-support audit
+
+### Claims with saved machine backing
+- **Clean AES reference, "five supplied tests pass":** backed by `evidence/core_evidence/verification/clean_aes_reference/runs/20261110T123203.879963Z/RESULT.json` (`pass_count=5, fail_count=0, pass=true`), with `commands.json` and `environment.json`.
+- **Known-answer 24/24:** `evidence/core_evidence/verification/baseline_equivalence/records/*.json` reference the 24-count results (the value 24 recurs throughout those JSONs).
+- **Detector study (best-documented component):** `evidence/defensive_appendix/REPORT.txt` gives 23/23 designs scored (14 infected, 9 clean), 92 predictions, ensemble 9/14 detected, 5 missed, 7/9 clean false-flagged, with `dataset-manifest.json` and `frozen-model-manifest.json`. The report is explicitly self-critical ("not a security guarantee", correlated toy variants, no additional positives beyond HT1).
+
+### Claims that are narrative-only IN THIS PACKAGE (flagged)
+The following supplementary bundles contain only `AI_RECORD.md`, `OUTPUT_HASHES.json`, `REPORT.md`
+(and, for the first, the derivative RTL). No raw per-check simulation/assertion/solver logs are
+included, so these counts are documented in prose and cannot be independently re-derived from this
+repository:
+- **Readiness repair "1,122/1,122 pass; baseline 14 failures"** — `supplementary_clean_verification/result_readiness_repair_2026-11-06/` (the "1122" token in the `.v` is a source identifier, not a result).
+- **ROM disabled-read "67,584 assertions / 6,144 scenarios"** — `supplementary_clean_verification/rom_disabled_read_coverage_2026-11-06/`.
+- **Synthesis/fit/timing figures (1,443 / 2,920 LCs; Fmax 35.82 / 29.25 MHz; 1 MHz route pass)** — `supplementary_clean_verification/synthesis_fit_timing_2026-11-06/REPORT.md`.
+- **Two-transaction modes 00/01/10/11** — `supplementary_clean_verification/two_transaction_equivalence_2026-11-07/` has one result file, so it is better supported than the others but still largely narrative.
+This matches the supplementary README's own disclaimer that it ships "selected reports ... not a
+standalone complete experiment installation." The point for submission is that these counts
+currently rest on narrative plus a hash manifest whose underlying raw outputs are not in the package.
+
+### Failures / limits correctly retained (good practice, preserved)
+- Immediate first-BUSY-low read: 8/8 known-answer failures retained (documented in `evidence/core_evidence/TECHNICAL_BRIEF.txt` and `.../baseline_equivalence/.../REPORT.txt`).
+- Baseline 14 readiness failures retained.
+- Detector misses (5) and false positives (7) retained and emphasized.
+- Formal: seven unavailable internal monitors untested; unrestricted longer proof times out.
+- Synthesis: board PCF/pins/external timing unverified; explicit "do not program the auto-pin binary."
+- Detector extraction failed on `SBRAM404K`; classifications are on a coarse fallback graph omitting RAM internals.
+
+## 4. Model-provenance note
+- `publication/claude-review/opus55-readiness-review-stdout.json` records `modelUsage.claude-opus-5-5.canonicalModel = claude-opus-5-5`, so the "opus55" label is substantiated.
+- `publication/claude-review/readiness-review-stdout.json` records `claude-haiku-4-5-20251001`.
+- The earlier one-shot CLI review under `core_evidence/verification/...` recorded `claude-opus-4-8` and `claude-haiku-4-5` (per `LATEST_STATUS.md`).
+- `LATEST_STATUS.md`'s "Opus 5.5 availability is not verified" refers to that review's own actions, not the opus55 review. Recommend the docs disambiguate which review used which model so the two statements are not read as contradictory.
+
+## 5. Submission checklist vs preserved qualifier
+Preserved qualifier: `evidence/core_evidence/course_instructions/original_qualifier_README.md`.
+
+| Deliverable | Class | Status |
+|---|---|---|
+| AI-generated Trojan-modified RTL | Mandatory | ABSENT (baseline/repair are not this artifact) |
+| Demonstration/exploit testbench | Mandatory | ABSENT |
+| Technical brief | Mandatory | PARTIAL — completed-work sections present; the required proposed explanation of the recovered encryption system and the modification/demonstration sections are absent |
+| Comprehensive GenAI transcripts | Mandatory | PARTIAL — bounded exports; documented gaps (encrypted bodies, truncation, compaction boundaries, unmapped chats, post-cutoff packaging) |
+| Key recovery | Bonus | Optional; correctly NOT listed as a mandatory missing requirement |
+| Physical-board testing | Not required | Preserved qualifier is simulation-only; any later course change needs reconfirmation |
+| Defensive detector study as alternative | Pending | Needs explicit professor approval; silence is not approval |
+| Course destination + authoritative deadline | Unconfirmed | A GitHub push is not a submission receipt |
+
+The repository's existing `SUBMISSION_GAPS.md` already states all of the above accurately; this audit
+confirms it matches the preserved qualifier. Suggested tightening: have `evidence/REQUIREMENTS_STATUS.csv`
+name the absent "proposed cipher explanation" as the specific missing technical-brief sub-item, matching `SUBMISSION_GAPS.md`.
+
+## 6. Recommended documentation corrections
+1. For each narrative-only supplementary count (1,122/1,122; 67,584; synthesis figures), either include the raw run logs or add an inline pointer to where the raw evidence lives, and state that the packaged bundle holds REPORT + hash-manifest only.
+2. State explicitly that the mapped netlist is represented by formal-proof JSONs, not a packaged netlist file.
+3. Disambiguate the three AI reviews by model (opus-5-5 / haiku-4-5 / opus-4-8).
+4. Add a one-line note that `baseline.v` is duplicated byte-identically in two locations, so it is not mistaken for two designs.
+5. Keep the existing "key recovery = bonus" framing.
+
+## Closeout
+- Files changed: 2 added at repo root (`AUDIT_FINDINGS.md`, `AUDIT_SESSION_RECORD.md`). No evidence modified, no scripts executed, no commits, no pushes, no submission.
+- Checks actually run: independent sha256 re-hash of 20 manifest entries (20/20), manifest-vs-disk coverage diff, artifact hash/line-count inventory, grep-based claim tracing into saved result files, model-provenance read of review stdout JSONs. No simulation, detector inference, formal solving, or archived-script execution.
+- Results: integrity intact; inventory consistent and designs distinct; AES, detector, and 24-count known-answer claims have machine backing; several supplementary count-claims are narrative-only in this package; mapped netlist file absent.
+- Unresolved limitations: raw logs for readiness/ROM/synthesis counts not in the package; mapped-netlist artifact absent; GenAI-transcript completeness not established; course deadline/destination unconfirmed.
+- Still missing under the original assignment: the two mandatory artifacts (Trojan-modified RTL and demonstration testbench) and the technical brief's proposed-cipher-explanation section; comprehensive GenAI transcripts. Key recovery remains a bonus, not a mandatory gap.
+
+
+ORIGINAL SESSION RECORD:
+# Audit session record — 2026-11-11
+
+Configured model: claude-opus-4-8 (serving model may differ). No design inference was run.
+
+## Task (as given)
+Protective records/claim audit of the `csaw` repo: inventory baseline / readiness-repaired /
+mapped netlist / AES reference by provenance and hashes; audit whether saved results support
+documented claims (preserve failures/timeouts/untested; do not infer correctness from hashes);
+correct the submission checklist vs the preserved qualifier; produce AUDIT_FINDINGS.md.
+Excluded by instruction: cipher analysis, design alignment, RTL repair, hardware modification,
+TrojanGYM, published solutions, archived-script execution, commits/pushes, submission.
+
+## Actions actually taken (read-only + hashing)
+- Read README.md, SUBMISSION_GAPS.md, supplementary_clean_verification/README.md and LATEST_STATUS.md, evidence/README.md.
+- Enumerated design artifacts; computed sha256 and line counts; confirmed distinctness.
+- Independent sha256 re-hash of a 20-file manifest sample; manifest-vs-disk coverage diff.
+- Traced headline claim numbers into saved result files; inspected clean_aes RESULT.json; read review stdout JSONs for model provenance.
+
+## Errors and refinements (retained, not hidden)
+- Initial glance suggested a prior `assistant_final.txt` was "empty"; on checking file state it was absent, not empty. Corrected before relying on it.
+- Guarded against assuming the "opus55" review was mislabeled; its stdout records canonicalModel claude-opus-5-5, so the label is supported. Verified, not assumed.
+- An OUTPUT_HASHES.json parser returned zero referenced paths (schema differs from expected); did not use it to assert coverage. Relied on direct file-inventory instead.
+
+## Not done
+No simulation, detector inference, formal solving, archived-script execution, git commit/push, or submission. No original evidence modified.

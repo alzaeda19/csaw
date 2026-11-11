@@ -17,6 +17,10 @@ Paper 5 is separate and is not included. No published challenge solutions were u
 - [Actual Claude Opus 5.5 readiness review](publication/claude-review/REVIEW_SUMMARY.md), with prompts, raw output, errors and refinements.
 - [Chat coordination and snapshot boundaries](publication/CHAT_COORDINATION.md).
 
+## Later records audit
+
+[Corrected audit findings](AUDIT_FINDINGS.md), [correction attribution](AUDIT_CORRECTIONS.md), and [integration record](publication/AUDIT_INTEGRATION.md) preserve the later Claude audit and the verified corrections. The original audit/session record, supplied facts, actual Claude Code prompt and raw response are retained under `publication/audit-correction/`.
+
 ## Completed evidence
 
 - Recovered baseline RTL and regenerated bitstream, with conditional digital-model equivalence and recorded build assumptions.

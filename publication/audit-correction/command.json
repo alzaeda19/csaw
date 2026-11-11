@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/claude-review/isolated-cli/node_modules/@anthropic-ai/claude-code-darwin-x64/claude",
+    "--print",
+    "--safe-mode",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--disable-slash-commands",
+    "--no-session-persistence",
+    "--permission-mode",
+    "default",
+    "--model",
+    "claude-opus-5-5",
+    "--system-prompt",
+    "You are a records-and-claims document editor. You have no tools. Use supplied verified facts only. Do not provide cipher analysis, RTL repair, Trojan generation, exploitation or exfiltration assistance. Preserve provenance, uncertainty and historical audit boundaries. Return the requested JSON directly.",
+    "--output-format",
+    "json",
+    "--max-budget-usd",
+    "2"
+  ],
+  "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/audit-correction",
+  "started_utc": "2026-11-11T18:18:26.601992+00:00",
+  "prompt_sha256": "d888e714d46bff068fab407d00a02c982467f0925324d466003493244ff25e68",
+  "timeout_seconds": 240,
+  "exit_code": 0,
+  "finished_utc": "2026-11-11T18:19:45.489536+00:00"
+}

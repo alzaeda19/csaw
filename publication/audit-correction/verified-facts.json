@@ -1,0 +1,32 @@
+{
+  "netlist_path": "supplementary_clean_verification/synthesis_fit_timing_2026-11-06/runs/synthesize_repaired_02/mapped_clean.json",
+  "netlist_bytes": 3963320,
+  "netlist_sha256": "b9274fdac6870c7b04b67d73ae0206dab97d7f1d9da22793071aef823658e2d7",
+  "netlist_in_existing_manifest": true,
+  "netlist_top_keys": [
+    "creator",
+    "modules"
+  ],
+  "has_protocol_dut_module": true,
+  "model_records": {
+    "readiness-review-stdout.json": {
+      "modelUsage_keys": [
+        "claude-haiku-4-5-20251001",
+        "claude-opus-4-8"
+      ],
+      "is_error": false
+    },
+    "opus55-readiness-review-stdout.json": {
+      "modelUsage_keys": [
+        "claude-opus-5-5"
+      ],
+      "is_error": false
+    }
+  },
+  "two_transaction_record_files": [
+    "trace_audit.json",
+    "completion_review.json",
+    "result_matrix.json",
+    "final_seal_checks.json"
+  ]
+}
