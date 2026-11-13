@@ -1,5 +1,8 @@
 # Submission checklist — November 13, 2026
 
+**Final requirements audit:** [Current-rule comparison and handoff](addenda/2026-11-13-final-requirements-audit/README.md). The required artifacts are assembled; stealth and historical AI-record completeness remain unresolved. No additional detector threshold is a prerequisite to uploading the existing package. The live competition form differs from the earlier saved link; GitHub remains the user-requested course destination.
+
+
 **The files are assembled and available to hand in. Full compliance with the challenge is not established.** All four required artifact categories and the ZIP exist. The important remaining concerns are completeness of the relevant AI records and the original stealth objective. These should be disclosed, not renamed optional or marked solved.
 
 This comparison uses the preserved [original qualifier requirements](evidence/original_qualifier_README.md). The user specified GitHub as the course destination; the original competition form is a different destination and has not been used. No collaborator invitation or professor message is sent by this update.

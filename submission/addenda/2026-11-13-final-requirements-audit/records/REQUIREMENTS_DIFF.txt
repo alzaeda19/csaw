@@ -1,0 +1,49 @@
+--- preserved
++++ live_rules_solution_excluded
+@@ -1,8 +1,7 @@
+-## Preliminary Challenge
++# Preliminary Challenge
+ One major use for FPGAs is to accelerate often computationally expensive and slow cryptographic processes. In this phase, your target is a simplified cryptographic accelerator implemented on the FPGA (a [Lattice iCE40-UP5K](https://www.latticesemi.com/en/products/fpgaandcpld/ice40ultraplus)), which communicates with the application microprocessor ([RP2040](https://www.raspberrypi.com/products/rp2040/)) on the Hackster over a SPI (Serial Peripheral Interface) bus. However, the source RTL will not be provided for this design; instead, teams must reverse engineer the provided bitstream to determine how the cryptographic algorithm works before they can then add hardware Trojans. While existing non-AI tools may be leveraged throughout the challenge, the hardware Trojan and exploit must be written fully with AI.
+ 
+-
+-### The Setup
++## The Setup
+ The RP2040 acts as the SPI controller, sending plaintext data and cryptographic keys to the FPGA (the SPI peripheral). The FPGA processes this data through its hardware accelerator and transmits the resulting ciphertext back to the RP2040. 
+ 
+ For the preliminary challenge, teams will be operating entirely in simulation. The following can be found in the [challenge directory](./) in this repo:
+@@ -12,7 +11,7 @@
+ 
+ Please see the [*Getting Started section*](../README.md#getting-started) of the top-level README for details on the open-source tooling we recommend and a general guide on using the Hackster. *Note: You are not required to only use these open-source tools, they are only provided as a starting point.*
+ 
+-### The Challenge
++## The Challenge
+ Your objective is to use generative AI to design and insert a stealthy *hardware Trojan* into the recovered RTL from the provided bitstream. The Trojan must be designed such that the accelerator functions perfectly under normal conditions, but malicious behavior is activated under specific, hidden circumstances.
+ 
+ **No hardware may be written by human users. This will be confirmed with the submitted AI logs.**
+@@ -23,7 +22,7 @@
+ 
+ Your modified design does not need to remain in the exact format that the bitstream was recovered into, the AI is able to rename variables and create additional modules as it sees fit.
+ 
+-### Preliminary Challenge Deliverables
++## Preliminary Challenge Deliverables
+ By the submission deadline, teams must provide a `.zip` archive containing:
+ 
+ 1.  **Modified RTL:** The Verilog files containing your AI-generated hardware Trojan.
+@@ -39,7 +38,7 @@
+         - Details on the exploit for the vulnerability. **This should include enough detail that we are able to exploit the Trojan in hardware once a bitstream is generated from the provided RTL.**
+         - Proposed explanation for how the encryption system works.
+ 
+-All files should be submitted in the following format to [this Google form](https://forms.gle/kRLwy3NoLW7wVj4w8):
++All files should be submitted in the following format to [this Google form](https://forms.gle/d57fkBe5WFxDc9ha8):
+ ```
+ submission.zip
+ ├── README.md (or pdf)
+@@ -51,7 +50,7 @@
+    └── <all AI interactions (chat logs, etc.)>
+ ```
+ 
+-### Scoring
++## Scoring
+ The following rubric depicts how the first phase of the challenge will be judged:
+ 
+ #### Creative Use of Generative AI

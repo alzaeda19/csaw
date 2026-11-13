@@ -1,5 +1,8 @@
 # Current submission guide — updated November 13, 2026
 
+**Final requirements audit:** [Current-rule comparison and handoff](addenda/2026-11-13-final-requirements-audit/README.md). The required artifacts are assembled; stealth and historical AI-record completeness remain unresolved. No additional detector threshold is a prerequisite to uploading the existing package. The live competition form differs from the earlier saved link; GitHub remains the user-requested course destination.
+
+
 **Latest handoff:** [Required versus optional checklist](SUBMISSION_CHECKLIST.md) and [plain-English stealth evidence](addenda/2026-11-13-submission-closeout/STEALTH_IN_PLAIN_ENGLISH.md). All four artifact types are present. Complete relevant AI logs and the stealth objective remain unresolved; key recovery is a bonus and full automation/negligible overhead are higher-score targets. One previously incomplete reviewer tool output has now been fully assembled from authentic captures, as detailed below.
 
 The modified hardware code, demonstration testbench, saved results and submission archive are present. The follow-ups add fresh synthesis, protocol-scoped formal checks, a reference-board pin audit, original-source cipher reconstruction, frozen-design detection evaluation and Qwen review records. They do not change the tested design or rerun the archived original suite; the latest evaluation runs a separate full-core representation-validation suite on both frozen versions.

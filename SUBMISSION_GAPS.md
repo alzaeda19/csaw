@@ -1,5 +1,8 @@
 # Submission status in plain English — November 13, 2026
 
+**Final requirements audit:** [Current-rule comparison and handoff](submission/addenda/2026-11-13-final-requirements-audit/README.md). The required artifacts are assembled; stealth and historical AI-record completeness remain unresolved. No additional detector threshold is a prerequisite to uploading the existing package. The live competition form differs from the earlier saved link; GitHub remains the user-requested course destination.
+
+
 **The package is assembled and available to hand in; full challenge compliance is not established.** The modified RTL, demonstration testbench, technical brief, available AI records and ZIP are present. The original cipher and effective key handling are now explained and verified. See the [required-versus-optional checklist](submission/SUBMISSION_CHECKLIST.md) for the line-by-line comparison with the preserved original rules.
 
 ## The remaining requirement-level concerns

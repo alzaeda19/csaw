@@ -1,5 +1,8 @@
 # Publication status
 
+**Final requirements audit:** [Current-rule comparison and handoff](addenda/2026-11-13-final-requirements-audit/README.md). The required artifacts are assembled; stealth and historical AI-record completeness remain unresolved. No additional detector threshold is a prerequisite to uploading the existing package. The live competition form differs from the earlier saved link; GitHub remains the user-requested course destination.
+
+
 This is the November 12 GitHub publication copy of the saved simulation package, including the subsequent documentation addendum and the recovered Claude/Qwen/chat-record supplement. **Start with [CURRENT_GUIDE.md](CURRENT_GUIDE.md)** for the improved explanation and exact remaining gaps. Original README/handoff statements that nothing has been uploaded, and the original AI index's earlier export cutoff, describe the prior packaging stage. See the repository commit and publication receipt for upload status.
 
 All 262 original files, including source, testbenches, logs and MANIFEST.json, remain byte-identical. PUBLICATION_MANIFEST.json additionally covers this note, the current guide, explanation/recovery supplements, publication review and upstream notices. The initial documentation-only publication ran no simulations. Later verification is separately labeled: the cipher-reconstruction addendum now includes a fresh simulation of the untouched original baseline and its primitive models, with 2,564 passing transactions. The historical modified-design suite remains unchanged.

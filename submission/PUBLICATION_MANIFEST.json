@@ -1,13 +1,13 @@
 {
   "format": "csaw-publication-manifest-v1",
-  "scope": "Original package and eight prior sealed addenda preserved; fixed-model miss-investigation addendum and current guides added. Self-excluding.",
+  "scope": "Original package and nine prior sealed addenda preserved; final requirements audit added, self-excluding.",
   "original_files_preserved": 262,
   "original_archive_sha256": "0c053f3595079dbe7aa11789e69b1e26d359619b7af72d7535d1da004ce0ca83",
   "visibility_authorization": "public, explicitly confirmed by user",
   "files": {
     "CURRENT_GUIDE.md": {
-      "bytes": 16469,
-      "sha256": "32d419c7cfa436ce2dafbab8d80d41fc31a13448a6dbafce8b534b7312784d41"
+      "bytes": 16901,
+      "sha256": "24a013635f8a4731157bb664bdae29b1fc777048a41b08df5b6693ede56e01c2"
     },
     "ENCRYPTION_EXPLANATION.md": {
       "bytes": 6862,
@@ -42,8 +42,8 @@
       "sha256": "3c0bb0c68c6c9755a10e9861f079fc4f6dfd4317dfe261719723b2cbe3d1f8f9"
     },
     "PUBLICATION_STATUS.md": {
-      "bytes": 5297,
-      "sha256": "e808566bd07d077d85b0f140b49e0823d141ca7124fc1ae12bf76f633de197dc"
+      "bytes": 5729,
+      "sha256": "3a134082f549d270faeb7e92ec278e6fc38a3281481db436de1c35838285ada5"
     },
     "README.md": {
       "bytes": 14443,
@@ -54,8 +54,8 @@
       "sha256": "d0a60e1268a20e6ba41a9221f2f6ade4d481385729d2c292a13b21452e1f3762"
     },
     "SUBMISSION_CHECKLIST.md": {
-      "bytes": 8288,
-      "sha256": "8b745cf720f7752277353de1241e40132b6713c772e02824dde332c990721d6b"
+      "bytes": 8720,
+      "sha256": "a47d77e090bd57da6e5f4000e39e02a11e3e0e81990dcc44a348dde5b22ecd89"
     },
     "addenda/2026-11-12/MANIFEST.json": {
       "bytes": 6834,
@@ -5692,6 +5692,94 @@
     "addenda/2026-11-13-detector-repair/tests/repaired_v2/underscores/topModule.v": {
       "bytes": 113,
       "sha256": "9c12ca9968b2d87af3eca8d5eb33ec9e20b183e7c788702c4bb9982bfe159e7f"
+    },
+    "addenda/2026-11-13-final-requirements-audit/MANIFEST.json": {
+      "bytes": 3422,
+      "sha256": "f85e6048ccdc10cb07aadf9a018ef3fa785210c63c5ec6899634b4cb8504c1a1"
+    },
+    "addenda/2026-11-13-final-requirements-audit/README.md": {
+      "bytes": 5884,
+      "sha256": "9baa137b5c3bc51cb5f32d8feee84d097be5d91962cd28d91849c47621412e32"
+    },
+    "addenda/2026-11-13-final-requirements-audit/ai_logs/01_final_audit/HASHES.json": {
+      "bytes": 356,
+      "sha256": "21ee856a958e509ba4a2d4eb0036cf61ee38cb79605cbbe6772dfb11a6e7154d"
+    },
+    "addenda/2026-11-13-final-requirements-audit/ai_logs/01_final_audit/receipt.json": {
+      "bytes": 659,
+      "sha256": "d6532fb8899b6a733b9e7ab3d337daaab5205161e81d61d0b47c5e0696473281"
+    },
+    "addenda/2026-11-13-final-requirements-audit/ai_logs/01_final_audit/received_stream.jsonl": {
+      "bytes": 123996,
+      "sha256": "391786f0d71a8edd881905c06f209deb4239b7717f699b628fbafebc00fcdd9d"
+    },
+    "addenda/2026-11-13-final-requirements-audit/ai_logs/01_final_audit/request.json": {
+      "bytes": 11734,
+      "sha256": "bdc4d76e1b71f2130746e4dbacd04669c37c8bc508970fa36d52576a0f843fbb"
+    },
+    "addenda/2026-11-13-final-requirements-audit/ai_logs/01_final_audit/response.txt": {
+      "bytes": 3550,
+      "sha256": "8d416891eedfa307adf5bd9aee10e2ae73d6fcee5be72611401557b575dfa545"
+    },
+    "addenda/2026-11-13-final-requirements-audit/ai_logs/codex_final_audit/EXPORT_MANIFEST.json": {
+      "bytes": 1510,
+      "sha256": "720f8bf60a568029a0dc859b402ceea2ef5e39748fe36f387fbed82e500d27cf"
+    },
+    "addenda/2026-11-13-final-requirements-audit/ai_logs/codex_final_audit/omitted_records.jsonl": {
+      "bytes": 10006,
+      "sha256": "2826056220e5f1616d44ded562ffefac56650fce395a2b03244681d37459adb5"
+    },
+    "addenda/2026-11-13-final-requirements-audit/ai_logs/codex_final_audit/visible_messages_and_tool_inputs.jsonl": {
+      "bytes": 27111,
+      "sha256": "e0edf9d8268f1285f5f591f97ec5bee2fd94da0bc3aa2d8a0631e0629e964cc0"
+    },
+    "addenda/2026-11-13-final-requirements-audit/capture_current_history.py": {
+      "bytes": 5067,
+      "sha256": "7c1d9dc4af166b9e474dc1dc054c13a93d714698f9f639757ca42a3b5f59f7ee"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/COURSE_ASSIGNMENT_PAGES_33_35.txt": {
+      "bytes": 276,
+      "sha256": "65d4b846497e995e4b2bd88a4e0aa7717815870cbbd602b174b05e1cece0e6d8"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/CURRENT_QUALIFIER_REQUIREMENTS.md": {
+      "bytes": 9200,
+      "sha256": "29206749c0e6c7d9661f09436a2bfcc02efc0b45edba5b9e370565464e50653d"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/PDF_INTAKE.json": {
+      "bytes": 3335,
+      "sha256": "2155ea91dd4d207a08b56cffecf438f883ddd4f662a3fdbdd0500c595c88bd78"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/QWEN_PROMPT.txt": {
+      "bytes": 10850,
+      "sha256": "0d977f315729b369af1618d68bb3ae8bc411d37a143341e54a1563904ee5b06e"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/QWEN_REVIEW_NOTES.md": {
+      "bytes": 1250,
+      "sha256": "5e243c9ba0f83e31f9ee8ceba56954c919a4234c096f037d1ebe4c5831150c51"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/REQUIREMENTS_DIFF.txt": {
+      "bytes": 3389,
+      "sha256": "8a739456e365a2e347183851f10cb899a1b2e00c6121480d64a4b9b5ca8a237f"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/SOURCE_REVIEW.md": {
+      "bytes": 1410,
+      "sha256": "765d478bdfb452c21c4202f9becb6e52bf54fb74369964a241699a91b8759d56"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/USER_REQUEST.txt": {
+      "bytes": 674,
+      "sha256": "8c341dce0edf7b60a473c31c6b2188a4b400348af3b6ade2c703baf4f767381b"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/course-page-33.png": {
+      "bytes": 567968,
+      "sha256": "2fdb5c1b4630656b307c0b71039bd85214555192bbb1fe06248b2bfc7d960b16"
+    },
+    "addenda/2026-11-13-final-requirements-audit/records/course-page-34.png": {
+      "bytes": 387593,
+      "sha256": "1d5006e37ec6fab081128160f5f97093762a7dd817e82a758bdb6b668f8830e2"
+    },
+    "addenda/2026-11-13-final-requirements-audit/scripts/ask_qwen.py": {
+      "bytes": 3151,
+      "sha256": "cdbdb70600314be1dd51009c9c43796bbf844c2cf1f0912fc715455cac654978"
     },
     "addenda/2026-11-13-shared-chat-review/MANIFEST.json": {
       "bytes": 4257,

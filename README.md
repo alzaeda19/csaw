@@ -1,5 +1,8 @@
 # CSAW 2026 — simulation submission and evidence
 
+**Final requirements audit:** [Current-rule comparison and handoff](submission/addenda/2026-11-13-final-requirements-audit/README.md). The required artifacts are assembled; stealth and historical AI-record completeness remain unresolved. No additional detector threshold is a prerequisite to uploading the existing package. The live competition form differs from the earlier saved link; GitHub remains the user-requested course destination.
+
+
 The current simulation package is in [submission/](submission/). Download [submission.zip](submission.zip) for the source/evidence folder, with [SHA-256 receipt](submission.zip.sha256).
 
 **The previously missing modified RTL and demonstration testbench are now present.** Saved simulations pass the stated tests. This does not establish satisfaction of every grading criterion or instructor acceptance. [Current limitations and submission status](SUBMISSION_GAPS.md) remain explicit.
