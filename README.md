@@ -1,5 +1,7 @@
 # CSAW 2026 — simulation submission and evidence
 
+**Evidence wording update:** [Verified results and exact test boundaries](submission/VERIFIED_FACTS.md). This states the recorded counts, encoded test conditions and checks that were not performed. No new proof or experiment is claimed.
+
 **Final requirements audit:** [Current-rule comparison and handoff](submission/addenda/2026-11-13-final-requirements-audit/README.md). The required artifacts are assembled; stealth and historical AI-record completeness remain unresolved. No additional detector threshold is a prerequisite to uploading the existing package. The live competition form differs from the earlier saved link; GitHub remains the user-requested course destination.
 
 

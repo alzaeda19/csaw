@@ -1,5 +1,7 @@
 # Submission status in plain English — November 13, 2026
 
+**Evidence wording update:** [Verified results and exact test boundaries](submission/VERIFIED_FACTS.md). This states the recorded counts, encoded test conditions and checks that were not performed. No new proof or experiment is claimed.
+
 **Final requirements audit:** [Current-rule comparison and handoff](submission/addenda/2026-11-13-final-requirements-audit/README.md). The required artifacts are assembled; stealth and historical AI-record completeness remain unresolved. No additional detector threshold is a prerequisite to uploading the existing package. The live competition form differs from the earlier saved link; GitHub remains the user-requested course destination.
 
 
@@ -19,7 +21,7 @@ Full generation-to-test automation, negligible overhead and a more sophisticated
 
 ## Delivery and provenance
 
-The public GitHub repository and updated ZIP are the course destination specified by the user. Collaborator invitations remain skipped. Staff receipt/acceptance is unconfirmed; it is an administrative outcome, not a technical artifact that can be created before submission. The original competition form has not replaced the user's stated course destination, and the defensive alternative is not assumed approved.
+The public GitHub repository and updated ZIP are the course destination specified by the user. Collaborator invitations remain skipped. Staff receipt/acceptance is unconfirmed; it is an administrative outcome, not a technical artifact that can be created before submission. The original competition form has not replaced the user's stated course destination, and no approval of the defensive alternative is recorded.
 
 All 262 original package files and eight prior sealed addenda remain unchanged. The latest investigation uses the repaired extractor without changing it, attempts all 23 supplied labeled examples and replays the two saved CSAW graph tensors with read-only diagnostics. Hardware and detector settings remain unchanged. Two local Qwen advisory reviews are included with their factual errors corrected; Qwen did not run or independently reproduce the tests. The earlier blocked Trojan-chat repair review remains a separate historical event. The [closeout record](submission/addenda/2026-11-13-submission-closeout/README.md) still preserves the earlier authentic record recovery.
 

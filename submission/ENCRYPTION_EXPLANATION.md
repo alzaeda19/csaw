@@ -49,7 +49,7 @@ flowchart LR
 |---|---|
 | Original ROMs against mathematical AES S-box after wiring normalization | All 256 entries in each of four memories match. |
 | Exact source-derived byte identities | 4,096 checks confirm initial/feedback equality and both directions of inversion for every byte value in every slot. |
-| Original control equations | 9,344 identities over 512 assignments, with documented reset and reachable-state assumptions. |
+| Original control equations | 9,344 identities over 512 assignments, over the documented reset and reachable-state conditions; states outside those conditions are not covered. |
 | Independent mathematical model against original Boolean/ROM interpreter | 2,564 complete transactions across 1,282 distinct words; 20,512 round-state matches and zero mismatches. |
 | Untouched original Verilog and primitive simulation | Same 2,564 transactions; 20,512 round-state comparisons and 12,820 serial/BUSY checks; zero failures. |
 
