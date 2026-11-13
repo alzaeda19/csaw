@@ -1,0 +1,43 @@
+{
+  "started_utc": "2026-11-13T02:39:36.142493+00:00",
+  "original_sources": {
+    "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+    "host.py": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+    "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+    "static_inventory.json": "153d4bfd80aaa24aa4e4631db7ca78a52a920ce6653df337860b6c16d1a94bd4",
+    "baseline_protocol_dut.sv": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+    "interface.md": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25"
+  },
+  "steps": [
+    {
+      "command": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+        "-g2012",
+        "-s",
+        "tb",
+        "-o",
+        "simulation.vvp",
+        "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_cipher_reconstruction_2026-11-12/sources/baseline.v",
+        "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_cipher_reconstruction_2026-11-12/sources/cells_sim.v",
+        "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_cipher_reconstruction_2026-11-12/sources/baseline_protocol_dut.sv",
+        "tb_original_reconstruction.sv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.169
+    },
+    {
+      "command": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+        "simulation.vvp"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.42
+    }
+  ],
+  "status": "PASS",
+  "transactions": 2564,
+  "phase_checks": 20512,
+  "serial_and_busy_checks": 12820,
+  "failures": 0,
+  "ended_utc": "2026-11-13T02:39:50.734504+00:00"
+}

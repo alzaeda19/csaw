@@ -1,0 +1,32 @@
+{
+  "scope": "Original baseline only. No modified-design run or source change.",
+  "initial_boolean_model": "Known pair both directions matched; first attempted display was truncated, complete local trace retained.",
+  "mathematical_comparison": {
+    "command": "python3 scripts/reconstruct_cipher.py",
+    "stdout": "verification/reconstruction.stdout",
+    "stderr": "verification/reconstruction.stderr",
+    "exit_code": 0,
+    "transactions": 2564,
+    "phase_checks": 20512,
+    "mismatches": 0
+  },
+  "original_verilog_comparison": {
+    "runner": "scripts/verify_icarus.py",
+    "receipt": "verification/icarus_run/RUN_RECEIPT.json",
+    "exit_code": 0
+  },
+  "fresh_replay": {
+    "runner": "reproduce.py",
+    "receipt": "verification/fresh_replay/REPRODUCTION_RECEIPT.json",
+    "status": "PASS",
+    "all_four_result_files_identical": true
+  },
+  "Qwen_reviews": [
+    "ai_logs/01_method_review/receipt.json",
+    "ai_logs/02_verified_equations/receipt.json"
+  ],
+  "errors_and_corrections": "ERRORS_AND_REFINEMENTS.md",
+  "original_files_modified": false,
+  "published_challenge_solutions_used": false,
+  "board_accessed": false
+}

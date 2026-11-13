@@ -1,0 +1,219 @@
+{
+  "source_sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+  "scope": "Normal prescribed launch from idle; independent combinational phase model, not an HDL or silicon run",
+  "known_pair": {
+    "original_host_path": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/original_materials/qualifier/spi_ice40_crypto_ip_test.py",
+    "original_host_sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+    "plaintext": "59C359C3",
+    "ciphertext": "9CD84392",
+    "four_round_encryption_matches": true,
+    "four_round_decryption_matches": true,
+    "independent_vector_pairs": 1
+  },
+  "first_step_qualifier_checks": [
+    {
+      "memory": 0,
+      "effective_address_bit": 0,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 0,
+      "effective_address_bit": 1,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 0,
+      "effective_address_bit": 2,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 0,
+      "effective_address_bit": 3,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 0,
+      "effective_address_bit": 4,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 0,
+      "effective_address_bit": 5,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 0,
+      "effective_address_bit": 6,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 0,
+      "effective_address_bit": 7,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 1,
+      "effective_address_bit": 0,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 1,
+      "effective_address_bit": 1,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 1,
+      "effective_address_bit": 2,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 1,
+      "effective_address_bit": 3,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 1,
+      "effective_address_bit": 4,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 1,
+      "effective_address_bit": 5,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 1,
+      "effective_address_bit": 6,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 1,
+      "effective_address_bit": 7,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 2,
+      "effective_address_bit": 0,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 2,
+      "effective_address_bit": 1,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 2,
+      "effective_address_bit": 2,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 2,
+      "effective_address_bit": 3,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 2,
+      "effective_address_bit": 4,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 2,
+      "effective_address_bit": 5,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 2,
+      "effective_address_bit": 6,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 2,
+      "effective_address_bit": 7,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 3,
+      "effective_address_bit": 0,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 3,
+      "effective_address_bit": 1,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 3,
+      "effective_address_bit": 2,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 3,
+      "effective_address_bit": 3,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 3,
+      "effective_address_bit": 4,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 3,
+      "effective_address_bit": 5,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 3,
+      "effective_address_bit": 6,
+      "first_step_independent_of_old_ROM_qualifier": true
+    },
+    {
+      "memory": 3,
+      "effective_address_bit": 7,
+      "first_step_independent_of_old_ROM_qualifier": true
+    }
+  ],
+  "initial_inverse_cones_use_only_current_serial_payload": true,
+  "memory_write_controls": [
+    {
+      "source_line": 42766,
+      "WCLK_constant_zero": true,
+      "WCLKE_constant_zero": true,
+      "WE_constant_one": true
+    },
+    {
+      "source_line": 42800,
+      "WCLK_constant_zero": true,
+      "WCLKE_constant_zero": true,
+      "WE_constant_one": true
+    },
+    {
+      "source_line": 42834,
+      "WCLK_constant_zero": true,
+      "WCLKE_constant_zero": true,
+      "WE_constant_one": true
+    },
+    {
+      "source_line": 42868,
+      "WCLK_constant_zero": true,
+      "WCLKE_constant_zero": true,
+      "WE_constant_one": true
+    }
+  ],
+  "state_accounting": {
+    "native_registers": 71,
+    "serial_payload_result_bank": 32,
+    "inverse_datapath_bank": 32,
+    "two_two_bit_phase_counters": 4,
+    "ROM_output_qualifier": 1,
+    "previous_BUSY": 1,
+    "registered_serial_output": 1,
+    "RAM_storage": "Four fixed initialized lookup memories; registered read pipeline is transient data, not a runtime writable key store"
+  },
+  "fixed_handling": "The same per-byte literal inversions occur in initial and feedback address wiring, with corresponding inverse operations in the Boolean path. K is a symbolic fixed 32-bit XOR mask, repeated each of four rounds; no numeric key/mask is emitted. No independent runtime key register, key-input transaction or round-key schedule is present in this normal-operation reconstruction.",
+  "limits": [
+    "No claim about original authored source variable names or the provenance/intent of the fixed mask.",
+    "Does not treat malformed or deliberately interrupted protocol sequences as a specified key-loading interface.",
+    "No hardware, arbitrary-protocol, primitive-model or full-clocked-equivalence proof from this script."
+  ],
+  "byte_dependence_inference": "Each round rotates whole bytes and applies independent byte bijections. Four rotations restore byte positions, so each final byte depends only on the corresponding input byte and fixed masks. This is a structural inference from the verified component maps, not a cryptographic-strength claim."
+}

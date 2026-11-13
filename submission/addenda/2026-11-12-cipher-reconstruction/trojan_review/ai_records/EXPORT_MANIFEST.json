@@ -1,0 +1,1332 @@
+{
+  "created_utc": "2026-11-13T02:43:38.922116+00:00",
+  "format": "Explicit JSON-pointer field projection retaining exact scalar values, not a full native transcript",
+  "sources": [
+    {
+      "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-12-19-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1d23f-7ed7-7fa1-9afd-64875b8a6cf8.jsonl",
+      "first_line": 1824,
+      "last_line": 2011,
+      "source_snapshot_sha256": "116d4fe4514e8c76392989d20687d33efaf0f6240011a97c497b380db57aabb5",
+      "cutoff_timestamp": "2026-11-13T02:43:38.870Z",
+      "retained_records": 48,
+      "verified_exact_scalar_fields": 306,
+      "whole_record_omissions": [
+        {
+          "line": 1825,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "8632d66837bdb64208f5a40c544b8b68f80f4139e4d40a1c76ea44b315572d77"
+        },
+        {
+          "line": 1826,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0ab22eab9cd7f685d9f9e6c9813ace0a62d2935d4cac2bcf2981d9666221a981"
+        },
+        {
+          "line": 1827,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "76a63c0c301fb187a889c84c8d81d0181e4957e6b79b4a229eed1f079a290991"
+        },
+        {
+          "line": 1828,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d7e1f4eabbdc392116f135cf5b054d4238757cbf54303b8db8ef7c6e69d39173"
+        },
+        {
+          "line": 1831,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "a4d54846ff60d4ac030c39f1349dd0e58ab16f3dcc524c4af7f730ea64c76be4"
+        },
+        {
+          "line": 1832,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "190cd61d357139129a53c3a0a874d61ca9d53c7c5677cb15c9427fe36a6261da"
+        },
+        {
+          "line": 1834,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "eae199a24f19b7f4ec018c9b6ed9cab5f2a1122788cba66a562680d8e31f1b93"
+        },
+        {
+          "line": 1835,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "10b11cea50b7022a5760fe918c0ea0fad26ef0ed6e730db2c883180cbf8de85b"
+        },
+        {
+          "line": 1836,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "2e25b929cf5c64350b00845858cc14c56f0cfae215935f476733232dfecc6d42"
+        },
+        {
+          "line": 1838,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "fd7a369a2f2f2a8d5e6dd2698d1ea518e47ba1fc8162ce4b731620e1effcd151"
+        },
+        {
+          "line": 1839,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "52ce3f8d0d20196d7dfa8592d1d3086c691fef41b0f4a267e85ef89b764b7dae"
+        },
+        {
+          "line": 1841,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "7615a63edf555c54e8f83d14ea13d6fedab61888c01e4d185b39bde4f26c0642"
+        },
+        {
+          "line": 1842,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "19ad46c3d05befa6388aa1d6e7e52db35acf7cab3f582141dd5d702f5ff2f6ff"
+        },
+        {
+          "line": 1844,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "2cd9d8485faaf8461bd5238805b9d11f343f4c0cf040da7d2731ef7f9ab40aee"
+        },
+        {
+          "line": 1845,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "63b756af902be405e6b264ff8873c85ec122487692fd190cd095815c0c99dfac"
+        },
+        {
+          "line": 1847,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f9583f0b57221939b99d0a65a2e64c4b899ed4bfd13133e7fbc528687dcdcc13"
+        },
+        {
+          "line": 1848,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "2b6c9f02561000b4bb7f77b9c259ca3504b956e967bed7062866a5751d1b5f41"
+        },
+        {
+          "line": 1849,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5318d818bbec89a5c7bca6b275e40ca1aedef80b2c5da9006926ab8ec5988d99"
+        },
+        {
+          "line": 1851,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ae448fc487eb0aba677aee66a718c68aa22c9a87131a0c1d9676370a2ab810e0"
+        },
+        {
+          "line": 1852,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "b656805ac929ac312883199379b14f22061130cc78831bd5e1c02e8a97331e8e"
+        },
+        {
+          "line": 1854,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "27c946d87146f1f75bef0262326ea2e0a38392b4e4137c91c4b2e47d42a410d9"
+        },
+        {
+          "line": 1855,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "6a9be85dd858dcff23adff9685b51d62a6981233cf337743835374e73503c907"
+        },
+        {
+          "line": 1856,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d23738261b4c7a08c7e49d75fbe602f7bbaa5c683a7d23463879a4afe8db3044"
+        },
+        {
+          "line": 1857,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ae579914e4628a54590a5b46b1c8eea0984c059edd8c12d0291acf967ba2ce63"
+        },
+        {
+          "line": 1858,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "14b39747b4c22df18fc7a29772f913a46820ebbb999bea7c7d885e0a6b4b93f9"
+        },
+        {
+          "line": 1859,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f6524dda3d71133a75f798e5aef1dc9a51c4c1ad05628268c8e5e8d207a68478"
+        },
+        {
+          "line": 1860,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "9e9c543f4a125868b2a603ad542db7048d43fac2574367d157e67fb90608d84a"
+        },
+        {
+          "line": 1861,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f4e50e978ff0d6eb0769b5478c17f6c499e95bc40dfc8c0979871a645484f80d"
+        },
+        {
+          "line": 1863,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "527fcead2d8d593994cb1cfb29ff9da07a1f23874d1f38b2e16ca885fa76428a"
+        },
+        {
+          "line": 1864,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "8306089516ede97c0aaecb3de471652e62bb109cdab7da4cc150e93f109a0ed3"
+        },
+        {
+          "line": 1866,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f313a73ae5cf138487c1fac4596782aa4d6264e11c1fd324a9b6b719b943d922"
+        },
+        {
+          "line": 1867,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5df6568c3aed1ae2fe00fab532b73875c4388c0ff48b066d16d20a65f4a0fccc"
+        },
+        {
+          "line": 1868,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "7560ab7a36eda37014814a646787adc57d460a83e3adc85736a263992835b0b4"
+        },
+        {
+          "line": 1870,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ce68acf608ee544506a7386ab5bb69ed4eeb7166b06d24995130511d78cac8ae"
+        },
+        {
+          "line": 1871,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d3cac784667299e533c179c71078a5526a3c5a57b13a12bb0ee43fa0544f9251"
+        },
+        {
+          "line": 1872,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "fa35ae17a173355c979400a2edbe080fb0fdcb1d694bd5bd8961624af09d24f0"
+        },
+        {
+          "line": 1873,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "334fb5f64e0d01e6b109a675242162370be39d30fa24977e58e93ba065d566d3"
+        },
+        {
+          "line": 1874,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "493e7c4765bcdf3cb674021fc8874fe2be830db1a50df71f294d42776f37fe97"
+        },
+        {
+          "line": 1875,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "9975d3a8f23f93c1ec75f33af93b2415570d2477694f3c363fd5fa433fe51021"
+        },
+        {
+          "line": 1877,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "40440c3f4d28c24152f318d3ba3b5ba38c247f1e46ebb82b53ed8c0150dd23e3"
+        },
+        {
+          "line": 1878,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "67b063541070d4a8dad53e4888cd32b0c217cf5ec28c53ecb67eef20fc4330dc"
+        },
+        {
+          "line": 1879,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "95676381dc9ca0dd652a0358537bb8f9d7e950d2aa6641365f1b7133394c523b"
+        },
+        {
+          "line": 1881,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "8d44084f0046fe1ad133028f624ca76f540c28fd2230e8b4e926ad172c0aef6f"
+        },
+        {
+          "line": 1882,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "bb152d534c787f25f7c26166b91bfb0b887c1b68bfb3cb9d18a688eb64318370"
+        },
+        {
+          "line": 1883,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "479bb82a3f61ce90f074289af949ec49e01c9e27bef633be62eed3a3f4d8a644"
+        },
+        {
+          "line": 1884,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "a8829d709b5d702036b2201a04334119869a4a3cd9e7a9670e0386c975d73dd8"
+        },
+        {
+          "line": 1885,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1a7852de98a92b762dbb9e110a5ac958318d94805990a538274e8dad03a94089"
+        },
+        {
+          "line": 1886,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0ee07194044f029c8b5790b508e68bf3edc9e7e2737c65e41ae6954c8cac37ea"
+        },
+        {
+          "line": 1889,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "4fd4823bfca2ab3e0fe14ef24a46f86484e335aecfdb68abc04bb2eaa40017c2"
+        },
+        {
+          "line": 1890,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "eb2cc589c87542f4564c7efca97963fbe58584af1d3a3e374563fb968597cbf3"
+        },
+        {
+          "line": 1892,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "484865a520d8caa9f6391ab6f177f5a865ffe5df1a2269cb31a343f9b06cd0a6"
+        },
+        {
+          "line": 1893,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d9d710c4f5b2d819d6b68676a2e7746a4f5ca757a4c31995cd19fc17d13d8bb0"
+        },
+        {
+          "line": 1894,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f46753795424a3039df25d433cb955f189469e472e7b9ff635a9d8ac77f13556"
+        },
+        {
+          "line": 1895,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f53ee82b56a4c8c2656445da69cf92a45bb7cf32d6d14e8d92db3057c9b7e368"
+        },
+        {
+          "line": 1896,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e3ac344e91280803336034c9ef5347ece42435aff4d643395ba88d6e9e50ed76"
+        },
+        {
+          "line": 1897,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5d07dd8a1b9e857ef032a251feef7268332ea3a892d0f097a4b70e4b81702ce1"
+        },
+        {
+          "line": 1900,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "deca58f1cd9f5547af48ff91fb25b6aabd349981b4ee7d7b7e582c189d404654"
+        },
+        {
+          "line": 1901,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1095896c913d0fb756b4ef565f6e615bddcf9b624cf0aa700071abd5f9633754"
+        },
+        {
+          "line": 1903,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "eb1ff1a878856f2b304b169c3a935cfc8de3cc9d6de2d18e7e9d7fc8fbf6bd8f"
+        },
+        {
+          "line": 1904,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f5f9c7496802cfaf95a9357295dd6d3d56b7b270f3314df8e76eec2b59d42825"
+        },
+        {
+          "line": 1905,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f612c4b2956eaac93b80e2b3a09ae826734d4e9325f19c2c1f2f91a1e58d877b"
+        },
+        {
+          "line": 1907,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "2bcdee3e953a89ebaa1e6ca7d4078722d56148f8327042b5792205c02b8f47f4"
+        },
+        {
+          "line": 1908,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "fec968870b019c21482bbcb772a401d9cab9477d0b20a982cc8755252cbbf51c"
+        },
+        {
+          "line": 1910,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "bd0a8a7c855bd012dc1595bd79c1724b9b124860b06bdce129d04f04a6e54636"
+        },
+        {
+          "line": 1911,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "2b32887bf86a9b27b0947f5591c021a21f5b0ee92ae9273168612fe5ea206d07"
+        },
+        {
+          "line": 1912,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "af16a2c1bf4d9b16ab6fcf9a53bef9fa7d8c01be80363a64e8677f49a027ddfa"
+        },
+        {
+          "line": 1914,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d0abb1345b880f0894e781df3d1ba06ce832487062f9247badaef6708eee9337"
+        },
+        {
+          "line": 1915,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "cfff0476b9b04bd7efe73653a87fd249c0f0e30edde217574544cbc9780b981d"
+        },
+        {
+          "line": 1917,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "7ff0dd911f598abb42c67dd3116f49ea6d0fc96ffb6dde955859ee30c8f92b55"
+        },
+        {
+          "line": 1918,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ae86032d54ec31129ab14c67b3f479693b377ea29489336b70a9c40f94bd62e7"
+        },
+        {
+          "line": 1919,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "6e8a80bf8446f72297684f5a8dd5d3beba1b69462f5d9a9d5b1c023c7b634ca5"
+        },
+        {
+          "line": 1920,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "29e334c44352acb272c5ea47470c5063a87879028df3b3d6b0023e1489414077"
+        },
+        {
+          "line": 1921,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "8bdf40d6828a4a80aa29a4019058ef0767943d6e69e6ba58a96adfd4d3d9936a"
+        },
+        {
+          "line": 1922,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "b49703101ef0a9ba3358e0524fc645a32572c4eaf2157607f22faba7656dd0f3"
+        },
+        {
+          "line": 1923,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "6a5cc1b8a5440f2fa00fc12ebb5365c727ed9b121e09d02df6d2086fffbcacd1"
+        },
+        {
+          "line": 1924,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "90cddaaa7c64ab016a77263a44b195d2b6e246381b44240c8e06c90a94f69eb7"
+        },
+        {
+          "line": 1926,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "46e4b112b794c32a10a6637c2085b16c660fa94467a84e7693f45bdb44e06ba6"
+        },
+        {
+          "line": 1927,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "a2854438d177b6de5316098ed2cf9ef6bbf25b492041a379c83f9f3ba0a28718"
+        },
+        {
+          "line": 1929,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "b92821e733a7ab3cae6f3343ccb5c7d5685febb434f1ab66ddad86b068773877"
+        },
+        {
+          "line": 1930,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "c2641916b2af5354f286f87132faf167971f487504ed5abbab961871142292d0"
+        },
+        {
+          "line": 1932,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "feac7d82685cd7cf6066bd26e30a837ef74a9eec9b5ccbd77e94daba4ea54b98"
+        },
+        {
+          "line": 1933,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "3da029305a30b2ef8bd9de954e7b43d407c2a436a4e070df7c8a83df31f3714a"
+        },
+        {
+          "line": 1934,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e3e62d77cbe22b664c26afa05f59d0c81ace1a0c3ca1c49bd22fe7a9510362aa"
+        },
+        {
+          "line": 1936,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "880f8b7ea9c74ebc212dec62862fca3b6995b354c97f8b4d776eb6080d3da8b1"
+        },
+        {
+          "line": 1937,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e2bf9a19522ae5a941a0e75893347c899b706284ff907701175f55b20011b127"
+        },
+        {
+          "line": 1938,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "29ebf6f755b6dc045bd4976d0091abb7fdf145fd889ab643ff81f230f545e8f0"
+        },
+        {
+          "line": 1939,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "3df0f5f35ce584497ad162264bce4eca69ec1f32a07a7c383942f795773af9ed"
+        },
+        {
+          "line": 1940,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1697112ac80b0dba77e1cbf1873e560e3c1e5aec0d7e01b6a6f97dbe13da6bf5"
+        },
+        {
+          "line": 1942,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "10052a4fdbcf1c42ac869ab254476833bb53db60615d07f687de7f59ba915874"
+        },
+        {
+          "line": 1943,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f071ff64364c34259c3558dcce7f2ec4b8003fedb4f0b7b80a1e7c15a6ad1806"
+        },
+        {
+          "line": 1945,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0f313aaf002e7f90904beef6c0eb1305617650eb1fcb300a386035960cdb3bc9"
+        },
+        {
+          "line": 1946,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "c2d9fa8fb84c4f3d2a205be5418b6655dd99b76df0b7a076d20941e908fe2542"
+        },
+        {
+          "line": 1947,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ea07674adfd5e1a31a9ba0ce2a3496227164147c4e93b1e0e51762895715eba7"
+        },
+        {
+          "line": 1948,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1d308f09caeef97fc4ee6ae476f552f008297dc9435496c4b0a58eed54957e81"
+        },
+        {
+          "line": 1949,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "587241cee440b54a5f9e9f5d65f821f017fcdb95299262a63c7630210b2c9b00"
+        },
+        {
+          "line": 1951,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "fa8852ec39e500ef9869915f1433b8a6671f0c2bf9f0c96b3329f346d8f4de0a"
+        },
+        {
+          "line": 1952,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e7f484fa2f7cbf560c59080c9ac57590e633b81f96073cff59c8d9612d0ef8b0"
+        },
+        {
+          "line": 1953,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "94f83f1ee06bbb1d1ae3f15abcc0ecb320cae3dfecb106bd327dc57cebb3f75d"
+        },
+        {
+          "line": 1955,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0613c7abf4e9917b6e5ada2fa2849b69a6e200ebba2faadf8adce5709b102d64"
+        },
+        {
+          "line": 1956,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "19a324d3cdfada41b64a254be1af63e79d28bc5c1eb6f4ff81841d2123bacabb"
+        },
+        {
+          "line": 1957,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "04692dc2eb17bdfc83c8beea93278b4be6727a9555dd77c19e2dff8cfbdc51b2"
+        },
+        {
+          "line": 1958,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1a76a00051c0e99d6bcb0646ff6646300c7ded9d91915d12b2dca70780697fbf"
+        },
+        {
+          "line": 1959,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "fd3b6b42ce0c3c609c2fb115c2bd676313e04e16df383f42c64b1b3c620ffcc2"
+        },
+        {
+          "line": 1961,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "439fbb3bccbe044539b08edc533aadacf27c393bc50755c119ff02dbcffdfd9c"
+        },
+        {
+          "line": 1962,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "a9b25ed7ee4d16c482fbd8e726c1fb759081c2f4bed4ff843d5c7d5211dd3d9c"
+        },
+        {
+          "line": 1964,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "fcd22d920f0295ed46ea42f8c90172b6fc80125f59d8fdeba0ae9dc51bdff5bd"
+        },
+        {
+          "line": 1966,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1abd1ae6020fd89e780863bfee6026f9dee616f4598a13e2df106a96c9890c51"
+        },
+        {
+          "line": 1967,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "b5a2cff52a2bd2f4398e96c636ac76c4334241cf28dd4ad6e4d9af2042a479ea"
+        },
+        {
+          "line": 1968,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "465528e229a66889df4be34e1c27baff3a626d59a0a8d3faadceb23afe4d750a"
+        },
+        {
+          "line": 1969,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "4f21f9984cc5a73c1f78eddcfd9261795d1f4be5a9141c871c31af0891a6e9aa"
+        },
+        {
+          "line": 1970,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "3a1b6d96fe8832a03ba53b9000808cd8d12bcaa639665c20d4fb5c91de4f129e"
+        },
+        {
+          "line": 1971,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "b550809bcfcb3c90b13c85b6ab74ac7f11cf5b6ef9be1cdede55d3f73ce3c616"
+        },
+        {
+          "line": 1972,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "c4ae5200dd634ef08480d65e00b1b7e35e2c9ba260b238131e74e7f4ea1dfc46"
+        },
+        {
+          "line": 1973,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "9008ff701bcb93e0993f5ff718579eb07506e03fad900984075f3f4c8cadce3a"
+        },
+        {
+          "line": 1976,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "63623deeb854cfc58835c2808c3120667c85af51d0b3da02b730eb783bc8fef9"
+        },
+        {
+          "line": 1977,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ffa643708b8d443f3a17355b1245c55a2fc8459826c90071a707b3b7be98a937"
+        },
+        {
+          "line": 1978,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "731f85eed91456d9c371874ddc166feceada398f7e3450112afe348ccc492770"
+        },
+        {
+          "line": 1980,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "504de8d1f3e107b3e52da8ce38847f71aabe1ce77e33ed70f9cd5226bf0f65ac"
+        },
+        {
+          "line": 1982,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "2162086047345695e89cde11d1efffa990736b05aff235cf80d18bfa812dae3f"
+        },
+        {
+          "line": 1983,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5ee47f324377826420562dc30e32a44f0f3d4c08d755e73f930a3445291f9dc1"
+        },
+        {
+          "line": 1984,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "df2ca45782eae749750df8ac8643e3651c573f4a990686b83b84f81f361f5a33"
+        },
+        {
+          "line": 1986,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "69f7a0cfda5842fd09dcad7469725a86f75f0eb8b867a41bd0e9abbcd416a646"
+        },
+        {
+          "line": 1987,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "460d6634bdc330f686e6688169372e3e01ca83b25993e7d9bc1cb686a66eefc8"
+        },
+        {
+          "line": 1989,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d5c92e5e613c1ae6c742b3a1298f518c00f384889694fcd16b9023f4086da471"
+        },
+        {
+          "line": 1990,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "76919e14af9854013adec8c27dafc9621a4aac42162b214057fb6e0bfcb7dd41"
+        },
+        {
+          "line": 1991,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0b4adc227ccf0d6193e10f8abce3bad8a6394f0d949d3c92c6a70dbc032b634d"
+        },
+        {
+          "line": 1993,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "a90f9e2390c824b9e6cfb8406f015910568dee1e40bb069bddbb15da785df259"
+        },
+        {
+          "line": 1994,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "323c8bc6364c967074e6f034007ceb71f11f1e849b9884963e2d3445dbc5299d"
+        },
+        {
+          "line": 1996,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "cf2a266ce5d9650ba51b91a4bc32e07dcc1d571fb8fbe8dbaa9e95f92cdc0178"
+        },
+        {
+          "line": 1997,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "74e20e1d8c563a388378b18e18a0966590cf02a3a3dabf66cd6aa41e6e629f15"
+        },
+        {
+          "line": 1998,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "82f317ab1ae9f5dddcfb39e3854be3480615231f9b4c13a5fc5f9b888ef8bfe5"
+        },
+        {
+          "line": 1999,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "dddff7bbbe16d96bb0de4fff3b4c5bb431ea24ba71de3445f92b769b526ec2b4"
+        },
+        {
+          "line": 2001,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "eb951c120c5bf157e63c2145e7b9dbb12395b9df78851ea48fca85cc16fbe8dc"
+        },
+        {
+          "line": 2002,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "a032f8b7d4fcb9f70079390f42d832a4c7f650bcb14e10d695c7d43960b19fcd"
+        },
+        {
+          "line": 2004,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1bca46e856821d08ee5a0bcab8e2c12e1287556a74348570bf9c9d5835273dc3"
+        },
+        {
+          "line": 2005,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0c7caf0325b77ab9ef1f9c55ac3bd3c81c1cc3122619bf26eb2b4ec217c68b9b"
+        },
+        {
+          "line": 2007,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d16c4c8a401d2d08dda0ba165114d689f1016dcb4cc0677565922c3f2d12be45"
+        },
+        {
+          "line": 2008,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "fe3e4b133e731883e0ca19ec033fb1fbd0b047fd4a5d90fca8f8f35a83b67d06"
+        },
+        {
+          "line": 2010,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "429100f33ef634b286d8ab7de2be6814b1e6a4b23584adf37241b2635ff04de4"
+        },
+        {
+          "line": 2011,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "7485c46e6e95bc650f04e32c9326ad8b17c50559ffcbc28fca9c2e04747129f1"
+        }
+      ],
+      "output": "audit_visible_fields.jsonl",
+      "output_sha256": "8a8d3b6e1579ea5ddc876496f767c5b025430934fe311b8f711c26f3daf97119"
+    },
+    {
+      "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T21-33-19-01a1d2c0-9947-77a3-befe-8f8eadc57345.jsonl",
+      "first_line": 1,
+      "last_line": 165,
+      "source_snapshot_sha256": "451fb55e7f934bc97e980050a64b184fae129006c0594e6dee0ac717a4c16233",
+      "cutoff_timestamp": "2026-11-13T02:42:43.982Z",
+      "retained_records": 45,
+      "verified_exact_scalar_fields": 288,
+      "whole_record_omissions": [
+        {
+          "line": 1,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ac4ab2eefdc97ec9bf956a541f97748fd99ba779731773c426fb04238567244e"
+        },
+        {
+          "line": 2,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "7bb4f4f344e5b12523034370e7127766744f879dc0f7c3b331b8c515c61ab5a4"
+        },
+        {
+          "line": 3,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1ab48ad606a89f9bb3c170af0895fad4648f3b21a10125867b3e1f4fe1e31b7f"
+        },
+        {
+          "line": 4,
+          "reason": "Platform instruction or internal reasoning",
+          "sha256": "82d682f4804bb367a3bd568b80d27ab93d30cdfc830e3b060bf2b8af239ba67c"
+        },
+        {
+          "line": 5,
+          "reason": "Platform instruction or internal reasoning",
+          "sha256": "3c22ecaeb36d1398f922c537da3de6f556db37483abd32d3ab2587b2b75b0f05"
+        },
+        {
+          "line": 6,
+          "reason": "Platform instruction or internal reasoning",
+          "sha256": "6d6d2f6c1a4ac8d965d1efbb10dd2b120472f128139aa893c85b9dd6a051a83c"
+        },
+        {
+          "line": 7,
+          "reason": "Platform instruction or internal reasoning",
+          "sha256": "fc582719dc3e31ba5989a293e5ec714b16287a86826d57a1aa73a696e9ba61b8"
+        },
+        {
+          "line": 8,
+          "reason": "Environment inventory, not an audit request",
+          "sha256": "8f01c4e7d8b53683bf879bf4c2fd8010a34a5eb0c8d7bccd9ff5da48be6adf4b"
+        },
+        {
+          "line": 9,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "8a61ea81c062c490cc17d0997913160c5179fb6745a41fcf898b5356ffc1b8dd"
+        },
+        {
+          "line": 10,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1f5e4c919eb24b54b20c7463bfb83954854780d290e51d7fd9b611659bf61418"
+        },
+        {
+          "line": 11,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "3303bdfaca9a0da329164e7d785a361a360b5c3cb0b04bedc92f070b0988b0b0"
+        },
+        {
+          "line": 12,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "976e6623aae34b8b7e493415608a2750dbcbb654565dcf577c3e874751dc5f56"
+        },
+        {
+          "line": 14,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "8a3eaf83e2fa12f6db2484b86ad3db053ad0e302c80acfb3eeaa402f364eeb24"
+        },
+        {
+          "line": 15,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "337225241bc337340108eada9f68d2d179726c91a61d104f2561e61470726a30"
+        },
+        {
+          "line": 16,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "07b8eb51270383c169ee349a87acf0979d90b86df56bbda9ea208f57bb872dd6"
+        },
+        {
+          "line": 19,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5e0c9274985db89161fe47edad054fbbdc2dcf13dd7604516868e5b0503cd1ac"
+        },
+        {
+          "line": 20,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "dbfab09d0e13cbd145c8ab1ecc337e86a1419fe6fa15fe79f23f62fd216d2b03"
+        },
+        {
+          "line": 22,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ad1633366f8caa3d7cae2c4bfa66ec962939874c556e39abc407cd6d19eb9b53"
+        },
+        {
+          "line": 24,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "7a867b44abd409b3152dcf7c436aa714776d9a28c450b0308d602df732882d12"
+        },
+        {
+          "line": 25,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "2131c514040fc3e0b3b1d2f5724b99fc425c04b1712c913be8ad99d7c29c266d"
+        },
+        {
+          "line": 27,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "cbaffec5f0c4fb0e1a50195736b2bd9613adb632e4dccf678e6846b749576cb3"
+        },
+        {
+          "line": 28,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "15556084e9ebbf56192276eeb9f09d90ff3d3fa7cbb5ce175c67fbde26603529"
+        },
+        {
+          "line": 29,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "4b5eabc5d20115a44bd44eedeee1142b3ffe2542b27d9d3e280e0188e60891bd"
+        },
+        {
+          "line": 31,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "4c1301ce59e5cbfe073a12333c6da0fdec506ec30a1a2ea464eb6105ac868e61"
+        },
+        {
+          "line": 32,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "501962b5faf98906f9e82432170feb858f9885160324b281aa01fce9b5761dfd"
+        },
+        {
+          "line": 34,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d4abc6dd2e7585c9f3cc269bb1ef33a4f8f9f30f21879df81df6f75418b70a13"
+        },
+        {
+          "line": 35,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "650c87c866ecd79dc6a3899e6ca7cf44faaad51eaef9823e19a0b658eacc23c8"
+        },
+        {
+          "line": 36,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5aba76340ae63b3ffa456fd3252f6491ddc60b9fd1ec7032ff3b9ab1af0be70e"
+        },
+        {
+          "line": 38,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "6f377a82d7c746b163ef8af1ace94aefaaa2e44b65b2deb5e5201fc68262c574"
+        },
+        {
+          "line": 39,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "51dae64ae54d9d01ea000cd24bc123b853e8e5c36a613656574901f27f9008b5"
+        },
+        {
+          "line": 41,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "968c29a958c9e1db1760a2dbe0518e3d18e0f95d2aefade7db94a0e23812ad3f"
+        },
+        {
+          "line": 42,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ad83932566de82fa66a0b1b4a6081d22a499046004b674e4f0354398a8eb0de6"
+        },
+        {
+          "line": 43,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1d74f28132db31ab93a2cb6222ff1899a223bcbd4738e323d78381e264bdb70a"
+        },
+        {
+          "line": 45,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f394a91c32bbffc81289cee7f63f81eda6a460666bed4b48292895c1ea1422f1"
+        },
+        {
+          "line": 46,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "c69deb9b6e2854f402ae9b5261b8a7cfe46b4badd183dc3afb350934abd72f8d"
+        },
+        {
+          "line": 48,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e7219be5ca43905f70b11ace21ee3f353b128cdce538b2b4600b8ffaa01786f0"
+        },
+        {
+          "line": 49,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "4ee95df4056e8c1fe8791845cdabac1682699c34e132f30e309ffec5a50e8e8b"
+        },
+        {
+          "line": 50,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "6c05d8ff7096895736694a4eeef0994348e720c6b89476df6f2a0ecc8c828d74"
+        },
+        {
+          "line": 51,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e13047c9b6de2169fe49e02520d97de7fcd468230fecfbd34273ed63f9b14ccc"
+        },
+        {
+          "line": 54,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5a59485ad9f358cde178b151ecac58a9ec2eac67e73dc91ae79cc44cf0493531"
+        },
+        {
+          "line": 55,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0771c9d6610a691c3186d171326db79e77041b3292b219b527e56453b407408b"
+        },
+        {
+          "line": 57,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ecf75e56c08c580c7ad564bb1472ae45e69dac75aacb5c98986701d02bce6f78"
+        },
+        {
+          "line": 58,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "a9bbb4b722f94dbe8f4b551782df83506bdc06dafaffccdc82aad0e92eb1c119"
+        },
+        {
+          "line": 59,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "776723d2bbb4ddf9be46ac683984b8121b9eb86f8435281abae081034ee963ad"
+        },
+        {
+          "line": 61,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e371f4922897c7bb6bc5c5c8035b188267cefd9fd0ca3e7b680796687c307b64"
+        },
+        {
+          "line": 62,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "293caa0247c08eacb00d7da2d6afe78efbe02a1ec1a537b2e711ad2b80df1168"
+        },
+        {
+          "line": 64,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f889c64dd2ed90a975893f64a6177c3ed549580fcc4a8140d5941665658061e3"
+        },
+        {
+          "line": 66,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "fe8e5474c95eb1422d23431ef5c284b547b1d3bab5f9e5efcd9763da28c36f3d"
+        },
+        {
+          "line": 67,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "79c18817a5de97bb50492945e2bbdd4710c4faaef8643c8d2f56f49cacb559f3"
+        },
+        {
+          "line": 69,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "b02a6fd3e55534c18595ff4b60bbe29e338ff6abc786a6c5868ed7ed881c0bbe"
+        },
+        {
+          "line": 70,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "90b786af3554baa886b916f501c5030398a2a52f9aa090ccaba3be83e7b380bc"
+        },
+        {
+          "line": 71,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "58fb50cbf1c6726fb0c413aef165dc3d348e220d1fdbbc29964321b54e9efe8b"
+        },
+        {
+          "line": 73,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "a6ebe925ebe64c624fb0a2634a949a3623cb7913534fe718bbb09b9a67493485"
+        },
+        {
+          "line": 74,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "21079ddde0132a82bc43aa26632f883ff2308c0d53c1e91646a73a518452b58c"
+        },
+        {
+          "line": 76,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1b7ec775f55394e131400b51d01bf3b251171de067a1e146a3089039cc101cb7"
+        },
+        {
+          "line": 77,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "bb0fcbc23616600970ebd38425ce9e61d105a1589a9d39c2efac4fabdcda7a3e"
+        },
+        {
+          "line": 78,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "c2c4638826c110285d66db341b0d10d665ab2a928bab08db49db220eec6c2de1"
+        },
+        {
+          "line": 80,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "48ac780cb9020c0aca31c8da1b98dcae4ec2c89c2e6a0e822cbf46117a9c6fc9"
+        },
+        {
+          "line": 81,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "512109666f01545b52ec6c63a3ccb73bdda3a7b901a3eeca004ae82d5e122935"
+        },
+        {
+          "line": 83,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "c1edab00a096f2ff947d79bfc2e82907332430b4e369c3e0e7143f4e31e1093c"
+        },
+        {
+          "line": 84,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "78ca82dbf351dbc54ad154241883d99df1252d651a88830cb9a63b7db3cd5d08"
+        },
+        {
+          "line": 85,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0384e6e723bc196fb405802f391e1e4759b55d81782bce193942fd6846e0e6fa"
+        },
+        {
+          "line": 87,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5f03bef857f144186951f7ce8ebe4b50b3ab705f2518852fbfab6b5b0e13e799"
+        },
+        {
+          "line": 88,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "c3006f12866c5be3b30ee20948343d069a4e1c5561453dd43a3eff4f7c012b1f"
+        },
+        {
+          "line": 90,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "3c8ce215b5f044fad73667f5efc63d6dabb07e3120bc831ed8128191fee63704"
+        },
+        {
+          "line": 91,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d075ae93e63693e37d845ba3461ae0a3ac3492f347ee1a3eb6bb9814b843894e"
+        },
+        {
+          "line": 92,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e078b1030d56261213e79dc0b6555eb9bdb49a62e86c2762a96bc07daf4a7e3a"
+        },
+        {
+          "line": 93,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e27c328230a3ca74653df90ff17f438f7ca016d5ad35e0a616552351997b41ad"
+        },
+        {
+          "line": 96,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "9db25d2353a24a6539117b34578eb129274eae1136cc6158654f45972a83ce81"
+        },
+        {
+          "line": 97,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1454659f954039b215fd11cfec1d01730cb8703ffdfd9f0610f6903de4a1fdf6"
+        },
+        {
+          "line": 99,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "34a462ca57c903325182b9808425ce82cb16aabe5642fb1ba0935b9026415963"
+        },
+        {
+          "line": 100,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "cd1d19923436faa6b663b9a990b2dee933418a50e95a713df748bdbc38477327"
+        },
+        {
+          "line": 101,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f0566a73022149915a70e26be3461e3f45ecef2355a17465ba3da494fedba1ad"
+        },
+        {
+          "line": 103,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f9f5ee01b35647b2cad8226861a64ee97c560374799bd33f67a9e2e9848993a9"
+        },
+        {
+          "line": 104,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "cb5175e4ecc622d9a31dfa0c2e7cbea771301b06b474fbd0bf23c68f20b17370"
+        },
+        {
+          "line": 106,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1def539d0619373a6810ec7b1353f408220fb321376f872c61d3b64fd27b1c6d"
+        },
+        {
+          "line": 107,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "4d5d6ce0d245fac73824ba7f0108a9828087e6452eb704133c837719f3d4f751"
+        },
+        {
+          "line": 108,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "4e11a05556aa4ccba839332c53559e143dbb80299a6b0caa3afe27d73447989f"
+        },
+        {
+          "line": 109,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "197c44d64bdbfb06b54863ec75883ff3442f5e18ed6cb5aa16acb733c7c239a6"
+        },
+        {
+          "line": 111,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d3585bf30c453000e4e5d6266786b8845e173197049ae5ae4c0b26be22090749"
+        },
+        {
+          "line": 112,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0e1c7df5c1cf29e41ca1b0b062937e614b1a2714c808f661fec25cabec9b7a1d"
+        },
+        {
+          "line": 113,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "074987839be90ee854a711d4dd4c9b36ec2f0163167a613839891a8535330958"
+        },
+        {
+          "line": 114,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "eef588d7efd5ede618d0ed5acfbb70d10e265cba74873a75aaa85cdef627e2a3"
+        },
+        {
+          "line": 115,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "b48141d2841cbbccbbf996e11ce0248742fc6d471bb4b4250ad17cc81f2c4a7d"
+        },
+        {
+          "line": 116,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "c3b44f8a45dd4f15ca88bbda456e94c062f0502da5420a10f8ce7585113dc640"
+        },
+        {
+          "line": 118,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "134a8eb48b5a420d8b95f23ffe28dec42a55daee89e2b39f79966860f2bb257e"
+        },
+        {
+          "line": 119,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "6e50fcd0cb261285d918d5f14057d7067160951db6ae9768d629beef1bd373a1"
+        },
+        {
+          "line": 120,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f37477705799b88624dc47ded5011dc3c4fc9a8decbb6a658d5b1dbc87616802"
+        },
+        {
+          "line": 123,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "2cca8048c0ffe4d45fce18e26ca6a69a9a0fdf04d423675fba1c7887e2f532e9"
+        },
+        {
+          "line": 124,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d3f96134ad77b88012ace1721a7b7b18f2b1da7e783b68c159ab87bfa967ef18"
+        },
+        {
+          "line": 126,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "3373cd335f279b7abab00150bf27742d28a53456350cf68d2ace4d8ad9b5c5e1"
+        },
+        {
+          "line": 127,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "976e19acfda129b687871a7969eab873085478efc5b9600a3d7b7b18c923d4c6"
+        },
+        {
+          "line": 128,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "b2e9345e51603d0b837cc7641c38ffabea98ed80c6cf163b78b12d48d9412753"
+        },
+        {
+          "line": 130,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "7576fd10dbcaed29f95185e271ea73d0c9ed1a8f68046e34f71a813da85a1cca"
+        },
+        {
+          "line": 131,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "645f18001e4fc97502d7b2028736f8f952c00347a00a18d8bbc8c16699a95fd9"
+        },
+        {
+          "line": 133,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "16017337343efca00d322b97170c2335b6706d62e9e701f3c76fecada07b76b8"
+        },
+        {
+          "line": 134,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "2fa7113a4ed040139f85c9e35ed003ce7865f465643f5612ab63210d8f53429a"
+        },
+        {
+          "line": 135,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "9888ac476a4d434246d4c0f1c5faec80b36d80c9b8007793ea6d8a3e491b58b4"
+        },
+        {
+          "line": 136,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "f4300f52607fcbbff0afdac9574f2a0d0f4add8eacfdc3712a6947cda233da0d"
+        },
+        {
+          "line": 137,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "6990c3c8e71454080320d37c3fa53f5e1ac48e9fb3a8816ba9e1091572948eaf"
+        },
+        {
+          "line": 138,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ed70f2ee5ad603da01b2aeef9ccb6282f4e02cdb2e4de50f0297544b783e2852"
+        },
+        {
+          "line": 140,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "fd671eb209bf7429afd0af802d7bedcfe2887a403eff728e41d8a72a838c4819"
+        },
+        {
+          "line": 141,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "af2b8c2dfe95ca61948ef8388b044a56da8c8d76c0af624b7d4c275965279857"
+        },
+        {
+          "line": 143,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "29aa61247661a39ecd9ac40ab485089092a6f2d02f4c3cc07651a94ef7fd06b7"
+        },
+        {
+          "line": 144,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5f4f0cadca804eb508903b9dc90b68d786271e01fe5ef80e0a0a576cc86d5de7"
+        },
+        {
+          "line": 146,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "ce90a9a00f18501a10d35876aaea94dd605cb16019d3b18dd67d8951942ccd98"
+        },
+        {
+          "line": 147,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "5e397f821a39c0b974dd3c61eb96407e93ab1718ab4846dc00c17eec3bcd2f23"
+        },
+        {
+          "line": 148,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e4f4b19342c30add63bd044ec977b1e7e2ff60dcc26fcce5811f1854eacb6541"
+        },
+        {
+          "line": 150,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "4974fbd196ca39940dbee8b36372e40c5e3e154e734473e8f828639eb498c8c5"
+        },
+        {
+          "line": 151,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "4bbe25b65fae9ff6be2f6f41e2769251c1e9fdef9d638b5741dd05c215805ad3"
+        },
+        {
+          "line": 153,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "9f5b2283299e0df7dfb38d9c28a822ae142bab33d91093be4c96cc20c330e582"
+        },
+        {
+          "line": 154,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "32dd3e0fd96744467fb5c19be44c6a9af0355b33b11dcd5626d74956f5115bca"
+        },
+        {
+          "line": 155,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "1c97bcea59cab501b279938ae81b61efe53f6e75be8ebfaa1d56313a58d7dfa0"
+        },
+        {
+          "line": 157,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "413067d577381f78d74ab56944ac4e21f1cddfc60ad3b22a39751cb485bb5ff6"
+        },
+        {
+          "line": 158,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "e704b6284aa072ffa5be39492574bcf525ebbf81ddb0dc876685b1fd2636221d"
+        },
+        {
+          "line": 160,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "05f208b133d32806ca3cae8c54283c22b86c81f65f634cc1bf5e4a6bec1c9034"
+        },
+        {
+          "line": 161,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "35570af0d947b65840636729f2dfa16a232fa955ee6cfb577789af67a1630d79"
+        },
+        {
+          "line": 163,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "d983ebfefe02ca582c65cd6950e8f53afbd82b047d37c72d7b69e02cb635bcfc"
+        },
+        {
+          "line": 164,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "afc20a7228523d68f646bf5c8c4ff62c57f46963b1da5c130b35f098221d0d74"
+        },
+        {
+          "line": 165,
+          "reason": "Non-visible event, internal context/reasoning, or duplicate bookkeeping",
+          "sha256": "0a776829d6da63cbfc1837ea7534fff8fd5cfa57a69807ac90475ec74463164c"
+        }
+      ],
+      "output": "peer_visible_fields.jsonl",
+      "output_sha256": "64ea0e9e750ffe293ff368ca19152e0073d6e340f400456889314ae7fd928abd"
+    }
+  ]
+}

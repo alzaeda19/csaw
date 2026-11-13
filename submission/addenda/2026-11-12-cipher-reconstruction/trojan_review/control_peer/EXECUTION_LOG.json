@@ -1,0 +1,26 @@
+{
+  "runs": [
+    {
+      "utc": "2026-11-13T02:35:28.351447+00:00",
+      "command": [
+        "python3",
+        "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/control_peer/analyze_control.py"
+      ],
+      "returncode": 0,
+      "stdout_file": "run.stdout.txt",
+      "stderr_file": "run.stderr.txt",
+      "script_sha256": "fe5073646139971da62a7f8a7586fa8067dfeb5677c118c6e17f4ad4f58e9859"
+    },
+    {
+      "utc": "2026-11-13T02:37:27.607478+00:00",
+      "command": [
+        "python3",
+        "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/control_peer/analyze_control.py"
+      ],
+      "returncode": 0,
+      "stdout_file": "run.final.stdout.txt",
+      "stderr_file": "run.final.stderr.txt",
+      "script_sha256": "d7fd36dda83d1e4a60eb73b71c5d4159c3758b8e7ea33da6fd7f66d6cfbd5115"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "baseline_sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+  "byte_identities": 4096,
+  "byte_checks_pass": true,
+  "control_identities_reported_and_reviewed": 9344,
+  "control_combinations": 512,
+  "serial_chain_links_checked": 32,
+  "native_register_definitions_checked": 71,
+  "first_step_qualifier_independence_checks": 32,
+  "original_known_vector_pairs": 1,
+  "known_pair_both_directions_pass": true,
+  "portable_copy_exit_code": 0,
+  "portable_structured_files_byte_identical": 3,
+  "native_retained_records": 93,
+  "native_exact_scalar_fields": 594,
+  "native_line_and_prefix_hashes_pass": true,
+  "repository_writes": false,
+  "HDL_execution_by_this_audit": false,
+  "hardware_operation": false,
+  "numeric_key_artifact": false
+}

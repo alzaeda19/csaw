@@ -1,0 +1,914 @@
+{
+  "method": "Static source-text parse; exhaustive evaluation of control-cone Boolean expressions and one-edge transition identities. No HDL execution; INIT lines excluded from parsing; no ROM values or key data extracted or interpreted.",
+  "source": {
+    "path": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/rtl/baseline.v",
+    "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+    "lines": 45711
+  },
+  "variables": {
+    "R": "io_13_31_1 (active-low reset released)",
+    "S": "io_18_31_1 (START)",
+    "CS_N": "io_17_31_0",
+    "A": "(n842,n840), high then low",
+    "B": "(n844,n846), high then low",
+    "Q": "n588",
+    "D": "n972"
+  },
+  "equations": {
+    "n840_next": "R & ~n840 & (S | n842)",
+    "n842_next": "R & (n842 XOR n840)",
+    "n846_next": "R & ~n846 & (S | n844)",
+    "n844_next": "R & (n844 XOR n846)",
+    "n588_next": "R & (n588 | S | n840 | n842)",
+    "n972_next": "BUSY",
+    "n681": "~R | S | n840 | n842",
+    "n3": "~R | S | n844 | n846",
+    "n680": "~R | (S & ~(n840 | n842))",
+    "n845": "~R | (S & ~(n844 | n846))",
+    "n749_RAM_RCLKE": "R & (S | n840 | n842)",
+    "BUSY": "R & (S | n840 | n842 | n844 | n846)",
+    "n970": "~BUSY",
+    "n1": "~CS_N | ~R | (n972 & ~BUSY)"
+  },
+  "exhaustive_combinations": 512,
+  "checked_identities": 9344,
+  "passed": true,
+  "qualification_gates": [
+    {
+      "net": "n1461",
+      "other_input": "n690",
+      "line": 42920,
+      "expr": " (n690 ? n588 : 1'b0)",
+      "source": "assign n1461 = /* LUT    7  5  0 */ (n690 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n1567",
+      "other_input": "n706",
+      "line": 43026,
+      "expr": " (n706 ? n588 : 1'b0)",
+      "source": "assign n1567 = /* LUT    7 10  3 */ (n706 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n1640",
+      "other_input": "n479",
+      "line": 43099,
+      "expr": " (n479 ? n588 : 1'b0)",
+      "source": "assign n1640 = /* LUT    5  8  6 */ (n479 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n1644",
+      "other_input": "n704",
+      "line": 43103,
+      "expr": " (n588 ? n704 : 1'b0)",
+      "source": "assign n1644 = /* LUT    8  8  3 */ (n588 ? n704 : 1'b0);"
+    },
+    {
+      "net": "n1678",
+      "other_input": "n613",
+      "line": 43137,
+      "expr": " (n613 ? n588 : 1'b0)",
+      "source": "assign n1678 = /* LUT    8  7  6 */ (n613 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n1679",
+      "other_input": "n721",
+      "line": 43138,
+      "expr": " (n721 ? n588 : 1'b0)",
+      "source": "assign n1679 = /* LUT    7 11  7 */ (n721 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n1739",
+      "other_input": "n700",
+      "line": 43198,
+      "expr": " (n588 ? n700 : 1'b0)",
+      "source": "assign n1739 = /* LUT    7  9  4 */ (n588 ? n700 : 1'b0);"
+    },
+    {
+      "net": "n1777",
+      "other_input": "n703",
+      "line": 43236,
+      "expr": " (n703 ? n588 : 1'b0)",
+      "source": "assign n1777 = /* LUT    8  8  2 */ (n703 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n1780",
+      "other_input": "n692",
+      "line": 43239,
+      "expr": " (n588 ? n692 : 1'b0)",
+      "source": "assign n1780 = /* LUT    7  5  1 */ (n588 ? n692 : 1'b0);"
+    },
+    {
+      "net": "n1849",
+      "other_input": "n707",
+      "line": 43308,
+      "expr": " (n707 ? n588 : 1'b0)",
+      "source": "assign n1849 = /* LUT    8 10  5 */ (n707 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n1885",
+      "other_input": "n705",
+      "line": 43344,
+      "expr": " (n588 ? n705 : 1'b0)",
+      "source": "assign n1885 = /* LUT    7 10  4 */ (n588 ? n705 : 1'b0);"
+    },
+    {
+      "net": "n1887",
+      "other_input": "n605",
+      "line": 43346,
+      "expr": " (n605 ? n588 : 1'b0)",
+      "source": "assign n1887 = /* LUT    8  9  7 */ (n605 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n1922",
+      "other_input": "n691",
+      "line": 43381,
+      "expr": " (n588 ? n691 : 1'b0)",
+      "source": "assign n1922 = /* LUT    7  6  1 */ (n588 ? n691 : 1'b0);"
+    },
+    {
+      "net": "n1995",
+      "other_input": "n689",
+      "line": 43454,
+      "expr": " (n588 ? n689 : 1'b0)",
+      "source": "assign n1995 = /* LUT    8  7  7 */ (n588 ? n689 : 1'b0);"
+    },
+    {
+      "net": "n1996",
+      "other_input": "n701",
+      "line": 43455,
+      "expr": " (n701 ? n588 : 1'b0)",
+      "source": "assign n1996 = /* LUT    7  8  3 */ (n701 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n2032",
+      "other_input": "n722",
+      "line": 43491,
+      "expr": " (n588 ? n722 : 1'b0)",
+      "source": "assign n2032 = /* LUT    5 11  5 */ (n588 ? n722 : 1'b0);"
+    },
+    {
+      "net": "n2074",
+      "other_input": "n724",
+      "line": 43533,
+      "expr": " (n588 ? n724 : 1'b0)",
+      "source": "assign n2074 = /* LUT    7 10  6 */ (n588 ? n724 : 1'b0);"
+    },
+    {
+      "net": "n2218",
+      "other_input": "n693",
+      "line": 43677,
+      "expr": " (n588 ? n693 : 1'b0)",
+      "source": "assign n2218 = /* LUT    7  7  7 */ (n588 ? n693 : 1'b0);"
+    },
+    {
+      "net": "n2232",
+      "other_input": "n718",
+      "line": 43691,
+      "expr": " (n588 ? n718 : 1'b0)",
+      "source": "assign n2232 = /* LUT    5 10  2 */ (n588 ? n718 : 1'b0);"
+    },
+    {
+      "net": "n2326",
+      "other_input": "n694",
+      "line": 43784,
+      "expr": " (n694 ? n588 : 1'b0)",
+      "source": "assign n2326 = /* LUT    7  5  7 */ (n694 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n2362",
+      "other_input": "n696",
+      "line": 43820,
+      "expr": " (n696 ? n588 : 1'b0)",
+      "source": "assign n2362 = /* LUT    7  8  7 */ (n696 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n2433",
+      "other_input": "n695",
+      "line": 43891,
+      "expr": " (n588 ? n695 : 1'b0)",
+      "source": "assign n2433 = /* LUT    7  6  4 */ (n588 ? n695 : 1'b0);"
+    },
+    {
+      "net": "n2466",
+      "other_input": "n723",
+      "line": 43924,
+      "expr": " (n588 ? n723 : 1'b0)",
+      "source": "assign n2466 = /* LUT    7 10  0 */ (n588 ? n723 : 1'b0);"
+    },
+    {
+      "net": "n2469",
+      "other_input": "n699",
+      "line": 43927,
+      "expr": " (n588 ? n699 : 1'b0)",
+      "source": "assign n2469 = /* LUT    8  8  7 */ (n588 ? n699 : 1'b0);"
+    },
+    {
+      "net": "n2504",
+      "other_input": "n720",
+      "line": 43962,
+      "expr": " (n720 ? n588 : 1'b0)",
+      "source": "assign n2504 = /* LUT    7  9  2 */ (n720 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n2505",
+      "other_input": "n719",
+      "line": 43963,
+      "expr": " (n588 ? n719 : 1'b0)",
+      "source": "assign n2505 = /* LUT    7  8  6 */ (n588 ? n719 : 1'b0);"
+    },
+    {
+      "net": "n2538",
+      "other_input": "n622",
+      "line": 43996,
+      "expr": " (n622 ? n588 : 1'b0)",
+      "source": "assign n2538 = /* LUT    7 12  2 */ (n622 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n2636",
+      "other_input": "n711",
+      "line": 44094,
+      "expr": " (n588 ? n711 : 1'b0)",
+      "source": "assign n2636 = /* LUT    7  9  1 */ (n588 ? n711 : 1'b0);"
+    },
+    {
+      "net": "n2639",
+      "other_input": "n709",
+      "line": 44097,
+      "expr": " (n588 ? n709 : 1'b0)",
+      "source": "assign n2639 = /* LUT    7 10  2 */ (n588 ? n709 : 1'b0);"
+    },
+    {
+      "net": "n2780",
+      "other_input": "n710",
+      "line": 44238,
+      "expr": " (n710 ? n588 : 1'b0)",
+      "source": "assign n2780 = /* LUT    7 10  1 */ (n710 ? n588 : 1'b0);"
+    },
+    {
+      "net": "n2781",
+      "other_input": "n702",
+      "line": 44239,
+      "expr": " (n588 ? n702 : 1'b0)",
+      "source": "assign n2781 = /* LUT    8  9  4 */ (n588 ? n702 : 1'b0);"
+    },
+    {
+      "net": "n2826",
+      "other_input": "n708",
+      "line": 44284,
+      "expr": " (n588 ? n708 : 1'b0)",
+      "source": "assign n2826 = /* LUT    7  9  3 */ (n588 ? n708 : 1'b0);"
+    }
+  ],
+  "phase_table": [
+    {
+      "label": "reset edge",
+      "pre": {
+        "R": 0,
+        "S": 0,
+        "CS_N": 1,
+        "A": 0,
+        "B": 0,
+        "Q": 0,
+        "D": 0
+      },
+      "sampled_controls": {
+        "n1": 1,
+        "n2": 1,
+        "n3": 1,
+        "n681": 1,
+        "n680": 1,
+        "n845": 1,
+        "n383": 0,
+        "n485": 0,
+        "n970": 1,
+        "n749": 0,
+        "io_8_31_1": 0,
+        "io_19_31_0": 0
+      },
+      "post": {
+        "A": 0,
+        "B": 0,
+        "Q": 0,
+        "D": 0,
+        "BUSY_after_START_low": 0,
+        "serial_enable_after_START_low": 1
+      }
+    },
+    {
+      "label": "idle / shift edge",
+      "pre": {
+        "R": 1,
+        "S": 0,
+        "CS_N": 0,
+        "A": 0,
+        "B": 0,
+        "Q": 0,
+        "D": 0
+      },
+      "sampled_controls": {
+        "n1": 1,
+        "n2": 0,
+        "n3": 0,
+        "n681": 0,
+        "n680": 0,
+        "n845": 0,
+        "n383": 0,
+        "n485": 0,
+        "n970": 1,
+        "n749": 0,
+        "io_8_31_1": 0,
+        "io_19_31_0": 0
+      },
+      "post": {
+        "A": 0,
+        "B": 0,
+        "Q": 0,
+        "D": 0,
+        "BUSY_after_START_low": 0,
+        "serial_enable_after_START_low": 1
+      }
+    },
+    {
+      "label": "launch edge 1",
+      "pre": {
+        "R": 1,
+        "S": 1,
+        "CS_N": 1,
+        "A": 0,
+        "B": 0,
+        "Q": 0,
+        "D": 0
+      },
+      "sampled_controls": {
+        "n1": 0,
+        "n2": 0,
+        "n3": 1,
+        "n681": 1,
+        "n680": 1,
+        "n845": 1,
+        "n383": 0,
+        "n485": 0,
+        "n970": 0,
+        "n749": 1,
+        "io_8_31_1": 1,
+        "io_19_31_0": 1
+      },
+      "post": {
+        "A": 1,
+        "B": 1,
+        "Q": 1,
+        "D": 1,
+        "BUSY_after_START_low": 1,
+        "serial_enable_after_START_low": 0
+      }
+    },
+    {
+      "label": "run edge 2",
+      "pre": {
+        "R": 1,
+        "S": 0,
+        "CS_N": 1,
+        "A": 1,
+        "B": 1,
+        "Q": 1,
+        "D": 1
+      },
+      "sampled_controls": {
+        "n1": 0,
+        "n2": 0,
+        "n3": 1,
+        "n681": 1,
+        "n680": 0,
+        "n845": 0,
+        "n383": 1,
+        "n485": 1,
+        "n970": 0,
+        "n749": 1,
+        "io_8_31_1": 1,
+        "io_19_31_0": 1
+      },
+      "post": {
+        "A": 2,
+        "B": 2,
+        "Q": 1,
+        "D": 1,
+        "BUSY_after_START_low": 1,
+        "serial_enable_after_START_low": 0
+      }
+    },
+    {
+      "label": "run edge 3",
+      "pre": {
+        "R": 1,
+        "S": 0,
+        "CS_N": 1,
+        "A": 2,
+        "B": 2,
+        "Q": 1,
+        "D": 1
+      },
+      "sampled_controls": {
+        "n1": 0,
+        "n2": 0,
+        "n3": 1,
+        "n681": 1,
+        "n680": 0,
+        "n845": 0,
+        "n383": 1,
+        "n485": 1,
+        "n970": 0,
+        "n749": 1,
+        "io_8_31_1": 1,
+        "io_19_31_0": 1
+      },
+      "post": {
+        "A": 3,
+        "B": 3,
+        "Q": 1,
+        "D": 1,
+        "BUSY_after_START_low": 1,
+        "serial_enable_after_START_low": 0
+      }
+    },
+    {
+      "label": "completion edge 4",
+      "pre": {
+        "R": 1,
+        "S": 0,
+        "CS_N": 1,
+        "A": 3,
+        "B": 3,
+        "Q": 1,
+        "D": 1
+      },
+      "sampled_controls": {
+        "n1": 0,
+        "n2": 0,
+        "n3": 1,
+        "n681": 1,
+        "n680": 0,
+        "n845": 0,
+        "n383": 1,
+        "n485": 1,
+        "n970": 0,
+        "n749": 1,
+        "io_8_31_1": 1,
+        "io_19_31_0": 1
+      },
+      "post": {
+        "A": 0,
+        "B": 0,
+        "Q": 1,
+        "D": 1,
+        "BUSY_after_START_low": 0,
+        "serial_enable_after_START_low": 1
+      }
+    },
+    {
+      "label": "parallel-result load edge 5",
+      "pre": {
+        "R": 1,
+        "S": 0,
+        "CS_N": 1,
+        "A": 0,
+        "B": 0,
+        "Q": 1,
+        "D": 1
+      },
+      "sampled_controls": {
+        "n1": 1,
+        "n2": 0,
+        "n3": 0,
+        "n681": 0,
+        "n680": 0,
+        "n845": 0,
+        "n383": 0,
+        "n485": 0,
+        "n970": 1,
+        "n749": 0,
+        "io_8_31_1": 0,
+        "io_19_31_0": 0
+      },
+      "post": {
+        "A": 0,
+        "B": 0,
+        "Q": 1,
+        "D": 0,
+        "BUSY_after_START_low": 0,
+        "serial_enable_after_START_low": 0
+      }
+    },
+    {
+      "label": "settled idle edge 6",
+      "pre": {
+        "R": 1,
+        "S": 0,
+        "CS_N": 1,
+        "A": 0,
+        "B": 0,
+        "Q": 1,
+        "D": 0
+      },
+      "sampled_controls": {
+        "n1": 0,
+        "n2": 0,
+        "n3": 0,
+        "n681": 0,
+        "n680": 0,
+        "n845": 0,
+        "n383": 0,
+        "n485": 0,
+        "n970": 1,
+        "n749": 0,
+        "io_8_31_1": 0,
+        "io_19_31_0": 0
+      },
+      "post": {
+        "A": 0,
+        "B": 0,
+        "Q": 1,
+        "D": 0,
+        "BUSY_after_START_low": 0,
+        "serial_enable_after_START_low": 0
+      }
+    }
+  ],
+  "source_references": [
+    {
+      "kind": "initializer",
+      "net": "n588",
+      "value": 0,
+      "line": 17236,
+      "source": "reg n588 = 0;"
+    },
+    {
+      "kind": "initializer",
+      "net": "n840",
+      "value": 0,
+      "line": 27112,
+      "source": "reg n840 = 0;"
+    },
+    {
+      "kind": "initializer",
+      "net": "n842",
+      "value": 0,
+      "line": 27142,
+      "source": "reg n842 = 0;"
+    },
+    {
+      "kind": "initializer",
+      "net": "n844",
+      "value": 0,
+      "line": 27213,
+      "source": "reg n844 = 0;"
+    },
+    {
+      "kind": "initializer",
+      "net": "n846",
+      "value": 0,
+      "line": 27242,
+      "source": "reg n846 = 0;"
+    },
+    {
+      "kind": "assignment",
+      "net": "io_19_31_0",
+      "line": 30051,
+      "expr": "io_8_31_1",
+      "source": "assign io_19_31_0 = io_8_31_1;"
+    },
+    {
+      "kind": "initializer",
+      "net": "n972",
+      "value": 0,
+      "line": 30111,
+      "source": "reg n972 = 0;"
+    },
+    {
+      "kind": "memory_read_pin",
+      "line": 42795,
+      "source": "  .RCLKE(n749),"
+    },
+    {
+      "kind": "memory_read_pin",
+      "line": 42796,
+      "source": "  .RCLK(io_9_31_1)"
+    },
+    {
+      "kind": "memory_read_pin",
+      "line": 42829,
+      "source": "  .RCLKE(n749),"
+    },
+    {
+      "kind": "memory_read_pin",
+      "line": 42830,
+      "source": "  .RCLK(io_9_31_1)"
+    },
+    {
+      "kind": "memory_read_pin",
+      "line": 42863,
+      "source": "  .RCLKE(n749),"
+    },
+    {
+      "kind": "memory_read_pin",
+      "line": 42864,
+      "source": "  .RCLK(io_9_31_1)"
+    },
+    {
+      "kind": "memory_read_pin",
+      "line": 42897,
+      "source": "  .RCLKE(n749),"
+    },
+    {
+      "kind": "memory_read_pin",
+      "line": 42898,
+      "source": "  .RCLK(io_9_31_1)"
+    },
+    {
+      "kind": "assignment",
+      "net": "n1479",
+      "line": 42938,
+      "expr": " (n383 ? 1'b0 : !n749)",
+      "source": "assign n1479 = /* LUT    8 18  0 */ (n383 ? 1'b0 : !n749);"
+    },
+    {
+      "kind": "assignment",
+      "net": "n1563",
+      "line": 43022,
+      "expr": " (io_18_31_1 ? 1'b1 : (io_13_31_1 ? (n840 ? 1'b1 : n842) : 1'b1))",
+      "source": "assign n1563 = /* LUT    7 17  6 */ (io_18_31_1 ? 1'b1 : (io_13_31_1 ? (n840 ? 1'b1 : n842) : 1'b1));"
+    },
+    {
+      "kind": "assignment",
+      "net": "n1630",
+      "line": 43089,
+      "expr": " (n972 ? (io_17_31_0 ? (io_13_31_1 ? n970 : 1'b1) : 1'b1) : (io_17_31_0 ? !io_13_31_1 : 1'b1))",
+      "source": "assign n1630 = /* LUT    8 19  0 */ (n972 ? (io_17_31_0 ? (io_13_31_1 ? n970 : 1'b1) : 1'b1) : (io_17_31_0 ? !io_13_31_1 : 1'b1));"
+    },
+    {
+      "kind": "assignment",
+      "net": "n1664",
+      "line": 43123,
+      "expr": " (n383 ? 1'b1 : n749)",
+      "source": "assign n1664 = /* LUT    8 18  2 */ (n383 ? 1'b1 : n749);"
+    },
+    {
+      "kind": "assignment",
+      "net": "n1817",
+      "line": 43276,
+      "expr": " n466",
+      "source": "assign n1817 = /* LUT    7 12  7 */ n466;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n1925",
+      "line": 43384,
+      "expr": " 1'b1",
+      "source": "assign n1925 = /* LUT    7  9  6 */ 1'b1;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n1951",
+      "line": 43410,
+      "expr": " (n840 ? io_13_31_1 : (n842 ? io_13_31_1 : 1'b0))",
+      "source": "assign n1951 = /* LUT    7 17  0 */ (n840 ? io_13_31_1 : (n842 ? io_13_31_1 : 1'b0));"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2031",
+      "line": 43490,
+      "expr": " !n846",
+      "source": "assign n2031 = /* LUT    7 19  2 */ !n846;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2167",
+      "line": 43626,
+      "expr": " (n844 ? 1'b1 : (io_18_31_1 ? 1'b1 : (io_13_31_1 ? n846 : 1'b1)))",
+      "source": "assign n2167 = /* LUT    7 19  1 */ (n844 ? 1'b1 : (io_18_31_1 ? 1'b1 : (io_13_31_1 ? n846 : 1'b1)));"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2305",
+      "line": 43764,
+      "expr": " io_8_31_1",
+      "source": "assign n2305 = /* LUT    8 19  5 */ io_8_31_1;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2314",
+      "line": 43773,
+      "expr": " (n840 ? !n842 : n842)",
+      "source": "assign n2314 = /* LUT    7 17  4 */ (n840 ? !n842 : n842);"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2425",
+      "line": 43883,
+      "expr": " (n844 ? !n846 : n846)",
+      "source": "assign n2425 = /* LUT    7 18  1 */ (n844 ? !n846 : n846);"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2465",
+      "line": 43923,
+      "expr": " (io_13_31_1 ? (n846 ? 1'b1 : n844) : 1'b0)",
+      "source": "assign n2465 = /* LUT    7 18  4 */ (io_13_31_1 ? (n846 ? 1'b1 : n844) : 1'b0);"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2502",
+      "line": 43960,
+      "expr": " !n840",
+      "source": "assign n2502 = /* LUT    7 16  5 */ !n840;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2635",
+      "line": 44093,
+      "expr": " (io_13_31_1 ? (n485 ? 1'b1 : io_18_31_1) : n485)",
+      "source": "assign n2635 = /* LUT    7 17  5 */ (io_13_31_1 ? (n485 ? 1'b1 : io_18_31_1) : n485);"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2779",
+      "line": 44237,
+      "expr": " (n383 ? 1'b0 : (io_18_31_1 ? 1'b1 : !io_13_31_1))",
+      "source": "assign n2779 = /* LUT    7 18  5 */ (n383 ? 1'b0 : (io_18_31_1 ? 1'b1 : !io_13_31_1));"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2825",
+      "line": 44283,
+      "expr": " (io_18_31_1 ? !n485 : (n485 ? 1'b0 : !io_13_31_1))",
+      "source": "assign n2825 = /* LUT    7 17  7 */ (io_18_31_1 ? !n485 : (n485 ? 1'b0 : !io_13_31_1));"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2843",
+      "line": 44301,
+      "expr": " !io_13_31_1",
+      "source": "assign n2843 = /* LUT   14 30  4 */ !io_13_31_1;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n970",
+      "line": 44341,
+      "expr": "n1479",
+      "source": "/* FF  8 18  0 */ assign n970 = n1479;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n681",
+      "line": 44425,
+      "expr": "n1563",
+      "source": "/* FF  7 17  6 */ assign n681 = n1563;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n1",
+      "line": 44492,
+      "expr": "n1630",
+      "source": "/* FF  8 19  0 */ assign n1 = n1630;"
+    },
+    {
+      "kind": "assignment",
+      "net": "io_8_31_1",
+      "line": 44526,
+      "expr": "n1664",
+      "source": "/* FF  8 18  2 */ assign io_8_31_1 = n1664;"
+    },
+    {
+      "kind": "register",
+      "net": "n588",
+      "clock": "io_9_31_1",
+      "enable": "n681",
+      "reg": "n588",
+      "reset": "n2",
+      "reset_value": "1'b0",
+      "data": "n1817",
+      "line": 44679,
+      "source": "/* FF  7 12  7 */ always @(posedge io_9_31_1) if (n681) n588 <= n2 ? 1'b0 : n1817;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n466",
+      "line": 44787,
+      "expr": "n1925",
+      "source": "/* FF  7  9  6 */ assign n466 = n1925;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n485",
+      "line": 44813,
+      "expr": "n1951",
+      "source": "/* FF  7 17  0 */ assign n485 = n1951;"
+    },
+    {
+      "kind": "register",
+      "net": "n846",
+      "clock": "io_9_31_1",
+      "enable": "n3",
+      "reg": "n846",
+      "reset": "n2",
+      "reset_value": "1'b0",
+      "data": "n2031",
+      "line": 44893,
+      "source": "/* FF  7 19  2 */ always @(posedge io_9_31_1) if (n3) n846 <= n2 ? 1'b0 : n2031;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n3",
+      "line": 45029,
+      "expr": "n2167",
+      "source": "/* FF  7 19  1 */ assign n3 = n2167;"
+    },
+    {
+      "kind": "register",
+      "net": "n972",
+      "clock": "io_9_31_1",
+      "enable": "1'b1",
+      "reg": "n972",
+      "reset": "n2",
+      "reset_value": "1'b0",
+      "data": "n2305",
+      "line": 45167,
+      "source": "/* FF  8 19  5 */ always @(posedge io_9_31_1) if (1'b1) n972 <= n2 ? 1'b0 : n2305;"
+    },
+    {
+      "kind": "register",
+      "net": "n842",
+      "clock": "io_9_31_1",
+      "enable": "n681",
+      "reg": "n842",
+      "reset": "n680",
+      "reset_value": "1'b0",
+      "data": "n2314",
+      "line": 45176,
+      "source": "/* FF  7 17  4 */ always @(posedge io_9_31_1) if (n681) n842 <= n680 ? 1'b0 : n2314;"
+    },
+    {
+      "kind": "register",
+      "net": "n844",
+      "clock": "io_9_31_1",
+      "enable": "n3",
+      "reg": "n844",
+      "reset": "n845",
+      "reset_value": "1'b0",
+      "data": "n2425",
+      "line": 45287,
+      "source": "/* FF  7 18  1 */ always @(posedge io_9_31_1) if (n3) n844 <= n845 ? 1'b0 : n2425;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n383",
+      "line": 45327,
+      "expr": "n2465",
+      "source": "/* FF  7 18  4 */ assign n383 = n2465;"
+    },
+    {
+      "kind": "register",
+      "net": "n840",
+      "clock": "io_9_31_1",
+      "enable": "n681",
+      "reg": "n840",
+      "reset": "n2",
+      "reset_value": "1'b0",
+      "data": "n2502",
+      "line": 45364,
+      "source": "/* FF  7 16  5 */ always @(posedge io_9_31_1) if (n681) n840 <= n2 ? 1'b0 : n2502;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n749",
+      "line": 45497,
+      "expr": "n2635",
+      "source": "/* FF  7 17  5 */ assign n749 = n2635;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n845",
+      "line": 45641,
+      "expr": "n2779",
+      "source": "/* FF  7 18  5 */ assign n845 = n2779;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n680",
+      "line": 45687,
+      "expr": "n2825",
+      "source": "/* FF  7 17  7 */ assign n680 = n2825;"
+    },
+    {
+      "kind": "assignment",
+      "net": "n2",
+      "line": 45705,
+      "expr": "n2843",
+      "source": "/* FF 14 30  4 */ assign n2 = n2843;"
+    }
+  ],
+  "limits": [
+    "The phase schedule assumes one sampled START=1 edge, then START=0, reset released, CS_N high through the post-completion result-load edge.",
+    "These proofs do not establish datapath arithmetic or ROM identity.",
+    "Both counter groups initialize to 00 and have identical update functions, so equality is an inductive invariant for every sampled R/S sequence."
+  ]
+}

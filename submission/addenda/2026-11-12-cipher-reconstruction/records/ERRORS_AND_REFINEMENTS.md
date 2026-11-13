@@ -1,0 +1,9 @@
+# Errors and refinements
+
+- Initial model and cofactor-file display requests exceeded output limits. Full local JSON files remained intact; later inspection uses bounded summaries.
+- Earlier effective ROM byte ordering did not directly match AES. The new source-derived input/output wiring normalization is tested independently against the mathematical AES S-box below; the earlier direct mismatch never excluded reordered AES.
+- A bounded attempt to read Icarus output before the simulator step existed returned a missing-file error. Compilation was still running; no test result was inferred.
+- First Qwen review incorrectly called the static mask a possible key schedule, suggested identical masks across byte slots, and tied mode selection to the counter/START. These are not source-supported conclusions. Byte slots may have different fixed masks; mode selects the final path, not a counter-controlled direction. A corrective review is retained.
+- Second Qwen response still described a 32-bit mask per byte position and confused Icarus with physical validation. Corrected explicitly in QWEN_REVIEW_NOTES.md: one 32-bit mask total; simulator evidence is digital only. The prepared prompt's pending-Icarus status was superseded by the completed receipt.
+- The initial model printed every trace; its final script now prints only case summaries while retaining the full trace JSON. A fresh three-step replay matched all four deterministic result files, including that unchanged trace.
+- First packaging check stopped with a missing manifested Python cache file: broad cleanup had removed caches included in the independent audit manifest. All missing audit files were restored byte-for-byte from its unchanged source. The failed builder stopped before bundle/ZIP publication. See PUBLICATION_ERROR_1.json.

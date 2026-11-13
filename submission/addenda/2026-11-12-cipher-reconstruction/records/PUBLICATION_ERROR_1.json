@@ -1,0 +1,14 @@
+{
+  "step": "build_publication.py first run",
+  "exit_code": 1,
+  "error": "FileNotFoundError: trojan_review/__pycache__/check_byte_inverse.cpython-312.pyc",
+  "cause": "Parent cleanup removed generated caches, including caches deliberately included in the independent audit sealed manifest.",
+  "effect": "Preservation check stopped before new bundle/ZIP publication; original source audit and repository artifacts were not changed by the failed builder.",
+  "resolution": "Restored every missing manifested file byte-for-byte from the unchanged sealed source audit, including its recorded caches.",
+  "restored": [
+    "__pycache__/check_byte_inverse.cpython-312.pyc",
+    "__pycache__/trace_datapath.cpython-312.pyc",
+    "portable_reproduction/__pycache__/check_byte_inverse.cpython-312.pyc",
+    "portable_reproduction/__pycache__/trace_datapath.cpython-312.pyc"
+  ]
+}

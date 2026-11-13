@@ -1,0 +1,266 @@
+{
+  "scope": "Exact single-byte combinational identities using original Boolean cones and fixed primitive lookup semantics; not a clocked HDL/silicon proof",
+  "source_sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+  "effective_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+  "normalized_substitution_sha256": "c2d8e5eed6cbebd8625fc18f81486a7733c04f9b0129ffbe974c68b90308b4f2",
+  "standard_name_identified_by_this_script": false,
+  "normalized_substitution_relation": "S(x) = output-bit permutation [0,4,2,6,1,5,3,7] of T(ROR8(x,1))",
+  "byte_checks": [
+    {
+      "byte_slot": 0,
+      "forward_output_slot": 1,
+      "inverse_input_slot": 1,
+      "forward_is_bijection": true,
+      "inverse_is_bijection": true,
+      "forward_initial_equals_feedback": true,
+      "inverse_initial_equals_feedback": true,
+      "inverse_after_forward_all_256": true,
+      "forward_after_inverse_all_256": true
+    },
+    {
+      "byte_slot": 1,
+      "forward_output_slot": 2,
+      "inverse_input_slot": 2,
+      "forward_is_bijection": true,
+      "inverse_is_bijection": true,
+      "forward_initial_equals_feedback": true,
+      "inverse_initial_equals_feedback": true,
+      "inverse_after_forward_all_256": true,
+      "forward_after_inverse_all_256": true
+    },
+    {
+      "byte_slot": 2,
+      "forward_output_slot": 3,
+      "inverse_input_slot": 3,
+      "forward_is_bijection": true,
+      "inverse_is_bijection": true,
+      "forward_initial_equals_feedback": true,
+      "inverse_initial_equals_feedback": true,
+      "inverse_after_forward_all_256": true,
+      "forward_after_inverse_all_256": true
+    },
+    {
+      "byte_slot": 3,
+      "forward_output_slot": 0,
+      "inverse_input_slot": 0,
+      "forward_is_bijection": true,
+      "inverse_is_bijection": true,
+      "forward_initial_equals_feedback": true,
+      "inverse_initial_equals_feedback": true,
+      "inverse_after_forward_all_256": true,
+      "forward_after_inverse_all_256": true
+    }
+  ],
+  "exact_identities_checked": 4096,
+  "all_pass": true,
+  "round_equations": {
+    "forward": "out[(j+1) mod 4] = S(in[j] XOR K[j]), j=0..3, bytes numbered least-significant first",
+    "inverse": "out[j] = inverse_S(in[(j+1) mod 4]) XOR K[j]",
+    "K": "Symbolic fixed byte masks represented by original per-wire inversions. Numeric mask/key values are not computed or emitted as an artifact. No runtime key input or update state is inferred."
+  },
+  "source_cones": {
+    "initial": {
+      "forward_each_address_bit_is_one_literal": true,
+      "inverse_groups": [
+        {
+          "input_nets": [
+            "n1015",
+            "n1024",
+            "n1034",
+            "n1038",
+            "n1039",
+            "n898",
+            "n907",
+            "n998"
+          ],
+          "output_registers": [
+            "n586",
+            "n887",
+            "n457",
+            "n576",
+            "n745",
+            "n901",
+            "n351",
+            "n450"
+          ],
+          "input_count": 8,
+          "output_count": 8
+        },
+        {
+          "input_nets": [
+            "n798",
+            "n800",
+            "n810",
+            "n814",
+            "n910",
+            "n915",
+            "n917",
+            "n921"
+          ],
+          "output_registers": [
+            "n1042",
+            "n1025",
+            "n1023",
+            "n909",
+            "n1007",
+            "n946",
+            "n1037",
+            "n913"
+          ],
+          "input_count": 8,
+          "output_count": 8
+        },
+        {
+          "input_nets": [
+            "n384",
+            "n390",
+            "n601",
+            "n607",
+            "n609",
+            "n610",
+            "n619",
+            "n628"
+          ],
+          "output_registers": [
+            "n642",
+            "n152",
+            "n109",
+            "n635",
+            "n662",
+            "n663",
+            "n138",
+            "n247"
+          ],
+          "input_count": 8,
+          "output_count": 8
+        },
+        {
+          "input_nets": [
+            "n577",
+            "n578",
+            "n579",
+            "n587",
+            "n698",
+            "n776",
+            "n781",
+            "n897"
+          ],
+          "output_registers": [
+            "n42",
+            "n219",
+            "n554",
+            "n189",
+            "n461",
+            "n216",
+            "n566",
+            "n212"
+          ],
+          "input_count": 8,
+          "output_count": 8
+        }
+      ]
+    },
+    "feedback": {
+      "forward_each_address_bit_is_one_literal": true,
+      "inverse_groups": [
+        {
+          "input_nets": [
+            "n1007",
+            "n1023",
+            "n1025",
+            "n1037",
+            "n1042",
+            "n909",
+            "n913",
+            "n946"
+          ],
+          "output_registers": [
+            "n586",
+            "n887",
+            "n457",
+            "n576",
+            "n745",
+            "n901",
+            "n351",
+            "n450"
+          ],
+          "input_count": 8,
+          "output_count": 8
+        },
+        {
+          "input_nets": [
+            "n109",
+            "n138",
+            "n152",
+            "n247",
+            "n635",
+            "n642",
+            "n662",
+            "n663"
+          ],
+          "output_registers": [
+            "n1042",
+            "n1025",
+            "n1023",
+            "n909",
+            "n1007",
+            "n946",
+            "n1037",
+            "n913"
+          ],
+          "input_count": 8,
+          "output_count": 8
+        },
+        {
+          "input_nets": [
+            "n189",
+            "n212",
+            "n216",
+            "n219",
+            "n42",
+            "n461",
+            "n554",
+            "n566"
+          ],
+          "output_registers": [
+            "n642",
+            "n152",
+            "n109",
+            "n635",
+            "n662",
+            "n663",
+            "n138",
+            "n247"
+          ],
+          "input_count": 8,
+          "output_count": 8
+        },
+        {
+          "input_nets": [
+            "n351",
+            "n450",
+            "n457",
+            "n576",
+            "n586",
+            "n745",
+            "n887",
+            "n901"
+          ],
+          "output_registers": [
+            "n42",
+            "n219",
+            "n554",
+            "n189",
+            "n461",
+            "n216",
+            "n566",
+            "n212"
+          ],
+          "input_count": 8,
+          "output_count": 8
+        }
+      ]
+    }
+  },
+  "decoder_assumption": "Same READ_MODE=1 interpretation as the saved official primitive model analysis; this does not independently validate silicon RAM semantics."
+}

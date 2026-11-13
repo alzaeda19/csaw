@@ -1,0 +1,16 @@
+{
+  "title": "NIST FIPS 197 updated May 9, 2023",
+  "url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf",
+  "consulted_for": [
+    "GF(2^8) arithmetic and inverse",
+    "AES affine byte substitution",
+    "128-bit standard AES block size"
+  ],
+  "sections": [
+    "4",
+    "5.1.1"
+  ],
+  "challenge_solution_used": false,
+  "challenge_solution_pages_or_implementations_accessed": false,
+  "comparison": "Independently calculated table; full 256-entry equality after original-wire normalization."
+}

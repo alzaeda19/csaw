@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-13T02:42:38.750923+00:00",
+  "review_type": "Read-only source and saved-output review; no script imports or execution, no new model experiment, no numeric K computed or emitted",
+  "reviewed_inputs": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/trace_datapath.py",
+      "sha256": "e4be3779ddf624134f193f0c957208441fdcc3583949d2a3367a92ce8a21a9eb"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/check_byte_inverse.py",
+      "sha256": "8c53530b06fa6c6efce42c3549b46af3bb281f50f1f559a2a918705200fd65c3"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/check_key_handling_structure.py",
+      "sha256": "4ae911859239e45d7b27d1a1d0be8ff1bf14162d0808ca709a591b72ace644e5"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/DATAPATH_COFACTORS.json",
+      "sha256": "ccf77ebe849e5f8b47a4e654a2e821a5c48e088ce21256a852f707f51223885e"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/BYTE_INVERSE_CHECKS.json",
+      "sha256": "58b0115cfb3e757143630cd62d220cf42bce200f20a523000a8797587215ccac"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/KEY_HANDLING_CHECKS.json",
+      "sha256": "fa97af0c1c1e448d0d11b884e88f7634e39db8c8d655683daabae85b2b6018f3"
+    }
+  ],
+  "verdict": "No concrete correctness correction required within the stated normal-operation scope.",
+  "findings": {
+    "byte_indexing": "Saved output mappings are 32 distinct uninverted wires for both modes. All eight initial/feedback address-source permutations, with inversion signs excluded, match byte-local ROR8(input,1). All four ROM-to-output mappings match destination (j+1)%4 and output-bit permutation [0,4,2,6,1,5,3,7].",
+    "identity_count": "4096 is correct: four byte slots times 256 byte inputs times four equalities (forward initial=feedback; inverse initial=feedback; inverse after forward=identity; forward after inverse=identity). This is not 4096 whole-word or clocked tests.",
+    "inverse_equation": "Forward destination (j+1)%4 implies inverse output j = S^-1(input[(j+1)%4]) XOR K[j]. The script uses this indexing correctly.",
+    "phase_composition": "The separately proven synchronized counters enable RAM/working-state updates on launch-inclusive edges1-4. The edge4 result is held for the edge5 CS-high serial-bank load. Pure four-iteration composition in check_key_handling_structure.py agrees with this schedule; it does not alone prove arbitrary clocked behavior.",
+    "key_claim": "No runtime key register or transaction claim is scoped to normal-operation reconstruction; fixed literals and disabled RAM writes support that limit. No claim of original mask provenance or arbitrary malformed-protocol behavior is warranted.",
+    "standard_name": "The normalized-substitution digest can identify the AES S-box using the coordinator independent reference. It does not identify the full 32-bit four-update construction as the standard AES block cipher.",
+    "scope_note": "The parent reported additional Icarus results; those separate artifacts were not independently reviewed in this pass."
+  }
+}

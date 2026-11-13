@@ -1,6 +1,6 @@
 # Current submission guide — November 12, 2026
 
-The modified hardware code, demonstration testbench, saved results and submission archive are present. The latest update adds fresh synthesis, protocol-scoped formal checks, a reference-board pin audit and Qwen review records. It does not change the tested design or rerun the original simulation suite.
+The modified hardware code, demonstration testbench, saved results and submission archive are present. The follow-ups add fresh synthesis, protocol-scoped formal checks, a reference-board pin audit, original-source cipher reconstruction and Qwen review records. It does not change the tested design or rerun the original simulation suite.
 
 ## Read these documents together
 
@@ -17,15 +17,15 @@ Read the [new evidence report](addenda/2026-11-12-qwen-verification/README.md) f
 
 Synthesis adds 36 LUT4 cells, 48 registers and 13 carry cells, with memory unchanged. No negligible-overhead or stealth claim follows automatically. The twelve-step verification workflow reran successfully in a fresh directory; it is validation automation, not historical generation automation. Three Qwen reviews are preserved with explicit corrections to unsupported model claims.
 
-The reference-board mapping is now documented. Physical BUSY is pin 23 and LED pin 38; the unchanged simulation adapter labels the identical logical outputs oppositely. Board-unit/revision compatibility and the earlier automatically pinned bitstream remain unverified. Full cipher/key semantics are still unknown, although fixed-table properties and the lack of a separately documented runtime key transaction are now evidenced.
+The reference-board mapping is now documented. Physical BUSY is pin 23 and LED pin 38; the unchanged simulation adapter labels the identical logical outputs oppositely. Board-unit/revision compatibility and the earlier automatically pinned bitstream remain unverified. The [new reconstruction](addenda/2026-11-12-cipher-reconstruction/README.md) now establishes the exact round operations and effective key handling: four rounds of fixed-mask XOR, AES byte substitution and one-byte rotation, with the inverse path checked independently.
 
 ## What the stronger explanation says
 
-The recovered design accepts one 32-bit word through a serial input. A separate working register bank processes it through Boolean logic and four initialized memory blocks whose write clocks are disabled. A mode input selects encryption or decryption behavior inside the datapath. The result returns to the serial bank for readout.
+The recovered design accepts one 32-bit word. Its forward path performs four rounds of XOR with a hardwired 32-bit mask, AES byte substitution and one-byte rotation. A separate working-register path performs the inverse concurrently. The mode input selects the completed result at the serial-bank load. The mask stays fixed; there is no normal runtime key load or evolving key schedule.
 
 The analysis also explains an observed limitation: processing status can fall before the result has been copied into the output bank. Under the documented schedule, a further clock with chip-select high performs that copy. This agrees with the existing evidence that immediate reads fail while the original host's longer schedule passes. It is an explanation of the original baseline, not a new fix or hardware timing measurement.
 
-The source inventory identifies the 32 serial registers, 32 working registers, control state, memory connections and registered output. It deliberately does not identify the stored tables, recover a key or import an algorithm from another solution. The separate professor-supplied AES example is not evidence that this design implements AES.
+The source inventory identifies the 32 serial registers, 32 working registers, control state, memory connections and registered output. The newer analysis identifies the stored AES S-box after restoring the original bit wiring and verifies the round equations against the untouched original Verilog: 2,564 transactions, 20,512 round-state comparisons and zero failures. The fixed mask is derived internally for reproduction; no numeric bonus-key artifact is emitted. No algorithm was imported from a challenge solution. The separate professor-supplied AES example remains unrelated evidence.
 
 ## What was recovered
 
@@ -44,7 +44,7 @@ The later cross-app supplement preserves 15 Qwen setup attempts, a 100-line prom
 | Reviewer instructions | **12 encrypted inbound message bodies:** nine task requests and three steering messages. The parent and child records refer to the same 12 exchanges. None was recovered as plaintext. |
 | Historical tool output | Two reviewer outputs contain original truncation markers reporting **1,546 and 2,535 omitted tokens**. The new exporter adds no truncation and does not fabricate the missing text. |
 | Earlier full history | Some older project conversations and compacted context remain unavailable. Those are separate from the recovered generation/packaging tail; the qualifier specifically asks for prompts and responses used to generate the modification. |
-| Internal cipher mathematics | Architecture, fixed-table properties and the documented external key-interface boundary are evidenced. Exact algorithm identity, round equations, embedded key semantics and cryptographic strength remain unestablished. |
+| Cipher limits after reconstruction | The exact four-round operations, AES S-box ordering and effective fixed-mask handling are established. Author naming/rationale and cryptographic strength remain unverified. Exact byte/control checks and finite end-to-end simulations are not a whole-system proof for arbitrary protocol or physical behavior. |
 | Challenge quality and scoring | Stealth remains unestablished. Normal preservation now has a cyclic synchronous induction proof under explicit protocol assumptions and a bounded edge-explicit check. General behavior outside that scope is unproved. Mapped overhead is measured; negligible physical overhead and full historical generation automation are not established. |
 | Instructor receipt | The repository is public at the user's request. Publication does not establish that the instructor has reviewed or accepted the submission. Collaborator invitations remain intentionally skipped. |
 
@@ -56,12 +56,14 @@ The original qualifier permits predictable output corruption and requires the br
 
 All four requested artifact categories are present in the ZIP: modified RTL, demonstration testbench, AI records and technical brief. The archive includes this guide and both explanation/recovery supplements. There is no newly missing board-programming or key-recovery step.
 
-The genuine outstanding issues are completeness of the relevant AI trail, stealth, and behavior outside the explicitly proved normal protocol/model assumptions. Missing reviewers' instructions cannot be supplied from unrelated setup history. If no original copies can be recovered, the gaps must remain disclosed and the instructor must judge their effect; no full-compliance claim is made. The encryption proposal is present but remains architectural. The brief now includes a reference-board pin map, with physical BUSY/LED labels corrected in documentation. A particular board and board-constrained build remain unverified; board execution is still not a required qualifier step. Publication alone does not confirm receipt by course staff. Collaborator invitations remain skipped as requested.
+The genuine outstanding issues are completeness of the relevant AI trail, stealth, and behavior outside the explicitly proved normal protocol/model assumptions. Missing reviewers' instructions cannot be supplied from unrelated setup history. If no original copies can be recovered, the gaps must remain disclosed and the instructor must judge their effect; no full-compliance claim is made. The encryption explanation now includes exact original-source round equations and verified key handling. The brief now includes a reference-board pin map, with physical BUSY/LED labels corrected in documentation. A particular board and board-constrained build remain unverified; board execution is still not a required qualifier step. Publication alone does not confirm receipt by course staff. Collaborator invitations remain skipped as requested.
 
 ## Preservation and reproduction
 
 All 262 files from the original sealed package, including its seven frozen source/test files and existing records, remain byte-identical. New material is additive. The current publication manifest and ZIP checksum cover the augmented package. Historical manifests and test results retain their original meaning.
 
-To reproduce the existing simulations, follow the original README after extracting the ZIP outside a Git checkout. Earlier documentation-only updates retain their dated scope. The latest follow-up runs synthesis and formal verification of unchanged files; it does not rerun the archived simulation runner or use published challenge solutions.
+To reproduce the existing simulations, follow the original README after extracting the ZIP outside a Git checkout. Earlier documentation-only updates retain their dated scope. The follow-ups run synthesis/formal verification and a new original-baseline reconstruction simulation. They do not rerun the archived modified-design simulation runner or use published challenge solutions.
 
-The new pin-audit records disclose four unreadable peer-task exchanges and three progress messages from documentation review. They are separate from the original twelve generation-review instructions. All three new Qwen calls retain their requests, received streams and replies, including rejected overclaims.
+The new pin-audit records disclose four unreadable peer-task exchanges and three progress messages from documentation review. They are separate from the original twelve generation-review instructions. The earlier three Qwen verification calls and two later cipher-review calls retain requests, received streams and replies, including rejected overclaims. Current record cutoffs and any separate documentation-audit gaps are disclosed in each addendum.
+
+The cipher-analysis audit preserves 93 visible records with exact-value checks and discloses three unreadable peer instruction exchanges plus two unreadable progress messages. These are new documentation-analysis gaps, separate from the historical twelve reviewer instructions and the earlier pin-audit gaps. Both current peer final responses are preserved. Current Qwen prompts and received replies are complete; record cutoffs do not pretend to include future publication messages.

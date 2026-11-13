@@ -1,59 +1,66 @@
-# How the recovered encryption system works: supported proposal
+# How the original cipher works
 
-The recovered FPGA design accepts a **32-bit word**, processes it over several clock cycles using logic and fixed lookup storage, and shifts a 32-bit result back out. A direction input selects the specified encryption or decryption operation. This explains the observed architecture; **the exact cipher, round equations and key handling remain unidentified**.
+The original recovered design is a **custom 32-bit cipher with four rounds**, using the AES byte-substitution table. Each encryption round XORs the word with one fixed 32-bit mask, substitutes each of its four bytes, then rotates the word left by one byte. Decryption reverses those operations. The same mask is reused in every round.
 
-This document describes only the unchanged recovered baseline. It uses the original interface, supplied host program, recovered RTL and saved verification records. It does not infer an algorithm from the separate AES course package, from another person's solution, or from an earlier model's unsupported AES-128 claim. The [technical explanation](addenda/2026-11-12/explanation/PROPOSED_ENCRYPTION_EXPLANATION.md) and [source index](addenda/2026-11-12/explanation/SOURCE_INDEX.md) give the detailed claims and references, labeled E01–E12 below.
+This is now an original-source reconstruction, beyond the earlier architectural proposal. It comes from the recovered RTL, original memory contents and documented host interface. It was checked independently against the unchanged original Verilog. No published challenge solution, shared solution chat, excluded Claude implementation or separate professor-supplied AES design supplied the algorithm.
 
-## Latest original-evidence findings
+## Exact operations
 
-The [Qwen-assisted verification follow-up](addenda/2026-11-12-qwen-verification/README.md) examined the original lookup initialization and found four identical effective nonlinear 256-entry byte permutations. A comparison with the public AES standard does not match its direct or inverse S-box in that extracted bit order; this does not rule out differently wired components or identify the surrounding cipher.
+```text
+F(x) = ROL32(SubBytes_AES(x XOR K), 8)
+G(x) = InvSubBytes_AES(ROR32(x, 8)) XOR K
+Encrypt(x) = F(F(F(F(x))))
+Decrypt(x) = G(G(G(G(x))))
+```
 
-The supplied host carries one 32-bit message per operation and has no separate documented key-loading transaction; the recovered top level has no dedicated key port. Fixed memory controls are now corroborated by synthesis. Embedded key-dependent constants and full key semantics remain unidentified. The reference-board schematic and vendor pin table also establish all nine physical signal identities, including physical BUSY/LED names opposite the logically interchangeable adapter labels. A particular board unit and the earlier automatically allocated bitstream remain unverified for that pin map.
+`SubBytes_AES` applies the AES S-box to each byte independently; `InvSubBytes_AES` applies its inverse. `K` is one 32-bit fixed mask, made of four fixed 8-bit parts. Bytes are numbered least-significant first. Forward output byte `(j+1) mod 4` is `S(input[j] XOR K[j])`; inverse output byte `j` is `S^-1(input[(j+1) mod 4]) XOR K[j]`.
 
-## Data path in plain English
+Using an AES component does **not** make this standard AES. Standard AES has 128-bit blocks and its own round structure and key expansion. This design has 32-bit blocks, four rounds, byte rotation, no AES MixColumns and no AES key expansion. The byte table was independently calculated from the mathematics in [NIST FIPS 197, sections 4 and 5.1.1](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf), then compared with all original table entries after tracing the bit wiring.
+
+## Key handling
+
+The fixed XOR operation appears as hardwired inversions on selected data wires. Initial and feedback paths contain the same per-byte inversions, so the effective mask stays constant across all four rounds. The inverse path applies the matching mask after inverse substitution. The four memories have disabled write clocks and write-clock enables.
+
+There is no evolving round-key state, separate runtime key port, or key-loading step in the supplied normal protocol. The initial round depends on the newly loaded message, not a previous normal transaction. These source dependencies establish fixed-mask handling rather than merely relying on the absence of a port named “key.”
+
+This does not establish the original author's variable names, how the constant was selected, its entropy or security. The reproduction script derives the mask internally from the original wires; no numeric bonus-key result or key-exfiltration mechanism is supplied.
+
+## Data path and clocks
 
 ```mermaid
 flowchart LR
-    I[Serial input: one 32-bit word] --> S[32-bit shared input and output bank]
-    S --> W[Working registers and Boolean logic]
-    W --> L[Four initialized lookup memories]
-    L --> W
-    M[Encryption or decryption selection] --> W
-    W -->|Parallel result load| S
-    S --> O[Registered serial output]
+    I[32-bit serial input bank] --> F[Forward path: four ROM byte substitutions]
+    I --> D[Inverse path: Boolean logic and 32 working registers]
+    F -->|Four rounds| M[Select completed result with ENC_DEC]
+    D -->|Four rounds| M
+    M --> O[Parallel load into shared serial bank]
+    O --> R[32 registered serial output bits]
 ```
 
-This is a functional sketch of connections, not a recovered round algorithm or a new synthesized design. [E01, E04–E07]
+1. Chip-select low shifts in 32 bits, most-significant first.
+2. START with chip-select high performs the first round. Three more rising edges complete rounds two through four. The two synchronized counters follow `00 → 01 → 10 → 11 → 00`.
+3. Forward and inverse paths compute concurrently. `ENC_DEC=0` selects the forward result; `ENC_DEC=1` selects the inverse. The selection acts at the parallel result load, not as a round-key or counter selector. The normal driver keeps it stable.
+4. BUSY falls after round four. A **further rising edge with chip-select still high** copies the selected result into the serial bank. Reading immediately can miss this load and return old input.
+5. The host waits seven clocks after START, then shifts out 32 bits. Seven wait clocks are not seven cipher rounds.
 
-1. **Load the input.** With chip-select low, 32 clock edges shift the input into a shared register bank. The supplied host sends the most-significant byte and bit first. The output is also registered on the clock edge, so sampling must respect that behavior. [E02, E04]
-2. **Start processing.** With chip-select high, the host selects the direction and pulses START. A separate 32-bit working bank, lookup-memory outputs and Boolean logic carry out the transformation. The mode input affects the datapath itself. Keep the mode stable as the recorded driver does. [E02, E05, E07]
-3. **Use fixed lookup storage.** There are four initialized memory instances. Their write clocks and write-clock enables resolve to zero in the recovered design. This supports describing them as lookup storage during normal operation. It does not establish that they contain AES tables, a key schedule or any particular substitution function; their initialization values were excluded from the earlier analysis. The newer follow-up above reports directly checked table properties without assigning a cipher or key meaning. [E06]
-4. **Copy the result before reading.** BUSY falling and the serial-output bank receiving the result are separate events. Under the documented schedule, a further rising clock edge with chip-select high copies the result into that bank. Immediately beginning serial extraction can miss this copy and return the old input. [E08–E09]
-5. **Read the output.** The next 32 serial clocks shift the result out through MISO while incoming bits overwrite the shared bank. This is why the documented host sequence and sampling order matter. [E02, E04]
+## What was verified
 
-## Why the extra clock matters
+| Check | Result |
+|---|---|
+| Original ROMs against mathematical AES S-box after wiring normalization | All 256 entries in each of four memories match. |
+| Exact source-derived byte identities | 4,096 checks confirm initial/feedback equality and both directions of inversion for every byte value in every slot. |
+| Original control equations | 9,344 identities over 512 assignments, with documented reset and reachable-state assumptions. |
+| Independent mathematical model against original Boolean/ROM interpreter | 2,564 complete transactions across 1,282 distinct words; 20,512 round-state matches and zero mismatches. |
+| Untouched original Verilog and primitive simulation | Same 2,564 transactions; 20,512 round-state comparisons and 12,820 serial/BUSY checks; zero failures. |
 
-The recovered control includes a one-clock delayed BUSY register. When current BUSY is low but its delayed value is high, the shared bank is enabled to load the parallel result on the next edge. Chip-select must still be high on that edge to select the result rather than shifting serial data. This follows from the baseline's register and enable equations; it is not an added workaround in this update. [E08]
+Inputs include every byte value in each position, walking ones, extremes, the supplied pair and seeded random words. Both encryption and decryption are tested. The original example `59c359c3 → 9cd84392` and its reverse match. The raw table originally failed a direct AES comparison because its address and output bits are reordered; normalization resolves that earlier uncertainty.
 
-The saved evidence agrees with that explanation: immediate-first-BUSY-low reads failed in all eight recorded cases, while the supplied host's longer schedule passed its known-answer checks. The host actually emits seven clocks after the launch edge. Its comments and the observed processing-clock count must not be treated as the number of cryptographic rounds. These are historical digital-model observations, not measurements of physical SPI timing. [E09]
+Read the [reconstruction report](addenda/2026-11-12-cipher-reconstruction/README.md), [structured results](addenda/2026-11-12-cipher-reconstruction/analysis/RECONSTRUCTION_RESULTS.json), [original simulator log](addenda/2026-11-12-cipher-reconstruction/verification/icarus_run/1.stdout), and [independent Trojan-chat source audit](addenda/2026-11-12-cipher-reconstruction/trojan_review/REPORT.md). Reproduction instructions and all current Qwen prompts, replies and corrections are included there.
 
-## What the tests tell us, and what they do not
+## Limits that remain
 
-| Evidence | Supported conclusion | Limit |
-|---|---|---|
-| Original supplied plaintext/ciphertext pair, tested in both directions | The recovered implementation matches that supplied expected pair under the recorded schedule. | Repeating one pair does not identify a cipher or supply thousands of independent vectors. |
-| Agreement between baseline representations on additional inputs | The compared representations agree within the documented tests or proof assumptions. | Agreement is not an independent oracle for the intended cryptographic algorithm. |
-| Historical equivalence reports for baseline and regenerated-bitstream RTL | Conditional digital-model correspondence, including prescribed stable-mode host transactions. | These preserve the baseline's readout limitation; they do not prove physical silicon behavior or correctness of the current modification. |
-| Current package's ordinary and demonstration logs | The recorded finite checks for the current package passed, and deliberately broken controls failed. | They do not establish every possible input, universal encryption/decryption inversion, stealth or hardware cost. |
+The operations, round count, bit/byte ordering and effective fixed-mask handling are now established for the recovered digital design under the documented protocol. The author's original algorithm name, design rationale and cryptographic strength are not established. The exact byte checks support local algebraic conclusions; the full simulator run is finite and is not a new whole-system formal proof covering arbitrary malformed frames, asynchronous behavior or hardware timing.
 
-The first three rows are supported by E09–E11 and the linked historical reports. The last row is documented in the [original technical brief](README.md) and [current guide](CURRENT_GUIDE.md); it is deliberately kept separate from the baseline-equivalence evidence.
+The [reference-board pin audit](addenda/2026-11-12-qwen-verification/pin_audit/REPORT.md) separately establishes the published board's pin map, including the physical BUSY/LED label distinction. No particular board was tested and the earlier automatically pinned bitstream is not newly validated for that board.
 
-## Remaining unknowns
-
-We have a source-supported explanation of input loading, state/storage organization, direction selection, processing controls and output timing. We have not independently established the named algorithm, interpretation of the stored values, round equations, number of cryptographic rounds, key origin/schedule or cryptographic strength. No secret key was recovered. [E12]
-
-The earlier adapter mapping was functional only. The [reference-board audit](addenda/2026-11-12-qwen-verification/pin_audit/REPORT.md) now documents physical package pins for the published February 2026 Rev A board. It corrects the physical BUSY/LED labels while preserving the unchanged equivalent simulation outputs. A particular board and any board-constrained rebuild remain untested; board programming is still not a required qualifier deliverable.
-
-The original qualifier asks for a **proposed explanation** of the encryption system. This document supplies that proposal at the architecture and interface level and makes its limits explicit. It does not claim a complete mathematical reconstruction. Additional chat recovery corroborates the same limits; it supplies no missing cipher proof.
-
-The original architecture claims point to the existing original-materials evidence map. The latest follow-up separately records fresh synthesis, formal verification and primary-source pin documentation. The original RTL and simulation suite are unchanged; no board was programmed and no challenge solution was consulted.
+This closes the earlier cipher-operation/key-handling explanation gap. It does not close the separate gaps in historical AI logs, stealth, physical overhead, generation automation or instructor acceptance. Original RTL, testbenches and sealed evidence remain unchanged. Earlier addenda and the original brief are preserved as historical records; this document supersedes their statements that the cipher was still unidentified.

@@ -1,0 +1,486 @@
+{
+  "memory_addresses": {
+    "initial": [
+      [
+        {
+          "kind": "wire",
+          "net": "n390"
+        },
+        {
+          "kind": "wire",
+          "net": "n619"
+        },
+        {
+          "kind": "wire",
+          "net": "n384"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n610"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n607"
+        },
+        {
+          "kind": "wire",
+          "net": "n609"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n601"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n628"
+        }
+      ],
+      [
+        {
+          "kind": "wire",
+          "net": "n578"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n579"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n577"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n698"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n781"
+        },
+        {
+          "kind": "wire",
+          "net": "n776"
+        },
+        {
+          "kind": "wire",
+          "net": "n897"
+        },
+        {
+          "kind": "wire",
+          "net": "n587"
+        }
+      ],
+      [
+        {
+          "kind": "wire",
+          "net": "n1015"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n1024"
+        },
+        {
+          "kind": "wire",
+          "net": "n998"
+        },
+        {
+          "kind": "wire",
+          "net": "n1034"
+        },
+        {
+          "kind": "wire",
+          "net": "n907"
+        },
+        {
+          "kind": "wire",
+          "net": "n1039"
+        },
+        {
+          "kind": "wire",
+          "net": "n1038"
+        },
+        {
+          "kind": "wire",
+          "net": "n898"
+        }
+      ],
+      [
+        {
+          "kind": "inverted_wire",
+          "net": "n921"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n915"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n810"
+        },
+        {
+          "kind": "wire",
+          "net": "n814"
+        },
+        {
+          "kind": "wire",
+          "net": "n798"
+        },
+        {
+          "kind": "wire",
+          "net": "n917"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n800"
+        },
+        {
+          "kind": "wire",
+          "net": "n910"
+        }
+      ]
+    ],
+    "feedback": [
+      [
+        {
+          "kind": "wire",
+          "net": "n721"
+        },
+        {
+          "kind": "wire",
+          "net": "n724"
+        },
+        {
+          "kind": "wire",
+          "net": "n718"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n479"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n720"
+        },
+        {
+          "kind": "wire",
+          "net": "n723"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n719"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n722"
+        }
+      ],
+      [
+        {
+          "kind": "wire",
+          "net": "n692"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n694"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n690"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n695"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n691"
+        },
+        {
+          "kind": "wire",
+          "net": "n693"
+        },
+        {
+          "kind": "wire",
+          "net": "n689"
+        },
+        {
+          "kind": "wire",
+          "net": "n696"
+        }
+      ],
+      [
+        {
+          "kind": "wire",
+          "net": "n701"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n703"
+        },
+        {
+          "kind": "wire",
+          "net": "n699"
+        },
+        {
+          "kind": "wire",
+          "net": "n704"
+        },
+        {
+          "kind": "wire",
+          "net": "n700"
+        },
+        {
+          "kind": "wire",
+          "net": "n702"
+        },
+        {
+          "kind": "wire",
+          "net": "n605"
+        },
+        {
+          "kind": "wire",
+          "net": "n613"
+        }
+      ],
+      [
+        {
+          "kind": "inverted_wire",
+          "net": "n707"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n709"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n705"
+        },
+        {
+          "kind": "wire",
+          "net": "n710"
+        },
+        {
+          "kind": "wire",
+          "net": "n706"
+        },
+        {
+          "kind": "wire",
+          "net": "n708"
+        },
+        {
+          "kind": "inverted_wire",
+          "net": "n622"
+        },
+        {
+          "kind": "wire",
+          "net": "n711"
+        }
+      ]
+    ]
+  },
+  "working_groups": {
+    "initial": [
+      {
+        "input_nets": [
+          "n1015",
+          "n1024",
+          "n1034",
+          "n1038",
+          "n1039",
+          "n898",
+          "n907",
+          "n998"
+        ],
+        "output_registers": [
+          "n586",
+          "n887",
+          "n457",
+          "n576",
+          "n745",
+          "n901",
+          "n351",
+          "n450"
+        ],
+        "input_count": 8,
+        "output_count": 8
+      },
+      {
+        "input_nets": [
+          "n798",
+          "n800",
+          "n810",
+          "n814",
+          "n910",
+          "n915",
+          "n917",
+          "n921"
+        ],
+        "output_registers": [
+          "n1042",
+          "n1025",
+          "n1023",
+          "n909",
+          "n1007",
+          "n946",
+          "n1037",
+          "n913"
+        ],
+        "input_count": 8,
+        "output_count": 8
+      },
+      {
+        "input_nets": [
+          "n384",
+          "n390",
+          "n601",
+          "n607",
+          "n609",
+          "n610",
+          "n619",
+          "n628"
+        ],
+        "output_registers": [
+          "n642",
+          "n152",
+          "n109",
+          "n635",
+          "n662",
+          "n663",
+          "n138",
+          "n247"
+        ],
+        "input_count": 8,
+        "output_count": 8
+      },
+      {
+        "input_nets": [
+          "n577",
+          "n578",
+          "n579",
+          "n587",
+          "n698",
+          "n776",
+          "n781",
+          "n897"
+        ],
+        "output_registers": [
+          "n42",
+          "n219",
+          "n554",
+          "n189",
+          "n461",
+          "n216",
+          "n566",
+          "n212"
+        ],
+        "input_count": 8,
+        "output_count": 8
+      }
+    ],
+    "feedback": [
+      {
+        "input_nets": [
+          "n1007",
+          "n1023",
+          "n1025",
+          "n1037",
+          "n1042",
+          "n909",
+          "n913",
+          "n946"
+        ],
+        "output_registers": [
+          "n586",
+          "n887",
+          "n457",
+          "n576",
+          "n745",
+          "n901",
+          "n351",
+          "n450"
+        ],
+        "input_count": 8,
+        "output_count": 8
+      },
+      {
+        "input_nets": [
+          "n109",
+          "n138",
+          "n152",
+          "n247",
+          "n635",
+          "n642",
+          "n662",
+          "n663"
+        ],
+        "output_registers": [
+          "n1042",
+          "n1025",
+          "n1023",
+          "n909",
+          "n1007",
+          "n946",
+          "n1037",
+          "n913"
+        ],
+        "input_count": 8,
+        "output_count": 8
+      },
+      {
+        "input_nets": [
+          "n189",
+          "n212",
+          "n216",
+          "n219",
+          "n42",
+          "n461",
+          "n554",
+          "n566"
+        ],
+        "output_registers": [
+          "n642",
+          "n152",
+          "n109",
+          "n635",
+          "n662",
+          "n663",
+          "n138",
+          "n247"
+        ],
+        "input_count": 8,
+        "output_count": 8
+      },
+      {
+        "input_nets": [
+          "n351",
+          "n450",
+          "n457",
+          "n576",
+          "n586",
+          "n745",
+          "n887",
+          "n901"
+        ],
+        "output_registers": [
+          "n42",
+          "n219",
+          "n554",
+          "n189",
+          "n461",
+          "n216",
+          "n566",
+          "n212"
+        ],
+        "input_count": 8,
+        "output_count": 8
+      }
+    ]
+  },
+  "output_mapping_kinds": {
+    "0": {
+      "wire": 32
+    },
+    "1": {
+      "wire": 32
+    }
+  }
+}

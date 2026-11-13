@@ -1,0 +1,22 @@
+**(1) Hypothesis: AES S-Box Implementation with Fixed Key and Round-Direction Control**
+
+The hardware implements the AES S-box using a nonlinear ROM-based lookup table, confirmed by independent tracing of all 256 entries to the exact SHA256-derived AES S-box (c2d8e5eed6cbebd8625fc18f81486a7733c04f9b0129ffbe974c68b90308b4f2). This matches the standard AES S-box, but the implementation diverges from standard AES encryption by using **fixed key handling** and **round-direction control**. The ROMs contain the same nonlinear table, and the input byte undergoes fixed inversions before ROM lookup, suggesting a **fixed key schedule** or **fixed round key** is applied. The forward and inverse paths are **concurrent**, with mode selection determining which result is output. This implies the device is not performing full AES encryption but rather a **custom AES-based transformation** with fixed key and round-direction control.
+
+**(2) Proof of Fixed Key Handling: ROM Timing and Byte Order Consistency**
+
+To identify fixed key handling without overclaiming key recovery, one must prove that the **ROM lookup and byte inversion are fixed** and **not dependent on evolving key material**. This can be done by:
+
+- **Verifying ROM timing** against known AES S-box behavior. If the ROM output is consistent across all input bytes and the same inversion pattern is applied, this supports fixed key handling.
+- **Checking byte order consistency** across all ROM lookups. If the same inversion pattern is applied to all input bytes, and the output is consistent with the AES S-box, this supports a fixed key schedule.
+- **Confirming that the feedback path does not evolve** the key. If the feedback uses the same inversion pattern as the input, and no evolving register is involved, this supports fixed key handling.
+
+**(3) Smallest Strong Independent Checks**
+
+To confirm round direction, byte order, ROM timing, and inverse path, perform the following minimal checks:
+
+- **ROM Timing Check**: Confirm that the ROM output is stable and matches the expected AES S-box values for all 256 input bytes. Use a known input (e.g., 0x00) and verify the output matches the expected S-box value.
+- **Byte Order Check**: Verify that the same inversion pattern is applied to all input bytes. For example, if the input byte is 0x01, the ROM lookup should use the same inversion pattern as for 0x02.
+- **Inverse Path Check**: Confirm that the inverse path uses the same 32 working registers and that the output matches the expected inverse S-box values. Use a known input and verify the output matches the inverse S-box.
+- **Round Direction Check**: Confirm that the mode selection (forward vs. inverse) is based on the same 2-bit counter and that the START signal triggers the correct round direction. Use a known input and verify that the output matches the expected round direction.
+
+These checks are minimal, independent, and do not require running tests or guessing key constants. They provide strong evidence for the hypothesis that the hardware implements a fixed-key AES-based transformation with round-direction control.

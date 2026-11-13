@@ -1,0 +1,28 @@
+{
+  "raw_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+  "normalized_table_sha256": "c2d8e5eed6cbebd8625fc18f81486a7733c04f9b0129ffbe974c68b90308b4f2",
+  "canonical_AES_sbox_sha256": "c2d8e5eed6cbebd8625fc18f81486a7733c04f9b0129ffbe974c68b90308b4f2",
+  "AES_sbox_matches": 256,
+  "all_256_match": true,
+  "input_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    0
+  ],
+  "output_order": [
+    0,
+    4,
+    2,
+    6,
+    1,
+    5,
+    3,
+    7
+  ],
+  "reference": "NIST FIPS 197, GF(2^8) inverse modulo 0x11b followed by affine transform; mathematical calculation, no challenge solution."
+}

@@ -1,0 +1,23 @@
+{
+  "known_pair": {
+    "original_host_path": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/original_materials/qualifier/spi_ice40_crypto_ip_test.py",
+    "original_host_sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+    "plaintext": "59C359C3",
+    "ciphertext": "9CD84392",
+    "four_round_encryption_matches": true,
+    "four_round_decryption_matches": true,
+    "independent_vector_pairs": 1
+  },
+  "first_step_qualifier_checks": 32,
+  "fixed_storage_controls_pass": true,
+  "state_accounting": {
+    "native_registers": 71,
+    "serial_payload_result_bank": 32,
+    "inverse_datapath_bank": 32,
+    "two_two_bit_phase_counters": 4,
+    "ROM_output_qualifier": 1,
+    "previous_BUSY": 1,
+    "registered_serial_output": 1,
+    "RAM_storage": "Four fixed initialized lookup memories; registered read pipeline is transient data, not a runtime writable key store"
+  }
+}

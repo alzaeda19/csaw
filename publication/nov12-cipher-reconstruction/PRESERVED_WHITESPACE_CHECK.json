@@ -1,0 +1,18 @@
+{
+  "check": {
+    "args": [
+      "diff",
+      "--cached",
+      "--check"
+    ],
+    "exit_code": 2,
+    "stdout": "submission/addenda/2026-11-12-cipher-reconstruction/ai_logs/02_verified_equations/response.txt:1: trailing whitespace.\n+The reviewed system implements a **custom 32-bit four-round substitution/byte-rotation cipher** using the **AES S-box**, with no evolving key schedule or runtime key material. Key handling is **static**, with a **single fixed 32-bit XOR mask per byte position**, hardwired via net inversions. This mask is applied in parallel to all four byte slots, with no per-round variation or subkey generation. The **F(x)** and **G(x)** functions (forward and inverse) operate in **concurrent parallel paths**, with **ENC_DEC=0/1** selecting the final output at load, not based on a counter or START signal. \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/baseline.v:45711: new blank line at EOF.\nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:35: trailing whitespace.\n+    \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:55: trailing whitespace.\n+       \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:65: trailing whitespace.\n+    \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:71: trailing whitespace.\n+    \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:77: trailing whitespace.\n+          \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:83: trailing whitespace.\n+    \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:117: trailing whitespace.\n+    \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:123: trailing whitespace.\n+          \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:129: trailing whitespace.\n+    \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:138: trailing whitespace.\n+    \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:141: trailing whitespace.\n+    \nsubmission/addenda/2026-11-12-cipher-reconstruction/sources/host.py:141: new blank line at EOF.\n",
+    "stderr": ""
+  },
+  "resolution": "Preserve exact original source and Qwen response bytes, including existing whitespace. Re-run whitespace check for authored files while excluding immutable source, authentic model logs and sealed independent audit copies. No design or model response is edited to satisfy formatting.",
+  "allowed_reported_paths": [
+    "sources/baseline.v",
+    "sources/host.py",
+    "ai_logs/02_verified_equations/response.txt"
+  ]
+}

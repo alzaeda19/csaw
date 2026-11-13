@@ -1,0 +1,55 @@
+{
+  "endpoint": "local Ollama /api/tags",
+  "models": [
+    {
+      "name": "qwen3-csaw-agent:20261112234518",
+      "model": "qwen3-csaw-agent:20261112234518",
+      "modified_at": "2026-11-12T18:45:30.182646449-05:00",
+      "size": 5225387827,
+      "digest": "546214eadc8960c30bdd4ddae54b372c16e23ebb3d62948d152ac43fd1645d3e",
+      "details": {
+        "parent_model": "qwen3:8b",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 40960,
+        "embedding_length": 4096,
+        "runner": "llamacpp"
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    },
+    {
+      "name": "qwen3:8b",
+      "model": "qwen3:8b",
+      "modified_at": "2026-11-12T17:37:55.89039516-05:00",
+      "size": 5225388164,
+      "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "8.2B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 40960,
+        "embedding_length": 4096,
+        "runner": "ggml"
+      },
+      "capabilities": [
+        "completion",
+        "tools",
+        "thinking"
+      ]
+    }
+  ]
+}

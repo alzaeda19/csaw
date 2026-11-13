@@ -1,0 +1,51 @@
+{
+  "all_pass": true,
+  "exact_identities_checked": 4096,
+  "byte_checks": [
+    {
+      "byte_slot": 0,
+      "forward_output_slot": 1,
+      "inverse_input_slot": 1,
+      "forward_is_bijection": true,
+      "inverse_is_bijection": true,
+      "forward_initial_equals_feedback": true,
+      "inverse_initial_equals_feedback": true,
+      "inverse_after_forward_all_256": true,
+      "forward_after_inverse_all_256": true
+    },
+    {
+      "byte_slot": 1,
+      "forward_output_slot": 2,
+      "inverse_input_slot": 2,
+      "forward_is_bijection": true,
+      "inverse_is_bijection": true,
+      "forward_initial_equals_feedback": true,
+      "inverse_initial_equals_feedback": true,
+      "inverse_after_forward_all_256": true,
+      "forward_after_inverse_all_256": true
+    },
+    {
+      "byte_slot": 2,
+      "forward_output_slot": 3,
+      "inverse_input_slot": 3,
+      "forward_is_bijection": true,
+      "inverse_is_bijection": true,
+      "forward_initial_equals_feedback": true,
+      "inverse_initial_equals_feedback": true,
+      "inverse_after_forward_all_256": true,
+      "forward_after_inverse_all_256": true
+    },
+    {
+      "byte_slot": 3,
+      "forward_output_slot": 0,
+      "inverse_input_slot": 0,
+      "forward_is_bijection": true,
+      "inverse_is_bijection": true,
+      "forward_initial_equals_feedback": true,
+      "inverse_initial_equals_feedback": true,
+      "inverse_after_forward_all_256": true,
+      "forward_after_inverse_all_256": true
+    }
+  ],
+  "normalized_substitution_sha256": "c2d8e5eed6cbebd8625fc18f81486a7733c04f9b0129ffbe974c68b90308b4f2"
+}

@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+    "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/portable_reproduction/check_key_handling_structure.py"
+  ],
+  "cwd": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_baseline_phase_analysis_20261113T023306Z_unl_u4cw/portable_reproduction",
+  "overrides": {
+    "CSAW_BASELINE_SOURCE": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/rtl/baseline.v",
+    "CSAW_STATIC_INVENTORY": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12/explanation/STATIC_BASELINE_ANALYSIS.json",
+    "CSAW_ORIGINAL_HOST_SOURCE": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/original_materials/qualifier/spi_ice40_crypto_ip_test.py"
+  },
+  "exit_code": 0,
+  "structured_results": [
+    {
+      "file": "DATAPATH_COFACTORS.json",
+      "sha256": "ccf77ebe849e5f8b47a4e654a2e821a5c48e088ce21256a852f707f51223885e",
+      "byte_identical": true
+    },
+    {
+      "file": "BYTE_INVERSE_CHECKS.json",
+      "sha256": "58b0115cfb3e757143630cd62d220cf42bce200f20a523000a8797587215ccac",
+      "byte_identical": true
+    },
+    {
+      "file": "KEY_HANDLING_CHECKS.json",
+      "sha256": "fa97af0c1c1e448d0d11b884e88f7634e39db8c8d655683daabae85b2b6018f3",
+      "byte_identical": true
+    }
+  ],
+  "scope": "Same Python and same source files; verifies copied-folder execution and path overrides, not cross-platform compatibility"
+}
