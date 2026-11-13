@@ -1,0 +1,563 @@
+{
+  "carried_forward_records": 155,
+  "carried_forward_records_exactly_equal": true,
+  "new_tail_records": 44,
+  "new_tail_first_line": 574,
+  "new_tail_last_line": 694,
+  "tool_names": {
+    "exec": 53,
+    "spawn_agent": 2,
+    "followup_task": 7,
+    "send_message": 3
+  },
+  "omitted_sensitive_or_internal_fields": [
+    {
+      "line": 45,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 45,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 73,
+      "tool": "spawn_agent",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 78,
+      "tool": "spawn_agent",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 94,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 94,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 100,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 102,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 124,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 143,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 175,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 192,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 204,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 204,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 245,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 245,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 253,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 278,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 291,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 291,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 334,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 334,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 356,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 356,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 380,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 380,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 404,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 409,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 417,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 417,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 437,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 440,
+      "tool": "send_message",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 452,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 505,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 517,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 517,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 557,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 573,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 573,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 587,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 612,
+      "tool": "send_message",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 620,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 620,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 628,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 656,
+      "tool": "send_message",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 670,
+      "tool": null,
+      "field": "/payload/content/1",
+      "reason": "Encrypted content or hidden reasoning block omitted."
+    },
+    {
+      "line": 679,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 679,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 694,
+      "tool": null,
+      "field": "/payload/content/0/annotations",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    },
+    {
+      "line": 694,
+      "tool": null,
+      "field": "/payload/content/0/logprobs",
+      "reason": "Encrypted payload or internal generation metadata omitted."
+    }
+  ],
+  "encrypted_delegation_argument_omissions": [
+    {
+      "line": 73,
+      "tool": "spawn_agent",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 78,
+      "tool": "spawn_agent",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 124,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 175,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 253,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 404,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 409,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 440,
+      "tool": "send_message",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 557,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 612,
+      "tool": "send_message",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 628,
+      "tool": "followup_task",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    },
+    {
+      "line": 656,
+      "tool": "send_message",
+      "field": "/payload/arguments",
+      "reason": "Original field contains encrypted delegation payload; no plaintext was reconstructed."
+    }
+  ],
+  "encrypted_delegation_count": 12,
+  "scan_note": "The previous token-count scan found no truncation wording in those output fields. Token-count metadata alone is not evidence of truncation. Reviewer-native output truncation is separately inventoried.",
+  "output_fields_with_token_metadata": [
+    {
+      "line": 111,
+      "field": "output",
+      "chars": 599,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 170,
+      "field": "output",
+      "chars": 913,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 199,
+      "field": "output",
+      "chars": 693,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 207,
+      "field": "output",
+      "chars": 481,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 238,
+      "field": "output",
+      "chars": 289,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 262,
+      "field": "output",
+      "chars": 376,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 301,
+      "field": "output",
+      "chars": 3819,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 308,
+      "field": "output",
+      "chars": 1792,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 327,
+      "field": "output",
+      "chars": 331,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 337,
+      "field": "output",
+      "chars": 624,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 351,
+      "field": "output",
+      "chars": 2534,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 386,
+      "field": "output",
+      "chars": 2884,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 400,
+      "field": "output",
+      "chars": 11586,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 430,
+      "field": "output",
+      "chars": 381,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 463,
+      "field": "output",
+      "chars": 920,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 471,
+      "field": "output",
+      "chars": 11963,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 529,
+      "field": "output",
+      "chars": 522,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 536,
+      "field": "output",
+      "chars": 680,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 568,
+      "field": "output",
+      "chars": 6879,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 577,
+      "field": "output",
+      "chars": 343,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 601,
+      "field": "output",
+      "chars": 893,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 638,
+      "field": "output",
+      "chars": 287,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 652,
+      "field": "output",
+      "chars": 592,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 667,
+      "field": "output",
+      "chars": 670,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 682,
+      "field": "output",
+      "chars": 231,
+      "contains_truncation_word": false
+    },
+    {
+      "line": 689,
+      "field": "output",
+      "chars": 1448,
+      "contains_truncation_word": false
+    }
+  ],
+  "new_tail_by_kind": {
+    "response_item:custom_tool_call": 11,
+    "event_msg:item_completed": 12,
+    "response_item:custom_tool_call_output": 8,
+    "response_item:agent_message": 4,
+    "response_item:function_call": 3,
+    "response_item:function_call_output": 3,
+    "response_item:message": 3
+  },
+  "recovered_root_final": {
+    "native_line": 694,
+    "timestamp": "2026-11-13T00:49:30.898Z",
+    "phase": "final_answer"
+  }
+}

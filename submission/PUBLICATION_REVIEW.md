@@ -1,5 +1,7 @@
 # Final package review — November 12, 2026
 
+**Later documentation update:** [CURRENT_GUIDE.md](CURRENT_GUIDE.md) and its linked addendum supersede this review's earlier description of the limited encryption explanation and original AI-export cutoff. The original 262 package files remain unchanged; additional authentic records and a source-supported architectural explanation have since been added. This review remains the record of the earlier publication check, not a claim that no later recovery occurred.
+
 This is a documentation, saved-evidence and file-integrity review. It does not execute, modify, optimize or independently validate the changed hardware design. The course destination is GitHub according to the user's current instruction; collaborator invitations were subsequently cancelled by the user.
 
 ## Current artifacts

@@ -1,0 +1,205 @@
+{
+  "timestamp_utc": "2026-11-13T01:21:59.732065+00:00",
+  "fresh_execution": "Static Python text parsing, connectivity traversal, CS-low simplification and combinational identity checking only.",
+  "not_executed": [
+    "HDL generation or modification",
+    "HDL compilation or simulation",
+    "formal equivalence tools",
+    "attack code",
+    "hardware/board programming",
+    "RAM INIT decoding or key recovery",
+    "git operations"
+  ],
+  "baseline_sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+  "validation": {
+    "document_claim_ids_match_map": true,
+    "all_references_in_bounds": true,
+    "source_hashes_match": true,
+    "serial_registers": 32,
+    "working_registers": 32,
+    "mode_direct_LUT_consumers": 32,
+    "memory_output_qualification_terms": 32,
+    "control_combinations": 256,
+    "control_identity_checks": 768,
+    "all_passed": true,
+    "historical_copies_byte_identical": true,
+    "packaged_and_original_recovery_reports_byte_identical": true
+  },
+  "source_checks": [
+    {
+      "source_id": "B",
+      "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "unchanged_since_evidence_map": true
+    },
+    {
+      "source_id": "A",
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "unchanged_since_evidence_map": true
+    },
+    {
+      "source_id": "T",
+      "sha256": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+      "unchanged_since_evidence_map": true
+    },
+    {
+      "source_id": "S",
+      "sha256": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25",
+      "unchanged_since_evidence_map": true
+    },
+    {
+      "source_id": "H",
+      "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+      "unchanged_since_evidence_map": true
+    },
+    {
+      "source_id": "R",
+      "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+      "unchanged_since_evidence_map": true
+    },
+    {
+      "source_id": "P",
+      "sha256": "c31e61847601c36a59f584bb9db444608fde89095f11d9334af1fdaa48a8abe1",
+      "unchanged_since_evidence_map": true
+    },
+    {
+      "source_id": "Q",
+      "sha256": "eedfdf854cba3d469fbc6284ce12d07c9612ed54c6ae696ee75af0d584101cfd",
+      "unchanged_since_evidence_map": true
+    },
+    {
+      "source_id": "J",
+      "sha256": "1491719e88bbc06b69bff853f2b6a34e9f7f6d5cfc1b6099691935921aead1f9",
+      "unchanged_since_evidence_map": true
+    },
+    {
+      "source_id": "R_ORIGINAL",
+      "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+      "unchanged_since_evidence_map": true
+    }
+  ],
+  "development_attempts": [
+    {
+      "attempt": 1,
+      "script": "static_baseline_analysis.py (earlier version)",
+      "exit_code": 1,
+      "failure": "AssertionError: len(successors)==len(serial)",
+      "cause": "The simplifier had not yet reduced the conditional identity x ? 1 : 0 to x. No baseline mismatch was inferred."
+    },
+    {
+      "attempt": 2,
+      "script": "static_baseline_analysis.py (earlier diagnostic version)",
+      "exit_code": 1,
+      "failure": "Same assertion; printed all 32 serial terms to isolate missing simplification."
+    },
+    {
+      "attempt": 3,
+      "script": "static_baseline_analysis.py",
+      "exit_code": 0,
+      "result": "Added the elementary conditional identity reduction. Full 32-stage chain recovered."
+    },
+    {
+      "attempt": 4,
+      "script": "static_baseline_analysis.py",
+      "exit_code": 0,
+      "result": "Added and passed 768 combinational Boolean identity checks."
+    },
+    {
+      "attempt": 5,
+      "script": "static_baseline_analysis.py (final)",
+      "exit_code": 0,
+      "stdout_file": "STATIC_ANALYSIS_STDOUT.json",
+      "result_file": "STATIC_BASELINE_ANALYSIS.json"
+    },
+    {
+      "attempt": 6,
+      "script": "build_evidence_map.py (earlier version)",
+      "exit_code": 1,
+      "failure": "Out-of-bounds original specification citation 29-57: file has 55 lines. Corrected citation to 29-55."
+    },
+    {
+      "attempt": 7,
+      "script": "build_evidence_map.py (final)",
+      "exit_code": 0,
+      "stdout_file": "EVIDENCE_MAP_STDOUT.json",
+      "result_file": "EVIDENCE_MAP.json"
+    },
+    {
+      "attempt": 8,
+      "script": "build_evidence_map.py (final handoff version)",
+      "exit_code": 0,
+      "result": "Added original package-relative paths and exact local copy locations; revalidated source identities and citation bounds."
+    }
+  ],
+  "attempt_record_limit": "Failures above are an authored summary of actual tool results. Final scripts and outputs are saved; intermediate script versions and complete intermediate stdout are not separately archived in this folder. Native tool interaction records are separate.",
+  "artifacts": [
+    {
+      "path": "EVIDENCE_MAP.json",
+      "bytes": 35159,
+      "sha256": "fe335a371dd07378b96226462daa80173a91d8dfb0dbc2c2b2782e56aceaa513"
+    },
+    {
+      "path": "EVIDENCE_MAP_STDOUT.json",
+      "bytes": 107,
+      "sha256": "e7719164008718a7aecff3cabd1e882dcc4e2d645fe21bf9ade0648b8071f122"
+    },
+    {
+      "path": "PROPOSED_ENCRYPTION_EXPLANATION.md",
+      "bytes": 7000,
+      "sha256": "2acfdef57152dd0474ee554f9d7b5ef682c470a8f55ef20a2d2d82e85efdd861"
+    },
+    {
+      "path": "SOURCE_INDEX.md",
+      "bytes": 5426,
+      "sha256": "c362786dc9c7eac8e87968a3a9b76317efd4fa6f6ad1aff2203d269c347bea48"
+    },
+    {
+      "path": "STATIC_ANALYSIS_STDOUT.json",
+      "bytes": 1049,
+      "sha256": "ed05b186e22b9ce6897503fc6fa66d1b3fa91f0fe75a6a0934f1415e5364ad42"
+    },
+    {
+      "path": "STATIC_BASELINE_ANALYSIS.json",
+      "bytes": 67814,
+      "sha256": "153d4bfd80aaa24aa4e4631db7ca78a52a920ce6653df337860b6c16d1a94bd4"
+    },
+    {
+      "path": "build_evidence_map.py",
+      "bytes": 10054,
+      "sha256": "c098ad3a8f2da46014ef4ceed7df081950e7fb1eea425482082b356b2670f82b"
+    },
+    {
+      "path": "source_records/BASELINE_BITSTREAM_EQUIVALENCE_REPORT.md",
+      "bytes": 11718,
+      "sha256": "eedfdf854cba3d469fbc6284ce12d07c9612ed54c6ae696ee75af0d584101cfd"
+    },
+    {
+      "path": "source_records/BASELINE_SIMULATION_SUMMARY.json",
+      "bytes": 2732,
+      "sha256": "1491719e88bbc06b69bff853f2b6a34e9f7f6d5cfc1b6099691935921aead1f9"
+    },
+    {
+      "path": "static_baseline_analysis.py",
+      "bytes": 7697,
+      "sha256": "92d507300e296cee882fdb7dcb2b98eef7ad0e6d6c0853bf387c8c027d037640"
+    }
+  ],
+  "independent_review": {
+    "result": "No material architecture, historical-scope or timing overclaim found.",
+    "correction_applied": "Clarified that the 768 combinational checks cover BUSY, n1 and n3; n972 behavior is supported by its register assignment, not combinational enumeration.",
+    "scope": "Reviewer read the explanation, evidence map, static inventory and analysis script; no HDL execution or extra source access."
+  },
+  "copied_historical_records": [
+    {
+      "source_id": "Q",
+      "path": "source_records/BASELINE_BITSTREAM_EQUIVALENCE_REPORT.md",
+      "sha256": "eedfdf854cba3d469fbc6284ce12d07c9612ed54c6ae696ee75af0d584101cfd",
+      "byte_identical": true
+    },
+    {
+      "source_id": "J",
+      "path": "source_records/BASELINE_SIMULATION_SUMMARY.json",
+      "sha256": "1491719e88bbc06b69bff853f2b6a34e9f7f6d5cfc1b6099691935921aead1f9",
+      "byte_identical": true
+    }
+  ]
+}

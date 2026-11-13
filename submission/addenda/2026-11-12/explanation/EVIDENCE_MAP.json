@@ -1,0 +1,1223 @@
+{
+  "schema_version": 1,
+  "source_policy": "Only enumerated original baseline, original interface/host, reference adapter/normal bench and permitted clean historical records. No links followed to other artifacts. No published solution or shared Claude/Jordan material used.",
+  "line_numbering": "1-based, inclusive, pinned by source SHA-256",
+  "sources": {
+    "B": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/rtl/baseline.v",
+      "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "bytes": 1213314,
+      "line_count": 45711,
+      "original_package_relative_path": "rtl/baseline.v"
+    },
+    "A": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/reference/baseline_protocol_dut.sv",
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "bytes": 465,
+      "line_count": 9,
+      "original_package_relative_path": "reference/baseline_protocol_dut.sv"
+    },
+    "T": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/reference/paired_normal_tb.sv",
+      "sha256": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+      "bytes": 5955,
+      "line_count": 126,
+      "original_package_relative_path": "reference/paired_normal_tb.sv"
+    },
+    "S": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/original_materials/qualifier/ice40_cryptographic_IP.md",
+      "sha256": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25",
+      "bytes": 3339,
+      "line_count": 55,
+      "original_package_relative_path": "evidence/original_materials/qualifier/ice40_cryptographic_IP.md"
+    },
+    "H": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/original_materials/qualifier/spi_ice40_crypto_ip_test.py",
+      "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+      "bytes": 3661,
+      "line_count": 145,
+      "original_package_relative_path": "evidence/original_materials/qualifier/spi_ice40_crypto_ip_test.py"
+    },
+    "R": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/historical_recovery/REPORT.md",
+      "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+      "bytes": 13350,
+      "line_count": 88,
+      "original_package_relative_path": "evidence/historical_recovery/REPORT.md"
+    },
+    "P": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/historical_recovery/PRIOR_TECHNICAL_BRIEF.txt",
+      "sha256": "c31e61847601c36a59f584bb9db444608fde89095f11d9334af1fdaa48a8abe1",
+      "bytes": 3393,
+      "line_count": 19,
+      "original_package_relative_path": "evidence/historical_recovery/PRIOR_TECHNICAL_BRIEF.txt"
+    },
+    "Q": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/REPORT.md",
+      "sha256": "eedfdf854cba3d469fbc6284ce12d07c9612ed54c6ae696ee75af0d584101cfd",
+      "bytes": 11718,
+      "line_count": 78,
+      "bundled_copy": "source_records/BASELINE_BITSTREAM_EQUIVALENCE_REPORT.md"
+    },
+    "J": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/SUMMARY.json",
+      "sha256": "1491719e88bbc06b69bff853f2b6a34e9f7f6d5cfc1b6099691935921aead1f9",
+      "bytes": 2732,
+      "line_count": 87,
+      "bundled_copy": "source_records/BASELINE_SIMULATION_SUMMARY.json"
+    },
+    "R_ORIGINAL": {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_recovery_2026-11-06/REPORT.md",
+      "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+      "bytes": 13350,
+      "line_count": 88,
+      "reviewer_note": "External historical original; byte-identical to bundled original-package evidence/historical_recovery/REPORT.md if hash equality below holds.",
+      "matches_packaged_recovery_report": true
+    }
+  },
+  "claims": [
+    {
+      "id": "E01",
+      "classification": [
+        "static_observation",
+        "proposed_interpretation",
+        "historical_report"
+      ],
+      "claim": "Original-derived baseline identity and architecture-level table-assisted multi-cycle interpretation; no standard cipher identification.",
+      "evidence": [
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 3,
+              "end": 3
+            },
+            {
+              "start": 42766,
+              "end": 42768
+            },
+            {
+              "start": 42786,
+              "end": 42797
+            },
+            {
+              "start": 42901,
+              "end": 42928
+            },
+            {
+              "start": 44315,
+              "end": 44331
+            }
+          ]
+        },
+        {
+          "source_id": "R",
+          "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+          "line_ranges": [
+            {
+              "start": 7,
+              "end": 14
+            }
+          ]
+        },
+        {
+          "source_id": "P",
+          "sha256": "c31e61847601c36a59f584bb9db444608fde89095f11d9334af1fdaa48a8abe1",
+          "line_ranges": [
+            {
+              "start": 3,
+              "end": 9
+            }
+          ]
+        }
+      ],
+      "limits": "Architecture interpretation combines the register/storage/data-selection observations below. It does not infer table contents or cipher identity."
+    },
+    {
+      "id": "E02",
+      "classification": [
+        "specification",
+        "original_host_source"
+      ],
+      "claim": "32-bit, shared SCK, <=1 MHz, synchronous active-low reset, mode direction, transfer-launch-read sequence and MSB-first host.",
+      "evidence": [
+        {
+          "source_id": "S",
+          "sha256": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25",
+          "line_ranges": [
+            {
+              "start": 4,
+              "end": 24
+            },
+            {
+              "start": 29,
+              "end": 55
+            }
+          ]
+        },
+        {
+          "source_id": "H",
+          "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+          "line_ranges": [
+            {
+              "start": 14,
+              "end": 21
+            },
+            {
+              "start": 25,
+              "end": 34
+            },
+            {
+              "start": 41,
+              "end": 48
+            },
+            {
+              "start": 59,
+              "end": 87
+            },
+            {
+              "start": 96,
+              "end": 137
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "classification": [
+        "static_observation",
+        "historical_inference"
+      ],
+      "claim": "Functional roles and duplicated status, without physical package-pin validation.",
+      "evidence": [
+        {
+          "source_id": "A",
+          "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+          "line_ranges": [
+            {
+              "start": 1,
+              "end": 9
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 3,
+              "end": 3
+            },
+            {
+              "start": 30051,
+              "end": 30051
+            }
+          ]
+        },
+        {
+          "source_id": "R",
+          "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+          "line_ranges": [
+            {
+              "start": 20,
+              "end": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "classification": [
+        "static_observation",
+        "boolean_substitution"
+      ],
+      "claim": "32-bit serial path under CS low; MISO registers old n800; CS high selects other parallel data; no CS-triggered sequential block.",
+      "evidence": [
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43628,
+              "end": 43628
+            },
+            {
+              "start": 45031,
+              "end": 45031
+            },
+            {
+              "start": 44269,
+              "end": 44269
+            },
+            {
+              "start": 45673,
+              "end": 45673
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 42912,
+              "end": 42912
+            },
+            {
+              "start": 44315,
+              "end": 44315
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 42928,
+              "end": 42928
+            },
+            {
+              "start": 44331,
+              "end": 44331
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 42974,
+              "end": 42974
+            },
+            {
+              "start": 44377,
+              "end": 44377
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43098,
+              "end": 43098
+            },
+            {
+              "start": 44501,
+              "end": 44501
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43135,
+              "end": 43135
+            },
+            {
+              "start": 44538,
+              "end": 44538
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43166,
+              "end": 43166
+            },
+            {
+              "start": 44569,
+              "end": 44569
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43246,
+              "end": 43246
+            },
+            {
+              "start": 44649,
+              "end": 44649
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43315,
+              "end": 43315
+            },
+            {
+              "start": 44718,
+              "end": 44718
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43421,
+              "end": 43421
+            },
+            {
+              "start": 44824,
+              "end": 44824
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43428,
+              "end": 43428
+            },
+            {
+              "start": 44831,
+              "end": 44831
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43553,
+              "end": 43553
+            },
+            {
+              "start": 44956,
+              "end": 44956
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43563,
+              "end": 43563
+            },
+            {
+              "start": 44966,
+              "end": 44966
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43602,
+              "end": 43602
+            },
+            {
+              "start": 45005,
+              "end": 45005
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43628,
+              "end": 43628
+            },
+            {
+              "start": 45031,
+              "end": 45031
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43631,
+              "end": 43631
+            },
+            {
+              "start": 45034,
+              "end": 45034
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43666,
+              "end": 43666
+            },
+            {
+              "start": 45069,
+              "end": 45069
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43729,
+              "end": 43729
+            },
+            {
+              "start": 45132,
+              "end": 45132
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43733,
+              "end": 43733
+            },
+            {
+              "start": 45136,
+              "end": 45136
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43739,
+              "end": 43739
+            },
+            {
+              "start": 45142,
+              "end": 45142
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43806,
+              "end": 43806
+            },
+            {
+              "start": 45210,
+              "end": 45210
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43815,
+              "end": 43815
+            },
+            {
+              "start": 45219,
+              "end": 45219
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43866,
+              "end": 43866
+            },
+            {
+              "start": 45270,
+              "end": 45270
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43884,
+              "end": 43884
+            },
+            {
+              "start": 45288,
+              "end": 45288
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43936,
+              "end": 43936
+            },
+            {
+              "start": 45340,
+              "end": 45340
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43958,
+              "end": 43958
+            },
+            {
+              "start": 45362,
+              "end": 45362
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43989,
+              "end": 43989
+            },
+            {
+              "start": 45393,
+              "end": 45393
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43993,
+              "end": 43993
+            },
+            {
+              "start": 45397,
+              "end": 45397
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 44025,
+              "end": 44025
+            },
+            {
+              "start": 45429,
+              "end": 45429
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 44164,
+              "end": 44164
+            },
+            {
+              "start": 45568,
+              "end": 45568
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 44167,
+              "end": 44167
+            },
+            {
+              "start": 45571,
+              "end": 45571
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 44181,
+              "end": 44181
+            },
+            {
+              "start": 45585,
+              "end": 45585
+            }
+          ]
+        },
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 44280,
+              "end": 44280
+            },
+            {
+              "start": 45684,
+              "end": 45684
+            }
+          ]
+        }
+      ],
+      "derived_artifact": "STATIC_BASELINE_ANALYSIS.json:serial_path_MOSI_to_last_register, serial_path_evidence, state",
+      "limits": "Serial identity obtained by CS=0 substitution, not an HDL simulation. Output sample timing follows nonblocking rising-edge register structure."
+    },
+    {
+      "id": "E05",
+      "classification": [
+        "static_inventory",
+        "structural_role_inference",
+        "historical_report"
+      ],
+      "claim": "1404 LUT-tagged assignments, four RAM primitives, 71 rising-SCK registers partitioned into 32 serial, 32 working, four counter bits, qualifier, delayed BUSY and MISO.",
+      "evidence": [
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 42766,
+              "end": 42768
+            },
+            {
+              "start": 42800,
+              "end": 42802
+            },
+            {
+              "start": 42834,
+              "end": 42836
+            },
+            {
+              "start": 42868,
+              "end": 42870
+            },
+            {
+              "start": 42901,
+              "end": 44304
+            },
+            {
+              "start": 44305,
+              "end": 45708
+            }
+          ]
+        },
+        {
+          "source_id": "Q",
+          "sha256": "eedfdf854cba3d469fbc6284ce12d07c9612ed54c6ae696ee75af0d584101cfd",
+          "line_ranges": [
+            {
+              "start": 26,
+              "end": 28
+            }
+          ]
+        }
+      ],
+      "derived_artifact": "STATIC_BASELINE_ANALYSIS.json:counts, state, working_registers, qualification_bit_direct_lut_consumers",
+      "limits": "LUT comment count is a recovered-text count, not a fresh mapped utilization estimate. Two-bit counter interpretation follows toggle/XOR D equations and the associated enables/resets."
+    },
+    {
+      "id": "E06",
+      "classification": [
+        "static_observation",
+        "inference_from_constant_wiring"
+      ],
+      "claim": "Four fixed initialized lookup primitives: READ_MODE=1, eight nonconstant address signals and eight connected output bits each; SCK read clock, common gated read enable, disabled write clock and clock enable.",
+      "evidence": [
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 42766,
+              "end": 42768
+            },
+            {
+              "start": 42786,
+              "end": 42796
+            },
+            {
+              "start": 42800,
+              "end": 42802
+            },
+            {
+              "start": 42820,
+              "end": 42830
+            },
+            {
+              "start": 42834,
+              "end": 42836
+            },
+            {
+              "start": 42854,
+              "end": 42864
+            },
+            {
+              "start": 42868,
+              "end": 42870
+            },
+            {
+              "start": 42888,
+              "end": 42898
+            },
+            {
+              "start": 42901,
+              "end": 42901
+            },
+            {
+              "start": 43384,
+              "end": 43384
+            },
+            {
+              "start": 44787,
+              "end": 44787
+            },
+            {
+              "start": 45177,
+              "end": 45177
+            }
+          ]
+        },
+        {
+          "source_id": "R",
+          "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+          "line_ranges": [
+            {
+              "start": 13,
+              "end": 13
+            }
+          ]
+        }
+      ],
+      "derived_artifact": "STATIC_BASELINE_ANALYSIS.json:memories, control_alias_chains.n5, control_alias_chains.n466",
+      "limits": "64 INIT payload lines are excluded before parsing; no content values, addressing permutation, table identity or key interpretation is claimed."
+    },
+    {
+      "id": "E07",
+      "classification": [
+        "static_observation",
+        "proposed_interpretation",
+        "driver_source"
+      ],
+      "claim": "Direction input feeds 32 LUT equations; representative selection n1779. Working bank and memory outputs feed Boolean datapath. Stable-mode driver use; no cipher family/round count inference.",
+      "evidence": [
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43238,
+              "end": 43238
+            },
+            {
+              "start": 42913,
+              "end": 42913
+            },
+            {
+              "start": 43239,
+              "end": 43239
+            },
+            {
+              "start": 43667,
+              "end": 43667
+            },
+            {
+              "start": 42920,
+              "end": 42920
+            },
+            {
+              "start": 43276,
+              "end": 43276
+            },
+            {
+              "start": 44679,
+              "end": 44679
+            }
+          ]
+        },
+        {
+          "source_id": "T",
+          "sha256": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+          "line_ranges": [
+            {
+              "start": 81,
+              "end": 89
+            },
+            {
+              "start": 108,
+              "end": 119
+            }
+          ]
+        },
+        {
+          "source_id": "R",
+          "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+          "line_ranges": [
+            {
+              "start": 29,
+              "end": 29
+            },
+            {
+              "start": 73,
+              "end": 74
+            }
+          ]
+        }
+      ],
+      "derived_artifact": "STATIC_BASELINE_ANALYSIS.json:mode_direct_lut_consumers, working_registers, state.*.data_combinational_leaves, qualification_bit_direct_lut_consumers",
+      "limits": "No algorithm name is inferred from the host comments. No assertion that encryption/decryption form a bijection for every input."
+    },
+    {
+      "id": "E08",
+      "classification": [
+        "static_observation",
+        "exhaustive_combinational_identity",
+        "timing_inference"
+      ],
+      "claim": "BUSY combinational equation, serial-enable equation, delayed BUSY register, and next-CS-high-edge parallel loading after a BUSY fall.",
+      "evidence": [
+        {
+          "source_id": "B",
+          "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+          "line_ranges": [
+            {
+              "start": 43022,
+              "end": 43022
+            },
+            {
+              "start": 43089,
+              "end": 43089
+            },
+            {
+              "start": 43123,
+              "end": 43123
+            },
+            {
+              "start": 43410,
+              "end": 43410
+            },
+            {
+              "start": 43626,
+              "end": 43626
+            },
+            {
+              "start": 43764,
+              "end": 43764
+            },
+            {
+              "start": 43923,
+              "end": 43923
+            },
+            {
+              "start": 44093,
+              "end": 44093
+            },
+            {
+              "start": 44341,
+              "end": 44341
+            },
+            {
+              "start": 44492,
+              "end": 44492
+            },
+            {
+              "start": 44526,
+              "end": 44526
+            },
+            {
+              "start": 44813,
+              "end": 44813
+            },
+            {
+              "start": 45167,
+              "end": 45167
+            },
+            {
+              "start": 45327,
+              "end": 45327
+            },
+            {
+              "start": 45497,
+              "end": 45497
+            },
+            {
+              "start": 42938,
+              "end": 42938
+            },
+            {
+              "start": 44269,
+              "end": 44269
+            },
+            {
+              "start": 45673,
+              "end": 45673
+            }
+          ]
+        }
+      ],
+      "derived_artifact": "STATIC_BASELINE_ANALYSIS.json:control_boolean_identity_checks and control_alias_chains; 768 identities checked over 256 combinations.",
+      "limits": "The result-load timing inference assumes normal launch/completion, reset released and chip-select held high for the loading edge; it is not a proof of arbitrary malformed schedules."
+    },
+    {
+      "id": "E09",
+      "classification": [
+        "historical_tested_evidence",
+        "original_host_source",
+        "static_timing_explanation"
+      ],
+      "claim": "Launch-inclusive four-clock BUSY observation, seven additional host clocks, post-edge sampling qualification, known-answer host passes and retained immediate-read failures.",
+      "evidence": [
+        {
+          "source_id": "R",
+          "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+          "line_ranges": [
+            {
+              "start": 39,
+              "end": 49
+            },
+            {
+              "start": 57,
+              "end": 67
+            }
+          ]
+        },
+        {
+          "source_id": "H",
+          "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+          "line_ranges": [
+            {
+              "start": 72,
+              "end": 78
+            },
+            {
+              "start": 118,
+              "end": 124
+            }
+          ]
+        },
+        {
+          "source_id": "Q",
+          "sha256": "eedfdf854cba3d469fbc6284ce12d07c9612ed54c6ae696ee75af0d584101cfd",
+          "line_ranges": [
+            {
+              "start": 16,
+              "end": 20
+            }
+          ]
+        },
+        {
+          "source_id": "J",
+          "sha256": "1491719e88bbc06b69bff853f2b6a34e9f7f6d5cfc1b6099691935921aead1f9",
+          "line_ranges": [
+            {
+              "start": 65,
+              "end": 86
+            }
+          ]
+        }
+      ],
+      "limits": "No simulation, hardware or formal tool rerun occurred for this addendum. Recorded rate labels describe behavioral simulation."
+    },
+    {
+      "id": "E10",
+      "classification": [
+        "original_host_source",
+        "historical_tested_evidence"
+      ],
+      "claim": "Single supplied P/C pair and both directional historical passes; 352 transactions/model and 104468 checkpoints; arbitrary stimuli lack an independent cipher oracle.",
+      "evidence": [
+        {
+          "source_id": "H",
+          "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+          "line_ranges": [
+            {
+              "start": 33,
+              "end": 34
+            }
+          ]
+        },
+        {
+          "source_id": "R",
+          "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+          "line_ranges": [
+            {
+              "start": 59,
+              "end": 60
+            },
+            {
+              "start": 74,
+              "end": 74
+            }
+          ]
+        },
+        {
+          "source_id": "T",
+          "sha256": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+          "line_ranges": [
+            {
+              "start": 8,
+              "end": 8
+            },
+            {
+              "start": 81,
+              "end": 89
+            },
+            {
+              "start": 96,
+              "end": 99
+            },
+            {
+              "start": 108,
+              "end": 119
+            }
+          ]
+        },
+        {
+          "source_id": "Q",
+          "sha256": "eedfdf854cba3d469fbc6284ce12d07c9612ed54c6ae696ee75af0d584101cfd",
+          "line_ranges": [
+            {
+              "start": 16,
+              "end": 20
+            },
+            {
+              "start": 32,
+              "end": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E11",
+      "classification": [
+        "historical_formal_report",
+        "scope_limit"
+      ],
+      "claim": "Historical baseline-versus-regenerated-binary equivalence covers 135 next-state bits/three outputs under state relation and each-mode all-payload prescribed transactions; preserves readiness failure.",
+      "evidence": [
+        {
+          "source_id": "Q",
+          "sha256": "eedfdf854cba3d469fbc6284ce12d07c9612ed54c6ae696ee75af0d584101cfd",
+          "line_ranges": [
+            {
+              "start": 3,
+              "end": 5
+            },
+            {
+              "start": 12,
+              "end": 20
+            },
+            {
+              "start": 26,
+              "end": 34
+            },
+            {
+              "start": 65,
+              "end": 71
+            }
+          ]
+        },
+        {
+          "source_id": "P",
+          "sha256": "c31e61847601c36a59f584bb9db444608fde89095f11d9334af1fdaa48a8abe1",
+          "line_ranges": [
+            {
+              "start": 7,
+              "end": 9
+            }
+          ]
+        }
+      ],
+      "limits": "Formal results are historical report statements. No new proof or log rerun. Equality is not independent cipher correctness, universal inversion or original physical-binary recovery proof."
+    },
+    {
+      "id": "E12",
+      "classification": [
+        "scope_statement",
+        "explicit_unknowns"
+      ],
+      "claim": "Provides architectural proposed explanation; algorithm/table/key semantics and cryptographic strength remain unknown, no key recovery attempted.",
+      "evidence": [
+        {
+          "source_id": "R",
+          "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+          "line_ranges": [
+            {
+              "start": 11,
+              "end": 14
+            },
+            {
+              "start": 73,
+              "end": 74
+            }
+          ]
+        },
+        {
+          "source_id": "P",
+          "sha256": "c31e61847601c36a59f584bb9db444608fde89095f11d9334af1fdaa48a8abe1",
+          "line_ranges": [
+            {
+              "start": 3,
+              "end": 9
+            }
+          ]
+        }
+      ],
+      "limits": "The statement about this being a proposal rather than an exhaustive proof describes the deliverable; it is not a claim that this task independently audited course grading requirements."
+    }
+  ],
+  "static_analysis_artifacts": [
+    "static_baseline_analysis.py",
+    "STATIC_BASELINE_ANALYSIS.json",
+    "STATIC_ANALYSIS_STDOUT.json"
+  ],
+  "fresh_execution_scope": "Python static text/connectivity parsing and combinational Boolean identity checks only. No HDL generation/modification/execution; no attack code or key recovery."
+}

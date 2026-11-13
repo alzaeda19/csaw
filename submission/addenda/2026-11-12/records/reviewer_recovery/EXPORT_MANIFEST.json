@@ -1,0 +1,261 @@
+{
+  "format": "filtered_native_reviewer_records_v1",
+  "created_utc": "2026-11-13T01:21:19.379057+00:00",
+  "scope": "Original current-generation reviewer and AI-record packaging turns only; frozen native sources, not unabridged chat history.",
+  "source_open_mode": "read-only binary; fixed prefix lengths",
+  "snapshots": [
+    {
+      "reviewer": "protocol_review",
+      "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+      "source_thread_id": "01a1d245-26de-7730-8903-654a1eb4004d",
+      "agent_path": "/root/submission_protocol_review",
+      "prefix_bytes": 802897,
+      "complete_lines": 190,
+      "prefix_sha256": "ebda1cd30dedcbc83a67156f7ce2f1cab32de124c3f2ab8fd20b32ef504b4b8f",
+      "last_timestamp": "2026-11-13T00:48:39.890Z",
+      "last_record_type": "event_msg",
+      "last_payload_type": "task_complete",
+      "bootstrap_lines_excluded": [
+        1,
+        12
+      ],
+      "inherited_parent_history_exported": false,
+      "turn_markers": [
+        {
+          "native_line": 2,
+          "turn_id": "01a1d245-2704-79d1-a305-f315a16334bb",
+          "root_turn_id": "01a1d242-c430-7f82-b027-686debd939f6",
+          "timestamp": "2026-11-13T00:18:29.792Z",
+          "section": "review_and_report_generation"
+        },
+        {
+          "native_line": 33,
+          "turn_id": "01a1d248-c06a-7843-90fc-21ef47d594c3",
+          "root_turn_id": "01a1d242-c430-7f82-b027-686debd939f6",
+          "timestamp": "2026-11-13T00:22:25.671Z",
+          "section": "review_and_report_generation"
+        },
+        {
+          "native_line": 54,
+          "turn_id": "01a1d24d-7c39-72e1-bc0c-69111e40c1fd",
+          "root_turn_id": "01a1d242-c430-7f82-b027-686debd939f6",
+          "timestamp": "2026-11-13T00:27:36.075Z",
+          "section": "review_and_report_generation"
+        },
+        {
+          "native_line": 77,
+          "turn_id": "01a1d25a-f923-7553-b5fc-0ebb8359d29a",
+          "root_turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+          "timestamp": "2026-11-13T00:42:19.976Z",
+          "section": "review_and_report_generation"
+        },
+        {
+          "native_line": 105,
+          "turn_id": "01a1d25d-97e0-7cf1-90c8-621f694be80a",
+          "root_turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+          "timestamp": "2026-11-13T00:45:11.629Z",
+          "section": "original_generation_ai_record_packaging"
+        }
+      ],
+      "retained_records": 45,
+      "omitted_records": 145,
+      "source_prefix_unchanged_on_verification": true
+    },
+    {
+      "reviewer": "report_review",
+      "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+      "source_thread_id": "01a1d245-3808-71b3-a696-a4f14fca0a76",
+      "agent_path": "/root/submission_report_review",
+      "prefix_bytes": 563576,
+      "complete_lines": 115,
+      "prefix_sha256": "d9ed9d6cbf10b34951194a8460f7e3fdc380ac26fff17af884c19b44dcd5856a",
+      "last_timestamp": "2026-11-13T00:47:55.157Z",
+      "last_record_type": "event_msg",
+      "last_payload_type": "task_complete",
+      "bootstrap_lines_excluded": [
+        1,
+        12
+      ],
+      "inherited_parent_history_exported": false,
+      "turn_markers": [
+        {
+          "native_line": 2,
+          "turn_id": "01a1d245-380f-7651-b792-3700395b74a1",
+          "root_turn_id": "01a1d242-c430-7f82-b027-686debd939f6",
+          "timestamp": "2026-11-13T00:18:34.136Z",
+          "section": "review_and_report_generation"
+        },
+        {
+          "native_line": 31,
+          "turn_id": "01a1d247-4c5c-75f1-a171-d22909f3e518",
+          "root_turn_id": "01a1d242-c430-7f82-b027-686debd939f6",
+          "timestamp": "2026-11-13T00:20:50.429Z",
+          "section": "review_and_report_generation"
+        },
+        {
+          "native_line": 52,
+          "turn_id": "01a1d25b-1220-7e73-a91e-cf0a302c15d9",
+          "root_turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+          "timestamp": "2026-11-13T00:42:26.269Z",
+          "section": "review_and_report_generation"
+        },
+        {
+          "native_line": 93,
+          "turn_id": "01a1d25f-d0b3-78e2-8959-429ec689173c",
+          "root_turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+          "timestamp": "2026-11-13T00:47:37.175Z",
+          "section": "original_generation_final_package_consistency_review"
+        }
+      ],
+      "retained_records": 29,
+      "omitted_records": 86,
+      "source_prefix_unchanged_on_verification": true
+    }
+  ],
+  "existing_app_exports": [
+    {
+      "reviewer": "protocol_review",
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/ai_logs/reviewer_exports/protocol_review.json",
+      "bytes": 51976,
+      "sha256": "20fedad069487a6d56f926feddbbe488886b24d35a1b880d500080e3b53a35d4",
+      "turn_ids": [
+        "01a1d245-2704-79d1-a305-f315a16334bb",
+        "01a1d248-c06a-7843-90fc-21ef47d594c3",
+        "01a1d24d-7c39-72e1-bc0c-69111e40c1fd",
+        "01a1d25a-f923-7553-b5fc-0ebb8359d29a"
+      ]
+    },
+    {
+      "reviewer": "report_review",
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/ai_logs/reviewer_exports/report_review.json",
+      "bytes": 68615,
+      "sha256": "0f50b26cefb46159e4818be16ec60f3d9c86e195acea7260eb3760f33d3f35df",
+      "turn_ids": [
+        "01a1d245-380f-7651-b792-3700395b74a1",
+        "01a1d247-4c5c-75f1-a171-d22909f3e518",
+        "01a1d25b-1220-7e73-a91e-cf0a302c15d9"
+      ]
+    }
+  ],
+  "original_current_task_export_references": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/ai_logs/codex_current_task/EXPORT_MANIFEST.json",
+      "bytes": 4092,
+      "sha256": "d31ee13cc60576adc4a4e3bb636d62de4995b1bc6baf9a765d7b2d59311fa42f"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/ai_logs/codex_current_task/omitted_records.jsonl",
+      "bytes": 221385,
+      "sha256": "752c2a6aa5cadb8bc911c8e232ac9ff4896964ad20b0c359a8e94a422ab72af5"
+    }
+  ],
+  "original_export_cutoff": {
+    "prefix_bytes": 2371665,
+    "complete_lines": 573,
+    "prefix_sha256": "579f234195fef4e71bb92b2965cf6e63f00c57cbb17382cf17a75fbe901b493d",
+    "last_timestamp": "2026-11-13T00:45:21.850Z",
+    "last_record": "assistant commentary",
+    "includes_later_final_reply": false
+  },
+  "original_omission_ledger_records": 387,
+  "counts": {
+    "native_lines": 305,
+    "retained_records": 74,
+    "omitted_records": 231,
+    "verified_retained_fields": 519,
+    "by_reviewer": {
+      "protocol_review": {
+        "retained_records": 45,
+        "omitted_records": 145,
+        "inbound_wrappers": 7,
+        "finals": 5
+      },
+      "report_review": {
+        "retained_records": 29,
+        "omitted_records": 86,
+        "inbound_wrappers": 5,
+        "finals": 4
+      }
+    },
+    "recovered_delegation_prompt_bodies": 0,
+    "unavailable_inbound_prompt_bodies": 12,
+    "visible_routing_wrappers": 12,
+    "previously_covered_finals": 7,
+    "new_finals": 2,
+    "native_records_overlapping_saved_app_items": 39,
+    "native_records_without_saved_app_counterpart": 35,
+    "novelty_by_category": {
+      "new_routing_wrapper_only_no_prompt_body": 12,
+      "overlaps_saved_app_operation": 32,
+      "overlaps_saved_app_final_exact_text": 7,
+      "new_visible_tool_record": 15,
+      "new_encrypted_call_metadata_only": 3,
+      "new_empty_call_result_metadata_only": 2,
+      "new_final_response": 2,
+      "new_visible_dispatch_status": 1
+    }
+  },
+  "verification": {
+    "every_retained_field_exactly_equal_to_native": true,
+    "every_frozen_line_accounted_for_once": true,
+    "raw_line_hash_includes_original_newline": true,
+    "original_prefixes_unchanged": true,
+    "encrypted_payload_values_exported": false,
+    "decryption_attempted": false,
+    "prompt_reconstruction_attempted": false,
+    "historical_calls_replayed": false,
+    "exporter_added_truncation": false,
+    "value_hash_definition": "SHA-256 of UTF-8 canonical JSON (sorted keys, separators comma/colon, ensure_ascii=False)."
+  },
+  "omission_policy": [
+    "Hidden reasoning and encrypted values",
+    "System/developer/platform instructions and bootstrap/inherited context",
+    "Historical provenance/challenge-instruction outputs",
+    "Nested parent-record inventories and transcript fragments",
+    "Duplicate item-completed events and internal metadata"
+  ],
+  "limitations": [
+    "No inbound prompt body is visible in the allowed native sources.",
+    "Final review statements remain historical reviewer statements, not fresh simulation or design verification.",
+    "Two newly retained report tool outputs are source-truncated; missing content remains unavailable.",
+    "Native tool wrappers and exact-value comparison differences do not by themselves establish new substantive information."
+  ],
+  "files": {
+    "visible_reviewer_records.jsonl": {
+      "bytes": 264898,
+      "sha256": "66d364b9d3839841234b05fc850312f5af1a896fe11fb444ef72f8ff594d268b"
+    },
+    "omitted_records.jsonl": {
+      "bytes": 147789,
+      "sha256": "537a1ab4da3e1dab6d9652a9822ab54b0b48575c98aeaed510f77b1ee6efba10"
+    },
+    "retained_field_verification.jsonl": {
+      "bytes": 130628,
+      "sha256": "639ae40f54b55c8dbe3dc22b200de43ae41ecedb205d61286e0058234329f7f3"
+    },
+    "PROMPT_GAPS.json": {
+      "bytes": 11888,
+      "sha256": "736b4f83d4b356fd79548bcd26375593f58c56c7ffe9c5be009c87bf01671d42"
+    },
+    "APP_EXPORT_COMPARISON.json": {
+      "bytes": 33821,
+      "sha256": "918a3b235433136663d6bfc01535236282de880fb6e3f5db3bb47a88d0441a3c"
+    },
+    "SOURCE_TRUNCATIONS.json": {
+      "bytes": 2684,
+      "sha256": "9fc2ce5217b7b149641ed918bb040c4536b2481fbbc892d4be8f2059ffd87f75"
+    },
+    "VISIBLE_REVIEWER_TRANSCRIPT.md": {
+      "bytes": 197661,
+      "sha256": "7d308560104ae8d666b654d8f129e6d65bbd615742d4bcffce376dcd30775186"
+    },
+    "README.md": {
+      "bytes": 4641,
+      "sha256": "4ec6441b7bc270b94042ceddf086c89896d95805a360172aeea532a41e3642fa"
+    },
+    "export_reviewer_records.py": {
+      "bytes": 32481,
+      "sha256": "be388488cf2cf6470b6c2b319f8d39be9f068bd8aa47ae23bc2421d1ed0edff3"
+    }
+  }
+}

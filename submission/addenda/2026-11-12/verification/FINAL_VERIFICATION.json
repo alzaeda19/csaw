@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-13T01:23:33.809237+00:00",
+  "protected_original_files_unchanged": 263,
+  "original_zip_sha256": "0c053f3595079dbe7aa11789e69b1e26d359619b7af72d7535d1da004ce0ca83",
+  "explanation_source_checks": [
+    {
+      "source_id": "B",
+      "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "matches": true
+    },
+    {
+      "source_id": "A",
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "matches": true
+    },
+    {
+      "source_id": "T",
+      "sha256": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+      "matches": true
+    },
+    {
+      "source_id": "S",
+      "sha256": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25",
+      "matches": true
+    },
+    {
+      "source_id": "H",
+      "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+      "matches": true
+    },
+    {
+      "source_id": "R",
+      "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+      "matches": true
+    },
+    {
+      "source_id": "P",
+      "sha256": "c31e61847601c36a59f584bb9db444608fde89095f11d9334af1fdaa48a8abe1",
+      "matches": true
+    },
+    {
+      "source_id": "Q",
+      "sha256": "eedfdf854cba3d469fbc6284ce12d07c9612ed54c6ae696ee75af0d584101cfd",
+      "matches": true
+    },
+    {
+      "source_id": "J",
+      "sha256": "1491719e88bbc06b69bff853f2b6a34e9f7f6d5cfc1b6099691935921aead1f9",
+      "matches": true
+    },
+    {
+      "source_id": "R_ORIGINAL",
+      "sha256": "386c842aaa6c46bfa709c27e4a38f2d3b4267f4e8ea71a93d4f60eea70ab15b1",
+      "matches": true
+    }
+  ],
+  "explanation_artifact_hashes_checked": 10,
+  "generation_record_verification": {
+    "status": "PASS",
+    "checked_utc": "2026-11-13T01:19:55.480238+00:00",
+    "retained_records": 199,
+    "omitted_records": 467,
+    "prior_records_exactly_preserved": 155,
+    "new_records": 44,
+    "retained_leaf_values_checked": 1633,
+    "native_line_hashes_checked": 666,
+    "native_coverage_first_line": 32,
+    "native_coverage_last_line": 697,
+    "final_reply_present_at_line": 694,
+    "new_and_old_source_prefix_hashes_match": true,
+    "export_manifest_files_match": true,
+    "source_prefix_unchanged": true,
+    "encrypted_payload_scan_clear": true,
+    "limits": "Checks authenticity of retained fields and documented coverage. Does not recover encrypted prompts or certify that every omitted item is required or irrelevant to a grading rubric."
+  },
+  "reviewer_record_verification": {
+    "status": "PASS",
+    "checked_utc": "2026-11-13T01:22:53.411566+00:00",
+    "native_source_prefixes": 2,
+    "raw_line_hashes": 305,
+    "retained_records": 74,
+    "whole_record_omissions": 231,
+    "retained_field_values_checked": 519,
+    "artifact_hashes_checked": 9,
+    "encrypted_payload_scan_clear": true,
+    "limit": "Authenticates retained native fields and exported file integrity; inaccessible prompt text remains inaccessible."
+  },
+  "raw_encrypted_payload_scan_clear": true,
+  "no_new_hdl_execution": true,
+  "no_repository_write_or_push": true,
+  "publication_owner": "Coordinating chat 01a1c563-aa79-7e12-ae2f-72d867d1e3da"
+}

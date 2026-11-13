@@ -1,0 +1,59 @@
+{
+  "source": {
+    "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/rtl/baseline.v",
+    "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+    "bytes": 1213314,
+    "lines": 45711
+  },
+  "counts": {
+    "ram_primitives": 4,
+    "lut_assignments": 1404,
+    "continuous_assignments": 2738,
+    "posedge_registers": 71,
+    "registers_by_enable": {
+      "n1": 32,
+      "n3": 34,
+      "n681": 3,
+      "1'b1": 2
+    },
+    "registers_by_clock": {
+      "io_9_31_1": 71
+    },
+    "init_lines_excluded": 64
+  },
+  "serial_path": [
+    "n628",
+    "n390",
+    "n619",
+    "n384",
+    "n610",
+    "n607",
+    "n609",
+    "n601",
+    "n587",
+    "n578",
+    "n579",
+    "n577",
+    "n698",
+    "n781",
+    "n776",
+    "n897",
+    "n898",
+    "n1015",
+    "n1024",
+    "n998",
+    "n1034",
+    "n907",
+    "n1039",
+    "n1038",
+    "n910",
+    "n921",
+    "n915",
+    "n810",
+    "n814",
+    "n798",
+    "n917",
+    "n800"
+  ],
+  "mode_direct_lut_consumers": 32
+}

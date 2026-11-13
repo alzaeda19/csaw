@@ -1,0 +1,947 @@
+{
+  "existing_exports": [
+    {
+      "reviewer": "protocol_review",
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/ai_logs/reviewer_exports/protocol_review.json",
+      "bytes": 51976,
+      "sha256": "20fedad069487a6d56f926feddbbe488886b24d35a1b880d500080e3b53a35d4",
+      "turn_ids": [
+        "01a1d245-2704-79d1-a305-f315a16334bb",
+        "01a1d248-c06a-7843-90fc-21ef47d594c3",
+        "01a1d24d-7c39-72e1-bc0c-69111e40c1fd",
+        "01a1d25a-f923-7553-b5fc-0ebb8359d29a"
+      ]
+    },
+    {
+      "reviewer": "report_review",
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/ai_logs/reviewer_exports/report_review.json",
+      "bytes": 68615,
+      "sha256": "0f50b26cefb46159e4818be16ec60f3d9c86e195acea7260eb3760f33d3f35df",
+      "turn_ids": [
+        "01a1d245-380f-7651-b792-3700395b74a1",
+        "01a1d247-4c5c-75f1-a171-d22909f3e518",
+        "01a1d25b-1220-7e73-a91e-cf0a302c15d9"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "reviewer": "protocol_review",
+      "native_line": 17,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 6420,
+      "app_exact_value_pointers": [
+        "/turns/3/items/0/output/text"
+      ],
+      "novelty": "already_present_exact_text",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 29,
+      "kind": "assistant_final",
+      "characters": 752,
+      "app_exact_value_pointers": [
+        "/turns/3/items/2/text"
+      ],
+      "novelty": "already_present_exact_text"
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 40,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 7370,
+      "app_exact_value_pointers": [
+        "/turns/2/items/0/output/text"
+      ],
+      "novelty": "already_present_exact_text",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 50,
+      "kind": "assistant_final",
+      "characters": 501,
+      "app_exact_value_pointers": [
+        "/turns/2/items/2/text"
+      ],
+      "novelty": "already_present_exact_text"
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 61,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 9514,
+      "app_exact_value_pointers": [
+        "/turns/1/items/0/output/text"
+      ],
+      "novelty": "already_present_exact_text",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 73,
+      "kind": "assistant_final",
+      "characters": 514,
+      "app_exact_value_pointers": [
+        "/turns/1/items/2/text"
+      ],
+      "novelty": "already_present_exact_text"
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 84,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 18318,
+      "app_exact_value_pointers": [
+        "/turns/0/items/0/output/text"
+      ],
+      "novelty": "already_present_exact_text",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 101,
+      "kind": "assistant_final",
+      "characters": 516,
+      "app_exact_value_pointers": [
+        "/turns/0/items/3/text"
+      ],
+      "novelty": "already_present_exact_text"
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 159,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 0,
+      "app_exact_value_pointers": [],
+      "novelty": "native_tool_text_not_an_exact_saved_app_string",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 159,
+      "kind": "tool_output_text_block",
+      "native_block_index": 2,
+      "characters": 2,
+      "app_exact_value_pointers": [],
+      "novelty": "native_tool_text_not_an_exact_saved_app_string",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 168,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 301,
+      "app_exact_value_pointers": [],
+      "novelty": "native_tool_text_not_an_exact_saved_app_string",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 175,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 425,
+      "app_exact_value_pointers": [],
+      "novelty": "native_tool_text_not_an_exact_saved_app_string",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 187,
+      "kind": "assistant_final",
+      "characters": 478,
+      "app_exact_value_pointers": [],
+      "novelty": "new_visible_final_absent_from_saved_app_export"
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 27,
+      "kind": "assistant_final",
+      "characters": 2848,
+      "app_exact_value_pointers": [
+        "/turns/2/items/2/text"
+      ],
+      "novelty": "already_present_exact_text"
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 48,
+      "kind": "assistant_final",
+      "characters": 2237,
+      "app_exact_value_pointers": [
+        "/turns/1/items/2/text"
+      ],
+      "novelty": "already_present_exact_text"
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 59,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 12778,
+      "app_exact_value_pointers": [
+        "/turns/0/items/0/output/text"
+      ],
+      "novelty": "already_present_exact_text",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 74,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 2,
+      "app_exact_value_pointers": [],
+      "novelty": "native_tool_text_not_an_exact_saved_app_string",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 81,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 40,
+      "app_exact_value_pointers": [
+        "/turns/0/items/2/output/text"
+      ],
+      "novelty": "already_present_exact_text",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 89,
+      "kind": "assistant_final",
+      "characters": 386,
+      "app_exact_value_pointers": [
+        "/turns/0/items/4/text"
+      ],
+      "novelty": "already_present_exact_text"
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 100,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 40100,
+      "app_exact_value_pointers": [],
+      "novelty": "native_tool_text_not_an_exact_saved_app_string",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 107,
+      "kind": "tool_output_text_block",
+      "native_block_index": 1,
+      "characters": 18997,
+      "app_exact_value_pointers": [],
+      "novelty": "native_tool_text_not_an_exact_saved_app_string",
+      "note": "A missing exact string match is not proof of new substantive information; formatting, wrappers, and diffs can differ."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 112,
+      "kind": "assistant_final",
+      "characters": 370,
+      "app_exact_value_pointers": [],
+      "novelty": "new_visible_final_absent_from_saved_app_export"
+    }
+  ],
+  "record_level_comparisons": [
+    {
+      "reviewer": "protocol_review",
+      "native_line": 13,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 14,
+      "record_type": "custom_tool_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-02595957-fa3a-4dda-941f-c3619add9803"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 17,
+      "record_type": "custom_tool_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-02595957-fa3a-4dda-941f-c3619add9803"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 21,
+      "record_type": "function_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_19d3992a8fbf4734bc74853e44db8222"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 24,
+      "record_type": "function_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_19d3992a8fbf4734bc74853e44db8222"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 29,
+      "record_type": "message",
+      "category": "overlaps_saved_app_final_exact_text",
+      "matching_saved_app_item_ids": [
+        "msg_01ef633e0bf47c60016af657674a6487d1a133c0b567b6b823"
+      ],
+      "evidence": "Exact final text and message ID agree."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 36,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 37,
+      "record_type": "custom_tool_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-74409066-209c-47f2-a559-7fd656cd6f4d"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 40,
+      "record_type": "custom_tool_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-74409066-209c-47f2-a559-7fd656cd6f4d"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 44,
+      "record_type": "function_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_339e27886fbd4cc2916066a2277aa61d"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 47,
+      "record_type": "function_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_339e27886fbd4cc2916066a2277aa61d"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 50,
+      "record_type": "message",
+      "category": "overlaps_saved_app_final_exact_text",
+      "matching_saved_app_item_ids": [
+        "msg_01ef633e0bf47c60016af65853bde887d19c0907c55fbc1531"
+      ],
+      "evidence": "Exact final text and message ID agree."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 57,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 58,
+      "record_type": "custom_tool_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-57a2d8a3-dd0c-42f7-bffa-70b29d700928"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 61,
+      "record_type": "custom_tool_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-57a2d8a3-dd0c-42f7-bffa-70b29d700928"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 65,
+      "record_type": "function_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_a1b80aa89ab84051ab4fd45f0278ea29"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 68,
+      "record_type": "function_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_a1b80aa89ab84051ab4fd45f0278ea29"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 73,
+      "record_type": "message",
+      "category": "overlaps_saved_app_final_exact_text",
+      "matching_saved_app_item_ids": [
+        "msg_01ef633e0bf47c60016af6599868b487d18af6983407ec7966"
+      ],
+      "evidence": "Exact final text and message ID agree."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 80,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 81,
+      "record_type": "custom_tool_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-24492af7-12e5-4aeb-9883-6eab5f3c94dd"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 84,
+      "record_type": "custom_tool_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-24492af7-12e5-4aeb-9883-6eab5f3c94dd"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 88,
+      "record_type": "function_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_d915ad0a8d4d428cba2d1299e8a5356f"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 91,
+      "record_type": "function_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_d915ad0a8d4d428cba2d1299e8a5356f"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 95,
+      "record_type": "function_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_9b3eefdb992f438db087cc98a4e31f1f"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 98,
+      "record_type": "function_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_9b3eefdb992f438db087cc98a4e31f1f"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 101,
+      "record_type": "message",
+      "category": "overlaps_saved_app_final_exact_text",
+      "matching_saved_app_item_ids": [
+        "msg_01ef633e0bf47c60016af65d0cb9ec87d1986ed80f8c8a88af"
+      ],
+      "evidence": "Exact final text and message ID agree."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 108,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 111,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 118,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 125,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 132,
+      "record_type": "function_call",
+      "category": "new_encrypted_call_metadata_only",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 135,
+      "record_type": "function_call_output",
+      "category": "new_empty_call_result_metadata_only",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 139,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 146,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 155,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 159,
+      "record_type": "custom_tool_call_output",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 162,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 165,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 168,
+      "record_type": "custom_tool_call_output",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 172,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 175,
+      "record_type": "custom_tool_call_output",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 178,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 179,
+      "record_type": "function_call",
+      "category": "new_encrypted_call_metadata_only",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 182,
+      "record_type": "function_call_output",
+      "category": "new_empty_call_result_metadata_only",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "protocol_review",
+      "native_line": 187,
+      "record_type": "message",
+      "category": "new_final_response",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 13,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 14,
+      "record_type": "custom_tool_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-e4c42be6-e610-4b93-a7fb-20dc9a262387"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 19,
+      "record_type": "function_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_9900f5093bb74bcd98a4ccfe7a2a39ce"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 22,
+      "record_type": "function_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_9900f5093bb74bcd98a4ccfe7a2a39ce"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 27,
+      "record_type": "message",
+      "category": "overlaps_saved_app_final_exact_text",
+      "matching_saved_app_item_ids": [
+        "msg_07d724c3d0c6240c016af65765377487d1ad1c0afb6ab547fd"
+      ],
+      "evidence": "Exact final text and message ID agree."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 34,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 35,
+      "record_type": "custom_tool_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-f7e1f6f9-307e-416e-810c-6f9633f9aabb"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 42,
+      "record_type": "function_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_305463d629114b7792565742cccbbbd6"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 45,
+      "record_type": "function_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_305463d629114b7792565742cccbbbd6"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 48,
+      "record_type": "message",
+      "category": "overlaps_saved_app_final_exact_text",
+      "matching_saved_app_item_ids": [
+        "msg_07d724c3d0c6240c016af657f2928087d19faa98eb9bf67e67"
+      ],
+      "evidence": "Exact final text and message ID agree."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 55,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 56,
+      "record_type": "custom_tool_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-48eb6d4f-0d06-4184-8295-b8ab1a033ab0"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 59,
+      "record_type": "custom_tool_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-48eb6d4f-0d06-4184-8295-b8ab1a033ab0"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 63,
+      "record_type": "function_call",
+      "category": "new_encrypted_call_metadata_only",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 65,
+      "record_type": "function_call_output",
+      "category": "new_visible_dispatch_status",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 68,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 71,
+      "record_type": "custom_tool_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-d3617185-8153-4164-9076-0441bae717bf"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 74,
+      "record_type": "custom_tool_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-d3617185-8153-4164-9076-0441bae717bf"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 78,
+      "record_type": "custom_tool_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-5f8899de-7c69-43e8-a9d9-e28e8b8f0622"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 81,
+      "record_type": "custom_tool_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "exec-5f8899de-7c69-43e8-a9d9-e28e8b8f0622"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 83,
+      "record_type": "function_call",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_8bb06266c1d74b9eac7fcbc2d757fec2"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 86,
+      "record_type": "function_call_output",
+      "category": "overlaps_saved_app_operation",
+      "matching_saved_app_item_ids": [
+        "call_8bb06266c1d74b9eac7fcbc2d757fec2"
+      ],
+      "evidence": "Stable item/call ID links native operation to saved app item; function wrappers may serialize differently."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 89,
+      "record_type": "message",
+      "category": "overlaps_saved_app_final_exact_text",
+      "matching_saved_app_item_ids": [
+        "msg_07d724c3d0c6240c016af65d40616c87d197555c785823a455"
+      ],
+      "evidence": "Exact final text and message ID agree."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 96,
+      "record_type": "agent_message",
+      "category": "new_routing_wrapper_only_no_prompt_body",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 97,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 100,
+      "record_type": "custom_tool_call_output",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 104,
+      "record_type": "custom_tool_call",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 107,
+      "record_type": "custom_tool_call_output",
+      "category": "new_visible_tool_record",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    },
+    {
+      "reviewer": "report_review",
+      "native_line": 112,
+      "record_type": "message",
+      "category": "new_final_response",
+      "matching_saved_app_item_ids": [],
+      "evidence": "No matching item in saved app export."
+    }
+  ],
+  "summary": {
+    "previously_exported_finals_exact_matches": 7,
+    "new_finals": 2,
+    "new_plaintext_delegation_bodies": 0,
+    "native_records_overlapping_saved_app_items": 39,
+    "native_records_without_saved_app_counterpart": 35,
+    "by_category": {
+      "new_routing_wrapper_only_no_prompt_body": 12,
+      "overlaps_saved_app_operation": 32,
+      "overlaps_saved_app_final_exact_text": 7,
+      "new_visible_tool_record": 15,
+      "new_encrypted_call_metadata_only": 3,
+      "new_empty_call_result_metadata_only": 2,
+      "new_final_response": 2,
+      "new_visible_dispatch_status": 1
+    }
+  },
+  "qualification": "Exact-value comparison is definitive for final text. Native exec wrappers/provenance are additional format detail, not reconstructed delegation text."
+}

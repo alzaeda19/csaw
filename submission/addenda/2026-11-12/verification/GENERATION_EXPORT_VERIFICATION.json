@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-13T01:19:55.480238+00:00",
+  "retained_records": 199,
+  "omitted_records": 467,
+  "prior_records_exactly_preserved": 155,
+  "new_records": 44,
+  "retained_leaf_values_checked": 1633,
+  "native_line_hashes_checked": 666,
+  "native_coverage_first_line": 32,
+  "native_coverage_last_line": 697,
+  "final_reply_present_at_line": 694,
+  "new_and_old_source_prefix_hashes_match": true,
+  "export_manifest_files_match": true,
+  "source_prefix_unchanged": true,
+  "encrypted_payload_scan_clear": true,
+  "limits": "Checks authenticity of retained fields and documented coverage. Does not recover encrypted prompts or certify that every omitted item is required or irrelevant to a grading rubric."
+}

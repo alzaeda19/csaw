@@ -6,11 +6,13 @@ The current simulation package is in [submission/](submission/). Download [submi
 
 ## Review the current package
 
-1. [Plain-English handoff](submission/HANDOFF_SIMPLE.md).
-2. [Technical brief and reproduction instructions](submission/README.md).
-3. [AI records, mixed authorship and missing-history disclosures](submission/ai/AI_RECORDS_INDEX.md).
-4. [Publication review and requirement mapping](submission/PUBLICATION_REVIEW.md).
-5. [Current package status](submission/PUBLICATION_STATUS.md) and [publication manifest](submission/PUBLICATION_MANIFEST.json).
+1. [Current submission guide and exact remaining gaps](submission/CURRENT_GUIDE.md).
+2. [Expanded proposed encryption explanation](submission/addenda/2026-11-12/explanation/PROPOSED_ENCRYPTION_EXPLANATION.md), derived only from the original recovered baseline and saved evidence.
+3. [Recovered generation records](submission/addenda/2026-11-12/records/generation_tail/EXPORT_MANIFEST.json) and [reviewer-record recovery](submission/addenda/2026-11-12/records/reviewer_recovery/README.md).
+4. [Original technical brief and reproduction instructions](submission/README.md), retained unchanged with its original AI-record index.
+5. [Current package status](submission/PUBLICATION_STATUS.md), [publication review](submission/PUBLICATION_REVIEW.md), and [publication manifest](submission/PUBLICATION_MANIFEST.json).
+
+The November 12 documentation update adds a source-supported explanation of serial loading, the working datapath, fixed lookup storage, direction selection and result readout. It also recovers 44 records beyond the earlier generation-export cutoff and two previously unexported reviewer final responses. The earlier 155 retained parent records are preserved exactly. Twelve reviewer instruction bodies remain unreadable; their parent and child copies are the same exchanges, not 24 separate gaps. This is a stronger proposed architectural explanation and a better evidence trail, not identification of the full cipher or a claim of complete transcript coverage.
 
 The code was developed in the separate workspace coordinated by the Trojan chat. Qwen produced initial drafts; Codex made substantive corrections and wrote the final testbench. Claude Code was the file-tool client for Qwen, not evidence of Claude-model authorship. Failed drafts, timeouts, corrections and available authentic records remain included.
 
@@ -37,7 +39,7 @@ For repository byte integrity only, run:
 python3 tools/verify_evidence.py
 ```
 
-That checker does not run archived project code. REPOSITORY_MANIFEST.json covers repository files. The unchanged original package manifest records its 262-file input package; submission/PUBLICATION_MANIFEST.json also covers publication notes and upstream licenses. All original files, including the seven frozen runner/RTL/testbench files, remain byte-identical. The augmented ZIP has its own hash and does not imply a new simulation run.
+That checker does not run archived project code. REPOSITORY_MANIFEST.json covers repository files. The unchanged original package manifest records its 262-file input package; submission/PUBLICATION_MANIFEST.json also covers documentation, recovered-record supplements and upstream licenses. All original files, including the seven frozen runner/RTL/testbench files, remain byte-identical. The augmented ZIP has its own hash and does not imply a new simulation run.
 
 ## Earlier work and provenance
 

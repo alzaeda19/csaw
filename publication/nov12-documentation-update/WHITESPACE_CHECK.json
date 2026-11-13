@@ -1,0 +1,29 @@
+{
+  "check": "git diff --cached --check",
+  "exit_code": 2,
+  "reason": "Preserved sealed transcript formatting and byte-identical historical source text have trailing whitespace or final blank lines. Markdown hard breaks also use trailing spaces.",
+  "warnings": [
+    {
+      "file": "submission/addenda/2026-11-12/explanation/source_records/BASELINE_BITSTREAM_EQUIVALENCE_REPORT.md",
+      "kind": "new blank line at EOF.",
+      "count": 1
+    },
+    {
+      "file": "submission/addenda/2026-11-12/records/CURRENT_AUTHORIZATION.json",
+      "kind": "new blank line at EOF.",
+      "count": 1
+    },
+    {
+      "file": "submission/addenda/2026-11-12/records/generation_tail/VISIBLE_TASK_TRANSCRIPT.md",
+      "kind": "trailing whitespace.",
+      "count": 398
+    },
+    {
+      "file": "submission/addenda/2026-11-12/records/reviewer_recovery/VISIBLE_REVIEWER_TRANSCRIPT.md",
+      "kind": "trailing whitespace.",
+      "count": 222
+    }
+  ],
+  "decision": "Preserve all sealed evidence bytes. Check newly authored current guides separately. This is a formatting warning, not a design/test failure.",
+  "full_command_record_local": "GIT_PUBLICATION_COMMANDS.json"
+}

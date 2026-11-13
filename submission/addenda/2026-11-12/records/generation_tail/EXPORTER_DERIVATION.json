@@ -1,0 +1,49 @@
+{
+  "source_exporter": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/ai_logs/codex_current_task/export_bounded_native.py",
+  "source_exporter_sha256": "c239d5bb7aad54465a4f605f50f5ec361d8fed5a6dcc9a3e0daa83d837b21b88",
+  "changes": [
+    {
+      "from": "CUTOFF_BYTES = 2371665",
+      "to": "CUTOFF_BYTES = 2750267"
+    },
+    {
+      "from": "assert len(raw_lines) == 573",
+      "to": "assert len(raw_lines) == 697"
+    },
+    {
+      "from": "eligible[-1][0] == 573",
+      "to": "eligible[-1][0] == 697"
+    },
+    {
+      "from": "Snapshot ends at native line 573; later work and the final user-facing completion reply are outside this export.",
+      "to": "Snapshot ends at native line 697, the completion of the selected generation/packaging task; its final reply at line694 is included. Subsequent publication and recovery tasks are excluded."
+    },
+    {
+      "from": "'last_record': 'assistant commentary'",
+      "to": "'last_record': 'selected task completion event'"
+    },
+    {
+      "from": "'includes_later_final_reply': False",
+      "to": "'includes_later_final_reply': True"
+    },
+    {
+      "from": "This cutoff predates the final completion reply and any subsequent packaging work.",
+      "to": "This cutoff includes the original packaging completion reply and ends at its task-complete event. It excludes subsequent publication and recovery turns."
+    },
+    {
+      "from": "'cutoff_native_line': 573",
+      "to": "'cutoff_native_line': 697"
+    },
+    {
+      "from": "not a full chat history or a completion record.",
+      "to": "not a full chat history. It includes the selected task completion reply."
+    },
+    {
+      "from": "'scope': 'Authorized current-generation task only, filtered native snapshot; not full history.'",
+      "to": "'scope': 'Authorized generation/correction/packaging task through completion, filtered native snapshot; not full history.'"
+    }
+  ],
+  "new_source_cutoff_bytes": 2750267,
+  "new_source_cutoff_lines": 697,
+  "boundaries_verified": "Original selected task complete at line697; no subsequent task content considered."
+}

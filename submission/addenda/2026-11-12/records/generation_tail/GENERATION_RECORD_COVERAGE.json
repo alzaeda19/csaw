@@ -1,0 +1,68 @@
+{
+  "exact_source_text_evidence": [
+    {
+      "file": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/rtl/modified_protocol_dut.sv",
+      "sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+      "complete_exact_file_text_visible_at_native_lines": [
+        420,
+        592,
+        593
+      ]
+    },
+    {
+      "file": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/tb/demo_tb.sv",
+      "sha256": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a",
+      "complete_exact_file_text_visible_at_native_lines": [
+        420,
+        592,
+        593
+      ]
+    },
+    {
+      "file": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/run_tests.py",
+      "sha256": "2d8703b76839a01c7d9894b6d4cffa0d9c31ada9f0281c083deaad5a591012dd",
+      "complete_exact_file_text_visible_at_native_lines": [
+        367,
+        398,
+        400,
+        592
+      ]
+    }
+  ],
+  "qwen_record_inventory": [
+    {
+      "folder": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/ai/qwen/20261113T002025Z_f8pf3qt7",
+      "status": "RESPONSE_COMPLETED",
+      "exit_code": 0,
+      "prompt_present": true,
+      "raw_stream_present": true,
+      "native_session_copies": 1,
+      "response_present": true,
+      "tool_calls": 2,
+      "malformed_stdout_lines": 0
+    },
+    {
+      "folder": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/ai/qwen/20261113T002330Z_nqwhdxe4",
+      "status": "RESPONSE_WITH_TOOL_ERRORS",
+      "exit_code": 2,
+      "prompt_present": true,
+      "raw_stream_present": true,
+      "native_session_copies": 1,
+      "response_present": true,
+      "tool_calls": 3,
+      "malformed_stdout_lines": 0
+    },
+    {
+      "folder": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/ai/qwen/20261113T003819Z_540gdr_f",
+      "status": "TIMEOUT",
+      "exit_code": 124,
+      "prompt_present": true,
+      "raw_stream_present": true,
+      "native_session_copies": 1,
+      "response_present": false,
+      "tool_calls": 0,
+      "malformed_stdout_lines": 0
+    }
+  ],
+  "note": "Exact full-file-text matches are corroboration in visible transcript records, not a claim that tool output alone establishes every missing prompt. Qwen timeout had no completed response to export."
+}

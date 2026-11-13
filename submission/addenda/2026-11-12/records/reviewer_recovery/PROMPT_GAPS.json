@@ -1,0 +1,261 @@
+{
+  "recovered_prompt_bodies": 0,
+  "inbound_wrappers_retained": 12,
+  "new_task_bodies_unavailable": 9,
+  "followup_message_bodies_unavailable": 3,
+  "outbound_encrypted_tool_arguments_unavailable": 11,
+  "messages": [
+    {
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 13,
+        "native_line_sha256": "19b9b478c6cd0f267e139bf364ed38571dc21b3a4c135a05f826e1488426d876",
+        "native_raw_line_bytes": 2165,
+        "timestamp": "2026-11-13T00:18:30.882Z",
+        "turn_id": "01a1d245-2704-79d1-a305-f315a16334bb",
+        "section": "review_and_report_generation"
+      },
+      "message_id": "amsg_01a1d245-2b62-7b60-8bd1-86e43547510a",
+      "kind": "NEW_TASK",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 36,
+        "native_line_sha256": "45e341ad3dbb0a7d79f533ef1608646a67ee0202bce890bb46054b9a5de6d7ab",
+        "native_raw_line_bytes": 1613,
+        "timestamp": "2026-11-13T00:22:25.801Z",
+        "turn_id": "01a1d248-c06a-7843-90fc-21ef47d594c3",
+        "section": "review_and_report_generation"
+      },
+      "message_id": "amsg_01a1d248-c109-7071-9393-f1c41406bfff",
+      "kind": "NEW_TASK",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 57,
+        "native_line_sha256": "beebce6226b76b375bdd299e98c6edd74b2a42935a4b460e519ce2fdac230b03",
+        "native_raw_line_bytes": 1613,
+        "timestamp": "2026-11-13T00:27:36.420Z",
+        "turn_id": "01a1d24d-7c39-72e1-bc0c-69111e40c1fd",
+        "section": "review_and_report_generation"
+      },
+      "message_id": "amsg_01a1d24d-7e64-7f53-814d-c0b885be00fa",
+      "kind": "NEW_TASK",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 80,
+        "native_line_sha256": "9859d35b1877093a42b7e98ee86f95a612b8d7ec4ea29b65d06b244e9f66279a",
+        "native_raw_line_bytes": 1653,
+        "timestamp": "2026-11-13T00:42:20.448Z",
+        "turn_id": "01a1d25a-f923-7553-b5fc-0ebb8359d29a",
+        "section": "review_and_report_generation"
+      },
+      "message_id": "amsg_01a1d25a-fb63-7ce2-aeab-71b76337140c",
+      "kind": "NEW_TASK",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 108,
+        "native_line_sha256": "6bb165f5ced72d4a08079851bf1df6b69571182fd0933a5b1d59b20ec2d8c93f",
+        "native_raw_line_bytes": 2959,
+        "timestamp": "2026-11-13T00:45:11.782Z",
+        "turn_id": "01a1d25d-97e0-7cf1-90c8-621f694be80a",
+        "section": "original_generation_ai_record_packaging"
+      },
+      "message_id": "amsg_01a1d25d-98e6-73c0-9d3c-8179979a699f",
+      "kind": "NEW_TASK",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 162,
+        "native_line_sha256": "7008bd5440400d5585962b6d482508238aeaee574aa4002b40ca7c0248b62577",
+        "native_raw_line_bytes": 1378,
+        "timestamp": "2026-11-13T00:47:57.924Z",
+        "turn_id": "01a1d25d-97e0-7cf1-90c8-621f694be80a",
+        "section": "original_generation_ai_record_packaging"
+      },
+      "message_id": "amsg_01a1d260-21e4-7b93-a9f5-b356d72df6ab",
+      "kind": "MESSAGE",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 178,
+        "native_line_sha256": "7f8c804749cbb24381eb87e19066dc4ecfa407c83e740c5b870e90073cafeb16",
+        "native_raw_line_bytes": 1230,
+        "timestamp": "2026-11-13T00:48:22.296Z",
+        "turn_id": "01a1d25d-97e0-7cf1-90c8-621f694be80a",
+        "section": "original_generation_ai_record_packaging"
+      },
+      "message_id": "amsg_01a1d260-8118-7c73-9fc6-3da934009774",
+      "kind": "MESSAGE",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 13,
+        "native_line_sha256": "bb4651702ca61870a1458ffdacbb416b3174efb01f0efe4f20491e5abe54f0a0",
+        "native_raw_line_bytes": 1928,
+        "timestamp": "2026-11-13T00:18:35.123Z",
+        "turn_id": "01a1d245-380f-7651-b792-3700395b74a1",
+        "section": "review_and_report_generation"
+      },
+      "message_id": "amsg_01a1d245-3bf3-7282-89a5-e7ab67a1fb08",
+      "kind": "NEW_TASK",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 34,
+        "native_line_sha256": "3ef88bb5f510c55f140728959fcd111d792cbc072adfc72a91a41060726a1da1",
+        "native_raw_line_bytes": 1501,
+        "timestamp": "2026-11-13T00:20:50.559Z",
+        "turn_id": "01a1d247-4c5c-75f1-a171-d22909f3e518",
+        "section": "review_and_report_generation"
+      },
+      "message_id": "amsg_01a1d247-4cff-7e33-abbd-3769096958e2",
+      "kind": "NEW_TASK",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 55,
+        "native_line_sha256": "e29beb747bfa9a773d4c65f89d99975ef8f56058796858f939123c1edf94978e",
+        "native_raw_line_bytes": 2417,
+        "timestamp": "2026-11-13T00:42:26.435Z",
+        "turn_id": "01a1d25b-1220-7e73-a91e-cf0a302c15d9",
+        "section": "review_and_report_generation"
+      },
+      "message_id": "amsg_01a1d25b-1302-7551-a4c7-e1d7db7afdb4",
+      "kind": "NEW_TASK",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 68,
+        "native_line_sha256": "395b681fc2bba40640e3aea3718a5ad8e8ae94a5f422f4ef84880e81f20c199e",
+        "native_raw_line_bytes": 1436,
+        "timestamp": "2026-11-13T00:42:51.088Z",
+        "turn_id": "01a1d25b-1220-7e73-a91e-cf0a302c15d9",
+        "section": "review_and_report_generation"
+      },
+      "message_id": "amsg_01a1d25b-7350-76e3-a76c-5414aed97470",
+      "kind": "MESSAGE",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    },
+    {
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 96,
+        "native_line_sha256": "925c5c4c12fc7de61d4f155e959c51e8950eb1ead4efe3876da567062aa6204b",
+        "native_raw_line_bytes": 1738,
+        "timestamp": "2026-11-13T00:47:37.250Z",
+        "turn_id": "01a1d25f-d0b3-78e2-8959-429ec689173c",
+        "section": "original_generation_final_package_consistency_review"
+      },
+      "message_id": "amsg_01a1d25f-d122-7db0-8c5d-d97ce2949ac0",
+      "kind": "NEW_TASK",
+      "visible_wrapper_retained": true,
+      "prompt_body_recovered": false,
+      "encrypted_payload_blocks": 1,
+      "unavailable_native_pointers": [
+        "/payload/content/1"
+      ],
+      "reason": "Only routing wrapper is visible. Delegation/steering body is encrypted; no decryption or reconstruction attempted."
+    }
+  ]
+}

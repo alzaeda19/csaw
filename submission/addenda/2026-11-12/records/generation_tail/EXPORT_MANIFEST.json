@@ -1,0 +1,113 @@
+{
+  "export_created_utc": "2026-11-13T01:17:20.111862+00:00",
+  "scope": "Authorized generation/correction/packaging task through completion, filtered native snapshot; not full history.",
+  "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-12-19-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1d23f-7ed7-7fa1-9afd-64875b8a6cf8.jsonl",
+  "source_open_mode": "read-only binary",
+  "snapshot": {
+    "prefix_bytes": 2750267,
+    "complete_lines": 697,
+    "prefix_sha256": "4b82b3a7cefa0b0b7295d988e69d979bfffdf3692abae586cdb5d1978e016e3c",
+    "last_timestamp": "2026-11-13T00:49:30.998Z",
+    "last_record": "selected task completion event",
+    "includes_later_final_reply": true
+  },
+  "selected_turn_ids": [
+    "01a1d242-c430-7f82-b027-686debd939f6",
+    "01a1d254-6a62-7ac2-8865-04c80eae105c"
+  ],
+  "turn_markers": [
+    {
+      "line": 32,
+      "turn_id": "01a1d242-c430-7f82-b027-686debd939f6",
+      "record_type": "event_msg"
+    },
+    {
+      "line": 33,
+      "turn_id": "01a1d242-c430-7f82-b027-686debd939f6",
+      "record_type": "turn_context"
+    },
+    {
+      "line": 284,
+      "turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+      "record_type": "event_msg"
+    },
+    {
+      "line": 285,
+      "turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+      "record_type": "turn_context"
+    },
+    {
+      "line": 373,
+      "turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+      "record_type": "turn_context"
+    }
+  ],
+  "boundary": {
+    "native_line": 34,
+    "user_request_matches_after_removing_trailing_newline": true,
+    "original_request_in_export_is_unaltered": true
+  },
+  "earlier_history": {
+    "native_lines_excluded": [
+      1,
+      31
+    ],
+    "contents_exported": false,
+    "processing": "Only record type and turn identifiers were examined for boundary selection."
+  },
+  "counts": {
+    "eligible_native_records": 666,
+    "retained_records": 199,
+    "omitted_records": 467,
+    "retained_by_kind": {
+      "response_item:message": 17,
+      "response_item:custom_tool_call": 53,
+      "event_msg:item_completed": 53,
+      "response_item:function_call": 12,
+      "response_item:function_call_output": 12,
+      "response_item:custom_tool_call_output": 33,
+      "response_item:agent_message": 19
+    }
+  },
+  "omission_policy": [
+    "Hidden reasoning records and blocks",
+    "Encrypted payload fields, including encrypted text stored inside delegation arguments",
+    "System/developer/context/compaction/inherited context records",
+    "Skill and instruction-file outputs",
+    "Nested read_thread snapshots and thread/sidebar/list-agent metadata",
+    "Earlier provenance/handoff document outputs",
+    "Redundant visible-message events and internal metadata"
+  ],
+  "authenticity": {
+    "line_hash_definition": "SHA-256 of the complete original native JSONL line bytes, including its trailing newline",
+    "retained_strings_changed": false,
+    "omitted_content_reconstructed": false,
+    "original_source_prefix_unchanged_at_completion": true,
+    "json_serialization_normalized": true,
+    "native_and_nested_tool_evidence_may_overlap": true
+  },
+  "limitations": [
+    "This cutoff includes the original packaging completion reply and ends at its task-complete event. It excludes subsequent publication and recovery turns.",
+    "Encrypted delegation messages cannot be exported as plaintext from this native file; their fields are omitted.",
+    "Any truncation already present in native tool outputs remains unchanged.",
+    "No earlier session history or compacted inherited history is included."
+  ],
+  "files": {
+    "visible_task_records.jsonl": {
+      "bytes": 628761,
+      "sha256": "82201279ca0c08ab4cba2b5a8c0d35027dda61151bb18ca86c844d39f967a043"
+    },
+    "omitted_records.jsonl": {
+      "bytes": 267117,
+      "sha256": "36b7ba0f4afe455944b6b316194cfdbfe9f0940ecd3fc1086946cf0baeea513a"
+    },
+    "VISIBLE_TASK_TRANSCRIPT.md": {
+      "bytes": 547121,
+      "sha256": "3868bce017994825a9fd9b044b975682c1e1105ba2bb91f6715920b3692656f1"
+    },
+    "export_bounded_native.py": {
+      "bytes": 15345,
+      "sha256": "d14356a2233657d114f76df3a44f979e2826adce9061652ee6bc4fb6e6359637"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "New documentation/recovery/publication turn only; not a reconstruction of generation history.",
+  "created_utc": "2026-11-13T01:24:04.475447+00:00",
+  "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/11/rollout-2026-11-11T22-38-22-01a1c563-aa79-7e12-ae2f-72d867d1e3da_01a1cdd5-c9db-7581-b129-a9c84bd76091.jsonl",
+  "first_native_line": 421,
+  "last_native_line": 784,
+  "source_snapshot_prefix_sha256": "6c98f13984890ad86fc24c6b24d51aadae9d14548164442ea9ea79e506681450",
+  "source_snapshot_prefix_bytes": 3488488,
+  "last_timestamp": "2026-11-13T01:24:04.429Z",
+  "retained_records": 50,
+  "omitted_records": 314,
+  "visible_text_changed": false,
+  "hidden_reasoning_exported": false,
+  "block_metadata_including_annotations_and_logprobs_excluded": true,
+  "earlier_turns_exported": false,
+  "limitations": [
+    "Tool results are intentionally omitted; task journal and integrity/publication receipts document outcomes.",
+    "This snapshot predates the final push verification and user-facing completion message. It does not claim to contain future messages."
+  ],
+  "files": {
+    "omitted_records.jsonl": {
+      "bytes": 52001,
+      "sha256": "0ee812553a1a749c5cfd44e73b01b9195c9d676e3cf21d27a43442dc42fe5eb5"
+    },
+    "visible_messages_and_tool_inputs.jsonl": {
+      "bytes": 83256,
+      "sha256": "c4003ffa470328c4da2dcb7a0df4c08f34d6cf760d40ba0024069988cf231944"
+    }
+  }
+}
