@@ -1,0 +1,3619 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.STACK_SIZE_PP": {
+      "reference_label": "top_STACK_SIZE_PP",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.LOG2_STACK_SIZE_PP": {
+      "reference_label": "top_LOG2_STACK_SIZE_PP",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.WDT_SIZE_PP": {
+      "reference_label": "top_WDT_SIZE_PP",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.WDT_BITS_PP": {
+      "reference_label": "top_WDT_BITS_PP",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.QRESET_PP": {
+      "reference_label": "top_QRESET_PP",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.Q1_PP": {
+      "reference_label": "top_Q1_PP",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.Q2_PP": {
+      "reference_label": "top_Q2_PP",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.Q3_PP": {
+      "reference_label": "top_Q3_PP",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.Q4_PP": {
+      "reference_label": "top_Q4_PP",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.prog_dat_i": {
+      "reference_label": "top_prog_dat_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.prog_adr_o": {
+      "reference_label": "top_prog_adr_o",
+      "term_types": [
+        "Output",
+        "Reg"
+      ]
+    },
+    "top.ram_dat_i": {
+      "reference_label": "top_ram_dat_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.ram_dat_o": {
+      "reference_label": "top_ram_dat_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.ram_adr_o": {
+      "reference_label": "top_ram_adr_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.readram_o": {
+      "reference_label": "top_readram_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.writeram_o": {
+      "reference_label": "top_writeram_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.existeeprom_i": {
+      "reference_label": "top_existeeprom_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.eep_dat_i": {
+      "reference_label": "top_eep_dat_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.eep_dat_o": {
+      "reference_label": "top_eep_dat_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.eep_adr_o": {
+      "reference_label": "top_eep_adr_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.rd_eep_req_o": {
+      "reference_label": "top_rd_eep_req_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.rd_eep_ack_i": {
+      "reference_label": "top_rd_eep_ack_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.wr_eep_req_o": {
+      "reference_label": "top_wr_eep_req_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.wr_eep_ack_i": {
+      "reference_label": "top_wr_eep_ack_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.porta_i": {
+      "reference_label": "top_porta_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.porta_o": {
+      "reference_label": "top_porta_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.porta_dir_o": {
+      "reference_label": "top_porta_dir_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.portb_i": {
+      "reference_label": "top_portb_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.portb_o": {
+      "reference_label": "top_portb_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.portb_dir_o": {
+      "reference_label": "top_portb_dir_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.rbpu_o": {
+      "reference_label": "top_rbpu_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.int0_i": {
+      "reference_label": "top_int0_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.int4_i": {
+      "reference_label": "top_int4_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.int5_i": {
+      "reference_label": "top_int5_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.int6_i": {
+      "reference_label": "top_int6_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.int7_i": {
+      "reference_label": "top_int7_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.t0cki_i": {
+      "reference_label": "top_t0cki_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.wdt_ena_i": {
+      "reference_label": "top_wdt_ena_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.wdt_clk_i": {
+      "reference_label": "top_wdt_clk_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.wdt_full_o": {
+      "reference_label": "top_wdt_full_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.powerdown_o": {
+      "reference_label": "top_powerdown_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.startclk_o": {
+      "reference_label": "top_startclk_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.pon_rst_n_i": {
+      "reference_label": "top_pon_rst_n_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.mclr_n_i": {
+      "reference_label": "top_mclr_n_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.clk_i": {
+      "reference_label": "top_clk_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.clk_o": {
+      "reference_label": "top_clk_o",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.w_reg": {
+      "reference_label": "top_w_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.tmr0_reg": {
+      "reference_label": "top_tmr0_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.pc_reg": {
+      "reference_label": "top_pc_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.status_reg": {
+      "reference_label": "top_status_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.fsr_reg": {
+      "reference_label": "top_fsr_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.porta_i_sync_reg": {
+      "reference_label": "top_porta_i_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.porta_o_reg": {
+      "reference_label": "top_porta_o_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.portb_i_sync_reg": {
+      "reference_label": "top_portb_i_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.portb_o_reg": {
+      "reference_label": "top_portb_o_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.eep_dat_reg": {
+      "reference_label": "top_eep_dat_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.eep_adr_reg": {
+      "reference_label": "top_eep_adr_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.pclath_reg": {
+      "reference_label": "top_pclath_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.intcon_reg": {
+      "reference_label": "top_intcon_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.option_reg": {
+      "reference_label": "top_option_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.trisa_reg": {
+      "reference_label": "top_trisa_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.trisb_reg": {
+      "reference_label": "top_trisb_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.eecon1_reg": {
+      "reference_label": "top_eecon1_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.inst_reg": {
+      "reference_label": "top_inst_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.aluinp1_reg": {
+      "reference_label": "top_aluinp1_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.aluinp2_reg": {
+      "reference_label": "top_aluinp2_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.c_in": {
+      "reference_label": "top_c_in",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.aluout_reg": {
+      "reference_label": "top_aluout_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.exec_op_reg": {
+      "reference_label": "top_exec_op_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.intstart_reg": {
+      "reference_label": "top_intstart_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.sleepflag_reg": {
+      "reference_label": "top_sleepflag_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.stack_reg": {
+      "reference_label": "top_stack_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.stack_pnt_reg": {
+      "reference_label": "top_stack_pnt_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_reg": {
+      "reference_label": "top_wdt_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_full_reg": {
+      "reference_label": "top_wdt_full_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_full_node": {
+      "reference_label": "top_wdt_full_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_init": {
+      "reference_label": "top_wdt_init",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.wdt_full_sync_reg": {
+      "reference_label": "top_wdt_full_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_clr_reg": {
+      "reference_label": "top_wdt_clr_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_clr_reqhold_reg": {
+      "reference_label": "top_wdt_clr_reqhold_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_clr_req_reg": {
+      "reference_label": "top_wdt_clr_req_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_clr_ack": {
+      "reference_label": "top_wdt_clr_ack",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.wdt_clr_ack_sync_reg": {
+      "reference_label": "top_wdt_clr_ack_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_full_clr_reg": {
+      "reference_label": "top_wdt_full_clr_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_fullclr_req_reg": {
+      "reference_label": "top_wdt_fullclr_req_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.ps_clk": {
+      "reference_label": "top_ps_clk",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.pscale_reg": {
+      "reference_label": "top_pscale_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.ps_full_reg": {
+      "reference_label": "top_ps_full_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.inc_tmr_clk": {
+      "reference_label": "top_inc_tmr_clk",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inc_tmr_hold_reg": {
+      "reference_label": "top_inc_tmr_hold_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.rateval": {
+      "reference_label": "top_rateval",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.intrise_reg": {
+      "reference_label": "top_intrise_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.intdown_reg": {
+      "reference_label": "top_intdown_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.rb0_int": {
+      "reference_label": "top_rb0_int",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.rb4_int": {
+      "reference_label": "top_rb4_int",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.rb5_int": {
+      "reference_label": "top_rb5_int",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.rb6_int": {
+      "reference_label": "top_rb6_int",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.rb7_int": {
+      "reference_label": "top_rb7_int",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.rbint": {
+      "reference_label": "top_rbint",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inte": {
+      "reference_label": "top_inte",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.intclr_reg": {
+      "reference_label": "top_intclr_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.intclr0": {
+      "reference_label": "top_intclr0",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.intclr1": {
+      "reference_label": "top_intclr1",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.intclr2": {
+      "reference_label": "top_intclr2",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.intclr3": {
+      "reference_label": "top_intclr3",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.intclr4": {
+      "reference_label": "top_intclr4",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.state_reg": {
+      "reference_label": "top_state_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.inst_addlw": {
+      "reference_label": "top_inst_addlw",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_addwf": {
+      "reference_label": "top_inst_addwf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_andlw": {
+      "reference_label": "top_inst_andlw",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_andwf": {
+      "reference_label": "top_inst_andwf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_bcf": {
+      "reference_label": "top_inst_bcf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_bsf": {
+      "reference_label": "top_inst_bsf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_btfsc": {
+      "reference_label": "top_inst_btfsc",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_btfss": {
+      "reference_label": "top_inst_btfss",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_call": {
+      "reference_label": "top_inst_call",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_clrf": {
+      "reference_label": "top_inst_clrf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_clrw": {
+      "reference_label": "top_inst_clrw",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_clrwdt": {
+      "reference_label": "top_inst_clrwdt",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_comf": {
+      "reference_label": "top_inst_comf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_decf": {
+      "reference_label": "top_inst_decf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_decfsz": {
+      "reference_label": "top_inst_decfsz",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_goto": {
+      "reference_label": "top_inst_goto",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_incf": {
+      "reference_label": "top_inst_incf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_incfsz": {
+      "reference_label": "top_inst_incfsz",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_iorlw": {
+      "reference_label": "top_inst_iorlw",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_iorwf": {
+      "reference_label": "top_inst_iorwf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_movlw": {
+      "reference_label": "top_inst_movlw",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_movf": {
+      "reference_label": "top_inst_movf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_movwf": {
+      "reference_label": "top_inst_movwf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_retfie": {
+      "reference_label": "top_inst_retfie",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_retlw": {
+      "reference_label": "top_inst_retlw",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_ret": {
+      "reference_label": "top_inst_ret",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_rlf": {
+      "reference_label": "top_inst_rlf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_rrf": {
+      "reference_label": "top_inst_rrf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_sleep": {
+      "reference_label": "top_inst_sleep",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_sublw": {
+      "reference_label": "top_inst_sublw",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_subwf": {
+      "reference_label": "top_inst_subwf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_swapf": {
+      "reference_label": "top_inst_swapf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_xorlw": {
+      "reference_label": "top_inst_xorlw",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.inst_xorwf": {
+      "reference_label": "top_inst_xorwf",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.ram_adr_node": {
+      "reference_label": "top_ram_adr_node",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_tmr0": {
+      "reference_label": "top_addr_tmr0",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_pcl": {
+      "reference_label": "top_addr_pcl",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_stat": {
+      "reference_label": "top_addr_stat",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_fsr": {
+      "reference_label": "top_addr_fsr",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_porta": {
+      "reference_label": "top_addr_porta",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_portb": {
+      "reference_label": "top_addr_portb",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_eep_dat": {
+      "reference_label": "top_addr_eep_dat",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_eep_adr": {
+      "reference_label": "top_addr_eep_adr",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_pclath": {
+      "reference_label": "top_addr_pclath",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_intcon": {
+      "reference_label": "top_addr_intcon",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_option": {
+      "reference_label": "top_addr_option",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_trisa": {
+      "reference_label": "top_addr_trisa",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_trisb": {
+      "reference_label": "top_addr_trisb",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_eecon1": {
+      "reference_label": "top_addr_eecon1",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_eecon2": {
+      "reference_label": "top_addr_eecon2",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.addr_sram": {
+      "reference_label": "top_addr_sram",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.writeram_reg": {
+      "reference_label": "top_writeram_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.ram_adr_reg": {
+      "reference_label": "top_ram_adr_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.clk_o_reg": {
+      "reference_label": "top_clk_o_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.inte_sync_reg": {
+      "reference_label": "top_inte_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.rbint_sync_reg": {
+      "reference_label": "top_rbint_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.inc_tmr_sync_reg": {
+      "reference_label": "top_inc_tmr_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.rd_eep_sync_reg": {
+      "reference_label": "top_rd_eep_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wr_eep_sync_reg": {
+      "reference_label": "top_wr_eep_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.mclr_sync_reg": {
+      "reference_label": "top_mclr_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.poweron_sync_reg": {
+      "reference_label": "top_poweron_sync_reg",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.ram_i_node": {
+      "reference_label": "top_ram_i_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.inc_pc_node": {
+      "reference_label": "top_inc_pc_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.mask_node": {
+      "reference_label": "top_mask_node",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.add_node": {
+      "reference_label": "top_add_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.addlow_node": {
+      "reference_label": "top_addlow_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.temp": {
+      "reference_label": "top_temp",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.dtemp": {
+      "reference_label": "top_dtemp",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.aluout_zero_node": {
+      "reference_label": "top_aluout_zero_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.writew_node": {
+      "reference_label": "top_writew_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.writeram_node": {
+      "reference_label": "top_writeram_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.int_node": {
+      "reference_label": "top_int_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.wdt_rst_node": {
+      "reference_label": "top_wdt_rst_node",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.reset_cond": {
+      "reference_label": "top_reset_cond",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.Counter": {
+      "reference_label": "top_Counter",
+      "term_types": [
+        "Reg"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top.add_node": "top.add_node_graphrename_0",
+    "top.addlow_node": "top.addlow_node_graphrename_10",
+    "top.addr_eecon1": "top.addr_eecon1_graphrename_26",
+    "top.addr_eecon2": "top.addr_eecon2_graphrename_32",
+    "top.addr_eep_adr": "top.addr_eep_adr_graphrename_38",
+    "top.addr_eep_dat": "top.addr_eep_dat_graphrename_44",
+    "top.addr_fsr": "top.addr_fsr_graphrename_50",
+    "top.addr_intcon": "top.addr_intcon_graphrename_56",
+    "top.addr_option": "top.addr_option_graphrename_62",
+    "top.addr_pcl": "top.addr_pcl_graphrename_68",
+    "top.addr_pclath": "top.addr_pclath_graphrename_74",
+    "top.addr_porta": "top.addr_porta_graphrename_80",
+    "top.addr_portb": "top.addr_portb_graphrename_86",
+    "top.addr_sram": "top.addr_sram_graphrename_92",
+    "top.addr_stat": "top.addr_stat_graphrename_98",
+    "top.addr_tmr0": "top.addr_tmr0_graphrename_104",
+    "top.addr_trisa": "top.addr_trisa_graphrename_110",
+    "top.addr_trisb": "top.addr_trisb_graphrename_116",
+    "top.aluinp1_reg": "top.aluinp1_reg_graphrename_122",
+    "top.aluinp2_reg": "top.aluinp2_reg_graphrename_166",
+    "top.aluout_reg": "top.aluout_reg_graphrename_195",
+    "top.aluout_zero_node": "top.aluout_zero_node_graphrename_261",
+    "top.clk_o": "top.clk_o_graphrename_267",
+    "top.clk_o_reg": "top.clk_o_reg_graphrename_268",
+    "top.Counter": "top.Counter_graphrename_286",
+    "top.dtemp": "top.dtemp_graphrename_372",
+    "top.eecon1_reg": "top.eecon1_reg_graphrename_388",
+    "top.eep_adr_o": "top.eep_adr_o_graphrename_540",
+    "top.eep_adr_reg": "top.eep_adr_reg_graphrename_541",
+    "top.eep_dat_o": "top.eep_dat_o_graphrename_563",
+    "top.eep_dat_reg": "top.eep_dat_reg_graphrename_564",
+    "top.exec_op_reg": "top.exec_op_reg_graphrename_593",
+    "top.fsr_reg": "top.fsr_reg_graphrename_636",
+    "top.inc_pc_node": "top.inc_pc_node_graphrename_658",
+    "top.inc_tmr_clk": "top.inc_tmr_clk_graphrename_661",
+    "top.inc_tmr_hold_reg": "top.inc_tmr_hold_reg_graphrename_666",
+    "top.inc_tmr_sync_reg": "top.inc_tmr_sync_reg_graphrename_699",
+    "top.inst_addlw": "top.inst_addlw_graphrename_704",
+    "top.inst_addwf": "top.inst_addwf_graphrename_710",
+    "top.inst_andlw": "top.inst_andlw_graphrename_716",
+    "top.inst_andwf": "top.inst_andwf_graphrename_722",
+    "top.inst_bcf": "top.inst_bcf_graphrename_728",
+    "top.inst_bsf": "top.inst_bsf_graphrename_734",
+    "top.inst_btfsc": "top.inst_btfsc_graphrename_740",
+    "top.inst_btfss": "top.inst_btfss_graphrename_746",
+    "top.inst_call": "top.inst_call_graphrename_752",
+    "top.inst_clrf": "top.inst_clrf_graphrename_758",
+    "top.inst_clrw": "top.inst_clrw_graphrename_764",
+    "top.inst_clrwdt": "top.inst_clrwdt_graphrename_770",
+    "top.inst_comf": "top.inst_comf_graphrename_773",
+    "top.inst_decf": "top.inst_decf_graphrename_779",
+    "top.inst_decfsz": "top.inst_decfsz_graphrename_785",
+    "top.inst_goto": "top.inst_goto_graphrename_791",
+    "top.inst_incf": "top.inst_incf_graphrename_797",
+    "top.inst_incfsz": "top.inst_incfsz_graphrename_803",
+    "top.inst_iorlw": "top.inst_iorlw_graphrename_809",
+    "top.inst_iorwf": "top.inst_iorwf_graphrename_815",
+    "top.inst_movf": "top.inst_movf_graphrename_821",
+    "top.inst_movlw": "top.inst_movlw_graphrename_827",
+    "top.inst_movwf": "top.inst_movwf_graphrename_833",
+    "top.inst_reg": "top.inst_reg_graphrename_839",
+    "top.inst_ret": "top.inst_ret_graphrename_855",
+    "top.inst_retfie": "top.inst_retfie_graphrename_858",
+    "top.inst_retlw": "top.inst_retlw_graphrename_861",
+    "top.inst_rlf": "top.inst_rlf_graphrename_867",
+    "top.inst_rrf": "top.inst_rrf_graphrename_873",
+    "top.inst_sleep": "top.inst_sleep_graphrename_879",
+    "top.inst_sublw": "top.inst_sublw_graphrename_882",
+    "top.inst_subwf": "top.inst_subwf_graphrename_888",
+    "top.inst_swapf": "top.inst_swapf_graphrename_894",
+    "top.inst_xorlw": "top.inst_xorlw_graphrename_900",
+    "top.inst_xorwf": "top.inst_xorwf_graphrename_906",
+    "top.int_node": "top.int_node_graphrename_912",
+    "top.intclr0": "top.intclr0_graphrename_948",
+    "top.intclr1": "top.intclr1_graphrename_952",
+    "top.intclr2": "top.intclr2_graphrename_956",
+    "top.intclr3": "top.intclr3_graphrename_960",
+    "top.intclr4": "top.intclr4_graphrename_964",
+    "top.intclr_reg": "top.intclr_reg_graphrename_968",
+    "top.intcon_reg": "top.intcon_reg_graphrename_1008",
+    "top.intdown_reg": "top.intdown_reg_graphrename_1173",
+    "top.inte": "top.inte_graphrename_1239",
+    "top.inte_sync_reg": "top.inte_sync_reg_graphrename_1244",
+    "top.intrise_reg": "top.intrise_reg_graphrename_1245",
+    "top.intstart_reg": "top.intstart_reg_graphrename_1303",
+    "top.LOG2_STACK_SIZE_PP": "top.LOG2_STACK_SIZE_PP_graphrename_1330",
+    "top.mask_node": "top.mask_node_graphrename_1332",
+    "top.mclr_sync_reg": "top.mclr_sync_reg_graphrename_1338",
+    "top.option_reg": "top.option_reg_graphrename_1339",
+    "top.pc_reg": "top.pc_reg_graphrename_1362",
+    "top.pclath_reg": "top.pclath_reg_graphrename_1410",
+    "top.porta_dir_o": "top.porta_dir_o_graphrename_1436",
+    "top.porta_i_sync_reg": "top.porta_i_sync_reg_graphrename_1437",
+    "top.porta_o": "top.porta_o_graphrename_1444",
+    "top.porta_o_reg": "top.porta_o_reg_graphrename_1445",
+    "top.portb_dir_o": "top.portb_dir_o_graphrename_1470",
+    "top.portb_i_sync_reg": "top.portb_i_sync_reg_graphrename_1471",
+    "top.portb_o": "top.portb_o_graphrename_1478",
+    "top.portb_o_reg": "top.portb_o_reg_graphrename_1479",
+    "top.powerdown_o": "top.powerdown_o_graphrename_1501",
+    "top.poweron_sync_reg": "top.poweron_sync_reg_graphrename_1502",
+    "top.prog_adr_o": "top.prog_adr_o_graphrename_1503",
+    "top.ps_clk": "top.ps_clk_graphrename_1509",
+    "top.ps_full_reg": "top.ps_full_reg_graphrename_1518",
+    "top.pscale_reg": "top.pscale_reg_graphrename_1526",
+    "top.Q1_PP": "top.Q1_PP_graphrename_1535",
+    "top.Q2_PP": "top.Q2_PP_graphrename_1537",
+    "top.Q3_PP": "top.Q3_PP_graphrename_1539",
+    "top.Q4_PP": "top.Q4_PP_graphrename_1541",
+    "top.QRESET_PP": "top.QRESET_PP_graphrename_1543",
+    "top.ram_adr_node": "top.ram_adr_node_graphrename_1545",
+    "top.ram_adr_o": "top.ram_adr_o_graphrename_1563",
+    "top.ram_adr_reg": "top.ram_adr_reg_graphrename_1564",
+    "top.ram_dat_o": "top.ram_dat_o_graphrename_1580",
+    "top.ram_i_node": "top.ram_i_node_graphrename_1581",
+    "top.rateval": "top.rateval_graphrename_1680",
+    "top.rb0_int": "top.rb0_int_graphrename_1740",
+    "top.rb4_int": "top.rb4_int_graphrename_1751",
+    "top.rb5_int": "top.rb5_int_graphrename_1759",
+    "top.rb6_int": "top.rb6_int_graphrename_1767",
+    "top.rb7_int": "top.rb7_int_graphrename_1775",
+    "top.rbint": "top.rbint_graphrename_1783",
+    "top.rbint_sync_reg": "top.rbint_sync_reg_graphrename_1791",
+    "top.rbpu_o": "top.rbpu_o_graphrename_1792",
+    "top.rd_eep_req_o": "top.rd_eep_req_o_graphrename_1796",
+    "top.rd_eep_sync_reg": "top.rd_eep_sync_reg_graphrename_1800",
+    "top.readram_o": "top.readram_o_graphrename_1801",
+    "top.reset_cond": "top.reset_cond_graphrename_1807",
+    "top.sleepflag_reg": "top.sleepflag_reg_graphrename_1815",
+    "top.stack_pnt_reg": "top.stack_pnt_reg_graphrename_1853",
+    "top.stack_reg": "top.stack_reg_graphrename_1888",
+    "top.STACK_SIZE_PP": "top.STACK_SIZE_PP_graphrename_1889",
+    "top.startclk_o": "top.startclk_o_graphrename_1891",
+    "top.state_reg": "top.state_reg_graphrename_1898",
+    "top.status_reg": "top.status_reg_graphrename_1936",
+    "top.temp": "top.temp_graphrename_2137",
+    "top.tmr0_reg": "top.tmr0_reg_graphrename_2147",
+    "top.trisa_reg": "top.trisa_reg_graphrename_2176",
+    "top.trisb_reg": "top.trisb_reg_graphrename_2202",
+    "top.w_reg": "top.w_reg_graphrename_2225",
+    "top.WDT_BITS_PP": "top.WDT_BITS_PP_graphrename_2246",
+    "top.wdt_clr_ack": "top.wdt_clr_ack_graphrename_2248",
+    "top.wdt_clr_ack_sync_reg": "top.wdt_clr_ack_sync_reg_graphrename_2252",
+    "top.wdt_clr_reg": "top.wdt_clr_reg_graphrename_2253",
+    "top.wdt_clr_req_reg": "top.wdt_clr_req_reg_graphrename_2274",
+    "top.wdt_clr_reqhold_reg": "top.wdt_clr_reqhold_reg_graphrename_2283",
+    "top.wdt_full_clr_reg": "top.wdt_full_clr_reg_graphrename_2303",
+    "top.wdt_full_node": "top.wdt_full_node_graphrename_2313",
+    "top.wdt_full_o": "top.wdt_full_o_graphrename_2322",
+    "top.wdt_full_reg": "top.wdt_full_reg_graphrename_2323",
+    "top.wdt_full_sync_reg": "top.wdt_full_sync_reg_graphrename_2336",
+    "top.wdt_fullclr_req_reg": "top.wdt_fullclr_req_reg_graphrename_2346",
+    "top.wdt_init": "top.wdt_init_graphrename_2357",
+    "top.wdt_reg": "top.wdt_reg_graphrename_2361",
+    "top.wdt_rst_node": "top.wdt_rst_node_graphrename_2376",
+    "top.WDT_SIZE_PP": "top.WDT_SIZE_PP_graphrename_2385",
+    "top.wr_eep_req_o": "top.wr_eep_req_o_graphrename_2387",
+    "top.wr_eep_sync_reg": "top.wr_eep_sync_reg_graphrename_2391",
+    "top.writeram_node": "top.writeram_node_graphrename_2392",
+    "top.writeram_o": "top.writeram_o_graphrename_2427",
+    "top.writeram_reg": "top.writeram_reg_graphrename_2428",
+    "top.writew_node": "top.writew_node_graphrename_2454"
+  },
+  "joined_references": [
+    {
+      "symbol": "top.aluinp1_reg",
+      "reference_node": "top_aluinp1_reg",
+      "definition_node": "top.aluinp1_reg_graphrename_122",
+      "parents": [
+        "Concat_graphrename_3",
+        "PartSelect_graphrename_15",
+        "Branch_graphrename_123",
+        "Branch_graphrename_126",
+        "Branch_graphrename_129",
+        "Branch_graphrename_132",
+        "PartSelect_graphrename_213",
+        "PartSelect_graphrename_224",
+        "PartSelect_graphrename_229",
+        "PartSelect_graphrename_232",
+        "Unot_graphrename_236",
+        "And_graphrename_242",
+        "Or_graphrename_246",
+        "Xor_graphrename_249",
+        "Branch_graphrename_250",
+        "PartSelect_graphrename_377",
+        "PartSelect_graphrename_2099",
+        "PartSelect_graphrename_2103",
+        "Concat_graphrename_2140"
+      ]
+    },
+    {
+      "symbol": "top.aluinp2_reg",
+      "reference_node": "top_aluinp2_reg",
+      "definition_node": "top.aluinp2_reg_graphrename_166",
+      "parents": [
+        "Concat_graphrename_6",
+        "PartSelect_graphrename_21",
+        "Branch_graphrename_167",
+        "Branch_graphrename_170",
+        "Branch_graphrename_173",
+        "Branch_graphrename_176",
+        "And_graphrename_242",
+        "Or_graphrename_246",
+        "Xor_graphrename_249",
+        "PartSelect_graphrename_383",
+        "Concat_graphrename_2143"
+      ]
+    },
+    {
+      "symbol": "top.ram_adr_node",
+      "reference_node": "top_ram_adr_node",
+      "definition_node": "top.ram_adr_node_graphrename_1545",
+      "parents": [
+        "PartSelect_graphrename_28",
+        "PartSelect_graphrename_34",
+        "PartSelect_graphrename_40",
+        "PartSelect_graphrename_46",
+        "PartSelect_graphrename_52",
+        "PartSelect_graphrename_58",
+        "PartSelect_graphrename_64",
+        "PartSelect_graphrename_70",
+        "PartSelect_graphrename_76",
+        "PartSelect_graphrename_82",
+        "PartSelect_graphrename_88",
+        "PartSelect_graphrename_94",
+        "PartSelect_graphrename_100",
+        "PartSelect_graphrename_106",
+        "PartSelect_graphrename_112",
+        "PartSelect_graphrename_118",
+        "Branch_graphrename_1573",
+        "Branch_graphrename_1577"
+      ]
+    },
+    {
+      "symbol": "top.state_reg",
+      "reference_node": "top_state_reg",
+      "definition_node": "top.state_reg_graphrename_1898",
+      "parents": [
+        "Eq_graphrename_124",
+        "Eq_graphrename_127",
+        "Eq_graphrename_130",
+        "Eq_graphrename_168",
+        "Eq_graphrename_171",
+        "Eq_graphrename_174",
+        "Eq_graphrename_197",
+        "Eq_graphrename_200",
+        "Eq_graphrename_203",
+        "Eq_graphrename_206",
+        "Eq_graphrename_270",
+        "Eq_graphrename_273",
+        "Eq_graphrename_276",
+        "Eq_graphrename_280",
+        "Eq_graphrename_283",
+        "Eq_graphrename_390",
+        "Eq_graphrename_402",
+        "Eq_graphrename_441",
+        "Eq_graphrename_444",
+        "Eq_graphrename_447",
+        "Eq_graphrename_462",
+        "Eq_graphrename_465",
+        "Eq_graphrename_468",
+        "Eq_graphrename_483",
+        "Eq_graphrename_488",
+        "Eq_graphrename_491",
+        "Eq_graphrename_504",
+        "Eq_graphrename_509",
+        "Eq_graphrename_525",
+        "Eq_graphrename_543",
+        "Eq_graphrename_546",
+        "Eq_graphrename_549",
+        "Eq_graphrename_552",
+        "Eq_graphrename_555",
+        "Eq_graphrename_566",
+        "Eq_graphrename_569",
+        "Eq_graphrename_579",
+        "Eq_graphrename_582",
+        "Eq_graphrename_585",
+        "Eq_graphrename_595",
+        "Eq_graphrename_599",
+        "Eq_graphrename_602",
+        "Eq_graphrename_605",
+        "Eq_graphrename_608",
+        "Eq_graphrename_638",
+        "Eq_graphrename_641",
+        "Eq_graphrename_644",
+        "Eq_graphrename_647",
+        "Eq_graphrename_650",
+        "Eq_graphrename_668",
+        "Eq_graphrename_671",
+        "Eq_graphrename_678",
+        "Eq_graphrename_685",
+        "Eq_graphrename_693",
+        "Eq_graphrename_841",
+        "Eq_graphrename_844",
+        "Eq_graphrename_847",
+        "Eq_graphrename_850",
+        "Eq_graphrename_853",
+        "Eq_graphrename_970",
+        "Eq_graphrename_974",
+        "Eq_graphrename_985",
+        "Eq_graphrename_988",
+        "Eq_graphrename_1010",
+        "Eq_graphrename_1015",
+        "Eq_graphrename_1022",
+        "Eq_graphrename_1025",
+        "Eq_graphrename_1028",
+        "Eq_graphrename_1046",
+        "Eq_graphrename_1049",
+        "Eq_graphrename_1052",
+        "Eq_graphrename_1073",
+        "Eq_graphrename_1078",
+        "Eq_graphrename_1099",
+        "Eq_graphrename_1120",
+        "Eq_graphrename_1141",
+        "Eq_graphrename_1159",
+        "Eq_graphrename_1305",
+        "Eq_graphrename_1309",
+        "Eq_graphrename_1312",
+        "Eq_graphrename_1315",
+        "Eq_graphrename_1318",
+        "Eq_graphrename_1341",
+        "Eq_graphrename_1345",
+        "Eq_graphrename_1348",
+        "Eq_graphrename_1351",
+        "Eq_graphrename_1354",
+        "Eq_graphrename_1364",
+        "Eq_graphrename_1368",
+        "Eq_graphrename_1371",
+        "Eq_graphrename_1374",
+        "Eq_graphrename_1377",
+        "Eq_graphrename_1412",
+        "Eq_graphrename_1416",
+        "Eq_graphrename_1419",
+        "Eq_graphrename_1422",
+        "Eq_graphrename_1425",
+        "Eq_graphrename_1439",
+        "Eq_graphrename_1442",
+        "Eq_graphrename_1447",
+        "Eq_graphrename_1450",
+        "Eq_graphrename_1453",
+        "Eq_graphrename_1456",
+        "Eq_graphrename_1459",
+        "Eq_graphrename_1473",
+        "Eq_graphrename_1476",
+        "Eq_graphrename_1481",
+        "Eq_graphrename_1484",
+        "Eq_graphrename_1487",
+        "Eq_graphrename_1490",
+        "Eq_graphrename_1493",
+        "Eq_graphrename_1566",
+        "Eq_graphrename_1569",
+        "Eq_graphrename_1575",
+        "PartSelect_graphrename_1803",
+        "Eq_graphrename_1817",
+        "Eq_graphrename_1821",
+        "Eq_graphrename_1831",
+        "Eq_graphrename_1834",
+        "Eq_graphrename_1837",
+        "Eq_graphrename_1855",
+        "Eq_graphrename_1861",
+        "Eq_graphrename_1864",
+        "Eq_graphrename_1875",
+        "Eq_graphrename_1878",
+        "Eq_graphrename_1900",
+        "Branch_graphrename_1902",
+        "Eq_graphrename_1906",
+        "Branch_graphrename_1913",
+        "Eq_graphrename_1918",
+        "Eq_graphrename_1924",
+        "Eq_graphrename_1930",
+        "Eq_graphrename_1938",
+        "Eq_graphrename_1962",
+        "Eq_graphrename_1965",
+        "Eq_graphrename_1968",
+        "Eq_graphrename_1971",
+        "Eq_graphrename_1983",
+        "Eq_graphrename_1986",
+        "Eq_graphrename_1989",
+        "Eq_graphrename_1992",
+        "Eq_graphrename_2008",
+        "Eq_graphrename_2013",
+        "Eq_graphrename_2016",
+        "Eq_graphrename_2019",
+        "Eq_graphrename_2037",
+        "Eq_graphrename_2042",
+        "Eq_graphrename_2045",
+        "Eq_graphrename_2075",
+        "Eq_graphrename_2108",
+        "Eq_graphrename_2123",
+        "Eq_graphrename_2149",
+        "Eq_graphrename_2153",
+        "Eq_graphrename_2156",
+        "Eq_graphrename_2159",
+        "Eq_graphrename_2168",
+        "Eq_graphrename_2178",
+        "Eq_graphrename_2182",
+        "Eq_graphrename_2185",
+        "Eq_graphrename_2188",
+        "Eq_graphrename_2191",
+        "Eq_graphrename_2204",
+        "Eq_graphrename_2208",
+        "Eq_graphrename_2211",
+        "Eq_graphrename_2214",
+        "Eq_graphrename_2217",
+        "Eq_graphrename_2227",
+        "Eq_graphrename_2230",
+        "Eq_graphrename_2233",
+        "Eq_graphrename_2236",
+        "Eq_graphrename_2239",
+        "Eq_graphrename_2268",
+        "Eq_graphrename_2297",
+        "Eq_graphrename_2430",
+        "Eq_graphrename_2434",
+        "Eq_graphrename_2437",
+        "Eq_graphrename_2440",
+        "Eq_graphrename_2451"
+      ]
+    },
+    {
+      "symbol": "top.exec_op_reg",
+      "reference_node": "top_exec_op_reg",
+      "definition_node": "top.exec_op_reg_graphrename_593",
+      "parents": [
+        "Land_graphrename_133",
+        "Land_graphrename_177",
+        "Land_graphrename_209",
+        "Unot_graphrename_452",
+        "Unot_graphrename_473",
+        "Unot_graphrename_496",
+        "Unot_graphrename_514",
+        "Unot_graphrename_530",
+        "Unot_graphrename_560",
+        "Unot_graphrename_590",
+        "Branch_graphrename_598",
+        "Branch_graphrename_601",
+        "Branch_graphrename_604",
+        "Branch_graphrename_607",
+        "Unot_graphrename_613",
+        "Unot_graphrename_655",
+        "Unot_graphrename_1033",
+        "Unot_graphrename_1057",
+        "Unot_graphrename_1104",
+        "Unot_graphrename_1146",
+        "Unot_graphrename_1164",
+        "Unot_graphrename_1323",
+        "Unot_graphrename_1359",
+        "Unot_graphrename_1382",
+        "Unot_graphrename_1430",
+        "Unot_graphrename_1464",
+        "Unot_graphrename_1498",
+        "Branch_graphrename_1573",
+        "Land_graphrename_1578",
+        "Unot_graphrename_1842",
+        "Land_graphrename_1867",
+        "Unot_graphrename_1883",
+        "Unot_graphrename_1976",
+        "Unot_graphrename_1997",
+        "Unot_graphrename_2024",
+        "Unot_graphrename_2050",
+        "Land_graphrename_2079",
+        "Land_graphrename_2089",
+        "Unot_graphrename_2113",
+        "Unot_graphrename_2128",
+        "Unot_graphrename_2173",
+        "Unot_graphrename_2196",
+        "Unot_graphrename_2222",
+        "Unot_graphrename_2244",
+        "Land_graphrename_2266",
+        "Land_graphrename_2295",
+        "Land_graphrename_2443"
+      ]
+    },
+    {
+      "symbol": "top.intstart_reg",
+      "reference_node": "top_intstart_reg",
+      "definition_node": "top.intstart_reg_graphrename_1303",
+      "parents": [
+        "Unot_graphrename_134",
+        "Unot_graphrename_178",
+        "Unot_graphrename_210",
+        "Unot_graphrename_407",
+        "Unot_graphrename_424",
+        "Unot_graphrename_451",
+        "Unot_graphrename_472",
+        "Unot_graphrename_495",
+        "Unot_graphrename_513",
+        "Unot_graphrename_529",
+        "Unot_graphrename_559",
+        "Unot_graphrename_572",
+        "Unot_graphrename_589",
+        "Unot_graphrename_612",
+        "Branch_graphrename_615",
+        "Unot_graphrename_654",
+        "Unot_graphrename_996",
+        "Unot_graphrename_1004",
+        "Unot_graphrename_1032",
+        "Unot_graphrename_1035",
+        "Unot_graphrename_1056",
+        "Unot_graphrename_1094",
+        "Unot_graphrename_1103",
+        "Unot_graphrename_1128",
+        "Unot_graphrename_1136",
+        "Unot_graphrename_1145",
+        "Unot_graphrename_1163",
+        "Branch_graphrename_1308",
+        "Branch_graphrename_1311",
+        "Branch_graphrename_1314",
+        "Branch_graphrename_1317",
+        "Branch_graphrename_1320",
+        "Unot_graphrename_1322",
+        "Unot_graphrename_1325",
+        "Unot_graphrename_1358",
+        "Unot_graphrename_1381",
+        "Branch_graphrename_1383",
+        "Unot_graphrename_1429",
+        "Unot_graphrename_1463",
+        "Unot_graphrename_1497",
+        "Unot_graphrename_1572",
+        "Unot_graphrename_1579",
+        "Unot_graphrename_1826",
+        "Unot_graphrename_1841",
+        "Unot_graphrename_1844",
+        "Unot_graphrename_1850",
+        "Unot_graphrename_1868",
+        "Unot_graphrename_1882",
+        "Lor_graphrename_1885",
+        "Unot_graphrename_1912",
+        "Unot_graphrename_1975",
+        "Unot_graphrename_1996",
+        "Unot_graphrename_1999",
+        "Unot_graphrename_2005",
+        "Unot_graphrename_2023",
+        "Unot_graphrename_2026",
+        "Unot_graphrename_2032",
+        "Unot_graphrename_2049",
+        "Unot_graphrename_2052",
+        "Unot_graphrename_2080",
+        "Unot_graphrename_2090",
+        "Unot_graphrename_2112",
+        "Unot_graphrename_2127",
+        "Unot_graphrename_2172",
+        "Unot_graphrename_2195",
+        "Unot_graphrename_2221",
+        "Unot_graphrename_2243",
+        "Unot_graphrename_2267",
+        "Unot_graphrename_2296",
+        "Branch_graphrename_2393",
+        "Unot_graphrename_2444",
+        "Branch_graphrename_2455"
+      ]
+    },
+    {
+      "symbol": "top.inst_xorwf",
+      "reference_node": "top_inst_xorwf",
+      "definition_node": "top.inst_xorwf_graphrename_906",
+      "parents": [
+        "Lor_graphrename_152",
+        "Lor_graphrename_248",
+        "Lor_graphrename_2070",
+        "Lor_graphrename_2422",
+        "Lor_graphrename_2484"
+      ]
+    },
+    {
+      "symbol": "top.inst_swapf",
+      "reference_node": "top_inst_swapf",
+      "definition_node": "top.inst_swapf_graphrename_894",
+      "parents": [
+        "Lor_graphrename_152",
+        "Branch_graphrename_227",
+        "Lor_graphrename_2422",
+        "Lor_graphrename_2484"
+      ]
+    },
+    {
+      "symbol": "top.inst_subwf",
+      "reference_node": "top_inst_subwf",
+      "definition_node": "top.inst_subwf_graphrename_888",
+      "parents": [
+        "Lor_graphrename_151",
+        "Lor_graphrename_186",
+        "Lor_graphrename_257",
+        "Lor_graphrename_2069",
+        "Lor_graphrename_2084",
+        "Lor_graphrename_2094",
+        "Lor_graphrename_2421",
+        "Lor_graphrename_2483"
+      ]
+    },
+    {
+      "symbol": "top.inst_rrf",
+      "reference_node": "top_inst_rrf",
+      "definition_node": "top.inst_rrf_graphrename_873",
+      "parents": [
+        "Lor_graphrename_150",
+        "Branch_graphrename_219",
+        "Branch_graphrename_2102",
+        "Lor_graphrename_2420",
+        "Lor_graphrename_2482"
+      ]
+    },
+    {
+      "symbol": "top.inst_rlf",
+      "reference_node": "top_inst_rlf",
+      "definition_node": "top.inst_rlf_graphrename_867",
+      "parents": [
+        "Lor_graphrename_149",
+        "Branch_graphrename_211",
+        "Branch_graphrename_2098",
+        "Lor_graphrename_2419",
+        "Lor_graphrename_2481"
+      ]
+    },
+    {
+      "symbol": "top.inst_movf",
+      "reference_node": "top_inst_movf",
+      "definition_node": "top.inst_movf_graphrename_821",
+      "parents": [
+        "Lor_graphrename_148",
+        "Lor_graphrename_2067",
+        "Lor_graphrename_2418",
+        "Lor_graphrename_2480"
+      ]
+    },
+    {
+      "symbol": "top.inst_iorwf",
+      "reference_node": "top_inst_iorwf",
+      "definition_node": "top.inst_iorwf_graphrename_815",
+      "parents": [
+        "Lor_graphrename_147",
+        "Lor_graphrename_245",
+        "Lor_graphrename_2072",
+        "Lor_graphrename_2417",
+        "Lor_graphrename_2479"
+      ]
+    },
+    {
+      "symbol": "top.inst_incfsz",
+      "reference_node": "top_inst_incfsz",
+      "definition_node": "top.inst_incfsz_graphrename_803",
+      "parents": [
+        "Lor_graphrename_146",
+        "Lor_graphrename_183",
+        "Lor_graphrename_256",
+        "Lor_graphrename_630",
+        "Lor_graphrename_1404",
+        "Lor_graphrename_2416",
+        "Lor_graphrename_2478"
+      ]
+    },
+    {
+      "symbol": "top.inst_incf",
+      "reference_node": "top_inst_incf",
+      "definition_node": "top.inst_incf_graphrename_797",
+      "parents": [
+        "Lor_graphrename_145",
+        "Lor_graphrename_183",
+        "Lor_graphrename_255",
+        "Lor_graphrename_2066",
+        "Lor_graphrename_2415",
+        "Lor_graphrename_2477"
+      ]
+    },
+    {
+      "symbol": "top.inst_decfsz",
+      "reference_node": "top_inst_decfsz",
+      "definition_node": "top.inst_decfsz_graphrename_785",
+      "parents": [
+        "Lor_graphrename_144",
+        "Lor_graphrename_180",
+        "Lor_graphrename_254",
+        "Lor_graphrename_630",
+        "Lor_graphrename_1404",
+        "Lor_graphrename_2414",
+        "Lor_graphrename_2476"
+      ]
+    },
+    {
+      "symbol": "top.inst_decf",
+      "reference_node": "top_inst_decf",
+      "definition_node": "top.inst_decf_graphrename_779",
+      "parents": [
+        "Lor_graphrename_143",
+        "Lor_graphrename_180",
+        "Lor_graphrename_253",
+        "Lor_graphrename_2065",
+        "Lor_graphrename_2413",
+        "Lor_graphrename_2475"
+      ]
+    },
+    {
+      "symbol": "top.inst_comf",
+      "reference_node": "top_inst_comf",
+      "definition_node": "top.inst_comf_graphrename_773",
+      "parents": [
+        "Lor_graphrename_142",
+        "Branch_graphrename_235",
+        "Lor_graphrename_2064",
+        "Lor_graphrename_2412",
+        "Lor_graphrename_2474"
+      ]
+    },
+    {
+      "symbol": "top.inst_btfss",
+      "reference_node": "top_inst_btfss",
+      "definition_node": "top.inst_btfss_graphrename_746",
+      "parents": [
+        "Lor_graphrename_141",
+        "Lor_graphrename_194",
+        "Lor_graphrename_241",
+        "Land_graphrename_626",
+        "Land_graphrename_1400"
+      ]
+    },
+    {
+      "symbol": "top.inst_btfsc",
+      "reference_node": "top_inst_btfsc",
+      "definition_node": "top.inst_btfsc_graphrename_740",
+      "parents": [
+        "Lor_graphrename_140",
+        "Lor_graphrename_194",
+        "Lor_graphrename_241",
+        "Lor_graphrename_629",
+        "Lor_graphrename_1403"
+      ]
+    },
+    {
+      "symbol": "top.inst_bsf",
+      "reference_node": "top_inst_bsf",
+      "definition_node": "top.inst_bsf_graphrename_734",
+      "parents": [
+        "Lor_graphrename_139",
+        "Lor_graphrename_193",
+        "Lor_graphrename_244",
+        "Lor_graphrename_2397",
+        "Lor_graphrename_2459"
+      ]
+    },
+    {
+      "symbol": "top.inst_bcf",
+      "reference_node": "top_inst_bcf",
+      "definition_node": "top.inst_bcf_graphrename_728",
+      "parents": [
+        "Lor_graphrename_138",
+        "Branch_graphrename_190",
+        "Lor_graphrename_240",
+        "Lor_graphrename_2396",
+        "Lor_graphrename_2458"
+      ]
+    },
+    {
+      "symbol": "top.inst_andwf",
+      "reference_node": "top_inst_andwf",
+      "definition_node": "top.inst_andwf_graphrename_722",
+      "parents": [
+        "Lor_graphrename_137",
+        "Lor_graphrename_239",
+        "Lor_graphrename_2061",
+        "Lor_graphrename_2411",
+        "Lor_graphrename_2473"
+      ]
+    },
+    {
+      "symbol": "top.inst_addwf",
+      "reference_node": "top_inst_addwf",
+      "definition_node": "top.inst_addwf_graphrename_710",
+      "parents": [
+        "Lor_graphrename_136",
+        "Lor_graphrename_252",
+        "Lor_graphrename_2059",
+        "Lor_graphrename_2083",
+        "Lor_graphrename_2093",
+        "Lor_graphrename_2410",
+        "Lor_graphrename_2472"
+      ]
+    },
+    {
+      "symbol": "top.ram_i_node",
+      "reference_node": "top_ram_i_node",
+      "definition_node": "top.ram_i_node_graphrename_1581",
+      "parents": [
+        "Branch_graphrename_135"
+      ]
+    },
+    {
+      "symbol": "top.inst_xorlw",
+      "reference_node": "top_inst_xorlw",
+      "definition_node": "top.inst_xorlw_graphrename_900",
+      "parents": [
+        "Lor_graphrename_159",
+        "Lor_graphrename_248",
+        "Lor_graphrename_2070",
+        "Lor_graphrename_2407",
+        "Lor_graphrename_2469"
+      ]
+    },
+    {
+      "symbol": "top.inst_sublw",
+      "reference_node": "top_inst_sublw",
+      "definition_node": "top.inst_sublw_graphrename_882",
+      "parents": [
+        "Lor_graphrename_159",
+        "Lor_graphrename_186",
+        "Lor_graphrename_257",
+        "Lor_graphrename_2068",
+        "Lor_graphrename_2084",
+        "Lor_graphrename_2094",
+        "Lor_graphrename_2407",
+        "Lor_graphrename_2469"
+      ]
+    },
+    {
+      "symbol": "top.inst_retlw",
+      "reference_node": "top_inst_retlw",
+      "definition_node": "top.inst_retlw_graphrename_861",
+      "parents": [
+        "Lor_graphrename_158",
+        "Lor_graphrename_619",
+        "Lor_graphrename_1387",
+        "Lor_graphrename_1871",
+        "Lor_graphrename_2406",
+        "Lor_graphrename_2468"
+      ]
+    },
+    {
+      "symbol": "top.inst_movlw",
+      "reference_node": "top_inst_movlw",
+      "definition_node": "top.inst_movlw_graphrename_827",
+      "parents": [
+        "Lor_graphrename_157",
+        "Lor_graphrename_2405",
+        "Lor_graphrename_2467"
+      ]
+    },
+    {
+      "symbol": "top.inst_iorlw",
+      "reference_node": "top_inst_iorlw",
+      "definition_node": "top.inst_iorlw_graphrename_809",
+      "parents": [
+        "Lor_graphrename_156",
+        "Lor_graphrename_245",
+        "Lor_graphrename_2072",
+        "Lor_graphrename_2404",
+        "Lor_graphrename_2466"
+      ]
+    },
+    {
+      "symbol": "top.inst_andlw",
+      "reference_node": "top_inst_andlw",
+      "definition_node": "top.inst_andlw_graphrename_716",
+      "parents": [
+        "Lor_graphrename_155",
+        "Lor_graphrename_238",
+        "Lor_graphrename_2060",
+        "Lor_graphrename_2402",
+        "Lor_graphrename_2464"
+      ]
+    },
+    {
+      "symbol": "top.inst_addlw",
+      "reference_node": "top_inst_addlw",
+      "definition_node": "top.inst_addlw_graphrename_704",
+      "parents": [
+        "Lor_graphrename_154",
+        "Lor_graphrename_251",
+        "Lor_graphrename_2058",
+        "Lor_graphrename_2082",
+        "Lor_graphrename_2092",
+        "Lor_graphrename_2401",
+        "Lor_graphrename_2463"
+      ]
+    },
+    {
+      "symbol": "top.inst_reg",
+      "reference_node": "top_inst_reg",
+      "definition_node": "top.inst_reg_graphrename_839",
+      "parents": [
+        "PartSelect_graphrename_160",
+        "PartSelect_graphrename_706",
+        "PartSelect_graphrename_712",
+        "PartSelect_graphrename_718",
+        "PartSelect_graphrename_724",
+        "PartSelect_graphrename_730",
+        "PartSelect_graphrename_736",
+        "PartSelect_graphrename_742",
+        "PartSelect_graphrename_748",
+        "PartSelect_graphrename_754",
+        "PartSelect_graphrename_760",
+        "PartSelect_graphrename_766",
+        "Eq_graphrename_771",
+        "PartSelect_graphrename_775",
+        "PartSelect_graphrename_781",
+        "PartSelect_graphrename_787",
+        "PartSelect_graphrename_793",
+        "PartSelect_graphrename_799",
+        "PartSelect_graphrename_805",
+        "PartSelect_graphrename_811",
+        "PartSelect_graphrename_817",
+        "PartSelect_graphrename_823",
+        "PartSelect_graphrename_829",
+        "PartSelect_graphrename_835",
+        "Branch_graphrename_840",
+        "Branch_graphrename_843",
+        "Branch_graphrename_846",
+        "Branch_graphrename_849",
+        "Branch_graphrename_852",
+        "Eq_graphrename_856",
+        "Eq_graphrename_859",
+        "PartSelect_graphrename_863",
+        "PartSelect_graphrename_869",
+        "PartSelect_graphrename_875",
+        "Eq_graphrename_880",
+        "PartSelect_graphrename_884",
+        "PartSelect_graphrename_890",
+        "PartSelect_graphrename_896",
+        "PartSelect_graphrename_902",
+        "PartSelect_graphrename_908",
+        "PartSelect_graphrename_1335",
+        "PartSelect_graphrename_1395",
+        "PartSelect_graphrename_1548",
+        "PartSelect_graphrename_1560",
+        "PartSelect_graphrename_2423",
+        "PartSelect_graphrename_2486"
+      ]
+    },
+    {
+      "symbol": "top.inst_clrw",
+      "reference_node": "top_inst_clrw",
+      "definition_node": "top.inst_clrw_graphrename_764",
+      "parents": [
+        "Lor_graphrename_164",
+        "Lor_graphrename_2063",
+        "Lor_graphrename_2403",
+        "Lor_graphrename_2465"
+      ]
+    },
+    {
+      "symbol": "top.inst_clrf",
+      "reference_node": "top_inst_clrf",
+      "definition_node": "top.inst_clrf_graphrename_758",
+      "parents": [
+        "Lor_graphrename_164",
+        "Lor_graphrename_2062",
+        "Lor_graphrename_2398",
+        "Lor_graphrename_2460"
+      ]
+    },
+    {
+      "symbol": "top.w_reg",
+      "reference_node": "top_w_reg",
+      "definition_node": "top.w_reg_graphrename_2225",
+      "parents": [
+        "Branch_graphrename_163",
+        "Unot_graphrename_188",
+        "Branch_graphrename_192",
+        "Branch_graphrename_2226",
+        "Branch_graphrename_2229",
+        "Branch_graphrename_2232",
+        "Branch_graphrename_2235",
+        "Branch_graphrename_2238",
+        "Branch_graphrename_2241",
+        "Branch_graphrename_2245"
+      ]
+    },
+    {
+      "symbol": "top.mask_node",
+      "reference_node": "top_mask_node",
+      "definition_node": "top.mask_node_graphrename_1332",
+      "parents": [
+        "Unot_graphrename_191",
+        "Branch_graphrename_192"
+      ]
+    },
+    {
+      "symbol": "top.aluout_reg",
+      "reference_node": "top_aluout_reg",
+      "definition_node": "top.aluout_reg_graphrename_195",
+      "parents": [
+        "Branch_graphrename_196",
+        "Branch_graphrename_199",
+        "Branch_graphrename_202",
+        "Branch_graphrename_205",
+        "Branch_graphrename_208",
+        "Eq_graphrename_263",
+        "PartSelect_graphrename_456",
+        "PartSelect_graphrename_477",
+        "PartSelect_graphrename_500",
+        "PartSelect_graphrename_519",
+        "PartSelect_graphrename_535",
+        "Branch_graphrename_562",
+        "Branch_graphrename_592",
+        "Branch_graphrename_657",
+        "PartSelect_graphrename_1042",
+        "PartSelect_graphrename_1063",
+        "PartSelect_graphrename_1110",
+        "PartSelect_graphrename_1151",
+        "PartSelect_graphrename_1168",
+        "Branch_graphrename_1361",
+        "And_graphrename_1407",
+        "PartSelect_graphrename_1433",
+        "PartSelect_graphrename_1467",
+        "Branch_graphrename_1500",
+        "top.ram_dat_o_graphrename_1580",
+        "PartSelect_graphrename_1979",
+        "PartSelect_graphrename_2054",
+        "PartSelect_graphrename_2117",
+        "PartSelect_graphrename_2132",
+        "Branch_graphrename_2175",
+        "PartSelect_graphrename_2199",
+        "Branch_graphrename_2224",
+        "Branch_graphrename_2245"
+      ]
+    },
+    {
+      "symbol": "top.status_reg",
+      "reference_node": "top_status_reg",
+      "definition_node": "top.status_reg_graphrename_1936",
+      "parents": [
+        "PartSelect_graphrename_216",
+        "PartSelect_graphrename_221",
+        "PartSelect_graphrename_1553",
+        "PartSelect_graphrename_1557",
+        "PartSelect_graphrename_1601",
+        "PartSelect_graphrename_1640",
+        "Concat_graphrename_1940",
+        "Branch_graphrename_1949",
+        "Branch_graphrename_1957",
+        "Branch_graphrename_1961",
+        "Branch_graphrename_1964",
+        "Branch_graphrename_1967",
+        "Branch_graphrename_1970",
+        "Branch_graphrename_1973",
+        "Branch_graphrename_1977",
+        "Branch_graphrename_1978",
+        "Branch_graphrename_1982",
+        "Branch_graphrename_1985",
+        "Branch_graphrename_1988",
+        "Branch_graphrename_1991",
+        "Branch_graphrename_1994",
+        "Branch_graphrename_1998",
+        "Branch_graphrename_2000",
+        "Concat_graphrename_2010",
+        "Branch_graphrename_2012",
+        "Branch_graphrename_2015",
+        "Branch_graphrename_2018",
+        "Branch_graphrename_2021",
+        "Branch_graphrename_2025",
+        "Branch_graphrename_2027",
+        "Concat_graphrename_2039",
+        "Branch_graphrename_2041",
+        "Branch_graphrename_2044",
+        "Branch_graphrename_2047",
+        "Branch_graphrename_2051",
+        "Branch_graphrename_2071",
+        "Branch_graphrename_2078",
+        "Branch_graphrename_2081",
+        "Branch_graphrename_2088",
+        "Branch_graphrename_2102",
+        "Branch_graphrename_2107",
+        "Branch_graphrename_2110",
+        "Branch_graphrename_2114",
+        "Branch_graphrename_2115",
+        "Branch_graphrename_2122",
+        "Branch_graphrename_2125",
+        "Branch_graphrename_2129",
+        "Branch_graphrename_2130"
+      ]
+    },
+    {
+      "symbol": "top.add_node",
+      "reference_node": "top_add_node",
+      "definition_node": "top.add_node_graphrename_0",
+      "parents": [
+        "PartSelect_graphrename_258",
+        "PartSelect_graphrename_2095"
+      ]
+    },
+    {
+      "symbol": "top.clk_o_reg",
+      "reference_node": "top_clk_o_reg",
+      "definition_node": "top.clk_o_reg_graphrename_268",
+      "parents": [
+        "top.clk_o_graphrename_267",
+        "Branch_graphrename_269",
+        "Branch_graphrename_272",
+        "Branch_graphrename_279",
+        "Branch_graphrename_282",
+        "Branch_graphrename_1510"
+      ]
+    },
+    {
+      "symbol": "top.Counter",
+      "reference_node": "top_Counter",
+      "definition_node": "top.Counter_graphrename_286",
+      "parents": [
+        "Branch_graphrename_287",
+        "Plus_graphrename_299",
+        "Plus_graphrename_307",
+        "Plus_graphrename_315",
+        "Plus_graphrename_323",
+        "Plus_graphrename_331",
+        "Plus_graphrename_339",
+        "Plus_graphrename_347",
+        "Plus_graphrename_355",
+        "Plus_graphrename_363",
+        "Branch_graphrename_365",
+        "GreaterThan_graphrename_1505"
+      ]
+    },
+    {
+      "symbol": "top.poweron_sync_reg",
+      "reference_node": "top_poweron_sync_reg",
+      "definition_node": "top.poweron_sync_reg_graphrename_1502",
+      "parents": [
+        "Unot_graphrename_395",
+        "Unot_graphrename_1811",
+        "Unot_graphrename_1858",
+        "Unot_graphrename_1944",
+        "Unot_graphrename_1952",
+        "Unot_graphrename_2256",
+        "Unot_graphrename_2286",
+        "Unot_graphrename_2306",
+        "Unot_graphrename_2339"
+      ]
+    },
+    {
+      "symbol": "top.eecon1_reg",
+      "reference_node": "top_eecon1_reg",
+      "definition_node": "top.eecon1_reg_graphrename_388",
+      "parents": [
+        "PartSelect_graphrename_397",
+        "Concat_graphrename_405",
+        "Branch_graphrename_406",
+        "Branch_graphrename_408",
+        "PartSelect_graphrename_410",
+        "Branch_graphrename_413",
+        "Concat_graphrename_422",
+        "Branch_graphrename_423",
+        "Branch_graphrename_426",
+        "PartSelect_graphrename_428",
+        "Branch_graphrename_432",
+        "PartSelect_graphrename_434",
+        "Branch_graphrename_440",
+        "Branch_graphrename_443",
+        "Branch_graphrename_446",
+        "Branch_graphrename_449",
+        "Branch_graphrename_453",
+        "Branch_graphrename_454",
+        "Branch_graphrename_461",
+        "Branch_graphrename_464",
+        "Branch_graphrename_467",
+        "Branch_graphrename_470",
+        "Branch_graphrename_474",
+        "Branch_graphrename_475",
+        "Concat_graphrename_485",
+        "Branch_graphrename_487",
+        "Branch_graphrename_490",
+        "Branch_graphrename_493",
+        "Branch_graphrename_497",
+        "Branch_graphrename_498",
+        "Concat_graphrename_506",
+        "Branch_graphrename_508",
+        "Branch_graphrename_511",
+        "Branch_graphrename_515",
+        "Branch_graphrename_516",
+        "Branch_graphrename_517",
+        "Branch_graphrename_524",
+        "Branch_graphrename_527",
+        "Branch_graphrename_531",
+        "Branch_graphrename_532",
+        "Branch_graphrename_533",
+        "PartSelect_graphrename_575",
+        "PartSelect_graphrename_924",
+        "Branch_graphrename_1678",
+        "PartSelect_graphrename_1797",
+        "PartSelect_graphrename_2388"
+      ]
+    },
+    {
+      "symbol": "top.wr_eep_sync_reg",
+      "reference_node": "top_wr_eep_sync_reg",
+      "definition_node": "top.wr_eep_sync_reg_graphrename_2391",
+      "parents": [
+        "Land_graphrename_409",
+        "Land_graphrename_427"
+      ]
+    },
+    {
+      "symbol": "top.intcon_reg",
+      "reference_node": "top_intcon_reg",
+      "definition_node": "top.intcon_reg_graphrename_1008",
+      "parents": [
+        "PartSelect_graphrename_415",
+        "PartSelect_graphrename_418",
+        "PartSelect_graphrename_914",
+        "PartSelect_graphrename_921",
+        "PartSelect_graphrename_928",
+        "PartSelect_graphrename_931",
+        "PartSelect_graphrename_935",
+        "PartSelect_graphrename_938",
+        "PartSelect_graphrename_942",
+        "PartSelect_graphrename_945",
+        "PartSelect_graphrename_979",
+        "PartSelect_graphrename_993",
+        "PartSelect_graphrename_1001",
+        "Concat_graphrename_1012",
+        "Concat_graphrename_1017",
+        "Concat_graphrename_1018",
+        "Branch_graphrename_1021",
+        "Branch_graphrename_1024",
+        "Branch_graphrename_1027",
+        "Branch_graphrename_1030",
+        "Branch_graphrename_1034",
+        "Branch_graphrename_1040",
+        "Branch_graphrename_1045",
+        "Branch_graphrename_1048",
+        "Branch_graphrename_1051",
+        "Branch_graphrename_1054",
+        "Branch_graphrename_1058",
+        "Branch_graphrename_1059",
+        "Concat_graphrename_1075",
+        "Branch_graphrename_1080",
+        "Branch_graphrename_1084",
+        "PartSelect_graphrename_1088",
+        "PartSelect_graphrename_1091",
+        "Branch_graphrename_1098",
+        "Branch_graphrename_1101",
+        "Branch_graphrename_1105",
+        "Branch_graphrename_1106",
+        "Branch_graphrename_1123",
+        "PartSelect_graphrename_1125",
+        "Branch_graphrename_1129",
+        "Branch_graphrename_1131",
+        "PartSelect_graphrename_1133",
+        "Branch_graphrename_1137",
+        "Branch_graphrename_1140",
+        "Branch_graphrename_1143",
+        "Branch_graphrename_1147",
+        "Branch_graphrename_1148",
+        "Branch_graphrename_1158",
+        "Branch_graphrename_1161",
+        "Branch_graphrename_1165",
+        "Branch_graphrename_1166",
+        "PartSelect_graphrename_1241",
+        "PartSelect_graphrename_1625",
+        "PartSelect_graphrename_1666",
+        "PartSelect_graphrename_1785"
+      ]
+    },
+    {
+      "symbol": "top.rd_eep_sync_reg",
+      "reference_node": "top_rd_eep_sync_reg",
+      "definition_node": "top.rd_eep_sync_reg_graphrename_1800",
+      "parents": [
+        "Land_graphrename_433",
+        "Land_graphrename_574"
+      ]
+    },
+    {
+      "symbol": "top.writeram_node",
+      "reference_node": "top_writeram_node",
+      "definition_node": "top.writeram_node_graphrename_2392",
+      "parents": [
+        "Branch_graphrename_453",
+        "Branch_graphrename_474",
+        "Branch_graphrename_497",
+        "Branch_graphrename_515",
+        "Branch_graphrename_531",
+        "Branch_graphrename_561",
+        "Branch_graphrename_591",
+        "Land_graphrename_633",
+        "Branch_graphrename_656",
+        "Land_graphrename_1041",
+        "Branch_graphrename_1058",
+        "Branch_graphrename_1105",
+        "Branch_graphrename_1147",
+        "Branch_graphrename_1165",
+        "Branch_graphrename_1360",
+        "Land_graphrename_1406",
+        "Branch_graphrename_1431",
+        "Branch_graphrename_1465",
+        "Branch_graphrename_1499",
+        "Branch_graphrename_1977",
+        "Branch_graphrename_2114",
+        "Branch_graphrename_2129",
+        "Branch_graphrename_2174",
+        "Branch_graphrename_2197",
+        "Branch_graphrename_2223",
+        "Land_graphrename_2446"
+      ]
+    },
+    {
+      "symbol": "top.addr_eecon1",
+      "reference_node": "top_addr_eecon1",
+      "definition_node": "top.addr_eecon1_graphrename_26",
+      "parents": [
+        "Branch_graphrename_454",
+        "Branch_graphrename_475",
+        "Branch_graphrename_498",
+        "Branch_graphrename_516",
+        "Branch_graphrename_532",
+        "Branch_graphrename_1678"
+      ]
+    },
+    {
+      "symbol": "top.eep_adr_reg",
+      "reference_node": "top_eep_adr_reg",
+      "definition_node": "top.eep_adr_reg_graphrename_541",
+      "parents": [
+        "top.eep_adr_o_graphrename_540",
+        "Branch_graphrename_542",
+        "Branch_graphrename_545",
+        "Branch_graphrename_548",
+        "Branch_graphrename_551",
+        "Branch_graphrename_554",
+        "Branch_graphrename_557",
+        "Branch_graphrename_561",
+        "Branch_graphrename_562",
+        "PartSelect_graphrename_1619",
+        "PartSelect_graphrename_1661"
+      ]
+    },
+    {
+      "symbol": "top.addr_eep_adr",
+      "reference_node": "top_addr_eep_adr",
+      "definition_node": "top.addr_eep_adr_graphrename_38",
+      "parents": [
+        "Branch_graphrename_562",
+        "Branch_graphrename_1618",
+        "Branch_graphrename_1660"
+      ]
+    },
+    {
+      "symbol": "top.eep_dat_reg",
+      "reference_node": "top_eep_dat_reg",
+      "definition_node": "top.eep_dat_reg_graphrename_564",
+      "parents": [
+        "top.eep_dat_o_graphrename_563",
+        "Branch_graphrename_565",
+        "Branch_graphrename_571",
+        "Branch_graphrename_573",
+        "Branch_graphrename_578",
+        "Branch_graphrename_581",
+        "Branch_graphrename_584",
+        "Branch_graphrename_587",
+        "Branch_graphrename_591",
+        "Branch_graphrename_592",
+        "Branch_graphrename_1583"
+      ]
+    },
+    {
+      "symbol": "top.addr_eep_dat",
+      "reference_node": "top_addr_eep_dat",
+      "definition_node": "top.addr_eep_dat_graphrename_44",
+      "parents": [
+        "Branch_graphrename_592",
+        "Branch_graphrename_1583"
+      ]
+    },
+    {
+      "symbol": "top.inst_retfie",
+      "reference_node": "top_inst_retfie",
+      "definition_node": "top.inst_retfie_graphrename_858",
+      "parents": [
+        "Lor_graphrename_619",
+        "Branch_graphrename_1038",
+        "Lor_graphrename_1387",
+        "Lor_graphrename_1871"
+      ]
+    },
+    {
+      "symbol": "top.inst_ret",
+      "reference_node": "top_inst_ret",
+      "definition_node": "top.inst_ret_graphrename_855",
+      "parents": [
+        "Lor_graphrename_618",
+        "Lor_graphrename_1386",
+        "Lor_graphrename_1870"
+      ]
+    },
+    {
+      "symbol": "top.inst_goto",
+      "reference_node": "top_inst_goto",
+      "definition_node": "top.inst_goto_graphrename_791",
+      "parents": [
+        "Lor_graphrename_622",
+        "Lor_graphrename_1390"
+      ]
+    },
+    {
+      "symbol": "top.inst_call",
+      "reference_node": "top_inst_call",
+      "definition_node": "top.inst_call_graphrename_752",
+      "parents": [
+        "Lor_graphrename_622",
+        "Lor_graphrename_1390",
+        "Lor_graphrename_1885"
+      ]
+    },
+    {
+      "symbol": "top.aluout_zero_node",
+      "reference_node": "top_aluout_zero_node",
+      "definition_node": "top.aluout_zero_node_graphrename_261",
+      "parents": [
+        "Unot_graphrename_627",
+        "Land_graphrename_628",
+        "Unot_graphrename_1401",
+        "Land_graphrename_1402",
+        "Branch_graphrename_2057",
+        "Unot_graphrename_2073"
+      ]
+    },
+    {
+      "symbol": "top.addr_pcl",
+      "reference_node": "top_addr_pcl",
+      "definition_node": "top.addr_pcl_graphrename_68",
+      "parents": [
+        "Land_graphrename_633",
+        "Land_graphrename_1406",
+        "Branch_graphrename_1585"
+      ]
+    },
+    {
+      "symbol": "top.fsr_reg",
+      "reference_node": "top_fsr_reg",
+      "definition_node": "top.fsr_reg_graphrename_636",
+      "parents": [
+        "Branch_graphrename_637",
+        "Branch_graphrename_640",
+        "Branch_graphrename_643",
+        "Branch_graphrename_646",
+        "Branch_graphrename_649",
+        "Branch_graphrename_652",
+        "Branch_graphrename_656",
+        "Branch_graphrename_657",
+        "Concat_graphrename_1552",
+        "PartSelect_graphrename_1605",
+        "PartSelect_graphrename_1644"
+      ]
+    },
+    {
+      "symbol": "top.addr_fsr",
+      "reference_node": "top_addr_fsr",
+      "definition_node": "top.addr_fsr_graphrename_50",
+      "parents": [
+        "Branch_graphrename_657",
+        "Branch_graphrename_1604",
+        "Branch_graphrename_1643"
+      ]
+    },
+    {
+      "symbol": "top.pc_reg",
+      "reference_node": "top_pc_reg",
+      "definition_node": "top.pc_reg_graphrename_1362",
+      "parents": [
+        "Plus_graphrename_659",
+        "Branch_graphrename_1367",
+        "Branch_graphrename_1370",
+        "Branch_graphrename_1373",
+        "Branch_graphrename_1376",
+        "Branch_graphrename_1408",
+        "Branch_graphrename_1504",
+        "Plus_graphrename_1507",
+        "PartSelect_graphrename_1588",
+        "PartSelect_graphrename_1594"
+      ]
+    },
+    {
+      "symbol": "top.option_reg",
+      "reference_node": "top_option_reg",
+      "definition_node": "top.option_reg_graphrename_1339",
+      "parents": [
+        "PartSelect_graphrename_663",
+        "Branch_graphrename_1344",
+        "Branch_graphrename_1347",
+        "Branch_graphrename_1350",
+        "Branch_graphrename_1353",
+        "Branch_graphrename_1356",
+        "Branch_graphrename_1360",
+        "Branch_graphrename_1361",
+        "PartSelect_graphrename_1511",
+        "PartSelect_graphrename_1515",
+        "PartSelect_graphrename_1629",
+        "PartSelect_graphrename_1670",
+        "PartSelect_graphrename_1685",
+        "PartSelect_graphrename_1692",
+        "PartSelect_graphrename_1699",
+        "PartSelect_graphrename_1706",
+        "PartSelect_graphrename_1713",
+        "PartSelect_graphrename_1720",
+        "PartSelect_graphrename_1727",
+        "PartSelect_graphrename_1734",
+        "PartSelect_graphrename_1742",
+        "PartSelect_graphrename_1793"
+      ]
+    },
+    {
+      "symbol": "top.ps_clk",
+      "reference_node": "top_ps_clk",
+      "definition_node": "top.ps_clk_graphrename_1509",
+      "parents": [
+        "Branch_graphrename_662"
+      ]
+    },
+    {
+      "symbol": "top.ps_full_reg",
+      "reference_node": "top_ps_full_reg",
+      "definition_node": "top.ps_full_reg_graphrename_1518",
+      "parents": [
+        "Branch_graphrename_662"
+      ]
+    },
+    {
+      "symbol": "top.inc_tmr_hold_reg",
+      "reference_node": "top_inc_tmr_hold_reg",
+      "definition_node": "top.inc_tmr_hold_reg_graphrename_666",
+      "parents": [
+        "Branch_graphrename_667",
+        "Branch_graphrename_673",
+        "Branch_graphrename_680",
+        "Branch_graphrename_687",
+        "Lor_graphrename_688",
+        "Branch_graphrename_692",
+        "Branch_graphrename_695",
+        "Lor_graphrename_1081",
+        "Lor_graphrename_2162"
+      ]
+    },
+    {
+      "symbol": "top.inc_tmr_sync_reg",
+      "reference_node": "top_inc_tmr_sync_reg",
+      "definition_node": "top.inc_tmr_sync_reg_graphrename_699",
+      "parents": [
+        "Eq_graphrename_674",
+        "Eq_graphrename_681",
+        "Eq_graphrename_689",
+        "Eq_graphrename_696",
+        "PartSelect_graphrename_701",
+        "Eq_graphrename_1082",
+        "Eq_graphrename_2163"
+      ]
+    },
+    {
+      "symbol": "top.inc_tmr_clk",
+      "reference_node": "top_inc_tmr_clk",
+      "definition_node": "top.inc_tmr_clk_graphrename_661",
+      "parents": [
+        "Concat_graphrename_700"
+      ]
+    },
+    {
+      "symbol": "top.intclr_reg",
+      "reference_node": "top_intclr_reg",
+      "definition_node": "top.intclr_reg_graphrename_968",
+      "parents": [
+        "PartSelect_graphrename_949",
+        "PartSelect_graphrename_953",
+        "PartSelect_graphrename_957",
+        "PartSelect_graphrename_961",
+        "PartSelect_graphrename_965",
+        "Branch_graphrename_984",
+        "Branch_graphrename_991",
+        "Branch_graphrename_997",
+        "Branch_graphrename_999",
+        "Branch_graphrename_1005",
+        "Concat_graphrename_1007"
+      ]
+    },
+    {
+      "symbol": "top.rbint_sync_reg",
+      "reference_node": "top_rbint_sync_reg",
+      "definition_node": "top.rbint_sync_reg_graphrename_1791",
+      "parents": [
+        "Branch_graphrename_997",
+        "Branch_graphrename_1137",
+        "Lor_graphrename_1828",
+        "Lor_graphrename_1914"
+      ]
+    },
+    {
+      "symbol": "top.inte_sync_reg",
+      "reference_node": "top_inte_sync_reg",
+      "definition_node": "top.inte_sync_reg_graphrename_1244",
+      "parents": [
+        "Branch_graphrename_1005",
+        "Branch_graphrename_1129",
+        "Lor_graphrename_1828",
+        "Lor_graphrename_1914"
+      ]
+    },
+    {
+      "symbol": "top.int_node",
+      "reference_node": "top_int_node",
+      "definition_node": "top.int_node_graphrename_912",
+      "parents": [
+        "Branch_graphrename_1036",
+        "Branch_graphrename_1326",
+        "Unot_graphrename_1409"
+      ]
+    },
+    {
+      "symbol": "top.addr_intcon",
+      "reference_node": "top_addr_intcon",
+      "definition_node": "top.addr_intcon_graphrename_56",
+      "parents": [
+        "Land_graphrename_1041",
+        "Branch_graphrename_1059",
+        "Branch_graphrename_1106",
+        "Branch_graphrename_1148",
+        "Branch_graphrename_1166",
+        "Branch_graphrename_1624",
+        "Branch_graphrename_1665"
+      ]
+    },
+    {
+      "symbol": "top.tmr0_reg",
+      "reference_node": "top_tmr0_reg",
+      "definition_node": "top.tmr0_reg_graphrename_2147",
+      "parents": [
+        "Eq_graphrename_1095",
+        "Branch_graphrename_1584",
+        "Branch_graphrename_2152",
+        "Branch_graphrename_2155",
+        "Branch_graphrename_2161",
+        "Plus_graphrename_2165",
+        "Branch_graphrename_2167",
+        "Branch_graphrename_2170",
+        "Branch_graphrename_2174",
+        "Branch_graphrename_2175"
+      ]
+    },
+    {
+      "symbol": "top.intclr0",
+      "reference_node": "top_intclr0",
+      "definition_node": "top.intclr0_graphrename_948",
+      "parents": [
+        "Lor_graphrename_1175",
+        "Lor_graphrename_1177",
+        "Branch_graphrename_1181",
+        "Lor_graphrename_1247",
+        "Branch_graphrename_1249",
+        "Lor_graphrename_1254"
+      ]
+    },
+    {
+      "symbol": "top.intdown_reg",
+      "reference_node": "top_intdown_reg",
+      "definition_node": "top.intdown_reg_graphrename_1173",
+      "parents": [
+        "Branch_graphrename_1174",
+        "Concat_graphrename_1179",
+        "Concat_graphrename_1180",
+        "Branch_graphrename_1186",
+        "Branch_graphrename_1188",
+        "Branch_graphrename_1190",
+        "Branch_graphrename_1192",
+        "Branch_graphrename_1194",
+        "Branch_graphrename_1196",
+        "Branch_graphrename_1198",
+        "Branch_graphrename_1200",
+        "Branch_graphrename_1205",
+        "Branch_graphrename_1207",
+        "Branch_graphrename_1209",
+        "Branch_graphrename_1211",
+        "Branch_graphrename_1213",
+        "Branch_graphrename_1215",
+        "Concat_graphrename_1220",
+        "Concat_graphrename_1223",
+        "Branch_graphrename_1225",
+        "Branch_graphrename_1227",
+        "Branch_graphrename_1229",
+        "Branch_graphrename_1234",
+        "PartSelect_graphrename_1748",
+        "PartSelect_graphrename_1756",
+        "PartSelect_graphrename_1764",
+        "PartSelect_graphrename_1772",
+        "PartSelect_graphrename_1780"
+      ]
+    },
+    {
+      "symbol": "top.intclr1",
+      "reference_node": "top_intclr1",
+      "definition_node": "top.intclr1_graphrename_952",
+      "parents": [
+        "Lor_graphrename_1187",
+        "Lor_graphrename_1189",
+        "Lor_graphrename_1206",
+        "Lor_graphrename_1208",
+        "Lor_graphrename_1222",
+        "Lor_graphrename_1226",
+        "Lor_graphrename_1235",
+        "Branch_graphrename_1236",
+        "Lor_graphrename_1260",
+        "Lor_graphrename_1262",
+        "Lor_graphrename_1277",
+        "Lor_graphrename_1279",
+        "Lor_graphrename_1290",
+        "Branch_graphrename_1292",
+        "Lor_graphrename_1297"
+      ]
+    },
+    {
+      "symbol": "top.intclr2",
+      "reference_node": "top_intclr2",
+      "definition_node": "top.intclr2_graphrename_956",
+      "parents": [
+        "Lor_graphrename_1191",
+        "Lor_graphrename_1193",
+        "Lor_graphrename_1210",
+        "Lor_graphrename_1212",
+        "Lor_graphrename_1228",
+        "Lor_graphrename_1230",
+        "Branch_graphrename_1231",
+        "Lor_graphrename_1264",
+        "Lor_graphrename_1266",
+        "Lor_graphrename_1281",
+        "Lor_graphrename_1283",
+        "Lor_graphrename_1299",
+        "Branch_graphrename_1300"
+      ]
+    },
+    {
+      "symbol": "top.intclr3",
+      "reference_node": "top_intclr3",
+      "definition_node": "top.intclr3_graphrename_960",
+      "parents": [
+        "Lor_graphrename_1195",
+        "Lor_graphrename_1197",
+        "Lor_graphrename_1214",
+        "Lor_graphrename_1216",
+        "Branch_graphrename_1217",
+        "Lor_graphrename_1268",
+        "Lor_graphrename_1270",
+        "Lor_graphrename_1285",
+        "Branch_graphrename_1286"
+      ]
+    },
+    {
+      "symbol": "top.intclr4",
+      "reference_node": "top_intclr4",
+      "definition_node": "top.intclr4_graphrename_964",
+      "parents": [
+        "Lor_graphrename_1199",
+        "Lor_graphrename_1201",
+        "Branch_graphrename_1202",
+        "Lor_graphrename_1272",
+        "Branch_graphrename_1273"
+      ]
+    },
+    {
+      "symbol": "top.rb0_int",
+      "reference_node": "top_rb0_int",
+      "definition_node": "top.rb0_int_graphrename_1740",
+      "parents": [
+        "Land_graphrename_1240"
+      ]
+    },
+    {
+      "symbol": "top.inte",
+      "reference_node": "top_inte",
+      "definition_node": "top.inte_graphrename_1239",
+      "parents": [
+        "top.inte_sync_reg_graphrename_1244",
+        "Lor_graphrename_1894"
+      ]
+    },
+    {
+      "symbol": "top.intrise_reg",
+      "reference_node": "top_intrise_reg",
+      "definition_node": "top.intrise_reg_graphrename_1245",
+      "parents": [
+        "Concat_graphrename_1248",
+        "Concat_graphrename_1252",
+        "Concat_graphrename_1255",
+        "Concat_graphrename_1256",
+        "Branch_graphrename_1259",
+        "Branch_graphrename_1261",
+        "Branch_graphrename_1263",
+        "Branch_graphrename_1265",
+        "Branch_graphrename_1267",
+        "Branch_graphrename_1269",
+        "Branch_graphrename_1271",
+        "Branch_graphrename_1276",
+        "Branch_graphrename_1278",
+        "Branch_graphrename_1280",
+        "Branch_graphrename_1282",
+        "Branch_graphrename_1284",
+        "Concat_graphrename_1291",
+        "Concat_graphrename_1295",
+        "Branch_graphrename_1296",
+        "Branch_graphrename_1298",
+        "PartSelect_graphrename_1745",
+        "PartSelect_graphrename_1753",
+        "PartSelect_graphrename_1761",
+        "PartSelect_graphrename_1769",
+        "PartSelect_graphrename_1777"
+      ]
+    },
+    {
+      "symbol": "top.addr_option",
+      "reference_node": "top_addr_option",
+      "definition_node": "top.addr_option_graphrename_62",
+      "parents": [
+        "Branch_graphrename_1361",
+        "Branch_graphrename_1628",
+        "Branch_graphrename_1669"
+      ]
+    },
+    {
+      "symbol": "top.inc_pc_node",
+      "reference_node": "top_inc_pc_node",
+      "definition_node": "top.inc_pc_node_graphrename_658",
+      "parents": [
+        "Branch_graphrename_1379",
+        "Branch_graphrename_1398",
+        "Branch_graphrename_1408"
+      ]
+    },
+    {
+      "symbol": "top.stack_reg",
+      "reference_node": "top_stack_reg",
+      "definition_node": "top.stack_reg_graphrename_1888",
+      "parents": [
+        "Pointer_graphrename_1388",
+        "top.stack_reg_graphrename_1888"
+      ]
+    },
+    {
+      "symbol": "top.stack_pnt_reg",
+      "reference_node": "top_stack_pnt_reg",
+      "definition_node": "top.stack_pnt_reg_graphrename_1853",
+      "parents": [
+        "Pointer_graphrename_1388",
+        "Branch_graphrename_1857",
+        "Branch_graphrename_1860",
+        "Branch_graphrename_1866",
+        "Branch_graphrename_1869",
+        "Minus_graphrename_1872",
+        "Branch_graphrename_1874",
+        "Branch_graphrename_1877",
+        "Branch_graphrename_1880",
+        "Branch_graphrename_1884",
+        "Plus_graphrename_1886"
+      ]
+    },
+    {
+      "symbol": "top.pclath_reg",
+      "reference_node": "top_pclath_reg",
+      "definition_node": "top.pclath_reg_graphrename_1410",
+      "parents": [
+        "PartSelect_graphrename_1392",
+        "And_graphrename_1407",
+        "Branch_graphrename_1415",
+        "Branch_graphrename_1418",
+        "Branch_graphrename_1421",
+        "Branch_graphrename_1424",
+        "Branch_graphrename_1427",
+        "Branch_graphrename_1431",
+        "Branch_graphrename_1432",
+        "Branch_graphrename_1664"
+      ]
+    },
+    {
+      "symbol": "top.addr_pclath",
+      "reference_node": "top_addr_pclath",
+      "definition_node": "top.addr_pclath_graphrename_74",
+      "parents": [
+        "Branch_graphrename_1432",
+        "Branch_graphrename_1622",
+        "Branch_graphrename_1664"
+      ]
+    },
+    {
+      "symbol": "top.trisa_reg",
+      "reference_node": "top_trisa_reg",
+      "definition_node": "top.trisa_reg_graphrename_2176",
+      "parents": [
+        "top.porta_dir_o_graphrename_1436",
+        "And_graphrename_1649",
+        "Unot_graphrename_1651",
+        "Branch_graphrename_1673",
+        "Branch_graphrename_2181",
+        "Branch_graphrename_2184",
+        "Branch_graphrename_2187",
+        "Branch_graphrename_2190",
+        "Branch_graphrename_2193",
+        "Branch_graphrename_2197",
+        "Branch_graphrename_2198"
+      ]
+    },
+    {
+      "symbol": "top.porta_i_sync_reg",
+      "reference_node": "top_porta_i_sync_reg",
+      "definition_node": "top.porta_i_sync_reg_graphrename_1437",
+      "parents": [
+        "Branch_graphrename_1438",
+        "Branch_graphrename_1441",
+        "And_graphrename_1649"
+      ]
+    },
+    {
+      "symbol": "top.porta_o_reg",
+      "reference_node": "top_porta_o_reg",
+      "definition_node": "top.porta_o_reg_graphrename_1445",
+      "parents": [
+        "top.porta_o_graphrename_1444",
+        "Branch_graphrename_1446",
+        "Branch_graphrename_1449",
+        "Branch_graphrename_1452",
+        "Branch_graphrename_1455",
+        "Branch_graphrename_1458",
+        "Branch_graphrename_1461",
+        "Branch_graphrename_1465",
+        "Branch_graphrename_1466",
+        "And_graphrename_1650"
+      ]
+    },
+    {
+      "symbol": "top.addr_porta",
+      "reference_node": "top_addr_porta",
+      "definition_node": "top.addr_porta_graphrename_80",
+      "parents": [
+        "Branch_graphrename_1466",
+        "Branch_graphrename_1608",
+        "Branch_graphrename_1647"
+      ]
+    },
+    {
+      "symbol": "top.trisb_reg",
+      "reference_node": "top_trisb_reg",
+      "definition_node": "top.trisb_reg_graphrename_2202",
+      "parents": [
+        "top.portb_dir_o_graphrename_1470",
+        "And_graphrename_1613",
+        "Unot_graphrename_1615",
+        "PartSelect_graphrename_1635",
+        "And_graphrename_1655",
+        "Unot_graphrename_1657",
+        "PartSelect_graphrename_1675",
+        "Branch_graphrename_2207",
+        "Branch_graphrename_2210",
+        "Branch_graphrename_2213",
+        "Branch_graphrename_2216",
+        "Branch_graphrename_2219",
+        "Branch_graphrename_2223",
+        "Branch_graphrename_2224"
+      ]
+    },
+    {
+      "symbol": "top.portb_i_sync_reg",
+      "reference_node": "top_portb_i_sync_reg",
+      "definition_node": "top.portb_i_sync_reg_graphrename_1471",
+      "parents": [
+        "Branch_graphrename_1472",
+        "Branch_graphrename_1475",
+        "And_graphrename_1613",
+        "And_graphrename_1655"
+      ]
+    },
+    {
+      "symbol": "top.portb_o_reg",
+      "reference_node": "top_portb_o_reg",
+      "definition_node": "top.portb_o_reg_graphrename_1479",
+      "parents": [
+        "top.portb_o_graphrename_1478",
+        "Branch_graphrename_1480",
+        "Branch_graphrename_1483",
+        "Branch_graphrename_1486",
+        "Branch_graphrename_1489",
+        "Branch_graphrename_1492",
+        "Branch_graphrename_1495",
+        "Branch_graphrename_1499",
+        "Branch_graphrename_1500",
+        "And_graphrename_1614",
+        "And_graphrename_1656"
+      ]
+    },
+    {
+      "symbol": "top.addr_portb",
+      "reference_node": "top_addr_portb",
+      "definition_node": "top.addr_portb_graphrename_86",
+      "parents": [
+        "Branch_graphrename_1500",
+        "Branch_graphrename_1610",
+        "Branch_graphrename_1652"
+      ]
+    },
+    {
+      "symbol": "top.sleepflag_reg",
+      "reference_node": "top_sleepflag_reg",
+      "definition_node": "top.sleepflag_reg_graphrename_1815",
+      "parents": [
+        "top.powerdown_o_graphrename_1501",
+        "Branch_graphrename_1823",
+        "Branch_graphrename_1824",
+        "Land_graphrename_1825",
+        "Branch_graphrename_1827",
+        "Branch_graphrename_1830",
+        "Branch_graphrename_1833",
+        "Branch_graphrename_1836",
+        "Branch_graphrename_1839",
+        "Branch_graphrename_1843",
+        "Branch_graphrename_1845",
+        "Branch_graphrename_1851",
+        "Land_graphrename_1911",
+        "Unot_graphrename_1956",
+        "Unot_graphrename_1958",
+        "Unot_graphrename_2356"
+      ]
+    },
+    {
+      "symbol": "top.pscale_reg",
+      "reference_node": "top_pscale_reg",
+      "definition_node": "top.pscale_reg_graphrename_1526",
+      "parents": [
+        "GreaterEq_graphrename_1523",
+        "GreaterEq_graphrename_1531",
+        "Plus_graphrename_1533"
+      ]
+    },
+    {
+      "symbol": "top.rateval",
+      "reference_node": "top_rateval",
+      "definition_node": "top.rateval_graphrename_1680",
+      "parents": [
+        "GreaterEq_graphrename_1523",
+        "GreaterEq_graphrename_1531",
+        "Branch_graphrename_1681"
+      ]
+    },
+    {
+      "symbol": "top.ram_adr_reg",
+      "reference_node": "top_ram_adr_reg",
+      "definition_node": "top.ram_adr_reg_graphrename_1564",
+      "parents": [
+        "top.ram_adr_o_graphrename_1563",
+        "Branch_graphrename_1565",
+        "Branch_graphrename_1571",
+        "Branch_graphrename_1573",
+        "Branch_graphrename_1574",
+        "Branch_graphrename_1577"
+      ]
+    },
+    {
+      "symbol": "top.addr_sram",
+      "reference_node": "top_addr_sram",
+      "definition_node": "top.addr_sram_graphrename_92",
+      "parents": [
+        "Branch_graphrename_1582",
+        "Land_graphrename_2446"
+      ]
+    },
+    {
+      "symbol": "top.addr_tmr0",
+      "reference_node": "top_addr_tmr0",
+      "definition_node": "top.addr_tmr0_graphrename_104",
+      "parents": [
+        "Branch_graphrename_1584",
+        "Branch_graphrename_2175"
+      ]
+    },
+    {
+      "symbol": "top.addr_stat",
+      "reference_node": "top_addr_stat",
+      "definition_node": "top.addr_stat_graphrename_98",
+      "parents": [
+        "Branch_graphrename_1600",
+        "Branch_graphrename_1639",
+        "Branch_graphrename_1978",
+        "Branch_graphrename_2053",
+        "Branch_graphrename_2115",
+        "Branch_graphrename_2130"
+      ]
+    },
+    {
+      "symbol": "top.addr_trisa",
+      "reference_node": "top_addr_trisa",
+      "definition_node": "top.addr_trisa_graphrename_110",
+      "parents": [
+        "Branch_graphrename_1632",
+        "Branch_graphrename_1673",
+        "Branch_graphrename_2198"
+      ]
+    },
+    {
+      "symbol": "top.addr_trisb",
+      "reference_node": "top_addr_trisb",
+      "definition_node": "top.addr_trisb_graphrename_116",
+      "parents": [
+        "Branch_graphrename_1634",
+        "Branch_graphrename_1674",
+        "Branch_graphrename_2224"
+      ]
+    },
+    {
+      "symbol": "top.rb7_int",
+      "reference_node": "top_rb7_int",
+      "definition_node": "top.rb7_int_graphrename_1775",
+      "parents": [
+        "Lor_graphrename_1790"
+      ]
+    },
+    {
+      "symbol": "top.rb6_int",
+      "reference_node": "top_rb6_int",
+      "definition_node": "top.rb6_int_graphrename_1767",
+      "parents": [
+        "Lor_graphrename_1790"
+      ]
+    },
+    {
+      "symbol": "top.rb5_int",
+      "reference_node": "top_rb5_int",
+      "definition_node": "top.rb5_int_graphrename_1759",
+      "parents": [
+        "Lor_graphrename_1789"
+      ]
+    },
+    {
+      "symbol": "top.rb4_int",
+      "reference_node": "top_rb4_int",
+      "definition_node": "top.rb4_int_graphrename_1751",
+      "parents": [
+        "Lor_graphrename_1788"
+      ]
+    },
+    {
+      "symbol": "top.rbint",
+      "reference_node": "top_rbint",
+      "definition_node": "top.rbint_graphrename_1783",
+      "parents": [
+        "top.rbint_sync_reg_graphrename_1791",
+        "Lor_graphrename_1895"
+      ]
+    },
+    {
+      "symbol": "top.wdt_rst_node",
+      "reference_node": "top_wdt_rst_node",
+      "definition_node": "top.wdt_rst_node_graphrename_2376",
+      "parents": [
+        "Lor_graphrename_1810",
+        "Unot_graphrename_1849",
+        "Branch_graphrename_1949",
+        "Branch_graphrename_1957",
+        "Unot_graphrename_2004",
+        "Unot_graphrename_2031"
+      ]
+    },
+    {
+      "symbol": "top.mclr_sync_reg",
+      "reference_node": "top_mclr_sync_reg",
+      "definition_node": "top.mclr_sync_reg_graphrename_1338",
+      "parents": [
+        "Unot_graphrename_1812",
+        "Unot_graphrename_1947",
+        "Unot_graphrename_1955",
+        "Unot_graphrename_2257",
+        "Unot_graphrename_2287",
+        "Unot_graphrename_2307",
+        "Unot_graphrename_2340"
+      ]
+    },
+    {
+      "symbol": "top.reset_cond",
+      "reference_node": "top_reset_cond",
+      "definition_node": "top.reset_cond_graphrename_1807",
+      "parents": [
+        "Branch_graphrename_1823",
+        "Unot_graphrename_1903",
+        "Branch_graphrename_1908",
+        "Branch_graphrename_1920",
+        "Branch_graphrename_1926",
+        "Branch_graphrename_1932"
+      ]
+    },
+    {
+      "symbol": "top.inst_clrwdt",
+      "reference_node": "top_inst_clrwdt",
+      "definition_node": "top.inst_clrwdt_graphrename_770",
+      "parents": [
+        "Lor_graphrename_1846",
+        "Lor_graphrename_2001",
+        "Lor_graphrename_2028",
+        "Lor_graphrename_2270",
+        "Lor_graphrename_2299"
+      ]
+    },
+    {
+      "symbol": "top.inst_sleep",
+      "reference_node": "top_inst_sleep",
+      "definition_node": "top.inst_sleep_graphrename_879",
+      "parents": [
+        "Land_graphrename_1848",
+        "Branch_graphrename_1851",
+        "Land_graphrename_2003",
+        "Land_graphrename_2030",
+        "Branch_graphrename_2033",
+        "Lor_graphrename_2270",
+        "Lor_graphrename_2299"
+      ]
+    },
+    {
+      "symbol": "top.wdt_full_reg",
+      "reference_node": "top_wdt_full_reg",
+      "definition_node": "top.wdt_full_reg_graphrename_2323",
+      "parents": [
+        "Lor_graphrename_1895",
+        "top.wdt_full_o_graphrename_2322",
+        "Branch_graphrename_2324",
+        "Branch_graphrename_2334",
+        "Concat_graphrename_2342"
+      ]
+    },
+    {
+      "symbol": "top.addlow_node",
+      "reference_node": "top_addlow_node",
+      "definition_node": "top.addlow_node_graphrename_10",
+      "parents": [
+        "PartSelect_graphrename_2085"
+      ]
+    },
+    {
+      "symbol": "top.writew_node",
+      "reference_node": "top_writew_node",
+      "definition_node": "top.writew_node_graphrename_2454",
+      "parents": [
+        "Branch_graphrename_2245"
+      ]
+    },
+    {
+      "symbol": "top.wdt_clr_req_reg",
+      "reference_node": "top_wdt_clr_req_reg",
+      "definition_node": "top.wdt_clr_req_reg_graphrename_2274",
+      "parents": [
+        "PartSelect_graphrename_2249",
+        "Branch_graphrename_2275",
+        "PartSelect_graphrename_2280",
+        "Eq_graphrename_2369"
+      ]
+    },
+    {
+      "symbol": "top.wdt_clr_ack",
+      "reference_node": "top_wdt_clr_ack",
+      "definition_node": "top.wdt_clr_ack_graphrename_2248",
+      "parents": [
+        "top.wdt_clr_ack_sync_reg_graphrename_2252"
+      ]
+    },
+    {
+      "symbol": "top.wdt_clr_reg",
+      "reference_node": "top_wdt_clr_reg",
+      "definition_node": "top.wdt_clr_reg_graphrename_2253",
+      "parents": [
+        "Branch_graphrename_2259",
+        "Branch_graphrename_2262",
+        "Branch_graphrename_2271",
+        "Concat_graphrename_2279",
+        "Branch_graphrename_2289"
+      ]
+    },
+    {
+      "symbol": "top.wdt_clr_ack_sync_reg",
+      "reference_node": "top_wdt_clr_ack_sync_reg",
+      "definition_node": "top.wdt_clr_ack_sync_reg_graphrename_2252",
+      "parents": [
+        "Branch_graphrename_2260",
+        "Unot_graphrename_2272",
+        "Branch_graphrename_2290",
+        "Unot_graphrename_2301"
+      ]
+    },
+    {
+      "symbol": "top.wdt_clr_reqhold_reg",
+      "reference_node": "top_wdt_clr_reqhold_reg",
+      "definition_node": "top.wdt_clr_reqhold_reg_graphrename_2283",
+      "parents": [
+        "Lor_graphrename_2263",
+        "Branch_graphrename_2289",
+        "Branch_graphrename_2290",
+        "Branch_graphrename_2291",
+        "Lor_graphrename_2292",
+        "Branch_graphrename_2300"
+      ]
+    },
+    {
+      "symbol": "top.wdt_init",
+      "reference_node": "top_wdt_init",
+      "definition_node": "top.wdt_init_graphrename_2357",
+      "parents": [
+        "Lor_graphrename_2276",
+        "Branch_graphrename_2277",
+        "Lor_graphrename_2315",
+        "Branch_graphrename_2316",
+        "Lor_graphrename_2325",
+        "Branch_graphrename_2326",
+        "Lor_graphrename_2348",
+        "Branch_graphrename_2349",
+        "Lor_graphrename_2363",
+        "Branch_graphrename_2364"
+      ]
+    },
+    {
+      "symbol": "top.wdt_full_clr_reg",
+      "reference_node": "top_wdt_full_clr_reg",
+      "definition_node": "top.wdt_full_clr_reg_graphrename_2303",
+      "parents": [
+        "Branch_graphrename_2309",
+        "Land_graphrename_2355"
+      ]
+    },
+    {
+      "symbol": "top.wdt_full_sync_reg",
+      "reference_node": "top_wdt_full_sync_reg",
+      "definition_node": "top.wdt_full_sync_reg_graphrename_2336",
+      "parents": [
+        "PartSelect_graphrename_2310",
+        "PartSelect_graphrename_2343",
+        "PartSelect_graphrename_2378",
+        "PartSelect_graphrename_2382"
+      ]
+    },
+    {
+      "symbol": "top.wdt_full_node",
+      "reference_node": "top_wdt_full_node",
+      "definition_node": "top.wdt_full_node_graphrename_2313",
+      "parents": [
+        "Branch_graphrename_2314",
+        "Branch_graphrename_2316",
+        "Branch_graphrename_2334",
+        "Branch_graphrename_2372"
+      ]
+    },
+    {
+      "symbol": "top.wdt_reg",
+      "reference_node": "top_wdt_reg",
+      "definition_node": "top.wdt_reg_graphrename_2361",
+      "parents": [
+        "GreaterEq_graphrename_2318",
+        "Branch_graphrename_2362",
+        "Plus_graphrename_2374"
+      ]
+    },
+    {
+      "symbol": "top.wdt_fullclr_req_reg",
+      "reference_node": "top_wdt_fullclr_req_reg",
+      "definition_node": "top.wdt_fullclr_req_reg_graphrename_2346",
+      "parents": [
+        "Eq_graphrename_2331",
+        "Branch_graphrename_2347",
+        "PartSelect_graphrename_2352"
+      ]
+    },
+    {
+      "symbol": "top.inst_movwf",
+      "reference_node": "top_inst_movwf",
+      "definition_node": "top.inst_movwf_graphrename_833",
+      "parents": [
+        "Lor_graphrename_2398",
+        "Lor_graphrename_2460"
+      ]
+    },
+    {
+      "symbol": "top.writeram_reg",
+      "reference_node": "top_writeram_reg",
+      "definition_node": "top.writeram_reg_graphrename_2428",
+      "parents": [
+        "top.writeram_o_graphrename_2427",
+        "Branch_graphrename_2433",
+        "Branch_graphrename_2436",
+        "Branch_graphrename_2450"
+      ]
+    }
+  ],
+  "unbound_references": [
+    {
+      "symbol": "top.c_in",
+      "reference_node": "top_c_in",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    {
+      "symbol": "top.prog_dat_i",
+      "reference_node": "top_prog_dat_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.pon_rst_n_i",
+      "reference_node": "top_pon_rst_n_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.existeeprom_i",
+      "reference_node": "top_existeeprom_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.eep_dat_i",
+      "reference_node": "top_eep_dat_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.int0_i",
+      "reference_node": "top_int0_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.int4_i",
+      "reference_node": "top_int4_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.int5_i",
+      "reference_node": "top_int5_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.int6_i",
+      "reference_node": "top_int6_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.int7_i",
+      "reference_node": "top_int7_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.mclr_n_i",
+      "reference_node": "top_mclr_n_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.porta_i",
+      "reference_node": "top_porta_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.portb_i",
+      "reference_node": "top_portb_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.t0cki_i",
+      "reference_node": "top_t0cki_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.ram_dat_i",
+      "reference_node": "top_ram_dat_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.rd_eep_ack_i",
+      "reference_node": "top_rd_eep_ack_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.wdt_clk_i",
+      "reference_node": "top_wdt_clk_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.wdt_ena_i",
+      "reference_node": "top_wdt_ena_i",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.wr_eep_ack_i",
+      "reference_node": "top_wr_eep_ack_i",
+      "term_types": [
+        "Input"
+      ]
+    }
+  ],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [
+    {
+      "symbol": "top.c_in",
+      "reference_node": "top_c_in",
+      "term_types": [
+        "Reg"
+      ]
+    }
+  ],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

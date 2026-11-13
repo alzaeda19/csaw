@@ -1,0 +1,254 @@
+{
+  "nodes": [
+    {
+      "id": "top._rn0_SRAM_graphrename_0",
+      "label": "_rn0_SRAM"
+    },
+    {
+      "id": "top._rn1_dataOut_graphrename_1",
+      "label": "_rn1_dataOut"
+    },
+    {
+      "id": "Pointer_graphrename_2",
+      "label": "pointer"
+    },
+    {
+      "id": "top_Addr",
+      "label": "Addr"
+    },
+    {
+      "id": "top.SRAM_graphrename_25",
+      "label": "SRAM"
+    },
+    {
+      "id": "top.ADR_graphrename_3",
+      "label": "ADR"
+    },
+    {
+      "id": "'d8_graphrename_4",
+      "label": "'d8"
+    },
+    {
+      "id": "top.DAT_graphrename_5",
+      "label": "DAT"
+    },
+    {
+      "id": "'d8_graphrename_6",
+      "label": "'d8"
+    },
+    {
+      "id": "top.dataOut_graphrename_7",
+      "label": "dataOut"
+    },
+    {
+      "id": "Branch_graphrename_8",
+      "label": "branch"
+    },
+    {
+      "id": "Eq_graphrename_9",
+      "label": "eq"
+    },
+    {
+      "id": "Branch_graphrename_11",
+      "label": "branch"
+    },
+    {
+      "id": "top_CS",
+      "label": "CS"
+    },
+    {
+      "id": "1'd1_graphrename_10",
+      "label": "1'd1"
+    },
+    {
+      "id": "Land_graphrename_12",
+      "label": "land"
+    },
+    {
+      "id": "Branch_graphrename_17",
+      "label": "branch"
+    },
+    {
+      "id": "Eq_graphrename_13",
+      "label": "eq"
+    },
+    {
+      "id": "Eq_graphrename_15",
+      "label": "eq"
+    },
+    {
+      "id": "top_WE",
+      "label": "WE"
+    },
+    {
+      "id": "1'd1_graphrename_14",
+      "label": "1'd1"
+    },
+    {
+      "id": "top_RD",
+      "label": "RD"
+    },
+    {
+      "id": "1'd0_graphrename_16",
+      "label": "1'd0"
+    },
+    {
+      "id": "Land_graphrename_18",
+      "label": "land"
+    },
+    {
+      "id": "Eq_graphrename_19",
+      "label": "eq"
+    },
+    {
+      "id": "Eq_graphrename_21",
+      "label": "eq"
+    },
+    {
+      "id": "1'd0_graphrename_20",
+      "label": "1'd0"
+    },
+    {
+      "id": "1'd1_graphrename_22",
+      "label": "1'd1"
+    },
+    {
+      "id": "top.DPTH_graphrename_23",
+      "label": "DPTH"
+    },
+    {
+      "id": "'d8_graphrename_24",
+      "label": "'d8"
+    }
+  ],
+  "edges": [
+    [
+      "top._rn0_SRAM_graphrename_0",
+      "top._rn0_SRAM_graphrename_0"
+    ],
+    [
+      "top._rn1_dataOut_graphrename_1",
+      "Pointer_graphrename_2"
+    ],
+    [
+      "Pointer_graphrename_2",
+      "top_Addr"
+    ],
+    [
+      "Pointer_graphrename_2",
+      "top.SRAM_graphrename_25"
+    ],
+    [
+      "top.SRAM_graphrename_25",
+      "top.SRAM_graphrename_25"
+    ],
+    [
+      "top.ADR_graphrename_3",
+      "'d8_graphrename_4"
+    ],
+    [
+      "top.DAT_graphrename_5",
+      "'d8_graphrename_6"
+    ],
+    [
+      "top.dataOut_graphrename_7",
+      "Branch_graphrename_8"
+    ],
+    [
+      "Branch_graphrename_8",
+      "top.dataOut_graphrename_7"
+    ],
+    [
+      "Branch_graphrename_8",
+      "Eq_graphrename_9"
+    ],
+    [
+      "Branch_graphrename_8",
+      "Branch_graphrename_11"
+    ],
+    [
+      "Eq_graphrename_9",
+      "top_CS"
+    ],
+    [
+      "Eq_graphrename_9",
+      "1'd1_graphrename_10"
+    ],
+    [
+      "Branch_graphrename_11",
+      "top.dataOut_graphrename_7"
+    ],
+    [
+      "Branch_graphrename_11",
+      "Land_graphrename_12"
+    ],
+    [
+      "Branch_graphrename_11",
+      "Branch_graphrename_17"
+    ],
+    [
+      "Land_graphrename_12",
+      "Eq_graphrename_13"
+    ],
+    [
+      "Land_graphrename_12",
+      "Eq_graphrename_15"
+    ],
+    [
+      "Branch_graphrename_17",
+      "top._rn1_dataOut_graphrename_1"
+    ],
+    [
+      "Branch_graphrename_17",
+      "top.dataOut_graphrename_7"
+    ],
+    [
+      "Branch_graphrename_17",
+      "Land_graphrename_18"
+    ],
+    [
+      "Eq_graphrename_13",
+      "top_WE"
+    ],
+    [
+      "Eq_graphrename_13",
+      "1'd1_graphrename_14"
+    ],
+    [
+      "Eq_graphrename_15",
+      "top_RD"
+    ],
+    [
+      "Eq_graphrename_15",
+      "1'd0_graphrename_16"
+    ],
+    [
+      "Land_graphrename_18",
+      "Eq_graphrename_19"
+    ],
+    [
+      "Land_graphrename_18",
+      "Eq_graphrename_21"
+    ],
+    [
+      "Eq_graphrename_19",
+      "top_WE"
+    ],
+    [
+      "Eq_graphrename_19",
+      "1'd0_graphrename_20"
+    ],
+    [
+      "Eq_graphrename_21",
+      "top_RD"
+    ],
+    [
+      "Eq_graphrename_21",
+      "1'd1_graphrename_22"
+    ],
+    [
+      "top.DPTH_graphrename_23",
+      "'d8_graphrename_24"
+    ]
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.clk": {
+      "reference_label": "top_clk",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.vga_h_sync": {
+      "reference_label": "top_vga_h_sync",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.vga_v_sync": {
+      "reference_label": "top_vga_v_sync",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.inDisplayArea": {
+      "reference_label": "top_inDisplayArea",
+      "term_types": [
+        "Output",
+        "Reg"
+      ]
+    },
+    "top.CounterX": {
+      "reference_label": "top_CounterX",
+      "term_types": [
+        "Output",
+        "Reg"
+      ]
+    },
+    "top.CounterY": {
+      "reference_label": "top_CounterY",
+      "term_types": [
+        "Output",
+        "Reg"
+      ]
+    },
+    "top.vga_HS": {
+      "reference_label": "top_vga_HS",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.vga_VS": {
+      "reference_label": "top_vga_VS",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.CounterXmaxed": {
+      "reference_label": "top_CounterXmaxed",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.CounterYmaxed": {
+      "reference_label": "top_CounterYmaxed",
+      "term_types": [
+        "Wire"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top.CounterX": "top.CounterX_graphrename_0",
+    "top.CounterXmaxed": "top.CounterXmaxed_graphrename_5",
+    "top.CounterY": "top.CounterY_graphrename_8",
+    "top.CounterYmaxed": "top.CounterYmaxed_graphrename_14",
+    "top.inDisplayArea": "top.inDisplayArea_graphrename_17",
+    "top.vga_h_sync": "top.vga_h_sync_graphrename_23",
+    "top.vga_HS": "top.vga_HS_graphrename_25",
+    "top.vga_v_sync": "top.vga_v_sync_graphrename_31",
+    "top.vga_VS": "top.vga_VS_graphrename_33"
+  },
+  "joined_references": [
+    {
+      "symbol": "top.CounterXmaxed",
+      "reference_node": "top_CounterXmaxed",
+      "definition_node": "top.CounterXmaxed_graphrename_5",
+      "parents": [
+        "Branch_graphrename_1",
+        "Branch_graphrename_9"
+      ]
+    },
+    {
+      "symbol": "top.CounterX",
+      "reference_node": "top_CounterX",
+      "definition_node": "top.CounterX_graphrename_0",
+      "parents": [
+        "Plus_graphrename_3",
+        "Eq_graphrename_6",
+        "LessThan_graphrename_21",
+        "GreaterThan_graphrename_27",
+        "LessThan_graphrename_29"
+      ]
+    },
+    {
+      "symbol": "top.CounterYmaxed",
+      "reference_node": "top_CounterYmaxed",
+      "definition_node": "top.CounterYmaxed_graphrename_14",
+      "parents": [
+        "Branch_graphrename_10"
+      ]
+    },
+    {
+      "symbol": "top.CounterY",
+      "reference_node": "top_CounterY",
+      "definition_node": "top.CounterY_graphrename_8",
+      "parents": [
+        "Branch_graphrename_9",
+        "Plus_graphrename_12",
+        "Eq_graphrename_15",
+        "LessThan_graphrename_19",
+        "GreaterThan_graphrename_35",
+        "LessThan_graphrename_37"
+      ]
+    },
+    {
+      "symbol": "top.vga_HS",
+      "reference_node": "top_vga_HS",
+      "definition_node": "top.vga_HS_graphrename_25",
+      "parents": [
+        "Unot_graphrename_24"
+      ]
+    },
+    {
+      "symbol": "top.vga_VS",
+      "reference_node": "top_vga_VS",
+      "definition_node": "top.vga_VS_graphrename_33",
+      "parents": [
+        "Unot_graphrename_32"
+      ]
+    }
+  ],
+  "unbound_references": [],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

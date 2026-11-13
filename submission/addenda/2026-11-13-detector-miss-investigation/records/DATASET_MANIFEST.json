@@ -1,0 +1,260 @@
+{
+  "archive_path": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/professor-package/TrojanGYM_AES_Course_Package/hw2vec/assets/datasets.zip",
+  "archive_sha256": "6d66928a5fc73870e58d7265d4aa01b03788106c4bd1107d68b8fd73fcceec44",
+  "labels_are_supplied_annotations": true,
+  "designs": [
+    {
+      "design_id": "design_001",
+      "design": "PIC16F84",
+      "family": "PIC16F84",
+      "archive_path": "TJ-RTL-toy/TjFree/PIC16F84/topModule.v",
+      "label": "0",
+      "label_name": "TjFree",
+      "bytes": "51011",
+      "sha256": "148858176f0c6e8196430225128d55455ec7bc5f454a05df136ce373c18aa3f3",
+      "truth": 0
+    },
+    {
+      "design_id": "design_002",
+      "design": "RC5",
+      "family": "RC5",
+      "archive_path": "TJ-RTL-toy/TjFree/RC5/topModule.v",
+      "label": "0",
+      "label_name": "TjFree",
+      "bytes": "8333",
+      "sha256": "44594ceaf8bce003fb2c04b9c511ca95b80f5b1dd2007f54fd34930675a761df",
+      "truth": 0
+    },
+    {
+      "design_id": "design_003",
+      "design": "RC6",
+      "family": "RC6",
+      "archive_path": "TJ-RTL-toy/TjFree/RC6/topModule.v",
+      "label": "0",
+      "label_name": "TjFree",
+      "bytes": "10994",
+      "sha256": "6f5f42c20e9670a58b561581d766032218147f5db5a5b8b003c3051439a155e0",
+      "truth": 0
+    },
+    {
+      "design_id": "design_004",
+      "design": "RS232",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjFree/RS232/topModule.v",
+      "label": "0",
+      "label_name": "TjFree",
+      "bytes": "7583",
+      "sha256": "9dac898e2e6a7339c084b19cf92af33aeb0fc702f92edb05a96a8f08523d7370",
+      "truth": 0
+    },
+    {
+      "design_id": "design_005",
+      "design": "det_1011",
+      "family": "det_1011",
+      "archive_path": "TJ-RTL-toy/TjFree/det_1011/topModule.v",
+      "label": "0",
+      "label_name": "TjFree",
+      "bytes": "977",
+      "sha256": "362a3067d3a9e6153fd627c003aa81c245bd9db7f800d5d551b9dd9ae33f38a4",
+      "truth": 0
+    },
+    {
+      "design_id": "design_006",
+      "design": "spi_master",
+      "family": "spi_master",
+      "archive_path": "TJ-RTL-toy/TjFree/spi_master/topModule.v",
+      "label": "0",
+      "label_name": "TjFree",
+      "bytes": "4031",
+      "sha256": "5cbf908c384052fee8f80227df7dd1ae4e66cc3ec418b726a5cc99bc1177c414",
+      "truth": 0
+    },
+    {
+      "design_id": "design_007",
+      "design": "syncRAM",
+      "family": "syncRAM",
+      "archive_path": "TJ-RTL-toy/TjFree/syncRAM/topModule.v",
+      "label": "0",
+      "label_name": "TjFree",
+      "bytes": "789",
+      "sha256": "f44fac9ff5f8731ea2d9a6651bb861970418b93896eb3392a0b67b2c17abfc33",
+      "truth": 0
+    },
+    {
+      "design_id": "design_008",
+      "design": "vga",
+      "family": "vga",
+      "archive_path": "TJ-RTL-toy/TjFree/vga/topModule.v",
+      "label": "0",
+      "label_name": "TjFree",
+      "bytes": "1101",
+      "sha256": "0536ab09c29a23c1cad96e7b3da67b4b1154beec0047ed610876aa0eb4df5e2c",
+      "truth": 0
+    },
+    {
+      "design_id": "design_009",
+      "design": "xtea",
+      "family": "xtea",
+      "archive_path": "TJ-RTL-toy/TjFree/xtea/topModule.v",
+      "label": "0",
+      "label_name": "TjFree",
+      "bytes": "8459",
+      "sha256": "36c7f5936921bcba39140e4bfbde2a444cf06933e8405eecd2dd6b38727c3fad",
+      "truth": 0
+    },
+    {
+      "design_id": "design_010",
+      "design": "PIC16F84-T100",
+      "family": "PIC16F84",
+      "archive_path": "TJ-RTL-toy/TjIn/PIC16F84-T100/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "52124",
+      "sha256": "d5f832032c9b3643714f78527a0205797e453c3e85419cb0b87e8589ee6bf176",
+      "truth": 1
+    },
+    {
+      "design_id": "design_011",
+      "design": "PIC16F84-T200",
+      "family": "PIC16F84",
+      "archive_path": "TJ-RTL-toy/TjIn/PIC16F84-T200/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "52429",
+      "sha256": "dab512ffba46ad6db43b2cb51900ba023a3207c7b9e5d3536cc40e2ad5f5d9b8",
+      "truth": 1
+    },
+    {
+      "design_id": "design_012",
+      "design": "PIC16F84-T300",
+      "family": "PIC16F84",
+      "archive_path": "TJ-RTL-toy/TjIn/PIC16F84-T300/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "52507",
+      "sha256": "d311fb4216a368e43c50297bc58eef5c74520722cda57489eb8c129b6a7d8f4c",
+      "truth": 1
+    },
+    {
+      "design_id": "design_013",
+      "design": "PIC16F84-T400",
+      "family": "PIC16F84",
+      "archive_path": "TJ-RTL-toy/TjIn/PIC16F84-T400/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "52522",
+      "sha256": "1fff84cc0159290c7f5c257761b5f1b6598be2508ecf76a72c53b551954efc57",
+      "truth": 1
+    },
+    {
+      "design_id": "design_014",
+      "design": "RS232-T100",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T100/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "8243",
+      "sha256": "758efa4b11402f7e62edfed2e08e6404904037dbd6707b0d705bb15daf6ff530",
+      "truth": 1
+    },
+    {
+      "design_id": "design_015",
+      "design": "RS232-T200",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T200/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "8112",
+      "sha256": "dab11441dbbd081b11dff197a682ad5866515c8dac616de73f127a07dd5b2b57",
+      "truth": 1
+    },
+    {
+      "design_id": "design_016",
+      "design": "RS232-T300",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T300/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "7475",
+      "sha256": "6c8d5dacbc1940d327d1fd8da0d07dc54faf593e596631066bdbd0b4c0479d52",
+      "truth": 1
+    },
+    {
+      "design_id": "design_017",
+      "design": "RS232-T400",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T400/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "7888",
+      "sha256": "736bac5f81cba848bfc167d3fcda320fd574ddd8290f529cfd51a94aaca29658",
+      "truth": 1
+    },
+    {
+      "design_id": "design_018",
+      "design": "RS232-T500",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T500/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "8025",
+      "sha256": "946b21db176b8505e791571153962fd9381309e29c7e3732cb7833893319c18d",
+      "truth": 1
+    },
+    {
+      "design_id": "design_019",
+      "design": "RS232-T600",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T600/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "9137",
+      "sha256": "eed252059ebdb6ef302e78ffa1ca67e23f34c2c57647955ecf5a5d27e99983e6",
+      "truth": 1
+    },
+    {
+      "design_id": "design_020",
+      "design": "RS232-T700",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T700/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "9339",
+      "sha256": "0210e258d5158caf5dd98465ad433c9f66cb9a76a425b64a47a4c0c838cfccfe",
+      "truth": 1
+    },
+    {
+      "design_id": "design_021",
+      "design": "RS232-T800",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T800/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "8166",
+      "sha256": "7af9017af582200bcbbed5afa9da9b66f474cab0f22693883d6c63afe74a162e",
+      "truth": 1
+    },
+    {
+      "design_id": "design_022",
+      "design": "RS232-T900",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T900/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "7619",
+      "sha256": "9dfb21a60f5a562c54bddcaa5b78b9921886dabf545ef378762669f5049b2cad",
+      "truth": 1
+    },
+    {
+      "design_id": "design_023",
+      "design": "RS232-T901",
+      "family": "RS232",
+      "archive_path": "TJ-RTL-toy/TjIn/RS232-T901/topModule.v",
+      "label": "1",
+      "label_name": "TjIn",
+      "bytes": "9546",
+      "sha256": "657138908e23b907c93e83e15fbafbe29c41c05cee8e05092432ed3471caac11",
+      "truth": 1
+    }
+  ]
+}

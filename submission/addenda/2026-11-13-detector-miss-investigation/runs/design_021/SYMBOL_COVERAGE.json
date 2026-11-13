@@ -1,0 +1,2100 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.sys_clk": {
+      "reference_label": "top_sys_clk",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.sys_rst_l": {
+      "reference_label": "top_sys_rst_l",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.uart_XMIT_dataH": {
+      "reference_label": "top_uart_XMIT_dataH",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.xmitH": {
+      "reference_label": "top_xmitH",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.xmit_dataH": {
+      "reference_label": "top_xmit_dataH",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.xmit_doneH": {
+      "reference_label": "top_xmit_doneH",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.uart_REC_dataH": {
+      "reference_label": "top_uart_REC_dataH",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.rec_dataH": {
+      "reference_label": "top_rec_dataH",
+      "term_types": [
+        "Output",
+        "Reg"
+      ]
+    },
+    "top.rec_readyH": {
+      "reference_label": "top_rec_readyH",
+      "term_types": [
+        "Output",
+        "Wire"
+      ]
+    },
+    "top.rec_dataH_temp": {
+      "reference_label": "top_rec_dataH_temp",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.rec_dataH_rec": {
+      "reference_label": "top_rec_dataH_rec",
+      "term_types": [
+        "Wire"
+      ]
+    },
+    "top.iXMIT.sys_clk": {
+      "reference_label": "top_iXMIT_sys_clk",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.iXMIT.sys_rst_l": {
+      "reference_label": "top_iXMIT_sys_rst_l",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.iXMIT.uart_xmitH": {
+      "reference_label": "top_iXMIT_uart_xmitH",
+      "term_types": [
+        "Output",
+        "Reg"
+      ]
+    },
+    "top.iXMIT.xmitH": {
+      "reference_label": "top_iXMIT_xmitH",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.iXMIT.xmit_dataH": {
+      "reference_label": "top_iXMIT_xmit_dataH",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.iXMIT.xmit_doneH": {
+      "reference_label": "top_iXMIT_xmit_doneH",
+      "term_types": [
+        "Output",
+        "Reg"
+      ]
+    },
+    "top.iXMIT.next_state": {
+      "reference_label": "top_iXMIT_next_state",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.state": {
+      "reference_label": "top_iXMIT_state",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.load_shiftRegH": {
+      "reference_label": "top_iXMIT_load_shiftRegH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.shiftEnaH": {
+      "reference_label": "top_iXMIT_shiftEnaH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.bitCell_cntrH": {
+      "reference_label": "top_iXMIT_bitCell_cntrH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.countEnaH": {
+      "reference_label": "top_iXMIT_countEnaH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.xmit_ShiftRegH": {
+      "reference_label": "top_iXMIT_xmit_ShiftRegH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.bitCountH": {
+      "reference_label": "top_iXMIT_bitCountH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.rst_bitCountH": {
+      "reference_label": "top_iXMIT_rst_bitCountH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.ena_bitCountH": {
+      "reference_label": "top_iXMIT_ena_bitCountH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.xmitDataSelH": {
+      "reference_label": "top_iXMIT_xmitDataSelH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT.xmit_doneInH": {
+      "reference_label": "top_iXMIT_xmit_doneInH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.sys_rst_l": {
+      "reference_label": "top_iRECEIVER_sys_rst_l",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.iRECEIVER.sys_clk": {
+      "reference_label": "top_iRECEIVER_sys_clk",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.iRECEIVER.uart_dataH": {
+      "reference_label": "top_iRECEIVER_uart_dataH",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.iRECEIVER.rec_dataH": {
+      "reference_label": "top_iRECEIVER_rec_dataH",
+      "term_types": [
+        "Output",
+        "Wire"
+      ]
+    },
+    "top.iRECEIVER.rec_readyH": {
+      "reference_label": "top_iRECEIVER_rec_readyH",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.iRECEIVER.next_state": {
+      "reference_label": "top_iRECEIVER_next_state",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.state": {
+      "reference_label": "top_iRECEIVER_state",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.rec_datH": {
+      "reference_label": "top_iRECEIVER_rec_datH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.rec_datSyncH": {
+      "reference_label": "top_iRECEIVER_rec_datSyncH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.bitCell_cntrH": {
+      "reference_label": "top_iRECEIVER_bitCell_cntrH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.cntr_resetH": {
+      "reference_label": "top_iRECEIVER_cntr_resetH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.par_dataH": {
+      "reference_label": "top_iRECEIVER_par_dataH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.shiftH": {
+      "reference_label": "top_iRECEIVER_shiftH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.recd_bitCntrH": {
+      "reference_label": "top_iRECEIVER_recd_bitCntrH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.countH": {
+      "reference_label": "top_iRECEIVER_countH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.rstCountH": {
+      "reference_label": "top_iRECEIVER_rstCountH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.rec_readyH_temp": {
+      "reference_label": "top_iRECEIVER_rec_readyH_temp",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.rec_readyInH": {
+      "reference_label": "top_iRECEIVER_rec_readyInH",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.rec_data_cntrH_1": {
+      "reference_label": "top_iRECEIVER_rec_data_cntrH_1",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.rec_data_cntrH_2": {
+      "reference_label": "top_iRECEIVER_rec_data_cntrH_2",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iRECEIVER.rec_data_cntrH_3": {
+      "reference_label": "top_iRECEIVER_rec_data_cntrH_3",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.iXMIT._rn0_uart_xmitH": {
+      "reference_label": "top_iXMIT__rn0_uart_xmitH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn1_uart_xmitH": {
+      "reference_label": "top_iXMIT__rn1_uart_xmitH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn2_uart_xmitH": {
+      "reference_label": "top_iXMIT__rn2_uart_xmitH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn3_uart_xmitH": {
+      "reference_label": "top_iXMIT__rn3_uart_xmitH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn4_uart_xmitH": {
+      "reference_label": "top_iXMIT__rn4_uart_xmitH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn5_next_state": {
+      "reference_label": "top_iXMIT__rn5_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn6_load_shiftRegH": {
+      "reference_label": "top_iXMIT__rn6_load_shiftRegH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn7_countEnaH": {
+      "reference_label": "top_iXMIT__rn7_countEnaH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn8_shiftEnaH": {
+      "reference_label": "top_iXMIT__rn8_shiftEnaH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn9_rst_bitCountH": {
+      "reference_label": "top_iXMIT__rn9_rst_bitCountH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn10_ena_bitCountH": {
+      "reference_label": "top_iXMIT__rn10_ena_bitCountH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn11_xmitDataSelH": {
+      "reference_label": "top_iXMIT__rn11_xmitDataSelH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn12_xmit_doneInH": {
+      "reference_label": "top_iXMIT__rn12_xmit_doneInH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn13_next_state": {
+      "reference_label": "top_iXMIT__rn13_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn14_load_shiftRegH": {
+      "reference_label": "top_iXMIT__rn14_load_shiftRegH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn15_next_state": {
+      "reference_label": "top_iXMIT__rn15_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn16_rst_bitCountH": {
+      "reference_label": "top_iXMIT__rn16_rst_bitCountH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn17_xmit_doneInH": {
+      "reference_label": "top_iXMIT__rn17_xmit_doneInH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn18_xmitDataSelH": {
+      "reference_label": "top_iXMIT__rn18_xmitDataSelH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn19_next_state": {
+      "reference_label": "top_iXMIT__rn19_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn20_next_state": {
+      "reference_label": "top_iXMIT__rn20_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn21_countEnaH": {
+      "reference_label": "top_iXMIT__rn21_countEnaH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn22_xmitDataSelH": {
+      "reference_label": "top_iXMIT__rn22_xmitDataSelH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn23_next_state": {
+      "reference_label": "top_iXMIT__rn23_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn24_next_state": {
+      "reference_label": "top_iXMIT__rn24_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn25_ena_bitCountH": {
+      "reference_label": "top_iXMIT__rn25_ena_bitCountH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn26_next_state": {
+      "reference_label": "top_iXMIT__rn26_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn27_countEnaH": {
+      "reference_label": "top_iXMIT__rn27_countEnaH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn28_xmitDataSelH": {
+      "reference_label": "top_iXMIT__rn28_xmitDataSelH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn29_next_state": {
+      "reference_label": "top_iXMIT__rn29_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn30_shiftEnaH": {
+      "reference_label": "top_iXMIT__rn30_shiftEnaH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn31_xmitDataSelH": {
+      "reference_label": "top_iXMIT__rn31_xmitDataSelH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn32_next_state": {
+      "reference_label": "top_iXMIT__rn32_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn33_xmit_doneInH": {
+      "reference_label": "top_iXMIT__rn33_xmit_doneInH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn34_next_state": {
+      "reference_label": "top_iXMIT__rn34_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn35_countEnaH": {
+      "reference_label": "top_iXMIT__rn35_countEnaH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn36_next_state": {
+      "reference_label": "top_iXMIT__rn36_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn37_load_shiftRegH": {
+      "reference_label": "top_iXMIT__rn37_load_shiftRegH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn38_countEnaH": {
+      "reference_label": "top_iXMIT__rn38_countEnaH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn39_shiftEnaH": {
+      "reference_label": "top_iXMIT__rn39_shiftEnaH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn40_rst_bitCountH": {
+      "reference_label": "top_iXMIT__rn40_rst_bitCountH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn41_ena_bitCountH": {
+      "reference_label": "top_iXMIT__rn41_ena_bitCountH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn42_xmitDataSelH": {
+      "reference_label": "top_iXMIT__rn42_xmitDataSelH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iXMIT._rn43_xmit_doneInH": {
+      "reference_label": "top_iXMIT__rn43_xmit_doneInH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn44_next_state": {
+      "reference_label": "top_iRECEIVER__rn44_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn45_cntr_resetH": {
+      "reference_label": "top_iRECEIVER__rn45_cntr_resetH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn46_shiftH": {
+      "reference_label": "top_iRECEIVER__rn46_shiftH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn47_countH": {
+      "reference_label": "top_iRECEIVER__rn47_countH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn48_rstCountH": {
+      "reference_label": "top_iRECEIVER__rn48_rstCountH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn49_rec_readyInH": {
+      "reference_label": "top_iRECEIVER__rn49_rec_readyInH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn50_next_state": {
+      "reference_label": "top_iRECEIVER__rn50_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn51_next_state": {
+      "reference_label": "top_iRECEIVER__rn51_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn52_rstCountH": {
+      "reference_label": "top_iRECEIVER__rn52_rstCountH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn53_rec_readyInH": {
+      "reference_label": "top_iRECEIVER__rn53_rec_readyInH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn54_next_state": {
+      "reference_label": "top_iRECEIVER__rn54_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn55_next_state": {
+      "reference_label": "top_iRECEIVER__rn55_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn56_next_state": {
+      "reference_label": "top_iRECEIVER__rn56_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn57_cntr_resetH": {
+      "reference_label": "top_iRECEIVER__rn57_cntr_resetH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn58_next_state": {
+      "reference_label": "top_iRECEIVER__rn58_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn59_next_state": {
+      "reference_label": "top_iRECEIVER__rn59_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn60_next_state": {
+      "reference_label": "top_iRECEIVER__rn60_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn61_cntr_resetH": {
+      "reference_label": "top_iRECEIVER__rn61_cntr_resetH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn62_shiftH": {
+      "reference_label": "top_iRECEIVER__rn62_shiftH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn63_countH": {
+      "reference_label": "top_iRECEIVER__rn63_countH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn64_next_state": {
+      "reference_label": "top_iRECEIVER__rn64_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn65_next_state": {
+      "reference_label": "top_iRECEIVER__rn65_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn66_rec_readyInH": {
+      "reference_label": "top_iRECEIVER__rn66_rec_readyInH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn67_next_state": {
+      "reference_label": "top_iRECEIVER__rn67_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn68_cntr_resetH": {
+      "reference_label": "top_iRECEIVER__rn68_cntr_resetH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn69_shiftH": {
+      "reference_label": "top_iRECEIVER__rn69_shiftH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn70_countH": {
+      "reference_label": "top_iRECEIVER__rn70_countH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn71_rstCountH": {
+      "reference_label": "top_iRECEIVER__rn71_rstCountH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top.iRECEIVER._rn72_rec_readyInH": {
+      "reference_label": "top_iRECEIVER__rn72_rec_readyInH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn73_rec_dataH": {
+      "reference_label": "top__rn73_rec_dataH",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn74_rec_dataH": {
+      "reference_label": "top__rn74_rec_dataH",
+      "term_types": [
+        "Rename"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top._rn73_rec_dataH": "top._rn73_rec_dataH_graphrename_0",
+    "top._rn74_rec_dataH": "top._rn74_rec_dataH_graphrename_2",
+    "top.iRECEIVER._rn44_next_state": "top.iRECEIVER._rn44_next_state_graphrename_3",
+    "top.iRECEIVER._rn45_cntr_resetH": "top.iRECEIVER._rn45_cntr_resetH_graphrename_4",
+    "top.iRECEIVER._rn46_shiftH": "top.iRECEIVER._rn46_shiftH_graphrename_6",
+    "top.iRECEIVER._rn47_countH": "top.iRECEIVER._rn47_countH_graphrename_8",
+    "top.iRECEIVER._rn48_rstCountH": "top.iRECEIVER._rn48_rstCountH_graphrename_10",
+    "top.iRECEIVER._rn49_rec_readyInH": "top.iRECEIVER._rn49_rec_readyInH_graphrename_12",
+    "top.iRECEIVER._rn50_next_state": "top.iRECEIVER._rn50_next_state_graphrename_14",
+    "top.iRECEIVER._rn51_next_state": "top.iRECEIVER._rn51_next_state_graphrename_16",
+    "top.iRECEIVER._rn52_rstCountH": "top.iRECEIVER._rn52_rstCountH_graphrename_18",
+    "top.iRECEIVER._rn53_rec_readyInH": "top.iRECEIVER._rn53_rec_readyInH_graphrename_20",
+    "top.iRECEIVER._rn54_next_state": "top.iRECEIVER._rn54_next_state_graphrename_22",
+    "top.iRECEIVER._rn55_next_state": "top.iRECEIVER._rn55_next_state_graphrename_24",
+    "top.iRECEIVER._rn56_next_state": "top.iRECEIVER._rn56_next_state_graphrename_26",
+    "top.iRECEIVER._rn57_cntr_resetH": "top.iRECEIVER._rn57_cntr_resetH_graphrename_28",
+    "top.iRECEIVER._rn58_next_state": "top.iRECEIVER._rn58_next_state_graphrename_30",
+    "top.iRECEIVER._rn59_next_state": "top.iRECEIVER._rn59_next_state_graphrename_32",
+    "top.iRECEIVER._rn60_next_state": "top.iRECEIVER._rn60_next_state_graphrename_34",
+    "top.iRECEIVER._rn61_cntr_resetH": "top.iRECEIVER._rn61_cntr_resetH_graphrename_36",
+    "top.iRECEIVER._rn62_shiftH": "top.iRECEIVER._rn62_shiftH_graphrename_38",
+    "top.iRECEIVER._rn63_countH": "top.iRECEIVER._rn63_countH_graphrename_40",
+    "top.iRECEIVER._rn64_next_state": "top.iRECEIVER._rn64_next_state_graphrename_42",
+    "top.iRECEIVER._rn65_next_state": "top.iRECEIVER._rn65_next_state_graphrename_44",
+    "top.iRECEIVER._rn66_rec_readyInH": "top.iRECEIVER._rn66_rec_readyInH_graphrename_46",
+    "top.iRECEIVER._rn67_next_state": "top.iRECEIVER._rn67_next_state_graphrename_48",
+    "top.iRECEIVER._rn68_cntr_resetH": "top.iRECEIVER._rn68_cntr_resetH_graphrename_49",
+    "top.iRECEIVER._rn69_shiftH": "top.iRECEIVER._rn69_shiftH_graphrename_50",
+    "top.iRECEIVER._rn70_countH": "top.iRECEIVER._rn70_countH_graphrename_51",
+    "top.iRECEIVER._rn71_rstCountH": "top.iRECEIVER._rn71_rstCountH_graphrename_52",
+    "top.iRECEIVER._rn72_rec_readyInH": "top.iRECEIVER._rn72_rec_readyInH_graphrename_53",
+    "top.iRECEIVER.bitCell_cntrH": "top.iRECEIVER.bitCell_cntrH_graphrename_54",
+    "top.iRECEIVER.cntr_resetH": "top.iRECEIVER.cntr_resetH_graphrename_62",
+    "top.iRECEIVER.countH": "top.iRECEIVER.countH_graphrename_84",
+    "top.iRECEIVER.next_state": "top.iRECEIVER.next_state_graphrename_100",
+    "top.iRECEIVER.par_dataH": "top.iRECEIVER.par_dataH_graphrename_129",
+    "top.iRECEIVER.rec_data_cntrH_1": "top.iRECEIVER.rec_data_cntrH_1_graphrename_138",
+    "top.iRECEIVER.rec_data_cntrH_2": "top.iRECEIVER.rec_data_cntrH_2_graphrename_170",
+    "top.iRECEIVER.rec_data_cntrH_3": "top.iRECEIVER.rec_data_cntrH_3_graphrename_205",
+    "top.iRECEIVER.rec_dataH": "top.iRECEIVER.rec_dataH_graphrename_218",
+    "top.iRECEIVER.rec_datH": "top.iRECEIVER.rec_datH_graphrename_219",
+    "top.iRECEIVER.rec_datSyncH": "top.iRECEIVER.rec_datSyncH_graphrename_223",
+    "top.iRECEIVER.rec_readyH": "top.iRECEIVER.rec_readyH_graphrename_227",
+    "top.iRECEIVER.rec_readyH_temp": "top.iRECEIVER.rec_readyH_temp_graphrename_231",
+    "top.iRECEIVER.rec_readyInH": "top.iRECEIVER.rec_readyInH_graphrename_235",
+    "top.iRECEIVER.recd_bitCntrH": "top.iRECEIVER.recd_bitCntrH_graphrename_253",
+    "top.iRECEIVER.rstCountH": "top.iRECEIVER.rstCountH_graphrename_262",
+    "top.iRECEIVER.shiftH": "top.iRECEIVER.shiftH_graphrename_280",
+    "top.iRECEIVER.state": "top.iRECEIVER.state_graphrename_296",
+    "top.iRECEIVER.sys_clk": "top.iRECEIVER.sys_clk_graphrename_300",
+    "top.iRECEIVER.sys_rst_l": "top.iRECEIVER.sys_rst_l_graphrename_301",
+    "top.iRECEIVER.uart_dataH": "top.iRECEIVER.uart_dataH_graphrename_302",
+    "top.iXMIT._rn0_uart_xmitH": "top.iXMIT._rn0_uart_xmitH_graphrename_303",
+    "top.iXMIT._rn10_ena_bitCountH": "top.iXMIT._rn10_ena_bitCountH_graphrename_305",
+    "top.iXMIT._rn11_xmitDataSelH": "top.iXMIT._rn11_xmitDataSelH_graphrename_307",
+    "top.iXMIT._rn12_xmit_doneInH": "top.iXMIT._rn12_xmit_doneInH_graphrename_309",
+    "top.iXMIT._rn13_next_state": "top.iXMIT._rn13_next_state_graphrename_311",
+    "top.iXMIT._rn14_load_shiftRegH": "top.iXMIT._rn14_load_shiftRegH_graphrename_313",
+    "top.iXMIT._rn15_next_state": "top.iXMIT._rn15_next_state_graphrename_315",
+    "top.iXMIT._rn16_rst_bitCountH": "top.iXMIT._rn16_rst_bitCountH_graphrename_317",
+    "top.iXMIT._rn17_xmit_doneInH": "top.iXMIT._rn17_xmit_doneInH_graphrename_319",
+    "top.iXMIT._rn18_xmitDataSelH": "top.iXMIT._rn18_xmitDataSelH_graphrename_321",
+    "top.iXMIT._rn19_next_state": "top.iXMIT._rn19_next_state_graphrename_323",
+    "top.iXMIT._rn1_uart_xmitH": "top.iXMIT._rn1_uart_xmitH_graphrename_325",
+    "top.iXMIT._rn20_next_state": "top.iXMIT._rn20_next_state_graphrename_327",
+    "top.iXMIT._rn21_countEnaH": "top.iXMIT._rn21_countEnaH_graphrename_329",
+    "top.iXMIT._rn22_xmitDataSelH": "top.iXMIT._rn22_xmitDataSelH_graphrename_331",
+    "top.iXMIT._rn23_next_state": "top.iXMIT._rn23_next_state_graphrename_333",
+    "top.iXMIT._rn24_next_state": "top.iXMIT._rn24_next_state_graphrename_335",
+    "top.iXMIT._rn25_ena_bitCountH": "top.iXMIT._rn25_ena_bitCountH_graphrename_337",
+    "top.iXMIT._rn26_next_state": "top.iXMIT._rn26_next_state_graphrename_339",
+    "top.iXMIT._rn27_countEnaH": "top.iXMIT._rn27_countEnaH_graphrename_341",
+    "top.iXMIT._rn28_xmitDataSelH": "top.iXMIT._rn28_xmitDataSelH_graphrename_343",
+    "top.iXMIT._rn29_next_state": "top.iXMIT._rn29_next_state_graphrename_345",
+    "top.iXMIT._rn2_uart_xmitH": "top.iXMIT._rn2_uart_xmitH_graphrename_347",
+    "top.iXMIT._rn30_shiftEnaH": "top.iXMIT._rn30_shiftEnaH_graphrename_349",
+    "top.iXMIT._rn31_xmitDataSelH": "top.iXMIT._rn31_xmitDataSelH_graphrename_351",
+    "top.iXMIT._rn32_next_state": "top.iXMIT._rn32_next_state_graphrename_353",
+    "top.iXMIT._rn33_xmit_doneInH": "top.iXMIT._rn33_xmit_doneInH_graphrename_355",
+    "top.iXMIT._rn34_next_state": "top.iXMIT._rn34_next_state_graphrename_357",
+    "top.iXMIT._rn35_countEnaH": "top.iXMIT._rn35_countEnaH_graphrename_359",
+    "top.iXMIT._rn36_next_state": "top.iXMIT._rn36_next_state_graphrename_361",
+    "top.iXMIT._rn37_load_shiftRegH": "top.iXMIT._rn37_load_shiftRegH_graphrename_362",
+    "top.iXMIT._rn38_countEnaH": "top.iXMIT._rn38_countEnaH_graphrename_363",
+    "top.iXMIT._rn39_shiftEnaH": "top.iXMIT._rn39_shiftEnaH_graphrename_364",
+    "top.iXMIT._rn3_uart_xmitH": "top.iXMIT._rn3_uart_xmitH_graphrename_365",
+    "top.iXMIT._rn40_rst_bitCountH": "top.iXMIT._rn40_rst_bitCountH_graphrename_369",
+    "top.iXMIT._rn41_ena_bitCountH": "top.iXMIT._rn41_ena_bitCountH_graphrename_370",
+    "top.iXMIT._rn42_xmitDataSelH": "top.iXMIT._rn42_xmitDataSelH_graphrename_371",
+    "top.iXMIT._rn43_xmit_doneInH": "top.iXMIT._rn43_xmit_doneInH_graphrename_372",
+    "top.iXMIT._rn4_uart_xmitH": "top.iXMIT._rn4_uart_xmitH_graphrename_373",
+    "top.iXMIT._rn5_next_state": "top.iXMIT._rn5_next_state_graphrename_374",
+    "top.iXMIT._rn6_load_shiftRegH": "top.iXMIT._rn6_load_shiftRegH_graphrename_375",
+    "top.iXMIT._rn7_countEnaH": "top.iXMIT._rn7_countEnaH_graphrename_377",
+    "top.iXMIT._rn8_shiftEnaH": "top.iXMIT._rn8_shiftEnaH_graphrename_379",
+    "top.iXMIT._rn9_rst_bitCountH": "top.iXMIT._rn9_rst_bitCountH_graphrename_381",
+    "top.iXMIT.bitCell_cntrH": "top.iXMIT.bitCell_cntrH_graphrename_383",
+    "top.iXMIT.bitCountH": "top.iXMIT.bitCountH_graphrename_400",
+    "top.iXMIT.countEnaH": "top.iXMIT.countEnaH_graphrename_418",
+    "top.iXMIT.ena_bitCountH": "top.iXMIT.ena_bitCountH_graphrename_447",
+    "top.iXMIT.load_shiftRegH": "top.iXMIT.load_shiftRegH_graphrename_473",
+    "top.iXMIT.next_state": "top.iXMIT.next_state_graphrename_494",
+    "top.iXMIT.rst_bitCountH": "top.iXMIT.rst_bitCountH_graphrename_527",
+    "top.iXMIT.shiftEnaH": "top.iXMIT.shiftEnaH_graphrename_548",
+    "top.iXMIT.state": "top.iXMIT.state_graphrename_568",
+    "top.iXMIT.sys_clk": "top.iXMIT.sys_clk_graphrename_572",
+    "top.iXMIT.sys_rst_l": "top.iXMIT.sys_rst_l_graphrename_573",
+    "top.iXMIT.uart_xmitH": "top.iXMIT.uart_xmitH_graphrename_574",
+    "top.iXMIT.xmit_dataH": "top.iXMIT.xmit_dataH_graphrename_589",
+    "top.iXMIT.xmit_doneH": "top.iXMIT.xmit_doneH_graphrename_590",
+    "top.iXMIT.xmit_doneInH": "top.iXMIT.xmit_doneInH_graphrename_594",
+    "top.iXMIT.xmit_ShiftRegH": "top.iXMIT.xmit_ShiftRegH_graphrename_618",
+    "top.iXMIT.xmitDataSelH": "top.iXMIT.xmitDataSelH_graphrename_735",
+    "top.iXMIT.xmitH": "top.iXMIT.xmitH_graphrename_755",
+    "top.rec_dataH": "top.rec_dataH_graphrename_756",
+    "top.rec_dataH_rec": "top.rec_dataH_rec_graphrename_759",
+    "top.rec_dataH_temp": "top.rec_dataH_temp_graphrename_760",
+    "top.rec_readyH": "top.rec_readyH_graphrename_764",
+    "top.uart_XMIT_dataH": "top.uart_XMIT_dataH_graphrename_765",
+    "top.xmit_doneH": "top.xmit_doneH_graphrename_766"
+  },
+  "joined_references": [
+    {
+      "symbol": "top.rec_dataH_temp",
+      "reference_node": "top_rec_dataH_temp",
+      "definition_node": "top.rec_dataH_temp_graphrename_760",
+      "parents": [
+        "top._rn74_rec_dataH_graphrename_2"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.state",
+      "reference_node": "top_iRECEIVER_state",
+      "definition_node": "top.iRECEIVER.state_graphrename_296",
+      "parents": [
+        "top.iRECEIVER._rn44_next_state_graphrename_3",
+        "Eq_graphrename_64",
+        "Eq_graphrename_67",
+        "Eq_graphrename_73",
+        "Eq_graphrename_79",
+        "Eq_graphrename_82",
+        "Eq_graphrename_86",
+        "Eq_graphrename_89",
+        "Eq_graphrename_92",
+        "Eq_graphrename_95",
+        "Eq_graphrename_98",
+        "Eq_graphrename_102",
+        "Eq_graphrename_107",
+        "Eq_graphrename_115",
+        "Eq_graphrename_124",
+        "Eq_graphrename_127",
+        "PartSelect_graphrename_208",
+        "PartSelect_graphrename_211",
+        "PartSelect_graphrename_215",
+        "Eq_graphrename_237",
+        "Eq_graphrename_242",
+        "Eq_graphrename_245",
+        "Eq_graphrename_248",
+        "Eq_graphrename_251",
+        "Eq_graphrename_264",
+        "Eq_graphrename_269",
+        "Eq_graphrename_272",
+        "Eq_graphrename_275",
+        "Eq_graphrename_278",
+        "Eq_graphrename_282",
+        "Eq_graphrename_285",
+        "Eq_graphrename_288",
+        "Eq_graphrename_291",
+        "Eq_graphrename_294"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn67_next_state",
+      "reference_node": "top_iRECEIVER__rn67_next_state",
+      "definition_node": "top.iRECEIVER._rn67_next_state_graphrename_48",
+      "parents": [
+        "top.iRECEIVER._rn67_next_state_graphrename_48",
+        "Branch_graphrename_126"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn68_cntr_resetH",
+      "reference_node": "top_iRECEIVER__rn68_cntr_resetH",
+      "definition_node": "top.iRECEIVER._rn68_cntr_resetH_graphrename_49",
+      "parents": [
+        "top.iRECEIVER._rn68_cntr_resetH_graphrename_49",
+        "Branch_graphrename_81"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn69_shiftH",
+      "reference_node": "top_iRECEIVER__rn69_shiftH",
+      "definition_node": "top.iRECEIVER._rn69_shiftH_graphrename_50",
+      "parents": [
+        "top.iRECEIVER._rn69_shiftH_graphrename_50",
+        "Branch_graphrename_293"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn70_countH",
+      "reference_node": "top_iRECEIVER__rn70_countH",
+      "definition_node": "top.iRECEIVER._rn70_countH_graphrename_51",
+      "parents": [
+        "top.iRECEIVER._rn70_countH_graphrename_51",
+        "Branch_graphrename_97"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn71_rstCountH",
+      "reference_node": "top_iRECEIVER__rn71_rstCountH",
+      "definition_node": "top.iRECEIVER._rn71_rstCountH_graphrename_52",
+      "parents": [
+        "top.iRECEIVER._rn71_rstCountH_graphrename_52",
+        "Branch_graphrename_277"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn72_rec_readyInH",
+      "reference_node": "top_iRECEIVER__rn72_rec_readyInH",
+      "definition_node": "top.iRECEIVER._rn72_rec_readyInH_graphrename_53",
+      "parents": [
+        "top.iRECEIVER._rn72_rec_readyInH_graphrename_53",
+        "Branch_graphrename_250"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.sys_rst_l",
+      "reference_node": "top_iRECEIVER_sys_rst_l",
+      "definition_node": "top.iRECEIVER.sys_rst_l_graphrename_301",
+      "parents": [
+        "Unot_graphrename_56",
+        "Unot_graphrename_131",
+        "Unot_graphrename_221",
+        "Unot_graphrename_225",
+        "Unot_graphrename_233",
+        "Unot_graphrename_255",
+        "Unot_graphrename_298"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.cntr_resetH",
+      "reference_node": "top_iRECEIVER_cntr_resetH",
+      "definition_node": "top.iRECEIVER.cntr_resetH_graphrename_62",
+      "parents": [
+        "Branch_graphrename_58",
+        "Branch_graphrename_63",
+        "Branch_graphrename_75",
+        "Branch_graphrename_78",
+        "Branch_graphrename_81"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.bitCell_cntrH",
+      "reference_node": "top_iRECEIVER_bitCell_cntrH",
+      "definition_node": "top.iRECEIVER.bitCell_cntrH_graphrename_54",
+      "parents": [
+        "Plus_graphrename_60",
+        "Eq_graphrename_70",
+        "Eq_graphrename_76",
+        "Eq_graphrename_110",
+        "Eq_graphrename_118",
+        "PartSelect_graphrename_179",
+        "PartSelect_graphrename_182",
+        "PartSelect_graphrename_185",
+        "PartSelect_graphrename_188"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn45_cntr_resetH",
+      "reference_node": "top_iRECEIVER__rn45_cntr_resetH",
+      "definition_node": "top.iRECEIVER._rn45_cntr_resetH_graphrename_4",
+      "parents": [
+        "Branch_graphrename_69"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn57_cntr_resetH",
+      "reference_node": "top_iRECEIVER__rn57_cntr_resetH",
+      "definition_node": "top.iRECEIVER._rn57_cntr_resetH_graphrename_28",
+      "parents": [
+        "Branch_graphrename_69"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn61_cntr_resetH",
+      "reference_node": "top_iRECEIVER__rn61_cntr_resetH",
+      "definition_node": "top.iRECEIVER._rn61_cntr_resetH_graphrename_36",
+      "parents": [
+        "Branch_graphrename_75"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.countH",
+      "reference_node": "top_iRECEIVER_countH",
+      "definition_node": "top.iRECEIVER.countH_graphrename_84",
+      "parents": [
+        "Branch_graphrename_85",
+        "Branch_graphrename_88",
+        "Branch_graphrename_91",
+        "Branch_graphrename_97",
+        "Branch_graphrename_257"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn63_countH",
+      "reference_node": "top_iRECEIVER__rn63_countH",
+      "definition_node": "top.iRECEIVER._rn63_countH_graphrename_40",
+      "parents": [
+        "Branch_graphrename_94"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rec_datH",
+      "reference_node": "top_iRECEIVER_rec_datH",
+      "definition_node": "top.iRECEIVER.rec_datH_graphrename_219",
+      "parents": [
+        "Unot_graphrename_105",
+        "Unot_graphrename_113",
+        "Concat_graphrename_134",
+        "Unot_graphrename_240",
+        "Unot_graphrename_267"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn50_next_state",
+      "reference_node": "top_iRECEIVER__rn50_next_state",
+      "definition_node": "top.iRECEIVER._rn50_next_state_graphrename_14",
+      "parents": [
+        "Branch_graphrename_104"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn51_next_state",
+      "reference_node": "top_iRECEIVER__rn51_next_state",
+      "definition_node": "top.iRECEIVER._rn51_next_state_graphrename_16",
+      "parents": [
+        "Branch_graphrename_104"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn54_next_state",
+      "reference_node": "top_iRECEIVER__rn54_next_state",
+      "definition_node": "top.iRECEIVER._rn54_next_state_graphrename_22",
+      "parents": [
+        "Branch_graphrename_112"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn55_next_state",
+      "reference_node": "top_iRECEIVER__rn55_next_state",
+      "definition_node": "top.iRECEIVER._rn55_next_state_graphrename_24",
+      "parents": [
+        "Branch_graphrename_112"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn56_next_state",
+      "reference_node": "top_iRECEIVER__rn56_next_state",
+      "definition_node": "top.iRECEIVER._rn56_next_state_graphrename_26",
+      "parents": [
+        "Branch_graphrename_109"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.recd_bitCntrH",
+      "reference_node": "top_iRECEIVER_recd_bitCntrH",
+      "definition_node": "top.iRECEIVER.recd_bitCntrH_graphrename_253",
+      "parents": [
+        "Eq_graphrename_121",
+        "PartSelect_graphrename_191",
+        "PartSelect_graphrename_194",
+        "PartSelect_graphrename_198",
+        "PartSelect_graphrename_202",
+        "Plus_graphrename_258",
+        "Branch_graphrename_260"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn58_next_state",
+      "reference_node": "top_iRECEIVER__rn58_next_state",
+      "definition_node": "top.iRECEIVER._rn58_next_state_graphrename_30",
+      "parents": [
+        "Branch_graphrename_120"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn59_next_state",
+      "reference_node": "top_iRECEIVER__rn59_next_state",
+      "definition_node": "top.iRECEIVER._rn59_next_state_graphrename_32",
+      "parents": [
+        "Branch_graphrename_120"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn60_next_state",
+      "reference_node": "top_iRECEIVER__rn60_next_state",
+      "definition_node": "top.iRECEIVER._rn60_next_state_graphrename_34",
+      "parents": [
+        "Branch_graphrename_117"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn64_next_state",
+      "reference_node": "top_iRECEIVER__rn64_next_state",
+      "definition_node": "top.iRECEIVER._rn64_next_state_graphrename_42",
+      "parents": [
+        "Branch_graphrename_123"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn65_next_state",
+      "reference_node": "top_iRECEIVER__rn65_next_state",
+      "definition_node": "top.iRECEIVER._rn65_next_state_graphrename_44",
+      "parents": [
+        "Branch_graphrename_126"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.shiftH",
+      "reference_node": "top_iRECEIVER_shiftH",
+      "definition_node": "top.iRECEIVER.shiftH_graphrename_280",
+      "parents": [
+        "Branch_graphrename_133",
+        "Branch_graphrename_281",
+        "Branch_graphrename_284",
+        "Branch_graphrename_287",
+        "Branch_graphrename_293"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.par_dataH",
+      "reference_node": "top_iRECEIVER_par_dataH",
+      "definition_node": "top.iRECEIVER.par_dataH_graphrename_129",
+      "parents": [
+        "Branch_graphrename_133",
+        "PartSelect_graphrename_135",
+        "top.iRECEIVER.rec_dataH_graphrename_218"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rec_dataH",
+      "reference_node": "top_iRECEIVER_rec_dataH",
+      "definition_node": "top.iRECEIVER.rec_dataH_graphrename_218",
+      "parents": [
+        "PartSelect_graphrename_146",
+        "PartSelect_graphrename_149",
+        "PartSelect_graphrename_152",
+        "PartSelect_graphrename_155",
+        "PartSelect_graphrename_158",
+        "PartSelect_graphrename_161",
+        "PartSelect_graphrename_164",
+        "PartSelect_graphrename_167",
+        "top.rec_dataH_rec_graphrename_759"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rec_datSyncH",
+      "reference_node": "top_iRECEIVER_rec_datSyncH",
+      "definition_node": "top.iRECEIVER.rec_datSyncH_graphrename_223",
+      "parents": [
+        "Branch_graphrename_220"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.uart_dataH",
+      "reference_node": "top_iRECEIVER_uart_dataH",
+      "definition_node": "top.iRECEIVER.uart_dataH_graphrename_302",
+      "parents": [
+        "Branch_graphrename_224"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rec_readyH_temp",
+      "reference_node": "top_iRECEIVER_rec_readyH_temp",
+      "definition_node": "top.iRECEIVER.rec_readyH_temp_graphrename_231",
+      "parents": [
+        "Lor_graphrename_228"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rec_data_cntrH_1",
+      "reference_node": "top_iRECEIVER_rec_data_cntrH_1",
+      "definition_node": "top.iRECEIVER.rec_data_cntrH_1_graphrename_138",
+      "parents": [
+        "And_graphrename_230"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rec_data_cntrH_2",
+      "reference_node": "top_iRECEIVER_rec_data_cntrH_2",
+      "definition_node": "top.iRECEIVER.rec_data_cntrH_2_graphrename_170",
+      "parents": [
+        "And_graphrename_230"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rec_data_cntrH_3",
+      "reference_node": "top_iRECEIVER_rec_data_cntrH_3",
+      "definition_node": "top.iRECEIVER.rec_data_cntrH_3_graphrename_205",
+      "parents": [
+        "And_graphrename_229"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rec_readyInH",
+      "reference_node": "top_iRECEIVER_rec_readyInH",
+      "definition_node": "top.iRECEIVER.rec_readyInH_graphrename_235",
+      "parents": [
+        "Branch_graphrename_232",
+        "Branch_graphrename_241",
+        "Branch_graphrename_244",
+        "Branch_graphrename_247"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn49_rec_readyInH",
+      "reference_node": "top_iRECEIVER__rn49_rec_readyInH",
+      "definition_node": "top.iRECEIVER._rn49_rec_readyInH_graphrename_12",
+      "parents": [
+        "Branch_graphrename_239"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn53_rec_readyInH",
+      "reference_node": "top_iRECEIVER__rn53_rec_readyInH",
+      "definition_node": "top.iRECEIVER._rn53_rec_readyInH_graphrename_20",
+      "parents": [
+        "Branch_graphrename_239"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn66_rec_readyInH",
+      "reference_node": "top_iRECEIVER__rn66_rec_readyInH",
+      "definition_node": "top.iRECEIVER._rn66_rec_readyInH_graphrename_46",
+      "parents": [
+        "Branch_graphrename_250"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rstCountH",
+      "reference_node": "top_iRECEIVER_rstCountH",
+      "definition_node": "top.iRECEIVER.rstCountH_graphrename_262",
+      "parents": [
+        "Branch_graphrename_260",
+        "Branch_graphrename_268",
+        "Branch_graphrename_271",
+        "Branch_graphrename_274",
+        "Branch_graphrename_277"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn48_rstCountH",
+      "reference_node": "top_iRECEIVER__rn48_rstCountH",
+      "definition_node": "top.iRECEIVER._rn48_rstCountH_graphrename_10",
+      "parents": [
+        "Branch_graphrename_266"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn52_rstCountH",
+      "reference_node": "top_iRECEIVER__rn52_rstCountH",
+      "definition_node": "top.iRECEIVER._rn52_rstCountH_graphrename_18",
+      "parents": [
+        "Branch_graphrename_266"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER._rn62_shiftH",
+      "reference_node": "top_iRECEIVER__rn62_shiftH",
+      "definition_node": "top.iRECEIVER._rn62_shiftH_graphrename_38",
+      "parents": [
+        "Branch_graphrename_290"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.next_state",
+      "reference_node": "top_iRECEIVER_next_state",
+      "definition_node": "top.iRECEIVER.next_state_graphrename_100",
+      "parents": [
+        "Branch_graphrename_297"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn36_next_state",
+      "reference_node": "top_iXMIT__rn36_next_state",
+      "definition_node": "top.iXMIT._rn36_next_state_graphrename_361",
+      "parents": [
+        "top.iXMIT._rn36_next_state_graphrename_361",
+        "Branch_graphrename_521"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn37_load_shiftRegH",
+      "reference_node": "top_iXMIT__rn37_load_shiftRegH",
+      "definition_node": "top.iXMIT._rn37_load_shiftRegH_graphrename_362",
+      "parents": [
+        "top.iXMIT._rn37_load_shiftRegH_graphrename_362",
+        "Branch_graphrename_491"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn38_countEnaH",
+      "reference_node": "top_iXMIT__rn38_countEnaH",
+      "definition_node": "top.iXMIT._rn38_countEnaH_graphrename_363",
+      "parents": [
+        "top.iXMIT._rn38_countEnaH_graphrename_363",
+        "Branch_graphrename_441"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn39_shiftEnaH",
+      "reference_node": "top_iXMIT__rn39_shiftEnaH",
+      "definition_node": "top.iXMIT._rn39_shiftEnaH_graphrename_364",
+      "parents": [
+        "top.iXMIT._rn39_shiftEnaH_graphrename_364",
+        "Branch_graphrename_565"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.xmit_ShiftRegH",
+      "reference_node": "top_iXMIT_xmit_ShiftRegH",
+      "definition_node": "top.iXMIT.xmit_ShiftRegH_graphrename_618",
+      "parents": [
+        "PartSelect_graphrename_366",
+        "Lor_graphrename_576",
+        "Branch_graphrename_621",
+        "Branch_graphrename_625",
+        "Branch_graphrename_640",
+        "PartSelect_graphrename_641",
+        "Branch_graphrename_651",
+        "PartSelect_graphrename_652",
+        "Branch_graphrename_656",
+        "Branch_graphrename_673",
+        "PartSelect_graphrename_674",
+        "Branch_graphrename_686",
+        "PartSelect_graphrename_687",
+        "Concat_graphrename_690",
+        "PartSelect_graphrename_694",
+        "Branch_graphrename_702",
+        "Branch_graphrename_714",
+        "PartSelect_graphrename_715",
+        "Branch_graphrename_718",
+        "Branch_graphrename_730",
+        "PartSelect_graphrename_731",
+        "Concat_graphrename_734"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn40_rst_bitCountH",
+      "reference_node": "top_iXMIT__rn40_rst_bitCountH",
+      "definition_node": "top.iXMIT._rn40_rst_bitCountH_graphrename_369",
+      "parents": [
+        "top.iXMIT._rn40_rst_bitCountH_graphrename_369",
+        "Branch_graphrename_545"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn41_ena_bitCountH",
+      "reference_node": "top_iXMIT__rn41_ena_bitCountH",
+      "definition_node": "top.iXMIT._rn41_ena_bitCountH_graphrename_370",
+      "parents": [
+        "top.iXMIT._rn41_ena_bitCountH_graphrename_370",
+        "Branch_graphrename_470"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn42_xmitDataSelH",
+      "reference_node": "top_iXMIT__rn42_xmitDataSelH",
+      "definition_node": "top.iXMIT._rn42_xmitDataSelH_graphrename_371",
+      "parents": [
+        "top.iXMIT._rn42_xmitDataSelH_graphrename_371",
+        "Branch_graphrename_752"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn43_xmit_doneInH",
+      "reference_node": "top_iXMIT__rn43_xmit_doneInH",
+      "definition_node": "top.iXMIT._rn43_xmit_doneInH_graphrename_372",
+      "parents": [
+        "top.iXMIT._rn43_xmit_doneInH_graphrename_372",
+        "Branch_graphrename_612"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn4_uart_xmitH",
+      "reference_node": "top_iXMIT__rn4_uart_xmitH",
+      "definition_node": "top.iXMIT._rn4_uart_xmitH_graphrename_373",
+      "parents": [
+        "top.iXMIT._rn4_uart_xmitH_graphrename_373",
+        "Branch_graphrename_586"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.state",
+      "reference_node": "top_iXMIT_state",
+      "definition_node": "top.iXMIT.state_graphrename_568",
+      "parents": [
+        "top.iXMIT._rn5_next_state_graphrename_374",
+        "Lor_graphrename_387",
+        "Eq_graphrename_389",
+        "Lor_graphrename_404",
+        "Eq_graphrename_406",
+        "Lor_graphrename_422",
+        "Eq_graphrename_424",
+        "Eq_graphrename_427",
+        "Eq_graphrename_433",
+        "Eq_graphrename_439",
+        "Eq_graphrename_442",
+        "Lor_graphrename_451",
+        "Eq_graphrename_453",
+        "Eq_graphrename_456",
+        "Eq_graphrename_459",
+        "Eq_graphrename_468",
+        "Eq_graphrename_471",
+        "Lor_graphrename_477",
+        "Eq_graphrename_479",
+        "Eq_graphrename_483",
+        "Eq_graphrename_486",
+        "Eq_graphrename_489",
+        "Eq_graphrename_492",
+        "Lor_graphrename_498",
+        "Eq_graphrename_500",
+        "Eq_graphrename_504",
+        "Eq_graphrename_510",
+        "Eq_graphrename_519",
+        "Eq_graphrename_522",
+        "Lor_graphrename_531",
+        "Eq_graphrename_533",
+        "Eq_graphrename_537",
+        "Eq_graphrename_540",
+        "Eq_graphrename_543",
+        "Eq_graphrename_546",
+        "Lor_graphrename_552",
+        "Eq_graphrename_554",
+        "Eq_graphrename_557",
+        "Eq_graphrename_560",
+        "Eq_graphrename_563",
+        "Eq_graphrename_566",
+        "Lor_graphrename_598",
+        "Eq_graphrename_600",
+        "Eq_graphrename_604",
+        "Eq_graphrename_607",
+        "Eq_graphrename_610",
+        "Eq_graphrename_613",
+        "Lor_graphrename_624",
+        "Eq_graphrename_626",
+        "Lor_graphrename_659",
+        "Eq_graphrename_661",
+        "Lor_graphrename_700",
+        "Eq_graphrename_703",
+        "Eq_graphrename_719",
+        "Lor_graphrename_739",
+        "Eq_graphrename_741",
+        "Eq_graphrename_744",
+        "Eq_graphrename_747",
+        "Eq_graphrename_750",
+        "Eq_graphrename_753"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.xmitH",
+      "reference_node": "top_iXMIT_xmitH",
+      "definition_node": "top.iXMIT.xmitH_graphrename_755",
+      "parents": [
+        "Lor_graphrename_387",
+        "Branch_graphrename_391",
+        "Lor_graphrename_404",
+        "Branch_graphrename_408",
+        "Lor_graphrename_422",
+        "Lor_graphrename_451",
+        "Lor_graphrename_477",
+        "Branch_graphrename_481",
+        "Lor_graphrename_498",
+        "Branch_graphrename_502",
+        "Lor_graphrename_531",
+        "Branch_graphrename_535",
+        "Lor_graphrename_552",
+        "Lor_graphrename_598",
+        "Branch_graphrename_602",
+        "Lor_graphrename_624",
+        "Branch_graphrename_628",
+        "Lor_graphrename_659",
+        "Branch_graphrename_664",
+        "Branch_graphrename_677",
+        "Lor_graphrename_700",
+        "Branch_graphrename_705",
+        "Branch_graphrename_721",
+        "Lor_graphrename_739"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.bitCountH",
+      "reference_node": "top_iXMIT_bitCountH",
+      "definition_node": "top.iXMIT.bitCountH_graphrename_400",
+      "parents": [
+        "Lor_graphrename_386",
+        "Branch_graphrename_401",
+        "Lor_graphrename_403",
+        "Branch_graphrename_405",
+        "Branch_graphrename_415",
+        "Plus_graphrename_416",
+        "Lor_graphrename_421",
+        "Lor_graphrename_450",
+        "Eq_graphrename_465",
+        "Lor_graphrename_476",
+        "Lor_graphrename_497",
+        "Eq_graphrename_516",
+        "Lor_graphrename_530",
+        "Lor_graphrename_551",
+        "Lor_graphrename_597",
+        "Lor_graphrename_623",
+        "Lor_graphrename_658",
+        "Lor_graphrename_699",
+        "Lor_graphrename_738"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.bitCell_cntrH",
+      "reference_node": "top_iXMIT_bitCell_cntrH",
+      "definition_node": "top.iXMIT.bitCell_cntrH_graphrename_383",
+      "parents": [
+        "Branch_graphrename_384",
+        "Lor_graphrename_385",
+        "Branch_graphrename_388",
+        "Plus_graphrename_397",
+        "Lor_graphrename_402",
+        "Lor_graphrename_420",
+        "Eq_graphrename_430",
+        "Eq_graphrename_436",
+        "Eq_graphrename_445",
+        "Lor_graphrename_449",
+        "Eq_graphrename_462",
+        "Lor_graphrename_475",
+        "Lor_graphrename_496",
+        "Eq_graphrename_507",
+        "Eq_graphrename_513",
+        "Eq_graphrename_525",
+        "Lor_graphrename_529",
+        "Lor_graphrename_550",
+        "Lor_graphrename_596",
+        "Eq_graphrename_616",
+        "Lor_graphrename_622",
+        "Lor_graphrename_657",
+        "Lor_graphrename_698",
+        "Lor_graphrename_737"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.sys_rst_l",
+      "reference_node": "top_iXMIT_sys_rst_l",
+      "definition_node": "top.iXMIT.sys_rst_l_graphrename_573",
+      "parents": [
+        "Unot_graphrename_394",
+        "Unot_graphrename_411",
+        "Unot_graphrename_570",
+        "Unot_graphrename_592",
+        "Unot_graphrename_620",
+        "Unot_graphrename_634",
+        "Unot_graphrename_645",
+        "Unot_graphrename_667",
+        "Unot_graphrename_680",
+        "Unot_graphrename_708",
+        "Unot_graphrename_724"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.countEnaH",
+      "reference_node": "top_iXMIT_countEnaH",
+      "definition_node": "top.iXMIT.countEnaH_graphrename_418",
+      "parents": [
+        "Branch_graphrename_396",
+        "Branch_graphrename_419",
+        "Branch_graphrename_423",
+        "Branch_graphrename_435",
+        "Branch_graphrename_438",
+        "Branch_graphrename_444"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.rst_bitCountH",
+      "reference_node": "top_iXMIT_rst_bitCountH",
+      "definition_node": "top.iXMIT.rst_bitCountH_graphrename_527",
+      "parents": [
+        "Branch_graphrename_413",
+        "Branch_graphrename_528",
+        "Branch_graphrename_536",
+        "Branch_graphrename_539",
+        "Branch_graphrename_542",
+        "Branch_graphrename_545"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.ena_bitCountH",
+      "reference_node": "top_iXMIT_ena_bitCountH",
+      "definition_node": "top.iXMIT.ena_bitCountH_graphrename_447",
+      "parents": [
+        "Branch_graphrename_415",
+        "Branch_graphrename_448",
+        "Branch_graphrename_452",
+        "Branch_graphrename_455",
+        "Branch_graphrename_461",
+        "Branch_graphrename_467",
+        "Branch_graphrename_470"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn7_countEnaH",
+      "reference_node": "top_iXMIT__rn7_countEnaH",
+      "definition_node": "top.iXMIT._rn7_countEnaH_graphrename_377",
+      "parents": [
+        "Branch_graphrename_429"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn21_countEnaH",
+      "reference_node": "top_iXMIT__rn21_countEnaH",
+      "definition_node": "top.iXMIT._rn21_countEnaH_graphrename_329",
+      "parents": [
+        "Branch_graphrename_429"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn27_countEnaH",
+      "reference_node": "top_iXMIT__rn27_countEnaH",
+      "definition_node": "top.iXMIT._rn27_countEnaH_graphrename_341",
+      "parents": [
+        "Branch_graphrename_435"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn35_countEnaH",
+      "reference_node": "top_iXMIT__rn35_countEnaH",
+      "definition_node": "top.iXMIT._rn35_countEnaH_graphrename_359",
+      "parents": [
+        "Branch_graphrename_444"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn10_ena_bitCountH",
+      "reference_node": "top_iXMIT__rn10_ena_bitCountH",
+      "definition_node": "top.iXMIT._rn10_ena_bitCountH_graphrename_305",
+      "parents": [
+        "Branch_graphrename_464"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn25_ena_bitCountH",
+      "reference_node": "top_iXMIT__rn25_ena_bitCountH",
+      "definition_node": "top.iXMIT._rn25_ena_bitCountH_graphrename_337",
+      "parents": [
+        "Branch_graphrename_464"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn14_load_shiftRegH",
+      "reference_node": "top_iXMIT__rn14_load_shiftRegH",
+      "definition_node": "top.iXMIT._rn14_load_shiftRegH_graphrename_313",
+      "parents": [
+        "Branch_graphrename_481"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn6_load_shiftRegH",
+      "reference_node": "top_iXMIT__rn6_load_shiftRegH",
+      "definition_node": "top.iXMIT._rn6_load_shiftRegH_graphrename_375",
+      "parents": [
+        "Branch_graphrename_481"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.load_shiftRegH",
+      "reference_node": "top_iXMIT_load_shiftRegH",
+      "definition_node": "top.iXMIT.load_shiftRegH_graphrename_473",
+      "parents": [
+        "Branch_graphrename_474",
+        "Branch_graphrename_482",
+        "Branch_graphrename_485",
+        "Branch_graphrename_488",
+        "Branch_graphrename_491",
+        "Branch_graphrename_636",
+        "Branch_graphrename_647",
+        "Branch_graphrename_655",
+        "Branch_graphrename_669",
+        "Branch_graphrename_682",
+        "Branch_graphrename_710",
+        "Branch_graphrename_726"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn13_next_state",
+      "reference_node": "top_iXMIT__rn13_next_state",
+      "definition_node": "top.iXMIT._rn13_next_state_graphrename_311",
+      "parents": [
+        "Branch_graphrename_502"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn15_next_state",
+      "reference_node": "top_iXMIT__rn15_next_state",
+      "definition_node": "top.iXMIT._rn15_next_state_graphrename_315",
+      "parents": [
+        "Branch_graphrename_502"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn19_next_state",
+      "reference_node": "top_iXMIT__rn19_next_state",
+      "definition_node": "top.iXMIT._rn19_next_state_graphrename_323",
+      "parents": [
+        "Branch_graphrename_506"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn20_next_state",
+      "reference_node": "top_iXMIT__rn20_next_state",
+      "definition_node": "top.iXMIT._rn20_next_state_graphrename_327",
+      "parents": [
+        "Branch_graphrename_506"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn23_next_state",
+      "reference_node": "top_iXMIT__rn23_next_state",
+      "definition_node": "top.iXMIT._rn23_next_state_graphrename_333",
+      "parents": [
+        "Branch_graphrename_515"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn24_next_state",
+      "reference_node": "top_iXMIT__rn24_next_state",
+      "definition_node": "top.iXMIT._rn24_next_state_graphrename_335",
+      "parents": [
+        "Branch_graphrename_515"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn26_next_state",
+      "reference_node": "top_iXMIT__rn26_next_state",
+      "definition_node": "top.iXMIT._rn26_next_state_graphrename_339",
+      "parents": [
+        "Branch_graphrename_512"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn29_next_state",
+      "reference_node": "top_iXMIT__rn29_next_state",
+      "definition_node": "top.iXMIT._rn29_next_state_graphrename_345",
+      "parents": [
+        "Branch_graphrename_518"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn32_next_state",
+      "reference_node": "top_iXMIT__rn32_next_state",
+      "definition_node": "top.iXMIT._rn32_next_state_graphrename_353",
+      "parents": [
+        "Branch_graphrename_524"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn34_next_state",
+      "reference_node": "top_iXMIT__rn34_next_state",
+      "definition_node": "top.iXMIT._rn34_next_state_graphrename_357",
+      "parents": [
+        "Branch_graphrename_524"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.next_state",
+      "reference_node": "top_iXMIT_next_state",
+      "definition_node": "top.iXMIT.next_state_graphrename_494",
+      "parents": [
+        "Branch_graphrename_495",
+        "Branch_graphrename_569"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn9_rst_bitCountH",
+      "reference_node": "top_iXMIT__rn9_rst_bitCountH",
+      "definition_node": "top.iXMIT._rn9_rst_bitCountH_graphrename_381",
+      "parents": [
+        "Branch_graphrename_535"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn16_rst_bitCountH",
+      "reference_node": "top_iXMIT__rn16_rst_bitCountH",
+      "definition_node": "top.iXMIT._rn16_rst_bitCountH_graphrename_317",
+      "parents": [
+        "Branch_graphrename_535"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.shiftEnaH",
+      "reference_node": "top_iXMIT_shiftEnaH",
+      "definition_node": "top.iXMIT.shiftEnaH_graphrename_548",
+      "parents": [
+        "Branch_graphrename_549",
+        "Branch_graphrename_553",
+        "Branch_graphrename_556",
+        "Branch_graphrename_559",
+        "Branch_graphrename_565",
+        "Branch_graphrename_640",
+        "Branch_graphrename_651",
+        "Branch_graphrename_673",
+        "Branch_graphrename_686",
+        "Branch_graphrename_691",
+        "Branch_graphrename_714",
+        "Branch_graphrename_730"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn30_shiftEnaH",
+      "reference_node": "top_iXMIT__rn30_shiftEnaH",
+      "definition_node": "top.iXMIT._rn30_shiftEnaH_graphrename_349",
+      "parents": [
+        "Branch_graphrename_562"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.xmitDataSelH",
+      "reference_node": "top_iXMIT_xmitDataSelH",
+      "definition_node": "top.iXMIT.xmitDataSelH_graphrename_735",
+      "parents": [
+        "Lor_graphrename_576",
+        "Eq_graphrename_578",
+        "Eq_graphrename_581",
+        "Eq_graphrename_584",
+        "Eq_graphrename_587",
+        "Branch_graphrename_736",
+        "Branch_graphrename_740"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn0_uart_xmitH",
+      "reference_node": "top_iXMIT__rn0_uart_xmitH",
+      "definition_node": "top.iXMIT._rn0_uart_xmitH_graphrename_303",
+      "parents": [
+        "Branch_graphrename_577"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn1_uart_xmitH",
+      "reference_node": "top_iXMIT__rn1_uart_xmitH",
+      "definition_node": "top.iXMIT._rn1_uart_xmitH_graphrename_325",
+      "parents": [
+        "Branch_graphrename_580"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn2_uart_xmitH",
+      "reference_node": "top_iXMIT__rn2_uart_xmitH",
+      "definition_node": "top.iXMIT._rn2_uart_xmitH_graphrename_347",
+      "parents": [
+        "Branch_graphrename_583"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn3_uart_xmitH",
+      "reference_node": "top_iXMIT__rn3_uart_xmitH",
+      "definition_node": "top.iXMIT._rn3_uart_xmitH_graphrename_365",
+      "parents": [
+        "Branch_graphrename_586"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.uart_xmitH",
+      "reference_node": "top_iXMIT_uart_xmitH",
+      "definition_node": "top.iXMIT.uart_xmitH_graphrename_574",
+      "parents": [
+        "Branch_graphrename_575",
+        "top.uart_XMIT_dataH_graphrename_765"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.xmit_doneInH",
+      "reference_node": "top_iXMIT_xmit_doneInH",
+      "definition_node": "top.iXMIT.xmit_doneInH_graphrename_594",
+      "parents": [
+        "Branch_graphrename_591",
+        "Branch_graphrename_595",
+        "Branch_graphrename_603",
+        "Branch_graphrename_606",
+        "Branch_graphrename_609",
+        "Branch_graphrename_615"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn12_xmit_doneInH",
+      "reference_node": "top_iXMIT__rn12_xmit_doneInH",
+      "definition_node": "top.iXMIT._rn12_xmit_doneInH_graphrename_309",
+      "parents": [
+        "Branch_graphrename_602"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn17_xmit_doneInH",
+      "reference_node": "top_iXMIT__rn17_xmit_doneInH",
+      "definition_node": "top.iXMIT._rn17_xmit_doneInH_graphrename_319",
+      "parents": [
+        "Branch_graphrename_602"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn33_xmit_doneInH",
+      "reference_node": "top_iXMIT__rn33_xmit_doneInH",
+      "definition_node": "top.iXMIT._rn33_xmit_doneInH_graphrename_355",
+      "parents": [
+        "Branch_graphrename_615"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.xmit_dataH",
+      "reference_node": "top_iXMIT_xmit_dataH",
+      "definition_node": "top.iXMIT.xmit_dataH_graphrename_589",
+      "parents": [
+        "PartSelect_graphrename_637",
+        "PartSelect_graphrename_648",
+        "PartSelect_graphrename_670",
+        "PartSelect_graphrename_683",
+        "PartSelect_graphrename_711",
+        "PartSelect_graphrename_727"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn18_xmitDataSelH",
+      "reference_node": "top_iXMIT__rn18_xmitDataSelH",
+      "definition_node": "top.iXMIT._rn18_xmitDataSelH_graphrename_321",
+      "parents": [
+        "Branch_graphrename_743"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn22_xmitDataSelH",
+      "reference_node": "top_iXMIT__rn22_xmitDataSelH",
+      "definition_node": "top.iXMIT._rn22_xmitDataSelH_graphrename_331",
+      "parents": [
+        "Branch_graphrename_746"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn28_xmitDataSelH",
+      "reference_node": "top_iXMIT__rn28_xmitDataSelH",
+      "definition_node": "top.iXMIT._rn28_xmitDataSelH_graphrename_343",
+      "parents": [
+        "Branch_graphrename_749"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT._rn31_xmitDataSelH",
+      "reference_node": "top_iXMIT__rn31_xmitDataSelH",
+      "definition_node": "top.iXMIT._rn31_xmitDataSelH_graphrename_351",
+      "parents": [
+        "Branch_graphrename_752"
+      ]
+    },
+    {
+      "symbol": "top._rn73_rec_dataH",
+      "reference_node": "top__rn73_rec_dataH",
+      "definition_node": "top._rn73_rec_dataH_graphrename_0",
+      "parents": [
+        "Branch_graphrename_757"
+      ]
+    },
+    {
+      "symbol": "top._rn74_rec_dataH",
+      "reference_node": "top__rn74_rec_dataH",
+      "definition_node": "top._rn74_rec_dataH_graphrename_2",
+      "parents": [
+        "Branch_graphrename_757"
+      ]
+    },
+    {
+      "symbol": "top.rec_dataH_rec",
+      "reference_node": "top_rec_dataH_rec",
+      "definition_node": "top.rec_dataH_rec_graphrename_759",
+      "parents": [
+        "Branch_graphrename_761"
+      ]
+    },
+    {
+      "symbol": "top.iRECEIVER.rec_readyH",
+      "reference_node": "top_iRECEIVER_rec_readyH",
+      "definition_node": "top.iRECEIVER.rec_readyH_graphrename_227",
+      "parents": [
+        "top.rec_readyH_graphrename_764"
+      ]
+    },
+    {
+      "symbol": "top.iXMIT.xmit_doneH",
+      "reference_node": "top_iXMIT_xmit_doneH",
+      "definition_node": "top.iXMIT.xmit_doneH_graphrename_590",
+      "parents": [
+        "top.xmit_doneH_graphrename_766"
+      ]
+    }
+  ],
+  "unbound_references": [
+    {
+      "symbol": "top.sys_clk",
+      "reference_node": "top_sys_clk",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.sys_rst_l",
+      "reference_node": "top_sys_rst_l",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.uart_REC_dataH",
+      "reference_node": "top_uart_REC_dataH",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.xmit_dataH",
+      "reference_node": "top_xmit_dataH",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.xmitH",
+      "reference_node": "top_xmitH",
+      "term_types": [
+        "Input"
+      ]
+    }
+  ],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

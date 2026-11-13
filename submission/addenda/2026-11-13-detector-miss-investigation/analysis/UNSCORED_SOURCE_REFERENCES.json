@@ -1,0 +1,95 @@
+{
+  "scope": "Literal occurrence inventory supporting the parser coverage failure, not a semantic proof or hardware edit",
+  "designs": [
+    {
+      "design_id": "design_001",
+      "source_sha256": "148858176f0c6e8196430225128d55455ec7bc5f454a05df136ce373c18aa3f3",
+      "literal_identifier_lines": [
+        {
+          "line": 244,
+          "text": "reg        c_in;             // Used with ALU data sources."
+        },
+        {
+          "line": 546,
+          "text": "                          + {1'b0,aluinp2_reg,c_in};"
+        },
+        {
+          "line": 549,
+          "text": "                          + {1'b0,aluinp2_reg[3:0],c_in};"
+        }
+      ]
+    },
+    {
+      "design_id": "design_010",
+      "source_sha256": "d5f832032c9b3643714f78527a0205797e453c3e85419cb0b87e8589ee6bf176",
+      "literal_identifier_lines": [
+        {
+          "line": 245,
+          "text": "reg        c_in;             // Used with ALU data sources."
+        },
+        {
+          "line": 559,
+          "text": "                          + {1'b0,aluinp2_reg,c_in};"
+        },
+        {
+          "line": 562,
+          "text": "                          + {1'b0,aluinp2_reg[3:0],c_in};"
+        }
+      ]
+    },
+    {
+      "design_id": "design_011",
+      "source_sha256": "dab512ffba46ad6db43b2cb51900ba023a3207c7b9e5d3536cc40e2ad5f5d9b8",
+      "literal_identifier_lines": [
+        {
+          "line": 245,
+          "text": "reg        c_in;             // Used with ALU data sources."
+        },
+        {
+          "line": 559,
+          "text": "                          + {1'b0,aluinp2_reg,c_in};"
+        },
+        {
+          "line": 562,
+          "text": "                          + {1'b0,aluinp2_reg[3:0],c_in};"
+        }
+      ]
+    },
+    {
+      "design_id": "design_012",
+      "source_sha256": "d311fb4216a368e43c50297bc58eef5c74520722cda57489eb8c129b6a7d8f4c",
+      "literal_identifier_lines": [
+        {
+          "line": 244,
+          "text": "reg        c_in;             // Used with ALU data sources."
+        },
+        {
+          "line": 558,
+          "text": "                          + {1'b0,aluinp2_reg,c_in};"
+        },
+        {
+          "line": 561,
+          "text": "                          + {1'b0,aluinp2_reg[3:0],c_in};"
+        }
+      ]
+    },
+    {
+      "design_id": "design_013",
+      "source_sha256": "1fff84cc0159290c7f5c257761b5f1b6598be2508ecf76a72c53b551954efc57",
+      "literal_identifier_lines": [
+        {
+          "line": 244,
+          "text": "reg        c_in;             // Used with ALU data sources."
+        },
+        {
+          "line": 558,
+          "text": "                          + {1'b0,aluinp2_reg,c_in};"
+        },
+        {
+          "line": 561,
+          "text": "                          + {1'b0,aluinp2_reg[3:0],c_in};"
+        }
+      ]
+    }
+  ]
+}

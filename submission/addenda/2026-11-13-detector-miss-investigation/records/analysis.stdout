@@ -1,0 +1,291 @@
+{
+  "dataset_total": 23,
+  "dataset_scored": 18,
+  "scored_positive": 10,
+  "scored_negative": 8,
+  "current_metrics": {
+    "HT1": {
+      "TP": 9,
+      "FN": 1,
+      "FP": 5,
+      "TN": 3,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "HT2": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 6,
+      "TN": 2,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "HT3": {
+      "TP": 1,
+      "FN": 9,
+      "FP": 3,
+      "TN": 5,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "HT4": {
+      "TP": 0,
+      "FN": 10,
+      "FP": 1,
+      "TN": 7,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "ensemble": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 6,
+      "TN": 2,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    }
+  },
+  "csaw_diagnostics": {
+    "HT1": {
+      "clean_prediction": 0,
+      "modified_prediction": 0,
+      "clean_class1_score": 0.009021414443850517,
+      "modified_class1_score": 0.08855298161506653,
+      "logits_identical": false,
+      "stage_comparison": {
+        "conv_1_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "conv_2_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "after_pool": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 1273343,
+          "modified_nonzero": 1283216
+        },
+        "readout": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 171,
+          "modified_nonzero": 181
+        },
+        "logits": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 2,
+          "modified_nonzero": 2
+        }
+      },
+      "clean_logits_equal_output_bias": false,
+      "modified_logits_equal_output_bias": false
+    },
+    "HT2": {
+      "clean_prediction": 0,
+      "modified_prediction": 1,
+      "clean_class1_score": 0.43025586009025574,
+      "modified_class1_score": 0.7473418712615967,
+      "logits_identical": false,
+      "stage_comparison": {
+        "conv_1_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "conv_2_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "after_pool": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 902285,
+          "modified_nonzero": 911120
+        },
+        "readout": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 157,
+          "modified_nonzero": 157
+        },
+        "logits": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 2,
+          "modified_nonzero": 2
+        }
+      },
+      "clean_logits_equal_output_bias": false,
+      "modified_logits_equal_output_bias": false
+    },
+    "HT3": {
+      "clean_prediction": 0,
+      "modified_prediction": 0,
+      "clean_class1_score": 0.16328798234462738,
+      "modified_class1_score": 0.16328798234462738,
+      "logits_identical": true,
+      "stage_comparison": {
+        "conv_1_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "conv_2_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "after_pool": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 904505,
+          "modified_nonzero": 910245
+        },
+        "readout": {
+          "shape_equal": true,
+          "bytes_equal": true,
+          "clean_nonzero": 36,
+          "modified_nonzero": 36
+        },
+        "logits": {
+          "shape_equal": true,
+          "bytes_equal": true,
+          "clean_nonzero": 2,
+          "modified_nonzero": 2
+        }
+      },
+      "clean_logits_equal_output_bias": false,
+      "modified_logits_equal_output_bias": false
+    },
+    "HT4": {
+      "clean_prediction": 1,
+      "modified_prediction": 1,
+      "clean_class1_score": 0.9258360862731934,
+      "modified_class1_score": 0.9567672610282898,
+      "logits_identical": false,
+      "stage_comparison": {
+        "conv_1_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "conv_2_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "after_pool": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 1464367,
+          "modified_nonzero": 1477268
+        },
+        "readout": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 181,
+          "modified_nonzero": 184
+        },
+        "logits": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 2,
+          "modified_nonzero": 2
+        }
+      },
+      "clean_logits_equal_output_bias": false,
+      "modified_logits_equal_output_bias": false
+    }
+  },
+  "unscored": [
+    {
+      "design_id": "design_001",
+      "design": "PIC16F84",
+      "supplied_truth": 0,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    },
+    {
+      "design_id": "design_010",
+      "design": "PIC16F84-T100",
+      "supplied_truth": 1,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    },
+    {
+      "design_id": "design_011",
+      "design": "PIC16F84-T200",
+      "supplied_truth": 1,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    },
+    {
+      "design_id": "design_012",
+      "design": "PIC16F84-T300",
+      "supplied_truth": 1,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    },
+    {
+      "design_id": "design_013",
+      "design": "PIC16F84-T400",
+      "supplied_truth": 1,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    }
+  ]
+}

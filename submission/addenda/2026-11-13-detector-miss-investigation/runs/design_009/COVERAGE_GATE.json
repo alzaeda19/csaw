@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "route": "repaired_exact_DFG_no_fallback",
+  "source_sha256": "36c7f5936921bcba39140e4bfbde2a444cf06933e8405eecd2dd6b38727c3fad",
+  "nodes": 1567,
+  "edges": 2170,
+  "weak_components": 4,
+  "joined_references": 231,
+  "output_dependency_counts": {
+    "top.o_key_ok": 28,
+    "top.o_dout": 1537,
+    "top.o_dout_en": 20,
+    "top.u_keyex.o_exkey_a": 107,
+    "top.u_keyex.o_exkey_b": 76,
+    "top.u_keyex.o_key_ok": 27,
+    "top.u_dpc.o_dout": 1536,
+    "top.u_dpc.o_dout_en": 19
+  },
+  "unresolved_bound_references": 0,
+  "unbound_noninput_references": 0,
+  "graph_edges_preserved_in_model_input": true,
+  "seconds": 0.7738298331387341
+}

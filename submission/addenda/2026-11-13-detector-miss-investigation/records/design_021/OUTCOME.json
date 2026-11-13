@@ -1,0 +1,388 @@
+{
+  "design_id": "design_021",
+  "status": "scored",
+  "input_sha256": "09ac6f1168e6d17dde609b84f4769a88aeb450182bbdfd77ad7f36836d8428f3",
+  "source_or_saved_tensor_sha256": "7af9017af582200bcbbed5afa9da9b66f474cab0f22693883d6c63afe74a162e",
+  "gate": {
+    "status": "PASS",
+    "route": "repaired_exact_DFG_no_fallback",
+    "source_sha256": "7af9017af582200bcbbed5afa9da9b66f474cab0f22693883d6c63afe74a162e",
+    "nodes": 772,
+    "edges": 1075,
+    "weak_components": 6,
+    "joined_references": 108,
+    "output_dependency_counts": {
+      "top.uart_XMIT_dataH": 415,
+      "top.xmit_doneH": 227,
+      "top.rec_dataH": 193,
+      "top.rec_readyH": 296,
+      "top.iXMIT.uart_xmitH": 414,
+      "top.iXMIT.xmit_doneH": 226,
+      "top.iRECEIVER.rec_dataH": 182,
+      "top.iRECEIVER.rec_readyH": 295
+    },
+    "unresolved_bound_references": 0,
+    "unbound_noninput_references": 0,
+    "graph_edges_preserved_in_model_input": true,
+    "seconds": 0.5695922919549048
+  },
+  "scores": {
+    "HT1": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_trojan": 0.023040685802698135,
+      "prob_clean": 0.9769592881202698,
+      "logits": [
+        1.9354970455169678,
+        -1.8116861581802368
+      ],
+      "log_probabilities": [
+        -0.02331031858921051,
+        -3.770493745803833
+      ],
+      "stages": {
+        "conv_1_before_relu": {
+          "shape": [
+            772,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "4b5b3b825688f5d2c6928e93c8afed01707620cf14fbb35e5dd025de7e6f96b9",
+          "nonzero": 154400,
+          "elements": 154400,
+          "min": -1.540353536605835,
+          "max": 1.7868962287902832,
+          "mean": -0.03172912448644638,
+          "l2_norm": 43.67869186401367
+        },
+        "conv_2_before_relu": {
+          "shape": [
+            772,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "bc89e14ae91ea32d671ca095bc8d2c23c8a9053fb15e0f2a89d4ddc3ff1d8abd",
+          "nonzero": 154400,
+          "elements": 154400,
+          "min": -1.8299481868743896,
+          "max": 0.583465576171875,
+          "mean": 0.009531923569738865,
+          "l2_norm": 51.6675910949707
+        },
+        "after_pool": {
+          "shape": [
+            618,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "b1c7766e1fe416cfc82273a1db1ccbc07fa5fc294ab5260323924efb98d05de3",
+          "nonzero": 59251,
+          "elements": 123600,
+          "min": 0.0,
+          "max": 0.5834654569625854,
+          "mean": 0.02407604642212391,
+          "l2_norm": 18.711448669433594
+        },
+        "readout": {
+          "shape": [
+            1,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "50baa1bcb95da38c3f0c7d9e971ebfad8db5491097a7ac66727117809728b8fc",
+          "nonzero": 179,
+          "elements": 200,
+          "min": 0.0,
+          "max": 0.5834654569625854,
+          "mean": 0.1590120941400528,
+          "l2_norm": 2.9874155521392822
+        },
+        "logits": {
+          "shape": [
+            1,
+            2
+          ],
+          "dtype": "torch.float32",
+          "sha256": "f8b22b14c854a5423d698657a3d5607d5ad9554a18546a2dbf47b0c6d5951ff2",
+          "nonzero": 2,
+          "elements": 2,
+          "min": -1.8116861581802368,
+          "max": 1.9354970455169678,
+          "mean": 0.06190544366836548,
+          "l2_norm": 2.651104688644409
+        }
+      },
+      "logits_equal_output_bias": false
+    },
+    "HT2": {
+      "prediction": 1,
+      "label": "TROJAN",
+      "prob_trojan": 0.5593760013580322,
+      "prob_clean": 0.4406239986419678,
+      "logits": [
+        -0.23959356546401978,
+        -0.0009635686874389648
+      ],
+      "log_probabilities": [
+        -0.8195633888244629,
+        -0.5809333920478821
+      ],
+      "stages": {
+        "conv_1_before_relu": {
+          "shape": [
+            772,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "b678f4c41dd2f965491754f52e902f77f1f14e492936eec75354ef3ea6db822a",
+          "nonzero": 154400,
+          "elements": 154400,
+          "min": -0.7373902201652527,
+          "max": 1.4764859676361084,
+          "mean": 0.010166012682020664,
+          "l2_norm": 34.842140197753906
+        },
+        "conv_2_before_relu": {
+          "shape": [
+            772,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "1f6e1754921c8b39df65c89770b60cdb69887dace0e07197096a2d2c4b1f0a23",
+          "nonzero": 154400,
+          "elements": 154400,
+          "min": -1.5742591619491577,
+          "max": 2.9096364974975586,
+          "mean": 0.013169636018574238,
+          "l2_norm": 60.63236618041992
+        },
+        "after_pool": {
+          "shape": [
+            618,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "7a9b2924898ba7a718b27cd4865cef7ebc5030ef8436f380deb91b235a794d60",
+          "nonzero": 48393,
+          "elements": 123600,
+          "min": -0.6349581480026245,
+          "max": 0.3476210832595825,
+          "mean": -0.014770077541470528,
+          "l2_norm": 23.048864364624023
+        },
+        "readout": {
+          "shape": [
+            1,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "f49859a94a63d9a54975eeaba50bffd0051c65e89fcab790d6812326ee66862e",
+          "nonzero": 157,
+          "elements": 200,
+          "min": 0.0,
+          "max": 0.3476210832595825,
+          "mean": 0.13032065331935883,
+          "l2_norm": 2.284552812576294
+        },
+        "logits": {
+          "shape": [
+            1,
+            2
+          ],
+          "dtype": "torch.float32",
+          "sha256": "24375503f4a9e8c8fb0c6ec9f2bb06a810f776129dfbfa3c4fb993fc673ba5cf",
+          "nonzero": 2,
+          "elements": 2,
+          "min": -0.23959356546401978,
+          "max": -0.0009635686874389648,
+          "mean": -0.12027856707572937,
+          "l2_norm": 0.23959550261497498
+        }
+      },
+      "logits_equal_output_bias": false
+    },
+    "HT3": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_trojan": 0.21266517043113708,
+      "prob_clean": 0.7873347997665405,
+      "logits": [
+        0.6120449304580688,
+        -0.6968896389007568
+      ],
+      "log_probabilities": [
+        -0.23910173773765564,
+        -1.5480363368988037
+      ],
+      "stages": {
+        "conv_1_before_relu": {
+          "shape": [
+            772,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "121b9e283d4dcd7021d02bcb3c641cead05b117b314e254cf6e66e9ff289e1c2",
+          "nonzero": 154400,
+          "elements": 154400,
+          "min": -1.3103214502334595,
+          "max": 0.855033278465271,
+          "mean": -0.007196118589490652,
+          "l2_norm": 35.741905212402344
+        },
+        "conv_2_before_relu": {
+          "shape": [
+            772,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "497be136bcfeca98b766d58546dbbea1965ae1b1406ea769631eccfda3bfe5ed",
+          "nonzero": 154400,
+          "elements": 154400,
+          "min": -1.3640058040618896,
+          "max": 3.8289942741394043,
+          "mean": 0.028699403628706932,
+          "l2_norm": 69.26168823242188
+        },
+        "after_pool": {
+          "shape": [
+            618,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "df309cb180a291d599bcc3f7b03aa8a0a8ae8b65678e25164bc1e0a17e0f743f",
+          "nonzero": 47753,
+          "elements": 123600,
+          "min": -1.2632731199264526,
+          "max": 0.35797014832496643,
+          "mean": -0.02033509686589241,
+          "l2_norm": 34.357208251953125
+        },
+        "readout": {
+          "shape": [
+            1,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "9af346fab8e8f917cf34248c3c5abe4ba3690b931d09b3179d8f70f679220f4f",
+          "nonzero": 129,
+          "elements": 200,
+          "min": 0.0,
+          "max": 0.35797014832496643,
+          "mean": 0.06896217167377472,
+          "l2_norm": 1.4130924940109253
+        },
+        "logits": {
+          "shape": [
+            1,
+            2
+          ],
+          "dtype": "torch.float32",
+          "sha256": "8998b08f4fee9c76f61def13aa2aad44aa917c19306a2cf62cec9e61ef6b71ba",
+          "nonzero": 2,
+          "elements": 2,
+          "min": -0.6968896389007568,
+          "max": 0.6120449304580688,
+          "mean": -0.042422354221343994,
+          "l2_norm": 0.9274988770484924
+        }
+      },
+      "logits_equal_output_bias": false
+    },
+    "HT4": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_trojan": 0.1398157775402069,
+      "prob_clean": 0.8601842522621155,
+      "logits": [
+        0.909938395023346,
+        -0.9068825840950012
+      ],
+      "log_probabilities": [
+        -0.15060867369174957,
+        -1.9674296379089355
+      ],
+      "stages": {
+        "conv_1_before_relu": {
+          "shape": [
+            772,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "fc5510a06bc73c6b478d9ec538a1762f5c14a407673825c55ffb499b4ac70cc1",
+          "nonzero": 154400,
+          "elements": 154400,
+          "min": -0.9654360413551331,
+          "max": 1.260331630706787,
+          "mean": -0.011266673915088177,
+          "l2_norm": 37.378631591796875
+        },
+        "conv_2_before_relu": {
+          "shape": [
+            772,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "6b3cf32dd09ecfb41f98deaf7dbd14985e350d0d118047071574225acd8b9a02",
+          "nonzero": 154400,
+          "elements": 154400,
+          "min": -1.4718852043151855,
+          "max": 2.113811492919922,
+          "mean": 0.00501564284786582,
+          "l2_norm": 84.85712432861328
+        },
+        "after_pool": {
+          "shape": [
+            618,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "9db649dee71618697af491993b175984131385b4b3c076c8a3d1094a7bc794fe",
+          "nonzero": 55124,
+          "elements": 123600,
+          "min": -0.6577081084251404,
+          "max": 0.22297590970993042,
+          "mean": -0.034922752529382706,
+          "l2_norm": 31.541637420654297
+        },
+        "readout": {
+          "shape": [
+            1,
+            200
+          ],
+          "dtype": "torch.float32",
+          "sha256": "7d688c714e29dcdfc095cfb9d3d2bb9b479eae2d96caa13fd4689404c1927174",
+          "nonzero": 180,
+          "elements": 200,
+          "min": 0.0,
+          "max": 0.22297590970993042,
+          "mean": 0.06533485651016235,
+          "l2_norm": 1.1198475360870361
+        },
+        "logits": {
+          "shape": [
+            1,
+            2
+          ],
+          "dtype": "torch.float32",
+          "sha256": "3eb65efd6b97a6074ea67067fba08cf4f8300100875e74fd47d7499bfea288e2",
+          "nonzero": 2,
+          "elements": 2,
+          "min": -0.9068825840950012,
+          "max": 0.909938395023346,
+          "mean": 0.0015279054641723633,
+          "l2_norm": 1.2846882343292236
+        }
+      },
+      "logits_equal_output_bias": false
+    }
+  },
+  "ensemble": {
+    "prediction": 1,
+    "triggered_models": [
+      "HT2"
+    ]
+  },
+  "truth_label_read_by_worker": false,
+  "model_training": false,
+  "prior_logits_exactly_reproduced": null
+}

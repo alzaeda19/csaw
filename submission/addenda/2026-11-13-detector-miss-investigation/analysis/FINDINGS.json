@@ -1,0 +1,547 @@
+{
+  "frozen_inputs_and_scripts_unchanged": true,
+  "model_identities_identical_all_scored_runs": true,
+  "csaw_pair_input_hashes_different": true,
+  "all_8_csaw_logits_exactly_reproduced": true,
+  "csaw_diagnostics": {
+    "HT1": {
+      "clean_prediction": 0,
+      "modified_prediction": 0,
+      "clean_class1_score": 0.009021414443850517,
+      "modified_class1_score": 0.08855298161506653,
+      "logits_identical": false,
+      "stage_comparison": {
+        "conv_1_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "conv_2_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "after_pool": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 1273343,
+          "modified_nonzero": 1283216
+        },
+        "readout": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 171,
+          "modified_nonzero": 181
+        },
+        "logits": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 2,
+          "modified_nonzero": 2
+        }
+      },
+      "clean_logits_equal_output_bias": false,
+      "modified_logits_equal_output_bias": false
+    },
+    "HT2": {
+      "clean_prediction": 0,
+      "modified_prediction": 1,
+      "clean_class1_score": 0.43025586009025574,
+      "modified_class1_score": 0.7473418712615967,
+      "logits_identical": false,
+      "stage_comparison": {
+        "conv_1_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "conv_2_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "after_pool": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 902285,
+          "modified_nonzero": 911120
+        },
+        "readout": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 157,
+          "modified_nonzero": 157
+        },
+        "logits": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 2,
+          "modified_nonzero": 2
+        }
+      },
+      "clean_logits_equal_output_bias": false,
+      "modified_logits_equal_output_bias": false
+    },
+    "HT3": {
+      "clean_prediction": 0,
+      "modified_prediction": 0,
+      "clean_class1_score": 0.16328798234462738,
+      "modified_class1_score": 0.16328798234462738,
+      "logits_identical": true,
+      "stage_comparison": {
+        "conv_1_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "conv_2_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "after_pool": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 904505,
+          "modified_nonzero": 910245
+        },
+        "readout": {
+          "shape_equal": true,
+          "bytes_equal": true,
+          "clean_nonzero": 36,
+          "modified_nonzero": 36
+        },
+        "logits": {
+          "shape_equal": true,
+          "bytes_equal": true,
+          "clean_nonzero": 2,
+          "modified_nonzero": 2
+        }
+      },
+      "clean_logits_equal_output_bias": false,
+      "modified_logits_equal_output_bias": false
+    },
+    "HT4": {
+      "clean_prediction": 1,
+      "modified_prediction": 1,
+      "clean_class1_score": 0.9258360862731934,
+      "modified_class1_score": 0.9567672610282898,
+      "logits_identical": false,
+      "stage_comparison": {
+        "conv_1_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "conv_2_before_relu": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 2823800,
+          "modified_nonzero": 2849800
+        },
+        "after_pool": {
+          "shape_equal": false,
+          "bytes_equal": false,
+          "clean_nonzero": 1464367,
+          "modified_nonzero": 1477268
+        },
+        "readout": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 181,
+          "modified_nonzero": 184
+        },
+        "logits": {
+          "shape_equal": true,
+          "bytes_equal": false,
+          "clean_nonzero": 2,
+          "modified_nonzero": 2
+        }
+      },
+      "clean_logits_equal_output_bias": false,
+      "modified_logits_equal_output_bias": false
+    }
+  },
+  "dataset_total": 23,
+  "dataset_scored": 18,
+  "scored_positive": 10,
+  "scored_negative": 8,
+  "current_metrics": {
+    "HT1": {
+      "TP": 9,
+      "FN": 1,
+      "FP": 5,
+      "TN": 3,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "HT2": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 6,
+      "TN": 2,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "HT3": {
+      "TP": 1,
+      "FN": 9,
+      "FP": 3,
+      "TN": 5,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "HT4": {
+      "TP": 0,
+      "FN": 10,
+      "FP": 1,
+      "TN": 7,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "ensemble": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 6,
+      "TN": 2,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    }
+  },
+  "per_model_details": {
+    "HT1": {
+      "missed_infected_designs": [
+        "RS232-T800"
+      ],
+      "falsely_flagged_clean_designs": [
+        "RC5",
+        "RC6",
+        "RS232",
+        "spi_master",
+        "xtea"
+      ],
+      "distinct_logit_vectors_on_scored_examples": 17,
+      "readout_all_zero_count": 0
+    },
+    "HT2": {
+      "missed_infected_designs": [],
+      "falsely_flagged_clean_designs": [
+        "RC5",
+        "RC6",
+        "RS232",
+        "spi_master",
+        "vga",
+        "xtea"
+      ],
+      "distinct_logit_vectors_on_scored_examples": 16,
+      "readout_all_zero_count": 0
+    },
+    "HT3": {
+      "missed_infected_designs": [
+        "RS232-T100",
+        "RS232-T200",
+        "RS232-T300",
+        "RS232-T400",
+        "RS232-T600",
+        "RS232-T700",
+        "RS232-T800",
+        "RS232-T900",
+        "RS232-T901"
+      ],
+      "falsely_flagged_clean_designs": [
+        "RC5",
+        "RC6",
+        "spi_master"
+      ],
+      "distinct_logit_vectors_on_scored_examples": 15,
+      "readout_all_zero_count": 0
+    },
+    "HT4": {
+      "missed_infected_designs": [
+        "RS232-T100",
+        "RS232-T200",
+        "RS232-T300",
+        "RS232-T400",
+        "RS232-T500",
+        "RS232-T600",
+        "RS232-T700",
+        "RS232-T800",
+        "RS232-T900",
+        "RS232-T901"
+      ],
+      "falsely_flagged_clean_designs": [
+        "xtea"
+      ],
+      "distinct_logit_vectors_on_scored_examples": 15,
+      "readout_all_zero_count": 0
+    }
+  },
+  "prior_comparison_same_subset": {
+    "HT1": {
+      "prior_counts_on_same_scored_subset": {
+        "TP": 5,
+        "FN": 5,
+        "FP": 4,
+        "TN": 4
+      },
+      "current_counts": {
+        "TP": 9,
+        "FN": 1,
+        "FP": 5,
+        "TN": 3,
+        "unscored_positive": 4,
+        "unscored_negative": 1
+      },
+      "prediction_changes": [
+        {
+          "design_id": "design_009",
+          "design": "xtea",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_019",
+          "design": "RS232-T600",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_020",
+          "design": "RS232-T700",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_022",
+          "design": "RS232-T900",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_023",
+          "design": "RS232-T901",
+          "old": 0,
+          "new": 1
+        }
+      ]
+    },
+    "HT2": {
+      "prior_counts_on_same_scored_subset": {
+        "TP": 2,
+        "FN": 8,
+        "FP": 5,
+        "TN": 3
+      },
+      "current_counts": {
+        "TP": 10,
+        "FN": 0,
+        "FP": 6,
+        "TN": 2,
+        "unscored_positive": 4,
+        "unscored_negative": 1
+      },
+      "prediction_changes": [
+        {
+          "design_id": "design_009",
+          "design": "xtea",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_014",
+          "design": "RS232-T100",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_015",
+          "design": "RS232-T200",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_017",
+          "design": "RS232-T400",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_019",
+          "design": "RS232-T600",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_020",
+          "design": "RS232-T700",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_021",
+          "design": "RS232-T800",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_022",
+          "design": "RS232-T900",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_023",
+          "design": "RS232-T901",
+          "old": 0,
+          "new": 1
+        }
+      ]
+    },
+    "HT3": {
+      "prior_counts_on_same_scored_subset": {
+        "TP": 0,
+        "FN": 10,
+        "FP": 1,
+        "TN": 7
+      },
+      "current_counts": {
+        "TP": 1,
+        "FN": 9,
+        "FP": 3,
+        "TN": 5,
+        "unscored_positive": 4,
+        "unscored_negative": 1
+      },
+      "prediction_changes": [
+        {
+          "design_id": "design_002",
+          "design": "RC5",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_003",
+          "design": "RC6",
+          "old": 0,
+          "new": 1
+        },
+        {
+          "design_id": "design_018",
+          "design": "RS232-T500",
+          "old": 0,
+          "new": 1
+        }
+      ]
+    },
+    "HT4": {
+      "prior_counts_on_same_scored_subset": {
+        "TP": 0,
+        "FN": 10,
+        "FP": 1,
+        "TN": 7
+      },
+      "current_counts": {
+        "TP": 0,
+        "FN": 10,
+        "FP": 1,
+        "TN": 7,
+        "unscored_positive": 4,
+        "unscored_negative": 1
+      },
+      "prediction_changes": []
+    }
+  },
+  "unscored": [
+    {
+      "design_id": "design_001",
+      "design": "PIC16F84",
+      "supplied_truth": 0,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    },
+    {
+      "design_id": "design_010",
+      "design": "PIC16F84-T100",
+      "supplied_truth": 1,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    },
+    {
+      "design_id": "design_011",
+      "design": "PIC16F84-T200",
+      "supplied_truth": 1,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    },
+    {
+      "design_id": "design_012",
+      "design": "PIC16F84-T300",
+      "supplied_truth": 1,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    },
+    {
+      "design_id": "design_013",
+      "design": "PIC16F84-T400",
+      "supplied_truth": 1,
+      "error": "unexpected unbound non-input references",
+      "unbound_noninput_references": [
+        {
+          "symbol": "top.c_in",
+          "reference_node": "top_c_in",
+          "term_types": [
+            "Reg"
+          ]
+        }
+      ]
+    }
+  ],
+  "successful_model_classifications": 80,
+  "new_inference_performed_by_analysis": false,
+  "limits": [
+    "Supplied directory labels, not independently simulated behavior",
+    "Unknown checkpoint training overlap; not held-out accuracy",
+    "Repeated circuit families",
+    "Dependency abstraction only; no full temporal/physical proof",
+    "No hardware/model/threshold changes or training"
+  ]
+}

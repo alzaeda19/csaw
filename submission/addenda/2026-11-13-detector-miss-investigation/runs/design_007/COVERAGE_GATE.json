@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "route": "repaired_exact_DFG_no_fallback",
+  "source_sha256": "f44fac9ff5f8731ea2d9a6651bb861970418b93896eb3392a0b67b2c17abfc33",
+  "nodes": 30,
+  "edges": 32,
+  "weak_components": 5,
+  "joined_references": 4,
+  "output_dependency_counts": {
+    "top.dataOut": 22
+  },
+  "unresolved_bound_references": 0,
+  "unbound_noninput_references": 0,
+  "graph_edges_preserved_in_model_input": true,
+  "seconds": 0.44479454192332923
+}

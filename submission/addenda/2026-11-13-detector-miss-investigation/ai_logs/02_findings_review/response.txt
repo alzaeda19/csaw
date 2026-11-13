@@ -1,0 +1,35 @@
+**Final Review Summary:**
+
+**1. Observed Misses:**
+- **HT1** missed one infected design: `RS232-T800` (FN = 1).
+- **HT3** missed 9 infected designs: `RS232-T100`, `RS232-T200`, ..., `RS232-T901` (FN = 9).
+- **HT4** missed 10 infected designs: `RS232-T100`, `RS232-T200`, ..., `RS232-T901` (FN = 10).
+
+**2. False Alarms:**
+- **HT1** falsely flagged 5 clean designs: `RC5`, `RC6`, `RS232`, `spi_master`, `xtea` (FP = 5).
+- **HT2** falsely flagged 6 clean designs: `RC5`, `RC6`, `RS232`, `spi_master`, `vga`, `xtea` (FP = 6).
+- **HT3** falsely flagged 3 clean designs: `RC5`, `RC6`, `spi_master` (FP = 3).
+- **HT4** falsely flagged 1 clean design: `xtea` (FP = 1).
+
+**3. Detections:**
+- **HT2** detected all 10 infected designs (TP = 10).
+- **HT1** detected 9 of 10 infected designs (TP = 9).
+- **HT3** detected 1 of 10 infected designs (TP = 1).
+- **HT4** detected 0 of 10 infected designs (TP = 0).
+
+**4. Abstentions:**
+- 5 designs were unscored due to unbound references (`PIC16-family` designs), likely due to incomplete or malformed input.
+
+**5. Unknowns:**
+- **Labeling and Training Context:** Ground-truth labels are not passed to inference, and training metadata/overlap is unknown. This limits interpretation of label-based decisions.
+- **Model Behavior:** HT3 and HT4 produce identical logit vectors for some inputs despite differing internal tensors, suggesting potential for equal-summary mechanisms, but no evidence of stealth or hardware-specific features.
+- **Input Representation:** The input representation (e.g., graph tensors) is fixed, and no feature normalization or model changes occurred, so representation limitations may affect detection.
+- **Training Influence:** No evidence is provided to link training data or label distribution to the observed detection patterns.
+
+**6. Verification Checks:**
+- All 8 CSAW logits were reproduced exactly, confirming no changes to the model or extractor.
+- HT3’s identical readout and logits across examples suggest it is not globally stuck, but its low detection rate remains unexplained.
+- HT1 and HT4 have identical class 1 scores for the same input pair, despite differing numeric scores, indicating possible label misalignment or training bias.
+
+**Conclusion:**
+HT2 shows the best performance with no false negatives, but HT1, HT3, and HT4 have significant misses. The dataset is not unbiased, and the presence of unbound references in some inputs suggests incomplete or malformed data. No hardware or model changes occurred, and the results reflect the current state of the detectors without calibration or threshold adjustments. Further analysis would require independent training data, held-out testing, and full temporal/physical verification.

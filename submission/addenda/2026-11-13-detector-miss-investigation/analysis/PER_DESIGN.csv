@@ -1,0 +1,93 @@
+design_id,design,supplied_truth,status,model,prediction,prob_trojan,error
+design_001,PIC16F84,0,unscored,HT1,,,unexpected unbound non-input references
+design_001,PIC16F84,0,unscored,HT2,,,unexpected unbound non-input references
+design_001,PIC16F84,0,unscored,HT3,,,unexpected unbound non-input references
+design_001,PIC16F84,0,unscored,HT4,,,unexpected unbound non-input references
+design_002,RC5,0,scored,HT1,1,0.9297987222671509,
+design_002,RC5,0,scored,HT2,1,0.662350594997406,
+design_002,RC5,0,scored,HT3,1,0.9223121404647827,
+design_002,RC5,0,scored,HT4,0,0.04931270703673363,
+design_003,RC6,0,scored,HT1,1,0.9340589642524719,
+design_003,RC6,0,scored,HT2,1,0.6650208830833435,
+design_003,RC6,0,scored,HT3,1,0.9223121404647827,
+design_003,RC6,0,scored,HT4,0,0.04902050644159317,
+design_004,RS232,0,scored,HT1,1,0.8659788370132446,
+design_004,RS232,0,scored,HT2,1,0.6961312294006348,
+design_004,RS232,0,scored,HT3,0,0.4784625470638275,
+design_004,RS232,0,scored,HT4,0,0.2573135793209076,
+design_005,det_1011,0,scored,HT1,0,0.05467619746923447,
+design_005,det_1011,0,scored,HT2,0,0.05719960853457451,
+design_005,det_1011,0,scored,HT3,0,0.18047034740447998,
+design_005,det_1011,0,scored,HT4,0,0.0276789553463459,
+design_006,spi_master,0,scored,HT1,1,0.5818660259246826,
+design_006,spi_master,0,scored,HT2,1,0.8176802396774292,
+design_006,spi_master,0,scored,HT3,1,0.6739711165428162,
+design_006,spi_master,0,scored,HT4,0,0.1461903303861618,
+design_007,syncRAM,0,scored,HT1,0,0.025787392631173134,
+design_007,syncRAM,0,scored,HT2,0,0.32453352212905884,
+design_007,syncRAM,0,scored,HT3,0,0.2812676429748535,
+design_007,syncRAM,0,scored,HT4,0,0.0019654524512588978,
+design_008,vga,0,scored,HT1,0,0.47710752487182617,
+design_008,vga,0,scored,HT2,1,0.9323104619979858,
+design_008,vga,0,scored,HT3,0,0.37688514590263367,
+design_008,vga,0,scored,HT4,0,0.04652398079633713,
+design_009,xtea,0,scored,HT1,1,0.8181679248809814,
+design_009,xtea,0,scored,HT2,1,0.521676778793335,
+design_009,xtea,0,scored,HT3,0,0.4269770681858063,
+design_009,xtea,0,scored,HT4,1,0.5337885022163391,
+design_010,PIC16F84-T100,1,unscored,HT1,,,unexpected unbound non-input references
+design_010,PIC16F84-T100,1,unscored,HT2,,,unexpected unbound non-input references
+design_010,PIC16F84-T100,1,unscored,HT3,,,unexpected unbound non-input references
+design_010,PIC16F84-T100,1,unscored,HT4,,,unexpected unbound non-input references
+design_011,PIC16F84-T200,1,unscored,HT1,,,unexpected unbound non-input references
+design_011,PIC16F84-T200,1,unscored,HT2,,,unexpected unbound non-input references
+design_011,PIC16F84-T200,1,unscored,HT3,,,unexpected unbound non-input references
+design_011,PIC16F84-T200,1,unscored,HT4,,,unexpected unbound non-input references
+design_012,PIC16F84-T300,1,unscored,HT1,,,unexpected unbound non-input references
+design_012,PIC16F84-T300,1,unscored,HT2,,,unexpected unbound non-input references
+design_012,PIC16F84-T300,1,unscored,HT3,,,unexpected unbound non-input references
+design_012,PIC16F84-T300,1,unscored,HT4,,,unexpected unbound non-input references
+design_013,PIC16F84-T400,1,unscored,HT1,,,unexpected unbound non-input references
+design_013,PIC16F84-T400,1,unscored,HT2,,,unexpected unbound non-input references
+design_013,PIC16F84-T400,1,unscored,HT3,,,unexpected unbound non-input references
+design_013,PIC16F84-T400,1,unscored,HT4,,,unexpected unbound non-input references
+design_014,RS232-T100,1,scored,HT1,1,0.7769432663917542,
+design_014,RS232-T100,1,scored,HT2,1,0.6456218957901001,
+design_014,RS232-T100,1,scored,HT3,0,0.1875883936882019,
+design_014,RS232-T100,1,scored,HT4,0,0.2586907744407654,
+design_015,RS232-T200,1,scored,HT1,1,0.7426687479019165,
+design_015,RS232-T200,1,scored,HT2,1,0.6961766481399536,
+design_015,RS232-T200,1,scored,HT3,0,0.2323128581047058,
+design_015,RS232-T200,1,scored,HT4,0,0.1141115054488182,
+design_016,RS232-T300,1,scored,HT1,1,0.9126297831535339,
+design_016,RS232-T300,1,scored,HT2,1,0.6959309577941895,
+design_016,RS232-T300,1,scored,HT3,0,0.33488911390304565,
+design_016,RS232-T300,1,scored,HT4,0,0.3255857527256012,
+design_017,RS232-T400,1,scored,HT1,1,0.9012821316719055,
+design_017,RS232-T400,1,scored,HT2,1,0.6959490776062012,
+design_017,RS232-T400,1,scored,HT3,0,0.33488911390304565,
+design_017,RS232-T400,1,scored,HT4,0,0.331552654504776,
+design_018,RS232-T500,1,scored,HT1,1,0.9104359149932861,
+design_018,RS232-T500,1,scored,HT2,1,0.6959309577941895,
+design_018,RS232-T500,1,scored,HT3,1,0.7131034135818481,
+design_018,RS232-T500,1,scored,HT4,0,0.33451974391937256,
+design_019,RS232-T600,1,scored,HT1,1,0.7939066886901855,
+design_019,RS232-T600,1,scored,HT2,1,0.5817763805389404,
+design_019,RS232-T600,1,scored,HT3,0,0.37815654277801514,
+design_019,RS232-T600,1,scored,HT4,0,0.2315315455198288,
+design_020,RS232-T700,1,scored,HT1,1,0.7939066886901855,
+design_020,RS232-T700,1,scored,HT2,1,0.5817763805389404,
+design_020,RS232-T700,1,scored,HT3,0,0.37815654277801514,
+design_020,RS232-T700,1,scored,HT4,0,0.2315315455198288,
+design_021,RS232-T800,1,scored,HT1,0,0.023040685802698135,
+design_021,RS232-T800,1,scored,HT2,1,0.5593760013580322,
+design_021,RS232-T800,1,scored,HT3,0,0.21266517043113708,
+design_021,RS232-T800,1,scored,HT4,0,0.1398157775402069,
+design_022,RS232-T900,1,scored,HT1,1,0.7981827855110168,
+design_022,RS232-T900,1,scored,HT2,1,0.5699343085289001,
+design_022,RS232-T900,1,scored,HT3,0,0.3754875361919403,
+design_022,RS232-T900,1,scored,HT4,0,0.2315315455198288,
+design_023,RS232-T901,1,scored,HT1,1,0.7947452664375305,
+design_023,RS232-T901,1,scored,HT2,1,0.5783751606941223,
+design_023,RS232-T901,1,scored,HT3,0,0.37575724720954895,
+design_023,RS232-T901,1,scored,HT4,0,0.2315315455198288,

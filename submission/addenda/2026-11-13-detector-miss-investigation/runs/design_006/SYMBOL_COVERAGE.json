@@ -1,0 +1,382 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.in_data": {
+      "reference_label": "top_in_data",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    "top.clk": {
+      "reference_label": "top_clk",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    "top.addr": {
+      "reference_label": "top_addr",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    "top.wr": {
+      "reference_label": "top_wr",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    "top.rd": {
+      "reference_label": "top_rd",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    "top.cs": {
+      "reference_label": "top_cs",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    "top.out_data": {
+      "reference_label": "top_out_data",
+      "term_types": [
+        "Output",
+        "Reg"
+      ]
+    },
+    "top.mosi": {
+      "reference_label": "top_mosi",
+      "term_types": [
+        "Inout"
+      ]
+    },
+    "top.miso": {
+      "reference_label": "top_miso",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.sclk": {
+      "reference_label": "top_sclk",
+      "term_types": [
+        "Inout"
+      ]
+    },
+    "top.sclk_buf": {
+      "reference_label": "top_sclk_buf",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.mosi_buf": {
+      "reference_label": "top_mosi_buf",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.busy": {
+      "reference_label": "top_busy",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.in_buf": {
+      "reference_label": "top_in_buf",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.out_buf": {
+      "reference_label": "top_out_buf",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.clk_cnt": {
+      "reference_label": "top_clk_cnt",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.clk_div": {
+      "reference_label": "top_clk_div",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.cnt": {
+      "reference_label": "top_cnt",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top._rn0_out_data": {
+      "reference_label": "top__rn0_out_data",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn1_out_data": {
+      "reference_label": "top__rn1_out_data",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn2_out_data": {
+      "reference_label": "top__rn2_out_data",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn3_out_data": {
+      "reference_label": "top__rn3_out_data",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn4_out_data": {
+      "reference_label": "top__rn4_out_data",
+      "term_types": [
+        "Rename"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top._rn0_out_data": "top._rn0_out_data_graphrename_0",
+    "top._rn1_out_data": "top._rn1_out_data_graphrename_1",
+    "top._rn2_out_data": "top._rn2_out_data_graphrename_2",
+    "top._rn3_out_data": "top._rn3_out_data_graphrename_5",
+    "top._rn4_out_data": "top._rn4_out_data_graphrename_6",
+    "top.busy": "top.busy_graphrename_7",
+    "top.clk_cnt": "top.clk_cnt_graphrename_26",
+    "top.clk_div": "top.clk_div_graphrename_35",
+    "top.cnt": "top.cnt_graphrename_37",
+    "top.in_buf": "top.in_buf_graphrename_50",
+    "top.mosi": "top.mosi_graphrename_70",
+    "top.mosi_buf": "top.mosi_buf_graphrename_71",
+    "top.out_buf": "top.out_buf_graphrename_84",
+    "top.out_data": "top.out_data_graphrename_93",
+    "top.sclk": "top.sclk_graphrename_112",
+    "top.sclk_buf": "top.sclk_buf_graphrename_113"
+  },
+  "joined_references": [
+    {
+      "symbol": "top._rn0_out_data",
+      "reference_node": "top__rn0_out_data",
+      "definition_node": "top._rn0_out_data_graphrename_0",
+      "parents": [
+        "top._rn0_out_data_graphrename_0",
+        "top._rn4_out_data_graphrename_6"
+      ]
+    },
+    {
+      "symbol": "top.out_buf",
+      "reference_node": "top_out_buf",
+      "definition_node": "top.out_buf_graphrename_84",
+      "parents": [
+        "top._rn1_out_data_graphrename_1",
+        "Sll_graphrename_88",
+        "Lor_graphrename_99"
+      ]
+    },
+    {
+      "symbol": "top.busy",
+      "reference_node": "top_busy",
+      "definition_node": "top.busy_graphrename_7",
+      "parents": [
+        "Concat_graphrename_3",
+        "Ulnot_graphrename_9",
+        "Branch_graphrename_17",
+        "Branch_graphrename_20",
+        "Branch_graphrename_22",
+        "Ulnot_graphrename_28",
+        "Ulnot_graphrename_39",
+        "Ulnot_graphrename_52",
+        "Ulnot_graphrename_73",
+        "Lor_graphrename_96",
+        "Ulnot_graphrename_115"
+      ]
+    },
+    {
+      "symbol": "top.clk_div",
+      "reference_node": "top_clk_div",
+      "definition_node": "top.clk_div_graphrename_35",
+      "parents": [
+        "top._rn3_out_data_graphrename_5",
+        "GreaterEq_graphrename_21",
+        "GreaterEq_graphrename_31",
+        "GreaterEq_graphrename_47",
+        "Branch_graphrename_58",
+        "GreaterEq_graphrename_62",
+        "GreaterEq_graphrename_75",
+        "Lor_graphrename_97",
+        "GreaterEq_graphrename_117"
+      ]
+    },
+    {
+      "symbol": "top.clk_cnt",
+      "reference_node": "top_clk_cnt",
+      "definition_node": "top.clk_cnt_graphrename_26",
+      "parents": [
+        "GreaterEq_graphrename_21",
+        "GreaterEq_graphrename_31",
+        "Plus_graphrename_33",
+        "GreaterEq_graphrename_47",
+        "GreaterEq_graphrename_62",
+        "GreaterEq_graphrename_75",
+        "GreaterEq_graphrename_117"
+      ]
+    },
+    {
+      "symbol": "top.cnt",
+      "reference_node": "top_cnt",
+      "definition_node": "top.cnt_graphrename_37",
+      "parents": [
+        "GreaterEq_graphrename_23",
+        "Branch_graphrename_43",
+        "Branch_graphrename_46",
+        "Plus_graphrename_48",
+        "Mod_graphrename_65",
+        "Mod_graphrename_78",
+        "GreaterThan_graphrename_120",
+        "LessThan_graphrename_122"
+      ]
+    },
+    {
+      "symbol": "top.in_buf",
+      "reference_node": "top_in_buf",
+      "definition_node": "top.in_buf_graphrename_50",
+      "parents": [
+        "Branch_graphrename_53",
+        "Branch_graphrename_58",
+        "Branch_graphrename_61",
+        "Branch_graphrename_63",
+        "Sll_graphrename_68",
+        "PartSelect_graphrename_81"
+      ]
+    },
+    {
+      "symbol": "top.mosi_buf",
+      "reference_node": "top_mosi_buf",
+      "definition_node": "top.mosi_buf_graphrename_71",
+      "parents": [
+        "top.mosi_graphrename_70",
+        "Branch_graphrename_72",
+        "Branch_graphrename_74",
+        "Branch_graphrename_76"
+      ]
+    },
+    {
+      "symbol": "top.sclk_buf",
+      "reference_node": "top_sclk_buf",
+      "definition_node": "top.sclk_buf_graphrename_113",
+      "parents": [
+        "Branch_graphrename_85",
+        "top.sclk_graphrename_112",
+        "Branch_graphrename_114",
+        "Branch_graphrename_116",
+        "Unot_graphrename_124"
+      ]
+    },
+    {
+      "symbol": "top._rn1_out_data",
+      "reference_node": "top__rn1_out_data",
+      "definition_node": "top._rn1_out_data_graphrename_1",
+      "parents": [
+        "Branch_graphrename_103"
+      ]
+    },
+    {
+      "symbol": "top._rn2_out_data",
+      "reference_node": "top__rn2_out_data",
+      "definition_node": "top._rn2_out_data_graphrename_2",
+      "parents": [
+        "Branch_graphrename_106"
+      ]
+    },
+    {
+      "symbol": "top._rn3_out_data",
+      "reference_node": "top__rn3_out_data",
+      "definition_node": "top._rn3_out_data_graphrename_5",
+      "parents": [
+        "Branch_graphrename_109"
+      ]
+    },
+    {
+      "symbol": "top._rn4_out_data",
+      "reference_node": "top__rn4_out_data",
+      "definition_node": "top._rn4_out_data_graphrename_6",
+      "parents": [
+        "Branch_graphrename_109"
+      ]
+    },
+    {
+      "symbol": "top.out_data",
+      "reference_node": "top_out_data",
+      "definition_node": "top.out_data_graphrename_93",
+      "parents": [
+        "Branch_graphrename_94",
+        "Branch_graphrename_101"
+      ]
+    }
+  ],
+  "unbound_references": [
+    {
+      "symbol": "top.wr",
+      "reference_node": "top_wr",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    {
+      "symbol": "top.cs",
+      "reference_node": "top_cs",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    {
+      "symbol": "top.addr",
+      "reference_node": "top_addr",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    {
+      "symbol": "top.rd",
+      "reference_node": "top_rd",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    {
+      "symbol": "top.in_data",
+      "reference_node": "top_in_data",
+      "term_types": [
+        "Input",
+        "Wire"
+      ]
+    },
+    {
+      "symbol": "top.miso",
+      "reference_node": "top_miso",
+      "term_types": [
+        "Input"
+      ]
+    }
+  ],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

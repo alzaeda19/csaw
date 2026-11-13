@@ -6,7 +6,15 @@ The current simulation package is in [submission/](submission/). Download [submi
 
 **November 13 closeout:** [Required versus optional submission checklist](submission/SUBMISSION_CHECKLIST.md) and [plain-English explanation of stealth evidence](submission/addenda/2026-11-13-submission-closeout/STEALTH_IN_PLAIN_ENGLISH.md). One previously incomplete reviewer tool output is now fully assembled from authentic captures; twelve reviewer inputs and one output gap remain. All four artifact types are present; stealth and complete relevant logs remain unresolved.
 
-## Latest detector repair and evaluation
+## Latest HT1/HT3 miss investigation
+
+The [Qwen-assisted investigation](submission/addenda/2026-11-13-detector-miss-investigation/README.md) explains HT3's identical CSAW scores: distinct intermediate arrays produce the same final max-readout summary, so the final classifier gives the same answer. HT1's summary and score change but its class stays CLEAN. The diagnostic run reproduced all eight earlier CSAW logits exactly, with no input mix-up or model-loading error found in the checks.
+
+All 23 professor-supplied labeled toy examples were attempted. Eighteen passed coverage gates: 10 infected RS232 variants and 8 clean designs. HT1 detected 9/10 infected examples and falsely flagged 5/8 clean examples; HT3 detected 1/10 and falsely flagged 3/8. Five PIC16-family examples remain unscored because of unresolved internal register references. All four models' results, fair comparisons with the earlier run, errors, two complete Qwen calls and corrections to unsupported model claims are retained.
+
+Hardware, weights, feature mapping, the repaired extractor and decision rules are unchanged. This documents the misses and detector limitations; it does not eliminate the misses or establish stealth. Training overlap is unknown, and repeated families/exclusions prevent a general-accuracy claim.
+
+## Earlier detector repair and evaluation
 
 The [defensive detector repair](submission/addenda/2026-11-13-detector-repair/README.md) fixes broken signal-reference connections in a separate extractor copy. All 11 benign fixture checks and both target coverage gates passed before the unchanged models ran. Hardware sources, flattened inputs, weights, normalization and decision rules remain unchanged.
 

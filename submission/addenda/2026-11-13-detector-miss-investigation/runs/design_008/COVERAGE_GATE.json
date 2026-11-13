@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "route": "repaired_exact_DFG_no_fallback",
+  "source_sha256": "0536ab09c29a23c1cad96e7b3da67b4b1154beec0047ed610876aa0eb4df5e2c",
+  "nodes": 39,
+  "edges": 46,
+  "weak_components": 1,
+  "joined_references": 6,
+  "output_dependency_counts": {
+    "top.vga_h_sync": 15,
+    "top.vga_v_sync": 24,
+    "top.inDisplayArea": 22,
+    "top.CounterX": 7,
+    "top.CounterY": 16
+  },
+  "unresolved_bound_references": 0,
+  "unbound_noninput_references": 0,
+  "graph_edges_preserved_in_model_input": true,
+  "seconds": 0.4447687091305852
+}

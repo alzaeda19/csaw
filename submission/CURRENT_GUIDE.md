@@ -4,7 +4,15 @@
 
 The modified hardware code, demonstration testbench, saved results and submission archive are present. The follow-ups add fresh synthesis, protocol-scoped formal checks, a reference-board pin audit, original-source cipher reconstruction, frozen-design detection evaluation and Qwen review records. They do not change the tested design or rerun the archived original suite; the latest evaluation runs a separate full-core representation-validation suite on both frozen versions.
 
-## Latest repaired-detector results
+## Latest investigation of detector misses
+
+The [HT1/HT3 investigation](addenda/2026-11-13-detector-miss-investigation/README.md) is complete. HT3 produces different intermediate arrays for the frozen CSAW pair but identical final numerical summaries and logits. HT1 produces different summaries/scores while still choosing CLEAN. All eight prior CSAW logits reproduce exactly with read-only diagnostics; hardware and model settings are unchanged.
+
+All 23 supplied labeled designs were attempted. On the 18 that pass the fixed graph checks, HT1 detects 9/10 annotated infected designs and falsely flags 5/8 clean designs; HT3 detects 1/10 and falsely flags 3/8. Five PIC16-family examples are unscored due to unresolved internal register references. The report includes all four models, earlier-run comparisons on the same 18 examples, two actual Qwen reviews and explicit corrections to their errors. The ten scored positive examples are all RS232 variants, and checkpoint training overlap is unknown.
+
+The investigation explains measured numerical behavior and records reliability limitations. It does not identify a training-data cause, eliminate false negatives, establish stealth or recover missing historical AI messages.
+
+## Earlier repaired-detector results
 
 The [detector-repair addendum](addenda/2026-11-13-detector-repair/README.md) fixes the specific reference-joining defect on frozen flattened inputs. All 11 benign fixture checks and both dependency/model-input coverage gates passed before classification. HT2 detects the modified design and passes the clean control. HT4 flags both, producing a false alarm on the control. HT1 and HT3 pass both, missing the modification. The unchanged any-positive ensemble flags both.
 

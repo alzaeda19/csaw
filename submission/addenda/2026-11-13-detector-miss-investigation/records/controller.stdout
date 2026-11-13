@@ -1,0 +1,71 @@
+{"design_id": "design_001", "status": "unscored", "seconds": 17.77, "error": "unexpected unbound non-input references"}
+{"design_id": "design_002", "status": "scored", "seconds": 19.35, "error": null}
+{"design_id": "design_004", "status": "scored", "seconds": 13.21, "error": null}
+{"design_id": "design_003", "status": "scored", "seconds": 16.16, "error": null}
+{"design_id": "design_005", "status": "scored", "seconds": 14.31, "error": null}
+{"design_id": "design_006", "status": "scored", "seconds": 13.39, "error": null}
+{"design_id": "design_008", "status": "scored", "seconds": 13.81, "error": null}
+{"design_id": "design_007", "status": "scored", "seconds": 14.26, "error": null}
+{"design_id": "design_009", "status": "scored", "seconds": 14.75, "error": null}
+{"design_id": "design_010", "status": "unscored", "seconds": 15.2, "error": "unexpected unbound non-input references"}
+{"design_id": "design_011", "status": "unscored", "seconds": 15.14, "error": "unexpected unbound non-input references"}
+{"design_id": "design_012", "status": "unscored", "seconds": 14.69, "error": "unexpected unbound non-input references"}
+{"design_id": "design_014", "status": "scored", "seconds": 14.26, "error": null}
+{"design_id": "design_013", "status": "unscored", "seconds": 15.16, "error": "unexpected unbound non-input references"}
+{"design_id": "design_015", "status": "scored", "seconds": 14.15, "error": null}
+{"design_id": "design_016", "status": "scored", "seconds": 13.48, "error": null}
+{"design_id": "design_018", "status": "scored", "seconds": 14.18, "error": null}
+{"design_id": "design_017", "status": "scored", "seconds": 14.41, "error": null}
+{"design_id": "design_020", "status": "scored", "seconds": 14.2, "error": null}
+{"design_id": "design_019", "status": "scored", "seconds": 14.2, "error": null}
+{"design_id": "design_022", "status": "scored", "seconds": 14.19, "error": null}
+{"design_id": "design_021", "status": "scored", "seconds": 14.19, "error": null}
+{"design_id": "flat_clean", "status": "scored", "seconds": 14.19, "error": null}
+{"design_id": "design_023", "status": "scored", "seconds": 14.41, "error": null}
+{"design_id": "flat_modified", "status": "scored", "seconds": 13.27, "error": null}
+{
+  "dataset_scored": 18,
+  "dataset_unscored": 5,
+  "metrics": {
+    "HT1": {
+      "TP": 9,
+      "FN": 1,
+      "FP": 5,
+      "TN": 3,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "HT2": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 6,
+      "TN": 2,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "HT3": {
+      "TP": 1,
+      "FN": 9,
+      "FP": 3,
+      "TN": 5,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "HT4": {
+      "TP": 0,
+      "FN": 10,
+      "FP": 1,
+      "TN": 7,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    },
+    "ensemble": {
+      "TP": 10,
+      "FN": 0,
+      "FP": 6,
+      "TN": 2,
+      "unscored_positive": 4,
+      "unscored_negative": 1
+    }
+  }
+}

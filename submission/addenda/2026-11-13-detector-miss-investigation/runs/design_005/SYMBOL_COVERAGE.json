@@ -1,0 +1,260 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.IDLE": {
+      "reference_label": "top_IDLE",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.S1": {
+      "reference_label": "top_S1",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.S10": {
+      "reference_label": "top_S10",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.S101": {
+      "reference_label": "top_S101",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.S1011": {
+      "reference_label": "top_S1011",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.clk": {
+      "reference_label": "top_clk",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.rstn": {
+      "reference_label": "top_rstn",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.in": {
+      "reference_label": "top_in",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.out": {
+      "reference_label": "top_out",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.cur_state": {
+      "reference_label": "top_cur_state",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top.next_state": {
+      "reference_label": "top_next_state",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top._rn0_next_state": {
+      "reference_label": "top__rn0_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn1_next_state": {
+      "reference_label": "top__rn1_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn2_next_state": {
+      "reference_label": "top__rn2_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn3_next_state": {
+      "reference_label": "top__rn3_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn4_next_state": {
+      "reference_label": "top__rn4_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn5_next_state": {
+      "reference_label": "top__rn5_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn6_next_state": {
+      "reference_label": "top__rn6_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn7_next_state": {
+      "reference_label": "top__rn7_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn8_next_state": {
+      "reference_label": "top__rn8_next_state",
+      "term_types": [
+        "Rename"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top._rn0_next_state": "top._rn0_next_state_graphrename_0",
+    "top._rn1_next_state": "top._rn1_next_state_graphrename_2",
+    "top._rn2_next_state": "top._rn2_next_state_graphrename_4",
+    "top._rn3_next_state": "top._rn3_next_state_graphrename_6",
+    "top._rn4_next_state": "top._rn4_next_state_graphrename_8",
+    "top._rn5_next_state": "top._rn5_next_state_graphrename_10",
+    "top._rn6_next_state": "top._rn6_next_state_graphrename_12",
+    "top._rn7_next_state": "top._rn7_next_state_graphrename_14",
+    "top._rn8_next_state": "top._rn8_next_state_graphrename_16",
+    "top.cur_state": "top.cur_state_graphrename_18",
+    "top.IDLE": "top.IDLE_graphrename_22",
+    "top.next_state": "top.next_state_graphrename_24",
+    "top.out": "top.out_graphrename_44",
+    "top.S1": "top.S1_graphrename_50",
+    "top.S10": "top.S10_graphrename_52",
+    "top.S101": "top.S101_graphrename_54",
+    "top.S1011": "top.S1011_graphrename_56"
+  },
+  "joined_references": [
+    {
+      "symbol": "top.next_state",
+      "reference_node": "top_next_state",
+      "definition_node": "top.next_state_graphrename_24",
+      "parents": [
+        "Branch_graphrename_19",
+        "Branch_graphrename_41"
+      ]
+    },
+    {
+      "symbol": "top.cur_state",
+      "reference_node": "top_cur_state",
+      "definition_node": "top.cur_state_graphrename_18",
+      "parents": [
+        "Eq_graphrename_26",
+        "Eq_graphrename_30",
+        "Eq_graphrename_34",
+        "Eq_graphrename_38",
+        "Eq_graphrename_42",
+        "Eq_graphrename_46"
+      ]
+    },
+    {
+      "symbol": "top._rn0_next_state",
+      "reference_node": "top__rn0_next_state",
+      "definition_node": "top._rn0_next_state_graphrename_0",
+      "parents": [
+        "Branch_graphrename_28"
+      ]
+    },
+    {
+      "symbol": "top._rn1_next_state",
+      "reference_node": "top__rn1_next_state",
+      "definition_node": "top._rn1_next_state_graphrename_2",
+      "parents": [
+        "Branch_graphrename_28"
+      ]
+    },
+    {
+      "symbol": "top._rn2_next_state",
+      "reference_node": "top__rn2_next_state",
+      "definition_node": "top._rn2_next_state_graphrename_4",
+      "parents": [
+        "Branch_graphrename_32"
+      ]
+    },
+    {
+      "symbol": "top._rn3_next_state",
+      "reference_node": "top__rn3_next_state",
+      "definition_node": "top._rn3_next_state_graphrename_6",
+      "parents": [
+        "Branch_graphrename_32"
+      ]
+    },
+    {
+      "symbol": "top._rn4_next_state",
+      "reference_node": "top__rn4_next_state",
+      "definition_node": "top._rn4_next_state_graphrename_8",
+      "parents": [
+        "Branch_graphrename_36"
+      ]
+    },
+    {
+      "symbol": "top._rn5_next_state",
+      "reference_node": "top__rn5_next_state",
+      "definition_node": "top._rn5_next_state_graphrename_10",
+      "parents": [
+        "Branch_graphrename_36"
+      ]
+    },
+    {
+      "symbol": "top._rn6_next_state",
+      "reference_node": "top__rn6_next_state",
+      "definition_node": "top._rn6_next_state_graphrename_12",
+      "parents": [
+        "Branch_graphrename_40"
+      ]
+    },
+    {
+      "symbol": "top._rn7_next_state",
+      "reference_node": "top__rn7_next_state",
+      "definition_node": "top._rn7_next_state_graphrename_14",
+      "parents": [
+        "Branch_graphrename_40"
+      ]
+    },
+    {
+      "symbol": "top._rn8_next_state",
+      "reference_node": "top__rn8_next_state",
+      "definition_node": "top._rn8_next_state_graphrename_16",
+      "parents": [
+        "Branch_graphrename_41"
+      ]
+    }
+  ],
+  "unbound_references": [
+    {
+      "symbol": "top.rstn",
+      "reference_node": "top_rstn",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.in",
+      "reference_node": "top_in",
+      "term_types": [
+        "Input"
+      ]
+    }
+  ],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

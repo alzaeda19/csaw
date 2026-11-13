@@ -1,0 +1,164 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.ADR": {
+      "reference_label": "top_ADR",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.DAT": {
+      "reference_label": "top_DAT",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.DPTH": {
+      "reference_label": "top_DPTH",
+      "term_types": [
+        "Parameter"
+      ]
+    },
+    "top.dataIn": {
+      "reference_label": "top_dataIn",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.dataOut": {
+      "reference_label": "top_dataOut",
+      "term_types": [
+        "Output",
+        "Reg"
+      ]
+    },
+    "top.Addr": {
+      "reference_label": "top_Addr",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.CS": {
+      "reference_label": "top_CS",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.WE": {
+      "reference_label": "top_WE",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.RD": {
+      "reference_label": "top_RD",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.Clk": {
+      "reference_label": "top_Clk",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.SRAM": {
+      "reference_label": "top_SRAM",
+      "term_types": [
+        "Reg"
+      ]
+    },
+    "top._rn0_SRAM": {
+      "reference_label": "top__rn0_SRAM",
+      "term_types": [
+        "Rename"
+      ]
+    },
+    "top._rn1_dataOut": {
+      "reference_label": "top__rn1_dataOut",
+      "term_types": [
+        "Rename"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top._rn0_SRAM": "top._rn0_SRAM_graphrename_0",
+    "top._rn1_dataOut": "top._rn1_dataOut_graphrename_1",
+    "top.ADR": "top.ADR_graphrename_3",
+    "top.DAT": "top.DAT_graphrename_5",
+    "top.dataOut": "top.dataOut_graphrename_7",
+    "top.DPTH": "top.DPTH_graphrename_23",
+    "top.SRAM": "top.SRAM_graphrename_25"
+  },
+  "joined_references": [
+    {
+      "symbol": "top._rn0_SRAM",
+      "reference_node": "top__rn0_SRAM",
+      "definition_node": "top._rn0_SRAM_graphrename_0",
+      "parents": [
+        "top._rn0_SRAM_graphrename_0"
+      ]
+    },
+    {
+      "symbol": "top.SRAM",
+      "reference_node": "top_SRAM",
+      "definition_node": "top.SRAM_graphrename_25",
+      "parents": [
+        "Pointer_graphrename_2",
+        "top.SRAM_graphrename_25"
+      ]
+    },
+    {
+      "symbol": "top.dataOut",
+      "reference_node": "top_dataOut",
+      "definition_node": "top.dataOut_graphrename_7",
+      "parents": [
+        "Branch_graphrename_8",
+        "Branch_graphrename_11",
+        "Branch_graphrename_17"
+      ]
+    },
+    {
+      "symbol": "top._rn1_dataOut",
+      "reference_node": "top__rn1_dataOut",
+      "definition_node": "top._rn1_dataOut_graphrename_1",
+      "parents": [
+        "Branch_graphrename_17"
+      ]
+    }
+  ],
+  "unbound_references": [
+    {
+      "symbol": "top.Addr",
+      "reference_node": "top_Addr",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.CS",
+      "reference_node": "top_CS",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.WE",
+      "reference_node": "top_WE",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.RD",
+      "reference_node": "top_RD",
+      "term_types": [
+        "Input"
+      ]
+    }
+  ],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "route": "repaired_exact_DFG_no_fallback",
+  "source_sha256": "6c8d5dacbc1940d327d1fd8da0d07dc54faf593e596631066bdbd0b4c0479d52",
+  "nodes": 624,
+  "edges": 838,
+  "weak_components": 6,
+  "joined_references": 103,
+  "output_dependency_counts": {
+    "top.uart_XMIT_dataH": 355,
+    "top.xmit_doneH": 199,
+    "top.rec_dataH": 193,
+    "top.rec_readyH": 183,
+    "top.iXMIT.uart_xmitH": 354,
+    "top.iXMIT.xmit_doneH": 198,
+    "top.iRECEIVER.rec_dataH": 182,
+    "top.iRECEIVER.rec_readyH": 182
+  },
+  "unresolved_bound_references": 0,
+  "unbound_noninput_references": 0,
+  "graph_edges_preserved_in_model_input": true,
+  "seconds": 0.5608222919981927
+}

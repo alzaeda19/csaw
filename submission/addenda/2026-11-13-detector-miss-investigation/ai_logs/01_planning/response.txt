@@ -1,0 +1,62 @@
+**Checklist for Distinguishing Wrong-Input/Model/Label Handling from Classifier Limitations**
+
+1. **Verify Input Consistency**  
+   - Confirm that the two CSAW tensors are identical in shape, hash, and nonzero count across all stages.  
+   - **Uncertainty**: Hashes may differ due to internal representation, not actual content.  
+   - **Source**: Prompt states verified differing hashes for the two tensors.
+
+2. **Compare Logits Across Checkpoints**  
+   - HT3 has identical logits for both tensors, suggesting either model consistency or label handling.  
+   - HT1 and HT4 show differing scores, indicating potential model or label sensitivity.  
+   - **Uncertainty**: Scores are not calibrated security probabilities.  
+   - **Source**: Prompt provides exact scores and logits for HT1, HT3, and HT4.
+
+3. **Check for Label Handling Anomalies**  
+   - HT3 labels both tensors as clean with identical logits, suggesting possible label handling or model invariance.  
+   - HT1 and HT4 show different labels, possibly due to model sensitivity or label assignment.  
+   - **Uncertainty**: Label handling may mask true classifier behavior.  
+   - **Source**: Prompt states HT1 and HT4 label both as clean or infected.
+
+4. **Validate Classifier Consistency Across Inputs**  
+   - HT3’s identical logits for both tensors suggest model invariance or label handling.  
+   - HT1 and HT4 show different outputs, possibly due to model sensitivity or label assignment.  
+   - **Uncertainty**: Identical logits do not confirm model invariance; could be due to label handling.  
+   - **Source**: Prompt provides exact logits and scores.
+
+5. **Assess Classifier Behavior on 23 Labeled Examples**  
+   - The 23 examples include 9 clean and 14 infected, but checkpoint training overlap is unknown.  
+   - **Uncertainty**: Training overlap may affect generalization and label consistency.  
+   - **Source**: Prompt states 23 labeled toy designs with 9 clean and 14 infected.
+
+---
+
+**What Identical Logits Can and Cannot Establish**
+
+- **Can Establish**:  
+  - Model invariance to input differences (if inputs are identical in structure and content).  
+  - Label handling consistency (if both inputs are labeled the same).  
+  - Potential for label handling over model behavior.
+
+- **Cannot Establish**:  
+  - Model robustness or security properties (scores are not calibrated).  
+  - True classifier behavior (identical logits may result from label handling, not model invariance).  
+  - Generalization to unseen inputs (no external validation or testing is performed).
+
+---
+
+**What Claims These 23 Examples Can Support**
+
+- **Can Support**:  
+  - Label consistency across checkpoints (HT3 labels both as clean).  
+  - Potential for model invariance (HT3’s identical logits).  
+  - Classifier sensitivity to input differences (HT1 and HT4 show different outputs).
+
+- **Cannot Support**:  
+  - Model robustness or security (scores are not calibrated).  
+  - Generalization to real-world inputs (no external validation).  
+  - Training overlap or model consistency (training data is unknown).
+
+---
+
+**Final Note on Uncertainty**  
+All conclusions are based on the provided prompt and must be interpreted with caution due to lack of direct testing, file inspection, or external validation. The results may reflect label handling, model invariance, or classifier sensitivity, but cannot be interpreted as definitive security or robustness claims.

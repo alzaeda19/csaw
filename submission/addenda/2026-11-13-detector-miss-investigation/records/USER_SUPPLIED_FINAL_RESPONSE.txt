@@ -1,0 +1,125 @@
+### **Detector Results Analysis: Key Observations**
+
+#### **1. HT1 and HT3 Missed the Modification**
+- **Why?**
+  These detectors likely failed to identify the modification due to
+**inadequate feature extraction** or **training data mismatches**. The
+modification (e.g., `input_compare`, `extra_state`, `output_alter`) may not
+align with the patterns the detectors were trained to recognize. For example:
+
+  - **HT1** might have focused on syntax-level changes (e.g., renamed
+variables), but the modification introduced **new logic** rather than
+obfuscated existing code.
+  - **HT3** returned identical scores for both the modified and clean designs,
+suggesting it **failed to distinguish between the two**. This could indicate:
+
+    - The detector’s feature extraction pipeline **ignored the added logic**
+(e.g., `extra_state` registers).
+    - The model’s **decision thresholds** were not sensitive enough to detect
+the modification.
+
+- **Labeled Examples Context**:
+  If the professor’s labeled examples include cases where **similar logic
+additions** were missed, this would validate HT1/HT3’s behavior as **false
+negatives**. However, without access to the labeled dataset, this remains
+speculative.
+
+---
+
+#### **2. HT2 Detected the Modification**
+- **Why?**
+  HT2’s detection suggests it **identified the added logic** (e.g.,
+`input_compare` or `extra_state`) through **resource usage patterns** (e.g.,
+register count increases) or **control flow analysis**. This aligns with the
+synthesis reports showing **significant register additions**.
+  - **Input Handling**: HT2 might have processed the **synthesis netlist**
+directly, capturing the **resource anomalies** that HT1/HT3 overlooked.
+  - **Model Loading**: If HT2 used a **detector trained on register-heavy
+modifications**, it would flag the design as suspicious.
+
+- **Labeled Examples Context**:
+  If the professor’s labeled examples include **cases where register-heavy
+logic additions** were flagged, this would validate HT2’s detection as a
+**true positive**.
+
+---
+
+#### **3. HT4 Flagged Both Modified and Clean Control**
+- **Why?**
+  HT4’s false positive (flagging the clean control) suggests:
+  - **Model Overfitting**: The detector might have been trained on a dataset
+that included **false positives**, leading it to misclassify clean designs as
+suspicious.
+  - **Label Interpretation Errors**: If the clean control was mislabeled as
+"modified" during training, HT4 would incorrectly flag it.
+  - **Threshold Mismatches**: HT4’s decision thresholds might be **too
+sensitive**, causing it to trigger on benign changes (e.g., minor syntax
+variations).
+
+- **Labeled Examples Context**:
+  This would indicate a **false alarm** if the clean control was labeled as
+"clean" in the dataset. It also highlights **labeling inconsistencies** in the
+training data.
+
+---
+
+### **Detector Setup and Reliability Assessment**
+
+#### **A. Input Handling**
+- **HT1/HT3**: Likely processed **source code** (e.g., Verilog/SystemVerilog)
+but missed the **logic additions**.
+- **HT2**: Possibly used **synthesis netlists** or **gate-level
+representations**, making it more sensitive to **resource anomalies**.
+- **HT4**: May have used **mixed input types** (source + netlist), leading to
+**conflicting signals** and false positives.
+
+#### **B. Model Loading**
+- **HT1/HT3**: If models were loaded from **pre-trained weights**, they might
+lack adaptability to new modification patterns.
+- **HT2**: Could have used **fine-tuned models** for register-heavy logic,
+improving detection accuracy.
+- **HT4**: May have loaded **models with outdated thresholds**, causing
+sensitivity issues.
+
+#### **C. Label Interpretation**
+- **HT3’s Identical Scores**: Indicates the model **failed to differentiate**
+between the modified and clean designs. This could stem from:
+  - **Feature Extraction Bias**: The detector ignored the added `extra_state`
+logic.
+  - **Label Mismatch**: The model was trained on **syntax-only changes**, not
+logic additions.
+
+---
+
+### **Conclusion: Detector Reliability**
+- **HT1/HT3**: **False negatives** for the modification, likely due to
+**training data mismatches**.
+- **HT2**: **True positive**, detecting the modification via **resource
+analysis**.
+- **HT4**: **False alarm** (flagged clean control), suggesting **labeling
+errors** or **threshold misconfigurations**.
+
+- **Without Stealth**: The current design is **functional but not stealthy**,
+as the changes are **visible in the source** and **resource usage**. Detectors
+failing to find it does **not prove stealth**—it only highlights **detector
+limitations**.
+
+- **No Changes Suggested**: The analysis remains **purely observational**,
+avoiding any recommendations for concealment or evasion.
+
+---
+
+### **Saved Findings (Plain English)**
+1. **HT1 and HT3 missed the modification** because their detectors didn’t
+recognize the added logic (e.g., `extra_state` registers).
+2. **HT2 detected it** by analyzing resource usage or control flow patterns.
+3. **HT4 flagged both the modified and clean control** due to potential label
+errors or overly sensitive thresholds.
+4. **HT3’s identical scores** suggest the detector couldn’t distinguish
+between the modified and clean designs, likely due to training data
+mismatches.
+5. **Detectors vary in reliability**: HT2 is reliable for resource-based
+changes, while HT1/HT3 and HT4 show gaps in detection or false positives.
+
+**No conclusion about stealth**: The results only show that **some detectors
+failed to find the change**, not that the design is stealthy.
