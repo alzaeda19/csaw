@@ -1,0 +1,385 @@
+{
+  "scope": "Bounded read-only audit of 12 known reviewer messages and 2 known truncated outputs; writes only in this isolated audit folder.",
+  "api_snapshots": [
+    {
+      "file": "api_protocol.json",
+      "sha256": "75584d0b572902a226f288bc00917b6a821079eeeb87d6f283c1e374d049d370",
+      "thread_id": "01a1d245-26de-7730-8903-654a1eb4004d",
+      "arguments": {
+        "threadId": "01a1d245-26de-7730-8903-654a1eb4004d",
+        "hostId": "local",
+        "turnLimit": 10,
+        "includeOutputs": true,
+        "maxOutputCharsPerItem": 20000
+      },
+      "page": {
+        "order": "newest_first",
+        "limit": 10,
+        "nextCursor": null,
+        "hasMore": false
+      },
+      "turn_count": 5
+    },
+    {
+      "file": "api_report.json",
+      "sha256": "e42677db279b9719dbf57884cf0fd250b214436e0cd02db0e15a576f61b9766e",
+      "thread_id": "01a1d245-3808-71b3-a696-a4f14fca0a76",
+      "arguments": {
+        "threadId": "01a1d245-3808-71b3-a696-a4f14fca0a76",
+        "hostId": "local",
+        "turnLimit": 10,
+        "includeOutputs": true,
+        "maxOutputCharsPerItem": 20000
+      },
+      "page": {
+        "order": "newest_first",
+        "limit": 10,
+        "nextCursor": null,
+        "hasMore": false
+      },
+      "turn_count": 4
+    }
+  ],
+  "prompt_checks": [
+    {
+      "message_id": "amsg_01a1d245-2b62-7b60-8bd1-86e43547510a",
+      "kind": "NEW_TASK",
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 13,
+        "native_line_sha256": "19b9b478c6cd0f267e139bf364ed38571dc21b3a4c135a05f826e1488426d876",
+        "native_raw_line_bytes": 2165,
+        "timestamp": "2026-11-13T00:18:30.882Z",
+        "turn_id": "01a1d245-2704-79d1-a305-f315a16334bb",
+        "section": "review_and_report_generation"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d248-c109-7071-9393-f1c41406bfff",
+      "kind": "NEW_TASK",
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 36,
+        "native_line_sha256": "45e341ad3dbb0a7d79f533ef1608646a67ee0202bce890bb46054b9a5de6d7ab",
+        "native_raw_line_bytes": 1613,
+        "timestamp": "2026-11-13T00:22:25.801Z",
+        "turn_id": "01a1d248-c06a-7843-90fc-21ef47d594c3",
+        "section": "review_and_report_generation"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d24d-7e64-7f53-814d-c0b885be00fa",
+      "kind": "NEW_TASK",
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 57,
+        "native_line_sha256": "beebce6226b76b375bdd299e98c6edd74b2a42935a4b460e519ce2fdac230b03",
+        "native_raw_line_bytes": 1613,
+        "timestamp": "2026-11-13T00:27:36.420Z",
+        "turn_id": "01a1d24d-7c39-72e1-bc0c-69111e40c1fd",
+        "section": "review_and_report_generation"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d25a-fb63-7ce2-aeab-71b76337140c",
+      "kind": "NEW_TASK",
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 80,
+        "native_line_sha256": "9859d35b1877093a42b7e98ee86f95a612b8d7ec4ea29b65d06b244e9f66279a",
+        "native_raw_line_bytes": 1653,
+        "timestamp": "2026-11-13T00:42:20.448Z",
+        "turn_id": "01a1d25a-f923-7553-b5fc-0ebb8359d29a",
+        "section": "review_and_report_generation"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d25d-98e6-73c0-9d3c-8179979a699f",
+      "kind": "NEW_TASK",
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 108,
+        "native_line_sha256": "6bb165f5ced72d4a08079851bf1df6b69571182fd0933a5b1d59b20ec2d8c93f",
+        "native_raw_line_bytes": 2959,
+        "timestamp": "2026-11-13T00:45:11.782Z",
+        "turn_id": "01a1d25d-97e0-7cf1-90c8-621f694be80a",
+        "section": "original_generation_ai_record_packaging"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d260-21e4-7b93-a9f5-b356d72df6ab",
+      "kind": "MESSAGE",
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 162,
+        "native_line_sha256": "7008bd5440400d5585962b6d482508238aeaee574aa4002b40ca7c0248b62577",
+        "native_raw_line_bytes": 1378,
+        "timestamp": "2026-11-13T00:47:57.924Z",
+        "turn_id": "01a1d25d-97e0-7cf1-90c8-621f694be80a",
+        "section": "original_generation_ai_record_packaging"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d260-8118-7c73-9fc6-3da934009774",
+      "kind": "MESSAGE",
+      "source": {
+        "reviewer": "protocol_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-29-01a1d245-26de-7730-8903-654a1eb4004d.jsonl",
+        "native_line": 178,
+        "native_line_sha256": "7f8c804749cbb24381eb87e19066dc4ecfa407c83e740c5b870e90073cafeb16",
+        "native_raw_line_bytes": 1230,
+        "timestamp": "2026-11-13T00:48:22.296Z",
+        "turn_id": "01a1d25d-97e0-7cf1-90c8-621f694be80a",
+        "section": "original_generation_ai_record_packaging"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d245-3bf3-7282-89a5-e7ab67a1fb08",
+      "kind": "NEW_TASK",
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 13,
+        "native_line_sha256": "bb4651702ca61870a1458ffdacbb416b3174efb01f0efe4f20491e5abe54f0a0",
+        "native_raw_line_bytes": 1928,
+        "timestamp": "2026-11-13T00:18:35.123Z",
+        "turn_id": "01a1d245-380f-7651-b792-3700395b74a1",
+        "section": "review_and_report_generation"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d247-4cff-7e33-abbd-3769096958e2",
+      "kind": "NEW_TASK",
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 34,
+        "native_line_sha256": "3ef88bb5f510c55f140728959fcd111d792cbc072adfc72a91a41060726a1da1",
+        "native_raw_line_bytes": 1501,
+        "timestamp": "2026-11-13T00:20:50.559Z",
+        "turn_id": "01a1d247-4c5c-75f1-a171-d22909f3e518",
+        "section": "review_and_report_generation"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d25b-1302-7551-a4c7-e1d7db7afdb4",
+      "kind": "NEW_TASK",
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 55,
+        "native_line_sha256": "e29beb747bfa9a773d4c65f89d99975ef8f56058796858f939123c1edf94978e",
+        "native_raw_line_bytes": 2417,
+        "timestamp": "2026-11-13T00:42:26.435Z",
+        "turn_id": "01a1d25b-1220-7e73-a91e-cf0a302c15d9",
+        "section": "review_and_report_generation"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d25b-7350-76e3-a76c-5414aed97470",
+      "kind": "MESSAGE",
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 68,
+        "native_line_sha256": "395b681fc2bba40640e3aea3718a5ad8e8ae94a5f422f4ef84880e81f20c199e",
+        "native_raw_line_bytes": 1436,
+        "timestamp": "2026-11-13T00:42:51.088Z",
+        "turn_id": "01a1d25b-1220-7e73-a91e-cf0a302c15d9",
+        "section": "review_and_report_generation"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    },
+    {
+      "message_id": "amsg_01a1d25f-d122-7db0-8c5d-d97ce2949ac0",
+      "kind": "NEW_TASK",
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 96,
+        "native_line_sha256": "925c5c4c12fc7de61d4f155e959c51e8950eb1ead4efe3876da567062aa6204b",
+        "native_raw_line_bytes": 1738,
+        "timestamp": "2026-11-13T00:47:37.250Z",
+        "turn_id": "01a1d25f-d0b3-78e2-8959-429ec689173c",
+        "section": "original_generation_final_package_consistency_review"
+      },
+      "turn_present_in_api": true,
+      "user_message_present": false,
+      "activity_contains_instruction_body": false,
+      "body_recovered": false
+    }
+  ],
+  "output_checks": [
+    {
+      "native_source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 100,
+        "native_line_sha256": "f59426cc0868ad1976329e20c7d1554b8581dca30b84a4c415a0a5631f383658",
+        "native_raw_line_bytes": 41833,
+        "timestamp": "2026-11-13T00:47:42.959Z",
+        "turn_id": "01a1d25f-d0b3-78e2-8959-429ec689173c",
+        "section": "original_generation_final_package_consistency_review"
+      },
+      "api_source": "api_report.json",
+      "api_item_id": "exec-84b0552d-5f11-464f-b396-05908175e4f9",
+      "api_command": "/bin/zsh -lc 'cat README.md HANDOFF_SIMPLE.md ai/AI_RECORDS_INDEX.md evidence/final_runs/20261113T004430Z_hihzqs6r/result.json evidence/setup_records/FINAL_FILE_PROVENANCE.json'",
+      "api_output_sha256": "9c413fa6f9fb065d98e8f676b6024c498a94db61fa36aa3ebf3b4b25efbbbf94",
+      "original_character_count_reported_by_api": 46178,
+      "ordinary_json_wrapper_parsed": false,
+      "native_stdout_header_offset": 81,
+      "native_head_characters": 19996,
+      "native_tail_characters": 20000,
+      "native_original_marker": "…1546 tokens truncated…",
+      "api_prefix_characters": 20000,
+      "tail_original_start_offset": 26178,
+      "exact_overlap_characters": 0,
+      "newly_recovered_characters": 4,
+      "remaining_missing_characters": 6178,
+      "complete_stdout_coverage": false,
+      "derived": {
+        "new_text_file": "recovered/report_line_100_api_extra.txt",
+        "new_text_sha256": "8b4f5a0d6d5563ea021edb49f4642dcea74cde68d382e0db554d7f76db7bdc67",
+        "missing_original_character_range": [
+          20000,
+          26178
+        ],
+        "retained_api_range": [
+          0,
+          20000
+        ],
+        "retained_native_tail_range": [
+          26178,
+          46178
+        ],
+        "label": "Incomplete output; missing characters are not filled or guessed."
+      }
+    },
+    {
+      "native_source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 107,
+        "native_line_sha256": "b2cc8f4230b47da40b393a6f22f4cdd0f572639be987a02d6d4b6b63ce5b2a69",
+        "native_raw_line_bytes": 20842,
+        "timestamp": "2026-11-13T00:47:51.948Z",
+        "turn_id": "01a1d25f-d0b3-78e2-8959-429ec689173c",
+        "section": "original_generation_final_package_consistency_review"
+      },
+      "api_source": "api_report.json",
+      "api_item_id": "exec-6d9dc924-b32b-4b14-920f-bcc70d5fad38",
+      "api_command": "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\nimport json\nprint(Path('ai/AI_RECORDS_INDEX.md').read_text())\nd=json.loads(Path('evidence/final_runs/20261113T004430Z_hihzqs6r/result.json').read_text())\nprint(json.dumps({k:v for k,v in d.items() if k not in ('tests','versions','source_checks')},indent=2))\nfor k,v in d.items():\n if isinstance(v,list) and v and isinstance(v[0],dict) and 'name' in v[0]:\n  print(json.dumps([{kk:vv for kk,vv in x.items() if kk in ('name','negative_control','meets_expectation','counts','summary_lines')} for x in v],indent=2))\nPY\"",
+      "api_output_sha256": "bd37700cd1bb6e3ba858f9ca3e825a46cd70b10f53e4d401fa00c75b99237d9b",
+      "original_character_count_reported_by_api": 28140,
+      "ordinary_json_wrapper_parsed": true,
+      "native_stdout_header_offset": 80,
+      "native_head_characters": 9000,
+      "native_tail_characters": 9000,
+      "native_original_marker": "…2535 tokens truncated…",
+      "api_prefix_characters": 20000,
+      "tail_original_start_offset": 19140,
+      "exact_overlap_characters": 860,
+      "newly_recovered_characters": 10140,
+      "remaining_missing_characters": 0,
+      "complete_stdout_coverage": true,
+      "derived": {
+        "file": "recovered/report_line_107_stdout_assembled.txt",
+        "characters": 28140,
+        "sha256": "f9375fbfd950f1fc2480d81453750ad539fedbe074bfe8fd30c97513520cf78b",
+        "segments": [
+          {
+            "source": "api_report.json",
+            "item_id": "exec-6d9dc924-b32b-4b14-920f-bcc70d5fad38",
+            "source_range": [
+              0,
+              20000
+            ],
+            "destination_range": [
+              0,
+              20000
+            ]
+          },
+          {
+            "source": "inputs/native_line_107_text.txt",
+            "normalization": "Parse ordinary JSON output wrapper; take text after original truncation marker.",
+            "source_tail_range": [
+              860,
+              9000
+            ],
+            "destination_range": [
+              20000,
+              28140
+            ]
+          }
+        ],
+        "label": "Derived assembly from two authentic captures, not a newly retrieved complete raw transcript."
+      }
+    }
+  ],
+  "summary": {
+    "prompt_bodies_recovered": 0,
+    "prompt_bodies_still_unavailable": 12,
+    "source_record_hashes_verified": 14,
+    "tool_outputs_now_fully_covered_by_authentic_fragments": 1,
+    "tool_outputs_still_incomplete": 1,
+    "new_output_characters_recovered": 10144,
+    "output_characters_still_missing": 6178
+  },
+  "limits": [
+    "No claim of an unabridged generation/review transcript.",
+    "Character offsets are Unicode string offsets, not byte offsets or token counts.",
+    "Original source truncation markers and API truncation flags remain preserved unchanged.",
+    "No historical command was rerun. No ciphertext or internal payload was decoded. Ordinary JSON wrapper parsing is recorded explicitly.",
+    "Only saved normal-API projections were compared; no new API call or higher output-limit request was made in this resumed audit.",
+    "No repository, RTL, simulation or hardware change. No new tests. No solution material consulted."
+  ]
+}

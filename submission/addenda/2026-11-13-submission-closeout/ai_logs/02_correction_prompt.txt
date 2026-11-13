@@ -1,0 +1,12 @@
+Correct your prior readiness review. It contradicted supplied evidence and the original rules:
+1. You asserted the Trojan IS stealthy. No stealth has been established; stealth is an original objective, not something a missing sentence proves.
+2. You asserted no normal-operation proof/resource documentation exists. Both exist: protocol-scoped induction and bounded edge checks, and measured LUT/register/carry overhead.
+3. You called instructor acceptance a mandatory pre-submission artifact. The original four deliverables do not require a receipt before submitting. Delivery/receipt is an administrative status, not an invented technical eligibility criterion.
+4. You placed key recovery documentation among mandatory gaps despite the explicit BONUS section. No numeric bonus-key result is claimed. Exact cipher and fixed-mask handling are already explained; do not reopen that closed explanation gap.
+5. You declared required requirements met solely because file types exist. Comprehensive relevant logs are still partial, and stealth remains unestablished.
+6. You suggested 'make logs fully readable' without original missing text. That cannot be done honestly through a new summary. Keep authentic omissions visible.
+7. You assigned a likely simulation grade without being the grader. No grade prediction.
+
+Original rules: four mandatory artifact categories = modified AI-generated RTL, exploit/demonstration testbench, comprehensive generation prompts/responses, technical brief. Objective includes stealth and perfect normal operation. Preliminary stage entirely simulation. Payload examples explicitly include predictable ciphertext corruption. Highest-score bands mention negligible overhead, sophisticated payload, seamless AI pipeline and full one-click generation-to-test automation. Key recovery is separately up to10bonus points. Brief must contain enough future hardware-reproduction detail, which is separate from actually programming a board. Original competition form differs from user's course-GitHub destination; do not switch destinations or invite collaborators.
+
+Produce a corrected concise classification only: A) present artifacts/evidence; B) actual unresolved requirement-level concerns; C) optional/high-score improvements; D) next administrative action. No attack implementation, stealth design, hidden-payload decoding, new tests, invented evidence or numeric key guesses. Cite the rule or supplied fact for each. Under400words. Explicitly retract the prior false assertions.

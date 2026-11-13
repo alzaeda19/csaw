@@ -1,4 +1,6 @@
-# Current submission guide — November 12, 2026
+# Current submission guide — updated November 13, 2026
+
+**Latest handoff:** [Required versus optional checklist](SUBMISSION_CHECKLIST.md) and [plain-English stealth evidence](addenda/2026-11-13-submission-closeout/STEALTH_IN_PLAIN_ENGLISH.md). All four artifact types are present. Complete relevant AI logs and the stealth objective remain unresolved; key recovery is a bonus and full automation/negligible overhead are higher-score targets. One previously incomplete reviewer tool output has now been fully assembled from authentic captures, as detailed below.
 
 The modified hardware code, demonstration testbench, saved results and submission archive are present. The follow-ups add fresh synthesis, protocol-scoped formal checks, a reference-board pin audit, original-source cipher reconstruction and Qwen review records. It does not change the tested design or rerun the original simulation suite.
 
@@ -42,7 +44,7 @@ The later cross-app supplement preserves 15 Qwen setup attempts, a 100-line prom
 | Gap | What is still unavailable or unproved |
 |---|---|
 | Reviewer instructions | **12 encrypted inbound message bodies:** nine task requests and three steering messages. The parent and child records refer to the same 12 exchanges. None was recovered as plaintext. |
-| Historical tool output | Two reviewer outputs contain original truncation markers reporting **1,546 and 2,535 omitted tokens**. The new exporter adds no truncation and does not fabricate the missing text. |
+| Historical tool output | Original captures retain the **1,546- and 2,535-token truncation markers**. The latter output is now fully assembled from authentic overlapping captures, restoring **10,140 characters**. The first gains four characters but retains a **6,178-character gap**. This is labeled derived assembly, not an invented transcript or a rewrite of the original captures. |
 | Earlier full history | Some older project conversations and compacted context remain unavailable. Those are separate from the recovered generation/packaging tail; the qualifier specifically asks for prompts and responses used to generate the modification. |
 | Cipher limits after reconstruction | The exact four-round operations, AES S-box ordering and effective fixed-mask handling are established. Author naming/rationale and cryptographic strength remain unverified. Exact byte/control checks and finite end-to-end simulations are not a whole-system proof for arbitrary protocol or physical behavior. |
 | Challenge quality and scoring | Stealth remains unestablished. Normal preservation now has a cyclic synchronous induction proof under explicit protocol assumptions and a bounded edge-explicit check. General behavior outside that scope is unproved. Mapped overhead is measured; negligible physical overhead and full historical generation automation are not established. |
@@ -67,3 +69,5 @@ To reproduce the existing simulations, follow the original README after extracti
 The new pin-audit records disclose four unreadable peer-task exchanges and three progress messages from documentation review. They are separate from the original twelve generation-review instructions. The earlier three Qwen verification calls and two later cipher-review calls retain requests, received streams and replies, including rejected overclaims. Current record cutoffs and any separate documentation-audit gaps are disclosed in each addendum.
 
 The cipher-analysis audit preserves 93 visible records with exact-value checks and discloses three unreadable peer instruction exchanges plus two unreadable progress messages. These are new documentation-analysis gaps, separate from the historical twelve reviewer instructions and the earlier pin-audit gaps. Both current peer final responses are preserved. Current Qwen prompts and received replies are complete; record cutoffs do not pretend to include future publication messages.
+
+The November 13 bounded records recheck and Qwen review are in [the closeout addendum](addenda/2026-11-13-submission-closeout/README.md). It changes documentation and adds authentic recovered tool-output text; it does not add concealed behavior or claim a new detector result.

@@ -1,0 +1,35 @@
+**Corrected Classification:**
+
+**A) Present Artifacts/Evidence**  
+- Protocol-scoped induction and bounded edge checks are provided (Rule 2).  
+- Measured LUT/register/carry overhead is documented (Rule 2).  
+- Exact cipher and fixed-mask handling are explained (Rule 4).  
+- Technical brief includes future hardware-reproduction detail (Rule 1).  
+
+**B) Actual Unresolved Requirement-Level Concerns**  
+- Stealth has not been established (Rule 1).  
+- Comprehensive relevant logs are still partial (Rule 5).  
+- No normal-operation proof/resource documentation was previously cited, though it exists (Rule 2).  
+- No numeric bonus-key result is claimed (Rule 4).  
+
+**C) Optional/High-Score Improvements**  
+- Full one-click generation-to-test automation is not yet implemented (Rule 1).  
+- Sophisticated payload and negligible overhead are not yet demonstrated (Rule 1).  
+
+**D) Next Administrative Action**  
+- Submit the four mandatory artifact categories: modified AI-generated RTL, exploit/demonstration testbench, comprehensive generation prompts/responses, and technical brief (Rule 1).  
+
+**Retracted False Assertions:**  
+- Prior claim that Trojan is stealthy (Rule 1) is retracted.  
+- Prior claim that no normal-operation proof exists (Rule 2) is retracted.  
+- Prior claim that instructor acceptance is mandatory (Rule 3) is retracted.  
+- Prior claim that key recovery documentation is a mandatory gap (Rule 4) is retracted.  
+- Prior claim that simulation grade was assigned (Rule 7) is retracted.  
+
+**Citations:**  
+- Rule 1: Stealth and perfect normal operation are objectives, not proven.  
+- Rule 2: Protocol-scoped induction and overhead are present.  
+- Rule 3: Instructor acceptance is administrative, not technical.  
+- Rule 4: Bonus section explicitly allows key recovery explanation.  
+- Rule 5: Logs are partial; stealth unproven.  
+- Rule 7: No grade prediction is allowed.

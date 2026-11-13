@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-11-13T05:44:14.050493+00:00",
+  "endpoint": "http://127.0.0.1:11434/api/chat",
+  "tools_granted": [],
+  "status": "COMPLETED",
+  "completion": {
+    "model": "qwen3-csaw-agent:20261112234518",
+    "created_at": "2026-11-13T05:44:28.401518Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 14336096125,
+    "load_duration": 15122834,
+    "prompt_eval_count": 1229,
+    "prompt_eval_cached_count": 73,
+    "prompt_eval_duration": 4637153000,
+    "eval_count": 295,
+    "eval_duration": 9639403000
+  },
+  "ended_utc": "2026-11-13T05:44:28.403531+00:00",
+  "elapsed_seconds": 14.353,
+  "response_characters": 1429
+}

@@ -1,0 +1,207 @@
+{
+  "tool": "mcp__codex_app__read_thread",
+  "arguments": {
+    "threadId": "01a1d245-26de-7730-8903-654a1eb4004d",
+    "hostId": "local",
+    "turnLimit": 10,
+    "includeOutputs": true,
+    "maxOutputCharsPerItem": 20000
+  },
+  "page": {
+    "order": "newest_first",
+    "limit": 10,
+    "nextCursor": null,
+    "hasMore": false
+  },
+  "thread": {
+    "id": "01a1d245-26de-7730-8903-654a1eb4004d"
+  },
+  "turns": [
+    {
+      "id": "01a1d25d-97e0-7cf1-90c8-621f694be80a",
+      "status": "completed",
+      "startedAt": 1794530711,
+      "completedAt": 1794530919,
+      "userMessagePresent": false,
+      "items": [
+        {
+          "type": "commandExecution",
+          "id": "exec-a7d487b0-dd8a-4f47-9ddf-3089298deffc",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-e8e73975-2ae5-4c81-8f7c-e3262ff7ec68",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-1c0a04ca-e54d-4313-9867-f00d75256002",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "subAgentActivity",
+          "id": "call_e81664e6ad8b44c0ae8c04b31ec6776a",
+          "kind": "interacted",
+          "agentThreadId": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+          "agentPath": "/root"
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-756b3b39-5722-4f8c-bac8-89b93f81dd8f",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-faf92c63-04ae-495c-bfd5-5b7e1c03a43a",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-2c413df3-fead-4dde-a8fb-3d793b0dbeac",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "fileChange",
+          "id": "exec-3ff091cb-ca5e-41e2-b79c-8490d6494ac6",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-6c6f59fd-c09f-402e-bb2b-a09729454b01",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "commandExecution",
+          "id": "exec-0b8a9e40-dda5-4dcc-b1f7-5b04cae1a1cb",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "subAgentActivity",
+          "id": "call_8957e443f9f2463688009dcd07f88fba",
+          "kind": "interacted",
+          "agentThreadId": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+          "agentPath": "/root"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_01ef633e0bf47c60016af65e6569ec87d1a79fa702d8a6d63a",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        }
+      ]
+    },
+    {
+      "id": "01a1d25a-f923-7553-b5fc-0ebb8359d29a",
+      "status": "completed",
+      "startedAt": 1794530539,
+      "completedAt": 1794530574,
+      "userMessagePresent": false,
+      "items": [
+        {
+          "type": "commandExecution",
+          "id": "exec-24492af7-12e5-4aeb-9883-6eab5f3c94dd",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "subAgentActivity",
+          "id": "call_d915ad0a8d4d428cba2d1299e8a5356f",
+          "kind": "interacted",
+          "agentThreadId": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+          "agentPath": "/root"
+        },
+        {
+          "type": "subAgentActivity",
+          "id": "call_9b3eefdb992f438db087cc98a4e31f1f",
+          "kind": "interacted",
+          "agentThreadId": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+          "agentPath": "/root"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_01ef633e0bf47c60016af65d0cb9ec87d1986ed80f8c8a88af",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        }
+      ]
+    },
+    {
+      "id": "01a1d24d-7c39-72e1-bc0c-69111e40c1fd",
+      "status": "completed",
+      "startedAt": 1794529656,
+      "completedAt": 1794529690,
+      "userMessagePresent": false,
+      "items": [
+        {
+          "type": "commandExecution",
+          "id": "exec-57a2d8a3-dd0c-42f7-bffa-70b29d700928",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "subAgentActivity",
+          "id": "call_a1b80aa89ab84051ab4fd45f0278ea29",
+          "kind": "interacted",
+          "agentThreadId": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+          "agentPath": "/root"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_01ef633e0bf47c60016af6599868b487d18af6983407ec7966",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        }
+      ]
+    },
+    {
+      "id": "01a1d248-c06a-7843-90fc-21ef47d594c3",
+      "status": "completed",
+      "startedAt": 1794529345,
+      "completedAt": 1794529365,
+      "userMessagePresent": false,
+      "items": [
+        {
+          "type": "commandExecution",
+          "id": "exec-74409066-209c-47f2-a559-7fd656cd6f4d",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "subAgentActivity",
+          "id": "call_339e27886fbd4cc2916066a2277aa61d",
+          "kind": "interacted",
+          "agentThreadId": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+          "agentPath": "/root"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_01ef633e0bf47c60016af65853bde887d19c0907c55fbc1531",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        }
+      ]
+    },
+    {
+      "id": "01a1d245-2704-79d1-a305-f315a16334bb",
+      "status": "completed",
+      "startedAt": 1794529109,
+      "completedAt": 1794529130,
+      "userMessagePresent": false,
+      "items": [
+        {
+          "type": "commandExecution",
+          "id": "exec-02595957-fa3a-4dda-941f-c3619add9803",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        },
+        {
+          "type": "subAgentActivity",
+          "id": "call_19d3992a8fbf4734bc74853e44db8222",
+          "kind": "interacted",
+          "agentThreadId": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+          "agentPath": "/root"
+        },
+        {
+          "type": "agentMessage",
+          "id": "msg_01ef633e0bf47c60016af657674a6487d1a133c0b567b6b823",
+          "contentExcluded": "Outside the two target outputs; original duplicate coverage remains in prior exports."
+        }
+      ]
+    }
+  ],
+  "projection": "Reasoning/internal content excluded; all activity item metadata retained; exact output strings retained only for the two target commands."
+}
+

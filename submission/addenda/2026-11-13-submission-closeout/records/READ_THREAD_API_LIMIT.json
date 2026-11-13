@@ -1,0 +1,9 @@
+{
+  "tool": "read_thread",
+  "requested_maxOutputCharsPerItem": 65000,
+  "actual_limit": 20000,
+  "returned_error": "read_thread received invalid arguments: maxOutputCharsPerItem: Too big: expected number to be <=20000.",
+  "first_attempt_followup_error": "JSON parse failed because the tool returned plain error text rather than a JSON thread object.",
+  "second_attempt": "Error inspected; no bypass or further larger-limit attempt.",
+  "scope": "Two already authorized reviewer tool outputs only."
+}

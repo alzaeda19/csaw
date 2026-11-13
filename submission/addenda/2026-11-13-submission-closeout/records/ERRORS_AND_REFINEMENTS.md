@@ -1,0 +1,7 @@
+# Errors and refinements
+
+- Attempted to read Qwen response.txt before the streaming call completed; the file did not yet exist. No result was inferred. Received chunks remain in received_stream.jsonl; response.txt is written when the call ends.
+- Qwen review1 invented established stealth, absent normal-operation proof and absent overhead records; incorrectly promoted instructor receipt and bonus-key documentation to mandatory gaps; equated present file categories with full compliance; proposed making unavailable logs complete without originals. These claims are rejected. The full reply is retained, followed by an explicit correction prompt.
+- Qwen review3 correctly left stealth unestablished but invented an all-observation-vectors standard and required physical/gate-level verification. Both are rejected as non-required universal/physical claims; scoped evaluation remains the honest framing. It also characterized overhead without a criterion, which is not adopted.
+- The chat API rejected maxOutputCharsPerItem=65000 because its maximum is20000. First attempt then caused a JSON parsing error on the returned plain error text; second inspection confirmed the limit. No bypass was attempted. The independent audit checks whether authentic API-prefix/native-suffix overlap can recover any originally omitted tool-output text without guessing.
+- One orchestrator status read exceeded display limits; no completeness conclusion was drawn from the truncated display. Targeted audit files and structured receipts are used instead.

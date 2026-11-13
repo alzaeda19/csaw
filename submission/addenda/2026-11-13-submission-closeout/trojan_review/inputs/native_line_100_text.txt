@@ -1,0 +1,483 @@
+Warning: truncated output (original token count: 11546)
+Total output lines: 568
+
+# CSAW 2026 — simulation demonstration and evidence
+
+This package contains the preserved recovered baseline, an AI-authored modified interface wrapper, its testbench, a reproducible runner, technical brief, and available AI records. It is a checked simulation package for review. It has not been uploaded, programmed onto hardware, or certified as satisfying every grading criterion.
+
+## Start here
+
+- `HANDOFF_SIMPLE.md`: plain-English completed work and remaining limitations.
+- `rtl/modified_protocol_dut.sv`: final modification; `rtl/baseline.v` is unchanged.
+- `tb/demo_tb.sv`: normal-versus-modified comparison and documented fault demonstration.
+- `ai/AI_RECORDS_INDEX.md`: authorship, exact logs, timeout/failure records and gaps.
+- `evidence/final_runs/20261113T004430Z_hihzqs6r/result.json`: actual final-file test results.
+- `SOURCE_HASHES.json`: frozen inputs used by the runner. `MANIFEST.json`: package contents.
+
+## Reproduce the simulations
+
+Use Python 3 and the compatible Icarus Verilog/VVP toolchain. The actual tested versions were **14.0 (devel), s20260301-831-g1cb990b6f-dirty**, from the preserved OSS CAD Suite. Full version output is in the final-run evidence. Tools are not bundled into this archive. Different versions/platforms are unverified.
+
+From the extracted `submission` folder on this Mac:
+
+```sh
+python3 run_tests.py --tool-bin /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin
+```
+
+On another machine, set `--tool-bin` to the directory containing compatible `iverilog` and `vvp`. The runner creates a new `runs` subfolder, verifies the frozen sources, retains command arguments, versions, stdout/stderr and exit codes, and returns zero only when all five test outcomes match expectations. It refuses to write results inside a Git repository. No original RTL is edited: deliberately broken control versions exist only in the new run folder.
+
+## Final saved-file verification
+
+The actual packaged sources were compiled and simulated on the Mac. Each real design run compiled and simulated with exit code 0.
+
+| Test | Actual outcome |
+| --- | --- |
+| Unmodified baseline ordinary operation | 88 transactions; 6,726 checks; 0 failures |
+| Modified wrapper ordinary operation | 88 transactions; 6,726 checks; 0 failures |
+| Independent demonstration | 39,718 checks; 0 failures; 120 complete reads: 114 normal and 6 faulted |
+| Control with the fault removed | Correctly rejected: simulation exit 1; 14 failures |
+| Control with output permanently inverted | Correctly rejected: simulation exit 1; 9,209 failures |
+
+The demonstration repeats 10 known-answer operations from the original plaintext/ciphertext pair. It observes exactly seven expected flipped samples: six complete faulted reads plus one interrupted read followed by reset. The counts are assertions and repeated examples, not thousands of independent cipher test vectors. The no-fault control has exactly seven MISO relation failures, six word relation failures, and one flip-count failure. All negative-control failures are retained and are expected evidence that the tests discriminate incorrect behavior.
+
+Inherited timescale warnings are saved in compiler logs. No synthesis, place-and-route, physical timing test or board programming was performed for this new wrapper. Earlier project proofs apply to their own baselines/derivatives and do not prove this modification. The original baseline's extra-clock read-readiness limitation is retained; the tests use the supported host schedule.
+
+Six original challenge files still match their source receipt. Four pinned source inputs match their saved hashes. Both existing repositories retain their previous HEAD and working-tree status, including pre-existing uncommitted audit files. See `evidence/FINAL_PRESERVATION.json` for the exact check scope. No GitHub changes, solution access, or key recovery was performed by this task.
+
+# Technical brief: documented output-fault simulation
+
+## Scope and status
+
+This work adds an AI-authored interface wrapper to a preserved, bitstream-derived FPGA simulation model and demonstrates a publicly specified one-bit output fault. It is a simulation-only exercise. The recovered core is unchanged; the demonstration does not access secrets, recover a key, identify a cipher, optimize concealment, or evaluate detector evasion. No board was programmed or tested. Published solutions and set-aside materials were excluded from this work.
+
+The original qualifier requests modified RTL, an exploit testbench, comprehensive AI transcripts, and a technical brief. This package documents its artifacts and evidence without claiming complete satisfaction of every grading criterion. In particular, physical wiring, synthesis/timing suitability of this wrapper, and hardware execution remain unverified. Historical AI records have acknowledged gaps; newly retained interactions cannot retroactively fill them.
+
+## Baseline recovery and understanding
+
+The preserved recovery report describes starting with the original qualifier binary, SHA-256 `5fa5fda9768c36808780398d8e24d125d860aacc62b61af8b4c5124dd759ddbe`. Official Project IceStorm tooling was pinned to commit `00da9c3e6ceff056248e3451dd6fd3210d6ceec9`. `iceunpack` produced an ASC configuration for a 5k device; `icepack` reportedly reproduced the original bytes. This is evidence of an exact packing round trip, not proof of Verilog translation equivalence. Unmodified `icebox_vlog.py` generated the structural Verilog candidate.
+
+Icarus rejected an output declared as a net in the module header and separately declared as a register. The retained derivation script performs two declaration compatibility replacements: `output io_16_31_1` becomes `output reg io_16_31_1`, and `reg io_16_31_1 = 0;` becomes `initial io_16_31_1 = 0;`. The procedural driver and initial value remain. A separate adapter connects inferred protocol roles to recovered ports without substituting data or adding target clocks. The supplied baseline used here has SHA-256 `180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765`.
+
+Primitive simulation uses official Yosys `techlibs/ice40/cells_sim.v` from commit `5e740962d0c7b8c21b6701fe7a70a5e7ebe28661`, SHA-256 `b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527`. Yosys itself was not built or run for that recovery. Functional signal mapping was inferred from recovered connectivity and original interface material; it is not a recovered board pin map. The initial recovery report also retained an optional IceStorm input-enable check failure for the inferred clock pad. This is a historical failure record, not a claim that later validator repairs remain broken. This package does not independently validate physical clock-pin wiring.
+
+The defensible algorithm interpretation is limited: the model accepts a serial 32-bit word, processes it under a mode/control interface, and returns a serial 32-bit result. Its structural logic includes state and four RAM primitives. The original example associates mode 0 with `59c359c3` → `9cd84392`, and mode 1 with the reverse mapping. That pair is consistent with the documented encryption/decryption roles, but does not identify a named cipher, establish invertibility for all inputs, explain a key schedule, or recover a key. The separate professor-provided AES reference is not evidence that this recovered system implements AES.
+
+Sampling and completion timing matter. The initial unchanged harness sampled before recovered register updates and failed its three data comparisons. A separately retained experiment sampling one nanosecond after each rising edge passed the supplied pair. Later preserved evidence reports broader paired simulations and conditional digital-model equivalence; those historical proofs were not rerun here and do not prove this new wrapper. The present demonstration retains seven additional clock pulses after the START pulse, following the original host schedule. It does not claim that reading immediately at the first BUSY-low is valid; prior evidence recorded failures under that shortened schedule.
+
+## AI workflow and authorship
+
+The new generation workflow used local Ollama with Qwen3:8b, through Claude Code as the file-tool client, with model alias `qwen3-csaw-agent:20261112234518`. Codex coordinated the bounded task, reviewed generated files, ran simulation checks, and supplied substantive corrections. The use of Claude Code as a client should not be read as a claim that a Claude model authored the design.
+
+Authorship is mixed AI authorship, not sole-Qwen authorship. Qwen's initial RTL compiled but failed nine ordinary checks. A second Qwen iteration applied a Codex-provided template but introduced code fences and a missing `end`, causing compilation to fail. Codex produced the corrected RTL, including explicit chip-select edge handling after reproducing a frame-boundary failure. Codex also authored the independent pin-level comparison testbench supplied to the subsequent workflow. The final Qwen attempt to save the testbench timed out after 360 seconds without producing the file. Codex then saved its already validated template directly. Retained failed iterations and correction records explain these changes; a final successful run does not erase them. The timeout receipt lists a concurrent report-file change made by the Codex report subagent; that inventory change is not evidence of Qwen authorship.
+
+AI records must distinguish native prompts/responses, tool evidence, authored summaries, and reconstructed indexes. The correction record is supporting provenance, not a replacement for the conversations. Historical transcript incompleteness remains a limitation; no missing dialogue is invented or represented as authentic. The report does not claim comprehensive authentic transcript coverage for all prior recovery work.
+
+## Trigger, payload, and interface behavior
+
+The public demonstration word is `32'hC5A02026`. Qualification requires a completed 32-clock ingress frame while chip select is low, followed by a newly sampled START assertion while chip select is high and `ENC_DEC` is 0. The wrapper tracks ingress length and excludes the first 32 selected extraction clocks after START from ingress qualification. Chip-select deassertion clears the ingress counter even when no SCK edge occurs while chip select is high. Reset of the remaining wrapper state is synchronous to SCK.
+
+For a qualifying operation, the wrapper inverts only the first sampled MISO bit of extraction. With the testbench's MSB-first convention, the resulting word must equal the unmodified core's result XOR `32'h80000000`. The other sampled output bits, BUSY, and LED must match the independent reference. The fault state clears after the 32 extraction clocks or a sampled reset. Partial extraction cancellation is demonstrated with reset; arbitrary partial-read abort and resume behavior is not established.
+
+To reproduce the positive case in simulation: reset, shift the public word in MSB-first over 32 selected clocks, deassert chip select, select mode 0, assert START for one sampled rising edge, deassert START, supply seven completion clocks, then select and sample 32 output bits one nanosecond after their rising edges. Compare against an unmodified core receiving identical pins. The expected word difference is exactly `80000000`. Changing one input bit or using mode 1 is tested as a negative case.
+
+The wrapper is deliberately documented and readily inspectable. No secrecy, obfuscation, resource-minimization result, or detector-evasion claim is made. Its chip-select-sensitive counter and digital output timing have not been synthesized or validated on hardware. These instructions describe a simulation mechanism, not a validated board exploit.
+
+## Fresh template preflight evidence
+
+`evidence/development_runs/final_template_preflight/RESULT.json` records successful Icarus compilation and simulation of the corrected template with the supplied baseline, wrapper, and primitive model. This is explicitly a **template preflight**, not the final packaged-artifact run. The parent packaging process records final reproduction commands, tool versions, artifact identities, and package-run results separately.
+
+| Preflight measure | Observed result |
+| --- | ---: |
+| Checks / failures | 39,718 / 0 |
+| Complete extracted words | 120 |
+| Ordinary / faulted extractions | 114 / 6 |
+| Original-pair known-answer operations | 10 |
+| Expected / observed sampled bit inversions | 7 / 7 |
+
+The seventh inversion occurs in a deliberately interrupted extraction followed by reset; it is not a seventh complete faulted read. The check count includes repeated per-clock assertions and must not be interpreted as 39,718 independent test vectors. The ten known-answer operations repeat the original supplied pair; they do not introduce ten independent cipher oracles.
+
+The testbench compares separate modified and unmodified core instances through their public pins. Expected faults come from test-case inputs, not the modified wrapper's internal trigger state. Coverage includes all four adjacent mode pairs, 64 deterministic ordinary operations, all 32 one-bit neighbors of the public word, the other mode, consecutive triggers, subsequent normal operation, malformed ingress lengths, readout that carries the public word, selected pauses, held START, and reset cancellation. The START-while-selected case checks equality during ingress and then resets; it does not establish a complete valid transaction for that condition.
+
+The ordinary runner uses fixed 1 MHz clocks, a one-nanosecond sample delay, the retained completion schedule, and no ordinary-run pauses; it is not a frequency or sampling sweep. The demonstration adds specific pause cases. Passing finite digital simulations supports only these tested behaviors and primitive-model assumptions. It does not establish universal equivalence, independent cipher correctness, physical timing, synthesis fitness, or a security guarantee.
+
+# Plain-English progress handoff
+
+**The simulation work is finished and passes the saved tests. The work is packaged for review; it has not been submitted.**
+
+## What is done
+
+- Recovered original chip code is preserved in a separate working copy.
+- A modified version has been saved. For one openly documented test input, it changes one output bit; the ordinary tested inputs still behave like the original.
+- Both original and modified versions pass 6,726 ordinary checks across 88 transactions each.
+- The demonstration passes 39,718 checks with no failures. Deliberately broken versions are correctly rejected.
+- The report explains the approach, actual results, limitations and who generated the code.
+- Available AI prompts, responses, failed drafts, timeout records and test logs are included. Qwen produced the first draft; Codex made substantial corrections and wrote the final testbench.
+- Original files and repositories were preserved. No solutions, board programming or key recovery were used.
+
+## What still needs attention
+
+1. Review the package and submit it through the course's required destination. Nothing has been uploaded.
+2. Keep the disclosed AI-log gaps visible. Older complete conversations are not all available; current records do not recreate missing history.
+3. Do not claim every grading requirement is fully proved. The internal cipher explanation is limited; no stealth, detector-evasion, wrapper synthesis, hardware timing or universal-equivalence result is established.
+
+Board programming and key recovery are outside the requested scope. They are not needed to reproduce these simulations. The original qualifier treats key recovery as a bonus.
+
+The final technical details and reproduction command are in README.md. The source files, evidence and records are all inside this package.
+# AI records and authorship
+
+This is an index of retained evidence, not a reconstructed conversation. Records cover this separate simulation package. They do not certify a complete history of the entire earlier project.
+
+## Actual tools and authors
+
+- Qwen3:8b ran locally through Ollama using model alias `qwen3-csaw-agent:20261112234518`. Claude Code was the file-tool interface; this is not a claim of Claude-model authorship.
+- Qwen produced the initial RTL draft. Codex supplied substantial corrected RTL and authored/saved the final testbench and runner. The final result must not be described as solely Qwen-authored.
+- Qwen had Read/Edit/Write/Glob/Grep tools in the separate work folder. Codex ran simulations independently. Model-written claims were not treated as test results.
+- Exact configuration snapshots, launcher, prompts, raw streamed responses, native Qwen sessions, stderr/debug logs, tool errors, before/after file inventories, exits and hashes are preserved for each Qwen attempt.
+- Codex model family is self-identified as GPT-6 in project context. Exact serving-model revision and sampling parameters are not independently established here.
+
+## New Qwen interactions
+
+| Folder under `qwen/` | Observed outcome |
+| --- | --- |
+| `20261113T002025Z_f8pf3qt7` | Initial RTL draft; model response completed, launcher exit 0. Subsequent simulation failed 9 ordinary checks. |
+| `20261113T002330Z_nqwhdxe4` | Applied a Codex correction template with tool/order and copy errors. Launcher exit 2. Saved RTL contained Markdown fences/missing end; compiler exit 2. |
+| `20261113T003819Z_540gdr_f` | Attempted final testbench save; timed out after 360 seconds, launcher exit 124. No completed response and no saved testbench; partial stream and native session retained. |
+
+The timeout receipt's changed-path inventory includes `report/TECHNICAL_BRIEF.md`, which the Codex report subagent wrote concurrently. This is not evidence that Qwen wrote the report. Each receipt's before/after inventory reports observed changes, not causal attribution.
+
+Codex then saved its validated final testbench template. See `evidence/setup_records/FINAL_FILE_PROVENANCE.json` and `CODEX_CORRECTIONS.json`. `controller_templates/` holds the exact prompts and successive correction/bench templates; those are supporting artifacts, not substitutes for authentic transcript records.
+
+## Codex records
+
+`codex_current_task/` contains a bounded, filtered native export of only the current generation/correction task, with an index, native line numbers and hashes. Read its export manifest for exact cutoff, filters and inaccessible fields. `reviewer_exports/` contains visible app exports for the two independent reviewers; app exports can truncate outputs and do not expose every delegation prompt. They are labeled accordingly.
+
+The coding-interface launcher/configuration is preserved under `launcher_reference/`. These records retain original local paths. They document the actual interface; they are not a portable installer. The portable simulation entry point is `../run_tests.py`. Logs likewise retain their original absolute paths; packaged source files are self-contained relative to that runner.
+
+## Earlier recovery records and limitations
+
+Selected historical records are copied under `evidence/historical_recovery/`, including the recovery AI_RECORD, original delegated request, derivation script and tool-source metadata. All pre-existing project records remain in their original locations. They are not all duplicated in this focused archive.
+
+Known gaps are explicit:
+
+- Historical full conversations are not all available. The retained recovery AI_RECORD is a visible summary/command record, not a full native conversation.
+- Encrypted native fields cannot be read or recreated. Some delegation prompt bodies are inaccessible; the bounded export records these omissions.
+- Hidden reasoning, platform instructions, inherited/compacted earlier history, and unrelated conversation/sidebar metadata are intentionally excluded.
+- Current native export ends at its stated snapshot. Subsequent archive sealing, verificat…1546 tokens truncated…inal_runs/20261113T004430Z_hihzqs6r/modified_normal/sources/baseline.v",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/sources/modified_protocol_dut.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/sources/cells_sim.v"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal",
+        "start_utc": "2026-11-13T00:44:31.718791+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/compile.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/compile.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.129985
+      },
+      "source_hashes": {
+        "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+        "paired_normal_tb.sv": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+        "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+        "modified_protocol_dut.sv": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e"
+      },
+      "meets_expectation": true,
+      "simulate": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+          "-n",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/sim.vvp",
+          "+half_ps=500000",
+          "+sample_ps=1000",
+          "+immediate=0",
+          "+pauses=0"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal",
+        "start_utc": "2026-11-13T00:44:31.850034+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/simulate.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/simulate.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.991988
+      },
+      "summary_lines": [
+        "transactions=88 checks=6726 failures=0"
+      ],
+      "counts": {
+        "transactions": 88,
+        "checks": 6726,
+        "failures": 0
+      }
+    },
+    {
+      "name": "demonstration",
+      "negative_control": false,
+      "compile": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+          "-g2012",
+          "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+          "-Wall",
+          "-s",
+          "demo_tb",
+          "-o",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/sim.vvp",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/sources/demo_tb.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/sources/baseline.v",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/sources/modified_protocol_dut.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/sources/cells_sim.v"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration",
+        "start_utc": "2026-11-13T00:44:32.848366+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/compile.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/compile.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.182767
+      },
+      "source_hashes": {
+        "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+        "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+        "modified_protocol_dut.sv": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+        "demo_tb.sv": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a"
+      },
+      "meets_expectation": true,
+      "simulate": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+          "-n",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/sim.vvp"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration",
+        "start_utc": "2026-11-13T00:44:33.032264+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/simulate.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/simulate.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.962774
+      },
+      "summary_lines": [
+        "checks=39718 failures=0 reads=120 normal_reads=114 fault_reads=6 known_operations=10 expected_flips=7 observed_flips=7"
+      ],
+      "counts": {
+        "checks": 39718,
+        "failures": 0,
+        "reads": 120,
+        "normal_reads": 114,
+        "fault_reads": 6,
+        "known_operations": 10,
+        "expected_flips": 7,
+        "observed_flips": 7
+      }
+    },
+    {
+      "name": "negative_no_fault",
+      "negative_control": true,
+      "compile": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+          "-g2012",
+          "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+          "-Wall",
+          "-s",
+          "demo_tb",
+          "-o",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/sim.vvp",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/sources/demo_tb.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/sources/baseline.v",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/sources/modified_protocol_dut.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/sources/cells_sim.v"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault",
+        "start_utc": "2026-11-13T00:44:34.998810+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/compile.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/compile.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.230611
+      },
+      "source_hashes": {
+        "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+        "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+        "modified_protocol_dut.sv": "d0e1a896cb22fda608f6e33db467b05996ebf4415e9b31f8db73be37cd26422a",
+        "demo_tb.sv": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a"
+      },
+      "meets_expectation": true,
+      "simulate": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+          "-n",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/sim.vvp"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault",
+        "start_utc": "2026-11-13T00:44:35.230656+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/simulate.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/simulate.stderr.log",
+        "returncode": 1,
+        "timed_out": false,
+        "elapsed_seconds": 2.015608
+      },
+      "summary_lines": [
+        "checks=39718 failures=14 reads=120 normal_reads=114 fault_reads=6 known_operations=10 expected_flips=7 observed_flips=0"
+      ],
+      "counts": {
+        "checks": 39718,
+        "failures": 14,
+        "reads": 120,
+        "normal_reads": 114,
+        "fault_reads": 6,
+        "known_operations": 10,
+        "expected_flips": 7,
+        "observed_flips": 0
+      }
+    },
+    {
+      "name": "negative_always_fault",
+      "negative_control": true,
+      "compile": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+          "-g2012",
+          "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+          "-Wall",
+          "-s",
+          "demo_tb",
+          "-o",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/sim.vvp",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/sources/demo_tb.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/sources/baseline.v",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/sources/modified_protocol_dut.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/sources/cells_sim.v"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault",
+        "start_utc": "2026-11-13T00:44:37.249132+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/compile.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/compile.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.180632
+      },
+      "source_hashes": {
+        "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+        "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+        "modified_protocol_dut.sv": "2ea1f10f1409032b0f1812625784b53afb40f938d10e6032c43b25e0b5a2fb03",
+        "demo_tb.sv": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a"
+      },
+      "meets_expectation": true,
+      "simulate": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+          "-n",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/sim.vvp"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault",
+        "start_utc": "2026-11-13T00:44:37.431127+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/simulate.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_always_fault/simulate.stderr.log",
+        "returncode": 1,
+        "timed_out": false,
+        "elapsed_seconds": 2.164751
+      },
+      "summary_lines": [
+        "checks=39718 failures=9209 reads=120 normal_reads=114 fault_reads=6 known_operations=10 expected_flips=7 observed_flips=8843"
+      ],
+      "counts": {
+        "checks": 39718,
+        "failures": 9209,
+        "reads": 120,
+        "normal_reads": 114,
+        "fault_reads": 6,
+        "known_operations": 10,
+        "expected_flips": 7,
+        "observed_flips": 8843
+      }
+    }
+  ],
+  "versions": [
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+        "-V"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r",
+      "start_utc": "2026-11-13T00:44:30.432088+00:00",
+      "timeout_seconds": 20,
+      "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/iverilog_version.stdout.log",
+      "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/iverilog_version.stderr.log",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.13174
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+        "-V"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r",
+      "start_utc": "2026-11-13T00:44:30.564356+00:00",
+      "timeout_seconds": 20,
+      "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/vvp_version.stdout.log",
+      "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/vvp_version.stderr.log",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.020891
+    }
+  ],
+  "source_checks": {
+    "rtl/baseline.v": {
+      "expected": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "actual": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "matches": true
+    },
+    "rtl/cells_sim.v": {
+      "expected": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+      "actual": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+      "matches": true
+    },
+    "rtl/modified_protocol_dut.sv": {
+      "expected": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+      "actual": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+      "matches": true
+    },
+    "reference/baseline_protocol_dut.sv": {
+      "expected": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "actual": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "matches": true
+    },
+    "reference/paired_normal_tb.sv": {
+      "expected": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+      "actual": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+      "matches": true
+    },
+    "tb/demo_tb.sv": {
+      "expected": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a",
+      "actual": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a",
+      "matches": true
+    },
+    "run_tests.py": {
+      "expected": "2d8703b76839a01c7d9894b6d4cffa0d9c31ada9f0281c083deaad5a591012dd",
+      "actual": "2d8703b76839a01c7d9894b6d4cffa0d9c31ada9f0281c083deaad5a591012dd",
+      "matches": true
+    }
+  },
+  "sources_preserved": true,
+  "finished_utc": "2026-11-13T00:44:39.605149+00:00"
+}
+{
+  "time_utc": "2026-11-13T00:44:30.349008+00:00",
+  "testbench_author": "Codex",
+  "saved_by": "Codex",
+  "reason": "Qwen attempt 20261113T003819Z_540gdr_f timed out after360seconds without saving testbench; full partial stream retained",
+  "source_template": "config/05_codex_final_demo.sv.txt",
+  "sha256": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a",
+  "qwen_receipt_change_note": "The reported changed_path report/TECHNICAL_BRIEF.md was written concurrently by the Codex report subagent. This is a before/after inventory, not evidence Qwen wrote that file.",
+  "rtl_author": "Qwen initial draft; substantive final correction by Codex",
+  "original_core_unchanged": true
+}

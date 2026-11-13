@@ -4,6 +4,8 @@ The current simulation package is in [submission/](submission/). Download [submi
 
 **The previously missing modified RTL and demonstration testbench are now present.** Saved simulations pass the stated tests. This does not establish satisfaction of every grading criterion or instructor acceptance. [Current limitations and submission status](SUBMISSION_GAPS.md) remain explicit.
 
+**November 13 closeout:** [Required versus optional submission checklist](submission/SUBMISSION_CHECKLIST.md) and [plain-English explanation of stealth evidence](submission/addenda/2026-11-13-submission-closeout/STEALTH_IN_PLAIN_ENGLISH.md). One previously incomplete reviewer tool output is now fully assembled from authentic captures; twelve reviewer inputs and one output gap remain. All four artifact types are present; stealth and complete relevant logs remain unresolved.
+
 ## Review the current package
 
 1. [Current submission guide and exact remaining gaps](submission/CURRENT_GUIDE.md).

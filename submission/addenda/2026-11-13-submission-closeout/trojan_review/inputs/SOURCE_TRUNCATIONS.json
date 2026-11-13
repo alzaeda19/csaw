@@ -1,0 +1,67 @@
+{
+  "exporter_added_truncation": false,
+  "retained_source_truncations": [
+    {
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 100,
+        "native_line_sha256": "f59426cc0868ad1976329e20c7d1554b8581dca30b84a4c415a0a5631f383658",
+        "native_raw_line_bytes": 41833,
+        "timestamp": "2026-11-13T00:47:42.959Z",
+        "turn_id": "01a1d25f-d0b3-78e2-8959-429ec689173c",
+        "section": "original_generation_final_package_consistency_review"
+      },
+      "export_pointer": "/record/payload/output/1/text",
+      "retained_string_characters": 40100,
+      "markers": [
+        {
+          "start_character": 0,
+          "end_character": 55,
+          "exact_marker": "Warning: truncated output (original token count: 11546)"
+        },
+        {
+          "start_character": 20077,
+          "end_character": 20100,
+          "exact_marker": "…1546 tokens truncated…"
+        }
+      ],
+      "policy": "Source truncation retained unchanged; no missing bytes inferred or restored."
+    },
+    {
+      "source": {
+        "reviewer": "report_review",
+        "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-18-34-01a1d245-3808-71b3-a696-a4f14fca0a76.jsonl",
+        "native_line": 107,
+        "native_line_sha256": "b2cc8f4230b47da40b393a6f22f4cdd0f572639be987a02d6d4b6b63ce5b2a69",
+        "native_raw_line_bytes": 20842,
+        "timestamp": "2026-11-13T00:47:51.948Z",
+        "turn_id": "01a1d25f-d0b3-78e2-8959-429ec689173c",
+        "section": "original_generation_final_package_consistency_review"
+      },
+      "export_pointer": "/record/payload/output/1/text",
+      "retained_string_characters": 18997,
+      "markers": [
+        {
+          "start_character": 105,
+          "end_character": 159,
+          "exact_marker": "Warning: truncated output (original token count: 7035)"
+        },
+        {
+          "start_character": 9411,
+          "end_character": 9434,
+          "exact_marker": "…2535 tokens truncated…"
+        }
+      ],
+      "policy": "Source truncation retained unchanged; no missing bytes inferred or restored."
+    }
+  ],
+  "omitted_truncated_source_outputs": [
+    {
+      "reviewer": "protocol_review",
+      "native_line": 114,
+      "reason": "Whole nested identifier-inventory output omitted; native truncation is not repaired."
+    }
+  ],
+  "unknown_missing_content": "Counts in truncation markers are tool-reported token counts; missing source bytes cannot be determined from these records."
+}
