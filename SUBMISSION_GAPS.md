@@ -11,10 +11,10 @@ The original guidelines remain the grading basis. Modified RTL and a demonstrati
 | Stealth/security claims | Not established. No concealment, detector evasion or reliable security guarantee is claimed. |
 | Synthesis/hardware/universal equivalence | Not established for the new wrapper. The preserved qualifier is simulation-only; these limits are disclosed rather than presented as new mandatory board tasks. |
 | Submission destination | User specifies GitHub. Updated package is supplied here; this is not a portal receipt or instructor acceptance decision. |
-| Reviewer access | Collaborator invitations were explicitly skipped at the user's request. No reviewer-access or acceptance claim is made. |
+| Reviewer access | The user authorized public visibility and skipped invitations. Public viewing requires no collaborator membership; actual instructor receipt or acceptance remains unverified. |
 
 Key recovery is a bonus in the original qualifier. It was not performed and is not represented as a mandatory missing deliverable. The separate AES reference and earlier detector results do not prove this recovered system implements AES or certify the current modification.
 
 Saved log counts describe assertions and repeated examples under finite schedules, not independent cipher vectors or all possible behavior. The original baseline read-readiness limitation remains documented. Integrity checks establish consistent bytes, not universal correctness or complete AI provenance.
 
-The material remaining concerns are **grading fit, complete AI-log coverage, the limited cipher explanation, and reviewer access/acceptance**. The upload does not resolve those concerns or guarantee full credit.
+The material remaining concerns are **grading fit, complete AI-log coverage, the limited cipher explanation, and instructor receipt/acceptance**. The upload does not resolve those concerns or guarantee full credit.

@@ -37,10 +37,10 @@ The package documents Python 3 and the exact tested Icarus/VVP development build
 
 The publication copy preserves every one of the original 262 files byte-for-byte. It adds this review, a current status note, and the matching Yosys upstream notices. A separate `PUBLICATION_MANIFEST.json` inventories that augmented copy; the original `MANIFEST.json` remains the unchanged record of the tested input package. The seven runner/RTL/testbench files and all original logs remain unchanged. Consequently, the published ZIP has a new, separately recorded hash; no new simulation result is claimed.
 
-The credential-pattern scan found no matching provider/GitHub credentials, AWS keys, private keys or embedded URL passwords. This is a pattern check, not proof against every secret format. The repository stays private. No automated workflow, collaborator invitation, professor email or board action is added by publication.
+The credential-pattern scan found no matching provider/GitHub credentials, AWS keys, private keys or embedded URL passwords. This is a pattern check, not proof against every secret format. The user subsequently explicitly authorized public visibility after being informed that the package includes AI records and local paths. No automated workflow, collaborator invitation, professor email or board action is added by publication.
 
 The original challenge PDF path supplied earlier is no longer present on disk. Requirements were checked against the original qualifier README preserved in this package; no published challenge solution or archived lecture implementation was consulted.
 
 ## Submission status
 
-GitHub upload and reviewer access are separate facts. The current user requested upload to `alzaeda19/csaw` and then explicitly skipped collaborators. A successful push establishes that the package is on GitHub; it does not establish that an instructor can access it, has accepted it, or that every grading criterion is met. The final publication receipt records the exact pushed commit and remote-byte verification.
+GitHub upload and reviewer access are separate facts. The current user requested upload to `alzaeda19/csaw` and then explicitly skipped collaborators. A successful push establishes that the package is on GitHub; public visibility permits viewing without an invitation, but does not establish that an instructor has received or accepted it, or that every grading criterion is met. The final publication receipt records the exact pushed commit and remote-byte verification.
