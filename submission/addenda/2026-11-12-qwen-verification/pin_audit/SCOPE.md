@@ -1,0 +1,1 @@
+Read-only original-materials pin-map audit. Source delegation: Codex chat 01a1c563-aa79-7e12-ae2f-72d867d1e3da. Only normal-operation board/interface documentation. No solutions, secret-key extraction, design changes, synthesis, simulations, repository mutation or hardware programming. New output files only in this folder. Parent owns model calls and design measurements.

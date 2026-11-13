@@ -1,0 +1,55 @@
+**Final Review: Formal Verification and Overclaim Assessment**
+
+The provided formal verification harness and associated tools are designed to assess the behavior of a hardware module under specified normal protocol conditions. The review focuses on whether the system supports the scoped claim of mask-free behavior under two well-formed normal transactions, with unchanged core input coupling. It does not claim cryptographic correctness, arbitrary protocol trace proofs, or unbounded operation guarantees.
+
+---
+
+### **1. Verification Harness and Toolchain**
+
+- **Yosys** is used with `async2sync` and 161 SAT steps. This is a standard approach for formal verification of sequential circuits.
+- The harness includes `assume` statements that restrict the input space, excluding certain values (`32'hC5A02026`) from `mode_a` and `word_a`. This is a common technique to limit the search space for counterexamples.
+- The `assert` statements in the harness check that `miso`, `busy`, and `led` are zero during the first 160 cycles of the clock. This is a bounded check, not an unbounded one.
+- A **negative control** (removing the normal-word exclusions) finds a counterexample, indicating that the original assumptions are necessary to avoid false positives.
+
+**Conclusion**: The toolchain and harness are standard for formal verification. The bounded nature of the checks is appropriate for the scoped claim.
+
+---
+
+### **2. Masking and Core Behavior**
+
+- The `chip` module is a zero-valued core, which makes all XOR mask outputs observable. This is a key design choice to expose any mask event.
+- The `protocol_dut` module includes a fault injection mechanism that inverts bit 31 of the MISO output under specific conditions. This is a simulation-only fault, not a real-world attack.
+- The `assume` statements in the harness are used to restrict the input space, which is a common practice in formal verification to reduce the search space.
+
+**Conclusion**: The masking behavior is exposed through the zero-valued core. The fault injection is a simulation-only feature, not a real-world vulnerability.
+
+---
+
+### **3. Boundedness and Scope Limitations**
+
+- The verification is **bounded** to 160 clock cycles. This is appropriate for the scoped claim but does not cover arbitrary or unbounded operation.
+- The harness does not support arbitrary protocol traces or unbounded operation. It is limited to the specific normal transactions described.
+- The `assume` statements and bounded assertions are necessary to limit the scope of the verification.
+
+**Conclusion**: The verification is bounded and scoped to the described normal transactions. It does not claim cryptographic correctness or unbounded operation.
+
+---
+
+### **4. Overhead and Memory Properties**
+
+- The **resource overhead** is minimal (36 LUTs, 48 FFs, 13 carry chains). This is within acceptable limits for a formal verification harness.
+- The **memory properties** show that the RAM instances are bijective and have identical effective tables. However, no key or cipher is identified.
+- The **standard substitution comparison** confirms that the RAM tables do not match AES S-boxes or their inverses. This is consistent with the claim that no cipher is identified.
+
+**Conclusion**: The overhead is negligible. The memory properties do not identify a cipher or key, consistent with the scoped claim.
+
+---
+
+### **5. Final Assessment**
+
+- The **scoped claim** of mask-free behavior under two well-formed normal transactions is supported by the verification harness and toolchain.
+- The **boundedness** of the checks is appropriate for the scope of the claim.
+- The **verification does not equate a named cipher with architectural recovery**. No key or cipher is identified.
+- The **toolchain and harness are standard** for formal verification, with no overclaims or defects identified.
+
+**Final Conclusion**: The formal verification harness and toolchain support the scoped claim of mask-free behavior under two well-formed normal transactions. The bounded checks and resource overhead are appropriate. No overclaims or defects are identified. The system does not identify a named cipher or key, and the verification does not claim cryptographic correctness.

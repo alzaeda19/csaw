@@ -1,0 +1,6 @@
+read_verilog -formal -sv  sources/modified_protocol_dut.sv formal/normal_protocol_harness.sv
+prep -top normal_protocol_harness -flatten
+async2sync
+dffunmap
+opt_clean
+sat -seq 161 -set-assumes -prove-asserts -verify -show-ports -dump_json formal/normal/counterexample.json

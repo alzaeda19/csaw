@@ -18,6 +18,12 @@ The subsequent record-integration update includes the 101-file local collection 
 
 The code was developed in the separate workspace coordinated by the Trojan chat. Qwen produced initial drafts; Codex made substantive corrections and wrote the final testbench. Claude Code was the file-tool client for Qwen, not evidence of Claude-model authorship. Failed drafts, timeouts, corrections and available authentic records remain included.
 
+## New verification evidence
+
+The [Qwen-assisted follow-up](submission/addenda/2026-11-12-qwen-verification/README.md) adds fresh synthesis, conditional formal verification and a reference-board pin map without changing the original design. A temporal-induction proof establishes unchanged sampled outputs for arbitrarily many prescribed normal transactions in the synchronous model; a separate explicit-edge check covers two transactions. These are conditional compositional results, not a proof of the cipher or arbitrary protocol/physical behavior.
+
+Measured overhead is +36 LUT4 cells (2.5017%), +48 registers (67.6056%) and +13 carry cells, with no additional RAM. All nine reference-board pins are documented; physical BUSY is pin 23 and LED is pin 38, opposite the interchangeable simulation-adapter labels. The four original fixed lookup memories contain identical effective nonlinear 256-entry byte permutations, but the full cipher and embedded key semantics remain unidentified. A fresh twelve-step verification replay passed. Qwen's three advisory replies, including rejected overclaims and corrections, are retained.
+
 ## What the saved evidence supports
 
 | Saved check | Outcome |
@@ -29,7 +35,7 @@ The code was developed in the separate workspace coordinated by the Trojan chat.
 
 These are finite assertion counts, not thousands of independent cipher vectors. The saved source-relocation run used the same external toolchain. The upload review verified files, hashes, exit records and result summaries against saved logs; it did not rerun or modify the simulation design.
 
-The recovered baseline is preserved. This package is distinct from the earlier readiness-repaired derivative and the separate professor-supplied AES reference. Older proofs and detector results do not certify this modification. No stealth, detector-evasion, wrapper synthesis, board timing, universal-equivalence or key-recovery result is claimed.
+The recovered baseline is preserved. This package is distinct from the earlier readiness-repaired derivative and the separate professor-supplied AES reference. Older proofs and detector results do not certify this modification. No stealth, detector-evasion, board timing, arbitrary-protocol universal-equivalence or key-recovery result is claimed. The new synthesis and protocol-scoped formal results are separately documented above.
 
 ## Reproduction and integrity
 

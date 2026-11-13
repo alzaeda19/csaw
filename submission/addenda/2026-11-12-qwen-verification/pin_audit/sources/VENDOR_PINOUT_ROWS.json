@@ -1,0 +1,814 @@
+[
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "1",
+    "cells": {
+      "A1": "# Pin Out For iCE5UP5K (iCE40 UltraPlus - 5K)"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "2",
+    "cells": {
+      "A2": "# Revision 0.4 - Remove FWG49"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "3",
+    "cells": {
+      "A3": "# Revision 1.1 - Fix RGB pins, swapped C5 & A5 pins as well as 39 & 41"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "4",
+    "cells": {
+      "A4": "# Updated Jun 19, 2017"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "5",
+    "cells": {
+      "A5": "FNC",
+      "B5": "Pin Type",
+      "C5": "BANK",
+      "D5": "Differential Pair",
+      "E5": "UWG30",
+      "F5": "SG48"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "6",
+    "cells": {
+      "A6": "IOB_0a",
+      "B6": "PIO",
+      "C6": "2",
+      "E6": "E5",
+      "F6": "46"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "7",
+    "cells": {
+      "A7": "IOB_2a",
+      "B7": "DPIO",
+      "C7": "2",
+      "D7": "TRUE_of_IOB_3b",
+      "E7": "D5",
+      "F7": "47"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "8",
+    "cells": {
+      "A8": "IOB_3b_G6",
+      "B8": "DPIO/GBIN",
+      "C8": "2",
+      "D8": "COMP_of_IOB_2a",
+      "E8": "F5",
+      "F8": "44"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "9",
+    "cells": {
+      "A9": "IOB_4a",
+      "B9": "DPIO",
+      "C9": "2",
+      "D9": "TRUE_of_IOB_5b",
+      "E9": "-",
+      "F9": "48"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "10",
+    "cells": {
+      "A10": "IOB_5b",
+      "B10": "DPIO",
+      "C10": "2",
+      "D10": "COMP_of_IOB_4a",
+      "E10": "-",
+      "F10": "45"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "11",
+    "cells": {
+      "A11": "IOB_6a",
+      "B11": "PIO",
+      "C11": "2",
+      "E11": "-",
+      "F11": "2"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "12",
+    "cells": {
+      "A12": "IOB_8a",
+      "B12": "DPIO",
+      "C12": "2",
+      "D12": "TRUE_of_IOB_9b",
+      "E12": "-",
+      "F12": "4"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "13",
+    "cells": {
+      "A13": "IOB_9b",
+      "B13": "DPIO",
+      "C13": "2",
+      "D13": "COMP_of_IOB_8a",
+      "E13": "E4",
+      "F13": "3"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "14",
+    "cells": {
+      "A14": "IOB_10a",
+      "B14": "DPIO",
+      "C14": "1",
+      "D14": "TRUE_of_IOB_11b",
+      "E14": "C3",
+      "F14": "-"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "15",
+    "cells": {
+      "A15": "IOB_11b_G5",
+      "B15": "DPIO/GBIN",
+      "C15": "1",
+      "D15": "COMP_of_IOB_10a",
+      "E15": "F4",
+      "F15": "-"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "16",
+    "cells": {
+      "A16": "creset_b",
+      "B16": "CONFIG",
+      "C16": "1",
+      "E16": "F3",
+      "F16": "8"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "17",
+    "cells": {
+      "A17": "IOB_12a_G4_CDONE",
+      "B17": "CONFIG/DPIO/GBIN",
+      "C17": "1",
+      "D17": "TRUE_of_IOB_13b",
+      "E17": "D3",
+      "F17": "-"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "18",
+    "cells": {
+      "A18": "CDONE",
+      "B18": "CONFIG",
+      "C18": "1",
+      "E18": "-",
+      "F18": "7"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "19",
+    "cells": {
+      "A19": "IOB_13b",
+      "B19": "DPIO",
+      "C19": "1",
+      "D19": "COMP_of_IOB_12a",
+      "E19": "E3",
+      "F19": "6"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "20",
+    "cells": {
+      "A20": "IOB_16a",
+      "B20": "PIO",
+      "C20": "1",
+      "E20": "-",
+      "F20": "9"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "21",
+    "cells": {
+      "A21": "IOB_18a",
+      "B21": "PIO",
+      "C21": "1",
+      "E21": "-",
+      "F21": "10"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "22",
+    "cells": {
+      "A22": "IOB_20a",
+      "B22": "PIO",
+      "C22": "1",
+      "E22": "-",
+      "F22": "11"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "23",
+    "cells": {
+      "A23": "IOB_22a",
+      "B23": "DPIO",
+      "C23": "1",
+      "D23": "TRUE_of_IOB_23b",
+      "E23": "-",
+      "F23": "12"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "24",
+    "cells": {
+      "A24": "IOB_23b",
+      "B24": "DPIO",
+      "C24": "1",
+      "D24": "COMP_of_IOB_22a",
+      "E24": "-",
+      "F24": "21"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "25",
+    "cells": {
+      "A25": "IOB_24a",
+      "B25": "DPIO",
+      "C25": "1",
+      "D25": "TRUE_of_IOB_25b",
+      "E25": "B1",
+      "F25": "13"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "26",
+    "cells": {
+      "A26": "IOB_25b_G3",
+      "B26": "DPIO/GBIN",
+      "C26": "1",
+      "D26": "COMP_of_IOB_24a",
+      "E26": "F2",
+      "F26": "20"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "27",
+    "cells": {
+      "A27": "IOB_29b",
+      "B27": "PIO",
+      "C27": "1",
+      "E27": "-",
+      "F27": "19"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "28",
+    "cells": {
+      "A28": "IOB_31b",
+      "B28": "PIO",
+      "C28": "1",
+      "E28": "-",
+      "F28": "18"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "29",
+    "cells": {
+      "A29": "IOB_32a_SPI_SO",
+      "B29": "DPIO/CONFIG_SPI",
+      "C29": "1",
+      "E29": "F1",
+      "F29": "14"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "30",
+    "cells": {
+      "A30": "IOB_33b_SPI_SI",
+      "B30": "DPIO/CONFIG_SPI",
+      "C30": "1",
+      "E30": "E1",
+      "F30": "17"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "31",
+    "cells": {
+      "A31": "IOB_34a_SPI_SCK",
+      "B31": "DPIO/CONFIG_SPI",
+      "C31": "1",
+      "E31": "D1",
+      "F31": "15"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "32",
+    "cells": {
+      "A32": "IOB_35b_SPI_SS",
+      "B32": "DPIO/CONFIG_SPI",
+      "C32": "1",
+      "E32": "C1",
+      "F32": "16"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "33",
+    "cells": {
+      "A33": "VCCPLL",
+      "B33": "VCCPLL",
+      "E33": "B2",
+      "F33": "29"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "34",
+    "cells": {
+      "A34": "IOT_36b",
+      "B34": "DPIO/I3C",
+      "C34": "0",
+      "D34": "COMP_of_IOT_37a",
+      "E34": "A1",
+      "F34": "25"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "35",
+    "cells": {
+      "A35": "IOT_37a",
+      "B35": "DPIO/I3C",
+      "C35": "0",
+      "D35": "TRUE_of_IOT_36b",
+      "E35": "A2",
+      "F35": "23"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "36",
+    "cells": {
+      "A36": "IOT_38b",
+      "B36": "DPIO",
+      "C36": "0",
+      "D36": "COMP_of_IOT_39a",
+      "E36": "-",
+      "F36": "27"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "37",
+    "cells": {
+      "A37": "IOT_39a",
+      "B37": "DPIO",
+      "C37": "0",
+      "D37": "TRUE_of_IOT_38b",
+      "E37": "-",
+      "F37": "26"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "38",
+    "cells": {
+      "A38": "IOT_41a",
+      "B38": "PIO",
+      "C38": "0",
+      "E38": "-",
+      "F38": "28"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "39",
+    "cells": {
+      "A39": "IOT_42b",
+      "B39": "DPIO",
+      "C39": "0",
+      "D39": "COMP_of_IOT_43a",
+      "E39": "-",
+      "F39": "31"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "40",
+    "cells": {
+      "A40": "IOT_43a",
+      "B40": "DPIO",
+      "C40": "0",
+      "D40": "TRUE_of_IOT_42b",
+      "E40": "-",
+      "F40": "32"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "41",
+    "cells": {
+      "A41": "IOT_44b",
+      "B41": "DPIO",
+      "C41": "0",
+      "D41": "COMP_of_IOT_45a",
+      "E41": "-",
+      "F41": "34"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "42",
+    "cells": {
+      "A42": "IOT_45a_G1",
+      "B42": "DPIO/GBIN",
+      "C42": "0",
+      "D42": "TRUE_of_IOT_44b",
+      "E42": "-",
+      "F42": "37"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "43",
+    "cells": {
+      "A43": "IOT_46b_G0",
+      "B43": "DPIO/GBIN",
+      "C43": "0",
+      "E43": "B3",
+      "F43": "35"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "44",
+    "cells": {
+      "A44": "IOT_47a",
+      "B44": "PIO",
+      "C44": "0",
+      "E44": "A4",
+      "F44": "-"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "45",
+    "cells": {
+      "A45": "IOT_48b",
+      "B45": "DPIO",
+      "C45": "0",
+      "D45": "COMP_of_IOT_49a",
+      "E45": "-",
+      "F45": "36"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "46",
+    "cells": {
+      "A46": "IOT_49a",
+      "B46": "DPIO",
+      "C46": "0",
+      "D46": "TRUE_of_IOT_48b",
+      "E46": "-",
+      "F46": "43"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "47",
+    "cells": {
+      "A47": "IOT_50b",
+      "B47": "DPIO",
+      "C47": "0",
+      "D47": "COMP_of_IOT_51a",
+      "E47": "-",
+      "F47": "38"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "48",
+    "cells": {
+      "A48": "IOT_51a",
+      "B48": "DPIO",
+      "C48": "0",
+      "D48": "TRUE_of_IOT_50b",
+      "E48": "-",
+      "F48": "42"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "49",
+    "cells": {
+      "A49": "RGB2",
+      "B49": "LED",
+      "C49": "0",
+      "E49": "C5",
+      "F49": "41"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "50",
+    "cells": {
+      "A50": "RGB1",
+      "B50": "LED",
+      "C50": "0",
+      "E50": "B5",
+      "F50": "40"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "51",
+    "cells": {
+      "A51": "RGB0",
+      "B51": "LED",
+      "C51": "0",
+      "E51": "A5",
+      "F51": "39"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "52",
+    "cells": {
+      "A52": "GND",
+      "B52": "GND",
+      "C52": "GND",
+      "E52": "B4",
+      "F52": "Paddle"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "53",
+    "cells": {
+      "A53": "GND",
+      "B53": "GND",
+      "C53": "GND",
+      "E53": "E2",
+      "F53": "Paddle"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "54",
+    "cells": {
+      "A54": "GND",
+      "B54": "GND",
+      "C54": "GND",
+      "E54": "-",
+      "F54": "Paddle"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "55",
+    "cells": {
+      "A55": "VCC",
+      "B55": "VCC",
+      "C55": "VCC",
+      "E55": "C2",
+      "F55": "5"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "56",
+    "cells": {
+      "A56": "VCC",
+      "B56": "VCC",
+      "C56": "VCC",
+      "E56": "-",
+      "F56": "30"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "57",
+    "cells": {
+      "A57": "VCCIO_0",
+      "B57": "VCCIO",
+      "C57": "0",
+      "E57": "A3",
+      "F57": "33"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "58",
+    "cells": {
+      "A58": "SPI_Vccio1",
+      "B58": "VCCIO",
+      "C58": "1",
+      "E58": "D2",
+      "F58": "22"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "59",
+    "cells": {
+      "A59": "VCCIO_2",
+      "B59": "VCCIO",
+      "C59": "2",
+      "E59": "C4",
+      "F59": "1"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "60",
+    "cells": {
+      "A60": "VPP_2V5",
+      "B60": "VPP",
+      "C60": "VPP",
+      "E60": "D4",
+      "F60": "24"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "61",
+    "cells": {
+      "A61": "*SG48 GND is connected to package paddle"
+    }
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "62",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "63",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "64",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "65",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "66",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "67",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "68",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "69",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "70",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "71",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "72",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "73",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "74",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "75",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "76",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "77",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "78",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "79",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "80",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "81",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "82",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "83",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "84",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "85",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "86",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "87",
+    "cells": {}
+  },
+  {
+    "sheet": "xl/worksheets/sheet1.xml",
+    "row": "88",
+    "cells": {}
+  }
+]

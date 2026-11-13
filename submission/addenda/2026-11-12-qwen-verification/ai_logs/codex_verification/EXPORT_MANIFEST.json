@@ -1,0 +1,30 @@
+{
+  "scope": "Current Qwen-assisted verification turn only; includes visible verification code/tool inputs, not a reconstruction of original generation history.",
+  "created_utc": "2026-11-13T02:25:21.635155+00:00",
+  "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/11/rollout-2026-11-11T22-38-22-01a1c563-aa79-7e12-ae2f-72d867d1e3da_01a1cdd5-c9db-7581-b129-a9c84bd76091.jsonl",
+  "first_native_line": 1542,
+  "last_native_line": 1828,
+  "source_snapshot_prefix_sha256": "3f6e21e8a14591a2ec7f45fcf8f6238c1a1eeffa4c52df6bdd3f0394b5bef0d2",
+  "source_snapshot_prefix_bytes": 7495653,
+  "last_timestamp": "2026-11-13T02:25:21.575Z",
+  "retained_records": 32,
+  "omitted_records": 255,
+  "visible_text_changed": false,
+  "hidden_reasoning_exported": false,
+  "block_metadata_including_annotations_and_logprobs_excluded": true,
+  "earlier_turns_exported": false,
+  "limitations": [
+    "Tool results are intentionally omitted; task journal and integrity/publication receipts document outcomes.",
+    "This snapshot predates the final push verification and user-facing completion message. It does not claim to contain future messages."
+  ],
+  "files": {
+    "omitted_records.jsonl": {
+      "bytes": 41901,
+      "sha256": "8bcd14f4c458fe3d7b4a4748ab83469ba61a55e9b60931c500d02a98fe98aa83"
+    },
+    "visible_messages_and_tool_inputs.jsonl": {
+      "bytes": 93885,
+      "sha256": "8ff089a3093f9564b2d2348da05341706373ec4037682955b2db9d0b35470b1f"
+    }
+  }
+}

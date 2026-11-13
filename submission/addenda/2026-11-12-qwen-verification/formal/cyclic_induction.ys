@@ -1,0 +1,6 @@
+read_verilog -formal -sv sources/modified_protocol_dut.sv formal/cyclic_normal_harness.sv
+prep -top cyclic_normal_harness -flatten
+async2sync
+dffunmap
+opt_clean
+sat -tempinduct -seq 2 -stepsize 10 -maxsteps 170 -timeout 90 -set-assumes -prove-asserts -verify

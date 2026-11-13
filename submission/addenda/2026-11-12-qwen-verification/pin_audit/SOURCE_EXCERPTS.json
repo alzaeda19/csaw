@@ -1,0 +1,310 @@
+[
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/README.md",
+    "sha256": "5044d9558161e7fec40ae7d4cb8c15b678cfda982afcf914f9e318ac3bb76902",
+    "excerpts": [
+      {
+        "line": 59,
+        "text": "- GTKWave"
+      },
+      {
+        "line": 60,
+        "text": "- Yosys"
+      },
+      {
+        "line": 61,
+        "text": "- IceStorm"
+      },
+      {
+        "line": 62,
+        "text": ""
+      },
+      {
+        "line": 63,
+        "text": "While you are not required to use these specific tools, the Hackster was designed to work with open-source tooling such as this."
+      },
+      {
+        "line": 64,
+        "text": ""
+      },
+      {
+        "line": 65,
+        "text": "For the first phase of the competition, teams will not have access to a physical Hackster board, however, [this documentation](https://cgi.cse.unsw.edu.au/~cs6420/labs/lab00introduction/) on getting the Hackster set up (with the OSS CAD Suite) could prove helpful in understanding the connections on the board and how the whole system is built. You can also see the [hackster-programmer GitHub](https://github.com/kiwih/hackster-programmer) repo for additional information like the PCB schematics."
+      },
+      {
+        "line": 66,
+        "text": ""
+      },
+      {
+        "line": 67,
+        "text": "## Hackster Board"
+      },
+      {
+        "line": 68,
+        "text": "The *Hackster* board from Calico Computer is a hardware security learning platform designed by Dr. Hammond Pearce. It contains an application processor ([RP2040](https://www.raspberrypi.com/products/rp2040/)), a programming processor (RP2040), FPGA ([iCE40-UP5K](https://www.latticesemi.com/en/products/fpgaandcpld/ice40ultraplus)), and additional circuitry and components for side-channel power analysis."
+      },
+      {
+        "line": 69,
+        "text": ""
+      },
+      {
+        "line": 70,
+        "text": "The Hackster hardware is under the CC BY-SA 4.0 license. Any use of the hardware documentation (such as the schematic) or the gerber files for the Hackster should be attributed as follows:"
+      },
+      {
+        "line": 71,
+        "text": ""
+      },
+      {
+        "line": 72,
+        "text": "\"Hammond Pearce, UNSW Sydney - CC BY-SA 4.0\""
+      },
+      {
+        "line": 73,
+        "text": ""
+      },
+      {
+        "line": 74,
+        "text": "## Previous Competitions"
+      },
+      {
+        "line": 75,
+        "text": "We've run versions of this competition for the past several years at [NYU's CSAW Event](https://www.csaw.io/ai-hardware-attack-challenge). We also [published results from the first two competitions](https://ieeexplore.ieee.org/document/11169309), which might help serve as inspiration if you find your team is stuck."
+      },
+      {
+        "line": 76,
+        "text": ""
+      }
+    ]
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_recovery_2026-11-06/raw/original.asc",
+    "sha256": "39e2016b6eb920870e0e3530460da25916b3191bb02736768f0f300539f16b5d",
+    "excerpts": [
+      {
+        "line": 1,
+        "text": ".comment"
+      },
+      {
+        "line": 2,
+        "text": ".device 5k"
+      }
+    ]
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_recovery_2026-11-06/raw/recovered_default.v",
+    "sha256": "8203748cf74b6d969f8f42e07a5ce21407bfa640e5f9c8f6ab9c1886820ae902",
+    "excerpts": [
+      {
+        "line": 1,
+        "text": "// Reading file 'raw/original.asc'.."
+      },
+      {
+        "line": 2,
+        "text": ""
+      },
+      {
+        "line": 3,
+        "text": "module chip (input io_9_31_1, input io_19_31_1, input io_17_31_0, input io_16_31_0, input io_13_31_1, input io_18_31_1, output io_8_31_1, output io_19_31_0, output io_16_31_1);"
+      },
+      {
+        "line": 30051,
+        "text": "assign io_19_31_0 = io_8_31_1;"
+      }
+    ]
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_recovery_2026-11-06/tooling/icestorm/icebox/icebox.py",
+    "sha256": "811f0a1e6f8a22bbe56fb351e57be69046aa1891f15c9eca2fd6ad53fd3f720f",
+    "excerpts": [
+      {
+        "line": 237,
+        "text": "    def pinloc_db(self, package = None):"
+      },
+      {
+        "line": 238,
+        "text": "        if package is None:"
+      },
+      {
+        "line": 239,
+        "text": "            if self.device == \"384\": return pinloc_db[\"384-qn32\"]"
+      },
+      {
+        "line": 240,
+        "text": "            if self.device == \"1k\": return pinloc_db[\"1k-tq144\"]"
+      },
+      {
+        "line": 241,
+        "text": "            if self.device == \"lm4k\": return pinloc_db[\"lm4k-cm49\"]"
+      },
+      {
+        "line": 242,
+        "text": "            if self.device == \"u4k\": return pinloc_db[\"u4k-sg48\"]"
+      },
+      {
+        "line": 243,
+        "text": "            if self.device == \"5k\": return pinloc_db[\"5k-sg48\"]"
+      },
+      {
+        "line": 244,
+        "text": "            if self.device == \"8k\": return pinloc_db[\"8k-ct256\"]"
+      },
+      {
+        "line": 245,
+        "text": "        else:"
+      },
+      {
+        "line": 246,
+        "text": "            return pinloc_db[self.device + \"-\" + package]"
+      },
+      {
+        "line": 5030,
+        "text": "    \"5k-sg48\": ["
+      },
+      {
+        "line": 5031,
+        "text": "        (  \"2\",  8,  0, 0),"
+      },
+      {
+        "line": 5032,
+        "text": "        (  \"3\",  9,  0, 1),"
+      },
+      {
+        "line": 5033,
+        "text": "        (  \"4\",  9,  0, 0),"
+      },
+      {
+        "line": 5034,
+        "text": "        (  \"6\", 13,  0, 1),"
+      },
+      {
+        "line": 5035,
+        "text": "        (  \"9\", 15,  0, 0),"
+      },
+      {
+        "line": 5036,
+        "text": "        ( \"10\", 16,  0, 0),"
+      },
+      {
+        "line": 5037,
+        "text": "        ( \"11\", 17,  0, 0),"
+      },
+      {
+        "line": 5038,
+        "text": "        ( \"12\", 18,  0, 0),"
+      },
+      {
+        "line": 5039,
+        "text": "        ( \"13\", 19,  0, 0),"
+      },
+      {
+        "line": 5040,
+        "text": "        ( \"14\", 23,  0, 0),"
+      },
+      {
+        "line": 5041,
+        "text": "        ( \"15\", 24,  0, 0),"
+      },
+      {
+        "line": 5042,
+        "text": "        ( \"16\", 24,  0, 1),"
+      },
+      {
+        "line": 5043,
+        "text": "        ( \"17\", 23,  0, 1),"
+      },
+      {
+        "line": 5044,
+        "text": "        ( \"18\", 22,  0, 1),"
+      },
+      {
+        "line": 5045,
+        "text": "        ( \"19\", 21,  0, 1),"
+      },
+      {
+        "line": 5046,
+        "text": "        ( \"20\", 19,  0, 1),"
+      },
+      {
+        "line": 5047,
+        "text": "        ( \"21\", 18,  0, 1),"
+      },
+      {
+        "line": 5048,
+        "text": "        ( \"23\", 19, 31, 0),"
+      },
+      {
+        "line": 5049,
+        "text": "        ( \"25\", 19, 31, 1),"
+      },
+      {
+        "line": 5050,
+        "text": "        ( \"26\", 18, 31, 0),"
+      },
+      {
+        "line": 5051,
+        "text": "        ( \"27\", 18, 31, 1),"
+      },
+      {
+        "line": 5052,
+        "text": "        ( \"28\", 17, 31, 0),"
+      },
+      {
+        "line": 5053,
+        "text": "        ( \"31\", 16, 31, 1),"
+      },
+      {
+        "line": 5054,
+        "text": "        ( \"32\", 16, 31, 0),"
+      },
+      {
+        "line": 5055,
+        "text": "        ( \"34\", 13, 31, 1),"
+      },
+      {
+        "line": 5056,
+        "text": "        ( \"35\", 12, 31, 1),"
+      },
+      {
+        "line": 5057,
+        "text": "        ( \"36\",  9, 31, 1),"
+      },
+      {
+        "line": 5058,
+        "text": "        ( \"37\", 13, 31, 0),"
+      },
+      {
+        "line": 5059,
+        "text": "        ( \"38\",  8, 31, 1),"
+      },
+      {
+        "line": 5060,
+        "text": "        ( \"39\",  4, 31, 0),"
+      },
+      {
+        "line": 5061,
+        "text": "        ( \"40\",  5, 31, 0),"
+      },
+      {
+        "line": 5062,
+        "text": "        ( \"41\",  6, 31, 0),"
+      },
+      {
+        "line": 5063,
+        "text": "        ( \"42\",  8, 31, 0),"
+      },
+      {
+        "line": 5064,
+        "text": "        ( \"43\",  9, 31, 0),"
+      },
+      {
+        "line": 5065,
+        "text": "        ( \"44\",  6,  0, 1),"
+      },
+      {
+        "line": 5066,
+        "text": "        ( \"45\",  7,  0, 1),"
+      }
+    ]
+  }
+]

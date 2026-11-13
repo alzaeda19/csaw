@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/usr/bin/curl",
+    "--fail",
+    "--location",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "30",
+    "https://www.latticesemi.com/view_document?document_id=51971",
+    "--output",
+    "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_original_pin_audit_20261113T020751Z_u4o_hhf6/sources/Lattice_iCE40UP5K_Pinout.xlsx"
+  ],
+  "finished_utc": "2026-11-13T02:10:53.619511+00:00",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "bytes": 15999,
+  "sha256": "cee14ad47beaf22298246228e913e539c87e33bf078e04d65988d1a24237d938"
+}

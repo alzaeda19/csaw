@@ -1,0 +1,2642 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.70+344 (git sha1 2f2307ad6, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_2026-11-12/synthesis/baseline.ys' --
+
+1. Executing Verilog-2005 frontend: sources/baseline.v
+Parsing SystemVerilog input from `sources/baseline.v' to AST representation.
+Generating RTLIL representation for module `\chip'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: sources/baseline_protocol_dut.sv
+Parsing SystemVerilog input from `sources/baseline_protocol_dut.sv' to AST representation.
+Generating RTLIL representation for module `\protocol_dut'.
+Successfully finished Verilog frontend.
+
+3. Executing SYNTH_ICE40 pass.
+
+3.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+3.2. Executing HIERARCHY pass (managing design hierarchy).
+
+3.2.1. Analyzing design hierarchy..
+Top module:  \protocol_dut
+Used module:     \chip
+
+3.2.2. Analyzing design hierarchy..
+Top module:  \protocol_dut
+Used module:     \chip
+Removed 0 unused modules.
+
+3.3. Executing PROC pass (convert processes to netlists).
+
+3.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45673$proc$5588'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45167$proc$5526'.
+Cleaned up 2 empty switches.
+
+3.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 73 assignments to connections.
+
+3.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\chip.$sources/baseline.v:38460$proc$5661'.
+  Set init value: \io_16_31_1 = 1'0
+Found init rule in `\chip.$sources/baseline.v:31609$proc$5660'.
+  Set init value: \n1042 = 1'0
+Found init rule in `\chip.$sources/baseline.v:31567$proc$5659'.
+  Set init value: \n1039 = 1'0
+Found init rule in `\chip.$sources/baseline.v:31550$proc$5658'.
+  Set init value: \n1038 = 1'0
+Found init rule in `\chip.$sources/baseline.v:31522$proc$5657'.
+  Set init value: \n1037 = 1'0
+Found init rule in `\chip.$sources/baseline.v:31475$proc$5656'.
+  Set init value: \n1034 = 1'0
+Found init rule in `\chip.$sources/baseline.v:31315$proc$5655'.
+  Set init value: \n1025 = 1'0
+Found init rule in `\chip.$sources/baseline.v:31288$proc$5654'.
+  Set init value: \n1024 = 1'0
+Found init rule in `\chip.$sources/baseline.v:31255$proc$5653'.
+  Set init value: \n1023 = 1'0
+Found init rule in `\chip.$sources/baseline.v:31130$proc$5652'.
+  Set init value: \n1015 = 1'0
+Found init rule in `\chip.$sources/baseline.v:30869$proc$5651'.
+  Set init value: \n1007 = 1'0
+Found init rule in `\chip.$sources/baseline.v:30600$proc$5650'.
+  Set init value: \n998 = 1'0
+Found init rule in `\chip.$sources/baseline.v:30111$proc$5649'.
+  Set init value: \n972 = 1'0
+Found init rule in `\chip.$sources/baseline.v:29453$proc$5648'.
+  Set init value: \n946 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28769$proc$5647'.
+  Set init value: \n921 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28701$proc$5646'.
+  Set init value: \n917 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28653$proc$5645'.
+  Set init value: \n915 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28608$proc$5644'.
+  Set init value: \n913 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28526$proc$5643'.
+  Set init value: \n910 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28447$proc$5642'.
+  Set init value: \n909 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28415$proc$5641'.
+  Set init value: \n907 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28313$proc$5640'.
+  Set init value: \n901 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28262$proc$5639'.
+  Set init value: \n898 = 1'0
+Found init rule in `\chip.$sources/baseline.v:28246$proc$5638'.
+  Set init value: \n897 = 1'0
+Found init rule in `\chip.$sources/baseline.v:27977$proc$5637'.
+  Set init value: \n887 = 1'0
+Found init rule in `\chip.$sources/baseline.v:27242$proc$5636'.
+  Set init value: \n846 = 1'0
+Found init rule in `\chip.$sources/baseline.v:27213$proc$5635'.
+  Set init value: \n844 = 1'0
+Found init rule in `\chip.$sources/baseline.v:27142$proc$5634'.
+  Set init value: \n842 = 1'0
+Found init rule in `\chip.$sources/baseline.v:27112$proc$5633'.
+  Set init value: \n840 = 1'0
+Found init rule in `\chip.$sources/baseline.v:25736$proc$5632'.
+  Set init value: \n814 = 1'0
+Found init rule in `\chip.$sources/baseline.v:25321$proc$5631'.
+  Set init value: \n810 = 1'0
+Found init rule in `\chip.$sources/baseline.v:24915$proc$5630'.
+  Set init value: \n800 = 1'0
+Found init rule in `\chip.$sources/baseline.v:24881$proc$5629'.
+  Set init value: \n798 = 1'0
+Found init rule in `\chip.$sources/baseline.v:24576$proc$5628'.
+  Set init value: \n781 = 1'0
+Found init rule in `\chip.$sources/baseline.v:24507$proc$5627'.
+  Set init value: \n776 = 1'0
+Found init rule in `\chip.$sources/baseline.v:23855$proc$5626'.
+  Set init value: \n745 = 1'0
+Found init rule in `\chip.$sources/baseline.v:21871$proc$5625'.
+  Set init value: \n698 = 1'0
+Found init rule in `\chip.$sources/baseline.v:18985$proc$5624'.
+  Set init value: \n663 = 1'0
+Found init rule in `\chip.$sources/baseline.v:18957$proc$5623'.
+  Set init value: \n662 = 1'0
+Found init rule in `\chip.$sources/baseline.v:18662$proc$5622'.
+  Set init value: \n642 = 1'0
+Found init rule in `\chip.$sources/baseline.v:18485$proc$5621'.
+  Set init value: \n635 = 1'0
+Found init rule in `\chip.$sources/baseline.v:18390$proc$5620'.
+  Set init value: \n628 = 1'0
+Found init rule in `\chip.$sources/baseline.v:18194$proc$5619'.
+  Set init value: \n619 = 1'0
+Found init rule in `\chip.$sources/baseline.v:18015$proc$5618'.
+  Set init value: \n610 = 1'0
+Found init rule in `\chip.$sources/baseline.v:17993$proc$5617'.
+  Set init value: \n609 = 1'0
+Found init rule in `\chip.$sources/baseline.v:17965$proc$5616'.
+  Set init value: \n607 = 1'0
+Found init rule in `\chip.$sources/baseline.v:17847$proc$5615'.
+  Set init value: \n601 = 1'0
+Found init rule in `\chip.$sources/baseline.v:17236$proc$5614'.
+  Set init value: \n588 = 1'0
+Found init rule in `\chip.$sources/baseline.v:17194$proc$5613'.
+  Set init value: \n587 = 1'0
+Found init rule in `\chip.$sources/baseline.v:17156$proc$5612'.
+  Set init value: \n586 = 1'0
+Found init rule in `\chip.$sources/baseline.v:17047$proc$5611'.
+  Set init value: \n579 = 1'0
+Found init rule in `\chip.$sources/baseline.v:17023$proc$5610'.
+  Set init value: \n578 = 1'0
+Found init rule in `\chip.$sources/baseline.v:17002$proc$5609'.
+  Set init value: \n577 = 1'0
+Found init rule in `\chip.$sources/baseline.v:16966$proc$5608'.
+  Set init value: \n576 = 1'0
+Found init rule in `\chip.$sources/baseline.v:16813$proc$5607'.
+  Set init value: \n566 = 1'0
+Found init rule in `\chip.$sources/baseline.v:16642$proc$5606'.
+  Set init value: \n554 = 1'0
+Found init rule in `\chip.$sources/baseline.v:14598$proc$5605'.
+  Set init value: \n461 = 1'0
+Found init rule in `\chip.$sources/baseline.v:14533$proc$5604'.
+  Set init value: \n457 = 1'0
+Found init rule in `\chip.$sources/baseline.v:14408$proc$5603'.
+  Set init value: \n450 = 1'0
+Found init rule in `\chip.$sources/baseline.v:13432$proc$5602'.
+  Set init value: \n390 = 1'0
+Found init rule in `\chip.$sources/baseline.v:13323$proc$5601'.
+  Set init value: \n384 = 1'0
+Found init rule in `\chip.$sources/baseline.v:12272$proc$5600'.
+  Set init value: \n351 = 1'0
+Found init rule in `\chip.$sources/baseline.v:10128$proc$5599'.
+  Set init value: \n247 = 1'0
+Found init rule in `\chip.$sources/baseline.v:9628$proc$5598'.
+  Set init value: \n219 = 1'0
+Found init rule in `\chip.$sources/baseline.v:9520$proc$5597'.
+  Set init value: \n216 = 1'0
+Found init rule in `\chip.$sources/baseline.v:9427$proc$5596'.
+  Set init value: \n212 = 1'0
+Found init rule in `\chip.$sources/baseline.v:8918$proc$5595'.
+  Set init value: \n189 = 1'0
+Found init rule in `\chip.$sources/baseline.v:8085$proc$5594'.
+  Set init value: \n152 = 1'0
+Found init rule in `\chip.$sources/baseline.v:7585$proc$5593'.
+  Set init value: \n138 = 1'0
+Found init rule in `\chip.$sources/baseline.v:5289$proc$5592'.
+  Set init value: \n109 = 1'0
+Found init rule in `\chip.$sources/baseline.v:3391$proc$5591'.
+  Set init value: \n42 = 1'0
+
+3.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~69 debug messages>
+
+3.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\chip.$sources/baseline.v:38460$proc$5661'.
+Creating decoders for process `\chip.$sources/baseline.v:31609$proc$5660'.
+Creating decoders for process `\chip.$sources/baseline.v:31567$proc$5659'.
+Creating decoders for process `\chip.$sources/baseline.v:31550$proc$5658'.
+Creating decoders for process `\chip.$sources/baseline.v:31522$proc$5657'.
+Creating decoders for process `\chip.$sources/baseline.v:31475$proc$5656'.
+Creating decoders for process `\chip.$sources/baseline.v:31315$proc$5655'.
+Creating decoders for process `\chip.$sources/baseline.v:31288$proc$5654'.
+Creating decoders for process `\chip.$sources/baseline.v:31255$proc$5653'.
+Creating decoders for process `\chip.$sources/baseline.v:31130$proc$5652'.
+Creating decoders for process `\chip.$sources/baseline.v:30869$proc$5651'.
+Creating decoders for process `\chip.$sources/baseline.v:30600$proc$5650'.
+Creating decoders for process `\chip.$sources/baseline.v:30111$proc$5649'.
+Creating decoders for process `\chip.$sources/baseline.v:29453$proc$5648'.
+Creating decoders for process `\chip.$sources/baseline.v:28769$proc$5647'.
+Creating decoders for process `\chip.$sources/baseline.v:28701$proc$5646'.
+Creating decoders for process `\chip.$sources/baseline.v:28653$proc$5645'.
+Creating decoders for process `\chip.$sources/baseline.v:28608$proc$5644'.
+Creating decoders for process `\chip.$sources/baseline.v:28526$proc$5643'.
+Creating decoders for process `\chip.$sources/baseline.v:28447$proc$5642'.
+Creating decoders for process `\chip.$sources/baseline.v:28415$proc$5641'.
+Creating decoders for process `\chip.$sources/baseline.v:28313$proc$5640'.
+Creating decoders for process `\chip.$sources/baseline.v:28262$proc$5639'.
+Creating decoders for process `\chip.$sources/baseline.v:28246$proc$5638'.
+Creating decoders for process `\chip.$sources/baseline.v:27977$proc$5637'.
+Creating decoders for process `\chip.$sources/baseline.v:27242$proc$5636'.
+Creating decoders for process `\chip.$sources/baseline.v:27213$proc$5635'.
+Creating decoders for process `\chip.$sources/baseline.v:27142$proc$5634'.
+Creating decoders for process `\chip.$sources/baseline.v:27112$proc$5633'.
+Creating decoders for process `\chip.$sources/baseline.v:25736$proc$5632'.
+Creating decoders for process `\chip.$sources/baseline.v:25321$proc$5631'.
+Creating decoders for process `\chip.$sources/baseline.v:24915$proc$5630'.
+Creating decoders for process `\chip.$sources/baseline.v:24881$proc$5629'.
+Creating decoders for process `\chip.$sources/baseline.v:24576$proc$5628'.
+Creating decoders for process `\chip.$sources/baseline.v:24507$proc$5627'.
+Creating decoders for process `\chip.$sources/baseline.v:23855$proc$5626'.
+Creating decoders for process `\chip.$sources/baseline.v:21871$proc$5625'.
+Creating decoders for process `\chip.$sources/baseline.v:18985$proc$5624'.
+Creating decoders for process `\chip.$sources/baseline.v:18957$proc$5623'.
+Creating decoders for process `\chip.$sources/baseline.v:18662$proc$5622'.
+Creating decoders for process `\chip.$sources/baseline.v:18485$proc$5621'.
+Creating decoders for process `\chip.$sources/baseline.v:18390$proc$5620'.
+Creating decoders for process `\chip.$sources/baseline.v:18194$proc$5619'.
+Creating decoders for process `\chip.$sources/baseline.v:18015$proc$5618'.
+Creating decoders for process `\chip.$sources/baseline.v:17993$proc$5617'.
+Creating decoders for process `\chip.$sources/baseline.v:17965$proc$5616'.
+Creating decoders for process `\chip.$sources/baseline.v:17847$proc$5615'.
+Creating decoders for process `\chip.$sources/baseline.v:17236$proc$5614'.
+Creating decoders for process `\chip.$sources/baseline.v:17194$proc$5613'.
+Creating decoders for process `\chip.$sources/baseline.v:17156$proc$5612'.
+Creating decoders for process `\chip.$sources/baseline.v:17047$proc$5611'.
+Creating decoders for process `\chip.$sources/baseline.v:17023$proc$5610'.
+Creating decoders for process `\chip.$sources/baseline.v:17002$proc$5609'.
+Creating decoders for process `\chip.$sources/baseline.v:16966$proc$5608'.
+Creating decoders for process `\chip.$sources/baseline.v:16813$proc$5607'.
+Creating decoders for process `\chip.$sources/baseline.v:16642$proc$5606'.
+Creating decoders for process `\chip.$sources/baseline.v:14598$proc$5605'.
+Creating decoders for process `\chip.$sources/baseline.v:14533$proc$5604'.
+Creating decoders for process `\chip.$sources/baseline.v:14408$proc$5603'.
+Creating decoders for process `\chip.$sources/baseline.v:13432$proc$5602'.
+Creating decoders for process `\chip.$sources/baseline.v:13323$proc$5601'.
+Creating decoders for process `\chip.$sources/baseline.v:12272$proc$5600'.
+Creating decoders for process `\chip.$sources/baseline.v:10128$proc$5599'.
+Creating decoders for process `\chip.$sources/baseline.v:9628$proc$5598'.
+Creating decoders for process `\chip.$sources/baseline.v:9520$proc$5597'.
+Creating decoders for process `\chip.$sources/baseline.v:9427$proc$5596'.
+Creating decoders for process `\chip.$sources/baseline.v:8918$proc$5595'.
+Creating decoders for process `\chip.$sources/baseline.v:8085$proc$5594'.
+Creating decoders for process `\chip.$sources/baseline.v:7585$proc$5593'.
+Creating decoders for process `\chip.$sources/baseline.v:5289$proc$5592'.
+Creating decoders for process `\chip.$sources/baseline.v:3391$proc$5591'.
+Creating decoders for process `\chip.$sources/baseline.v:45684$proc$5589'.
+     1/1: $0\n921[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45673$proc$5588'.
+Creating decoders for process `\chip.$sources/baseline.v:45646$proc$5586'.
+     1/1: $0\n212[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45585$proc$5584'.
+     1/1: $0\n1034[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45571$proc$5582'.
+     1/1: $0\n800[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45568$proc$5580'.
+     1/1: $0\n897[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45567$proc$5578'.
+     1/1: $0\n913[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45566$proc$5576'.
+     1/1: $0\n450[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45534$proc$5574'.
+     1/1: $0\n566[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45481$proc$5572'.
+     1/1: $0\n247[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45446$proc$5570'.
+     1/1: $0\n351[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45438$proc$5568'.
+     1/1: $0\n138[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45429$proc$5566'.
+     1/1: $0\n910[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45397$proc$5564'.
+     1/1: $0\n917[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45393$proc$5562'.
+     1/1: $0\n601[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45387$proc$5560'.
+     1/1: $0\n1037[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45384$proc$5558'.
+     1/1: $0\n216[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45364$proc$5556'.
+     1/1: $0\n840[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45362$proc$5554'.
+     1/1: $0\n810[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45354$proc$5552'.
+     1/1: $0\n663[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45340$proc$5550'.
+     1/1: $0\n698[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45321$proc$5548'.
+     1/1: $0\n901[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45288$proc$5546'.
+     1/1: $0\n384[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45287$proc$5544'.
+     1/1: $0\n844[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45270$proc$5542'.
+     1/1: $0\n1015[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45252$proc$5540'.
+     1/1: $0\n662[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45219$proc$5538'.
+     1/1: $0\n781[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45210$proc$5536'.
+     1/1: $0\n390[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45206$proc$5534'.
+     1/1: $0\n946[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45202$proc$5532'.
+     1/1: $0\n1007[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45176$proc$5530'.
+     1/1: $0\n842[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45169$proc$5528'.
+     1/1: $0\n635[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45167$proc$5526'.
+Creating decoders for process `\chip.$sources/baseline.v:45142$proc$5524'.
+     1/1: $0\n578[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45136$proc$5522'.
+     1/1: $0\n619[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45132$proc$5520'.
+     1/1: $0\n610[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45115$proc$5518'.
+     1/1: $0\n745[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45074$proc$5516'.
+     1/1: $0\n576[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45069$proc$5514'.
+     1/1: $0\n798[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45034$proc$5512'.
+     1/1: $0\n915[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45033$proc$5510'.
+     1/1: $0\n461[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45031$proc$5508'.
+     1/1: $0\n628[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:45005$proc$5506'.
+     1/1: $0\n579[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44972$proc$5504'.
+     1/1: $0\n457[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44966$proc$5502'.
+     1/1: $0\n814[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44956$proc$5500'.
+     1/1: $0\n609[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44893$proc$5498'.
+     1/1: $0\n846[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44884$proc$5496'.
+     1/1: $0\n109[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44831$proc$5494'.
+     1/1: $0\n1039[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44824$proc$5492'.
+     1/1: $0\n577[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44775$proc$5490'.
+     1/1: $0\n189[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44718$proc$5488'.
+     1/1: $0\n587[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44693$proc$5486'.
+     1/1: $0\n909[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44679$proc$5484'.
+     1/1: $0\n588[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44678$proc$5482'.
+     1/1: $0\n1023[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44649$proc$5480'.
+     1/1: $0\n1038[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44622$proc$5478'.
+     1/1: $0\n152[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44610$proc$5476'.
+     1/1: $0\n554[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44569$proc$5474'.
+     1/1: $0\n907[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44538$proc$5472'.
+     1/1: $0\n776[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44501$proc$5470'.
+     1/1: $0\n898[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44495$proc$5468'.
+     1/1: $0\n219[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44462$proc$5466'.
+     1/1: $0\n887[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44443$proc$5464'.
+     1/1: $0\n42[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44417$proc$5462'.
+     1/1: $0\n642[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44410$proc$5460'.
+     1/1: $0\n1025[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44379$proc$5458'.
+     1/1: $0\n1042[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44377$proc$5456'.
+     1/1: $0\n998[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44331$proc$5454'.
+     1/1: $0\n1024[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44327$proc$5452'.
+     1/1: $0\n586[0:0]
+Creating decoders for process `\chip.$sources/baseline.v:44315$proc$5450'.
+     1/1: $0\n607[0:0]
+
+3.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\chip.\n921' using process `\chip.$sources/baseline.v:45684$proc$5589'.
+  created $dff cell `$procdff$6180' with positive edge clock.
+Creating register for signal `\chip.\io_16_31_1' using process `\chip.$sources/baseline.v:45673$proc$5588'.
+  created $dff cell `$procdff$6181' with positive edge clock.
+Creating register for signal `\chip.\n212' using process `\chip.$sources/baseline.v:45646$proc$5586'.
+  created $dff cell `$procdff$6182' with positive edge clock.
+Creating register for signal `\chip.\n1034' using process `\chip.$sources/baseline.v:45585$proc$5584'.
+  created $dff cell `$procdff$6183' with positive edge clock.
+Creating register for signal `\chip.\n800' using process `\chip.$sources/baseline.v:45571$proc$5582'.
+  created $dff cell `$procdff$6184' with positive edge clock.
+Creating register for signal `\chip.\n897' using process `\chip.$sources/baseline.v:45568$proc$5580'.
+  created $dff cell `$procdff$6185' with positive edge clock.
+Creating register for signal `\chip.\n913' using process `\chip.$sources/baseline.v:45567$proc$5578'.
+  created $dff cell `$procdff$6186' with positive edge clock.
+Creating register for signal `\chip.\n450' using process `\chip.$sources/baseline.v:45566$proc$5576'.
+  created $dff cell `$procdff$6187' with positive edge clock.
+Creating register for signal `\chip.\n566' using process `\chip.$sources/baseline.v:45534$proc$5574'.
+  created $dff cell `$procdff$6188' with positive edge clock.
+Creating register for signal `\chip.\n247' using process `\chip.$sources/baseline.v:45481$proc$5572'.
+  created $dff cell `$procdff$6189' with positive edge clock.
+Creating register for signal `\chip.\n351' using process `\chip.$sources/baseline.v:45446$proc$5570'.
+  created $dff cell `$procdff$6190' with positive edge clock.
+Creating register for signal `\chip.\n138' using process `\chip.$sources/baseline.v:45438$proc$5568'.
+  created $dff cell `$procdff$6191' with positive edge clock.
+Creating register for signal `\chip.\n910' using process `\chip.$sources/baseline.v:45429$proc$5566'.
+  created $dff cell `$procdff$6192' with positive edge clock.
+Creating register for signal `\chip.\n917' using process `\chip.$sources/baseline.v:45397$proc$5564'.
+  created $dff cell `$procdff$6193' with positive edge clock.
+Creating register for signal `\chip.\n601' using process `\chip.$sources/baseline.v:45393$proc$5562'.
+  created $dff cell `$procdff$6194' with positive edge clock.
+Creating register for signal `\chip.\n1037' using process `\chip.$sources/baseline.v:45387$proc$5560'.
+  created $dff cell `$procdff$6195' with positive edge clock.
+Creating register for signal `\chip.\n216' using process `\chip.$sources/baseline.v:45384$proc$5558'.
+  created $dff cell `$procdff$6196' with positive edge clock.
+Creating register for signal `\chip.\n840' using process `\chip.$sources/baseline.v:45364$proc$5556'.
+  created $dff cell `$procdff$6197' with positive edge clock.
+Creating register for signal `\chip.\n810' using process `\chip.$sources/baseline.v:45362$proc$5554'.
+  created $dff cell `$procdff$6198' with positive edge clock.
+Creating register for signal `\chip.\n663' using process `\chip.$sources/baseline.v:45354$proc$5552'.
+  created $dff cell `$procdff$6199' with positive edge clock.
+Creating register for signal `\chip.\n698' using process `\chip.$sources/baseline.v:45340$proc$5550'.
+  created $dff cell `$procdff$6200' with positive edge clock.
+Creating register for signal `\chip.\n901' using process `\chip.$sources/baseline.v:45321$proc$5548'.
+  created $dff cell `$procdff$6201' with positive edge clock.
+Creating register for signal `\chip.\n384' using process `\chip.$sources/baseline.v:45288$proc$5546'.
+  created $dff cell `$procdff$6202' with positive edge clock.
+Creating register for signal `\chip.\n844' using process `\chip.$sources/baseline.v:45287$proc$5544'.
+  created $dff cell `$procdff$6203' with positive edge clock.
+Creating register for signal `\chip.\n1015' using process `\chip.$sources/baseline.v:45270$proc$5542'.
+  created $dff cell `$procdff$6204' with positive edge clock.
+Creating register for signal `\chip.\n662' using process `\chip.$sources/baseline.v:45252$proc$5540'.
+  created $dff cell `$procdff$6205' with positive edge clock.
+Creating register for signal `\chip.\n781' using process `\chip.$sources/baseline.v:45219$proc$5538'.
+  created $dff cell `$procdff$6206' with positive edge clock.
+Creating register for signal `\chip.\n390' using process `\chip.$sources/baseline.v:45210$proc$5536'.
+  created $dff cell `$procdff$6207' with positive edge clock.
+Creating register for signal `\chip.\n946' using process `\chip.$sources/baseline.v:45206$proc$5534'.
+  created $dff cell `$procdff$6208' with positive edge clock.
+Creating register for signal `\chip.\n1007' using process `\chip.$sources/baseline.v:45202$proc$5532'.
+  created $dff cell `$procdff$6209' with positive edge clock.
+Creating register for signal `\chip.\n842' using process `\chip.$sources/baseline.v:45176$proc$5530'.
+  created $dff cell `$procdff$6210' with positive edge clock.
+Creating register for signal `\chip.\n635' using process `\chip.$sources/baseline.v:45169$proc$5528'.
+  created $dff cell `$procdff$6211' with positive edge clock.
+Creating register for signal `\chip.\n972' using process `\chip.$sources/baseline.v:45167$proc$5526'.
+  created $dff cell `$procdff$6212' with positive edge clock.
+Creating register for signal `\chip.\n578' using process `\chip.$sources/baseline.v:45142$proc$5524'.
+  created $dff cell `$procdff$6213' with positive edge clock.
+Creating register for signal `\chip.\n619' using process `\chip.$sources/baseline.v:45136$proc$5522'.
+  created $dff cell `$procdff$6214' with positive edge clock.
+Creating register for signal `\chip.\n610' using process `\chip.$sources/baseline.v:45132$proc$5520'.
+  created $dff cell `$procdff$6215' with positive edge clock.
+Creating register for signal `\chip.\n745' using process `\chip.$sources/baseline.v:45115$proc$5518'.
+  created $dff cell `$procdff$6216' with positive edge clock.
+Creating register for signal `\chip.\n576' using process `\chip.$sources/baseline.v:45074$proc$5516'.
+  created $dff cell `$procdff$6217' with positive edge clock.
+Creating register for signal `\chip.\n798' using process `\chip.$sources/baseline.v:45069$proc$5514'.
+  created $dff cell `$procdff$6218' with positive edge clock.
+Creating register for signal `\chip.\n915' using process `\chip.$sources/baseline.v:45034$proc$5512'.
+  created $dff cell `$procdff$6219' with positive edge clock.
+Creating register for signal `\chip.\n461' using process `\chip.$sources/baseline.v:45033$proc$5510'.
+  created $dff cell `$procdff$6220' with positive edge clock.
+Creating register for signal `\chip.\n628' using process `\chip.$sources/baseline.v:45031$proc$5508'.
+  created $dff cell `$procdff$6221' with positive edge clock.
+Creating register for signal `\chip.\n579' using process `\chip.$sources/baseline.v:45005$proc$5506'.
+  created $dff cell `$procdff$6222' with positive edge clock.
+Creating register for signal `\chip.\n457' using process `\chip.$sources/baseline.v:44972$proc$5504'.
+  created $dff cell `$procdff$6223' with positive edge clock.
+Creating register for signal `\chip.\n814' using process `\chip.$sources/baseline.v:44966$proc$5502'.
+  created $dff cell `$procdff$6224' with positive edge clock.
+Creating register for signal `\chip.\n609' using process `\chip.$sources/baseline.v:44956$proc$5500'.
+  created $dff cell `$procdff$6225' with positive edge clock.
+Creating register for signal `\chip.\n846' using process `\chip.$sources/baseline.v:44893$proc$5498'.
+  created $dff cell `$procdff$6226' with positive edge clock.
+Creating register for signal `\chip.\n109' using process `\chip.$sources/baseline.v:44884$proc$5496'.
+  created $dff cell `$procdff$6227' with positive edge clock.
+Creating register for signal `\chip.\n1039' using process `\chip.$sources/baseline.v:44831$proc$5494'.
+  created $dff cell `$procdff$6228' with positive edge clock.
+Creating register for signal `\chip.\n577' using process `\chip.$sources/baseline.v:44824$proc$5492'.
+  created $dff cell `$procdff$6229' with positive edge clock.
+Creating register for signal `\chip.\n189' using process `\chip.$sources/baseline.v:44775$proc$5490'.
+  created $dff cell `$procdff$6230' with positive edge clock.
+Creating register for signal `\chip.\n587' using process `\chip.$sources/baseline.v:44718$proc$5488'.
+  created $dff cell `$procdff$6231' with positive edge clock.
+Creating register for signal `\chip.\n909' using process `\chip.$sources/baseline.v:44693$proc$5486'.
+  created $dff cell `$procdff$6232' with positive edge clock.
+Creating register for signal `\chip.\n588' using process `\chip.$sources/baseline.v:44679$proc$5484'.
+  created $dff cell `$procdff$6233' with positive edge clock.
+Creating register for signal `\chip.\n1023' using process `\chip.$sources/baseline.v:44678$proc$5482'.
+  created $dff cell `$procdff$6234' with positive edge clock.
+Creating register for signal `\chip.\n1038' using process `\chip.$sources/baseline.v:44649$proc$5480'.
+  created $dff cell `$procdff$6235' with positive edge clock.
+Creating register for signal `\chip.\n152' using process `\chip.$sources/baseline.v:44622$proc$5478'.
+  created $dff cell `$procdff$6236' with positive edge clock.
+Creating register for signal `\chip.\n554' using process `\chip.$sources/baseline.v:44610$proc$5476'.
+  created $dff cell `$procdff$6237' with positive edge clock.
+Creating register for signal `\chip.\n907' using process `\chip.$sources/baseline.v:44569$proc$5474'.
+  created $dff cell `$procdff$6238' with positive edge clock.
+Creating register for signal `\chip.\n776' using process `\chip.$sources/baseline.v:44538$proc$5472'.
+  created $dff cell `$procdff$6239' with positive edge clock.
+Creating register for signal `\chip.\n898' using process `\chip.$sources/baseline.v:44501$proc$5470'.
+  created $dff cell `$procdff$6240' with positive edge clock.
+Creating register for signal `\chip.\n219' using process `\chip.$sources/baseline.v:44495$proc$5468'.
+  created $dff cell `$procdff$6241' with positive edge clock.
+Creating register for signal `\chip.\n887' using process `\chip.$sources/baseline.v:44462$proc$5466'.
+  created $dff cell `$procdff$6242' with positive edge clock.
+Creating register for signal `\chip.\n42' using process `\chip.$sources/baseline.v:44443$proc$5464'.
+  created $dff cell `$procdff$6243' with positive edge clock.
+Creating register for signal `\chip.\n642' using process `\chip.$sources/baseline.v:44417$proc$5462'.
+  created $dff cell `$procdff$6244' with positive edge clock.
+Creating register for signal `\chip.\n1025' using process `\chip.$sources/baseline.v:44410$proc$5460'.
+  created $dff cell `$procdff$6245' with positive edge clock.
+Creating register for signal `\chip.\n1042' using process `\chip.$sources/baseline.v:44379$proc$5458'.
+  created $dff cell `$procdff$6246' with positive edge clock.
+Creating register for signal `\chip.\n998' using process `\chip.$sources/baseline.v:44377$proc$5456'.
+  created $dff cell `$procdff$6247' with positive edge clock.
+Creating register for signal `\chip.\n1024' using process `\chip.$sources/baseline.v:44331$proc$5454'.
+  created $dff cell `$procdff$6248' with positive edge clock.
+Creating register for signal `\chip.\n586' using process `\chip.$sources/baseline.v:44327$proc$5452'.
+  created $dff cell `$procdff$6249' with positive edge clock.
+Creating register for signal `\chip.\n607' using process `\chip.$sources/baseline.v:44315$proc$5450'.
+  created $dff cell `$procdff$6250' with positive edge clock.
+
+3.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `chip.$sources/baseline.v:38460$proc$5661'.
+Removing empty process `chip.$sources/baseline.v:31609$proc$5660'.
+Removing empty process `chip.$sources/baseline.v:31567$proc$5659'.
+Removing empty process `chip.$sources/baseline.v:31550$proc$5658'.
+Removing empty process `chip.$sources/baseline.v:31522$proc$5657'.
+Removing empty process `chip.$sources/baseline.v:31475$proc$5656'.
+Removing empty process `chip.$sources/baseline.v:31315$proc$5655'.
+Removing empty process `chip.$sources/baseline.v:31288$proc$5654'.
+Removing empty process `chip.$sources/baseline.v:31255$proc$5653'.
+Removing empty process `chip.$sources/baseline.v:31130$proc$5652'.
+Removing empty process `chip.$sources/baseline.v:30869$proc$5651'.
+Removing empty process `chip.$sources/baseline.v:30600$proc$5650'.
+Removing empty process `chip.$sources/baseline.v:30111$proc$5649'.
+Removing empty process `chip.$sources/baseline.v:29453$proc$5648'.
+Removing empty process `chip.$sources/baseline.v:28769$proc$5647'.
+Removing empty process `chip.$sources/baseline.v:28701$proc$5646'.
+Removing empty process `chip.$sources/baseline.v:28653$proc$5645'.
+Removing empty process `chip.$sources/baseline.v:28608$proc$5644'.
+Removing empty process `chip.$sources/baseline.v:28526$proc$5643'.
+Removing empty process `chip.$sources/baseline.v:28447$proc$5642'.
+Removing empty process `chip.$sources/baseline.v:28415$proc$5641'.
+Removing empty process `chip.$sources/baseline.v:28313$proc$5640'.
+Removing empty process `chip.$sources/baseline.v:28262$proc$5639'.
+Removing empty process `chip.$sources/baseline.v:28246$proc$5638'.
+Removing empty process `chip.$sources/baseline.v:27977$proc$5637'.
+Removing empty process `chip.$sources/baseline.v:27242$proc$5636'.
+Removing empty process `chip.$sources/baseline.v:27213$proc$5635'.
+Removing empty process `chip.$sources/baseline.v:27142$proc$5634'.
+Removing empty process `chip.$sources/baseline.v:27112$proc$5633'.
+Removing empty process `chip.$sources/baseline.v:25736$proc$5632'.
+Removing empty process `chip.$sources/baseline.v:25321$proc$5631'.
+Removing empty process `chip.$sources/baseline.v:24915$proc$5630'.
+Removing empty process `chip.$sources/baseline.v:24881$proc$5629'.
+Removing empty process `chip.$sources/baseline.v:24576$proc$5628'.
+Removing empty process `chip.$sources/baseline.v:24507$proc$5627'.
+Removing empty process `chip.$sources/baseline.v:23855$proc$5626'.
+Removing empty process `chip.$sources/baseline.v:21871$proc$5625'.
+Removing empty process `chip.$sources/baseline.v:18985$proc$5624'.
+Removing empty process `chip.$sources/baseline.v:18957$proc$5623'.
+Removing empty process `chip.$sources/baseline.v:18662$proc$5622'.
+Removing empty process `chip.$sources/baseline.v:18485$proc$5621'.
+Removing empty process `chip.$sources/baseline.v:18390$proc$5620'.
+Removing empty process `chip.$sources/baseline.v:18194$proc$5619'.
+Removing empty process `chip.$sources/baseline.v:18015$proc$5618'.
+Removing empty process `chip.$sources/baseline.v:17993$proc$5617'.
+Removing empty process `chip.$sources/baseline.v:17965$proc$5616'.
+Removing empty process `chip.$sources/baseline.v:17847$proc$5615'.
+Removing empty process `chip.$sources/baseline.v:17236$proc$5614'.
+Removing empty process `chip.$sources/baseline.v:17194$proc$5613'.
+Removing empty process `chip.$sources/baseline.v:17156$proc$5612'.
+Removing empty process `chip.$sources/baseline.v:17047$proc$5611'.
+Removing empty process `chip.$sources/baseline.v:17023$proc$5610'.
+Removing empty process `chip.$sources/baseline.v:17002$proc$5609'.
+Removing empty process `chip.$sources/baseline.v:16966$proc$5608'.
+Removing empty process `chip.$sources/baseline.v:16813$proc$5607'.
+Removing empty process `chip.$sources/baseline.v:16642$proc$5606'.
+Removing empty process `chip.$sources/baseline.v:14598$proc$5605'.
+Removing empty process `chip.$sources/baseline.v:14533$proc$5604'.
+Removing empty process `chip.$sources/baseline.v:14408$proc$5603'.
+Removing empty process `chip.$sources/baseline.v:13432$proc$5602'.
+Removing empty process `chip.$sources/baseline.v:13323$proc$5601'.
+Removing empty process `chip.$sources/baseline.v:12272$proc$5600'.
+Removing empty process `chip.$sources/baseline.v:10128$proc$5599'.
+Removing empty process `chip.$sources/baseline.v:9628$proc$5598'.
+Removing empty process `chip.$sources/baseline.v:9520$proc$5597'.
+Removing empty process `chip.$sources/baseline.v:9427$proc$5596'.
+Removing empty process `chip.$sources/baseline.v:8918$proc$5595'.
+Removing empty process `chip.$sources/baseline.v:8085$proc$5594'.
+Removing empty process `chip.$sources/baseline.v:7585$proc$5593'.
+Removing empty process `chip.$sources/baseline.v:5289$proc$5592'.
+Removing empty process `chip.$sources/baseline.v:3391$proc$5591'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45684$proc$5589'.
+Removing empty process `chip.$sources/baseline.v:45684$proc$5589'.
+Removing empty process `chip.$sources/baseline.v:45673$proc$5588'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45646$proc$5586'.
+Removing empty process `chip.$sources/baseline.v:45646$proc$5586'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45585$proc$5584'.
+Removing empty process `chip.$sources/baseline.v:45585$proc$5584'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45571$proc$5582'.
+Removing empty process `chip.$sources/baseline.v:45571$proc$5582'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45568$proc$5580'.
+Removing empty process `chip.$sources/baseline.v:45568$proc$5580'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45567$proc$5578'.
+Removing empty process `chip.$sources/baseline.v:45567$proc$5578'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45566$proc$5576'.
+Removing empty process `chip.$sources/baseline.v:45566$proc$5576'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45534$proc$5574'.
+Removing empty process `chip.$sources/baseline.v:45534$proc$5574'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45481$proc$5572'.
+Removing empty process `chip.$sources/baseline.v:45481$proc$5572'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45446$proc$5570'.
+Removing empty process `chip.$sources/baseline.v:45446$proc$5570'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45438$proc$5568'.
+Removing empty process `chip.$sources/baseline.v:45438$proc$5568'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45429$proc$5566'.
+Removing empty process `chip.$sources/baseline.v:45429$proc$5566'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45397$proc$5564'.
+Removing empty process `chip.$sources/baseline.v:45397$proc$5564'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45393$proc$5562'.
+Removing empty process `chip.$sources/baseline.v:45393$proc$5562'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45387$proc$5560'.
+Removing empty process `chip.$sources/baseline.v:45387$proc$5560'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45384$proc$5558'.
+Removing empty process `chip.$sources/baseline.v:45384$proc$5558'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45364$proc$5556'.
+Removing empty process `chip.$sources/baseline.v:45364$proc$5556'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45362$proc$5554'.
+Removing empty process `chip.$sources/baseline.v:45362$proc$5554'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45354$proc$5552'.
+Removing empty process `chip.$sources/baseline.v:45354$proc$5552'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45340$proc$5550'.
+Removing empty process `chip.$sources/baseline.v:45340$proc$5550'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45321$proc$5548'.
+Removing empty process `chip.$sources/baseline.v:45321$proc$5548'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45288$proc$5546'.
+Removing empty process `chip.$sources/baseline.v:45288$proc$5546'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45287$proc$5544'.
+Removing empty process `chip.$sources/baseline.v:45287$proc$5544'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45270$proc$5542'.
+Removing empty process `chip.$sources/baseline.v:45270$proc$5542'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45252$proc$5540'.
+Removing empty process `chip.$sources/baseline.v:45252$proc$5540'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45219$proc$5538'.
+Removing empty process `chip.$sources/baseline.v:45219$proc$5538'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45210$proc$5536'.
+Removing empty process `chip.$sources/baseline.v:45210$proc$5536'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45206$proc$5534'.
+Removing empty process `chip.$sources/baseline.v:45206$proc$5534'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45202$proc$5532'.
+Removing empty process `chip.$sources/baseline.v:45202$proc$5532'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45176$proc$5530'.
+Removing empty process `chip.$sources/baseline.v:45176$proc$5530'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45169$proc$5528'.
+Removing empty process `chip.$sources/baseline.v:45169$proc$5528'.
+Removing empty process `chip.$sources/baseline.v:45167$proc$5526'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45142$proc$5524'.
+Removing empty process `chip.$sources/baseline.v:45142$proc$5524'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45136$proc$5522'.
+Removing empty process `chip.$sources/baseline.v:45136$proc$5522'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45132$proc$5520'.
+Removing empty process `chip.$sources/baseline.v:45132$proc$5520'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45115$proc$5518'.
+Removing empty process `chip.$sources/baseline.v:45115$proc$5518'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45074$proc$5516'.
+Removing empty process `chip.$sources/baseline.v:45074$proc$5516'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45069$proc$5514'.
+Removing empty process `chip.$sources/baseline.v:45069$proc$5514'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45034$proc$5512'.
+Removing empty process `chip.$sources/baseline.v:45034$proc$5512'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45033$proc$5510'.
+Removing empty process `chip.$sources/baseline.v:45033$proc$5510'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45031$proc$5508'.
+Removing empty process `chip.$sources/baseline.v:45031$proc$5508'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:45005$proc$5506'.
+Removing empty process `chip.$sources/baseline.v:45005$proc$5506'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44972$proc$5504'.
+Removing empty process `chip.$sources/baseline.v:44972$proc$5504'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44966$proc$5502'.
+Removing empty process `chip.$sources/baseline.v:44966$proc$5502'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44956$proc$5500'.
+Removing empty process `chip.$sources/baseline.v:44956$proc$5500'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44893$proc$5498'.
+Removing empty process `chip.$sources/baseline.v:44893$proc$5498'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44884$proc$5496'.
+Removing empty process `chip.$sources/baseline.v:44884$proc$5496'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44831$proc$5494'.
+Removing empty process `chip.$sources/baseline.v:44831$proc$5494'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44824$proc$5492'.
+Removing empty process `chip.$sources/baseline.v:44824$proc$5492'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44775$proc$5490'.
+Removing empty process `chip.$sources/baseline.v:44775$proc$5490'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44718$proc$5488'.
+Removing empty process `chip.$sources/baseline.v:44718$proc$5488'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44693$proc$5486'.
+Removing empty process `chip.$sources/baseline.v:44693$proc$5486'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44679$proc$5484'.
+Removing empty process `chip.$sources/baseline.v:44679$proc$5484'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44678$proc$5482'.
+Removing empty process `chip.$sources/baseline.v:44678$proc$5482'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44649$proc$5480'.
+Removing empty process `chip.$sources/baseline.v:44649$proc$5480'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44622$proc$5478'.
+Removing empty process `chip.$sources/baseline.v:44622$proc$5478'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44610$proc$5476'.
+Removing empty process `chip.$sources/baseline.v:44610$proc$5476'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44569$proc$5474'.
+Removing empty process `chip.$sources/baseline.v:44569$proc$5474'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44538$proc$5472'.
+Removing empty process `chip.$sources/baseline.v:44538$proc$5472'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44501$proc$5470'.
+Removing empty process `chip.$sources/baseline.v:44501$proc$5470'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44495$proc$5468'.
+Removing empty process `chip.$sources/baseline.v:44495$proc$5468'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44462$proc$5466'.
+Removing empty process `chip.$sources/baseline.v:44462$proc$5466'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44443$proc$5464'.
+Removing empty process `chip.$sources/baseline.v:44443$proc$5464'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44417$proc$5462'.
+Removing empty process `chip.$sources/baseline.v:44417$proc$5462'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44410$proc$5460'.
+Removing empty process `chip.$sources/baseline.v:44410$proc$5460'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44379$proc$5458'.
+Removing empty process `chip.$sources/baseline.v:44379$proc$5458'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44377$proc$5456'.
+Removing empty process `chip.$sources/baseline.v:44377$proc$5456'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44331$proc$5454'.
+Removing empty process `chip.$sources/baseline.v:44331$proc$5454'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44327$proc$5452'.
+Removing empty process `chip.$sources/baseline.v:44327$proc$5452'.
+Found and cleaned up 1 empty switch in `\chip.$sources/baseline.v:44315$proc$5450'.
+Removing empty process `chip.$sources/baseline.v:44315$proc$5450'.
+Cleaned up 69 empty switches.
+
+3.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+Optimizing module chip.
+<suppressed ~68 debug messages>
+
+3.4. Executing CHECK pass (checking for obvious problems).
+Checking module protocol_dut...
+Checking module chip...
+Found and reported 0 problems.
+
+3.5. Executing FLATTEN pass (flatten design).
+Deleting now unused module chip.
+<suppressed ~1 debug messages>
+
+3.6. Executing TRIBUF pass.
+
+3.7. Executing DEMINOUT pass (demote inout ports to input or output).
+
+3.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.9. Executing CHECK pass (checking for obvious problems).
+Checking module protocol_dut...
+Found and reported 0 problems.
+
+3.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+Removed 1 unused cells and 1628 unused wires.
+<suppressed ~20 debug messages>
+
+3.11. Executing OPT pass (performing simple optimizations).
+
+3.11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 5663 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Computing hashes of 4673 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+<suppressed ~2970 debug messages>
+Removed a total of 990 cells.
+
+3.11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \protocol_dut..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~5886 debug messages>
+
+3.11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \protocol_dut.
+Performed a total of 0 changes.
+
+3.11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4673 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Computing hashes of 4316 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Computing hashes of 4307 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Computing hashes of 4306 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+<suppressed ~1101 debug messages>
+Removed a total of 367 cells.
+
+3.11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+Removed 0 unused cells and 1357 unused wires.
+<suppressed ~1 debug messages>
+
+3.11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.11.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.11.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \protocol_dut..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6292 debug messages>
+
+3.11.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \protocol_dut.
+Performed a total of 0 changes.
+
+3.11.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4306 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.11.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.11.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.11.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.11.16. Finished fast OPT passes. (There is nothing left to do.)
+
+3.12. Executing FSM pass (extract and optimize FSM).
+
+3.12.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+3.12.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+3.12.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.12.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.12.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+3.12.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+3.12.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+3.12.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+3.13. Executing OPT pass (performing simple optimizations).
+
+3.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4306 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \protocol_dut..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6292 debug messages>
+
+3.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \protocol_dut.
+Performed a total of 0 changes.
+
+3.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4306 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $flatten\recovered.$procdff$6250 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44315$ternary$5451_Y, Q = \recovered.n607).
+Adding SRST signal on $auto$ff.cc:337:slice$6252 ($dffe) from module protocol_dut (D = \recovered.n1453, Q = \recovered.n607, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6249 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44327$ternary$5453_Y, Q = \recovered.n586).
+Adding SRST signal on $auto$ff.cc:337:slice$6254 ($dffe) from module protocol_dut (D = \recovered.n1465, Q = \recovered.n586, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6248 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44331$ternary$5455_Y, Q = \recovered.n1024).
+Adding SRST signal on $auto$ff.cc:337:slice$6256 ($dffe) from module protocol_dut (D = \recovered.n1469, Q = \recovered.n1024, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6247 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44377$ternary$5457_Y, Q = \recovered.n998).
+Adding SRST signal on $auto$ff.cc:337:slice$6258 ($dffe) from module protocol_dut (D = \recovered.n1515, Q = \recovered.n998, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6246 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44379$ternary$5459_Y, Q = \recovered.n1042).
+Adding SRST signal on $auto$ff.cc:337:slice$6260 ($dffe) from module protocol_dut (D = \recovered.n1517, Q = \recovered.n1042, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6245 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44410$ternary$5461_Y, Q = \recovered.n1025).
+Adding SRST signal on $auto$ff.cc:337:slice$6262 ($dffe) from module protocol_dut (D = \recovered.n1548, Q = \recovered.n1025, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6244 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44417$ternary$5463_Y, Q = \recovered.n642).
+Adding SRST signal on $auto$ff.cc:337:slice$6264 ($dffe) from module protocol_dut (D = \recovered.n1555, Q = \recovered.n642, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6243 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44443$ternary$5465_Y, Q = \recovered.n42).
+Adding SRST signal on $auto$ff.cc:337:slice$6266 ($dffe) from module protocol_dut (D = \recovered.n1581, Q = \recovered.n42, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6242 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44462$ternary$5467_Y, Q = \recovered.n887).
+Adding SRST signal on $auto$ff.cc:337:slice$6268 ($dffe) from module protocol_dut (D = \recovered.n1600, Q = \recovered.n887, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6241 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44495$ternary$5469_Y, Q = \recovered.n219).
+Adding SRST signal on $auto$ff.cc:337:slice$6270 ($dffe) from module protocol_dut (D = \recovered.n1633, Q = \recovered.n219, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6240 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44501$ternary$5471_Y, Q = \recovered.n898).
+Adding SRST signal on $auto$ff.cc:337:slice$6272 ($dffe) from module protocol_dut (D = \recovered.n1639, Q = \recovered.n898, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6239 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44538$ternary$5473_Y, Q = \recovered.n776).
+Adding SRST signal on $auto$ff.cc:337:slice$6274 ($dffe) from module protocol_dut (D = \recovered.n1676, Q = \recovered.n776, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6238 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44569$ternary$5475_Y, Q = \recovered.n907).
+Adding SRST signal on $auto$ff.cc:337:slice$6276 ($dffe) from module protocol_dut (D = \recovered.n1707, Q = \recovered.n907, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6237 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44610$ternary$5477_Y, Q = \recovered.n554).
+Adding SRST signal on $auto$ff.cc:337:slice$6278 ($dffe) from module protocol_dut (D = \recovered.n1748, Q = \recovered.n554, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6236 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44622$ternary$5479_Y, Q = \recovered.n152).
+Adding SRST signal on $auto$ff.cc:337:slice$6280 ($dffe) from module protocol_dut (D = \recovered.n1760, Q = \recovered.n152, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6235 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44649$ternary$5481_Y, Q = \recovered.n1038).
+Adding SRST signal on $auto$ff.cc:337:slice$6282 ($dffe) from module protocol_dut (D = \recovered.n1787, Q = \recovered.n1038, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6234 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44678$ternary$5483_Y, Q = \recovered.n1023).
+Adding SRST signal on $auto$ff.cc:337:slice$6284 ($dffe) from module protocol_dut (D = \recovered.n1816, Q = \recovered.n1023, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6233 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44679$ternary$5485_Y, Q = \recovered.n588).
+Adding EN signal on $flatten\recovered.$procdff$6232 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44693$ternary$5487_Y, Q = \recovered.n909).
+Adding SRST signal on $auto$ff.cc:337:slice$6287 ($dffe) from module protocol_dut (D = \recovered.n1831, Q = \recovered.n909, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6231 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44718$ternary$5489_Y, Q = \recovered.n587).
+Adding SRST signal on $auto$ff.cc:337:slice$6289 ($dffe) from module protocol_dut (D = \recovered.n1856, Q = \recovered.n587, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6230 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44775$ternary$5491_Y, Q = \recovered.n189).
+Adding SRST signal on $auto$ff.cc:337:slice$6291 ($dffe) from module protocol_dut (D = \recovered.n1913, Q = \recovered.n189, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6229 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44824$ternary$5493_Y, Q = \recovered.n577).
+Adding SRST signal on $auto$ff.cc:337:slice$6293 ($dffe) from module protocol_dut (D = \recovered.n1962, Q = \recovered.n577, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6228 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44831$ternary$5495_Y, Q = \recovered.n1039).
+Adding SRST signal on $auto$ff.cc:337:slice$6295 ($dffe) from module protocol_dut (D = \recovered.n1969, Q = \recovered.n1039, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6227 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44884$ternary$5497_Y, Q = \recovered.n109).
+Adding SRST signal on $auto$ff.cc:337:slice$6297 ($dffe) from module protocol_dut (D = \recovered.n2022, Q = \recovered.n109, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6226 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44893$ternary$5499_Y, Q = \recovered.n846).
+Adding SRST signal on $auto$ff.cc:337:slice$6299 ($dffe) from module protocol_dut (D = \recovered.n2031, Q = \recovered.n846, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6225 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44956$ternary$5501_Y, Q = \recovered.n609).
+Adding SRST signal on $auto$ff.cc:337:slice$6301 ($dffe) from module protocol_dut (D = \recovered.n2094, Q = \recovered.n609, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6224 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44966$ternary$5503_Y, Q = \recovered.n814).
+Adding SRST signal on $auto$ff.cc:337:slice$6303 ($dffe) from module protocol_dut (D = \recovered.n2104, Q = \recovered.n814, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6223 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44972$ternary$5505_Y, Q = \recovered.n457).
+Adding SRST signal on $auto$ff.cc:337:slice$6305 ($dffe) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:43569$ternary$2568_Y, Q = \recovered.n457, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6222 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45005$ternary$5507_Y, Q = \recovered.n579).
+Adding SRST signal on $auto$ff.cc:337:slice$6311 ($dffe) from module protocol_dut (D = \recovered.n2143, Q = \recovered.n579, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6221 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45031$ternary$5509_Y, Q = \recovered.n628).
+Adding SRST signal on $auto$ff.cc:337:slice$6313 ($dffe) from module protocol_dut (D = \recovered.n2169, Q = \recovered.n628, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6220 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45033$ternary$5511_Y, Q = \recovered.n461).
+Adding SRST signal on $auto$ff.cc:337:slice$6315 ($dffe) from module protocol_dut (D = \recovered.n2171, Q = \recovered.n461, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6219 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45034$ternary$5513_Y, Q = \recovered.n915).
+Adding SRST signal on $auto$ff.cc:337:slice$6317 ($dffe) from module protocol_dut (D = \recovered.n2172, Q = \recovered.n915, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6218 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45069$ternary$5515_Y, Q = \recovered.n798).
+Adding SRST signal on $auto$ff.cc:337:slice$6319 ($dffe) from module protocol_dut (D = \recovered.n2207, Q = \recovered.n798, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6217 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45074$ternary$5517_Y, Q = \recovered.n576).
+Adding SRST signal on $auto$ff.cc:337:slice$6321 ($dffe) from module protocol_dut (D = \recovered.n2212, Q = \recovered.n576, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6216 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45115$ternary$5519_Y, Q = \recovered.n745).
+Adding SRST signal on $auto$ff.cc:337:slice$6323 ($dffe) from module protocol_dut (D = \recovered.n2253, Q = \recovered.n745, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6215 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45132$ternary$5521_Y, Q = \recovered.n610).
+Adding SRST signal on $auto$ff.cc:337:slice$6325 ($dffe) from module protocol_dut (D = \recovered.n2270, Q = \recovered.n610, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6214 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45136$ternary$5523_Y, Q = \recovered.n619).
+Adding SRST signal on $auto$ff.cc:337:slice$6327 ($dffe) from module protocol_dut (D = \recovered.n2274, Q = \recovered.n619, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6213 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45142$ternary$5525_Y, Q = \recovered.n578).
+Adding SRST signal on $auto$ff.cc:337:slice$6329 ($dffe) from module protocol_dut (D = \recovered.n2280, Q = \recovered.n578, rval = 1'0).
+Adding SRST signal on $flatten\recovered.$procdff$6212 ($dff) from module protocol_dut (D = \recovered.n2305, Q = \recovered.n972, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6211 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45169$ternary$5529_Y, Q = \recovered.n635).
+Adding SRST signal on $auto$ff.cc:337:slice$6332 ($dffe) from module protocol_dut (D = \recovered.n2307, Q = \recovered.n635, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6210 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45176$ternary$5531_Y, Q = \recovered.n842).
+Adding SRST signal on $auto$ff.cc:337:slice$6334 ($dffe) from module protocol_dut (D = \recovered.n2314, Q = \recovered.n842, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6209 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45202$ternary$5533_Y, Q = \recovered.n1007).
+Adding SRST signal on $auto$ff.cc:337:slice$6340 ($dffe) from module protocol_dut (D = \recovered.n2340, Q = \recovered.n1007, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6208 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45206$ternary$5535_Y, Q = \recovered.n946).
+Adding SRST signal on $auto$ff.cc:337:slice$6342 ($dffe) from module protocol_dut (D = \recovered.n2344, Q = \recovered.n946, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6207 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45210$ternary$5537_Y, Q = \recovered.n390).
+Adding SRST signal on $auto$ff.cc:337:slice$6344 ($dffe) from module protocol_dut (D = \recovered.n2348, Q = \recovered.n390, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6206 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45219$ternary$5539_Y, Q = \recovered.n781).
+Adding SRST signal on $auto$ff.cc:337:slice$6346 ($dffe) from module protocol_dut (D = \recovered.n2357, Q = \recovered.n781, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6205 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45252$ternary$5541_Y, Q = \recovered.n662).
+Adding SRST signal on $auto$ff.cc:337:slice$6348 ($dffe) from module protocol_dut (D = \recovered.n2390, Q = \recovered.n662, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6204 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45270$ternary$5543_Y, Q = \recovered.n1015).
+Adding SRST signal on $auto$ff.cc:337:slice$6350 ($dffe) from module protocol_dut (D = \recovered.n2408, Q = \recovered.n1015, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6203 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45287$ternary$5545_Y, Q = \recovered.n844).
+Adding SRST signal on $auto$ff.cc:337:slice$6352 ($dffe) from module protocol_dut (D = \recovered.n2425, Q = \recovered.n844, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6202 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45288$ternary$5547_Y, Q = \recovered.n384).
+Adding SRST signal on $auto$ff.cc:337:slice$6354 ($dffe) from module protocol_dut (D = \recovered.n2426, Q = \recovered.n384, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6201 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45321$ternary$5549_Y, Q = \recovered.n901).
+Adding SRST signal on $auto$ff.cc:337:slice$6356 ($dffe) from module protocol_dut (D = \recovered.n2459, Q = \recovered.n901, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6200 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45340$ternary$5551_Y, Q = \recovered.n698).
+Adding SRST signal on $auto$ff.cc:337:slice$6358 ($dffe) from module protocol_dut (D = \recovered.n2478, Q = \recovered.n698, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6199 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45354$ternary$5553_Y, Q = \recovered.n663).
+Adding SRST signal on $auto$ff.cc:337:slice$6360 ($dffe) from module protocol_dut (D = \recovered.n2492, Q = \recovered.n663, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6198 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45362$ternary$5555_Y, Q = \recovered.n810).
+Adding SRST signal on $auto$ff.cc:337:slice$6362 ($dffe) from module protocol_dut (D = \recovered.n2500, Q = \recovered.n810, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6197 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45364$ternary$5557_Y, Q = \recovered.n840).
+Adding SRST signal on $auto$ff.cc:337:slice$6364 ($dffe) from module protocol_dut (D = \recovered.n2502, Q = \recovered.n840, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6196 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45384$ternary$5559_Y, Q = \recovered.n216).
+Adding SRST signal on $auto$ff.cc:337:slice$6366 ($dffe) from module protocol_dut (D = \recovered.n2522, Q = \recovered.n216, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6195 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45387$ternary$5561_Y, Q = \recovered.n1037).
+Adding SRST signal on $auto$ff.cc:337:slice$6368 ($dffe) from module protocol_dut (D = \recovered.n2525, Q = \recovered.n1037, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6194 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45393$ternary$5563_Y, Q = \recovered.n601).
+Adding SRST signal on $auto$ff.cc:337:slice$6370 ($dffe) from module protocol_dut (D = \recovered.n2531, Q = \recovered.n601, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6193 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45397$ternary$5565_Y, Q = \recovered.n917).
+Adding SRST signal on $auto$ff.cc:337:slice$6372 ($dffe) from module protocol_dut (D = \recovered.n2535, Q = \recovered.n917, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6192 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45429$ternary$5567_Y, Q = \recovered.n910).
+Adding SRST signal on $auto$ff.cc:337:slice$6374 ($dffe) from module protocol_dut (D = \recovered.n2567, Q = \recovered.n910, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6191 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45438$ternary$5569_Y, Q = \recovered.n138).
+Adding SRST signal on $auto$ff.cc:337:slice$6376 ($dffe) from module protocol_dut (D = \recovered.n2576, Q = \recovered.n138, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6190 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45446$ternary$5571_Y, Q = \recovered.n351).
+Adding SRST signal on $auto$ff.cc:337:slice$6378 ($dffe) from module protocol_dut (D = \recovered.n2584, Q = \recovered.n351, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6189 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45481$ternary$5573_Y, Q = \recovered.n247).
+Adding SRST signal on $auto$ff.cc:337:slice$6380 ($dffe) from module protocol_dut (D = \recovered.n2619, Q = \recovered.n247, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6188 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45534$ternary$5575_Y, Q = \recovered.n566).
+Adding SRST signal on $auto$ff.cc:337:slice$6382 ($dffe) from module protocol_dut (D = \recovered.n2672, Q = \recovered.n566, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6187 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45566$ternary$5577_Y, Q = \recovered.n450).
+Adding SRST signal on $auto$ff.cc:337:slice$6384 ($dffe) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44162$ternary$4903_Y, Q = \recovered.n450, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6186 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45567$ternary$5579_Y, Q = \recovered.n913).
+Adding SRST signal on $auto$ff.cc:337:slice$6390 ($dffe) from module protocol_dut (D = \recovered.n2705, Q = \recovered.n913, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6185 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45568$ternary$5581_Y, Q = \recovered.n897).
+Adding SRST signal on $auto$ff.cc:337:slice$6392 ($dffe) from module protocol_dut (D = \recovered.n2706, Q = \recovered.n897, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6184 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45571$ternary$5583_Y, Q = \recovered.n800).
+Adding SRST signal on $auto$ff.cc:337:slice$6394 ($dffe) from module protocol_dut (D = \recovered.n2709, Q = \recovered.n800, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6183 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45585$ternary$5585_Y, Q = \recovered.n1034).
+Adding SRST signal on $auto$ff.cc:337:slice$6396 ($dffe) from module protocol_dut (D = \recovered.n2723, Q = \recovered.n1034, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6182 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45646$ternary$5587_Y, Q = \recovered.n212).
+Adding SRST signal on $auto$ff.cc:337:slice$6398 ($dffe) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:44242$ternary$5212_Y, Q = \recovered.n212, rval = 1'0).
+Adding EN signal on $flatten\recovered.$procdff$6180 ($dff) from module protocol_dut (D = $flatten\recovered.$sources/baseline.v:45684$ternary$5590_Y, Q = \recovered.n921).
+Adding SRST signal on $auto$ff.cc:337:slice$6404 ($dffe) from module protocol_dut (D = \recovered.n2822, Q = \recovered.n921, rval = 1'0).
+
+3.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+Removed 141 unused cells and 141 unused wires.
+<suppressed ~145 debug messages>
+
+3.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+<suppressed ~1 debug messages>
+
+3.13.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \protocol_dut..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6148 debug messages>
+
+3.13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \protocol_dut.
+Performed a total of 0 changes.
+
+3.13.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4173 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Computing hashes of 4171 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+3.13.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+3.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.13.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.13.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \protocol_dut..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6148 debug messages>
+
+3.13.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \protocol_dut.
+Performed a total of 0 changes.
+
+3.13.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4171 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.13.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.13.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.13.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.13.23. Finished fast OPT passes. (There is nothing left to do.)
+
+3.14. Executing WREDUCE pass (reducing word size of cells).
+
+3.15. Executing PEEPOPT pass (run peephole optimizers).
+
+3.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.17. Executing SHARE pass (SAT-based resource sharing).
+
+3.18. Executing TECHMAP pass (map to technology primitives).
+
+3.18.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+3.18.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+3.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.21. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module protocol_dut:
+  created 0 $alu and 0 $macc cells.
+
+3.22. Executing OPT pass (performing simple optimizations).
+
+3.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4171 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.22.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \protocol_dut..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6148 debug messages>
+
+3.22.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \protocol_dut.
+Performed a total of 0 changes.
+
+3.22.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4171 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.22.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.22.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.22.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.22.9. Finished fast OPT passes. (There is nothing left to do.)
+
+3.23. Executing MEMORY pass.
+
+3.23.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+3.23.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+3.23.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+3.23.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+3.23.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+3.23.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.23.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+3.23.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+3.23.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.23.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.25. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+3.26. Executing TECHMAP pass (map to technology primitives).
+
+3.26.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/brams_map.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_RAM4K_'.
+Successfully finished Verilog frontend.
+
+3.26.2. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/spram_map.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/spram_map.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_SPRAM_'.
+Successfully finished Verilog frontend.
+
+3.26.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+3.27. Executing ICE40_BRAMINIT pass.
+
+3.28. Executing OPT pass (performing simple optimizations).
+
+3.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+<suppressed ~2 debug messages>
+
+3.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4169 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+3.28.5. Finished fast OPT passes.
+
+3.29. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+3.30. Executing OPT pass (performing simple optimizations).
+
+3.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4169 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \protocol_dut..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6144 debug messages>
+
+3.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \protocol_dut.
+Performed a total of 0 changes.
+
+3.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4169 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.30.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.30.9. Finished fast OPT passes. (There is nothing left to do.)
+
+3.31. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+3.32. Executing TECHMAP pass (map to technology primitives).
+
+3.32.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/techmap.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+3.32.2. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+3.32.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $sdffce.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $mux.
+No more expansions possible.
+<suppressed ~4241 debug messages>
+
+3.33. Executing OPT pass (performing simple optimizations).
+
+3.33.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.33.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4169 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Computing hashes of 4168 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+3.33.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.33.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+Removed 0 unused cells and 6 unused wires.
+<suppressed ~1 debug messages>
+
+3.33.5. Finished fast OPT passes.
+
+3.34. Executing ICE40_OPT pass (performing simple optimizations).
+
+3.34.1. Running ICE40 specific optimizations.
+
+3.34.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.34.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4168 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.34.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.34.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.34.6. Finished OPT passes. (There is nothing left to do.)
+
+3.35. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+
+3.36. Executing TECHMAP pass (map to technology primitives).
+
+3.36.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+3.36.2. Continuing TECHMAP pass.
+Using template $_SDFFCE_PP0P_ for cells of type $_SDFFCE_PP0P_.
+Using template $_DFFE_PP_ for cells of type $_DFFE_PP_.
+Using template $_SDFF_PP0_ for cells of type $_SDFF_PP0_.
+Using template $_DFF_P_ for cells of type $_DFF_P_.
+No more expansions possible.
+<suppressed ~93 debug messages>
+
+3.37. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+3.39. Executing ICE40_OPT pass (performing simple optimizations).
+
+3.39.1. Running ICE40 specific optimizations.
+
+3.39.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+<suppressed ~1080 debug messages>
+
+3.39.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4232 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Computing hashes of 4150 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+<suppressed ~246 debug messages>
+Removed a total of 82 cells.
+
+3.39.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.39.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+Removed 0 unused cells and 504 unused wires.
+<suppressed ~1 debug messages>
+
+3.39.6. Rerunning OPT passes. (Removed registers in this run.)
+
+3.39.7. Running ICE40 specific optimizations.
+
+3.39.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.39.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 4150 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.39.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.39.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.39.12. Finished OPT passes. (There is nothing left to do.)
+
+3.40. Executing CHECK pass (checking for obvious problems).
+Checking module protocol_dut...
+Found and reported 0 problems.
+
+3.41. Executing TECHMAP pass (map to technology primitives).
+
+3.41.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/latches_map.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+3.41.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+3.42. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ICE40_CARRY_WRAPPER'.
+Successfully finished Verilog frontend.
+
+3.43. Executing ABC9 pass.
+
+3.43.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module protocol_dut.
+Found 0 SCCs.
+
+3.43.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.5. Executing TECHMAP pass (map to technology primitives).
+
+3.43.5.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/techmap.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+3.43.5.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~130 debug messages>
+
+3.43.6. Executing OPT pass (performing simple optimizations).
+
+3.43.6.1. Executing OPT_EXPR pass (perform const folding).
+
+3.43.6.2. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+3.43.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Removed 0 multiplexer ports.
+
+3.43.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+Performed a total of 0 changes.
+
+3.43.6.5. Executing OPT_MERGE pass (detect identical cells).
+Removed a total of 0 cells.
+
+3.43.6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.43.6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+
+3.43.6.8. Executing OPT_EXPR pass (perform const folding).
+
+3.43.6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+3.43.7. Executing TECHMAP pass (map to technology primitives).
+
+3.43.7.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/abc9_map.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/abc9_map.v' to AST representation.
+Lexer warning: The SystemVerilog keyword `bit' (at /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/abc9_map.v:35) is not recognized unless read_verilog is called with -sv!
+Generating RTLIL representation for module `$__ABC9_BARRIER_MAP'.
+Successfully finished Verilog frontend.
+
+3.43.7.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+3.43.8. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/abc9_model.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_BARRIER'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+3.43.9. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~374 debug messages>
+
+3.43.10. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.11. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+3.43.12. Executing TECHMAP pass (map to technology primitives).
+
+3.43.12.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/techmap.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+3.43.12.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~143 debug messages>
+
+3.43.13. Executing OPT pass (performing simple optimizations).
+
+3.43.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.43.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 0 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.43.13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \protocol_dut..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+3.43.13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \protocol_dut.
+Performed a total of 0 changes.
+
+3.43.13.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\protocol_dut'.
+Computing hashes of 0 cells of `\protocol_dut'.
+Finding duplicate cells in `\protocol_dut'.
+Removed a total of 0 cells.
+
+3.43.13.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+3.43.13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \protocol_dut..
+
+3.43.13.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module protocol_dut.
+
+3.43.13.9. Finished fast OPT passes. (There is nothing left to do.)
+
+3.43.14. Executing AIGMAP pass (map logic to AIG).
+Module protocol_dut: replaced 2895 cells with 19293 new cells, skipped 1627 cells.
+  replaced 2 cell types:
+    2571 $_MUX_
+     324 $_OR_
+  not replaced 16 cell types:
+     743 $_AND_
+     436 $_NOT_
+       1 $scopeinfo
+       4 $paramod$ae27052448ea24dbe9cb72631d06f9cdce35465a\SB_RAM40_4K
+     113 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000011001011
+      71 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000000010101
+      64 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000100010010
+       8 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000100001011
+       4 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000001100010
+      44 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000011100000
+      64 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000010100001
+       4 $paramod$__ABC9_DELAY\DELAY=32'00000000000000000000000010000101
+       1 SB_DFF
+       1 SB_DFFE
+       1 SB_DFFSR
+      68 SB_DFFESR
+
+3.43.14.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.14.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+3.43.14.3. Executing XAIGER2 backend.
+<suppressed ~457 debug messages>
+Extracted 7100 AND gates and 0 wires from module `protocol_dut' to a netlist network with 513 inputs and 891 outputs.
+
+3.43.14.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+3.43.14.5. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
+ABC: + read_lut <abc-temp-dir>/input.lut 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    141/    519  and =    5899  lev =   33 (2.19)  mem = 0.09 MB  box = 372  bb = 372
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f -r 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =    141/    519  and =    5351  lev =   17 (1.27)  mem = 0.08 MB  ch = 1065  box = 372  bb = 372
+ABC: cst =       0  cls =    943  lit =    1065  unused =    3856  proof =     0
+ABC: + &if -W 250 -v 
+ABC: K = 4. Memory (bytes): Truth =    0. Cut =   64. Obj =  144. Set =  672. CutMin = no
+ABC: Node =    5351.  Ch =   943.  Total mem =    1.03 MB. Peak cut mem =    0.37 MB.
+ABC: P:  Del = 4326.00.  Ar =    1587.0.  Edge =     6011.  Cut =    38015.  T =     0.00 sec
+ABC: P:  Del = 4326.00.  Ar =    1568.0.  Edge =     6045.  Cut =    36062.  T =     0.00 sec
+ABC: P:  Del = 4326.00.  Ar =    1568.0.  Edge =     5950.  Cut =    41040.  T =     0.00 sec
+ABC: F:  Del = 4326.00.  Ar =    1460.0.  Edge =     5599.  Cut =    28601.  T =     0.00 sec
+ABC: A:  Del = 4326.00.  Ar =    1452.0.  Edge =     5197.  Cut =    26154.  T =     0.00 sec
+ABC: A:  Del = 4326.00.  Ar =    1450.0.  Edge =     5165.  Cut =    26285.  T =     0.00 sec
+ABC: Total time =     0.02 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =    141/    519  and =    5100  lev =   18 (1.34)  mem = 0.08 MB  box = 372  bb = 372
+ABC: Mapping (K=4)  :  lut =   1435  edge =    5098  lev =    7 (0.67)  levB =    8  mem = 0.06 MB
+ABC: LUT = 1435 : 2=154 10.7 %  3=334 23.3 %  4=947 66.0 %  Ave = 3.55
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &verify 
+ABC: Networks are equivalent.  Time =     0.07 sec
+ABC: + time 
+ABC: elapse: 0.46 seconds, total: 0.46 seconds
+
+3.43.14.6. Executing AIGER frontend.
+<suppressed ~10 debug messages>
+Removed 7331 unused cells and 8594 unused wires.
+
+3.43.14.7. Executing ABC_OPS_REINTEGRATE pass (reintegrate ABC mapped design into module).
+ABC RESULTS:              $lut cells:     1439
+ABC RESULTS:           input signals:      141
+ABC RESULTS:          output signals:        3
+<suppressed ~660 debug messages>
+Removing temp directory.
+
+3.43.15. Executing TECHMAP pass (map to technology primitives).
+
+3.43.15.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/abc9_unmap.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__ABC9_BARRIER'.
+Successfully finished Verilog frontend.
+
+3.43.15.2. Continuing TECHMAP pass.
+Using template $paramod$ae27052448ea24dbe9cb72631d06f9cdce35465a\SB_RAM40_4K for cells of type $paramod$ae27052448ea24dbe9cb72631d06f9cdce35465a\SB_RAM40_4K.
+No more expansions possible.
+<suppressed ~11 debug messages>
+
+3.44. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+3.45. Executing TECHMAP pass (map to technology primitives).
+
+3.45.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_N_'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_NP_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_DFF_NP0_'.
+Generating RTLIL representation for module `$_DFF_NP1_'.
+Generating RTLIL representation for module `$_DFF_PP0_'.
+Generating RTLIL representation for module `$_DFF_PP1_'.
+Generating RTLIL representation for module `$_DFFE_NP0P_'.
+Generating RTLIL representation for module `$_DFFE_NP1P_'.
+Generating RTLIL representation for module `$_DFFE_PP0P_'.
+Generating RTLIL representation for module `$_DFFE_PP1P_'.
+Generating RTLIL representation for module `$_SDFF_NP0_'.
+Generating RTLIL representation for module `$_SDFF_NP1_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+3.45.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~22 debug messages>
+Removed 48 unused cells and 1126 unused wires.
+
+3.46. Executing OPT_LUT pass (optimize LUTs).
+Discovering LUTs.
+Number of LUTs:     1439
+  1-LUT                4
+  2-LUT              154
+  3-LUT              334
+  4-LUT              947
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminating LUTs.
+Number of LUTs:     1439
+  1-LUT                4
+  2-LUT              154
+  3-LUT              334
+  4-LUT              947
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Combining LUTs.
+Number of LUTs:     1439
+  1-LUT                4
+  2-LUT              154
+  3-LUT              334
+  4-LUT              947
+  with \SB_CARRY    (#0)    0
+  with \SB_CARRY    (#1)    0
+
+Eliminated 0 LUTs.
+Combined 0 LUTs.
+<suppressed ~8896 debug messages>
+
+3.47. Executing TECHMAP pass (map to technology primitives).
+
+3.47.1. Executing Verilog-2005 frontend: /Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v
+Parsing Verilog input from `/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/libexec/../share/yosys/ice40/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+3.47.2. Continuing TECHMAP pass.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10101100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
+Using template $paramod$d6fad69df4b6793100fda03bb83504fe9b335c70$lut for cells of type $lut.
+Using template $paramod$fb2de0338fd9cb56279bec3d2d5d229fcea1942b$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11001010 for cells of type $lut.
+Using template $paramod$3c014941563a279228df79e25630751fec86819c$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11010000 for cells of type $lut.
+Using template $paramod$6a34cd5b50e324824168b4186d0b04ba5e83b039$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1001 for cells of type $lut.
+Using template $paramod$56e9308c503b51cd010d389926187ce8b8be4fdc$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01010100 for cells of type $lut.
+Using template $paramod$18455d4fd1270af2266bf4bb1c44971b2eb6b37a$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010000 for cells of type $lut.
+Using template $paramod$e78c509a64c59616eb806dc10c34baf3fd2b3fef$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0110 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010 for cells of type $lut.
+Using template $paramod$5348912da867a611a8088b6b8b27a62d65f1de6e$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10001010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$6b7c9c56fc2a32a479d463d5f3b0d3f4673b67f1$lut for cells of type $lut.
+Using template $paramod$7aa10034d32264b3ba6e4b169ea2acddb384c48d$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010101 for cells of type $lut.
+Using template $paramod$d96d2133e12a3b5a9c25554e9be2287bc162959d$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01110000 for cells of type $lut.
+Using template $paramod$de402d829e8c1c841652fc59716565acbe3ebad0$lut for cells of type $lut.
+Using template $paramod$e0286d7bdebdb6346cb367bb1962e01892ba2e32$lut for cells of type $lut.
+Using template $paramod$685eda18fe7a3f8d7fff29d8a542cf02461071bc$lut for cells of type $lut.
+Using template $paramod$04b674496422df8889c01c3744b94097628ccfbc$lut for cells of type $lut.
+Using template $paramod$0bdd0ea3a368de5cc9b8e715a13529d6c4c63bad$lut for cells of type $lut.
+Using template $paramod$b45e5cb971154e30a797eecb0461619c3eeae12d$lut for cells of type $lut.
+Using template $paramod$4385b611926e5c0509dba4de58311d325da0ff0d$lut for cells of type $lut.
+Using template $paramod$274f307ae3cf37cc9409bbe7da6758e5df02f25c$lut for cells of type $lut.
+Using template $paramod$1578333f1a5078051b84dbcbad362e8087bf5284$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000001 for cells of type $lut.
+Using template $paramod$9891217114ca63a6e9d48073351d843bb1d46faf$lut for cells of type $lut.
+Using template $paramod$8b24407096beec47292ddeb1567a058197a320b9$lut for cells of type $lut.
+Using template $paramod$8fd8efe0a495790cc9ddc97266933ea8a8cd7b45$lut for cells of type $lut.
+Using template $paramod$fc2cec173020719b9d64d63f4377930ce71bbe56$lut for cells of type $lut.
+Using template $paramod$153c6cdaaddbc43e6ef3facd06aa851de33910ae$lut for cells of type $lut.
+Using template $paramod$66caee0a4dc8f5fee8fe96465659297de5f80ad7$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000101 for cells of type $lut.
+Using template $paramod$2727b55905a0c16655aa89c2436ff349219b6ccb$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01001100 for cells of type $lut.
+Using template $paramod$a8372e175876cbb66e220516f0b094622c6ad591$lut for cells of type $lut.
+Using template $paramod$29e6d4598488760861f6b73d2b7f65cb302fdcde$lut for cells of type $lut.
+Using template $paramod$018de53c52146cc0b53122ac7828f92eeb4fc17c$lut for cells of type $lut.
+Using template $paramod$ef74aa4a6f5aed2cc1edc0153bb116af08c1696b$lut for cells of type $lut.
+Using template $paramod$c8d76329e2cacdfd0dddb761c7b0e8feb8f91509$lut for cells of type $lut.
+Using template $paramod$79364b9974cfc81fb54c164d10340bf9c7bccd7f$lut for cells of type $lut.
+Using template $paramod$7e8d331d1e06632d29fbdf6c3afc2de1856d3c67$lut for cells of type $lut.
+Using template $paramod$b2cf769a04428bc871ad33dbb9650ab25da5e7b2$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11001000 for cells of type $lut.
+Using template $paramod$eaea85d27cc0950ed001348e061727a194f5cf9c$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110000 for cells of type $lut.
+Using template $paramod$165be24785e4097ccfb74473951770165dd92dfc$lut for cells of type $lut.
+Using template $paramod$a197ef6f3b51d411ae3e5b42b5d77a606c4fb11a$lut for cells of type $lut.
+Using template $paramod$e277a522d8a930c8c8c8cdb56d33d42914aefec4$lut for cells of type $lut.
+Using template $paramod$7ed0b9f1752a6c99eb0c94b2167fc52598bb5a4c$lut for cells of type $lut.
+Using template $paramod$c49a38a017030ceae975f22d6ba333017af819d8$lut for cells of type $lut.
+Using template $paramod$23da582b86241546eace0c8bedadb42614eea4c1$lut for cells of type $lut.
+Using template $paramod$77c2a0573790d304ab2299da6d598e8d2e184867$lut for cells of type $lut.
+Using template $paramod$e71b35277f0b45c5272db99fb46c91dac44314df$lut for cells of type $lut.
+Using template $paramod$a7d9b4ab0321c8125e5b895183ee6b84cdb4a31b$lut for cells of type $lut.
+Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8$lut for cells of type $lut.
+Using template $paramod$86d1a43c2f1d620ff2cef866448dd1258c868fad$lut for cells of type $lut.
+Using template $paramod$6e515126019ff5926127401e30b1846aeb75d0ed$lut for cells of type $lut.
+Using template $paramod$b1547fb78c197d5a3ac660080a5b6d1efc1a6fd6$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001011 for cells of type $lut.
+Using template $paramod$e57bcb018bfe8170bc04f13a73befe2def28cdf3$lut for cells of type $lut.
+Using template $paramod$1a64f21ea15b05b7fc930804a66f6689ebbd6394$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11010110 for cells of type $lut.
+Using template $paramod$b50d29afcbb156fd8d7977a154e0a9df5f8e85e7$lut for cells of type $lut.
+Using template $paramod$e5e9da8fed769f971686eed8c5eea50e61f73aaa$lut for cells of type $lut.
+Using template $paramod$f9df0bb8fc3cbb332d575e165ec04d3cfd4c90ca$lut for cells of type $lut.
+Using template $paramod$ce56ef3cd635ab10f24c48b829a9c23913bdb858$lut for cells of type $lut.
+Using template $paramod$2955ab75367a3dc9d6f50d3655eebcd4f615031f$lut for cells of type $lut.
+Using template $paramod$08ce95554de5b0c9a81ef1cb4177208ac631cb80$lut for cells of type $lut.
+Using template $paramod$f9813472aa48e533b3838c6f2316dc2e78c66111$lut for cells of type $lut.
+Using template $paramod$c1a19a87ccbbb03d43a72335db63f692ddf82cc1$lut for cells of type $lut.
+Using template $paramod$2f7deae5fb594b0c70bb82efd4d3682a7baaa352$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11100110 for cells of type $lut.
+Using template $paramod$0c74678f3f33ad9071e3c10b2df9464c165004bd$lut for cells of type $lut.
+Using template $paramod$ed2419b40cde40a89b090949255057d856539fe1$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000010 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10001100 for cells of type $lut.
+Using template $paramod$3f7c7821b1d39a6819e14bece2216887c731d184$lut for cells of type $lut.
+Using template $paramod$75a8319ea7957b1daef72f8eed75963f3dfa6fcd$lut for cells of type $lut.
+Using template $paramod$a18f441632f9abbb6cede8800eba30cc4f555a16$lut for cells of type $lut.
+Using template $paramod$7991e43c533565df3969b82a304afcde859daeba$lut for cells of type $lut.
+Using template $paramod$e49f6e3576ef1a6d2f58c54414dbb786af8cc869$lut for cells of type $lut.
+Using template $paramod$e3232e0a90c8340ac10328f8e4e3ccd56fa7779b$lut for cells of type $lut.
+Using template $paramod$5396c54442dad8b5b1b0cf2a8879c9d9fd868ee7$lut for cells of type $lut.
+Using template $paramod$1c4dba04c7b1b6f9ae2fbd2ebcdbd37f5c14a3e3$lut for cells of type $lut.
+Using template $paramod$4b9b235bc4444ff899bef0c648e4109b26737f1a$lut for cells of type $lut.
+Using template $paramod$33bf78ebb186ba95ff4f1af3de42906d8a7d1a8c$lut for cells of type $lut.
+Using template $paramod$4a0b7d2a2849f16773696ba19d68aee3da2f49f1$lut for cells of type $lut.
+Using template $paramod$41dace4c6e9ab4aacb9fe4add543623fe0c1b015$lut for cells of type $lut.
+Using template $paramod$1bfe58a3ebe7a9464a70a65568a516ea87a3340d$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101010 for cells of type $lut.
+Using template $paramod$fd27bbc0ed7cb6090cbaf662269f836466113d00$lut for cells of type $lut.
+Using template $paramod$9260ba926a74e87bdf06c160ba1a962f6ee1dc64$lut for cells of type $lut.
+Using template $paramod$c8f16510db975553c8b0be1064e8f5234175f8a8$lut for cells of type $lut.
+Using template $paramod$bcc27e42bd550d65c853dcd380bffcd493c2d086$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01010001 for cells of type $lut.
+Using template $paramod$323dbb47a6d14615772fecb6fe7c4bec277e6c6b$lut for cells of type $lut.
+Using template $paramod$66caeb00a39d236782a97659e3bd99621b74681b$lut for cells of type $lut.
+Using template $paramod$be48d952fcad8a16b8d84daa4c48a3065f343e5e$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01001000 for cells of type $lut.
+Using template $paramod$41326ad8644342a66dfb051d050f2b6fbf15015b$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10100010 for cells of type $lut.
+Using template $paramod$9cc51547ab44a72dd506ee5bb84a864365a103da$lut for cells of type $lut.
+Using template $paramod$f85f1073c412d406200a6a72283f918c8b751314$lut for cells of type $lut.
+Using template $paramod$d882df2f9afb7477116c87d395e5bd9c93f1cde1$lut for cells of type $lut.
+Using template $paramod$21f13a59136f2e36fea491cfe733b430f1688283$lut for cells of type $lut.
+Using template $paramod$25003f26a78bb2f583f23824f1e0b8cc16b88761$lut for cells of type $lut.
+Using template $paramod$ea5280fce2698f0f291737e66fca69a1d9d058e1$lut for cells of type $lut.
+Using template $paramod$32ccf65669c41e1e3bce1f16051f6d60ad96a2a0$lut for cells of type $lut.
+Using template $paramod$580719c0b0abaaa4d7fb3741ce4d7c1204bd836b$lut for cells of type $lut.
+Using template $paramod$15d3dd50cc31557057274aea687fe2a8296cd155$lut for cells of type $lut.
+Using template $paramod$3a0a392069bc969f34c65c546a8c56fbbb67e282$lut for cells of type $lut.
+Using template $paramod$4d044680cabd725df9bca7abd5e2203ef8b7c7ad$lut for cells of type $lut.
+Using template $paramod$6e46ec5a196ba1a24b8e69ab094cadc07c13ac1f$lut for cells of type $lut.
+Using template $paramod$66658cbed86a8310f9b7ba1190d35eff90ee749b$lut for cells of type $lut.
+Using template $paramod$052ca015f1400ebf950f85d5f181f7a5865c336c$lut for cells of type $lut.
+Using template $paramod$07d604fa63557df73201af3ab3c9bef4e6969c47$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010011 for cells of type $lut.
+Using template $paramod$b64f67334ae26f46c0a2480c39b1cfb8a26d9038$lut for cells of type $lut.
+Using template $paramod$df23d368a6ae8908771963811f5ab56f622887ca$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10101000 for cells of type $lut.
+Using template $paramod$e4b832d686d12318ec0715f027fe549b42e45c20$lut for cells of type $lut.
+Using template $paramod$0462a4b93e6124ea191ed7b6043860e158c9eb12$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01000001 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000100 for cells of type $lut.
+Using template $paramod$8f7210088a40da1859d27e900c288fd298d68bed$lut for cells of type $lut.
+Using template $paramod$1706f3ac632b975049a73afd71157646d4ae260d$lut for cells of type $lut.
+Using template $paramod$d575de8e588b46dbb00e03e414e3303cf809cb33$lut for cells of type $lut.
+Using template $paramod$bf9d12be9e757c28b1374b63e168615e76b4b315$lut for cells of type $lut.
+Using template $paramod$168aeef333136ff4f1f2ce3a62c8b6d1ffc7dc28$lut for cells of type $lut.
+Using template $paramod$ac0fa5d7a90a8bbe2427a08d007dd31ff56eaf3f$lut for cells of type $lut.
+Using template $paramod$68fdbc7d6aaa30088d42da80c5b6d1255cb63423$lut for cells of type $lut.
+Using template $paramod$609ff53b8e25fddda2f58be8d19c2d47b81baf45$lut for cells of type $lut.
+Using template $paramod$a36debbcfde9e32a01ea5076ccf3d75225452c4d$lut for cells of type $lut.
+Using template $paramod$325e90edf97670f9dea57833ae1f51a5e8bcddea$lut for cells of type $lut.
+Using template $paramod$8da02996bc6ce025fcc2ce1dafd66f4b38a423f1$lut for cells of type $lut.
+Using template $paramod$18df3812bc12364e5ebcb6c3ed05c0294e4c26fc$lut for cells of type $lut.
+Using template $paramod$43fea5284bb6c2d861ab1e6670dc9f7cc6104e68$lut for cells of type $lut.
+Using template $paramod$671431332e08a4736e0ae1fd51c7d67891ddaf60$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000110 for cells of type $lut.
+Using template $paramod$a7c07944e10969b2e1fd563a5b72f89493cb3705$lut for cells of type $lut.
+Using template $paramod$756861dd4dfe0a5b9de37af2241117b1958e2ffe$lut for cells of type $lut.
+Using template $paramod$bcc83611792036a89fcf0fb3e42d7f16ecaf0f61$lut for cells of type $lut.
+Using template $paramod$c1d257604338f470c3330ac82902d43be31af5d5$lut for cells of type $lut.
+Using template $paramod$222013da32dac75e53a35356c41179e6429d068c$lut for cells of type $lut.
+Using template $paramod$6375ab94b303a3f3c8d7ca6946328cb3c0b443a7$lut for cells of type $lut.
+Using template $paramod$fbfc0d8843dde3abcd733ee963d4489bf6c62e28$lut for cells of type $lut.
+Using template $paramod$b1680225cc6a5792caa95f54b8b3218fae21705d$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001110 for cells of type $lut.
+Using template $paramod$efc60783c939ae41b2f3555af407b17c007b27f8$lut for cells of type $lut.
+Using template $paramod$e1504ebc89af327b0d0bdc52767c59c25d6da051$lut for cells of type $lut.
+Using template $paramod$1c1208033be3248b429eac87e081dceb4829c767$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01111110 for cells of type $lut.
+Using template $paramod$9506ecf18c91672f3dae4008b6ad1f2863e8019f$lut for cells of type $lut.
+Using template $paramod$4834046533425f54583d6bd31e49deb63455e1a5$lut for cells of type $lut.
+Using template $paramod$101238f3d8d49ab12a9b49a2f01cd503b26e9c61$lut for cells of type $lut.
+Using template $paramod$a5dd9ee10fc2202a29791f7d68d4afcce241aee5$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01001110 for cells of type $lut.
+Using template $paramod$60e0a526d5120cb853aa823aea6dcb02645a9f39$lut for cells of type $lut.
+Using template $paramod$12e9049d8709286a770fe60b59ec4d94c39ce3c9$lut for cells of type $lut.
+Using template $paramod$20235ca863361fbc253329cfc7eeea38c77404dc$lut for cells of type $lut.
+Using template $paramod$02106d9de5b21681596924d3e77602fe2f38b3bc$lut for cells of type $lut.
+Using template $paramod$7723e849130335060506465bd24a19be8d7b4d10$lut for cells of type $lut.
+Using template $paramod$4853050665c020c8d21fb1a749196950a09d9df8$lut for cells of type $lut.
+Using template $paramod$38522a6f320aee0c002fe504d4100bbdde393061$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010000 for cells of type $lut.
+Using template $paramod$ab8bb87959c5d7cfa27886cee1355b38e054a61a$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101110 for cells of type $lut.
+Using template $paramod$7ffc04c088a4897014506d1e561a14b627924059$lut for cells of type $lut.
+Using template $paramod$d116d257e1672ec9c96340b94d6f8451d941ae5a$lut for cells of type $lut.
+Using template $paramod$b009a26b33c3ca109c016cf968a774c0d66687bb$lut for cells of type $lut.
+Using template $paramod$3cd7ba4e37ac845a21f7d679f20c35087949289b$lut for cells of type $lut.
+Using template $paramod$b85b4dac4ba7a08c0038797338af120d35b44043$lut for cells of type $lut.
+Using template $paramod$a5516fc31d1e552de2435200bb732b4d4ad63a9c$lut for cells of type $lut.
+Using template $paramod$b639d2259c06d65be14086d327a7b0b2f40dff77$lut for cells of type $lut.
+Using template $paramod$442942c49343581526beed89fab83eb3ad000fcb$lut for cells of type $lut.
+Using template $paramod$16894c241be5ea1f024e9339dea788b4dbe184ae$lut for cells of type $lut.
+Using template $paramod$9dd298ae76fb41ac94779a83c068607fbc09ce4f$lut for cells of type $lut.
+Using template $paramod$517625bf4a7b846fd553901d881a35fcc8afe4c4$lut for cells of type $lut.
+Using template $paramod$6d6beead1425af15cf78b27fd9b11b41b5d4bce8$lut for cells of type $lut.
+Using template $paramod$1e9d31fd9d29ec2b288c09d6ff4a2646e026682e$lut for cells of type $lut.
+Using template $paramod$2b47d6f0645f6c0eac4d0fed1097d370ff2ad02d$lut for cells of type $lut.
+Using template $paramod$cd05caaf261e4148f336c0ecc488c806e4433d99$lut for cells of type $lut.
+Using template $paramod$18a815aa7dc1ddf85dae590f42ea836d822588b6$lut for cells of type $lut.
+Using template $paramod$bab3258ad21cb83a958fbc51f2a3a88704f4353a$lut for cells of type $lut.
+Using template $paramod$f9e6b8c8bbaa4b164a91075c553341d15958d0ba$lut for cells of type $lut.
+Using template $paramod$dd7c1583fe0ade167c7826c594e5d16b758a72fe$lut for cells of type $lut.
+Using template $paramod$e2d96f36ef28053ecd27167cd95b944485ac3146$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00110010 for cells of type $lut.
+Using template $paramod$9a6965d4f53d69e345bd8d48283856520a30225e$lut for cells of type $lut.
+Using template $paramod$e51a8a571bee774247b38f52d6e85fd62ae52cea$lut for cells of type $lut.
+Using template $paramod$c87dac08e5c35a07f66c5022d362c2152b96b871$lut for cells of type $lut.
+Using template $paramod$b28b4ecbaa07efdcc51c93348ccdc2395f8b41c1$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11000100 for cells of type $lut.
+Using template $paramod$c1cc28f175a0e6748eccc160402c435794e05958$lut for cells of type $lut.
+Using template $paramod$c63fb63be97a9db4ce7bd031e26652a8b349a094$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001101 for cells of type $lut.
+Using template $paramod$d32ac583cc0859a61afc4fe66ae9ff44a1749e6b$lut for cells of type $lut.
+Using template $paramod$723eb79ef8d5d376f3f196f4acfa8e347145a0fa$lut for cells of type $lut.
+Using template $paramod$27190b166827ead7a5b229ee873e4b91ee0faf61$lut for cells of type $lut.
+Using template $paramod$09deb89cf77b6e37f6ed7fef8d797dc05c0b2eee$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000000 for cells of type $lut.
+Using template $paramod$f6205ea4d16154fcc0de4d21dff0bd55a57f1ba0$lut for cells of type $lut.
+Using template $paramod$8cace441fadf06d1f8a401c642f2949e2f1c9a88$lut for cells of type $lut.
+Using template $paramod$402680a6200a224cd4dc7cbd276b465efa9af12f$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000111 for cells of type $lut.
+Using template $paramod$bb2bcc1ad625d54a2c650d698898d0bad56c388e$lut for cells of type $lut.
+Using template $paramod$befae9f24718e85503c639a51c91f9c16070e995$lut for cells of type $lut.
+Using template $paramod$cc635173313cbeeac788d29df6cbdb2fbb9074ed$lut for cells of type $lut.
+Using template $paramod$7aa8140c7d6de3160b21e7ff84e0f93f69f7fcc6$lut for cells of type $lut.
+Using template $paramod$4b74c84e030a2954990a38b85df486ab821c03a4$lut for cells of type $lut.
+Using template $paramod$4bc50430cb97bb90d881f18799dc67dbe5b7e398$lut for cells of type $lut.
+Using template $paramod$8384e66d408d22ab39dfb451efb7879731befeb8$lut for cells of type $lut.
+Using template $paramod$5f44007876998592e58b9bc671bd4c63c418cb05$lut for cells of type $lut.
+Using template $paramod$fa67bc369d6bf59edc102e00e9ac9ae5427d9ea0$lut for cells of type $lut.
+Using template $paramod$cdc5bba2585477f1744fd1f869bebc8beb23d707$lut for cells of type $lut.
+Using template $paramod$aa8c38fd7f93a3e39f48199df1f9249c794f419f$lut for cells of type $lut.
+Using template $paramod$0572cfca5f2078be5002267ce5ba7e92c7b7fdbe$lut for cells of type $lut.
+Using template $paramod$9901c06d31cc09b7ee3ad0b9a56fc7f63165ab78$lut for cells of type $lut.
+Using template $paramod$06af8e98b1ee32760d0eff675cf4988d49cbfdfa$lut for cells of type $lut.
+Using template $paramod$7d35f3eb4056e6484203c99fe42cfcf1dfaba704$lut for cells of type $lut.
+Using template $paramod$f28aede8a07a53ff316cc6f8627c7d8a2337a88a$lut for cells of type $lut.
+Using template $paramod$7ee6859f76522c696cae92d8450beddcfbd6d4b4$lut for cells of type $lut.
+Using template $paramod$f754927f5a3a83c9230c21e3aec4e1f43f503619$lut for cells of type $lut.
+Using template $paramod$82dc73c2ca4f24c6774559adf5162860e1b14c4c$lut for cells of type $lut.
+Using template $paramod$3afaacb47bae8874b9643c6a6ae9ee8474b6dd27$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01101110 for cells of type $lut.
+Using template $paramod$fd68029c5e3839cf3c78f1ecbb141d689c91dfcf$lut for cells of type $lut.
+Using template $paramod$4bf23d45a3e7588698f930a3e47a1038c7a957ee$lut for cells of type $lut.
+Using template $paramod$626c926c090c24ceb89df275614206a0a54168a8$lut for cells of type $lut.
+Using template $paramod$d6a246575d0ba3dcbbccd768ad41b602f82ff057$lut for cells of type $lut.
+Using template $paramod$be58bee3028587b8431e1cc24255a5d8b7777e61$lut for cells of type $lut.
+Using template $paramod$b4f85a6321a00b090afc4e21d68e7b99eb94d149$lut for cells of type $lut.
+Using template $paramod$f13efa0c1de864cd18a57bb6c502b38daee285ba$lut for cells of type $lut.
+Using template $paramod$dbdbcb07b9994e498bb1324e5c006c6aa08a7a37$lut for cells of type $lut.
+Using template $paramod$431a6af0106551bef3f78844fbb0409941437676$lut for cells of type $lut.
+Using template $paramod$d9922e15eb5da1acc26e937540cc16b16c2ad42c$lut for cells of type $lut.
+Using template $paramod$556576dcba55c06ab292eeb98721827871a91aaa$lut for cells of type $lut.
+Using template $paramod$c9ec154e62ee638c50d54b7aa817c75638946f75$lut for cells of type $lut.
+Using template $paramod$e412821338883e25f2e0d1a1d7fada158db69807$lut for cells of type $lut.
+Using template $paramod$0c31959b92c73c33e9788e031d13342e4c5f0bde$lut for cells of type $lut.
+Using template $paramod$169e3ff199948acb6289d60ee69a6cbdb1d4057e$lut for cells of type $lut.
+Using template $paramod$641cbc20a3cb16917a37338d25ce8eb8b37bd7ff$lut for cells of type $lut.
+Using template $paramod$0750f2e223c2583f7f123e6815745c8c0c6e578e$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01100000 for cells of type $lut.
+Using template $paramod$d99a7e6648502e2b21d9a007d4c4e96a0530be5f$lut for cells of type $lut.
+Using template $paramod$5c6307ab5bf83eeb834c32320af2e964a658e65b$lut for cells of type $lut.
+Using template $paramod$4d7f17f71543a1e7fc1835bd79c4827a43f2e844$lut for cells of type $lut.
+Using template $paramod$7c085cdbf0919cd3ad402d9495d97f0d71e4db93$lut for cells of type $lut.
+Using template $paramod$908690d6383f049a4a294021726cf2b8c783c764$lut for cells of type $lut.
+Using template $paramod$9cf83e29ae1c8f8c5630302af14d44e670567a7f$lut for cells of type $lut.
+Using template $paramod$e5bf0d84da9b26dd4caa7cb2fdb1051d329babbf$lut for cells of type $lut.
+Using template $paramod$a56bc14c3ed7cebac4e3a2734f27d87a82375578$lut for cells of type $lut.
+Using template $paramod$1241d759e3df4cac11dc7c99c36b0d1b07f7a673$lut for cells of type $lut.
+Using template $paramod$3b92800be52cd042b710a19566ed048cb742cf83$lut for cells of type $lut.
+Using template $paramod$db8f450e6662991ef955879419e948046224222e$lut for cells of type $lut.
+Using template $paramod$1a018116902d67cd8f1fe8e3ed7e7c4d44b1bf6b$lut for cells of type $lut.
+Using template $paramod$22f22faf827a1fbb0a16dbea627cf4d14a0479d3$lut for cells of type $lut.
+Using template $paramod$859290076eb0ab5533d03769d9103e68d9252019$lut for cells of type $lut.
+Using template $paramod$f626b575273537b3090dbe5d04b27b283ec9a192$lut for cells of type $lut.
+Using template $paramod$aab54572d5ffecd31253b36e73e9cb718d05be34$lut for cells of type $lut.
+Using template $paramod$1c5e17cd7effe54ea8182e8bab358af86561272d$lut for cells of type $lut.
+Using template $paramod$39825c5ed3d135e502be79829033166f1762d78b$lut for cells of type $lut.
+Using template $paramod$6afaef74596c787c94017603e981305a7c99f20c$lut for cells of type $lut.
+Using template $paramod$e5761adfcc530461835be17350166b9d43dfadee$lut for cells of type $lut.
+Using template $paramod$d575d3554e876f643193272ee6813447059f103f$lut for cells of type $lut.
+Using template $paramod$4da6fe9957da309dc16b8f31a6b80b19c05c808d$lut for cells of type $lut.
+Using template $paramod$12879138d1e376f344e47ea40be66b776233be75$lut for cells of type $lut.
+Using template $paramod$734cd1512f671d92bc4f41153da0d9781801dd98$lut for cells of type $lut.
+Using template $paramod$57d6472dc2a1a4a68f6b5acc06b5051af4160722$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010110 for cells of type $lut.
+Using template $paramod$338ce46cf7ff44b9974887dd2adee6c4e0530bed$lut for cells of type $lut.
+Using template $paramod$82ed25b11a6a11eb861f4dd3d46f5fc9aa1eebaf$lut for cells of type $lut.
+Using template $paramod$b86b68a00733dbecb31d58a14a13683475a2002a$lut for cells of type $lut.
+Using template $paramod$eacb3fa928aab522d867ec276279d76c3c3cfff4$lut for cells of type $lut.
+Using template $paramod$b26fbfdb68e98cf016d61a8611b449e9f4a30f3c$lut for cells of type $lut.
+Using template $paramod$a823c1a223026b2b428ff7bbfdf809883d3ac2b9$lut for cells of type $lut.
+Using template $paramod$f636addf23985dbe41a55c472a3252cc800b7dd7$lut for cells of type $lut.
+Using template $paramod$694c95659b447cef99dd4cdbd49b87dfd5f6c806$lut for cells of type $lut.
+Using template $paramod$8628856e6adeeb85015bfec6f5bd4d2d43863a7b$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10110001 for cells of type $lut.
+Using template $paramod$a63014c5e66a56dc5e61848489c809a59ebe7c34$lut for cells of type $lut.
+Using template $paramod$368e436254be41c005bb66116cc36c89af129898$lut for cells of type $lut.
+Using template $paramod$d7c634c964a868577f926c0690c937ab5b147f6e$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11011011 for cells of type $lut.
+Using template $paramod$a1d323730045824cfc84bb9f4ee8031f1c4dcc9e$lut for cells of type $lut.
+Using template $paramod$ecae7c8c92e63765dd6a7f5eec82965d3f41a820$lut for cells of type $lut.
+Using template $paramod$8e7b1ec7df4c8852d827365421a6d41e55bd7752$lut for cells of type $lut.
+Using template $paramod$874f98ca960a74775ebed2d38d9820c8580f6c20$lut for cells of type $lut.
+Using template $paramod$779a912c2e61b008e2ba6da235f91f694eb7e6d7$lut for cells of type $lut.
+Using template $paramod$a502d90a28533c6d8d9c8a6d7c00e5512a5b19b4$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00010010 for cells of type $lut.
+Using template $paramod$32abbd1d449a67fb913b4733374e345d4c17175b$lut for cells of type $lut.
+Using template $paramod$3bad4d9f07a2ae1c86191ecff2d5dfd752a2346a$lut for cells of type $lut.
+Using template $paramod$8f0127ae6e4e4fae3e6aa8d83144b199848e8539$lut for cells of type $lut.
+Using template $paramod$452f5d5ffb77eee759a6c0f1e41d89ae347e558d$lut for cells of type $lut.
+Using template $paramod$b9305c669fd883d24574655b402c7ff9f28efb1a$lut for cells of type $lut.
+Using template $paramod$82b4a585d1edcb5c6e755dc9bd3392228a1c1304$lut for cells of type $lut.
+Using template $paramod$373d637619c29cb9150902df9528107e5f3b8288$lut for cells of type $lut.
+Using template $paramod$aa87f4b44361d4073f55a64babebb83974861eee$lut for cells of type $lut.
+Using template $paramod$781a9aec0d3f5e2e8f1ac0da04bc801330b7d232$lut for cells of type $lut.
+Using template $paramod$4e9e23686d07a1fd91232ab07371e48a0e62a680$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01101001 for cells of type $lut.
+Using template $paramod$ec6c71d259df49ae0842190ffaff1179e43a8db4$lut for cells of type $lut.
+Using template $paramod$cb32832b462590ba6b4bda2fe4ab0e2da1abc198$lut for cells of type $lut.
+Using template $paramod$179512a187da069f3b79ef6612a41e494e7d54b6$lut for cells of type $lut.
+Using template $paramod$fc2be7cf2aa1cfc8ebe963e124f1c70016e3f0fb$lut for cells of type $lut.
+Using template $paramod$3701621b2a329787ad16c9c26c56fe56bacdd533$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00111110 for cells of type $lut.
+Using template $paramod$5ff8646b700360c1a97dcec0613613b247b230f6$lut for cells of type $lut.
+Using template $paramod$6be53ab59e0a69757fc32adb071ddcb64e8c87b6$lut for cells of type $lut.
+Using template $paramod$b7f286801be2f38a7845914ebecc5f21ad2fa29e$lut for cells of type $lut.
+Using template $paramod$b57a2f363f73851e5277d97ae4d4cc2141fd0f8b$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100001 for cells of type $lut.
+Using template $paramod$c2590929527069bd4b69a5a273443516f7b9d04a$lut for cells of type $lut.
+Using template $paramod$f2dd052db456f57b0e20d2289cfe84c57d58ecca$lut for cells of type $lut.
+Using template $paramod$a61c711ecadfe13ec444262d666aabf860b7b048$lut for cells of type $lut.
+Using template $paramod$8b5585403ef4e00a9df24ba67f9f42a1bef35100$lut for cells of type $lut.
+Using template $paramod$b93d1ea7a612a32c185108f67a153d44ffb9aac2$lut for cells of type $lut.
+Using template $paramod$fad2b54382032712435f6c9e0629a0976ef01981$lut for cells of type $lut.
+Using template $paramod$5e9374f44a27c3f8a1c38af244ec43ceb4fb8d4f$lut for cells of type $lut.
+Using template $paramod$2272be9ba1c2e15b529932ea3796042e3c936f39$lut for cells of type $lut.
+Using template $paramod$07620d52cb536ce2865a3d1bba2ad2f7a88140f9$lut for cells of type $lut.
+Using template $paramod$3e9386ccff279159163720f27709d6c1649de9df$lut for cells of type $lut.
+Using template $paramod$99e9f9370e0f453dd1be0e6f68ad59b4355bb5c7$lut for cells of type $lut.
+Using template $paramod$afdefd64f115cbb578c1cd4bf8426ecfef85ae91$lut for cells of type $lut.
+Using template $paramod$5a621b016c894274d07edef48c49b401a15fd796$lut for cells of type $lut.
+Using template $paramod$dd3c8ab01544a86a5e01e4e265af0266a33c51a9$lut for cells of type $lut.
+Using template $paramod$bba54c1ef87367812b4c15f4aed5ac70773df775$lut for cells of type $lut.
+Using template $paramod$8d41622da0aa87c171e3ad24745637a8e540bedc$lut for cells of type $lut.
+Using template $paramod$2aec3c64143bf3d69a9a962ea942c34be16b61b9$lut for cells of type $lut.
+Using template $paramod$712505941a295086314c22735153725461a87f4a$lut for cells of type $lut.
+Using template $paramod$992bdc10cff2c6edd722994f0e1044bc863f79f7$lut for cells of type $lut.
+Using template $paramod$298ae5f9a8a98fecd0ef5be980102730dfa7e8c1$lut for cells of type $lut.
+Using template $paramod$ee04a7397c7e60ad1a187fa314ed449c24407f97$lut for cells of type $lut.
+Using template $paramod$ec4a42de44cba71ee58c2179e2e534b1bfa67664$lut for cells of type $lut.
+Using template $paramod$edfe6773e2ae95f1f17ad5bea62c0e1b079fa667$lut for cells of type $lut.
+Using template $paramod$865395c0228487a64a8e4011cecafc2c64b79f2b$lut for cells of type $lut.
+Using template $paramod$599436f509923484b8b307f0bc99067db4de2ea1$lut for cells of type $lut.
+Using template $paramod$1c18f6ae49ced334cbe12ae17fec8513df70ce82$lut for cells of type $lut.
+Using template $paramod$0f2b0e9b7d66691f6ae5fcb454827e57c08907bc$lut for cells of type $lut.
+Using template $paramod$344fe1c777eb9c235429b496f5e751b7ffe306f0$lut for cells of type $lut.
+Using template $paramod$dcbbf1692900e6de9748b0c06336cd49f1e6635f$lut for cells of type $lut.
+Using template $paramod$06e62c2045624c211a1abe4f2f36c8f22c688165$lut for cells of type $lut.
+Using template $paramod$9e394303e290a474880b56f98766417009256d93$lut for cells of type $lut.
+Using template $paramod$a7321abe7c7bb74c0c17f6fa8124016ad24828a9$lut for cells of type $lut.
+Using template $paramod$c540f30db8fc29aff57d35068c92a04e524a19ef$lut for cells of type $lut.
+Using template $paramod$9c65fdfac74256c2eb67dd209b598e25d1f0a099$lut for cells of type $lut.
+Using template $paramod$02de6e522595348698b4ffc4171cb34a67273339$lut for cells of type $lut.
+Using template $paramod$f7cbd8f5974233f70d25c33ef6a692898e4f6377$lut for cells of type $lut.
+Using template $paramod$eea9f3bfa234687410071a547d41b806cab7d4e0$lut for cells of type $lut.
+Using template $paramod$ba39d842c466d64c1a77f3ca7e139984f9ff77f8$lut for cells of type $lut.
+Using template $paramod$4f1a39459ad5a99f471004fa3a2c0d07cf241a44$lut for cells of type $lut.
+Using template $paramod$234fd643079033ba0cbc98ff572df9b7b7a0dc86$lut for cells of type $lut.
+Using template $paramod$14ab1c64f157edd46809b1ff1b21f9219761a711$lut for cells of type $lut.
+Using template $paramod$3834e2239f05e6b9b27d483b2e01a04de47c5bd6$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00101000 for cells of type $lut.
+Using template $paramod$18e74593cbe061b53c189025a3b3f0866c38be95$lut for cells of type $lut.
+Using template $paramod$1385dacc2bd107a915ac9cac229494d77a3ccf37$lut for cells of type $lut.
+Using template $paramod$70a6f8b5e7c26d543ee5df54b2e21d28a007a4bc$lut for cells of type $lut.
+Using template $paramod$39fe6c7b3dcd9dfa3534055ff244e71be27bd8fc$lut for cells of type $lut.
+Using template $paramod$2d9afc4fcdaefc1aa926013768e4628d50e32e31$lut for cells of type $lut.
+Using template $paramod$44d7cf869d02460b38f97ca7b45c647097f5b8b4$lut for cells of type $lut.
+Using template $paramod$db08fd84fb3c4d6a41eaec6adfffe445fb7eb17f$lut for cells of type $lut.
+Using template $paramod$4a29d71a857177ebc63ba45458c227a87d339a58$lut for cells of type $lut.
+Using template $paramod$bf8ef8cb410ae5dcd9e95d57336b062415ba8057$lut for cells of type $lut.
+Using template $paramod$097592bb16245531f0716c5ddb18d7090f9c7d9d$lut for cells of type $lut.
+Using template $paramod$d1dc785fc5b97e7bec2be30ee7302c8cf250ad22$lut for cells of type $lut.
+Using template $paramod$009a8bbdb43280228471792180b659e28713f577$lut for cells of type $lut.
+Using template $paramod$a03ef989f8f4e1878ce2f5c4e0e3d2dfb54307ef$lut for cells of type $lut.
+Using template $paramod$f5c5b56521a6811444a94cf8aec11258bf0a108d$lut for cells of type $lut.
+Using template $paramod$98836ca57c033416185a8259e087dfc1a43037be$lut for cells of type $lut.
+Using template $paramod$8cac5452d526045503c5864c3a1dac0121c7053e$lut for cells of type $lut.
+Using template $paramod$19f568890ed784cb1efc3ce1b67eed20a6c54d9a$lut for cells of type $lut.
+Using template $paramod$8101d9e9626186b085c3c63c84551dd3f6cf12c5$lut for cells of type $lut.
+Using template $paramod$6b8121e76073493a684a0dfe2c7637aa893df31a$lut for cells of type $lut.
+Using template $paramod$6e98fea82e288eb70fa7833e8442d9b57c9d67e7$lut for cells of type $lut.
+Using template $paramod$c35492cebda5b908d10e5976bd14d50fda8ce5fd$lut for cells of type $lut.
+Using template $paramod$b3457a951e206d0a1d4c0f0260dcbd54a10a1f9f$lut for cells of type $lut.
+Using template $paramod$6a42a4c5742a53fb63809807506d8360b3c5cb2c$lut for cells of type $lut.
+Using template $paramod$b39f0a1f6d92295baeb3322c9c7ab596dc80c144$lut for cells of type $lut.
+Using template $paramod$84abafac600770dbecbd08e858f90b0a8d019d50$lut for cells of type $lut.
+Using template $paramod$b346830d05507a3b279037831011f520f3796c6a$lut for cells of type $lut.
+Using template $paramod$9583ab40db57ba76ead4c869be5b61dc3f252411$lut for cells of type $lut.
+Using template $paramod$5e30dd0200356c198a5f97d9af9d81d6bd16e851$lut for cells of type $lut.
+Using template $paramod$e85b6eba0dacefc5f73f8748159b8b9599212afc$lut for cells of type $lut.
+Using template $paramod$c600b4b1adc22857e1c1ba3b6aeb516fabe09da0$lut for cells of type $lut.
+Using template $paramod$cb0f200cd99e5c2438a7a98f9804806d5d0948bc$lut for cells of type $lut.
+Using template $paramod$be613c2ec81bbb933207dfbd90eddebff22b7f17$lut for cells of type $lut.
+Using template $paramod$183ec76ed3429a430a8be24b57f3de734985f568$lut for cells of type $lut.
+Using template $paramod$7c463cec1bbdc208923e0c2ad8b61c9d73d7ae27$lut for cells of type $lut.
+Using template $paramod$32b7a4b91fed1cbc2f9d1dc336d22189a0b87db9$lut for cells of type $lut.
+Using template $paramod$fe5b6043e65e98368b275f38e2ca7ec95af2534a$lut for cells of type $lut.
+Using template $paramod$90704fa84b962c1292be4e9804d1ff85fa0e66a8$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00110001 for cells of type $lut.
+Using template $paramod$37f494dcc63f6757d907b5936f5f221c6c5e4340$lut for cells of type $lut.
+Using template $paramod$dc2d29e018161237dde429f9df2702c54ac0722c$lut for cells of type $lut.
+Using template $paramod$f24ba3ced4b870f8e829f5ac5a8af88573350e6f$lut for cells of type $lut.
+Using template $paramod$77a938aad97b99fe439f66028c303de5cb00b96d$lut for cells of type $lut.
+Using template $paramod$5c1e52efa325e137635128177bdc1513c6e1b3de$lut for cells of type $lut.
+Using template $paramod$5c36a508e8885449eeca65fa0c02b7154f6a3130$lut for cells of type $lut.
+Using template $paramod$5fad0f969272a0a6d87e1708cdb5334c44031e89$lut for cells of type $lut.
+Using template $paramod$782961deb8dc512aef835b73aa3765da3ab3c15c$lut for cells of type $lut.
+Using template $paramod$c6049bc58ec9233d98489fd59c7cf632cbb210ff$lut for cells of type $lut.
+Using template $paramod$f29e032f258073bb3745250ba87f3492c18ae173$lut for cells of type $lut.
+Using template $paramod$31f0a66a4b242b524303bfb4ac95c05ad74158f8$lut for cells of type $lut.
+Using template $paramod$5444938c8e5e8ca27004a3709b9915cc1af45fa6$lut for cells of type $lut.
+Using template $paramod$f921ab2c451d17e196d1dcad0b6d434881387fe3$lut for cells of type $lut.
+Using template $paramod$e5759512db67494ff77fbdfc66dff4006376568f$lut for cells of type $lut.
+Using template $paramod$c9b834dc9c2f376b2a44311c706cb34f7f0a4014$lut for cells of type $lut.
+Using template $paramod$e5758a88c2c156ccb3037f71a73d1b15af5b310d$lut for cells of type $lut.
+Using template $paramod$52fdb5aea8b400507ca0ad180336ff4e5f214b39$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10111101 for cells of type $lut.
+Using template $paramod$d81502be98cabae9a28a1c9f058138de02913495$lut for cells of type $lut.
+Using template $paramod$5502a85110dbca29ac631107f0b0635e7fade476$lut for cells of type $lut.
+Using template $paramod$7bf5512d8fdb8e26910503e4b478c320fbfd63fe$lut for cells of type $lut.
+Using template $paramod$cad3abe3cf15a898155999cc59b3f17ab81a7369$lut for cells of type $lut.
+Using template $paramod$077caa0fe67e147edfc4c4dc820ac55adfc6d436$lut for cells of type $lut.
+Using template $paramod$84a16dd3108d2ad92154719fe6c673f1436296d2$lut for cells of type $lut.
+Using template $paramod$30305e55a780880b9c824fe3509a4d981acb0f2b$lut for cells of type $lut.
+Using template $paramod$22295481aee48631dc0088cef4e5f102b07c1986$lut for cells of type $lut.
+Using template $paramod$c07d61aaf1d93e15249de987e8fd0ca391dbd52a$lut for cells of type $lut.
+Using template $paramod$dc8eb389b2fc3ec6a78d93ff9b548b7fd27b6950$lut for cells of type $lut.
+Using template $paramod$a9ce27937a83ad5f912b4564fe247b26679e1c7b$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10000010 for cells of type $lut.
+Using template $paramod$1cf918a7bfd8de4f51a26da1f647628beda29852$lut for cells of type $lut.
+Using template $paramod$baa9d2fb2d21010939721b85aa9f11effe0b53c4$lut for cells of type $lut.
+Using template $paramod$e6a488add0b5a2d742e2ae29f62ce7616e04271d$lut for cells of type $lut.
+Using template $paramod$cd9007448cdb713735fd4ac63d1304dd0904dfe8$lut for cells of type $lut.
+Using template $paramod$a20c6c1e16699890aacd2a27aa974a524fce88da$lut for cells of type $lut.
+Using template $paramod$ba7f31f246a278c41fa0648a6e0512f63185dec0$lut for cells of type $lut.
+Using template $paramod$3331a91b4e24483a258fc0d47474cffbd93ab577$lut for cells of type $lut.
+Using template $paramod$57ce914bc89fae46dfb47435803f643c372efdca$lut for cells of type $lut.
+Using template $paramod$13f39fe83a3d4ae5ee7e23ca5210d9a978d2dbd1$lut for cells of type $lut.
+Using template $paramod$177ebd8a2d26f542a1ffed48ffa10a32d36df82d$lut for cells of type $lut.
+Using template $paramod$dcd0652ce3d272d6682dd032326a09a132c13cbc$lut for cells of type $lut.
+Using template $paramod$1a8f8bffae135e0e1a65727e5ebafb1ee54b1be4$lut for cells of type $lut.
+Using template $paramod$fca001e3e0b52158a872e76e56c01ec10dfbb1de$lut for cells of type $lut.
+Using template $paramod$d7e4c3368704f2b33673c40058a5615df8a94c9d$lut for cells of type $lut.
+Using template $paramod$1816ab9d89d34338423e92baed3cee854d70815a$lut for cells of type $lut.
+Using template $paramod$91d6743ceb0f093b57d242b538f7f23d2346d4c9$lut for cells of type $lut.
+Using template $paramod$178bda39ffdcebd3e876f3983b329791c49ec5d5$lut for cells of type $lut.
+Using template $paramod$990f0fb2b3d003f8b16e47a6e2203c03f05c2581$lut for cells of type $lut.
+Using template $paramod$6e238df02989b317f10820a22773676e71120644$lut for cells of type $lut.
+Using template $paramod$4a108a17e1b6361423e6760b83783f98cae63cfd$lut for cells of type $lut.
+Using template $paramod$a9a05c14eb25182553e7b1744210110c0d6dedc2$lut for cells of type $lut.
+Using template $paramod$26ab19ad68e734b367ff18d5fd5d3c52f3b0cdef$lut for cells of type $lut.
+Using template $paramod$efaa36680a55a27e5cd1102055d7098972ce0aa4$lut for cells of type $lut.
+Using template $paramod$86e792117a57adce9d9f17988b970ca8b98a1690$lut for cells of type $lut.
+Using template $paramod$fe70bb3280659663b8fa2b45f42fda9ccf4ccfaa$lut for cells of type $lut.
+Using template $paramod$df2c5671757930949ccad092458a7f705f78ea6a$lut for cells of type $lut.
+Using template $paramod$4fd3428c4b8b1accf8f8fb4bb88555a2b5fa688d$lut for cells of type $lut.
+Using template $paramod$c60ca41b168cf0135b647ee93585f6196ea95274$lut for cells of type $lut.
+Using template $paramod$674c6c08d135c56e3c3c6cf236ce48deecb31467$lut for cells of type $lut.
+Using template $paramod$372310d47488e744e0723bb003d50dbafee0086c$lut for cells of type $lut.
+Using template $paramod$80bdf27c89e05e260c05dfb4081bd0de8db214f0$lut for cells of type $lut.
+Using template $paramod$37203517188e0e81c6d1574dd1c274ed56646adf$lut for cells of type $lut.
+Using template $paramod$c78180a2adff43c90c579f45c38593011e0d2a18$lut for cells of type $lut.
+Using template $paramod$5696a47bc454fd52a8f7de8c0dc67806adfe531a$lut for cells of type $lut.
+Using template $paramod$f02313063ad249116fb635cc022958a03a6d376f$lut for cells of type $lut.
+Using template $paramod$47d363ae7b1a0e81207e02fe31af85b6bf36a2ac$lut for cells of type $lut.
+Using template $paramod$5a53b9bb40be07b93801d5bc9649aadd26d3cf90$lut for cells of type $lut.
+Using template $paramod$f258f431a7c2fc52205873e71cd6683fdc689824$lut for cells of type $lut.
+Using template $paramod$171a26dab6ec9c529b9e202b2690ecb6876d5ed6$lut for cells of type $lut.
+Using template $paramod$75d4c7310d79b062cd875ac5cbf3dd1459998b7b$lut for cells of type $lut.
+Using template $paramod$f042a4162cda5b7ea4dac46822160433ab1283e4$lut for cells of type $lut.
+Using template $paramod$44b625a94c969ff75b3c4d6080d60f6f10f4c68c$lut for cells of type $lut.
+Using template $paramod$b7d975416b226d4695ef13119816f90cd2e4a213$lut for cells of type $lut.
+Using template $paramod$8954ba3acd558d79f81c9f4e43f9accf07d88593$lut for cells of type $lut.
+Using template $paramod$fe1497207981e9e4f2f9556fad9970ec052e0a6d$lut for cells of type $lut.
+Using template $paramod$4a8554d0a765102353ca9705f6a3cc329f4379e7$lut for cells of type $lut.
+Using template $paramod$b1f01d1a6442cce30a958d756be8bbcf976f6dba$lut for cells of type $lut.
+Using template $paramod$f2be0f47d55d78d60128542d78eb2aa2eaf0f022$lut for cells of type $lut.
+Using template $paramod$74f6725bfbc07f1464a6f0c034e9f34bbc42c409$lut for cells of type $lut.
+Using template $paramod$a5627e8ad36aa9b4fe2f6188097d151d45fefa8a$lut for cells of type $lut.
+Using template $paramod$728e616c918eb05878d70b2bb240e381ea2847b9$lut for cells of type $lut.
+Using template $paramod$46b6df236b792369896bcc9f59eeb4425c66f650$lut for cells of type $lut.
+Using template $paramod$20ba583962918fa0136fc97b1558cc45cc91cc29$lut for cells of type $lut.
+Using template $paramod$caec20293febbd0abf58b15b75ae5fd8cb89e5b9$lut for cells of type $lut.
+Using template $paramod$94ac66a11090dca84889e55fcf03297912a5b7ec$lut for cells of type $lut.
+Using template $paramod$e97ad5bb95c7d906f83a440640890ec1416eda38$lut for cells of type $lut.
+Using template $paramod$1f313f85ef575d13bac75382f04905a8c8be8f57$lut for cells of type $lut.
+Using template $paramod$d6ffd498344de7b863eba77deff7e3265c662d3e$lut for cells of type $lut.
+Using template $paramod$7c90473097c35325331adcafad3690ce4dcf41ce$lut for cells of type $lut.
+Using template $paramod$368ece0cbe0dd8813956f5c0ea41432c34a980c2$lut for cells of type $lut.
+Using template $paramod$514a3911060fb980dd078532320cd172e1e80625$lut for cells of type $lut.
+Using template $paramod$134458e13b2ec5a23accad8b751be8f873cf0023$lut for cells of type $lut.
+Using template $paramod$3702268f692b8bf258e428f65d3bca4e1f76d98b$lut for cells of type $lut.
+Using template $paramod$e3f0f1b1a91dadf82d87013c252f9f5fc0dc6888$lut for cells of type $lut.
+Using template $paramod$c06ea16ad3109b11a553c0ad1d5d01808734d65f$lut for cells of type $lut.
+Using template $paramod$7299f2246d1a80c33c807bc8bb00c5b5d234d530$lut for cells of type $lut.
+Using template $paramod$65d5d5c1e01bf41ee659754efba932f3d99198e5$lut for cells of type $lut.
+Using template $paramod$fcff9a7b1687e357a40264efcefe8443c8b2971a$lut for cells of type $lut.
+Using template $paramod$da2f95476331ffa2143f8212db8aff730de806a0$lut for cells of type $lut.
+Using template $paramod$4d1584eccf4e70d406503c5631e008d919f4b45b$lut for cells of type $lut.
+Using template $paramod$b4410865e8124402796f9dfbf73ef8d279fdbd08$lut for cells of type $lut.
+Using template $paramod$b7685cb0c8a6753256bc84bc31d36a443c15fab7$lut for cells of type $lut.
+Using template $paramod$64ed40f74e19bff7f50592ea328f713c3f8b3f50$lut for cells of type $lut.
+Using template $paramod$75115f4cc4732eb4f5f097673ba7a431db0e267d$lut for cells of type $lut.
+Using template $paramod$a5f18ec0746c8cf016c56038a81d92fa5fab1b87$lut for cells of type $lut.
+Using template $paramod$6b1bacf2f3d4a624530c757953143848de0806df$lut for cells of type $lut.
+Using template $paramod$cdc586e2859b69e4bdee0c91291dfcf272b71839$lut for cells of type $lut.
+Using template $paramod$c82f2bca201b425faa53e1957a1c30bb41d71b5f$lut for cells of type $lut.
+Using template $paramod$dbd6bfc0079f30bdbd8251243755394b48ae1fbb$lut for cells of type $lut.
+Using template $paramod$77fd891b62832b11f54382fbb56e953c57bb184c$lut for cells of type $lut.
+Using template $paramod$f4ac3e0c8d74cdfe6b8da580dfa09c03a1e78ed7$lut for cells of type $lut.
+Using template $paramod$32b6b9724b2c704cf03ab5ccf9184bb916b0336d$lut for cells of type $lut.
+Using template $paramod$253532b742d151c01e8e51f153c24d934b8f6185$lut for cells of type $lut.
+Using template $paramod$43cf53443ac94e6464a9e80f8121c807791b2692$lut for cells of type $lut.
+Using template $paramod$3fec141ee26cef875b70005edf6a0ddbeb243afe$lut for cells of type $lut.
+Using template $paramod$c97e738df958f490eb8461efe944668c310ecac5$lut for cells of type $lut.
+Using template $paramod$e01a027fedb28671a20c130493a89c7afd4e87d3$lut for cells of type $lut.
+Using template $paramod$1d0525724ac068b5dfb483a798d6d5f207b20d29$lut for cells of type $lut.
+Using template $paramod$95271ac77107a55dc45bf2a645404dab088583c9$lut for cells of type $lut.
+Using template $paramod$0b14cedea1d7b7884a6bc66756db6233c9e6f44c$lut for cells of type $lut.
+Using template $paramod$12cfe19925fd7b98e89538d4370051e3a7c32b97$lut for cells of type $lut.
+Using template $paramod$84f1c6d5dc66c2fba40b39e96af788a5653bd559$lut for cells of type $lut.
+Using template $paramod$d53578aacfd93124244778d88be0e90eb09c1b1b$lut for cells of type $lut.
+Using template $paramod$3efc8b521a6c6cf8123064367beb51cc2fcc2c03$lut for cells of type $lut.
+Using template $paramod$017d8c8b5f8f0bd543e7b1e7d026dcb67424a519$lut for cells of type $lut.
+Using template $paramod$92ae0b9e1aa3d830876d6e4b90c711d29ba7a3d1$lut for cells of type $lut.
+Using template $paramod$61c0b0eb3f8fabd30b03a9f8ae9918d5074a4a39$lut for cells of type $lut.
+Using template $paramod$5ce0414f30742591cfbc3ba73903b522793ddcd1$lut for cells of type $lut.
+Using template $paramod$cfe1e64020036bdade98b0fd0d2cd9aa45609f05$lut for cells of type $lut.
+Using template $paramod$7a09c632ebd39a203628a04507a2df81de3ade57$lut for cells of type $lut.
+Using template $paramod$6e85c5101fe7046b009371c2bb253f7aa7f9bf46$lut for cells of type $lut.
+Using template $paramod$e40adf354f6cffdd4a4104e5ac21d2145ce2faf4$lut for cells of type $lut.
+Using template $paramod$aea2e10753ee0e4e1e3dac7a65f87b341cb94fee$lut for cells of type $lut.
+Using template $paramod$870346e3bbed68204501b14c7d5ca54a012ff9da$lut for cells of type $lut.
+Using template $paramod$63df00c9beaf523728fc829e631e72088c504d1d$lut for cells of type $lut.
+Using template $paramod$6d937d8a77a6356f2f9cc89d5646fb948bb8225e$lut for cells of type $lut.
+Using template $paramod$46a40d1505df104922d5fcce55edb8e8ea24c26a$lut for cells of type $lut.
+Using template $paramod$f54dc152edd26b020fec3c195a6a9671c6f3f066$lut for cells of type $lut.
+Using template $paramod$a670b08a47dd8a34f954c50cd06e9996d77e8467$lut for cells of type $lut.
+Using template $paramod$f6f99968eb33a4786f8672b7f8bfa6f5c5dea953$lut for cells of type $lut.
+Using template $paramod$7f7628783c4bce0004ad33a8b19eb7a98c9598af$lut for cells of type $lut.
+Using template $paramod$950e204ff6781a5cff45f11ec64ed98e9680d429$lut for cells of type $lut.
+Using template $paramod$72043e0aa7fa64cb454e3c2ca3dbe1636171896a$lut for cells of type $lut.
+Using template $paramod$f7566cea7577a0e1dc5da6d9a6850a4e3fc59f57$lut for cells of type $lut.
+Using template $paramod$b40080b643baa8bb528ec249e10d82b2d80dfed9$lut for cells of type $lut.
+Using template $paramod$cae45ff85b946d8cfe295bf4feda7db55ee71cea$lut for cells of type $lut.
+Using template $paramod$9ae1db7c9e2c571ffc03d26b6f08f5dd6cd0aabe$lut for cells of type $lut.
+Using template $paramod$d75f78b727c6a2ccb61cd4bc4ee49c2ed9265058$lut for cells of type $lut.
+Using template $paramod$7d3cbfc289ec00e0691f33de08826f2254fca668$lut for cells of type $lut.
+Using template $paramod$642a9adff0b020e90e0e1a4b7b760e290937d3e8$lut for cells of type $lut.
+Using template $paramod$e84e4a245515000cd6930e0f4535753ed485f71e$lut for cells of type $lut.
+Using template $paramod$614edffe4670f4499beadb44fe488ba0c92b1d5b$lut for cells of type $lut.
+Using template $paramod$d8d7b660ccb046e487f1219f329ff1af5bdb24ec$lut for cells of type $lut.
+Using template $paramod$7cd001419f0747c054fee20d8d0d3f46d0ff2588$lut for cells of type $lut.
+Using template $paramod$f840a6057f1d372c3e6a8a9fa5382749feb221f5$lut for cells of type $lut.
+Using template $paramod$59b375e10bd4301e2259d11660b85c6a4198ad14$lut for cells of type $lut.
+Using template $paramod$645e6551ef5f0cb15d95a3155539a95add9862ad$lut for cells of type $lut.
+Using template $paramod$f969aefcb5fdd29444244ce17e4806b1ebc6f568$lut for cells of type $lut.
+Using template $paramod$c13224c6d4d1575f9d1a995371e3e523054e3339$lut for cells of type $lut.
+Using template $paramod$d557b41d1cf4e30e2cb01929d12f2a7f370de358$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01110010 for cells of type $lut.
+Using template $paramod$0515589a89751191fd0d121f84cdf2b4dad38cfe$lut for cells of type $lut.
+Using template $paramod$378674974b3807d742e27f000a928a69cc15ff78$lut for cells of type $lut.
+Using template $paramod$0aae27145afd1348566af63c85046495acb0e0d8$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
+Using template $paramod$153c36e047f05fb8dde958e7632f5362a93d12c6$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10111111 for cells of type $lut.
+Using template $paramod$f81ecf3eb88491df8fecf1e071b57debc429282a$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11111000 for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1110 for cells of type $lut.
+Using template $paramod$b7b4ce9151b2c07e0eea5771af978b8bef3781b6$lut for cells of type $lut.
+Using template $paramod$d98f7cae393e2fb5f134f7da3a0376cfdd41f123$lut for cells of type $lut.
+Using template $paramod$b80e608920ce9cfa1f5c7d21df7a72954e9b0a70$lut for cells of type $lut.
+Using template $paramod$ae847b3caa0d009b4b5d7e5047ef425662ce7a78$lut for cells of type $lut.
+Using template $paramod$7a84df6e12e70b4c9a7b8fb79ef77f264f9bc27f$lut for cells of type $lut.
+Using template $paramod$bd5439b060cb27ad982d6b213e16da5766401699$lut for cells of type $lut.
+Using template $paramod$bcd0ec8486cd042d1327ec39d9c0f6f57473bc07$lut for cells of type $lut.
+Using template $paramod$47b2f5a9f58cb4be072657772748a1ab82d6819a$lut for cells of type $lut.
+Using template $paramod$7b082453f8f50d473c2ca98926eb119a6094bfa4$lut for cells of type $lut.
+Using template $paramod$bd6c69bc5b35ecaebc852c0e33740c86577e69c5$lut for cells of type $lut.
+Using template $paramod$fb5496753f4cd235e71c284b2ffee9d41a960ca2$lut for cells of type $lut.
+Using template $paramod$4d9437f28ee827cf4006287c53ecaa1266100fca$lut for cells of type $lut.
+Using template $paramod$b3b5cad4a8d1fcdc5e4c7aa27a4d43090669fc00$lut for cells of type $lut.
+Using template $paramod$8c24dc0cdd336b7fb88bbf7eed45cec5cbae862b$lut for cells of type $lut.
+Using template $paramod$575b200168b9e109c2ed99df4359056f2c6696ac$lut for cells of type $lut.
+Using template $paramod$d35161d1d7976dcc02e7c7d51172431be85143b4$lut for cells of type $lut.
+Using template $paramod$d5841602ab17202e972b290147d14b63f75b0ad1$lut for cells of type $lut.
+Using template $paramod$d9fc5fb4745e58600f67710293bac14c7b88c4ae$lut for cells of type $lut.
+Using template $paramod$7fcc2f13195f27c397064377984d87a90c06749d$lut for cells of type $lut.
+Using template $paramod$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11110100 for cells of type $lut.
+No more expansions possible.
+<suppressed ~8020 debug messages>
+Removed 0 unused cells and 3550 unused wires.
+
+3.48. Executing AUTONAME pass.
+Renamed 2276 objects in module protocol_dut.
+<suppressed ~2276 debug messages>
+
+3.49. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `protocol_dut'. Setting top module to protocol_dut.
+
+3.49.1. Analyzing design hierarchy..
+Top module:  \protocol_dut
+
+3.49.2. Analyzing design hierarchy..
+Top module:  \protocol_dut
+Removed 0 unused modules.
+
+3.50. Printing statistics.
+
+=== protocol_dut ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      917 wires
+     2621 wire bits
+      917 public wires
+     2621 public wire bits
+        9 ports
+        9 port bits
+        5 cells
+        1   $scopeinfo
+        4   SB_RAM40_4K
+     1510 submodules
+        1   SB_DFF
+        1   SB_DFFE
+       68   SB_DFFESR
+        1   SB_DFFSR
+     1439   SB_LUT4
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+        5 protocol_dut
+
+        +----------Count including submodules.
+        | 
+      917 wires
+     2621 wire bits
+      917 public wires
+     2621 public wire bits
+        9 ports
+        9 port bits
+        - memories
+        - memory bits
+        - processes
+        5 cells
+        1   $scopeinfo
+        4   SB_RAM40_4K
+     1510 submodules
+        1   SB_DFF
+        1   SB_DFFE
+       68   SB_DFFESR
+        1   SB_DFFSR
+     1439   SB_LUT4
+
+3.51. Executing CHECK pass (checking for obvious problems).
+Checking module protocol_dut...
+Found and reported 0 problems.
+
+3.52. Executing JSON backend.
+{
+   "creator": "Yosys 0.70+344 (git sha1 2f2307ad6, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\protocol_dut": {
+         "num_wires":         917,
+         "num_wire_bits":     2621,
+         "num_pub_wires":     917,
+         "num_pub_wire_bits": 2621,
+         "num_ports":         9,
+         "num_port_bits":     9,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1515,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$scopeinfo": 1,
+            "SB_DFF": 1,
+            "SB_DFFE": 1,
+            "SB_DFFESR": 68,
+            "SB_DFFSR": 1,
+            "SB_LUT4": 1439,
+            "SB_RAM40_4K": 4
+         }
+      }
+   },
+      "design": {
+         "num_wires":         917,
+         "num_wire_bits":     2621,
+         "num_pub_wires":     917,
+         "num_pub_wire_bits": 2621,
+         "num_ports":         9,
+         "num_port_bits":     9,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         1515,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$scopeinfo": 1,
+            "SB_DFF": 1,
+            "SB_DFFE": 1,
+            "SB_DFFESR": 68,
+            "SB_DFFSR": 1,
+            "SB_LUT4": 1439,
+            "SB_RAM40_4K": 4
+         }
+      }
+}
+
+4. Executing CHECK pass (checking for obvious problems).
+Checking module protocol_dut...
+Found and reported 0 problems.

@@ -1,0 +1,4 @@
+read_verilog -sv sources/baseline.v sources/baseline_protocol_dut.sv
+synth_ice40 -top protocol_dut -json synthesis/baseline/netlist.json
+tee -o synthesis/baseline/stats.json stat -json
+check

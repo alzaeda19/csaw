@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "step": "Source staging",
+      "error": "Initially looked for cells_sim.v in reference/vendor; neither exists. Stopped before completing the source manifest.",
+      "refinement": "Located original supplied simulation cells at submission/rtl/cells_sim.v and verified/copied all eight intended sources."
+    },
+    {
+      "step": "Qwen result review",
+      "error": "Qwen called the measured overhead minimal/negligible without a threshold and confused full-design synthesis with harness overhead. It also mislabeled intentional negative-control behavior.",
+      "refinement": "A third prompt supplied exact corrections. Final Qwen wording still contains a residual harness attribution error and inconsistent categories; an explicit review note supersedes those claims. All three original requests, streams and replies are retained."
+    },
+    {
+      "step": "Clock modeling and reproduction",
+      "refinement": "Added a separate clk2fflogic check with explicit alternating clock levels rather than relying only on async2sync. Both scoped normal proofs pass and intentional-fault controls fail. A ten-step fresh-directory reproduction produces identical structured results."
+    },
+    {
+      "step": "Cyclic induction",
+      "outcome": "Base case and temporal induction proved at length 100 for an unbounded number of prescribed synchronous normal transactions. Explicit-edge model remains bounded to two transactions; no arbitrary-protocol or physical proof is claimed.",
+      "refinement": "Added cyclic normal/control checks to the reproducible workflow. A new twelve-step fresh-directory run passed and matched all structured results. Earlier failed induction lengths are solver progress, not failing base-case tests."
+    }
+  ],
+  "scope": "Analysis and verification only; unchanged sources, no new Trojan generation or concealment/evasion changes."
+}

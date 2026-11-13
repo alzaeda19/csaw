@@ -1,0 +1,102 @@
+{
+  "method": "Decoded effective table properties from original INIT payloads using the supplied primitive model; raw values are not emitted. Effective address order is not claimed to equal algorithm byte order.",
+  "memories": [
+    {
+      "instance": "ram40_6_5",
+      "read_mode": 1,
+      "effective_address_bits": 8,
+      "effective_entries": 256,
+      "connected_output_bits": 8,
+      "distinct_outputs": 256,
+      "is_bijection": true,
+      "is_affine_over_bits": false,
+      "effective_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+      "write_clock_net": "n5",
+      "write_clock_enable_net": "n5",
+      "write_enable_net": "n466"
+    },
+    {
+      "instance": "ram40_6_7",
+      "read_mode": 1,
+      "effective_address_bits": 8,
+      "effective_entries": 256,
+      "connected_output_bits": 8,
+      "distinct_outputs": 256,
+      "is_bijection": true,
+      "is_affine_over_bits": false,
+      "effective_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+      "write_clock_net": "n5",
+      "write_clock_enable_net": "n5",
+      "write_enable_net": "n466"
+    },
+    {
+      "instance": "ram40_6_9",
+      "read_mode": 1,
+      "effective_address_bits": 8,
+      "effective_entries": 256,
+      "connected_output_bits": 8,
+      "distinct_outputs": 256,
+      "is_bijection": true,
+      "is_affine_over_bits": false,
+      "effective_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+      "write_clock_net": "n5",
+      "write_clock_enable_net": "n5",
+      "write_enable_net": "n466"
+    },
+    {
+      "instance": "ram40_6_11",
+      "read_mode": 1,
+      "effective_address_bits": 8,
+      "effective_entries": 256,
+      "connected_output_bits": 8,
+      "distinct_outputs": 256,
+      "is_bijection": true,
+      "is_affine_over_bits": false,
+      "effective_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+      "write_clock_net": "n5",
+      "write_clock_enable_net": "n5",
+      "write_enable_net": "n466"
+    }
+  ],
+  "pairs": [
+    {
+      "a": "ram40_6_5",
+      "b": "ram40_6_7",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_5",
+      "b": "ram40_6_9",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_5",
+      "b": "ram40_6_11",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_7",
+      "b": "ram40_6_9",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_7",
+      "b": "ram40_6_11",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_9",
+      "b": "ram40_6_11",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    }
+  ],
+  "key_recovered": false,
+  "named_cipher_identified": false,
+  "scope_limit": "Fixed initialized storage is observed; this does not identify a key, cipher, key schedule, or secret-bearing meaning."
+}

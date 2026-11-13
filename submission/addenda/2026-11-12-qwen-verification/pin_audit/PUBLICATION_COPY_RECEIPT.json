@@ -1,0 +1,230 @@
+{
+  "original_audit": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_original_pin_audit_20261113T020751Z_u4o_hhf6_records_v2",
+  "original_manifest_sha256": "365825b3ec39c029f044ac038b34560c326c41bcf6937b4e62c059e292aa45d7",
+  "copied": [
+    {
+      "path": "DOWNLOAD_COMMAND.json",
+      "sha256": "8d4a2c20f67924efb4a7cabf0e776eb4e276938bb0cfaa1ec8f5ba1e127beff3",
+      "bytes": 769
+    },
+    {
+      "path": "ORIGINALS_VERIFICATION.json",
+      "sha256": "a79d82a5ce878eaa146c71503de4114bd16f930dcbb75de3241a7870f92e4372",
+      "bytes": 2019
+    },
+    {
+      "path": "PIN_MAP.csv",
+      "sha256": "81e75343496cafe7db3bd530422038c8073b01b991a1b2d0294fd913bf1b26a2",
+      "bytes": 615
+    },
+    {
+      "path": "PIN_MAP.json",
+      "sha256": "48bb01eb493e09f200266a5d934b8228cca307161ff7c3d319ae26f601bf7799",
+      "bytes": 2789
+    },
+    {
+      "path": "PIN_MAP_PEER_REVIEW.md",
+      "sha256": "96cf5041e31d6c9cd7d16a33ae5384ab64b43c8b117fe9b16b7e87b790e6b162",
+      "bytes": 1047
+    },
+    {
+      "path": "PIN_MAP_PEER_REVIEW.md.provenance.json",
+      "sha256": "0d6f52a8133c7e213565cbe8ea34745e59f0a888e93b213324deba6a7ddfef02",
+      "bytes": 374
+    },
+    {
+      "path": "PIN_TABLE_EXTRACTION.json",
+      "sha256": "13c3e09e6726ae9448428aa3575377316221acaa6750028a4fac4c378a92f8e7",
+      "bytes": 2781
+    },
+    {
+      "path": "PRIMARY_REFERENCES.json",
+      "sha256": "19859ec89e0eb9e32e52a652124bf787a3f7dce9041f905db8f8b8fe71115270",
+      "bytes": 1280
+    },
+    {
+      "path": "RECORD_REDACTION_REFINEMENT.json",
+      "sha256": "f08712f84d65e04cf28e857158c3d18817623818efee4cbe753f77ef17e77455",
+      "bytes": 1018
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "c767db100611dc7bc434edc4f456db4acfb4cdf9a60e5130bfea50bc0408c173",
+      "bytes": 8663
+    },
+    {
+      "path": "REPOSITORY_READ_ONLY_STATUS.json",
+      "sha256": "7d6b0f09616f4ad1802c6345db91d9c54b5f9c84e6081fad4a6c48b1b575e092",
+      "bytes": 680
+    },
+    {
+      "path": "SCOPE.md",
+      "sha256": "c5cc99cbc18292b33bbd43f02a550ec86d960ec6c4735d67c716859781ade35e",
+      "bytes": 374
+    },
+    {
+      "path": "SOURCE_EXCERPTS.json",
+      "sha256": "b7a725d925611f0e1405cb7e8bf1b35f3fc38bc537a7d7d4889f1fd8a44c81f7",
+      "bytes": 8552
+    },
+    {
+      "path": "SOURCE_SNAPSHOTS.json",
+      "sha256": "bff5b1d001675387c8958119ff5c3feaab9ff287876c44e9535be09641559b35",
+      "bytes": 1356
+    },
+    {
+      "path": "TOOL_PATHS_PEER.md",
+      "sha256": "9436dceecd08f10d6df4641a2b8e1f48bce4c54193a75e36819bcb3acc50a4cf",
+      "bytes": 4057
+    },
+    {
+      "path": "TOOL_PATHS_PEER.md.provenance.json",
+      "sha256": "627b28c0815e47c7eda9cd122d793868e6cb93f50a5a6f95f8993d25a2815b62",
+      "bytes": 373
+    },
+    {
+      "path": "VERIFICATION.json",
+      "sha256": "c0c348e80d6f03279f408c2861e8efe41233618625e65721da2b9a1fdebc67e7",
+      "bytes": 1931
+    },
+    {
+      "path": "ai_records/ENCRYPTED_FIELD_INDEX.json",
+      "sha256": "1a75f96043d8adb158a93362642c9a546d3072f2118570074ea42eb29506989d",
+      "bytes": 25224
+    },
+    {
+      "path": "ai_records/EXPORT_MANIFEST.json",
+      "sha256": "eae8a14dbf4b1f3aaa994b90b59b9b94808f1cc5db23b4a91193653b9b6c0453",
+      "bytes": 68753
+    },
+    {
+      "path": "ai_records/README.md",
+      "sha256": "68ea06554de3562624ed6b0576d65ccfc4683adc8c20fe19286fae6b6e5c20e5",
+      "bytes": 3226
+    },
+    {
+      "path": "ai_records/audit_visible_fields.jsonl",
+      "sha256": "84db932b0530709bd7619214de88c4d3ea49b7e71a4a58aa52412054bb8ba528",
+      "bytes": 293327
+    },
+    {
+      "path": "ai_records/peer_visible_fields.jsonl",
+      "sha256": "e9c946ab92e79eba33855d0fe95608682c54fe0ce0984a9a8aacb3f93691a550",
+      "bytes": 82875
+    },
+    {
+      "path": "export_visible_records.py",
+      "sha256": "e9bd6064f3f7eedaf20bb92aa458e5d2aacaa3fab4badec3ec9c0e5613de8795",
+      "bytes": 5669
+    },
+    {
+      "path": "sources/BOARD_SOURCE_RECEIPT.json",
+      "sha256": "165c74991f7da09f84bb23940fd79fce16b3f267113fe8951e9ff036f37858fb",
+      "bytes": 586
+    },
+    {
+      "path": "sources/VENDOR_PINOUT_RECEIPT.json",
+      "sha256": "e0cc2240865884a5a96c4c3c530be48929b1dc8b951db1d0acdc1103ccb51237",
+      "bytes": 566
+    },
+    {
+      "path": "sources/VENDOR_PINOUT_ROWS.json",
+      "sha256": "e681381e435c758451f9ac5651c6efa75f0a51db0b5231e512d0d64888f39947",
+      "bytes": 14389
+    },
+    {
+      "path": "sources/cse-hackster-feb-2026.pdf",
+      "sha256": "d22dab37a784d9ae325a02ac13b2177a6d5f26e2b779b802fa4dbacfe7c47a04",
+      "bytes": 734879
+    },
+    {
+      "path": "sources/detail_application.png",
+      "sha256": "5d52eaeaebbf61382bee9b0b97269bc6fd45ded23f0a2921cd1f68e3f5a471df",
+      "bytes": 246712
+    },
+    {
+      "path": "sources/detail_fpga.png",
+      "sha256": "28ffb7ec2a001b731b77f86aebf4c585f57a7a51b67b21ee43f2fb5382a4b586",
+      "bytes": 120755
+    },
+    {
+      "path": "sources/detail_indicators.png",
+      "sha256": "17fc5c5ca40ac21a4c5dad5bf35068986b9e0e8e9f4be93035fa38ff5f9abc0a",
+      "bytes": 72531
+    },
+    {
+      "path": "sources/original_reference/baseline_recovery_2026-11-06/adapters/protocol_dut.sv",
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "bytes": 465
+    },
+    {
+      "path": "sources/original_reference/original_materials/SOURCE_RECEIPT.json",
+      "sha256": "5222086907d1db8f0f0264210f2a916f76795151728a0710e5b9bf5cec66f32d",
+      "bytes": 5629
+    },
+    {
+      "path": "sources/original_reference/original_materials/qualifier/ice40_cryptographic_IP.md",
+      "sha256": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25",
+      "bytes": 3339
+    },
+    {
+      "path": "sources/original_reference/original_materials/qualifier/spi_ice40_crypto_ip_test.py",
+      "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+      "bytes": 3661
+    },
+    {
+      "path": "sources/schematic-1.png",
+      "sha256": "0d451c413972bc0ccc8e944c765c00b128a7cdf8b3fa8f3e22dfb905e60a87af",
+      "bytes": 496412
+    },
+    {
+      "path": "sources/schematic-2.png",
+      "sha256": "b896fba8b52308f209613cd8d0ab95921d142011c2991e76750b481236bac436",
+      "bytes": 285125
+    },
+    {
+      "path": "sources/schematic_application.png",
+      "sha256": "501bb51420ad9adf22cd0ad5b78b5949ffa7a9b774a1e0fa7ed72ec2ab08f33b",
+      "bytes": 65737
+    },
+    {
+      "path": "sources/schematic_detail-1.png",
+      "sha256": "9930f503063abea71ec5936275a32015e8e9930522ceb15f5bca2e60d4f54bf5",
+      "bytes": 1592023
+    },
+    {
+      "path": "sources/schematic_fpga.png",
+      "sha256": "ccb2af0da260360b05ea8b6a8a24a38be2cf9b4b25fdc897aef4fa124682e661",
+      "bytes": 28978
+    },
+    {
+      "path": "sources/schematic_indicators.png",
+      "sha256": "9e4b22b0289663c21105e8d23f5a077257d8ea6b32358b6b0b276fe1bb434e4e",
+      "bytes": 24207
+    },
+    {
+      "path": "sources/schematic_page_1.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/schematic_page_2.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/schematic_title.png",
+      "sha256": "b0c25f8ac855f2c1f123abaf5b681e7b51ea5cf49fea276f16e77139e0571025",
+      "bytes": 23819
+    }
+  ],
+  "omitted": [
+    {
+      "path": "sources/Lattice_iCE40UP5K_Pinout.xlsx",
+      "sha256": "cee14ad47beaf22298246228e913e539c87e33bf078e04d65988d1a24237d938",
+      "reason": "Full vendor workbook remains in local audit. Publication retains relevant factual rows, primary URL and download hash rather than redistributing the entire workbook."
+    }
+  ],
+  "original_manifest_copy": "SOURCE_AUDIT_MANIFEST.json",
+  "scope": "Curated publication copy; original audit remains sealed and unchanged. The source audit manifest describes the full original, not the curated file set."
+}

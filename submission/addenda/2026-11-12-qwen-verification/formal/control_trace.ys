@@ -1,0 +1,6 @@
+read_verilog -formal -sv -DALLOW_DISCLOSED_FAULT_CASE sources/modified_protocol_dut.sv formal/normal_protocol_harness.sv
+prep -top normal_protocol_harness -flatten
+async2sync
+dffunmap
+opt_clean
+sat -seq 161 -set-assumes -prove-asserts  -show word_a -show word_b -show mode_a -show mode_b -show cycle -show miso -show busy -show led -dump_json formal/control_trace/counterexample.json

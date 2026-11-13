@@ -1,0 +1,33 @@
+{
+  "observed_utc": "2026-11-13T02:18:16.329823+00:00",
+  "ollama_version": {
+    "version": "0.40.16"
+  },
+  "model": {
+    "name": "qwen3-csaw-agent:20261112234518",
+    "model": "qwen3-csaw-agent:20261112234518",
+    "modified_at": "2026-11-12T18:45:30.182646449-05:00",
+    "size": 5225387827,
+    "digest": "546214eadc8960c30bdd4ddae54b372c16e23ebb3d62948d152ac43fd1645d3e",
+    "details": {
+      "parent_model": "qwen3:8b",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "8.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 40960,
+      "embedding_length": 4096,
+      "runner": "llamacpp"
+    },
+    "capabilities": [
+      "completion",
+      "tools",
+      "thinking"
+    ]
+  },
+  "method": "Direct local Ollama API, text-only requests, think=false, no tools; requests, received streams and replies retained.",
+  "attestation_limit": "Local inventory and returned model name, not independent serving attestation."
+}

@@ -1,0 +1,10 @@
+signal,fpga_direction,rp2040_gpio,board_net,fpga_sg48_pin,vendor_pin_name,icebox_coordinate,vendor_xlsx_row
+SCK,input,6,APP_ICE40_D0,36,IOT_48b,"(9, 31, 1)",45
+RST_N,input,7,APP_ICE40_D1,34,IOT_44b,"(13, 31, 1)",41
+MOSI,input,8,APP_ICE40_D2,32,IOT_43a,"(16, 31, 0)",40
+MISO,output,9,APP_ICE40_D3,31,IOT_42b,"(16, 31, 1)",39
+NORM_CS_N,input,10,APP_ICE40_D4,28,IOT_41a,"(17, 31, 0)",38
+START,input,12,APP_ICE40_D6,27,IOT_38b,"(18, 31, 1)",36
+ENC_DEC,input,13,APP_ICE40_D7,25,IOT_36b,"(19, 31, 1)",34
+BUSY,output,14,APP_ICE40_D8,23,IOT_37a,"(19, 31, 0)",35
+ICE_LED,output,,ICE_LED,38,IOT_50b,"(8, 31, 1)",47

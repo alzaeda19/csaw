@@ -9,3 +9,5 @@ GitHub is the submission destination specified by the user. Collaborators were d
 To use the original reproduction directions, extract the ZIP outside a Git checkout; the archived runner deliberately refuses to write in a Git repository.
 
 The current archive includes the 101-file recovered collection and the reader-facing ENCRYPTION_EXPLANATION.md. Historical collection notes saying the bundle was local or unpublished are preserved as collection-stage evidence; the supplement index states the current publication scope. The unsupported early Qwen drafts are error records, not accepted technical claims.
+
+The latest Qwen-assisted follow-up adds fresh synthesis, bounded explicit-edge formal checks, a cyclic synchronous induction proof and reference-board pin documentation. The original RTL, testbench and simulation results are unchanged. The old documentation-only statements describe earlier updates; fresh verification scope is detailed in addenda/2026-11-12-qwen-verification/README.md. No physical board was programmed or tested.

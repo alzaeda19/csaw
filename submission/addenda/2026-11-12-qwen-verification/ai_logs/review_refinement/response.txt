@@ -1,0 +1,52 @@
+**Final Review: Classification of Established Facts vs. Unproved Claims**
+
+The review focuses on distinguishing between factual design synthesis metrics, bounded verification claims, and unverified assertions. No code or implementation changes are made.
+
+---
+
+### **1. Synthesis Metrics (Established Facts)**
+
+- **+36 LUT4 = +2.5017%**, **+48 flip-flops = +67.6056%**, **+13 carry cells**, **RAM unchanged** — these are **frozen design synthesis counts** from a formal harness, not formal-harness overhead. No acceptance threshold is specified, and neither minimal nor negligible is established. These are **verified design metrics**, not claims about behavior.
+
+---
+
+### **2. Input Assumptions (Unproved Claims)**
+
+- The assumptions `mode_a || word_a != DEMO` and `mode_b || word_b != DEMO` **exclude only the disclosed encryption-word case**. All **decryption words remain allowed**. This is a **limitation of the verification scope**, not a behavioral restriction. No claim is made about the behavior of decryption words.
+
+---
+
+### **3. Bounded Verification (Established Facts)**
+
+- The initial proof is **bounded**, asserting cycles 1..159, using `async2sync`. This is a **standard bounded verification approach**. A **separate explicit-edge check** is now being run with `clk2fflogic` and 325 global samples. No outcome is predicted.
+
+---
+
+### **4. Negative Control (Unproved Claims)**
+
+- The **negative-control counterexample** is **expected intentional behavior**, not a false positive. This is a **verification artifact**, not a flaw.
+
+---
+
+### **5. Real Hardware Impact (Unproved Claims)**
+
+- No claim is made that the feature **cannot affect real hardware**. No board was tested. This is a **limitation of the current analysis**, not a design assertion.
+
+---
+
+### **6. Table Mismatch (Unproved Claims)**
+
+- The **tables mismatch AES direct/inverse in effective bit order**. This does not **rule out differently wired components** or **identify a cipher**. This is a **structural observation**, not a cryptographic conclusion.
+
+---
+
+### **7. Validation Automation (Established Facts)**
+
+- This is **validation automation**, not a **proof of a fully automated historical generation process**. The system is **not claimed to be self-generating**.
+
+---
+
+**Final Classification**:  
+- **Established Facts**: Synthesis metrics, bounded verification, negative-control behavior, table mismatch, and validation automation.  
+- **Unproved Claims**: Input assumptions, real hardware impact, and cipher identification.  
+- **No overclaims or defects are identified**.

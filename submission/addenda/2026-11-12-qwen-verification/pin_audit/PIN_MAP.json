@@ -1,0 +1,131 @@
+{
+  "scope": "Documentation for primary February 2026 Rev A schematic, not a programming constraint or board-tested result",
+  "mappings": [
+    {
+      "signal": "SCK",
+      "fpga_direction": "input",
+      "rp2040_gpio": 6,
+      "board_net": "APP_ICE40_D0",
+      "fpga_sg48_pin": 36,
+      "vendor_pin_name": "IOT_48b",
+      "icebox_coordinate": [
+        9,
+        31,
+        1
+      ],
+      "vendor_xlsx_row": 45
+    },
+    {
+      "signal": "RST_N",
+      "fpga_direction": "input",
+      "rp2040_gpio": 7,
+      "board_net": "APP_ICE40_D1",
+      "fpga_sg48_pin": 34,
+      "vendor_pin_name": "IOT_44b",
+      "icebox_coordinate": [
+        13,
+        31,
+        1
+      ],
+      "vendor_xlsx_row": 41
+    },
+    {
+      "signal": "MOSI",
+      "fpga_direction": "input",
+      "rp2040_gpio": 8,
+      "board_net": "APP_ICE40_D2",
+      "fpga_sg48_pin": 32,
+      "vendor_pin_name": "IOT_43a",
+      "icebox_coordinate": [
+        16,
+        31,
+        0
+      ],
+      "vendor_xlsx_row": 40
+    },
+    {
+      "signal": "MISO",
+      "fpga_direction": "output",
+      "rp2040_gpio": 9,
+      "board_net": "APP_ICE40_D3",
+      "fpga_sg48_pin": 31,
+      "vendor_pin_name": "IOT_42b",
+      "icebox_coordinate": [
+        16,
+        31,
+        1
+      ],
+      "vendor_xlsx_row": 39
+    },
+    {
+      "signal": "NORM_CS_N",
+      "fpga_direction": "input",
+      "rp2040_gpio": 10,
+      "board_net": "APP_ICE40_D4",
+      "fpga_sg48_pin": 28,
+      "vendor_pin_name": "IOT_41a",
+      "icebox_coordinate": [
+        17,
+        31,
+        0
+      ],
+      "vendor_xlsx_row": 38
+    },
+    {
+      "signal": "START",
+      "fpga_direction": "input",
+      "rp2040_gpio": 12,
+      "board_net": "APP_ICE40_D6",
+      "fpga_sg48_pin": 27,
+      "vendor_pin_name": "IOT_38b",
+      "icebox_coordinate": [
+        18,
+        31,
+        1
+      ],
+      "vendor_xlsx_row": 36
+    },
+    {
+      "signal": "ENC_DEC",
+      "fpga_direction": "input",
+      "rp2040_gpio": 13,
+      "board_net": "APP_ICE40_D7",
+      "fpga_sg48_pin": 25,
+      "vendor_pin_name": "IOT_36b",
+      "icebox_coordinate": [
+        19,
+        31,
+        1
+      ],
+      "vendor_xlsx_row": 34
+    },
+    {
+      "signal": "BUSY",
+      "fpga_direction": "output",
+      "rp2040_gpio": 14,
+      "board_net": "APP_ICE40_D8",
+      "fpga_sg48_pin": 23,
+      "vendor_pin_name": "IOT_37a",
+      "icebox_coordinate": [
+        19,
+        31,
+        0
+      ],
+      "vendor_xlsx_row": 35
+    },
+    {
+      "signal": "ICE_LED",
+      "fpga_direction": "output",
+      "rp2040_gpio": null,
+      "board_net": "ICE_LED",
+      "fpga_sg48_pin": 38,
+      "vendor_pin_name": "IOT_50b",
+      "icebox_coordinate": [
+        8,
+        31,
+        1
+      ],
+      "vendor_xlsx_row": 47
+    }
+  ]
+}

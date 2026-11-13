@@ -1,0 +1,160 @@
+[
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/run_yosys.py",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/synthesis/baseline.ys",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/synthesis/baseline",
+      "--yosys",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"argv\": [\n    \"/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys\",\n    \"-T\",\n    \"-s\",\n    \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/synthesis/baseline.ys\"\n  ],\n  \"cwd\": \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12\",\n  \"started_utc\": \"2026-11-13T02:23:50.392611+00:00\",\n  \"script_sha256\": \"b794c88c5a06a500de77c95ef7edfca97a1a31bd5ce06ecf7009fab259347560\",\n  \"timeout_seconds\": 180,\n  \"exit_code\": 0,\n  \"ended_utc\": \"2026-11-13T02:23:52.253892+00:00\",\n  \"elapsed_seconds\": 1.861\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/run_yosys.py",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/synthesis/modified.ys",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/synthesis/modified",
+      "--yosys",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"argv\": [\n    \"/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys\",\n    \"-T\",\n    \"-s\",\n    \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/synthesis/modified.ys\"\n  ],\n  \"cwd\": \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12\",\n  \"started_utc\": \"2026-11-13T02:23:52.284646+00:00\",\n  \"script_sha256\": \"ed49b15f4d94478bf1b5851dc6337cded226596ccd51dfde2b0f393caeba4d47\",\n  \"timeout_seconds\": 180,\n  \"exit_code\": 0,\n  \"ended_utc\": \"2026-11-13T02:23:54.113923+00:00\",\n  \"elapsed_seconds\": 1.829\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/audit_memory_and_overhead.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"memory_properties\": [\n    {\n      \"instance\": \"ram40_6_5\",\n      \"read_mode\": 1,\n      \"effective_address_bits\": 8,\n      \"effective_entries\": 256,\n      \"connected_output_bits\": 8,\n      \"distinct_outputs\": 256,\n      \"is_bijection\": true,\n      \"is_affine_over_bits\": false,\n      \"effective_table_sha256\": \"ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f\",\n      \"write_clock_net\": \"n5\",\n      \"write_clock_enable_net\": \"n5\",\n      \"write_enable_net\": \"n466\"\n    },\n    {\n      \"instance\": \"ram40_6_7\",\n      \"read_mode\": 1,\n      \"effective_address_bits\": 8,\n      \"effective_entries\": 256,\n      \"connected_output_bits\": 8,\n      \"distinct_outputs\": 256,\n      \"is_bijection\": true,\n      \"is_affine_over_bits\": false,\n      \"effective_table_sha256\": \"ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f\",\n      \"write_clock_net\": \"n5\",\n      \"write_clock_enable_net\": \"n5\",\n      \"write_enable_net\": \"n466\"\n    },\n    {\n      \"instance\": \"ram40_6_9\",\n      \"read_mode\": 1,\n      \"effective_address_bits\": 8,\n      \"effective_entries\": 256,\n      \"connected_output_bits\": 8,\n      \"distinct_outputs\": 256,\n      \"is_bijection\": true,\n      \"is_affine_over_bits\": false,\n      \"effective_table_sha256\": \"ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f\",\n      \"write_clock_net\": \"n5\",\n      \"write_clock_enable_net\": \"n5\",\n      \"write_enable_net\": \"n466\"\n    },\n    {\n      \"instance\": \"ram40_6_11\",\n      \"read_mode\": 1,\n      \"effective_address_bits\": 8,\n      \"effective_entries\": 256,\n      \"connected_output_bits\": 8,\n      \"distinct_outputs\": 256,\n      \"is_bijection\": true,\n      \"is_affine_over_bits\": false,\n      \"effective_table_sha256\": \"ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f\",\n      \"write_clock_net\": \"n5\",\n      \"write_clock_enable_net\": \"n5\",\n      \"write_enable_net\": \"n466\"\n    }\n  ],\n  \"table_pair_relations\": [\n    {\n      \"a\": \"ram40_6_5\",\n      \"b\": \"ram40_6_7\",\n      \"identical_in_effective_bit_order\": true,\n      \"inverse_in_effective_bit_order\": false\n    },\n    {\n      \"a\": \"ram40_6_5\",\n      \"b\": \"ram40_6_9\",\n      \"identical_in_effective_bit_order\": true,\n      \"inverse_in_effective_bit_order\": false\n    },\n    {\n      \"a\": \"ram40_6_5\",\n      \"b\": \"ram40_6_11\",\n      \"identical_in_effective_bit_order\": true,\n      \"inverse_in_effective_bit_order\": false\n    },\n    {\n      \"a\": \"ram40_6_7\",\n      \"b\": \"ram40_6_9\",\n      \"identical_in_effective_bit_order\": true,\n      \"inverse_in_effective_bit_order\": false\n    },\n    {\n      \"a\": \"ram40_6_7\",\n      \"b\": \"ram40_6_11\",\n      \"identical_in_effective_bit_order\": true,\n      \"inverse_in_effective_bit_order\": false\n    },\n    {\n      \"a\": \"ram40_6_9\",\n      \"b\": \"ram40_6_11\",\n      \"identical_in_effective_bit_order\": true,\n      \"inverse_in_effective_bit_order\": false\n    }\n  ],\n  \"resources\": {\n    \"lut4\": {\n      \"baseline\": 1439,\n      \"modified\": 1475,\n      \"added\": 36,\n      \"percent\": 2.5017\n    },\n    \"flip_flops\": {\n      \"baseline\": 71,\n      \"modified\": 119,\n      \"added\": 48,\n      \"percent\": 67.6056\n    },\n    \"ram4k\": {\n      \"baseline\": 4,\n      \"modified\": 4,\n      \"added\": 0,\n      \"percent\": 0.0\n    },\n    \"carry\": {\n      \"baseline\": 0,\n      \"modified\": 13,\n      \"added\": 13,\n      \"percent\": null\n    },\n    \"total_cells_excluding_scopeinfo\": {\n      \"baseline\": 1514,\n      \"modified\": 1611,\n      \"added\": 97,\n      \"percent\": 6.4069\n    }\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/compare_standard_substitution.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"reference\": \"https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf\",\n  \"reference_scope\": \"Sections 4 and 5.1.1, equation 5.3 and Table 4; independently implemented finite-field/affine definition. Public standard, no challenge solution.\",\n  \"standard_sbox_sha256\": \"c2d8e5eed6cbebd8625fc18f81486a7733c04f9b0129ffbe974c68b90308b4f2\",\n  \"comparisons\": [\n    {\n      \"instance\": \"ram40_6_5\",\n      \"entries_compared\": 256,\n      \"matches_AES_SBOX_exact_effective_order\": false,\n      \"matches_AES_inverse_SBOX_exact_effective_order\": false\n    },\n    {\n      \"instance\": \"ram40_6_7\",\n      \"entries_compared\": 256,\n      \"matches_AES_SBOX_exact_effective_order\": false,\n      \"matches_AES_inverse_SBOX_exact_effective_order\": false\n    },\n    {\n      \"instance\": \"ram40_6_9\",\n      \"entries_compared\": 256,\n      \"matches_AES_SBOX_exact_effective_order\": false,\n      \"matches_AES_inverse_SBOX_exact_effective_order\": false\n    },\n    {\n      \"instance\": \"ram40_6_11\",\n      \"entries_compared\": 256,\n      \"matches_AES_SBOX_exact_effective_order\": false,\n      \"matches_AES_inverse_SBOX_exact_effective_order\": false\n    }\n  ],\n  \"whole_cipher_identified\": false,\n  \"key_extraction_performed\": false,\n  \"limitation\": \"A matching component does not identify the surrounding 32-bit cipher or its key schedule. A mismatch in this effective order does not rule out an algorithm with different bit wiring.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/run_yosys.py",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/normal.ys",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/normal",
+      "--yosys",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "--timeout",
+      "120"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"argv\": [\n    \"/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys\",\n    \"-T\",\n    \"-s\",\n    \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/normal.ys\"\n  ],\n  \"cwd\": \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12\",\n  \"started_utc\": \"2026-11-13T02:23:54.199557+00:00\",\n  \"script_sha256\": \"b134ff1f366fa68fbe483c67ad4f1b55a3197d51b960c78d2f8fac64f3742984\",\n  \"timeout_seconds\": 120,\n  \"exit_code\": 0,\n  \"ended_utc\": \"2026-11-13T02:23:55.349603+00:00\",\n  \"elapsed_seconds\": 1.15\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/run_yosys.py",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/control_allow_fault.ys",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/control_allow_fault",
+      "--yosys",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "--timeout",
+      "120"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"argv\": [\n    \"/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys\",\n    \"-T\",\n    \"-s\",\n    \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/control_allow_fault.ys\"\n  ],\n  \"cwd\": \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12\",\n  \"started_utc\": \"2026-11-13T02:23:55.381814+00:00\",\n  \"script_sha256\": \"f468d4063597ba3a2695b8e4b2f18477aa78087cf5d3b76b1b4c8c93d9518632\",\n  \"timeout_seconds\": 120,\n  \"exit_code\": 0,\n  \"ended_utc\": \"2026-11-13T02:23:56.400428+00:00\",\n  \"elapsed_seconds\": 1.018\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/run_yosys.py",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/control_trace.ys",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/control_trace",
+      "--yosys",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "--timeout",
+      "120"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"argv\": [\n    \"/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys\",\n    \"-T\",\n    \"-s\",\n    \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/control_trace.ys\"\n  ],\n  \"cwd\": \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12\",\n  \"started_utc\": \"2026-11-13T02:23:56.431160+00:00\",\n  \"script_sha256\": \"d9dedb5b7666e1c915aef092bee127355b30bc764281133932093ce69275392e\",\n  \"timeout_seconds\": 120,\n  \"exit_code\": 0,\n  \"ended_utc\": \"2026-11-13T02:23:57.454578+00:00\",\n  \"elapsed_seconds\": 1.023\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/run_yosys.py",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/edge_normal.ys",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/edge_normal",
+      "--yosys",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "--timeout",
+      "120"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"argv\": [\n    \"/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys\",\n    \"-T\",\n    \"-s\",\n    \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/edge_normal.ys\"\n  ],\n  \"cwd\": \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12\",\n  \"started_utc\": \"2026-11-13T02:23:57.484425+00:00\",\n  \"script_sha256\": \"8e65aaa9b9fcf74d85d58ced0cc0aec6f324a8920c3656834f917d6896c32b00\",\n  \"timeout_seconds\": 120,\n  \"exit_code\": 0,\n  \"ended_utc\": \"2026-11-13T02:24:00.331233+00:00\",\n  \"elapsed_seconds\": 2.847\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/run_yosys.py",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/edge_control.ys",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/edge_control",
+      "--yosys",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "--timeout",
+      "120"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"argv\": [\n    \"/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys\",\n    \"-T\",\n    \"-s\",\n    \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/edge_control.ys\"\n  ],\n  \"cwd\": \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12\",\n  \"started_utc\": \"2026-11-13T02:24:00.365104+00:00\",\n  \"script_sha256\": \"a1f006acc1f3b8f89705e234a8b0f04dcb1d171e2504f72b4cc58b78c46c34c7\",\n  \"timeout_seconds\": 120,\n  \"exit_code\": 0,\n  \"ended_utc\": \"2026-11-13T02:24:02.905679+00:00\",\n  \"elapsed_seconds\": 2.54\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/run_yosys.py",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/cyclic_induction.ys",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/cyclic_induction",
+      "--yosys",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "--timeout",
+      "120"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"argv\": [\n    \"/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys\",\n    \"-T\",\n    \"-s\",\n    \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/cyclic_induction.ys\"\n  ],\n  \"cwd\": \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12\",\n  \"started_utc\": \"2026-11-13T02:24:02.936706+00:00\",\n  \"script_sha256\": \"d7c04e71ce4839dc2b2978c3c294f04393174c3e9f287e70e64bf00a4873b457\",\n  \"timeout_seconds\": 120,\n  \"exit_code\": 0,\n  \"ended_utc\": \"2026-11-13T02:24:13.135254+00:00\",\n  \"elapsed_seconds\": 10.198\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/run_yosys.py",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/cyclic_control.ys",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/cyclic_control",
+      "--yosys",
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "--timeout",
+      "120"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"argv\": [\n    \"/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys\",\n    \"-T\",\n    \"-s\",\n    \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/formal/cyclic_control.ys\"\n  ],\n  \"cwd\": \"/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12\",\n  \"started_utc\": \"2026-11-13T02:24:13.169865+00:00\",\n  \"script_sha256\": \"f2a166b89d6c585c70c0cc6f3995a96d27faf789df6fff98a6babd8a40e40636\",\n  \"timeout_seconds\": 120,\n  \"exit_code\": 0,\n  \"ended_utc\": \"2026-11-13T02:24:13.597629+00:00\",\n  \"elapsed_seconds\": 0.427\n}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_reproduction_final_2026-11-12/scripts/check_results.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"status\": \"PASS\",\n  \"sources_preserved\": 8,\n  \"proof_checks\": 7,\n  \"explicit_edge_fault_samples\": 2\n}\n",
+    "stderr": ""
+  }
+]

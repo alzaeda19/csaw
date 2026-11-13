@@ -1,0 +1,703 @@
+[
+  {
+    "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-12-19-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1d23f-7ed7-7fa1-9afd-64875b8a6cf8.jsonl",
+    "records": 73,
+    "exact_fields": 470,
+    "cutoff": "2026-11-13T02:17:44.953Z",
+    "encrypted_field_occurrences": [
+      {
+        "native_line": 1507,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1512,
+        "path": "/payload/content/0/annotations",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1512,
+        "path": "/payload/content/0/logprobs",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1512,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1513,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1517,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1520,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1522,
+        "path": "/payload/encrypted_content",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1522,
+        "path": "/payload/arguments",
+        "reason": "Arguments contain encrypted ordinary message body; plaintext unavailable in this export"
+      },
+      {
+        "native_line": 1522,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1525,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1528,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1531,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1538,
+        "path": "/payload/content/1",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 1538,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1539,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1543,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1547,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1550,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1553,
+        "path": "/payload/content/1",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 1553,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1556,
+        "path": "/payload/encrypted_content",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1556,
+        "path": "/payload/arguments",
+        "reason": "Arguments contain encrypted ordinary message body; plaintext unavailable in this export"
+      },
+      {
+        "native_line": 1556,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1559,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1561,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1564,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1569,
+        "path": "/payload/content/0/annotations",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1569,
+        "path": "/payload/content/0/logprobs",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1569,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1570,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1578,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1582,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1590,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1591,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1594,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1598,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1601,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1605,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1608,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1610,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1618,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1625,
+        "path": "/payload/output/2",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 1625,
+        "path": "/payload/output/3",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 1625,
+        "path": "/payload/output/4",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 1625,
+        "path": "/payload/output/5",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 1625,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1629,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1640,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1644,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1648,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1651,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1655,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1658,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1662,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1666,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1668,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1673,
+        "path": "/payload/content/0/annotations",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1673,
+        "path": "/payload/content/0/logprobs",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1673,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1674,
+        "path": "/payload/encrypted_content",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1674,
+        "path": "/payload/arguments",
+        "reason": "Arguments contain encrypted ordinary message body; plaintext unavailable in this export"
+      },
+      {
+        "native_line": 1674,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1677,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1679,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1682,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1685,
+        "path": "/payload/content/1",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 1685,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1688,
+        "path": "/payload/encrypted_content",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1688,
+        "path": "/payload/arguments",
+        "reason": "Arguments contain encrypted ordinary message body; plaintext unavailable in this export"
+      },
+      {
+        "native_line": 1688,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1691,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1699,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1702,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1709,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1712,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1716,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1719,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1723,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1730,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1733,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1737,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1740,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1744,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1747,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1751,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1760,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1764,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1770,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1773,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1778,
+        "path": "/payload/content/0/annotations",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1778,
+        "path": "/payload/content/0/logprobs",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1778,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1779,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1783,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 1791,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      }
+    ]
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T21-07-56-01a1d2a9-5b06-7930-859c-aa0fa0911cee.jsonl",
+    "records": 27,
+    "exact_fields": 175,
+    "cutoff": "2026-11-13T02:11:47.882Z",
+    "encrypted_field_occurrences": [
+      {
+        "native_line": 13,
+        "path": "/payload/content/1",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 13,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 14,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 18,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 22,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 27,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 31,
+        "path": "/payload/encrypted_content",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 31,
+        "path": "/payload/arguments",
+        "reason": "Arguments contain encrypted ordinary message body; plaintext unavailable in this export"
+      },
+      {
+        "native_line": 31,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 34,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 38,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 43,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 47,
+        "path": "/payload/encrypted_content",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 47,
+        "path": "/payload/arguments",
+        "reason": "Arguments contain encrypted ordinary message body; plaintext unavailable in this export"
+      },
+      {
+        "native_line": 47,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 50,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 54,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 57,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 60,
+        "path": "/payload/content/1",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 60,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 61,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 64,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 69,
+        "path": "/payload/content/0/annotations",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 69,
+        "path": "/payload/content/0/logprobs",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 69,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 76,
+        "path": "/payload/content/1",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 76,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 77,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 86,
+        "path": "/payload/encrypted_content",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 86,
+        "path": "/payload/arguments",
+        "reason": "Arguments contain encrypted ordinary message body; plaintext unavailable in this export"
+      },
+      {
+        "native_line": 86,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 89,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 93,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 96,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 99,
+        "path": "/payload/content/1",
+        "reason": "Encrypted content or binary media; media is separately preserved where generated"
+      },
+      {
+        "native_line": 99,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 100,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 104,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 107,
+        "path": "/payload/content/0/annotations",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 107,
+        "path": "/payload/content/0/logprobs",
+        "reason": "Internal metadata or opaque encrypted content"
+      },
+      {
+        "native_line": 107,
+        "path": "/payload/internal_chat_message_metadata_passthrough",
+        "reason": "Internal metadata or opaque encrypted content"
+      }
+    ]
+  }
+]

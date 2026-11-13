@@ -1,0 +1,2943 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.70+344 (git sha1 2f2307ad6, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_2026-11-12/formal/cyclic_induction.ys' --
+
+1. Executing Verilog-2005 frontend: sources/modified_protocol_dut.sv
+Parsing formal SystemVerilog input from `sources/modified_protocol_dut.sv' to AST representation.
+Generating RTLIL representation for module `\protocol_dut'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: formal/cyclic_normal_harness.sv
+Parsing formal SystemVerilog input from `formal/cyclic_normal_harness.sv' to AST representation.
+Generating RTLIL representation for module `\chip'.
+Generating RTLIL representation for module `\cyclic_normal_harness'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \cyclic_normal_harness
+Used module:     \protocol_dut
+Used module:         \chip
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \cyclic_normal_harness
+Used module:     \protocol_dut
+Used module:         \chip
+Removed 0 unused modules.
+Module cyclic_normal_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell cyclic_normal_harness.dut (protocol_dut).
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $sources/modified_protocol_dut.sv:33$proc$12 in module protocol_dut.
+Marked 2 switch rules as full_case in process $sources/modified_protocol_dut.sv:24$proc$6 in module protocol_dut.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 2 redundant assignments.
+Promoted 5 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:21$proc$64'.
+  Set init value: \phase = 7'0000000
+Found init rule in `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:20$proc$63'.
+  Set init value: \initialized = 1'0
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \NORM_CS_N in `\protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~11 debug messages>
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:21$proc$64'.
+Creating decoders for process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:20$proc$63'.
+Creating decoders for process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:42$proc$56'.
+     1/3: $formal/cyclic_normal_harness.sv:45$assert$61_EN
+     2/3: $formal/cyclic_normal_harness.sv:44$assert$59_EN
+     3/3: $formal/cyclic_normal_harness.sv:43$assert$57_EN
+Creating decoders for process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:37$proc$52'.
+Creating decoders for process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+     1/2: $0\mode[0:0]
+     2/2: $0\word_in[31:0]
+Creating decoders for process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+     1/6: $0\start_q[0:0]
+     2/6: $0\fault_active[0:0]
+     3/6: $0\read_pending[0:0]
+     4/6: $0\frame_complete[0:0]
+     5/6: $0\read_count[5:0]
+     6/6: $0\ingress_word[31:0]
+Creating decoders for process `\protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+     1/1: $0\ingress_count[5:0]
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\cyclic_normal_harness.\word_in' using process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+  created $dff cell `$procdff$129' with positive edge clock.
+Creating register for signal `\cyclic_normal_harness.\mode' using process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+  created $dff cell `$procdff$130' with positive edge clock.
+Creating register for signal `\cyclic_normal_harness.\initialized' using process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+  created $dff cell `$procdff$131' with positive edge clock.
+Creating register for signal `\cyclic_normal_harness.\phase' using process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+  created $dff cell `$procdff$132' with positive edge clock.
+Creating register for signal `\protocol_dut.\ingress_word' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$133' with positive edge clock.
+Creating register for signal `\protocol_dut.\read_count' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$134' with positive edge clock.
+Creating register for signal `\protocol_dut.\frame_complete' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$135' with positive edge clock.
+Creating register for signal `\protocol_dut.\start_q' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$136' with positive edge clock.
+Creating register for signal `\protocol_dut.\read_pending' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$137' with positive edge clock.
+Creating register for signal `\protocol_dut.\fault_active' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$138' with positive edge clock.
+Creating register for signal `\protocol_dut.\ingress_count' using process `\protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+  created $adff cell `$procdff$141' with positive edge clock and positive level reset.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:21$proc$64'.
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:20$proc$63'.
+Found and cleaned up 1 empty switch in `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:42$proc$56'.
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:42$proc$56'.
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:37$proc$52'.
+Found and cleaned up 1 empty switch in `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+Found and cleaned up 7 empty switches in `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+Removing empty process `protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+Found and cleaned up 2 empty switches in `\protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+Removing empty process `protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+Cleaned up 11 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+<suppressed ~4 debug messages>
+Optimizing module chip.
+Optimizing module protocol_dut.
+<suppressed ~9 debug messages>
+
+3.3. Executing CHECK pass (checking for obvious problems).
+Checking module cyclic_normal_harness...
+Checking module chip...
+Checking module protocol_dut...
+Found and reported 0 problems.
+
+3.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module chip.
+Deleting now unused module protocol_dut.
+<suppressed ~2 debug messages>
+
+3.5. Executing FUTURE pass.
+
+3.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+<suppressed ~7 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module cyclic_normal_harness...
+Found and reported 0 problems.
+
+3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+Removed 2 unused cells and 60 unused wires.
+<suppressed ~3 debug messages>
+
+3.9. Executing OPT pass (performing simple optimizations).
+
+3.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+
+3.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cyclic_normal_harness'.
+Computing hashes of 88 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+Computing hashes of 87 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+3.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cyclic_normal_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~41 debug messages>
+
+3.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cyclic_normal_harness.
+Performed a total of 0 changes.
+
+3.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cyclic_normal_harness'.
+Computing hashes of 87 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+Computing hashes of 85 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+3.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+3.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+
+3.9.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.9.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cyclic_normal_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~37 debug messages>
+
+3.9.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cyclic_normal_harness.
+Performed a total of 0 changes.
+
+3.9.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cyclic_normal_harness'.
+Computing hashes of 85 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+Removed a total of 0 cells.
+
+3.9.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+
+3.9.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+
+3.9.14. Finished fast OPT passes. (There is nothing left to do.)
+
+3.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$add$37 ($add).
+Removed top 24 bits (of 32) from port Y of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$add$37 ($add).
+Removed top 25 bits (of 32) from mux cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$ternary$38 ($mux).
+Removed top 31 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:30$ge$40 ($ge).
+Removed top 26 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:30$le$41 ($le).
+Removed top 26 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:31$ge$43 ($ge).
+Removed top 25 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:31$le$44 ($le).
+Removed top 1 bits (of 7) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:33$eq$48 ($eq).
+Removed top 26 bits (of 32) from port A of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:34$sub$49 ($sub).
+Removed top 24 bits (of 32) from port Y of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:34$sub$49 ($sub).
+Removed top 24 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:34$shiftx$50 ($shiftx).
+Removed top 1 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:58$eq$31 ($eq).
+Removed top 5 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:57$add$30 ($add).
+Removed top 1 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:45$eq$17 ($eq).
+Removed top 5 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:30$add$11 ($add).
+Removed top 5 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:20$eq$3 ($eq).
+Removed top 1 bits (of 8) from port Y of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$add$37 ($add).
+Removed top 25 bits (of 32) from wire cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$add$37_Y.
+
+3.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+3.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.13. Executing OPT pass (performing simple optimizations).
+
+3.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+
+3.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cyclic_normal_harness'.
+Computing hashes of 85 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+Removed a total of 0 cells.
+
+3.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+
+3.13.4. Finished fast OPT passes.
+
+3.14. Executing SORT pass.
+
+3.15. Printing statistics.
+
+=== cyclic_normal_harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      101 wires
+      406 wire bits
+       42 public wires
+      151 public wire bits
+        1 ports
+        1 port bits
+       85 cells
+        3   $add
+        1   $adff
+        3   $anyseq
+        4   $check
+       10   $dff
+        6   $eq
+        3   $ge
+        2   $le
+       11   $logic_and
+        6   $logic_not
+        3   $logic_or
+        1   $lt
+       26   $mux
+        1   $ne
+        1   $not
+        2   $scopeinfo
+        1   $shiftx
+        1   $sub
+
+3.16. Executing CHECK pass (checking for obvious problems).
+Checking module cyclic_normal_harness...
+Found and reported 0 problems.
+
+4. Executing ASYNC2SYNC pass.
+Replacing cyclic_normal_harness.$flatten\dut.$procdff$141 ($adff): ARST=$flatten\dut.$sources/modified_protocol_dut.sv:20$logic_not$1_Y, D=$flatten\dut.$0\ingress_count[5:0], Q=\dut.ingress_count
+
+5. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+Removed 11 unused cells and 11 unused wires.
+<suppressed ~12 debug messages>
+
+7. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import set-constraint from init attribute: $auto$async2sync.cc:107:execute$159 = 1'0
+Import set-constraint from init attribute: $auto$async2sync.cc:116:execute$157 = 1'1
+Import set-constraint from init attribute: $auto$async2sync.cc:116:execute$163 = 1'1
+Import set-constraint from init attribute: $auto$async2sync.cc:107:execute$153 = 1'0
+Import set-constraint from init attribute: $auto$async2sync.cc:116:execute$151 = 1'1
+Import set-constraint from init attribute: $auto$async2sync.cc:107:execute$147 = 1'0
+Import set-constraint from init attribute: \initialized = 1'0
+Import set-constraint from init attribute: \phase = 7'0000000
+Final init constraint equation: { \phase \initialized $auto$async2sync.cc:107:execute$147 $auto$async2sync.cc:116:execute$151 $auto$async2sync.cc:107:execute$153 $auto$async2sync.cc:116:execute$163 $auto$async2sync.cc:116:execute$157 $auto$async2sync.cc:107:execute$159 } = 14'00000000010110
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+** Trying induction with length 1 **
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 1] Solving problem with 9052 variables and 24944 clauses..
+Base case for induction length 1 proven.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 1] Skipping prove for this step (-stepsize 10).
+[induction step 1] Problem size so far: 5935 variables and 16291 clauses.
+
+** Trying induction with length 2 **
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 2] Solving problem with 12447 variables and 34516 clauses..
+Base case for induction length 2 proven.
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 2] Skipping prove for this step (-stepsize 10).
+[induction step 2] Problem size so far: 9615 variables and 26813 clauses.
+
+** Trying induction with length 3 **
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 3] Solving problem with 16128 variables and 45040 clauses..
+Base case for induction length 3 proven.
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 3] Skipping prove for this step (-stepsize 10).
+[induction step 3] Problem size so far: 13581 variables and 38287 clauses.
+
+** Trying induction with length 4 **
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 4] Solving problem with 20095 variables and 56516 clauses..
+Base case for induction length 4 proven.
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 4] Skipping prove for this step (-stepsize 10).
+[induction step 4] Problem size so far: 17833 variables and 50713 clauses.
+
+** Trying induction with length 5 **
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 5] Solving problem with 24348 variables and 68944 clauses..
+Base case for induction length 5 proven.
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 5] Skipping prove for this step (-stepsize 10).
+[induction step 5] Problem size so far: 22371 variables and 64091 clauses.
+
+** Trying induction with length 6 **
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 6] Solving problem with 28887 variables and 82324 clauses..
+Base case for induction length 6 proven.
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 6] Skipping prove for this step (-stepsize 10).
+[induction step 6] Problem size so far: 27195 variables and 78421 clauses.
+
+** Trying induction with length 7 **
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 7] Solving problem with 33712 variables and 96656 clauses..
+Base case for induction length 7 proven.
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 7] Skipping prove for this step (-stepsize 10).
+[induction step 7] Problem size so far: 32305 variables and 93703 clauses.
+
+** Trying induction with length 8 **
+
+Setting up time step 10:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 8] Solving problem with 38823 variables and 111940 clauses..
+Base case for induction length 8 proven.
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 8] Skipping prove for this step (-stepsize 10).
+[induction step 8] Problem size so far: 37701 variables and 109937 clauses.
+
+** Trying induction with length 9 **
+
+Setting up time step 11:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 9] Solving problem with 44220 variables and 128176 clauses..
+Base case for induction length 9 proven.
+
+Setting up time step 10:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 9] Skipping prove for this step (-stepsize 10).
+[induction step 9] Problem size so far: 43383 variables and 127123 clauses.
+
+** Trying induction with length 10 **
+
+Setting up time step 12:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 10] Solving problem with 49903 variables and 145364 clauses..
+Base case for induction length 10 proven.
+
+Setting up time step 11:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 10] Solving problem with 49351 variables and 145261 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$147                0         0                                   0
+  init $auto$async2sync.cc:107:execute$153                0         0                                   0
+  init $auto$async2sync.cc:107:execute$159                0         0                                   0
+  init $auto$async2sync.cc:116:execute$151                1         1                                   1
+  init $auto$async2sync.cc:116:execute$157                0         0                                   0
+  init $auto$async2sync.cc:116:execute$163                0         0                                   0
+  init $auto$async2sync.cc:253:execute$145               16        10                              010000
+  init \dut.fault_active                                  1         1                                   1
+  init \dut.frame_complete                                0         0                                   0
+  init \dut.ingress_word                         1151861352  44a80268    01000100101010000000001001101000
+  init \dut.read_count                                   56        38                              111000
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       1         1                                   1
+  init \initialized                                       1         1                                   1
+  init \mode                                              1         1                                   1
+  init \phase                                             1         1                             0000001
+  init \word_in                                           0         0    00000000000000000000000000000000
+
+** Trying induction with length 11 **
+
+Setting up time step 13:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 11] Solving problem with 55872 variables and 163504 clauses..
+Base case for induction length 11 proven.
+
+Setting up time step 12:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 11] Skipping prove for this step (-stepsize 10).
+[induction step 11] Problem size so far: 55606 variables and 164353 clauses.
+
+** Trying induction with length 12 **
+
+Setting up time step 14:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 12] Solving problem with 62127 variables and 182596 clauses..
+Base case for induction length 12 proven.
+
+Setting up time step 13:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 12] Skipping prove for this step (-stepsize 10).
+[induction step 12] Problem size so far: 62146 variables and 184395 clauses.
+
+** Trying induction with length 13 **
+
+Setting up time step 15:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 13] Solving problem with 68668 variables and 202640 clauses..
+Base case for induction length 13 proven.
+
+Setting up time step 14:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 13] Skipping prove for this step (-stepsize 10).
+[induction step 13] Problem size so far: 68972 variables and 205389 clauses.
+
+** Trying induction with length 14 **
+
+Setting up time step 16:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 14] Solving problem with 75495 variables and 223636 clauses..
+Base case for induction length 14 proven.
+
+Setting up time step 15:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 14] Skipping prove for this step (-stepsize 10).
+[induction step 14] Problem size so far: 76084 variables and 227335 clauses.
+
+** Trying induction with length 15 **
+
+Setting up time step 17:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 15] Solving problem with 82608 variables and 245584 clauses..
+Base case for induction length 15 proven.
+
+Setting up time step 16:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 15] Skipping prove for this step (-stepsize 10).
+[induction step 15] Problem size so far: 83482 variables and 250233 clauses.
+
+** Trying induction with length 16 **
+
+Setting up time step 18:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 16] Solving problem with 90007 variables and 268484 clauses..
+Base case for induction length 16 proven.
+
+Setting up time step 17:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 16] Skipping prove for this step (-stepsize 10).
+[induction step 16] Problem size so far: 91166 variables and 274083 clauses.
+
+** Trying induction with length 17 **
+
+Setting up time step 19:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 17] Solving problem with 97692 variables and 292336 clauses..
+Base case for induction length 17 proven.
+
+Setting up time step 18:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 17] Skipping prove for this step (-stepsize 10).
+[induction step 17] Problem size so far: 99136 variables and 298885 clauses.
+
+** Trying induction with length 18 **
+
+Setting up time step 20:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 18] Solving problem with 105663 variables and 317140 clauses..
+Base case for induction length 18 proven.
+
+Setting up time step 19:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 18] Skipping prove for this step (-stepsize 10).
+[induction step 18] Problem size so far: 107392 variables and 324639 clauses.
+
+** Trying induction with length 19 **
+
+Setting up time step 21:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 19] Solving problem with 113920 variables and 342896 clauses..
+Base case for induction length 19 proven.
+
+Setting up time step 20:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 19] Skipping prove for this step (-stepsize 10).
+[induction step 19] Problem size so far: 115934 variables and 351345 clauses.
+
+** Trying induction with length 20 **
+
+Setting up time step 22:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 20] Solving problem with 122463 variables and 369604 clauses..
+Base case for induction length 20 proven.
+
+Setting up time step 21:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 20] Solving problem with 124762 variables and 379003 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$147                0         0                                   0
+  init $auto$async2sync.cc:107:execute$153                0         0                                   0
+  init $auto$async2sync.cc:107:execute$159                0         0                                   0
+  init $auto$async2sync.cc:116:execute$151                1         1                                   1
+  init $auto$async2sync.cc:116:execute$157                0         0                                   0
+  init $auto$async2sync.cc:116:execute$163                0         0                                   0
+  init $auto$async2sync.cc:253:execute$145               48        30                              110000
+  init \dut.fault_active                                  1         1                                   1
+  init \dut.frame_complete                                0         0                                   0
+  init \dut.ingress_word                         1336420906  4fa82a2a    01001111101010000010101000101010
+  init \dut.read_count                                   46        2e                              101110
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       1         1                                   1
+  init \initialized                                       1         1                                   1
+  init \mode                                              1         1                                   1
+  init \phase                                            49        31                             0110001
+  init \word_in                                           0         0    00000000000000000000000000000000
+
+** Trying induction with length 21 **
+
+Setting up time step 23:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 21] Solving problem with 131292 variables and 397264 clauses..
+Base case for induction length 21 proven.
+
+Setting up time step 22:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 21] Skipping prove for this step (-stepsize 10).
+[induction step 21] Problem size so far: 133877 variables and 407615 clauses.
+
+** Trying induction with length 22 **
+
+Setting up time step 24:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 22] Solving problem with 140407 variables and 425876 clauses..
+Base case for induction length 22 proven.
+
+Setting up time step 23:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 22] Skipping prove for this step (-stepsize 10).
+[induction step 22] Problem size so far: 143277 variables and 437177 clauses.
+
+** Trying induction with length 23 **
+
+Setting up time step 25:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 23] Solving problem with 149808 variables and 455440 clauses..
+Base case for induction length 23 proven.
+
+Setting up time step 24:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 23] Skipping prove for this step (-stepsize 10).
+[induction step 23] Problem size so far: 152963 variables and 467691 clauses.
+
+** Trying induction with length 24 **
+
+Setting up time step 26:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 24] Solving problem with 159495 variables and 485956 clauses..
+Base case for induction length 24 proven.
+
+Setting up time step 25:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 24] Skipping prove for this step (-stepsize 10).
+[induction step 24] Problem size so far: 162935 variables and 499157 clauses.
+
+** Trying induction with length 25 **
+
+Setting up time step 27:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 25] Solving problem with 169468 variables and 517424 clauses..
+Base case for induction length 25 proven.
+
+Setting up time step 26:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 25] Skipping prove for this step (-stepsize 10).
+[induction step 25] Problem size so far: 173193 variables and 531575 clauses.
+
+** Trying induction with length 26 **
+
+Setting up time step 28:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 26] Solving problem with 179727 variables and 549844 clauses..
+Base case for induction length 26 proven.
+
+Setting up time step 27:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 26] Skipping prove for this step (-stepsize 10).
+[induction step 26] Problem size so far: 183737 variables and 564945 clauses.
+
+** Trying induction with length 27 **
+
+Setting up time step 29:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 27] Solving problem with 190272 variables and 583216 clauses..
+Base case for induction length 27 proven.
+
+Setting up time step 28:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 27] Skipping prove for this step (-stepsize 10).
+[induction step 27] Problem size so far: 194567 variables and 599267 clauses.
+
+** Trying induction with length 28 **
+
+Setting up time step 30:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 28] Solving problem with 201103 variables and 617540 clauses..
+Base case for induction length 28 proven.
+
+Setting up time step 29:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 28] Skipping prove for this step (-stepsize 10).
+[induction step 28] Problem size so far: 205683 variables and 634541 clauses.
+
+** Trying induction with length 29 **
+
+Setting up time step 31:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 29] Solving problem with 212220 variables and 652816 clauses..
+Base case for induction length 29 proven.
+
+Setting up time step 30:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 29] Skipping prove for this step (-stepsize 10).
+[induction step 29] Problem size so far: 217085 variables and 670767 clauses.
+
+** Trying induction with length 30 **
+
+Setting up time step 32:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 30] Solving problem with 223623 variables and 689044 clauses..
+Base case for induction length 30 proven.
+
+Setting up time step 31:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 30] Solving problem with 228773 variables and 707945 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$147                0         0                                   0
+  init $auto$async2sync.cc:107:execute$153                0         0                                   0
+  init $auto$async2sync.cc:107:execute$159                0         0                                   0
+  init $auto$async2sync.cc:116:execute$151                1         1                                   1
+  init $auto$async2sync.cc:116:execute$157                0         0                                   0
+  init $auto$async2sync.cc:116:execute$163                0         0                                   0
+  init $auto$async2sync.cc:253:execute$145               63        3f                              111111
+  init \dut.fault_active                                  1         1                                   1
+  init \dut.frame_complete                                0         0                                   0
+  init \dut.ingress_word                         1336420906  4fa82a2a    01001111101010000010101000101010
+  init \dut.read_count                                   52        34                              110100
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       1         1                                   1
+  init \initialized                                       1         1                                   1
+  init \mode                                              0         0                                   0
+  init \phase                                           113        71                             1110001
+  init \word_in                                           0         0    00000000000000000000000000000000
+
+** Trying induction with length 31 **
+
+Setting up time step 33:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 31] Solving problem with 235312 variables and 726224 clauses..
+Base case for induction length 31 proven.
+
+Setting up time step 32:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 31] Skipping prove for this step (-stepsize 10).
+[induction step 31] Problem size so far: 240748 variables and 746077 clauses.
+
+** Trying induction with length 32 **
+
+Setting up time step 34:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 32] Solving problem with 247287 variables and 764356 clauses..
+Base case for induction length 32 proven.
+
+Setting up time step 33:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 32] Skipping prove for this step (-stepsize 10).
+[induction step 32] Problem size so far: 253008 variables and 785159 clauses.
+
+** Trying induction with length 33 **
+
+Setting up time step 35:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 33] Solving problem with 259548 variables and 803440 clauses..
+Base case for induction length 33 proven.
+
+Setting up time step 34:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 33] Skipping prove for this step (-stepsize 10).
+[induction step 33] Problem size so far: 265554 variables and 825193 clauses.
+
+** Trying induction with length 34 **
+
+Setting up time step 36:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 34] Solving problem with 272095 variables and 843476 clauses..
+Base case for induction length 34 proven.
+
+Setting up time step 35:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 34] Skipping prove for this step (-stepsize 10).
+[induction step 34] Problem size so far: 278386 variables and 866179 clauses.
+
+** Trying induction with length 35 **
+
+Setting up time step 37:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 35] Solving problem with 284928 variables and 884464 clauses..
+Base case for induction length 35 proven.
+
+Setting up time step 36:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 35] Skipping prove for this step (-stepsize 10).
+[induction step 35] Problem size so far: 291504 variables and 908117 clauses.
+
+** Trying induction with length 36 **
+
+Setting up time step 38:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 36] Solving problem with 298047 variables and 926404 clauses..
+Base case for induction length 36 proven.
+
+Setting up time step 37:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 36] Skipping prove for this step (-stepsize 10).
+[induction step 36] Problem size so far: 304908 variables and 951007 clauses.
+
+** Trying induction with length 37 **
+
+Setting up time step 39:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 37] Solving problem with 311452 variables and 969296 clauses..
+Base case for induction length 37 proven.
+
+Setting up time step 38:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 37] Skipping prove for this step (-stepsize 10).
+[induction step 37] Problem size so far: 318598 variables and 994849 clauses.
+
+** Trying induction with length 38 **
+
+Setting up time step 40:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 38] Solving problem with 325143 variables and 1013140 clauses..
+Base case for induction length 38 proven.
+
+Setting up time step 39:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 38] Skipping prove for this step (-stepsize 10).
+[induction step 38] Problem size so far: 332574 variables and 1039643 clauses.
+
+** Trying induction with length 39 **
+
+Setting up time step 41:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 39] Solving problem with 339120 variables and 1057936 clauses..
+Base case for induction length 39 proven.
+
+Setting up time step 40:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 39] Skipping prove for this step (-stepsize 10).
+[induction step 39] Problem size so far: 346836 variables and 1085389 clauses.
+
+** Trying induction with length 40 **
+
+Setting up time step 42:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 40] Solving problem with 353383 variables and 1103684 clauses..
+Base case for induction length 40 proven.
+
+Setting up time step 41:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 40] Solving problem with 361384 variables and 1132087 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$147                0         0                                   0
+  init $auto$async2sync.cc:107:execute$153                0         0                                   0
+  init $auto$async2sync.cc:107:execute$159                0         0                                   0
+  init $auto$async2sync.cc:116:execute$151                1         1                                   1
+  init $auto$async2sync.cc:116:execute$157                0         0                                   0
+  init $auto$async2sync.cc:116:execute$163                0         0                                   0
+  init $auto$async2sync.cc:253:execute$145               63        3f                              111111
+  init \dut.fault_active                                  1         1                                   1
+  init \dut.frame_complete                                0         0                                   0
+  init \dut.ingress_word                         1336420906  4fa82a2a    01001111101010000010101000101010
+  init \dut.read_count                                   42        2a                              101010
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       1         1                                   1
+  init \initialized                                       1         1                                   1
+  init \mode                                              0         0                                   0
+  init \phase                                           113        71                             1110001
+  init \word_in                                           0         0    00000000000000000000000000000000
+
+** Trying induction with length 41 **
+
+Setting up time step 43:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 41] Solving problem with 367932 variables and 1150384 clauses..
+Base case for induction length 41 proven.
+
+Setting up time step 42:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 41] Skipping prove for this step (-stepsize 10).
+[induction step 41] Problem size so far: 376219 variables and 1179739 clauses.
+
+** Trying induction with length 42 **
+
+Setting up time step 44:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 42] Solving problem with 382767 variables and 1198036 clauses..
+Base case for induction length 42 proven.
+
+Setting up time step 43:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 42] Skipping prove for this step (-stepsize 10).
+[induction step 42] Problem size so far: 391339 variables and 1228341 clauses.
+
+** Trying induction with length 43 **
+
+Setting up time step 45:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 43] Solving problem with 397888 variables and 1246640 clauses..
+Base case for induction length 43 proven.
+
+Setting up time step 44:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 43] Skipping prove for this step (-stepsize 10).
+[induction step 43] Problem size so far: 406745 variables and 1277895 clauses.
+
+** Trying induction with length 44 **
+
+Setting up time step 46:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 44] Solving problem with 413295 variables and 1296196 clauses..
+Base case for induction length 44 proven.
+
+Setting up time step 45:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 44] Skipping prove for this step (-stepsize 10).
+[induction step 44] Problem size so far: 422437 variables and 1328401 clauses.
+
+** Trying induction with length 45 **
+
+Setting up time step 47:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 45] Solving problem with 428988 variables and 1346704 clauses..
+Base case for induction length 45 proven.
+
+Setting up time step 46:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 45] Skipping prove for this step (-stepsize 10).
+[induction step 45] Problem size so far: 438415 variables and 1379859 clauses.
+
+** Trying induction with length 46 **
+
+Setting up time step 48:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 46] Solving problem with 444967 variables and 1398164 clauses..
+Base case for induction length 46 proven.
+
+Setting up time step 47:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 46] Skipping prove for this step (-stepsize 10).
+[induction step 46] Problem size so far: 454679 variables and 1432269 clauses.
+
+** Trying induction with length 47 **
+
+Setting up time step 49:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 47] Solving problem with 461232 variables and 1450576 clauses..
+Base case for induction length 47 proven.
+
+Setting up time step 48:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 47] Skipping prove for this step (-stepsize 10).
+[induction step 47] Problem size so far: 471229 variables and 1485631 clauses.
+
+** Trying induction with length 48 **
+
+Setting up time step 50:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 48] Solving problem with 477783 variables and 1503940 clauses..
+Base case for induction length 48 proven.
+
+Setting up time step 49:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 48] Skipping prove for this step (-stepsize 10).
+[induction step 48] Problem size so far: 488065 variables and 1539945 clauses.
+
+** Trying induction with length 49 **
+
+Setting up time step 51:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 49] Solving problem with 494620 variables and 1558256 clauses..
+Base case for induction length 49 proven.
+
+Setting up time step 50:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 49] Skipping prove for this step (-stepsize 10).
+[induction step 49] Problem size so far: 505187 variables and 1595211 clauses.
+
+** Trying induction with length 50 **
+
+Setting up time step 52:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 50] Solving problem with 511743 variables and 1613524 clauses..
+Base case for induction length 50 proven.
+
+Setting up time step 51:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 50] Solving problem with 522595 variables and 1651429 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$147                0         0                                   0
+  init $auto$async2sync.cc:107:execute$153                0         0                                   0
+  init $auto$async2sync.cc:107:execute$159                0         0                                   0
+  init $auto$async2sync.cc:116:execute$151                1         1                                   1
+  init $auto$async2sync.cc:116:execute$157                0         0                                   0
+  init $auto$async2sync.cc:116:execute$163                0         0                                   0
+  init $auto$async2sync.cc:253:execute$145               63        3f                              111111
+  init \dut.fault_active                                  1         1                                   1
+  init \dut.frame_complete                                0         0                                   0
+  init \dut.ingress_word                         1336420906  4fa82a2a    01001111101010000010101000101010
+  init \dut.read_count                                   34        22                              100010
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       1         1                                   1
+  init \initialized                                       1         1                                   1
+  init \mode                                              1         1                                   1
+  init \phase                                           111        6f                             1101111
+  init \word_in                                  -330565658  ec4bf7e6    11101100010010111111011111100110
+
+** Trying induction with length 51 **
+
+Setting up time step 53:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 51] Solving problem with 529152 variables and 1669744 clauses..
+Base case for induction length 51 proven.
+
+Setting up time step 52:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 51] Skipping prove for this step (-stepsize 10).
+[induction step 51] Problem size so far: 540290 variables and 1708601 clauses.
+
+** Trying induction with length 52 **
+
+Setting up time step 54:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 52] Solving problem with 546847 variables and 1726916 clauses..
+Base case for induction length 52 proven.
+
+Setting up time step 53:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 52] Skipping prove for this step (-stepsize 10).
+[induction step 52] Problem size so far: 558270 variables and 1766723 clauses.
+
+** Trying induction with length 53 **
+
+Setting up time step 55:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 53] Solving problem with 564828 variables and 1785040 clauses..
+Base case for induction length 53 proven.
+
+Setting up time step 54:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 53] Skipping prove for this step (-stepsize 10).
+[induction step 53] Problem size so far: 576536 variables and 1825797 clauses.
+
+** Trying induction with length 54 **
+
+Setting up time step 56:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 54] Solving problem with 583095 variables and 1844116 clauses..
+Base case for induction length 54 proven.
+
+Setting up time step 55:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 54] Skipping prove for this step (-stepsize 10).
+[induction step 54] Problem size so far: 595088 variables and 1885823 clauses.
+
+** Trying induction with length 55 **
+
+Setting up time step 57:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 55] Solving problem with 601648 variables and 1904144 clauses..
+Base case for induction length 55 proven.
+
+Setting up time step 56:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 55] Skipping prove for this step (-stepsize 10).
+[induction step 55] Problem size so far: 613926 variables and 1946801 clauses.
+
+** Trying induction with length 56 **
+
+Setting up time step 58:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 56] Solving problem with 620487 variables and 1965124 clauses..
+Base case for induction length 56 proven.
+
+Setting up time step 57:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 56] Skipping prove for this step (-stepsize 10).
+[induction step 56] Problem size so far: 633050 variables and 2008731 clauses.
+
+** Trying induction with length 57 **
+
+Setting up time step 59:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 57] Solving problem with 639612 variables and 2027056 clauses..
+Base case for induction length 57 proven.
+
+Setting up time step 58:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 57] Skipping prove for this step (-stepsize 10).
+[induction step 57] Problem size so far: 652460 variables and 2071613 clauses.
+
+** Trying induction with length 58 **
+
+Setting up time step 60:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 58] Solving problem with 659023 variables and 2089940 clauses..
+Base case for induction length 58 proven.
+
+Setting up time step 59:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 58] Skipping prove for this step (-stepsize 10).
+[induction step 58] Problem size so far: 672156 variables and 2135447 clauses.
+
+** Trying induction with length 59 **
+
+Setting up time step 61:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 59] Solving problem with 678720 variables and 2153776 clauses..
+Base case for induction length 59 proven.
+
+Setting up time step 60:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 59] Skipping prove for this step (-stepsize 10).
+[induction step 59] Problem size so far: 692138 variables and 2200233 clauses.
+
+** Trying induction with length 60 **
+
+Setting up time step 62:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 60] Solving problem with 698703 variables and 2218564 clauses..
+Base case for induction length 60 proven.
+
+Setting up time step 61:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 60] Solving problem with 712406 variables and 2265971 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$147                0         0                                   0
+  init $auto$async2sync.cc:107:execute$153                0         0                                   0
+  init $auto$async2sync.cc:107:execute$159                0         0                                   0
+  init $auto$async2sync.cc:116:execute$151                1         1                                   1
+  init $auto$async2sync.cc:116:execute$157                0         0                                   0
+  init $auto$async2sync.cc:116:execute$163                0         0                                   0
+  init $auto$async2sync.cc:253:execute$145               63        3f                              111111
+  init \dut.fault_active                                  1         1                                   1
+  init \dut.frame_complete                                1         1                                   1
+  init \dut.ingress_word                         -979361754  c5a02026    11000101101000000010000000100110
+  init \dut.read_count                                   32        20                              100000
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       1         1                                   1
+  init \initialized                                       1         1                                   1
+  init \mode                                              1         1                                   1
+  init \phase                                           112        70                             1110000
+  init \word_in                                  -330565658  ec4bf7e6    11101100010010111111011111100110
+
+** Trying induction with length 61 **
+
+Setting up time step 63:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 61] Solving problem with 718972 variables and 2284304 clauses..
+Base case for induction length 61 proven.
+
+Setting up time step 62:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 61] Skipping prove for this step (-stepsize 10).
+[induction step 61] Problem size so far: 732961 variables and 2332663 clauses.
+
+** Trying induction with length 62 **
+
+Setting up time step 64:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 62] Solving problem with 739527 variables and 2350996 clauses..
+Base case for induction length 62 proven.
+
+Setting up time step 63:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 62] Skipping prove for this step (-stepsize 10).
+[induction step 62] Problem size so far: 753801 variables and 2400305 clauses.
+
+** Trying induction with length 63 **
+
+Setting up time step 65:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 63] Solving problem with 760368 variables and 2418640 clauses..
+Base case for induction length 63 proven.
+
+Setting up time step 64:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 63] Skipping prove for this step (-stepsize 10).
+[induction step 63] Problem size so far: 774927 variables and 2468899 clauses.
+
+** Trying induction with length 64 **
+
+Setting up time step 66:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 64] Solving problem with 781495 variables and 2487236 clauses..
+Base case for induction length 64 proven.
+
+Setting up time step 65:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 64] Skipping prove for this step (-stepsize 10).
+[induction step 64] Problem size so far: 796339 variables and 2538445 clauses.
+
+** Trying induction with length 65 **
+
+Setting up time step 67:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 65] Solving problem with 802908 variables and 2556784 clauses..
+Base case for induction length 65 proven.
+
+Setting up time step 66:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 65] Skipping prove for this step (-stepsize 10).
+[induction step 65] Problem size so far: 818037 variables and 2608943 clauses.
+
+** Trying induction with length 66 **
+
+Setting up time step 68:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 66] Solving problem with 824607 variables and 2627284 clauses..
+Base case for induction length 66 proven.
+
+Setting up time step 67:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 66] Skipping prove for this step (-stepsize 10).
+[induction step 66] Problem size so far: 840021 variables and 2680393 clauses.
+
+** Trying induction with length 67 **
+
+Setting up time step 69:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 67] Solving problem with 846592 variables and 2698736 clauses..
+Base case for induction length 67 proven.
+
+Setting up time step 68:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 67] Skipping prove for this step (-stepsize 10).
+[induction step 67] Problem size so far: 862291 variables and 2752795 clauses.
+
+** Trying induction with length 68 **
+
+Setting up time step 70:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 68] Solving problem with 868863 variables and 2771140 clauses..
+Base case for induction length 68 proven.
+
+Setting up time step 69:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 68] Skipping prove for this step (-stepsize 10).
+[induction step 68] Problem size so far: 884847 variables and 2826149 clauses.
+
+** Trying induction with length 69 **
+
+Setting up time step 71:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 69] Solving problem with 891420 variables and 2844496 clauses..
+Base case for induction length 69 proven.
+
+Setting up time step 70:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 69] Skipping prove for this step (-stepsize 10).
+[induction step 69] Problem size so far: 907689 variables and 2900455 clauses.
+
+** Trying induction with length 70 **
+
+Setting up time step 72:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 70] Solving problem with 914263 variables and 2918804 clauses..
+Base case for induction length 70 proven.
+
+Setting up time step 71:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 70] Solving problem with 930817 variables and 2975713 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$147                0         0                                   0
+  init $auto$async2sync.cc:107:execute$153                0         0                                   0
+  init $auto$async2sync.cc:107:execute$159                0         0                                   0
+  init $auto$async2sync.cc:116:execute$151                1         1                                   1
+  init $auto$async2sync.cc:116:execute$157                0         0                                   0
+  init $auto$async2sync.cc:116:execute$163                0         0                                   0
+  init $auto$async2sync.cc:253:execute$145               63        3f                              111111
+  init \dut.fault_active                                  1         1                                   1
+  init \dut.frame_complete                                1         1                                   1
+  init \dut.ingress_word                         -979361754  c5a02026    11000101101000000010000000100110
+  init \dut.read_count                                   41        29                              101001
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       1         1                                   1
+  init \initialized                                       1         1                                   1
+  init \mode                                              1         1                                   1
+  init \phase                                            84        54                             1010100
+  init \word_in                                  -310642714  ed7bf7e6    11101101011110111111011111100110
+
+** Trying induction with length 71 **
+
+Setting up time step 73:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 71] Solving problem with 937392 variables and 2994064 clauses..
+Base case for induction length 71 proven.
+
+Setting up time step 72:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 71] Skipping prove for this step (-stepsize 10).
+[induction step 71] Problem size so far: 954232 variables and 3051925 clauses.
+
+** Trying induction with length 72 **
+
+Setting up time step 74:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 72] Solving problem with 960807 variables and 3070276 clauses..
+Base case for induction length 72 proven.
+
+Setting up time step 73:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 72] Skipping prove for this step (-stepsize 10).
+[induction step 72] Problem size so far: 977932 variables and 3129087 clauses.
+
+** Trying induction with length 73 **
+
+Setting up time step 75:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 73] Solving problem with 984508 variables and 3147440 clauses..
+Base case for induction length 73 proven.
+
+Setting up time step 74:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 73] Skipping prove for this step (-stepsize 10).
+[induction step 73] Problem size so far: 1001918 variables and 3207201 clauses.
+
+** Trying induction with length 74 **
+
+Setting up time step 76:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 74] Solving problem with 1008495 variables and 3225556 clauses..
+Base case for induction length 74 proven.
+
+Setting up time step 75:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 74] Skipping prove for this step (-stepsize 10).
+[induction step 74] Problem size so far: 1026190 variables and 3286267 clauses.
+
+** Trying induction with length 75 **
+
+Setting up time step 77:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 75] Solving problem with 1032768 variables and 3304624 clauses..
+Base case for induction length 75 proven.
+
+Setting up time step 76:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 75] Skipping prove for this step (-stepsize 10).
+[induction step 75] Problem size so far: 1050748 variables and 3366285 clauses.
+
+** Trying induction with length 76 **
+
+Setting up time step 78:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 76] Solving problem with 1057327 variables and 3384644 clauses..
+Base case for induction length 76 proven.
+
+Setting up time step 77:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 76] Skipping prove for this step (-stepsize 10).
+[induction step 76] Problem size so far: 1075592 variables and 3447255 clauses.
+
+** Trying induction with length 77 **
+
+Setting up time step 79:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 77] Solving problem with 1082172 variables and 3465616 clauses..
+Base case for induction length 77 proven.
+
+Setting up time step 78:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 77] Skipping prove for this step (-stepsize 10).
+[induction step 77] Problem size so far: 1100722 variables and 3529177 clauses.
+
+** Trying induction with length 78 **
+
+Setting up time step 80:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 78] Solving problem with 1107303 variables and 3547540 clauses..
+Base case for induction length 78 proven.
+
+Setting up time step 79:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 78] Skipping prove for this step (-stepsize 10).
+[induction step 78] Problem size so far: 1126138 variables and 3612051 clauses.
+
+** Trying induction with length 79 **
+
+Setting up time step 81:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 79] Solving problem with 1132720 variables and 3630416 clauses..
+Base case for induction length 79 proven.
+
+Setting up time step 80:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 79] Skipping prove for this step (-stepsize 10).
+[induction step 79] Problem size so far: 1151840 variables and 3695877 clauses.
+
+** Trying induction with length 80 **
+
+Setting up time step 82:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 80] Solving problem with 1158423 variables and 3714244 clauses..
+Base case for induction length 80 proven.
+
+Setting up time step 81:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 80] Solving problem with 1177828 variables and 3780655 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$147                0         0                                   0
+  init $auto$async2sync.cc:107:execute$153                0         0                                   0
+  init $auto$async2sync.cc:107:execute$159                0         0                                   0
+  init $auto$async2sync.cc:116:execute$151                1         1                                   1
+  init $auto$async2sync.cc:116:execute$157                0         0                                   0
+  init $auto$async2sync.cc:116:execute$163                0         0                                   0
+  init $auto$async2sync.cc:253:execute$145               63        3f                              111111
+  init \dut.fault_active                                  1         1                                   1
+  init \dut.frame_complete                                0         0                                   0
+  init \dut.ingress_word                         -979361754  c5a02026    11000101101000000010000000100110
+  init \dut.read_count                                   35        23                              100011
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       1         1                                   1
+  init \initialized                                       1         1                                   1
+  init \mode                                              0         0                                   0
+  init \phase                                            80        50                             1010000
+  init \word_in                                  -310642714  ed7bf7e6    11101101011110111111011111100110
+
+** Trying induction with length 81 **
+
+Setting up time step 83:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 81] Solving problem with 1184412 variables and 3799024 clauses..
+Base case for induction length 81 proven.
+
+Setting up time step 82:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 81] Skipping prove for this step (-stepsize 10).
+[induction step 81] Problem size so far: 1204103 variables and 3866387 clauses.
+
+** Trying induction with length 82 **
+
+Setting up time step 84:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 82] Solving problem with 1210687 variables and 3884756 clauses..
+Base case for induction length 82 proven.
+
+Setting up time step 83:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 82] Skipping prove for this step (-stepsize 10).
+[induction step 82] Problem size so far: 1230663 variables and 3953069 clauses.
+
+** Trying induction with length 83 **
+
+Setting up time step 85:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 83] Solving problem with 1237248 variables and 3971440 clauses..
+Base case for induction length 83 proven.
+
+Setting up time step 84:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 83] Skipping prove for this step (-stepsize 10).
+[induction step 83] Problem size so far: 1257509 variables and 4040703 clauses.
+
+** Trying induction with length 84 **
+
+Setting up time step 86:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 84] Solving problem with 1264095 variables and 4059076 clauses..
+Base case for induction length 84 proven.
+
+Setting up time step 85:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 84] Skipping prove for this step (-stepsize 10).
+[induction step 84] Problem size so far: 1284641 variables and 4129289 clauses.
+
+** Trying induction with length 85 **
+
+Setting up time step 87:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 85] Solving problem with 1291228 variables and 4147664 clauses..
+Base case for induction length 85 proven.
+
+Setting up time step 86:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 85] Skipping prove for this step (-stepsize 10).
+[induction step 85] Problem size so far: 1312059 variables and 4218827 clauses.
+
+** Trying induction with length 86 **
+
+Setting up time step 88:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 86] Solving problem with 1318647 variables and 4237204 clauses..
+Base case for induction length 86 proven.
+
+Setting up time step 87:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 86] Skipping prove for this step (-stepsize 10).
+[induction step 86] Problem size so far: 1339763 variables and 4309317 clauses.
+
+** Trying induction with length 87 **
+
+Setting up time step 89:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 87] Solving problem with 1346352 variables and 4327696 clauses..
+Base case for induction length 87 proven.
+
+Setting up time step 88:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 87] Skipping prove for this step (-stepsize 10).
+[induction step 87] Problem size so far: 1367753 variables and 4400759 clauses.
+
+** Trying induction with length 88 **
+
+Setting up time step 90:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 88] Solving problem with 1374343 variables and 4419140 clauses..
+Base case for induction length 88 proven.
+
+Setting up time step 89:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 88] Skipping prove for this step (-stepsize 10).
+[induction step 88] Problem size so far: 1396029 variables and 4493153 clauses.
+
+** Trying induction with length 89 **
+
+Setting up time step 91:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 89] Solving problem with 1402620 variables and 4511536 clauses..
+Base case for induction length 89 proven.
+
+Setting up time step 90:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 89] Skipping prove for this step (-stepsize 10).
+[induction step 89] Problem size so far: 1424591 variables and 4586499 clauses.
+
+** Trying induction with length 90 **
+
+Setting up time step 92:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 90] Solving problem with 1431183 variables and 4604884 clauses..
+Base case for induction length 90 proven.
+
+Setting up time step 91:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 90] Solving problem with 1453439 variables and 4680797 clauses..
+Induction step failed. Incrementing induction length.
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$147                0         0                                   0
+  init $auto$async2sync.cc:107:execute$153                0         0                                   0
+  init $auto$async2sync.cc:107:execute$159                0         0                                   0
+  init $auto$async2sync.cc:116:execute$151                1         1                                   1
+  init $auto$async2sync.cc:116:execute$157                0         0                                   0
+  init $auto$async2sync.cc:116:execute$163                0         0                                   0
+  init $auto$async2sync.cc:253:execute$145               63        3f                              111111
+  init \dut.fault_active                                  1         1                                   1
+  init \dut.frame_complete                                1         1                                   1
+  init \dut.ingress_word                         -979361754  c5a02026    11000101101000000010000000100110
+  init \dut.read_count                                   32        20                              100000
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       1         1                                   1
+  init \initialized                                       1         1                                   1
+  init \mode                                              1         1                                   1
+  init \phase                                            82        52                             1010010
+  init \word_in                                  -310642714  ed7bf7e6    11101101011110111111011111100110
+
+** Trying induction with length 91 **
+
+Setting up time step 93:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 91] Solving problem with 1460032 variables and 4699184 clauses..
+Base case for induction length 91 proven.
+
+Setting up time step 92:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 91] Skipping prove for this step (-stepsize 10).
+[induction step 91] Problem size so far: 1482574 variables and 4776049 clauses.
+
+** Trying induction with length 92 **
+
+Setting up time step 94:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 92] Solving problem with 1489167 variables and 4794436 clauses..
+Base case for induction length 92 proven.
+
+Setting up time step 93:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 92] Skipping prove for this step (-stepsize 10).
+[induction step 92] Problem size so far: 1511994 variables and 4872251 clauses.
+
+** Trying induction with length 93 **
+
+Setting up time step 95:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 93] Solving problem with 1518588 variables and 4890640 clauses..
+Base case for induction length 93 proven.
+
+Setting up time step 94:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 93] Skipping prove for this step (-stepsize 10).
+[induction step 93] Problem size so far: 1541700 variables and 4969405 clauses.
+
+** Trying induction with length 94 **
+
+Setting up time step 96:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 94] Solving problem with 1548295 variables and 4987796 clauses..
+Base case for induction length 94 proven.
+
+Setting up time step 95:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 94] Skipping prove for this step (-stepsize 10).
+[induction step 94] Problem size so far: 1571692 variables and 5067511 clauses.
+
+** Trying induction with length 95 **
+
+Setting up time step 97:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 95] Solving problem with 1578288 variables and 5085904 clauses..
+Base case for induction length 95 proven.
+
+Setting up time step 96:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 95] Skipping prove for this step (-stepsize 10).
+[induction step 95] Problem size so far: 1601970 variables and 5166569 clauses.
+
+** Trying induction with length 96 **
+
+Setting up time step 98:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 96] Solving problem with 1608567 variables and 5184964 clauses..
+Base case for induction length 96 proven.
+
+Setting up time step 97:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 96] Skipping prove for this step (-stepsize 10).
+[induction step 96] Problem size so far: 1632534 variables and 5266579 clauses.
+
+** Trying induction with length 97 **
+
+Setting up time step 99:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 97] Solving problem with 1639132 variables and 5284976 clauses..
+Base case for induction length 97 proven.
+
+Setting up time step 98:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 97] Skipping prove for this step (-stepsize 10).
+[induction step 97] Problem size so far: 1663384 variables and 5367541 clauses.
+
+** Trying induction with length 98 **
+
+Setting up time step 100:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 98] Solving problem with 1669983 variables and 5385940 clauses..
+Base case for induction length 98 proven.
+
+Setting up time step 99:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 98] Skipping prove for this step (-stepsize 10).
+[induction step 98] Problem size so far: 1694520 variables and 5469455 clauses.
+
+** Trying induction with length 99 **
+
+Setting up time step 101:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 99] Solving problem with 1701120 variables and 5487856 clauses..
+Base case for induction length 99 proven.
+
+Setting up time step 100:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 99] Skipping prove for this step (-stepsize 10).
+[induction step 99] Problem size so far: 1725942 variables and 5572321 clauses.
+
+** Trying induction with length 100 **
+
+Setting up time step 102:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[base case 100] Solving problem with 1732543 variables and 5590724 clauses..
+Base case for induction length 100 proven.
+
+Setting up time step 101:
+Final constraint equation: { } = { }
+Imported 93 cells to SAT database.
+Import constraint from assume cell: $formal/cyclic_normal_harness.sv:39$logic_or$55_Y when 1'1.
+Import proof for assert: $auto$async2sync.cc:116:execute$151 when $auto$async2sync.cc:107:execute$147.
+Import proof for assert: $auto$async2sync.cc:116:execute$157 when $auto$async2sync.cc:107:execute$153.
+Import proof for assert: $auto$async2sync.cc:116:execute$163 when $auto$async2sync.cc:107:execute$159.
+
+[induction step 100] Solving problem with 1757650 variables and 5676139 clauses..
+Induction step proven: SUCCESS!
+
+                  /$$$$$$      /$$$$$$$$     /$$$$$$$    
+                 /$$__  $$    | $$_____/    | $$__  $$   
+                | $$  \ $$    | $$          | $$  \ $$   
+                | $$  | $$    | $$$$$       | $$  | $$   
+                | $$  | $$    | $$__/       | $$  | $$   
+                | $$/$$ $$    | $$          | $$  | $$   
+                |  $$$$$$/ /$$| $$$$$$$$ /$$| $$$$$$$//$$
+                 \____ $$$|__/|________/|__/|_______/|__/
+                       \__/                              
+

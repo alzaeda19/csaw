@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/usr/bin/curl",
+    "--fail",
+    "--location",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "30",
+    "https://raw.githubusercontent.com/kiwih/hackster-programmer/e664a4335e14bdef1e95b8a1a7e2f3c340777f98/hardware/unsw-cse-hackster-cc-by-sa-4.0/cse-hackster-feb-2026.pdf",
+    "--output",
+    "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_original_pin_audit_20261113T020751Z_u4o_hhf6/sources/cse-hackster-feb-2026.pdf"
+  ],
+  "started_utc": "2026-11-13T02:09:26.513088+00:00",
+  "finished_utc": "2026-11-13T02:09:26.845811+00:00",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "prior_error": "Python urllib raised CERTIFICATE_VERIFY_FAILED before writing source bytes; TLS verification was retained using system curl."
+}

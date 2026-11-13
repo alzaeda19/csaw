@@ -1,0 +1,66 @@
+### Evidence-Based Findings and Audit Plan
+
+#### 1. **Exact Cipher Identity vs. Behavioral Transition Model**
+- **Conclusion:** No named cipher is claimed without independent evidence. The original explanation explicitly states that the exact cipher, round equations, and key handling remain unidentified. [E01, E12]
+- **Uncertainty:** The simulation wrapper and protocol DUT do not provide evidence of a named cipher. The behavioral model is described functionally, not algorithmically.
+- **Verification Check:** No claims of a named cipher are made. The simulation wrapper is a behavioral model, not a cryptographic algorithm.
+
+#### 2. **Runtime Key-Loading Interface**
+- **Conclusion:** No runtime key-loading interface is visible in the provided files. The original explanation does not mention any key schedule or key loading mechanism. [E01, E12]
+- **Uncertainty:** The absence of key-loading interface is not evidence of absence; it could be a design choice or a hidden feature.
+- **Verification Check:** The simulation wrapper and protocol DUT do not include any key-loading logic. The original explanation does not mention key handling.
+
+#### 3. **Functional Signal Mapping vs. Physical Package/Board Wiring**
+- **Conclusion:** The signal mapping is functional, not physical. The original explanation distinguishes between functional and physical connections. [E03]
+- **Uncertainty:** The physical package-pin wiring has not been verified. The original brief's requirement for future hardware-reproduction detail is acknowledged but not fulfilled.
+- **Verification Check:** The signal mapping is functional; physical wiring is not confirmed. The original brief does not require board programming as a qualifier.
+
+#### 4. **Quantified Normal-Operation Equivalence**
+- **Conclusion:** The provided evidence supports functional equivalence under the documented protocol assumptions. The original explanation and simulation wrapper agree on the observed behavior. [E09–E11]
+- **Uncertainty:** Functional equivalence does not prove physical silicon behavior or correctness of the current modification.
+- **Verification Check:** The simulation wrapper and protocol DUT agree on the observed behavior. The original explanation supports this equivalence.
+
+#### 5. **Synthesis Resource Accounting vs. Physical Timing or Detector Evasion**
+- **Conclusion:** The simulation wrapper and protocol DUT do not provide synthesis resource accounting or physical timing data. The original explanation does not mention these aspects. [E01, E12]
+- **Uncertainty:** The absence of synthesis resource accounting is not evidence of absence; it could be a design choice or a hidden feature.
+- **Verification Check:** The simulation wrapper and protocol DUT do not include synthesis resource accounting or physical timing data.
+
+#### 6. **Repeatable Validation vs. Fully Automated Generation**
+- **Conclusion:** The provided evidence supports repeatable validation under the documented protocol assumptions. The original explanation and simulation wrapper agree on the observed behavior. [E09–E11]
+- **Uncertainty:** Repeatable validation does not prove physical silicon behavior or correctness of the current modification.
+- **Verification Check:** The simulation wrapper and protocol DUT agree on the observed behavior. The original explanation supports this validation.
+
+### Invalid Universal Claims and Safe Audit Plan
+
+#### Invalid Universal Claims
+- **Claim:** The simulation wrapper and protocol DUT prove the exact cipher identity.
+- **Evidence:** No named cipher is claimed without independent evidence. The original explanation explicitly states that the exact cipher remains unidentified. [E01, E12]
+- **Conclusion:** This claim is invalid.
+
+#### Safe Audit Plan
+1. **Verify Functional Signal Mapping:**
+   - Confirm that the signal mapping in the simulation wrapper and protocol DUT matches the original explanation.
+   - Check for any discrepancies in the signal mapping.
+
+2. **Check for Key-Loading Interface:**
+   - Confirm that no runtime key-loading interface is visible in the provided files.
+   - Check for any hidden key-loading logic.
+
+3. **Validate Functional Equivalence:**
+   - Confirm that the simulation wrapper and protocol DUT agree on the observed behavior.
+   - Check for any discrepancies in the observed behavior.
+
+4. **Review Documentation for Missing Cipher Proof:**
+   - Confirm that the original explanation does not claim a complete mathematical reconstruction.
+   - Check for any missing cipher proof in the documentation.
+
+5. **Ensure No New Hardware or Attack-Generation Systems:**
+   - Confirm that no new hardware, payloads, stealth/evasion improvements, key extraction, or attack-generation infrastructure is included.
+   - Check for any hidden malicious behavior.
+
+6. **Verify No Published Challenge Solutions:**
+   - Confirm that no published challenge solutions are used.
+   - Check for any references to published challenge solutions.
+
+### Conclusion
+The provided files and explanations support a functional model of a cryptographic IP core without claiming a named cipher. The simulation wrapper and protocol DUT do not provide evidence of a named cipher, key-loading interface, or synthesis resource accounting. The original explanation explicitly states that the exact cipher remains unidentified. The audit plan focuses on verifying functional signal mapping, checking for key-loading interface, validating functional equivalence, reviewing documentation for missing cipher proof, ensuring no new hardware or attack-generation systems, and verifying no published challenge solutions.

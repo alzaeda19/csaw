@@ -1,0 +1,34 @@
+{
+  "reference": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf",
+  "reference_scope": "Sections 4 and 5.1.1, equation 5.3 and Table 4; independently implemented finite-field/affine definition. Public standard, no challenge solution.",
+  "standard_sbox_sha256": "c2d8e5eed6cbebd8625fc18f81486a7733c04f9b0129ffbe974c68b90308b4f2",
+  "comparisons": [
+    {
+      "instance": "ram40_6_5",
+      "entries_compared": 256,
+      "matches_AES_SBOX_exact_effective_order": false,
+      "matches_AES_inverse_SBOX_exact_effective_order": false
+    },
+    {
+      "instance": "ram40_6_7",
+      "entries_compared": 256,
+      "matches_AES_SBOX_exact_effective_order": false,
+      "matches_AES_inverse_SBOX_exact_effective_order": false
+    },
+    {
+      "instance": "ram40_6_9",
+      "entries_compared": 256,
+      "matches_AES_SBOX_exact_effective_order": false,
+      "matches_AES_inverse_SBOX_exact_effective_order": false
+    },
+    {
+      "instance": "ram40_6_11",
+      "entries_compared": 256,
+      "matches_AES_SBOX_exact_effective_order": false,
+      "matches_AES_inverse_SBOX_exact_effective_order": false
+    }
+  ],
+  "whole_cipher_identified": false,
+  "key_extraction_performed": false,
+  "limitation": "A matching component does not identify the surrounding 32-bit cipher or its key schedule. A mismatch in this effective order does not rule out an algorithm with different bit wiring."
+}

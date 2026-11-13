@@ -4,6 +4,12 @@ The recovered FPGA design accepts a **32-bit word**, processes it over several c
 
 This document describes only the unchanged recovered baseline. It uses the original interface, supplied host program, recovered RTL and saved verification records. It does not infer an algorithm from the separate AES course package, from another person's solution, or from an earlier model's unsupported AES-128 claim. The [technical explanation](addenda/2026-11-12/explanation/PROPOSED_ENCRYPTION_EXPLANATION.md) and [source index](addenda/2026-11-12/explanation/SOURCE_INDEX.md) give the detailed claims and references, labeled E01–E12 below.
 
+## Latest original-evidence findings
+
+The [Qwen-assisted verification follow-up](addenda/2026-11-12-qwen-verification/README.md) examined the original lookup initialization and found four identical effective nonlinear 256-entry byte permutations. A comparison with the public AES standard does not match its direct or inverse S-box in that extracted bit order; this does not rule out differently wired components or identify the surrounding cipher.
+
+The supplied host carries one 32-bit message per operation and has no separate documented key-loading transaction; the recovered top level has no dedicated key port. Fixed memory controls are now corroborated by synthesis. Embedded key-dependent constants and full key semantics remain unidentified. The reference-board schematic and vendor pin table also establish all nine physical signal identities, including physical BUSY/LED names opposite the logically interchangeable adapter labels. A particular board unit and the earlier automatically allocated bitstream remain unverified for that pin map.
+
 ## Data path in plain English
 
 ```mermaid
@@ -21,7 +27,7 @@ This is a functional sketch of connections, not a recovered round algorithm or a
 
 1. **Load the input.** With chip-select low, 32 clock edges shift the input into a shared register bank. The supplied host sends the most-significant byte and bit first. The output is also registered on the clock edge, so sampling must respect that behavior. [E02, E04]
 2. **Start processing.** With chip-select high, the host selects the direction and pulses START. A separate 32-bit working bank, lookup-memory outputs and Boolean logic carry out the transformation. The mode input affects the datapath itself. Keep the mode stable as the recorded driver does. [E02, E05, E07]
-3. **Use fixed lookup storage.** There are four initialized memory instances. Their write clocks and write-clock enables resolve to zero in the recovered design. This supports describing them as lookup storage during normal operation. It does not establish that they contain AES tables, a key schedule or any particular substitution function; their initialization values were excluded from this analysis. [E06]
+3. **Use fixed lookup storage.** There are four initialized memory instances. Their write clocks and write-clock enables resolve to zero in the recovered design. This supports describing them as lookup storage during normal operation. It does not establish that they contain AES tables, a key schedule or any particular substitution function; their initialization values were excluded from the earlier analysis. The newer follow-up above reports directly checked table properties without assigning a cipher or key meaning. [E06]
 4. **Copy the result before reading.** BUSY falling and the serial-output bank receiving the result are separate events. Under the documented schedule, a further rising clock edge with chip-select high copies the result into that bank. Immediately beginning serial extraction can miss this copy and return the old input. [E08–E09]
 5. **Read the output.** The next 32 serial clocks shift the result out through MISO while incoming bits overwrite the shared bank. This is why the documented host sequence and sampling order matter. [E02, E04]
 
@@ -46,8 +52,8 @@ The first three rows are supported by E09–E11 and the linked historical report
 
 We have a source-supported explanation of input loading, state/storage organization, direction selection, processing controls and output timing. We have not independently established the named algorithm, interpretation of the stored values, round equations, number of cryptographic rounds, key origin/schedule or cryptographic strength. No secret key was recovered. [E12]
 
-The adapter's signal mapping is functional; physical package-pin wiring has not been verified. The original brief's requirement for sufficient future hardware-reproduction detail should therefore be read with that limitation. It does not turn board programming into a required qualifier deliverable. [E03]
+The earlier adapter mapping was functional only. The [reference-board audit](addenda/2026-11-12-qwen-verification/pin_audit/REPORT.md) now documents physical package pins for the published February 2026 Rev A board. It corrects the physical BUSY/LED labels while preserving the unchanged equivalent simulation outputs. A particular board and any board-constrained rebuild remain untested; board programming is still not a required qualifier deliverable.
 
 The original qualifier asks for a **proposed explanation** of the encryption system. This document supplies that proposal at the architecture and interface level and makes its limits explicit. It does not claim a complete mathematical reconstruction. Additional chat recovery corroborates the same limits; it supplies no missing cipher proof.
 
-All source-backed claims here point to the existing original-materials evidence map. This update adds explanation and evidence organization; no HDL, synthesis, hardware operation or new simulation was performed.
+The original architecture claims point to the existing original-materials evidence map. The latest follow-up separately records fresh synthesis, formal verification and primary-source pin documentation. The original RTL and simulation suite are unchanged; no board was programmed and no challenge solution was consulted.

@@ -1,0 +1,1388 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.70+344 (git sha1 2f2307ad6, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)
+
+-- Executing script file `/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_Qwen_verification_2026-11-12/formal/cyclic_control.ys' --
+
+1. Executing Verilog-2005 frontend: sources/modified_protocol_dut.sv
+Parsing formal SystemVerilog input from `sources/modified_protocol_dut.sv' to AST representation.
+Generating RTLIL representation for module `\protocol_dut'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: formal/cyclic_normal_harness.sv
+Parsing formal SystemVerilog input from `formal/cyclic_normal_harness.sv' to AST representation.
+Generating RTLIL representation for module `\chip'.
+Generating RTLIL representation for module `\cyclic_normal_harness'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1.1. Analyzing design hierarchy..
+Top module:  \cyclic_normal_harness
+Used module:     \protocol_dut
+Used module:         \chip
+
+3.1.2. Analyzing design hierarchy..
+Top module:  \cyclic_normal_harness
+Used module:     \protocol_dut
+Used module:         \chip
+Removed 0 unused modules.
+Module cyclic_normal_harness directly or indirectly contains formal properties -> setting "keep" attribute.
+Mapping positional arguments of cell cyclic_normal_harness.dut (protocol_dut).
+
+3.2. Executing PROC pass (convert processes to netlists).
+
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:37$proc$52'.
+Cleaned up 0 empty switches.
+
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $sources/modified_protocol_dut.sv:33$proc$12 in module protocol_dut.
+Marked 2 switch rules as full_case in process $sources/modified_protocol_dut.sv:24$proc$6 in module protocol_dut.
+Removed a total of 0 dead cases.
+
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 4 assignments to connections.
+
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:20$proc$60'.
+  Set init value: \initialized = 1'0
+Found init rule in `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:21$proc$61'.
+  Set init value: \phase = 7'0000000
+
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \NORM_CS_N in `\protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~11 debug messages>
+
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:20$proc$60'.
+Creating decoders for process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:42$proc$53'.
+     1/3: $formal/cyclic_normal_harness.sv:45$assert$58_EN
+     2/3: $formal/cyclic_normal_harness.sv:44$assert$56_EN
+     3/3: $formal/cyclic_normal_harness.sv:43$assert$54_EN
+Creating decoders for process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:21$proc$61'.
+Creating decoders for process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+     1/2: $0\mode[0:0]
+     2/2: $0\word_in[31:0]
+Creating decoders for process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+     1/6: $0\start_q[0:0]
+     2/6: $0\fault_active[0:0]
+     3/6: $0\read_pending[0:0]
+     4/6: $0\frame_complete[0:0]
+     5/6: $0\read_count[5:0]
+     6/6: $0\ingress_word[31:0]
+Creating decoders for process `\protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+     1/1: $0\ingress_count[5:0]
+
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\cyclic_normal_harness.\word_in' using process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+  created $dff cell `$procdff$126' with positive edge clock.
+Creating register for signal `\cyclic_normal_harness.\mode' using process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+  created $dff cell `$procdff$127' with positive edge clock.
+Creating register for signal `\cyclic_normal_harness.\initialized' using process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+  created $dff cell `$procdff$128' with positive edge clock.
+Creating register for signal `\cyclic_normal_harness.\phase' using process `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+  created $dff cell `$procdff$129' with positive edge clock.
+Creating register for signal `\protocol_dut.\ingress_word' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$130' with positive edge clock.
+Creating register for signal `\protocol_dut.\read_count' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$131' with positive edge clock.
+Creating register for signal `\protocol_dut.\frame_complete' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$132' with positive edge clock.
+Creating register for signal `\protocol_dut.\start_q' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$133' with positive edge clock.
+Creating register for signal `\protocol_dut.\read_pending' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$134' with positive edge clock.
+Creating register for signal `\protocol_dut.\fault_active' using process `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+  created $dff cell `$procdff$135' with positive edge clock.
+Creating register for signal `\protocol_dut.\ingress_count' using process `\protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+  created $adff cell `$procdff$138' with positive edge clock and positive level reset.
+
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:20$proc$60'.
+Found and cleaned up 1 empty switch in `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:42$proc$53'.
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:42$proc$53'.
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:21$proc$61'.
+Found and cleaned up 1 empty switch in `\cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+Removing empty process `cyclic_normal_harness.$formal/cyclic_normal_harness.sv:22$proc$35'.
+Found and cleaned up 7 empty switches in `\protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+Removing empty process `protocol_dut.$sources/modified_protocol_dut.sv:33$proc$12'.
+Found and cleaned up 2 empty switches in `\protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+Removing empty process `protocol_dut.$sources/modified_protocol_dut.sv:24$proc$6'.
+Cleaned up 11 empty switches.
+
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+<suppressed ~4 debug messages>
+Optimizing module chip.
+Optimizing module protocol_dut.
+<suppressed ~9 debug messages>
+
+3.3. Executing CHECK pass (checking for obvious problems).
+Checking module cyclic_normal_harness...
+Checking module chip...
+Checking module protocol_dut...
+Found and reported 0 problems.
+
+3.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module chip.
+Deleting now unused module protocol_dut.
+<suppressed ~2 debug messages>
+
+3.5. Executing FUTURE pass.
+
+3.6. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+<suppressed ~7 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module cyclic_normal_harness...
+Found and reported 0 problems.
+
+3.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+Removed 2 unused cells and 59 unused wires.
+<suppressed ~3 debug messages>
+
+3.9. Executing OPT pass (performing simple optimizations).
+
+3.9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+
+3.9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cyclic_normal_harness'.
+Computing hashes of 85 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+Computing hashes of 84 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+3.9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cyclic_normal_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~41 debug messages>
+
+3.9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cyclic_normal_harness.
+Performed a total of 0 changes.
+
+3.9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cyclic_normal_harness'.
+Computing hashes of 84 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+Computing hashes of 82 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+3.9.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+3.9.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+
+3.9.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.9.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cyclic_normal_harness..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~37 debug messages>
+
+3.9.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cyclic_normal_harness.
+Performed a total of 0 changes.
+
+3.9.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cyclic_normal_harness'.
+Computing hashes of 82 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+Removed a total of 0 cells.
+
+3.9.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+
+3.9.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+
+3.9.14. Finished fast OPT passes. (There is nothing left to do.)
+
+3.10. Executing WREDUCE pass (reducing word size of cells).
+Removed top 31 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$add$37 ($add).
+Removed top 24 bits (of 32) from port Y of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$add$37 ($add).
+Removed top 25 bits (of 32) from mux cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$ternary$38 ($mux).
+Removed top 31 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:30$ge$40 ($ge).
+Removed top 26 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:30$le$41 ($le).
+Removed top 26 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:31$ge$43 ($ge).
+Removed top 25 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:31$le$44 ($le).
+Removed top 1 bits (of 7) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:33$eq$48 ($eq).
+Removed top 26 bits (of 32) from port A of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:34$sub$49 ($sub).
+Removed top 24 bits (of 32) from port Y of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:34$sub$49 ($sub).
+Removed top 24 bits (of 32) from port B of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:34$shiftx$50 ($shiftx).
+Removed top 1 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:58$eq$31 ($eq).
+Removed top 5 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:57$add$30 ($add).
+Removed top 1 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:45$eq$17 ($eq).
+Removed top 5 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:30$add$11 ($add).
+Removed top 5 bits (of 6) from port B of cell cyclic_normal_harness.$flatten\dut.$sources/modified_protocol_dut.sv:20$eq$3 ($eq).
+Removed top 1 bits (of 8) from port Y of cell cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$add$37 ($add).
+Removed top 25 bits (of 32) from wire cyclic_normal_harness.$formal/cyclic_normal_harness.sv:24$add$37_Y.
+
+3.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+3.12. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.13. Executing OPT pass (performing simple optimizations).
+
+3.13.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cyclic_normal_harness.
+
+3.13.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cyclic_normal_harness'.
+Computing hashes of 82 cells of `\cyclic_normal_harness'.
+Finding duplicate cells in `\cyclic_normal_harness'.
+Removed a total of 0 cells.
+
+3.13.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+
+3.13.4. Finished fast OPT passes.
+
+3.14. Executing SORT pass.
+
+3.15. Printing statistics.
+
+=== cyclic_normal_harness ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       99 wires
+      404 wire bits
+       42 public wires
+      151 public wire bits
+        1 ports
+        1 port bits
+       82 cells
+        3   $add
+        1   $adff
+        3   $anyseq
+        3   $check
+       10   $dff
+        6   $eq
+        3   $ge
+        2   $le
+       11   $logic_and
+        6   $logic_not
+        2   $logic_or
+        1   $lt
+       26   $mux
+        1   $not
+        2   $scopeinfo
+        1   $shiftx
+        1   $sub
+
+3.16. Executing CHECK pass (checking for obvious problems).
+Checking module cyclic_normal_harness...
+Found and reported 0 problems.
+
+4. Executing ASYNC2SYNC pass.
+Replacing cyclic_normal_harness.$flatten\dut.$procdff$138 ($adff): ARST=$flatten\dut.$sources/modified_protocol_dut.sv:20$logic_not$1_Y, D=$flatten\dut.$0\ingress_count[5:0], Q=\dut.ingress_count
+
+5. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cyclic_normal_harness..
+Removed 9 unused cells and 9 unused wires.
+<suppressed ~10 debug messages>
+
+7. Executing SAT pass (solving SAT problems in the circuit).
+Using SAT solver `minisat`.
+
+Setting up time step 1:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import set-constraint from init attribute: $auto$async2sync.cc:107:execute$156 = 1'0
+Import set-constraint from init attribute: $auto$async2sync.cc:116:execute$154 = 1'1
+Import set-constraint from init attribute: $auto$async2sync.cc:116:execute$160 = 1'1
+Import set-constraint from init attribute: $auto$async2sync.cc:107:execute$150 = 1'0
+Import set-constraint from init attribute: $auto$async2sync.cc:116:execute$148 = 1'1
+Import set-constraint from init attribute: $auto$async2sync.cc:107:execute$144 = 1'0
+Import set-constraint from init attribute: \initialized = 1'0
+Import set-constraint from init attribute: \phase = 7'0000000
+Final init constraint equation: { \phase \initialized $auto$async2sync.cc:107:execute$144 $auto$async2sync.cc:116:execute$148 $auto$async2sync.cc:107:execute$150 $auto$async2sync.cc:116:execute$160 $auto$async2sync.cc:116:execute$154 $auto$async2sync.cc:107:execute$156 } = 14'00000000010110
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 2:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 3:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 4:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 5:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 6:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 7:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 8:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 9:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 10:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 11:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 12:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 13:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 14:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 15:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 16:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 17:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 18:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 19:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 20:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 21:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 22:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 23:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 24:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 25:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 26:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 27:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 28:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 29:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 30:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 31:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 32:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 33:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 34:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 35:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 36:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 37:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 38:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 39:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 40:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 41:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 42:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 43:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 44:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 45:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 46:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 47:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 48:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 49:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 50:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 51:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 52:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 53:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 54:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 55:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 56:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 57:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 58:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 59:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 60:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 61:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 62:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 63:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 64:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 65:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 66:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 67:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 68:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 69:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 70:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 71:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 72:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 73:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 74:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 75:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 76:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 77:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 78:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 79:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 80:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 81:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 82:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 83:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 84:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+
+Setting up time step 85:
+Final constraint equation: { } = { }
+Imported 90 cells to SAT database.
+Import proof for assert: $auto$async2sync.cc:116:execute$148 when $auto$async2sync.cc:107:execute$144.
+Import proof for assert: $auto$async2sync.cc:116:execute$154 when $auto$async2sync.cc:107:execute$150.
+Import proof for assert: $auto$async2sync.cc:116:execute$160 when $auto$async2sync.cc:107:execute$156.
+Import show expression: \phase
+Import show expression: \word_in
+Import show expression: \mode
+Import show expression: \miso
+
+Solving problem with 257713 variables and 710748 clauses..
+SAT proof finished - model found: FAIL!
+
+   ______                   ___       ___       _ _            _ _ 
+  (_____ \                 / __)     / __)     (_) |          | | |
+   _____) )___ ___   ___ _| |__    _| |__ _____ _| | _____  __| | |
+  |  ____/ ___) _ \ / _ (_   __)  (_   __|____ | | || ___ |/ _  |_|
+  | |   | |  | |_| | |_| || |       | |  / ___ | | || ____( (_| |_ 
+  |_|   |_|   \___/ \___/ |_|       |_|  \_____|_|\_)_____)\____|_|
+
+
+  Time Signal Name                                      Dec       Hex                                 Bin
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+  init $auto$async2sync.cc:107:execute$144                0         0                                   0
+  init $auto$async2sync.cc:107:execute$150                0         0                                   0
+  init $auto$async2sync.cc:107:execute$156                0         0                                   0
+  init $auto$async2sync.cc:116:execute$148                1         1                                   1
+  init $auto$async2sync.cc:116:execute$154                1         1                                   1
+  init $auto$async2sync.cc:116:execute$160                1         1                                   1
+  init $auto$async2sync.cc:253:execute$142                0         0                              000000
+  init \dut.fault_active                                  0         0                                   0
+  init \dut.frame_complete                                0         0                                   0
+  init \dut.ingress_word                          979361753  3a5fdfd9    00111010010111111101111111011001
+  init \dut.read_count                                    0         0                              000000
+  init \dut.read_pending                                  1         1                                   1
+  init \dut.start_q                                       0         0                                   0
+  init \initialized                                       0         0                                   0
+  init \mode                                              0         0                                   0
+  init \phase                                             0         0                             0000000
+  init \word_in                                           0         0    00000000000000000000000000000000
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+     1 \miso                                              0         0                                   0
+     1 \mode                                              0         0                                   0
+     1 \phase                                             0         0                             0000000
+     1 \word_in                                           0         0    00000000000000000000000000000000
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+     2 \miso                                              0         0                                   0
+     2 \mode                                              0         0                                   0
+     2 \phase                                             1         1                             0000001
+     2 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+     3 \miso                                              0         0                                   0
+     3 \mode                                              0         0                                   0
+     3 \phase                                             2         2                             0000010
+     3 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+     4 \miso                                              0         0                                   0
+     4 \mode                                              0         0                                   0
+     4 \phase                                             3         3                             0000011
+     4 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+     5 \miso                                              0         0                                   0
+     5 \mode                                              0         0                                   0
+     5 \phase                                             4         4                             0000100
+     5 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+     6 \miso                                              0         0                                   0
+     6 \mode                                              0         0                                   0
+     6 \phase                                             5         5                             0000101
+     6 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+     7 \miso                                              0         0                                   0
+     7 \mode                                              0         0                                   0
+     7 \phase                                             6         6                             0000110
+     7 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+     8 \miso                                              0         0                                   0
+     8 \mode                                              0         0                                   0
+     8 \phase                                             7         7                             0000111
+     8 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+     9 \miso                                              0         0                                   0
+     9 \mode                                              0         0                                   0
+     9 \phase                                             8         8                             0001000
+     9 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    10 \miso                                              0         0                                   0
+    10 \mode                                              0         0                                   0
+    10 \phase                                             9         9                             0001001
+    10 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    11 \miso                                              0         0                                   0
+    11 \mode                                              0         0                                   0
+    11 \phase                                            10         a                             0001010
+    11 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    12 \miso                                              0         0                                   0
+    12 \mode                                              0         0                                   0
+    12 \phase                                            11         b                             0001011
+    12 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    13 \miso                                              0         0                                   0
+    13 \mode                                              0         0                                   0
+    13 \phase                                            12         c                             0001100
+    13 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    14 \miso                                              0         0                                   0
+    14 \mode                                              0         0                                   0
+    14 \phase                                            13         d                             0001101
+    14 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    15 \miso                                              0         0                                   0
+    15 \mode                                              0         0                                   0
+    15 \phase                                            14         e                             0001110
+    15 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    16 \miso                                              0         0                                   0
+    16 \mode                                              0         0                                   0
+    16 \phase                                            15         f                             0001111
+    16 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    17 \miso                                              0         0                                   0
+    17 \mode                                              0         0                                   0
+    17 \phase                                            16        10                             0010000
+    17 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    18 \miso                                              0         0                                   0
+    18 \mode                                              0         0                                   0
+    18 \phase                                            17        11                             0010001
+    18 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    19 \miso                                              0         0                                   0
+    19 \mode                                              0         0                                   0
+    19 \phase                                            18        12                             0010010
+    19 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    20 \miso                                              0         0                                   0
+    20 \mode                                              0         0                                   0
+    20 \phase                                            19        13                             0010011
+    20 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    21 \miso                                              0         0                                   0
+    21 \mode                                              0         0                                   0
+    21 \phase                                            20        14                             0010100
+    21 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    22 \miso                                              0         0                                   0
+    22 \mode                                              0         0                                   0
+    22 \phase                                            21        15                             0010101
+    22 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    23 \miso                                              0         0                                   0
+    23 \mode                                              0         0                                   0
+    23 \phase                                            22        16                             0010110
+    23 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    24 \miso                                              0         0                                   0
+    24 \mode                                              0         0                                   0
+    24 \phase                                            23        17                             0010111
+    24 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    25 \miso                                              0         0                                   0
+    25 \mode                                              0         0                                   0
+    25 \phase                                            24        18                             0011000
+    25 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    26 \miso                                              0         0                                   0
+    26 \mode                                              0         0                                   0
+    26 \phase                                            25        19                             0011001
+    26 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    27 \miso                                              0         0                                   0
+    27 \mode                                              0         0                                   0
+    27 \phase                                            26        1a                             0011010
+    27 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    28 \miso                                              0         0                                   0
+    28 \mode                                              0         0                                   0
+    28 \phase                                            27        1b                             0011011
+    28 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    29 \miso                                              0         0                                   0
+    29 \mode                                              0         0                                   0
+    29 \phase                                            28        1c                             0011100
+    29 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    30 \miso                                              0         0                                   0
+    30 \mode                                              0         0                                   0
+    30 \phase                                            29        1d                             0011101
+    30 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    31 \miso                                              0         0                                   0
+    31 \mode                                              0         0                                   0
+    31 \phase                                            30        1e                             0011110
+    31 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    32 \miso                                              0         0                                   0
+    32 \mode                                              0         0                                   0
+    32 \phase                                            31        1f                             0011111
+    32 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    33 \miso                                              0         0                                   0
+    33 \mode                                              0         0                                   0
+    33 \phase                                            32        20                             0100000
+    33 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    34 \miso                                              0         0                                   0
+    34 \mode                                              0         0                                   0
+    34 \phase                                            33        21                             0100001
+    34 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    35 \miso                                              0         0                                   0
+    35 \mode                                              0         0                                   0
+    35 \phase                                            34        22                             0100010
+    35 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    36 \miso                                              0         0                                   0
+    36 \mode                                              0         0                                   0
+    36 \phase                                            35        23                             0100011
+    36 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    37 \miso                                              0         0                                   0
+    37 \mode                                              0         0                                   0
+    37 \phase                                            36        24                             0100100
+    37 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    38 \miso                                              0         0                                   0
+    38 \mode                                              0         0                                   0
+    38 \phase                                            37        25                             0100101
+    38 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    39 \miso                                              0         0                                   0
+    39 \mode                                              0         0                                   0
+    39 \phase                                            38        26                             0100110
+    39 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    40 \miso                                              0         0                                   0
+    40 \mode                                              0         0                                   0
+    40 \phase                                            39        27                             0100111
+    40 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    41 \miso                                              0         0                                   0
+    41 \mode                                              0         0                                   0
+    41 \phase                                            40        28                             0101000
+    41 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    42 \miso                                              0         0                                   0
+    42 \mode                                              0         0                                   0
+    42 \phase                                            41        29                             0101001
+    42 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    43 \miso                                              0         0                                   0
+    43 \mode                                              0         0                                   0
+    43 \phase                                            42        2a                             0101010
+    43 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    44 \miso                                              1         1                                   1
+    44 \mode                                              0         0                                   0
+    44 \phase                                            43        2b                             0101011
+    44 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    45 \miso                                              0         0                                   0
+    45 \mode                                              0         0                                   0
+    45 \phase                                            44        2c                             0101100
+    45 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    46 \miso                                              0         0                                   0
+    46 \mode                                              0         0                                   0
+    46 \phase                                            45        2d                             0101101
+    46 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    47 \miso                                              0         0                                   0
+    47 \mode                                              0         0                                   0
+    47 \phase                                            46        2e                             0101110
+    47 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    48 \miso                                              0         0                                   0
+    48 \mode                                              0         0                                   0
+    48 \phase                                            47        2f                             0101111
+    48 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    49 \miso                                              0         0                                   0
+    49 \mode                                              0         0                                   0
+    49 \phase                                            48        30                             0110000
+    49 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    50 \miso                                              0         0                                   0
+    50 \mode                                              0         0                                   0
+    50 \phase                                            49        31                             0110001
+    50 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    51 \miso                                              0         0                                   0
+    51 \mode                                              0         0                                   0
+    51 \phase                                            50        32                             0110010
+    51 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    52 \miso                                              0         0                                   0
+    52 \mode                                              0         0                                   0
+    52 \phase                                            51        33                             0110011
+    52 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    53 \miso                                              0         0                                   0
+    53 \mode                                              0         0                                   0
+    53 \phase                                            52        34                             0110100
+    53 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    54 \miso                                              0         0                                   0
+    54 \mode                                              0         0                                   0
+    54 \phase                                            53        35                             0110101
+    54 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    55 \miso                                              0         0                                   0
+    55 \mode                                              0         0                                   0
+    55 \phase                                            54        36                             0110110
+    55 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    56 \miso                                              0         0                                   0
+    56 \mode                                              0         0                                   0
+    56 \phase                                            55        37                             0110111
+    56 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    57 \miso                                              0         0                                   0
+    57 \mode                                              0         0                                   0
+    57 \phase                                            56        38                             0111000
+    57 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    58 \miso                                              0         0                                   0
+    58 \mode                                              0         0                                   0
+    58 \phase                                            57        39                             0111001
+    58 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    59 \miso                                              0         0                                   0
+    59 \mode                                              0         0                                   0
+    59 \phase                                            58        3a                             0111010
+    59 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    60 \miso                                              0         0                                   0
+    60 \mode                                              0         0                                   0
+    60 \phase                                            59        3b                             0111011
+    60 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    61 \miso                                              0         0                                   0
+    61 \mode                                              0         0                                   0
+    61 \phase                                            60        3c                             0111100
+    61 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    62 \miso                                              0         0                                   0
+    62 \mode                                              0         0                                   0
+    62 \phase                                            61        3d                             0111101
+    62 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    63 \miso                                              0         0                                   0
+    63 \mode                                              0         0                                   0
+    63 \phase                                            62        3e                             0111110
+    63 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    64 \miso                                              0         0                                   0
+    64 \mode                                              0         0                                   0
+    64 \phase                                            63        3f                             0111111
+    64 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    65 \miso                                              0         0                                   0
+    65 \mode                                              0         0                                   0
+    65 \phase                                            64        40                             1000000
+    65 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    66 \miso                                              0         0                                   0
+    66 \mode                                              0         0                                   0
+    66 \phase                                            65        41                             1000001
+    66 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    67 \miso                                              0         0                                   0
+    67 \mode                                              0         0                                   0
+    67 \phase                                            66        42                             1000010
+    67 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    68 \miso                                              0         0                                   0
+    68 \mode                                              0         0                                   0
+    68 \phase                                            67        43                             1000011
+    68 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    69 \miso                                              0         0                                   0
+    69 \mode                                              0         0                                   0
+    69 \phase                                            68        44                             1000100
+    69 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    70 \miso                                              0         0                                   0
+    70 \mode                                              0         0                                   0
+    70 \phase                                            69        45                             1000101
+    70 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    71 \miso                                              0         0                                   0
+    71 \mode                                              0         0                                   0
+    71 \phase                                            70        46                             1000110
+    71 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    72 \miso                                              0         0                                   0
+    72 \mode                                              0         0                                   0
+    72 \phase                                            71        47                             1000111
+    72 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    73 \miso                                              0         0                                   0
+    73 \mode                                              0         0                                   0
+    73 \phase                                            72        48                             1001000
+    73 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    74 \miso                                              0         0                                   0
+    74 \mode                                              0         0                                   0
+    74 \phase                                            73        49                             1001001
+    74 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    75 \miso                                              0         0                                   0
+    75 \mode                                              0         0                                   0
+    75 \phase                                            74        4a                             1001010
+    75 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    76 \miso                                              0         0                                   0
+    76 \mode                                              0         0                                   0
+    76 \phase                                            75        4b                             1001011
+    76 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    77 \miso                                              0         0                                   0
+    77 \mode                                              0         0                                   0
+    77 \phase                                            76        4c                             1001100
+    77 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    78 \miso                                              0         0                                   0
+    78 \mode                                              0         0                                   0
+    78 \phase                                            77        4d                             1001101
+    78 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    79 \miso                                              0         0                                   0
+    79 \mode                                              0         0                                   0
+    79 \phase                                            78        4e                             1001110
+    79 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    80 \miso                                              0         0                                   0
+    80 \mode                                              0         0                                   0
+    80 \phase                                            79        4f                             1001111
+    80 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    81 \miso                                              0         0                                   0
+    81 \mode                                              0         0                                   0
+    81 \phase                                             0         0                             0000000
+    81 \word_in                                  -979361754  c5a02026    11000101101000000010000000100110
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    82 \miso                                              0         0                                   0
+    82 \mode                                              0         0                                   0
+    82 \phase                                             1         1                             0000001
+    82 \word_in                                           0         0    00000000000000000000000000000000
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    83 \miso                                              0         0                                   0
+    83 \mode                                              0         0                                   0
+    83 \phase                                             2         2                             0000010
+    83 \word_in                                           0         0    00000000000000000000000000000000
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    84 \miso                                              0         0                                   0
+    84 \mode                                              0         0                                   0
+    84 \phase                                             3         3                             0000011
+    84 \word_in                                           0         0    00000000000000000000000000000000
+  ---- ---------------------------------------- ----------- --------- -----------------------------------
+    85 \miso                                              0         0                                   0
+    85 \mode                                              0         0                                   0
+    85 \phase                                             4         4                             0000100
+    85 \word_in                                           0         0    00000000000000000000000000000000
+Dumping SAT model to WaveJSON file 'formal/cyclic_control/counterexample.json'.

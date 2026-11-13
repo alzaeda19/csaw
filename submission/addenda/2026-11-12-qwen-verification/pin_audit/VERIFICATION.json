@@ -1,0 +1,64 @@
+{
+  "verified_utc": "2026-11-13T02:16:09.343591+00:00",
+  "pin_checks": [
+    {
+      "signal": "SCK",
+      "vendor_pin_name_package_bank_match": true,
+      "icebox_coordinate_to_package_match": true
+    },
+    {
+      "signal": "RST_N",
+      "vendor_pin_name_package_bank_match": true,
+      "icebox_coordinate_to_package_match": true
+    },
+    {
+      "signal": "MOSI",
+      "vendor_pin_name_package_bank_match": true,
+      "icebox_coordinate_to_package_match": true
+    },
+    {
+      "signal": "MISO",
+      "vendor_pin_name_package_bank_match": true,
+      "icebox_coordinate_to_package_match": true
+    },
+    {
+      "signal": "NORM_CS_N",
+      "vendor_pin_name_package_bank_match": true,
+      "icebox_coordinate_to_package_match": true
+    },
+    {
+      "signal": "START",
+      "vendor_pin_name_package_bank_match": true,
+      "icebox_coordinate_to_package_match": true
+    },
+    {
+      "signal": "ENC_DEC",
+      "vendor_pin_name_package_bank_match": true,
+      "icebox_coordinate_to_package_match": true
+    },
+    {
+      "signal": "BUSY",
+      "vendor_pin_name_package_bank_match": true,
+      "icebox_coordinate_to_package_match": true
+    },
+    {
+      "signal": "ICE_LED",
+      "vendor_pin_name_package_bank_match": true,
+      "icebox_coordinate_to_package_match": true
+    }
+  ],
+  "original_files_size_sha256_gitblob_checks": 6,
+  "source_snapshot_and_excerpt_checks": true,
+  "peer_finals_copied_from_native": 2,
+  "repository_head": "61346ebfc534a75c46b098341563d1ef213417fc",
+  "repository_status_stdout": "",
+  "repository_status_exit_code": 0,
+  "design_execution": false,
+  "repository_writes": false,
+  "hardware_access": false,
+  "scope": "Static pin documentation and preservation checks only",
+  "ai_retained_records": 100,
+  "ai_exact_scalar_fields": 645,
+  "ai_native_snapshot_and_line_hashes_verified": true,
+  "revised_record_projection_exact_values_and_prefix_hashes_pass": true
+}

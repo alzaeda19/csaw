@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "preserved_source_files": 8,
+  "core_input_connections_identical": true,
+  "core_inputs": [
+    "io_9_31_1",
+    "io_13_31_1",
+    "io_16_31_0",
+    "io_17_31_0",
+    "io_18_31_1",
+    "io_19_31_1"
+  ],
+  "BUSY_LED_connections_identical": true,
+  "MISO_difference_is_XOR_mask": true,
+  "proofs": {
+    "normal": {
+      "expected": "SUCCESS!",
+      "actual": "SAT proof finished - no model found: SUCCESS!",
+      "pass": true
+    },
+    "control_allow_fault": {
+      "expected": "FAIL!",
+      "actual": "SAT proof finished - model found: FAIL!",
+      "pass": true
+    },
+    "control_trace": {
+      "expected": "FAIL!",
+      "actual": "SAT proof finished - model found: FAIL!",
+      "pass": true
+    },
+    "edge_normal": {
+      "expected": "SUCCESS!",
+      "actual": "SAT proof finished - no model found: SUCCESS!",
+      "pass": true
+    },
+    "edge_control": {
+      "expected": "FAIL!",
+      "actual": "SAT proof finished - model found: FAIL!",
+      "pass": true
+    },
+    "cyclic_control": {
+      "expected": "FAIL!",
+      "actual": "SAT proof finished - model found: FAIL!",
+      "pass": true
+    },
+    "cyclic_induction": {
+      "expected": "inductive proof success",
+      "actual": "Base case and induction step proved at length 100",
+      "pass": true,
+      "scope": "Unbounded cyclic normal transactions in the synchronous/async2sync model, with fresh arbitrary allowed payload/mode for each transaction."
+    }
+  },
+  "explicit_edge_control_fault_samples": [
+    {
+      "step": 86,
+      "cycle": 43,
+      "miso": 1,
+      "mode_a": 0,
+      "mode_b": 0,
+      "word_a": 3315605542,
+      "word_b": 0
+    },
+    {
+      "step": 87,
+      "cycle": 43,
+      "miso": 1,
+      "mode_a": 0,
+      "mode_b": 0,
+      "word_a": 3315605542,
+      "word_b": 0
+    }
+  ],
+  "ram_controls": [
+    {
+      "design": "baseline",
+      "instance": "recovered.ram40_6_11",
+      "WCLK": 0,
+      "WCLKE": 0,
+      "WE": 1
+    },
+    {
+      "design": "baseline",
+      "instance": "recovered.ram40_6_5",
+      "WCLK": 0,
+      "WCLKE": 0,
+      "WE": 1
+    },
+    {
+      "design": "baseline",
+      "instance": "recovered.ram40_6_7",
+      "WCLK": 0,
+      "WCLKE": 0,
+      "WE": 1
+    },
+    {
+      "design": "baseline",
+      "instance": "recovered.ram40_6_9",
+      "WCLK": 0,
+      "WCLKE": 0,
+      "WE": 1
+    },
+    {
+      "design": "modified",
+      "instance": "recovered.ram40_6_11",
+      "WCLK": 0,
+      "WCLKE": 0,
+      "WE": 1
+    },
+    {
+      "design": "modified",
+      "instance": "recovered.ram40_6_5",
+      "WCLK": 0,
+      "WCLKE": 0,
+      "WE": 1
+    },
+    {
+      "design": "modified",
+      "instance": "recovered.ram40_6_7",
+      "WCLK": 0,
+      "WCLKE": 0,
+      "WE": 1
+    },
+    {
+      "design": "modified",
+      "instance": "recovered.ram40_6_9",
+      "WCLK": 0,
+      "WCLKE": 0,
+      "WE": 1
+    }
+  ],
+  "quantification": "Bounded two-transaction models and an unbounded cyclic synchronous protocol model; arbitrary allowed stable 32-bit word/mode per transaction plus arbitrary extraction MOSI. Only the disclosed encryption-word case is excluded.",
+  "compositional_argument": "No XOR mask under these conditions plus unchanged inputs to the same recovered core implies equal sampled outputs for coupled core state. The core itself is abstracted, not cryptographically verified.",
+  "limits": [
+    "Explicit-edge model is bounded to 325 global samples; unbounded cyclic proof uses the synchronous async2sync model.",
+    "Reset, full frames, stable mode, prescribed launch/readout sequence are assumptions.",
+    "No claim for malformed frames, arbitrary clock/control glitches, metastability, real board timing, or cipher identity.",
+    "Negative controls intentionally permit existing disclosed fault behavior; no new behavior is generated."
+  ]
+}

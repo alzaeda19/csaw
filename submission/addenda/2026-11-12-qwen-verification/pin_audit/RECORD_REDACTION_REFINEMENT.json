@@ -1,0 +1,11 @@
+{
+  "initial_folder": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_original_pin_audit_20261113T020751Z_u4o_hhf6",
+  "initial_manifest_sha256": "396204ebc21b5129861d38e75a53bc12c8260da8cb4553523c1c81d9f686873a",
+  "reason": "Suppress diagnostic ciphertext echoes in shared record projection; preserve initial sealed evidence unchanged.",
+  "technical_findings_changed": false,
+  "export_execution": {
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"source\": \"/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-12-19-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1d23f-7ed7-7fa1-9afd-64875b8a6cf8.jsonl\",\n    \"records\": 73,\n    \"exact_fields\": 470,\n    \"cutoff\": \"2026-11-13T02:17:44.953Z\"\n  },\n  {\n    \"source\": \"/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T21-07-56-01a1d2a9-5b06-7930-859c-aa0fa0911cee.jsonl\",\n    \"records\": 27,\n    \"exact_fields\": 175,\n    \"cutoff\": \"2026-11-13T02:11:47.882Z\"\n  }\n]\n",
+    "stderr": ""
+  }
+}

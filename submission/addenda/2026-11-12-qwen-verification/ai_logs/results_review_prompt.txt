@@ -1,0 +1,312 @@
+Audit these NEW results for overclaims and defects. Provide concise final review (maximum 700 words), not implementation, payloads, concealment/evasion changes, key extraction or challenge solutions. You previously gave a generic review: that was not independent verification. Now inspect the actual verification harness and exact tool outcomes. The frozen wrapper feeds all six core inputs directly; BUSY/LED are direct core outputs; only MISO has an XOR output mask. A constant-zero abstract core exposes any mask event. The proposed compositional claim is mask-free behavior under two specified well-formed normal transactions, combined with unchanged-core input coupling. It is NOT a proof that the underlying cipher is cryptographically correct, a proof for arbitrary protocol traces, or an unbounded proof over indefinitely many operations. Need assess whether assume/clock/reset/sampling semantics support the scoped claim. Yosys uses async2sync and 161 SAT steps. A negative control drops only the normal-word exclusions and finds a counterexample. No design was changed. Review boundedness and what extra checks are needed; do not equate a named cipher with architectural recovery.
+
+FILE formal/normal_protocol_harness.sv
+// Verification-only abstraction. This is not a replacement design.
+// A zero-valued core makes every asserted XOR output mask observable.
+// Coupled unchanged core inputs plus the XOR identity lift the mask result
+// to arbitrary recovered-core outputs. No cipher functionality is proved here.
+module chip(
+    input io_9_31_1, io_13_31_1, io_16_31_0, io_17_31_0,
+          io_18_31_1, io_19_31_1,
+    output io_16_31_1, io_8_31_1, io_19_31_0
+);
+    assign io_16_31_1 = 1'b0;
+    assign io_8_31_1 = 1'b0;
+    assign io_19_31_0 = 1'b0;
+endmodule
+
+module normal_protocol_harness(input SCK);
+    (* anyconst *) reg [31:0] word_a, word_b;
+    (* anyconst *) reg mode_a, mode_b;
+    (* anyseq *) reg extraction_mosi;
+    reg [7:0] cycle = 0;
+    always @(posedge SCK) if (cycle < 8'd160) cycle <= cycle + 8'd1;
+    wire second = cycle >= 8'd80;
+    wire [7:0] phase = second ? cycle - 8'd80 : cycle;
+    wire [31:0] word_in = second ? word_b : word_a;
+    wire mode = second ? mode_b : mode_a;
+    wire loading = phase >= 1 && phase <= 32;
+    wire reading = phase >= 42 && phase <= 73;
+    wire cs_n = !(loading || reading);
+    wire reset_n = cycle != 0;
+    wire start = phase == 34;
+    wire mosi = loading ? word_in[32-phase] : extraction_mosi;
+    wire miso, busy, led;
+    protocol_dut dut(SCK, reset_n, mosi, cs_n, start, mode, miso, busy, led);
+
+    always @* begin
+`ifndef ALLOW_DISCLOSED_FAULT_CASE
+        assume(mode_a || word_a != 32'hC5A02026);
+        assume(mode_b || word_b != 32'hC5A02026);
+`endif
+    end
+    always @(posedge SCK) begin
+        if (cycle >= 1 && cycle <= 159) begin
+            assert(miso == 0);
+            assert(busy == 0);
+            assert(led == 0);
+        end
+    end
+endmodule
+
+
+FILE formal/normal.ys
+read_verilog -formal -sv  sources/modified_protocol_dut.sv formal/normal_protocol_harness.sv
+prep -top normal_protocol_harness -flatten
+async2sync
+dffunmap
+opt_clean
+sat -seq 161 -set-assumes -prove-asserts -verify -show-ports -dump_json formal/normal/counterexample.json
+
+
+FILE sources/modified_protocol_dut.sv
+// AI-authored, publicly documented simulation-only one-bit fault demonstration.
+// No recovered-core edits, secret access, obfuscation, or board pin claim.
+module protocol_dut(
+    input wire SCK, RST_N, MOSI, NORM_CS_N, START, ENC_DEC,
+    output wire MISO, BUSY, ICE_LED
+);
+    localparam [31:0] DEMO_WORD = 32'hC5A02026;
+    wire raw_miso;
+    reg [31:0] ingress_word;
+    reg [5:0] ingress_count, read_count;
+    reg frame_complete, start_q, read_pending, fault_active;
+
+    chip recovered(
+        .io_9_31_1(SCK), .io_13_31_1(RST_N), .io_16_31_0(MOSI),
+        .io_17_31_0(NORM_CS_N), .io_18_31_1(START), .io_19_31_1(ENC_DEC),
+        .io_16_31_1(raw_miso), .io_8_31_1(BUSY), .io_19_31_0(ICE_LED)
+    );
+
+    // Count==1 AFTER the first extraction edge: invert only sampled bit31.
+    assign MISO = raw_miso ^ (fault_active && !NORM_CS_N && read_count == 6'd1);
+
+    // CS deassertion delimits a frame even when no SCK edge occurs while CS is high.
+    // Only this counter uses CS as an asynchronous clear; RST_N remains synchronous.
+    always @(posedge SCK or posedge NORM_CS_N) begin
+        if (NORM_CS_N)
+            ingress_count <= 6'd0;
+        else if (!RST_N)
+            ingress_count <= 6'd0;
+        else if (!read_pending && ingress_count < 6'd33)
+            ingress_count <= ingress_count + 6'd1;
+    end
+
+    always @(posedge SCK) begin
+        if (!RST_N) begin
+            ingress_word <= 32'd0;
+            read_count <= 6'd0;
+            frame_complete <= 1'b0;
+            start_q <= 1'b0;
+            read_pending <= 1'b0;
+            fault_active <= 1'b0;
+        end else begin
+            start_q <= START;
+            if (!NORM_CS_N && !read_pending) begin
+                ingress_word <= {ingress_word[30:0], MOSI};
+                if (ingress_count == 6'd31)
+                    frame_complete <= 1'b1;
+                else if (ingress_count == 6'd0 || ingress_count >= 6'd32)
+                    frame_complete <= 1'b0;
+            end
+
+            if (START && !start_q && NORM_CS_N) begin
+                fault_active <= frame_complete && !ENC_DEC && ingress_word == DEMO_WORD;
+                frame_complete <= 1'b0; // A START consumes the completed ingress.
+                read_pending <= 1'b1;
+                read_count <= 6'd0;
+            end else if (read_pending && !NORM_CS_N) begin
+                read_count <= read_count + 6'd1;
+                if (read_count == 6'd31) begin
+                    read_pending <= 1'b0;
+                    fault_active <= 1'b0;
+                end
+            end
+            // Extraction MOSI is deliberately excluded from ingress qualification.
+        end
+    end
+endmodule
+
+
+FILE analysis/OVERHEAD.json
+{
+  "method": "Same installed Yosys synth_ice40 defaults, same frozen baseline and respective frozen wrappers; mapped primitive counts, no placement/routing/timing or power result.",
+  "resources": {
+    "lut4": {
+      "baseline": 1439,
+      "modified": 1475,
+      "added": 36,
+      "percent": 2.5017
+    },
+    "flip_flops": {
+      "baseline": 71,
+      "modified": 119,
+      "added": 48,
+      "percent": 67.6056
+    },
+    "ram4k": {
+      "baseline": 4,
+      "modified": 4,
+      "added": 0,
+      "percent": 0.0
+    },
+    "carry": {
+      "baseline": 0,
+      "modified": 13,
+      "added": 13,
+      "percent": null
+    },
+    "total_cells_excluding_scopeinfo": {
+      "baseline": 1514,
+      "modified": 1611,
+      "added": 97,
+      "percent": 6.4069
+    }
+  },
+  "negligible_overhead_established": false
+}
+
+
+FILE analysis/MEMORY_PROPERTIES.json
+{
+  "method": "Decoded effective table properties from original INIT payloads using the supplied primitive model; raw values are not emitted. Effective address order is not claimed to equal algorithm byte order.",
+  "memories": [
+    {
+      "instance": "ram40_6_5",
+      "read_mode": 1,
+      "effective_address_bits": 8,
+      "effective_entries": 256,
+      "connected_output_bits": 8,
+      "distinct_outputs": 256,
+      "is_bijection": true,
+      "is_affine_over_bits": false,
+      "effective_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+      "write_clock_net": "n5",
+      "write_clock_enable_net": "n5",
+      "write_enable_net": "n466"
+    },
+    {
+      "instance": "ram40_6_7",
+      "read_mode": 1,
+      "effective_address_bits": 8,
+      "effective_entries": 256,
+      "connected_output_bits": 8,
+      "distinct_outputs": 256,
+      "is_bijection": true,
+      "is_affine_over_bits": false,
+      "effective_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+      "write_clock_net": "n5",
+      "write_clock_enable_net": "n5",
+      "write_enable_net": "n466"
+    },
+    {
+      "instance": "ram40_6_9",
+      "read_mode": 1,
+      "effective_address_bits": 8,
+      "effective_entries": 256,
+      "connected_output_bits": 8,
+      "distinct_outputs": 256,
+      "is_bijection": true,
+      "is_affine_over_bits": false,
+      "effective_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+      "write_clock_net": "n5",
+      "write_clock_enable_net": "n5",
+      "write_enable_net": "n466"
+    },
+    {
+      "instance": "ram40_6_11",
+      "read_mode": 1,
+      "effective_address_bits": 8,
+      "effective_entries": 256,
+      "connected_output_bits": 8,
+      "distinct_outputs": 256,
+      "is_bijection": true,
+      "is_affine_over_bits": false,
+      "effective_table_sha256": "ab40298c12186501c43297c3d81ee4fb8aabbe95246c8cd48bf5c231b07f173f",
+      "write_clock_net": "n5",
+      "write_clock_enable_net": "n5",
+      "write_enable_net": "n466"
+    }
+  ],
+  "pairs": [
+    {
+      "a": "ram40_6_5",
+      "b": "ram40_6_7",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_5",
+      "b": "ram40_6_9",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_5",
+      "b": "ram40_6_11",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_7",
+      "b": "ram40_6_9",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_7",
+      "b": "ram40_6_11",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    },
+    {
+      "a": "ram40_6_9",
+      "b": "ram40_6_11",
+      "identical_in_effective_bit_order": true,
+      "inverse_in_effective_bit_order": false
+    }
+  ],
+  "key_recovered": false,
+  "named_cipher_identified": false,
+  "scope_limit": "Fixed initialized storage is observed; this does not identify a key, cipher, key schedule, or secret-bearing meaning."
+}
+
+
+FILE analysis/STANDARD_SUBSTITUTION_COMPARISON.json
+{
+  "reference": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197-upd1.pdf",
+  "reference_scope": "Sections 4 and 5.1.1, equation 5.3 and Table 4; independently implemented finite-field/affine definition. Public standard, no challenge solution.",
+  "standard_sbox_sha256": "c2d8e5eed6cbebd8625fc18f81486a7733c04f9b0129ffbe974c68b90308b4f2",
+  "comparisons": [
+    {
+      "instance": "ram40_6_5",
+      "entries_compared": 256,
+      "matches_AES_SBOX_exact_effective_order": false,
+      "matches_AES_inverse_SBOX_exact_effective_order": false
+    },
+    {
+      "instance": "ram40_6_7",
+      "entries_compared": 256,
+      "matches_AES_SBOX_exact_effective_order": false,
+      "matches_AES_inverse_SBOX_exact_effective_order": false
+    },
+    {
+      "instance": "ram40_6_9",
+      "entries_compared": 256,
+      "matches_AES_SBOX_exact_effective_order": false,
+      "matches_AES_inverse_SBOX_exact_effective_order": false
+    },
+    {
+      "instance": "ram40_6_11",
+      "entries_compared": 256,
+      "matches_AES_SBOX_exact_effective_order": false,
+      "matches_AES_inverse_SBOX_exact_effective_order": false
+    }
+  ],
+  "whole_cipher_identified": false,
+  "key_extraction_performed": false,
+  "limitation": "A matching component does not identify the surrounding 32-bit cipher or its key schedule. A mismatch in this effective order does not rule out an algorithm with different bit wiring."
+}
+
+
+FACTUAL PIN AUDIT: Original host, board-designer schematic for Feb 2026 Rev A ICE40UP5K-SG48, and IceStorm table agree SCK GPIO6->36; reset GPIO7->34; MOSI GPIO8->32; MISO GPIO9->31; CS GPIO10->28; START GPIO12->27; mode GPIO13->25; BUSY GPIO14->23; LED->38. Existing adapter calls package38 BUSY and package23 LED; they are logically equal. Physical unit/revision not tested.

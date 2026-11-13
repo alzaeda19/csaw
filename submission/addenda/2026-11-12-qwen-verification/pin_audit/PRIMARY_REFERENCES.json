@@ -1,0 +1,27 @@
+{
+  "board_hardware": {
+    "url": "https://raw.githubusercontent.com/kiwih/hackster-programmer/e664a4335e14bdef1e95b8a1a7e2f3c340777f98/hardware/unsw-cse-hackster-cc-by-sa-4.0/cse-hackster-feb-2026.pdf",
+    "retrieved_utc": "2026-11-13T02:09:26.847772+00:00",
+    "bytes": 734879,
+    "sha256": "d22dab37a784d9ae325a02ac13b2177a6d5f26e2b779b802fa4dbacfe7c47a04",
+    "git_blob_id": "d8cba03cc2fcca80236da4f35ec06189aebb808b",
+    "origin": "Primary board designer documentation linked in the original challenge README; not challenge solution material.",
+    "attribution": "Hammond Pearce, UNSW Sydney - CC BY-SA 4.0"
+  },
+  "vendor_pinout": "https://www.latticesemi.com/view_document?document_id=51971",
+  "vendor_datasheet": {
+    "url": "https://www.latticesemi.com/view_document?document_id=51968",
+    "document": "FPGA-DS-02008-2.4",
+    "pages_used": [
+      13,
+      43
+    ],
+    "use": "General clock-input distinction and package/industrial-grade nomenclature only",
+    "local_pdf_downloaded": false
+  },
+  "discovery_pages": [
+    "https://github.com/kiwih/hackster-programmer",
+    "https://cgi.cse.unsw.edu.au/~cs6420/labs/lab00introduction/"
+  ],
+  "excluded": "No challenge solution, later challenge branch, board example RTL or shared implementation read."
+}

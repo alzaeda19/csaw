@@ -1,0 +1,36 @@
+{
+  "method": "Same installed Yosys synth_ice40 defaults, same frozen baseline and respective frozen wrappers; mapped primitive counts, no placement/routing/timing or power result.",
+  "resources": {
+    "lut4": {
+      "baseline": 1439,
+      "modified": 1475,
+      "added": 36,
+      "percent": 2.5017
+    },
+    "flip_flops": {
+      "baseline": 71,
+      "modified": 119,
+      "added": 48,
+      "percent": 67.6056
+    },
+    "ram4k": {
+      "baseline": 4,
+      "modified": 4,
+      "added": 0,
+      "percent": 0.0
+    },
+    "carry": {
+      "baseline": 0,
+      "modified": 13,
+      "added": 13,
+      "percent": null
+    },
+    "total_cells_excluding_scopeinfo": {
+      "baseline": 1514,
+      "modified": 1611,
+      "added": 97,
+      "percent": 6.4069
+    }
+  },
+  "negligible_overhead_established": false
+}
