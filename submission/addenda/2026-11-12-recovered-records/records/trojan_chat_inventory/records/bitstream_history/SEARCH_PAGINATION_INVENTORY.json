@@ -1,0 +1,93 @@
+{
+  "created_at_utc": "2026-11-13T01:37:01Z",
+  "task": "Bounded read-only inventory of one own-project Codex chat",
+  "target": {
+    "hostId": "local",
+    "threadId": "01a1b6fe-5489-7612-9a8b-f043dfd9321e",
+    "expected_title": "Verify regenerated CSAW bitstream",
+    "actual_title": "Verify regenerated CSAW bitstream",
+    "title_match": true
+  },
+  "api": "mcp__codex_app__read_thread",
+  "requests": [
+    {
+      "request": {
+        "hostId": "local",
+        "threadId": "01a1b6fe-5489-7612-9a8b-f043dfd9321e",
+        "includeOutputs": false,
+        "maxOutputCharsPerItem": 6000,
+        "turnLimit": 20
+      },
+      "result": "Rejected before history returned: turnLimit must be <=10.",
+      "retained_content": false
+    },
+    {
+      "request": {
+        "hostId": "local",
+        "threadId": "01a1b6fe-5489-7612-9a8b-f043dfd9321e",
+        "includeOutputs": false,
+        "maxOutputCharsPerItem": 10000,
+        "turnLimit": 10
+      },
+      "result": "Success",
+      "pagination": {
+        "order": "newest_first",
+        "limit": 10,
+        "nextCursor": null,
+        "hasMore": false
+      },
+      "returned_turn_count": 4
+    }
+  ],
+  "pagination_conclusion": "API end of history reached on first successful page: hasMore=false, nextCursor=null. No older-turn cursor available. This conclusion concerns the API-visible history, not deleted or unavailable records.",
+  "source_item_type_counts": {
+    "functionCallOutput": 1,
+    "reasoning": 17,
+    "agentMessage": 11,
+    "userMessage": 3,
+    "commandExecution": 23,
+    "mcpToolCall": 2
+  },
+  "retention": {
+    "user_messages": 3,
+    "assistant_messages": 11,
+    "total_visible_records": 14,
+    "complete_visible_items": 13,
+    "excerpted_visible_items": 1,
+    "raw_api_response_saved": false,
+    "reasoning_saved": false,
+    "commands_or_tool_arguments_saved": false,
+    "platform_instructions_saved": false,
+    "encrypted_data_saved": false,
+    "quoted_reference_preview_saved": false
+  },
+  "omissions": [
+    {
+      "item_id": "01a1b6fe-5961-7332-bd57-c2f6594cabc0",
+      "reason": "Retained only the exact explicit current request. Excluded platform reference wrapper and bounded cached prior-chat quotation; not treated as independent evidence or a current instruction."
+    },
+    {
+      "turn_id": "01a1cb96-32be-7031-ad91-66382a092f27",
+      "reason": "The API returned an assistant recap but no visible user message for this turn. No prompt reconstructed."
+    },
+    {
+      "reason": "Excluded reasoning item bodies/metadata, command executions, tool calls, function outputs, thread preview, and unrelated app fields from the written export."
+    }
+  ],
+  "boundaries": {
+    "start": "Oldest returned turn starts 2026-11-07T17:11:23Z",
+    "end": "Newest returned turn ends 2026-11-11T17:09:52Z",
+    "contamination_boundary_encountered": false,
+    "external_reference_followed": false,
+    "reason_external_reference_not_followed": "Target is bounded to this Codex chat; separate Troubleshoot dot issues source is only referenced. Parent inventory may handle that source separately."
+  },
+  "limitations": [
+    "read_thread is an app-level visible-history representation; no native line numbers, source-line hashes, hidden content, deleted messages, or independent provider attestation recovered.",
+    "API maxOutputCharsPerItem was 10000. Every retained visible item was under that size; no returned retained visible item displayed a truncation marker. Original cached preview was already bounded and was omitted.",
+    "Turn times are supplied by the API; no invented per-item timestamps.",
+    "Output text hashes establish integrity of retained output strings, not authenticity of engineering execution.",
+    "Comparison is limited to the five explicitly indexed message files. No claim of global archive uniqueness.",
+    "No original cipher/encryption explanation found in this API-visible chat.",
+    "No build, simulation, hardware operation, repository modification, external messaging, or design execution performed."
+  ]
+}

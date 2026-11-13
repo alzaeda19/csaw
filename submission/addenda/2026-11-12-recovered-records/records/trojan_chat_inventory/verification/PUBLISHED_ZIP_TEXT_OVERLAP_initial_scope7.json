@@ -1,0 +1,54 @@
+{
+  "source_archive": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_documentation_update_2026-11-12/submission.zip",
+  "archive_sha256": "4e158096547a915fc35a913f9d7481da20149dfd5a02428a8793af163df469ef",
+  "published_commit": "c5021a4e04205b45d778d216177669164aee68e2",
+  "text_entries_searched": 220,
+  "records_compared": 7,
+  "exact_text_match_records": 0,
+  "comparison": "Exact retained text as substring of a published text artifact or parsed visible JSON string. Hidden-reasoning/encrypted blocks excluded from parsed strings; no missing dialogue reconstructed.",
+  "limits": "This compares the published311-file ZIP, not every file elsewhere in the1185-file Git repository or every possible prior export. No-match is not proof of globally new information.",
+  "records": [
+    {
+      "scope": "clean_nov11_status",
+      "record_id": "fco_01a1cb96-3360-7c43-8d1a-a663e6d32ce7",
+      "text_sha256": "c7700189d2a801d94467befdeacc79d265eca1b48513f35114abccb3b3a32fae",
+      "matches_published_zip_entries": []
+    },
+    {
+      "scope": "clean_nov11_status",
+      "record_id": "msg_040df524ee2285a0016af4a15c89a087d181c91a67003e2d4d",
+      "text_sha256": "d01714ac4a3132aef16c3f3021f2a48cbae10eeb3cb42dccac8d01477c06c85d",
+      "matches_published_zip_entries": []
+    },
+    {
+      "scope": "clean_nov11_status",
+      "record_id": "msg_040df524ee2285a0016af4a1655a9087d1b0dd888d85934828",
+      "text_sha256": "c3f7523d8d174310f67985c3c0cdd2e8689d868368f98fc429844fc11ad03fef",
+      "matches_published_zip_entries": []
+    },
+    {
+      "scope": "dot_excerpt",
+      "record_id": "2b4a4a7c-726b-465d-8a3f-26dc309b404c:1459",
+      "text_sha256": "61276e9015df3f2eb527127599f003a6a38df9cea6846ee0be9639d837c2c431",
+      "matches_published_zip_entries": []
+    },
+    {
+      "scope": "dot_excerpt",
+      "record_id": "d858c260-0d27-4bc0-b1e8-d3dcafe75c28:1137",
+      "text_sha256": "ea959381ae2f6845ba7948c78183b1d26be8b20ffc6b4cba1b3d7e435b89852b",
+      "matches_published_zip_entries": []
+    },
+    {
+      "scope": "dot_excerpt",
+      "record_id": "d858c260-0d27-4bc0-b1e8-d3dcafe75c28:1816",
+      "text_sha256": "6207756a5c99ac03256eb0717fcf406e5e295260ec2bcd101837febc932f4ccc",
+      "matches_published_zip_entries": []
+    },
+    {
+      "scope": "dot_excerpt",
+      "record_id": "d858c260-0d27-4bc0-b1e8-d3dcafe75c28:1934",
+      "text_sha256": "4c59d09ddcec7439fbf8f14138ce9f120eaf25d32b1642250d053eb6fb814c0c",
+      "matches_published_zip_entries": []
+    }
+  ]
+}

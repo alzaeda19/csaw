@@ -1,0 +1,100 @@
+Act as a careful hardware-verification engineer. Turn the supplied incomplete Python code into a defensive verification harness for existing, unchanged RTL.
+You are running in an ordinary Ollama chat. You cannot save files or execute commands. Never claim that you created a file, compiled RTL, ran a detector, or passed tests. Provide file contents and clearly distinguish proposed commands from observed results.
+Requirements:
+1. Identify missing inputs, dependencies and configuration before implementing anything. Ask for the actual RTL filename, top module, primitive libraries and existing normal-operation testbench.
+2. Remove Trojan insertion, payload generation and detector-evasion functionality. Work only with existing RTL supplied for verification.
+3. Eliminate fabricated results. A hard-coded CLEAN verdict, literal "generated_code", or unconditional success flag is unacceptable. Missing tools or models must produce NOT_RUN or UNAVAILABLE.
+4. Preserve the original RTL byte-for-byte. Do not replace it with a toy design or silently remove includes or unsupported primitives.
+5. Provide a normal-operation compilation/simulation runner that records commands, tool versions, source hashes, exit codes, stdout and stderr. Preserve failures.
+6. If existing detectors are available, report actual outputs and graph-extraction limitations. Never call an incomplete or fallback analysis proof that a design is safe.
+7. Use only supplied original materials. Do not consult published solutions.
+8. Document remaining submission gaps honestly. Never reconstruct missing AI conversations as authentic logs.
+First return:
+- What the supplied code actually implements.
+- Which functions are placeholders.
+- The exact missing inputs you need.
+Once those inputs are provided, return complete defensive-harness files with filenames and setup instructions. Wait for actual execution output before reporting any test as passing.
+Use the following verified configuration for the existing CSAW recovered baseline.
+SOURCE_DIR:
+/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources
+Files inside SOURCE_DIR:
+- baseline.v — recovered design, module chip
+- baseline_protocol_dut.sv — interface adapter, module protocol_dut
+- paired_normal_tb.sv — existing normal-operation testbench, simulation top paired_normal_tb
+- cells_sim.v — Yosys iCE40 behavioral primitives, including SB_RAM40_4K
+TOOL_BIN:
+/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin
+Both TOOL_BIN/iverilog and TOOL_BIN/vvp were checked and report version 14.0-devel.
+Recorded compiler options:
+-g2012 -DNO_ICE40_DEFAULT_ASSIGNMENTS -Wall -s paired_normal_tb
+Compile all four source files listed above.
+Recorded normal-operation runtime arguments:
++half_ps=500000 +sample_ps=1000 +immediate=0 +pauses=0
+Provide a small Python launcher for this configuration. Do not generate replacement RTL, a UART example, or a new testbench. The VHDL library examples in your previous response do not apply.
+Requirements:
+- Treat these paths as supplied configuration; do not claim you opened them.
+- Check required files and tools before running.
+- Create a unique output directory outside the existing project directories.
+- Run the simulator with that new directory as its working directory.
+- Record source hashes, commands, tool versions, exit codes, stdout and stderr.
+- Preserve every failure and timeout.
+- Report compilation and simulator completion separately. Exit code zero alone is not proof of functional correctness.
+- Do not overwrite source files or old evidence.
+- Do not invoke the historical run_paired.py in place; it writes to existing record paths.
+- Include no Trojan generation, insertion or evasion functionality.
+- Use no published solutions.
+Return the launcher’s complete file contents and usage instructions. You are providing code in chat; do not claim you saved files or executed tests.
+Complete and save the normal-operation RTL for my authorized CSAW academic project. Produce actual Verilog/SystemVerilog files, not another Python launcher presented as completed RTL.
+First establish whether you actually have filesystem and command-execution tools. Never claim to have read, saved, compiled, or tested anything without an actual tool result.
+SCOPE
+- Work on ordinary functional behavior only.
+- Do not implement Trojan behavior, hidden triggers, detector evasion, or key extraction.
+- Never consult published solutions, solution diagrams, contaminated work, or set-aside folders.
+- Do not modify any repository, existing evidence, original challenge material, or recovered baseline source.
+- Do not program hardware, commit, push, or upload anything.
+INPUTS
+The verified recovered-baseline sources are in:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/simulation/sources/`
+Files:
+- baseline.v
+- baseline_protocol_dut.sv
+- paired_normal_tb.sv
+- cells_sim.v
+Expected baseline.v SHA-256:
+`180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765`
+The latest verified execution, source hashes, tool locations, and limitations are documented here:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Normal_Verification_20261112T233345Z_l0jc6zzt/TECHNICAL_HANDOFF.md`
+Its actual result record is:
+`/Users/al-zayedal-hassan/Documents/CSAW_2026_Normal_Verification_20261112T233345Z_l0jc6zzt/runs/20261112T233503Z_s4av1jce/result.json`
+Read only these identified inputs and any original specification excerpts I explicitly provide. Do not search broadly through unrelated project folders.
+WORK
+1. Identify precisely what functional RTL requirement remains unfinished. Do not invent a cipher, interface, requirement, or design change. If the specification needed to resolve this is unavailable, identify the missing excerpt.
+2. Create a unique directory under `/Users/al-zayedal-hassan/Documents/` named `CSAW_Qwen_RTL_<UTC timestamp>_<random suffix>`. Never reuse or overwrite an existing directory.
+3. Preserve byte-identical input snapshots and their SHA-256 hashes.
+4. Implement only documented, necessary normal-operation changes in a separate candidate copy. Preserve existing module interfaces unless a documented requirement requires otherwise.
+5. Save complete RTL files with all required dependencies. No ellipses, TODO implementations, dummy outputs, empty modules, or hardcoded test-vector responses.
+6. If the existing baseline already satisfies the available requirements, package it unchanged and explicitly label it “recovered baseline, unchanged.” Copying it does not make it newly Qwen-authored RTL.
+VERIFICATION
+- Read back and hash every saved deliverable.
+- Compile and simulate the actual saved candidate files. Record the exact source list so it is clear which design was tested.
+- Keep the existing pinned baseline runner unchanged. Its baseline results must not be presented as verification of a different candidate.
+- Use the documented compatible toolchain and preserve its version output.
+- Preserve stdout, stderr, command arguments, working directories, timestamps, exit codes, warnings, timeouts, failed attempts, and intermediate revisions.
+- Add focused tests for any functional changes; do not weaken assertions to obtain a pass.
+- Distinguish compilation, functional checks, equivalence, synthesis, and timing. Claim only checks actually executed.
+- The earlier 6,726 checks and 88 transactions apply to the existing baseline only. Eight operations have known expected outputs; the other 80 do not have an output-correctness oracle.
+DELIVERABLES
+Save:
+- rtl/ — actual complete RTL and dependencies
+- tb/ — testbench files
+- logs/ — execution evidence, including failures
+- ai_logs/ — authentic available prompts, responses, and tool interactions
+- MANIFEST.json — file paths, sizes, SHA-256 hashes, and provenance
+- README.md — exact reproduction commands
+- STATUS.md — what changed, verified results, limitations, and remaining requirements
+Preserve available AI records verbatim. Label summaries as summaries. Mark unavailable earlier transcripts as unavailable; never reconstruct or fabricate them. Distinguish recovered sources, unchanged copies, Qwen modifications, and other AI contributions.
+IF YOU HAVE NO FILE OR EXECUTION TOOLS
+Say so immediately. Local path names do not give you access to their contents. Request only the source/specification excerpts needed to proceed. Return complete RTL files and explicit saving commands when you have sufficient inputs, but label saving and testing “NOT EXECUTED.” Do not return another launcher as a substitute for the RTL.
+FINAL REPORT
+Give the absolute output-folder path, each RTL filename, line count and SHA-256, actual compile/test results, unresolved failures, and AI-log gaps. Clearly state whether the artifact is an unchanged baseline or a modified candidate. Do not declare the entire assignment complete merely because RTL compiles.
+are you connected with claude 

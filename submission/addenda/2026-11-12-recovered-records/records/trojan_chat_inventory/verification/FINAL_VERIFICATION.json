@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-13T01:45:43.800543+00:00",
+  "subagent_output_hash_checks": 11,
+  "subagent_checked_outputs": [
+    "records/clean_protocol_history/ADDITIONAL_NOV11_STATUS_RECORDS.jsonl",
+    "records/clean_protocol_history/API_VISIBLE_MESSAGES.json",
+    "records/clean_protocol_history/INVENTORY.json",
+    "records/clean_protocol_history/REPORT.md",
+    "records/clean_protocol_history/SELECTED_EXCERPTS.json",
+    "records/clean_protocol_history/VISIBLE_PROJECT_RECORDS.jsonl",
+    "records/bitstream_history/SAFE_VISIBLE_MESSAGES.json",
+    "records/bitstream_history/VISIBLE_MESSAGES.md",
+    "records/bitstream_history/SEARCH_PAGINATION_INVENTORY.json",
+    "records/bitstream_history/COMPARISON.json",
+    "records/bitstream_history/REPORT.md"
+  ],
+  "source_preservation": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission.zip",
+      "bytes": 5709601,
+      "sha256": "0c053f3595079dbe7aa11789e69b1e26d359619b7af72d7535d1da004ce0ca83"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan/CSAW_records_explanation_20261113T011536Z_jj4i8v2x/MANIFEST.json",
+      "bytes": 6834,
+      "sha256": "0bdcf45c2ecc344eb8854893d57c92161f4e4ff0290d236a7b88e5bf94236bcb"
+    }
+  ],
+  "original_package_manifest_entries_unchanged": 261,
+  "published_addendum_manifest_entries_unchanged": 40,
+  "clean_additional_records": 3,
+  "bitstream_visible_records": 14,
+  "dot_exact_excerpts": 4,
+  "reviewer_instruction_bodies_recovered": 0,
+  "published_zip_text_comparisons": 21,
+  "published_zip_exact_text_matches": 0,
+  "encrypted_payload_scan_clear": true,
+  "scope": "Message inventory and local hash/text comparison only. No design execution, repository edits, publication, decryption, or solutions consultation. API-visible completeness does not imply unabridged native history."
+}

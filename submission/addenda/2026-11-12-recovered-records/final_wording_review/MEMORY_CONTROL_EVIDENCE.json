@@ -1,0 +1,72 @@
+{
+  "source": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/rtl/baseline.v",
+  "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+  "scope": "Read-only exact lines, no HDL execution or INIT inspection.",
+  "lines": [
+    {
+      "line": 42791,
+      "text": "  .WE(n466),"
+    },
+    {
+      "line": 42792,
+      "text": "  .WCLKE(n5),"
+    },
+    {
+      "line": 42793,
+      "text": "  .WCLK(n5),"
+    },
+    {
+      "line": 42825,
+      "text": "  .WE(n466),"
+    },
+    {
+      "line": 42826,
+      "text": "  .WCLKE(n5),"
+    },
+    {
+      "line": 42827,
+      "text": "  .WCLK(n5),"
+    },
+    {
+      "line": 42859,
+      "text": "  .WE(n466),"
+    },
+    {
+      "line": 42860,
+      "text": "  .WCLKE(n5),"
+    },
+    {
+      "line": 42861,
+      "text": "  .WCLK(n5),"
+    },
+    {
+      "line": 42893,
+      "text": "  .WE(n466),"
+    },
+    {
+      "line": 42894,
+      "text": "  .WCLKE(n5),"
+    },
+    {
+      "line": 42895,
+      "text": "  .WCLK(n5),"
+    },
+    {
+      "line": 44787,
+      "text": "/* FF  7  9  6 */ assign n466 = n1925;"
+    },
+    {
+      "line": 45177,
+      "text": "/* FF  7  9  0 */ assign n5 = n2315;"
+    },
+    {
+      "line": 42901,
+      "text": "assign n2315 = /* LUT    7  9  0 */ 1'b0;"
+    },
+    {
+      "line": 43384,
+      "text": "assign n1925 = /* LUT    7  9  6 */ 1'b1;"
+    }
+  ],
+  "conclusion": "WE=n466=n1925=1; WCLKE and WCLK=n5=n2315=0. Write-clock enable is zero; the separate write-enable input is high."
+}

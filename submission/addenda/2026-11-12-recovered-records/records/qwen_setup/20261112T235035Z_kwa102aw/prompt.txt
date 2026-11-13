@@ -1,0 +1,2 @@
+Use your tools to read rtl/baseline_protocol_dut.sv (limit 30 lines), without editing it. Read agent_check/agent_probe_v3.sv. Use Edit to replace only `assign y = ~a;` with `assign y = a;`. Read the saved file back. Use Write to create agent_check/QWEN_TOOL_CHECK_V3.md containing exactly: "Edited agent_check/agent_probe_v3.sv; compilation and simulation NOT performed by Qwen." Read the note back. Do not touch any other file. If a tool fails twice, stop and report the error. Finish with a concise factual report. /no_think
+

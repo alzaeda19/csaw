@@ -46,3 +46,9 @@ The original challenge PDF path supplied earlier is no longer present on disk. R
 ## Submission status
 
 GitHub upload and reviewer access are separate facts. The current user requested upload to `alzaeda19/csaw` and then explicitly skipped collaborators. A successful push establishes that the package is on GitHub; public visibility permits viewing without an invitation, but does not establish that an instructor has received or accepted it, or that every grading criterion is met. The final publication receipt records the exact pushed commit and remote-byte verification.
+
+## Subsequent recovered-record integration
+
+The later November 12 update adds the separately sealed 101-file record collection and a reader-facing encryption explanation, with original-source references and explicit unknowns. Unsupported historical Qwen claims remain labeled as failed-draft evidence; solution-derived Claude implementation content is excluded. The Trojan chat reviewed the documentation boundaries, and the current guide distinguishes required artifacts, incomplete relevant logs, challenge-quality requirements and optional bonus/hardware work.
+
+The original 262-file package and the earlier sealed addendum remain byte-identical. This is a documentation/integrity review, not a new test run. See the recovered-record supplement and the new `publication/nov12-recovered-records/INTEGRATION_CHECKS.json` for preservation and archive checks.

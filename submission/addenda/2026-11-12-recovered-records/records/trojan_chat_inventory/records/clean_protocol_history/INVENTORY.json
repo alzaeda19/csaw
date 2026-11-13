@@ -1,0 +1,96 @@
+{
+  "created_at_utc": "2026-11-13T01:37:31.436282+00:00",
+  "source_thread": {
+    "tool": "mcp__codex_app__read_thread",
+    "thread_id": "01a1b130-b28f-70c3-b80d-a7129910ee45",
+    "host_id": "local",
+    "title": "CSAW original-materials protocol review"
+  },
+  "scope": "One explicitly named known-clean project thread only; no recursive chat/folder discovery. Only visible assistant text and exact delegated project-task input were retained.",
+  "api_pagination": {
+    "pages": 4,
+    "turns": 18,
+    "assistant_messages": 100,
+    "last_page_has_more": false,
+    "earliest_turn_id": "01a1b130-b2df-7e21-8650-495415b95742",
+    "latest_turn_id": "01a1cb96-3360-7c43-8d1a-a6564d1d63bf"
+  },
+  "counts": {
+    "delegated_task": 18,
+    "assistant_commentary": 82,
+    "assistant_final_answer": 18
+  },
+  "record_count": 118,
+  "already_in_historical_clean": 115,
+  "additional_to_historical_clean": 3,
+  "native_file": {
+    "path": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/06/rollout-2026-11-06T09-08-41-01a1b130-b28f-70c3-b80d-a7129910ee45.jsonl",
+    "bytes": 12702495,
+    "lines": 3588,
+    "sha256": "bd820c3ac8833bfa48bd2ac9d905aab82e9c4fb4024e6c1f20bc6b81d8de7fab",
+    "historical_prefix_lines": 3558,
+    "historical_prefix_sha256": "4bb5b8d928bbb926cedcea5456b81d609493b6c3fe0906d0346d764f9d41dfdf",
+    "historical_manifest_sha256": "4bb5b8d928bbb926cedcea5456b81d609493b6c3fe0906d0346d764f9d41dfdf",
+    "historical_prefix_matches_manifest": true
+  },
+  "verification": {
+    "all_115_selected_historical_records_match_native_line_hashes": true,
+    "all_100_assistant_texts_exactly_match_paginated_API": true,
+    "all_100_assistant_turn_ids_match": true,
+    "artifact_claims_reexecuted_or_rehashed": false,
+    "historical_model_results_are_claims_in_visible_messages": true,
+    "max_visible_assistant_chars": 2431,
+    "selected_excerpt_checks": 8
+  },
+  "cutoffs": {
+    "earliest_retained_timestamp": "2026-11-06T14:08:42.522Z",
+    "latest_retained_timestamp": "2026-11-11T17:10:06.308Z",
+    "native_lines_retained_min": 13,
+    "native_lines_retained_max": 3585
+  },
+  "exclusions": [
+    "Reasoning items/summaries and encrypted reasoning content",
+    "System/developer/platform/context records and synthetic environment messages",
+    "Tool calls, commands, and tool outputs, except exact project-task input from delegated-task wrappers",
+    "Original HDL, bitstream, external solution content, shared Claude/Jordan material",
+    "Unrelated chats or private material",
+    "No decryption, implementation, HDL execution, experiment reruns, repository edits"
+  ],
+  "reviewer_instruction_result": "No November 12 reviewer-generation turn exists in this thread API history. Bounded history ends 2026-11-11T17:10:06.308Z. No exact missing November 12 reviewer instructions recovered here. This does not establish absence elsewhere.",
+  "input_hashes": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_AI_Log_Recovery_2026-11-10_125845Z/RECOVERY_INDEX.json",
+      "bytes": 11433,
+      "sha256": "f648a0d196b36bcc5b8f066f6a2a008ccf8143e4064a9a3fa5df331e038f4d17"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_AI_Log_Recovery_2026-11-10_125845Z/historical_clean/export_manifest.json",
+      "bytes": 3858,
+      "sha256": "4602f9a21324673b8a5887c8685ada93e0ebb4ea68d06ee1fce94b5a99c3ccc3"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_AI_Log_Recovery_2026-11-10_125845Z/historical_clean/visible_events.jsonl",
+      "bytes": 5651104,
+      "sha256": "b2432f8a764af487254d7643de2cfd725b56ed3d48bc6c01231e119c8b116e85"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/ai/AI_RECORDS_INDEX.md",
+      "bytes": 5119,
+      "sha256": "c99a3416f0f48751d1922ea1ff5e6b1471de4a45c056ec92a2bfddbab9eca9d4"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/ai/codex_current_task/EXPORT_MANIFEST.json",
+      "bytes": 4092,
+      "sha256": "d31ee13cc60576adc4a4e3bb636d62de4995b1bc6baf9a765d7b2d59311fa42f"
+    }
+  ],
+  "package_overlap": {
+    "checked": "AI records index, bounded-current-task export manifest, and filenames under ai/ only. No original HDL or generation content was opened.",
+    "manifest_source_thread": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+    "manifest_selected_turns": [
+      "01a1d242-c430-7f82-b027-686debd939f6",
+      "01a1d254-6a62-7ac2-8865-04c80eae105c"
+    ],
+    "relationship": "Package manifest identifies a different thread and November 12/13 generation turns. The package index says earlier full conversations are not all duplicated. This check does not assert that no excerpt overlaps anywhere in the package."
+  }
+}

@@ -1,0 +1,43 @@
+239 |       throw @makeErrorWithCode(119, "options.flush", "boolean", flush);
+240 |     this.flush = flush;
+241 |   }
+242 |   if (this.start = start, this.pos = @undefined, this.bytesWritten = 0, start !== @undefined)
+243 |     validateInteger(start, "start", 0), this.pos = start;
+244 |     this[kWriteStreamFastPath] = fd ? Bun.file(fd).writer() : !0, this._write = underscoreWriteFast, this._writev = @undefined, this.write = writeFast;
+                                                               ^
+error: EPERM: operation not permitted, fstat
+      at new WriteStream (internal:fs/streams:244:58)
+      at UVc (/$bunfs/root/src/entrypoints/cli.js:135:9541)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:135:13576)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:135:42828)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:135:42999)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:135:44415)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:454:42579)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:32552:164)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:32598:5604)
+130 | `,UGc,$Gc=2,qGc=(e,t,n)=>{let{tag:r="form-data-boundary",size:o=25,boundary:s=r+"-"+X_.generateString(o,BGc)}=n||{};if(!rr.isFormData(e))throw TypeError("FormData instance required");if(s.length<1||s.length>70)throw Error("boundary must be 10-70 characters long");let i=MAt.encode("--"+s+d1e),a=MAt.encode("--"+s+"--"+d1e),l=a.byteLength,c=Array.from(e.entries()).map(([d,p])=>{let m=new NZo(d,p);return l+=m.size,m});l+=i.byteLength*c.length,l=rr.toFiniteNumber(l);let u={"Content-Type":`multipart/form-data; boundary=${s}`};if(Number.isFinite(l))u["Content-Length"]=l;return t&&t(u),MZo.Readable.from(async function*(){for(let d of c)yield i,yield*d.encode();yield a}())},FZo;var BZo=b(()=>{nC();A_r();WX();LZo=x(require("util")),MZo=require("stream"),BGc=X_.ALPHABET.ALPHA_DIGIT+"-_",MAt=typeof TextEncoder==="function"?new TextEncoder:new LZo.default.TextEncoder,UGc=MAt.encode(d1e);FZo=qGc});var UZo,$Zo,qZo;var WZo=b(()=>{UZo=x(require("stream"));$Zo=class $Zo extends UZo.default.Transform{__transform(e,t,n){this.pus
+131 | `+i.map(kes).join(`
+132 | `):" "+kes(i[0]):"as no adapter specified";throw new ki("There is no suitable adapter to dispatch the request "+a,"ERR_NOT_SUPPORT")}return o}var P_r,kes=(e)=>`- ${e}`,hVc=(e)=>rr.isFunction(e)||e===null||e===!1,ern;var O_r=b(()=>{nC();mes();Ses();wes();S5();P_r={http:pes,xhr:Tes,fetch:{get:D_r}};rr.forEach(P_r,(e,t)=>{if(e){try{Object.defineProperty(e,"name",{value:t})}catch(n){}Object.defineProperty(e,"adapterName",{value:t})}});ern={getAdapter:gVc,adapters:P_r}});function L_r(e){if(e.cancelToken)e.cancelToken.throwIfRequested();if(e.signal&&e.signal.aborted)throw new b5(null,e)}function trn(e){if(L_r(e),e.headers=Iv.from(e.headers),e.data=HAt.call(e,e.transformRequest),["post","put","patch"].indexOf(e.method)!==-1)e.headers.setContentType("application/x-www-form-urlencoded",!1);return ern.getAdapter(e.adapter||Uze.adapter,e)(e).then(function(r){return L_r(e),r.data=HAt.call(e,e.transformResponse,r),r.headers=Iv.from(r.headers),r},function(r){if(!IAt(r)){if(L_r(e),r&&r.response)r.response.data=HAt.call(e,e.
+133 | `);return s===-1?"":r.stack.slice(s+1)})();try{if(!n.stack)n.stack=o;else if(o){let s=o.indexOf(`
+134 | `),i=s===-1?-1:o.indexOf(`
+135 | `+o}}catch(s){}}throw n}}_request(e,t){if(typeof e==="string")t=t||{},t.url=e;else t=e||{};t=GX(this.defaults,t);let{transitional:n,paramsSerializer:r,headers:o}=t;if(n!==void 0)NAt.assertOptions(n,{silentJSONParsing:IK.transitional(IK.boolean),forcedJSONParsing:IK.transitional(IK.boolean),clarifyTimeoutError:IK.transitional(IK.boolean),legacyInterceptorReqResOrdering:IK.transitional(IK.boolean)},!1);if(r!=null)if(rr.isFunction(r))t.paramsSerializer={serialize:r};else NAt.assertOptions(r,{encode:IK.function,serialize:IK.function},!0);if(t.allowAbsoluteUrls!==void 0);else if(this.defaults.allowAbsoluteUrls!==void 0)t.allowAbsoluteUrls=this.defaults.allowAbsoluteUrls;else t.allowAbsoluteUrls=!0;NAt.assertOptions(t,{baseUrl:IK.spelling("baseURL"),withXsrfToken:IK.spelling("withXSRFToken")},!0),t.method=(t.method||this.defaults.method||"get").toLowerCase();let s=o&&rr.merge(o.common,o[t.method]);o&&rr.forEach(["delete","get","head","post","put","patch","common"],(m)=>{delete o[m]}),t.headers=Iv.concat(s,o);let i=
+
+TypeError: undefined is not an object (evaluating 'process.stdout.isTTY')
+      at UVc (/$bunfs/root/src/entrypoints/cli.js:135:9548)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:135:13576)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:135:42828)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:135:42999)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:135:44415)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:11:1269)
+      at <anonymous> (/$bunfs/root/src/entrypoints/cli.js:454:42579)
+
+Bun v1.4.0 (macOS arm64)

@@ -1,0 +1,33 @@
+The system cannot reconstruct or fabricate authentic conversation history for older transcript gaps. However, we can create an **honest index** of available records by:  
+
+1. **Automated Session Logging**  
+   - New Qwen sessions are logged to `/work/logs/qwen_YYYYMMDD_HHMMSS.txt` with timestamps.  
+   - Use `Glob` to locate existing logs:  
+     ```bash
+     Glob pattern="logs/*.txt"
+     ```  
+
+2. **Manual Indexing of Available Records**  
+   - For gaps, document the **known scope** of logged interactions (e.g., "Session 2026-11-10_1430 is complete; no records exist for 2026-11-05").  
+   - Use `Read` to verify contents of existing logs:  
+     ```bash
+     Read file_path="/work/logs/qwen_20261112_234518.txt"
+     ```  
+
+3. **Transcript Integrity Constraints**  
+   - No tool can infer or generate missing conversation data.  
+   - All actions must explicitly reference **existing files** (e.g., `Read`, `Grep`, or `Edit` on known logs).  
+
+4. **Future Logging Recommendations**  
+   - Ensure all sessions are saved to `/work/logs/` with unique timestamps to avoid gaps.  
+   - Use `Grep` to audit log completeness:  
+     ```bash
+     Grep pattern="^[0-9]{4}-[0-9]{2}-[0-9]{2}_[0-9]{2}:[0-9]{2}:[0-9]{2}" path="logs/*.txt"
+     ```  
+
+Would you like me to:  
+1. Locate existing log files?  
+2. Verify the contents of a specific session?  
+3. Draft an index summary of available records?  
+
+All actions must strictly use existing files and avoid speculative reconstruction.

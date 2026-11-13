@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "exception": "KeyError: 'path'",
+  "stage": "Verify bitstream child output manifest",
+  "cause": "Parent verifier assumed path field before inspecting actual manifest schema. No source data or child output was changed.",
+  "resolution": "Use the recorded file field in this child manifest, then recheck all hashes."
+}

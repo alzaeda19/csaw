@@ -1,0 +1,48 @@
+{
+  "records": [
+    {
+      "name": "20261113T002025Z_f8pf3qt7",
+      "type": "Qwen run",
+      "published_path": "work/csaw-github/fresh-clone/submission/ai/qwen/20261113T002025Z_f8pf3qt7",
+      "matching_files": 15,
+      "different_files": [],
+      "absent_files": [],
+      "live_stream_equals_published": true
+    },
+    {
+      "name": "20261113T002330Z_nqwhdxe4",
+      "type": "Qwen run",
+      "published_path": "work/csaw-github/fresh-clone/submission/ai/qwen/20261113T002330Z_nqwhdxe4",
+      "matching_files": 15,
+      "different_files": [],
+      "absent_files": [],
+      "live_stream_equals_published": true
+    },
+    {
+      "name": "20261113T003819Z_540gdr_f",
+      "type": "Qwen run",
+      "published_path": "work/csaw-github/fresh-clone/submission/ai/qwen/20261113T003819Z_540gdr_f",
+      "matching_files": 14,
+      "different_files": [],
+      "absent_files": [],
+      "live_stream_equals_published": true
+    },
+    {
+      "name": "codex_current_task",
+      "type": "Codex/reviewer evidence",
+      "published_path": "work/csaw-github/fresh-clone/submission/ai/codex_current_task",
+      "matching_files": 5,
+      "different_files": [],
+      "absent_files": []
+    },
+    {
+      "name": "reviewer_exports",
+      "type": "Codex/reviewer evidence",
+      "published_path": "work/csaw-github/fresh-clone/submission/ai/reviewer_exports",
+      "matching_files": 2,
+      "different_files": [],
+      "absent_files": []
+    }
+  ],
+  "refinement": "Mapped non-Qwen codex_current_task and reviewer_exports to their actual separate published locations rather than the Qwen folder."
+}

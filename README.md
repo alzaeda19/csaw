@@ -7,12 +7,14 @@ The current simulation package is in [submission/](submission/). Download [submi
 ## Review the current package
 
 1. [Current submission guide and exact remaining gaps](submission/CURRENT_GUIDE.md).
-2. [Expanded proposed encryption explanation](submission/addenda/2026-11-12/explanation/PROPOSED_ENCRYPTION_EXPLANATION.md), derived only from the original recovered baseline and saved evidence.
-3. [Recovered generation records](submission/addenda/2026-11-12/records/generation_tail/EXPORT_MANIFEST.json) and [reviewer-record recovery](submission/addenda/2026-11-12/records/reviewer_recovery/README.md).
+2. [Plain-English encryption explanation](submission/ENCRYPTION_EXPLANATION.md), with a data-flow sketch and links to the detailed original-source evidence.
+3. [Newly integrated Claude/Qwen/chat records](submission/addenda/2026-11-12-recovered-records/README.md), alongside the earlier [generation](submission/addenda/2026-11-12/records/generation_tail/EXPORT_MANIFEST.json) and [reviewer](submission/addenda/2026-11-12/records/reviewer_recovery/README.md) recovery.
 4. [Original technical brief and reproduction instructions](submission/README.md), retained unchanged with its original AI-record index.
 5. [Current package status](submission/PUBLICATION_STATUS.md), [publication review](submission/PUBLICATION_REVIEW.md), and [publication manifest](submission/PUBLICATION_MANIFEST.json).
 
 The November 12 documentation update adds a source-supported explanation of serial loading, the working datapath, fixed lookup storage, direction selection and result readout. It also recovers 44 records beyond the earlier generation-export cutoff and two previously unexported reviewer final responses. The earlier 155 retained parent records are preserved exactly. Twelve reviewer instruction bodies remain unreadable; their parent and child copies are the same exchanges, not 24 separate gaps. This is a stronger proposed architectural explanation and a better evidence trail, not identification of the full cipher or a claim of complete transcript coverage.
+
+The subsequent record-integration update includes the 101-file local collection in both the repository and ZIP, without changing its original text. Its historical statements that it was not uploaded are superseded by the publication supplement. The new explanation separates the architecture, supporting evidence and remaining unknowns. The added setup records and older chat excerpts do not recover the twelve unreadable reviewer instructions or identify the cipher. Unsupported Qwen drafts remain labeled as errors; solution-derived Claude implementation material is excluded.
 
 The code was developed in the separate workspace coordinated by the Trojan chat. Qwen produced initial drafts; Codex made substantive corrections and wrote the final testbench. Claude Code was the file-tool client for Qwen, not evidence of Claude-model authorship. Failed drafts, timeouts, corrections and available authentic records remain included.
 

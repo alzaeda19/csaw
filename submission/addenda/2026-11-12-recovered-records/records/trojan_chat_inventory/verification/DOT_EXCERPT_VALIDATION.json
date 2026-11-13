@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-13T01:44:52.290Z",
+  "source": "Authenticated Codex app read_thread response for named ChatGPT reference",
+  "source_thread_id": "6aec9e54-185c-83e9-8b29-6aa02bbb0729",
+  "excerpts_checked": 4,
+  "entries": [
+    {
+      "turn_id": "282c3869-15df-494d-b4c5-c590576336b2",
+      "message_id": "2b4a4a7c-726b-465d-8a3f-26dc309b404c",
+      "start_char": 1459,
+      "chars": 240,
+      "exact_source_substring": true
+    },
+    {
+      "turn_id": "497dfb97-e670-41d8-8573-a57a10d99731",
+      "message_id": "d858c260-0d27-4bc0-b1e8-d3dcafe75c28",
+      "start_char": 1137,
+      "chars": 199,
+      "exact_source_substring": true
+    },
+    {
+      "turn_id": "497dfb97-e670-41d8-8573-a57a10d99731",
+      "message_id": "d858c260-0d27-4bc0-b1e8-d3dcafe75c28",
+      "start_char": 1816,
+      "chars": 116,
+      "exact_source_substring": true
+    },
+    {
+      "turn_id": "497dfb97-e670-41d8-8573-a57a10d99731",
+      "message_id": "d858c260-0d27-4bc0-b1e8-d3dcafe75c28",
+      "start_char": 1934,
+      "chars": 109,
+      "exact_source_substring": true
+    }
+  ],
+  "limits": "This validates extraction against the retrieved API messages, not provider attestation, independently verified technical facts, or unchanged future cloud history. Full unrelated/private message bodies were not saved."
+}
+

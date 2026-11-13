@@ -1,0 +1,127 @@
+{
+  "captured_utc": "2026-11-13T01:40:50.622Z",
+  "codex_history": {
+    "pages": 1,
+    "has_more": false,
+    "relevant_candidates": [
+      {
+        "id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+        "kind": "codex",
+        "projectId": "c27fd687-af9a-4547-9d35-26b763884777",
+        "hostId": "local",
+        "status": "active",
+        "cwd": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan",
+        "updatedAt": 1794533709,
+        "title": "trojan",
+        "summary": "extra-clock result-readiness repair, separate copy, AI logs, failures, repository unchanged"
+      },
+      {
+        "id": "01a1c563-aa79-7e12-ae2f-72d867d1e3da",
+        "kind": "codex",
+        "projectId": null,
+        "hostId": "local",
+        "status": "active",
+        "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an",
+        "updatedAt": 1794533706,
+        "title": "Inspect TrojanGYM course package",
+        "summary": "Inventory TrojanGYM_AES_Course_Package.zip and assess course requirements, deliverables, dependencie"
+      },
+      {
+        "id": "01a1cbc0-36e4-7b91-99b2-91d2f58eedce",
+        "kind": "codex",
+        "projectId": null,
+        "hostId": "local",
+        "status": "notLoaded",
+        "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an",
+        "updatedAt": 1794473294,
+        "title": "Inspect TrojanGYM course package (2)",
+        "summary": "so can you give me a prompt to work on the rtl on claude code"
+      },
+      {
+        "id": "01a1cbea-091a-7e11-9311-29586490f1ac",
+        "kind": "codex",
+        "projectId": "c27fd687-af9a-4547-9d35-26b763884777",
+        "hostId": "local",
+        "status": "idle",
+        "cwd": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan",
+        "updatedAt": 1794423086,
+        "title": "trojan (2)",
+        "summary": "# Files mentioned by the user:\n\n## TrojanGYM_AES_Course_Package: /Users/al-zayedal-hassan/Downloads/TrojanGYM_AES_Course_Package/\n\n## past csaw.pdf: /Users/al-zayedal-hassan/Downloads/past csaw.pdf\n\n## Slides__Hardware_Trojans__Copy_.pdf: /Users/al-zayedal-hassan/Downloads/Slides__Hardware_Trojans__",
+        "summaryTruncated": true,
+        "summaryOriginalChars": 708
+      },
+      {
+        "id": "01a1b130-b28f-70c3-b80d-a7129910ee45",
+        "kind": "codex",
+        "projectId": "c27fd687-af9a-4547-9d35-26b763884777",
+        "hostId": "local",
+        "status": "notLoaded",
+        "cwd": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan",
+        "updatedAt": 1794417006,
+        "title": "CSAW original-materials protocol review",
+        "summary": "CSAW original-materials protocol review, search-oriented thread purpose"
+      },
+      {
+        "id": "01a1b387-8ac3-7111-993f-34e114c4c573",
+        "kind": "codex",
+        "projectId": "c27fd687-af9a-4547-9d35-26b763884777",
+        "hostId": "local",
+        "status": "notLoaded",
+        "cwd": "/Users/al-zayedal-hassan/Documents/ChatGPT/trojan",
+        "updatedAt": 1794417003,
+        "title": "CSAW 2026 five-minute progress presentation",
+        "summary": "CSAW 2026 five-minute progress presentation"
+      },
+      {
+        "id": "01a1b6fe-5489-7612-9a8b-f043dfd9321e",
+        "kind": "codex",
+        "projectId": null,
+        "hostId": "local",
+        "status": "notLoaded",
+        "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-07/referenced-chatgpt-conversation-this-is-an",
+        "updatedAt": 1794416992,
+        "title": "Verify regenerated CSAW bitstream",
+        "summary": "Inspect CSAW 2026 RTL workspace for regenerated FPGA artifact provenance, build status, hashes, and"
+      },
+      {
+        "id": "01a1b0a8-215b-7af3-98b1-e8a16172adbe",
+        "kind": "codex",
+        "projectId": "e196c084-0b32-4c86-a0c0-0ecedb9b00d1",
+        "hostId": "local",
+        "status": "notLoaded",
+        "cwd": "/Users/al-zayedal-hassan",
+        "updatedAt": 1794416986,
+        "title": "Create Trojan progress presentation",
+        "summary": "Prepare a five-minute CSAW 2026 AI Hardware Attack Challenge progress presentation using the challen"
+      }
+    ],
+    "archived_results": 1
+  },
+  "chatgpt_keyword_discovery": {
+    "pages": 6,
+    "threadsReviewed": 300,
+    "matched": 0,
+    "newest": "2026-11-11T09:10:57.874Z",
+    "oldest": "2025-08-03T14:09:40.002Z",
+    "nextCursor": "Available; deliberately stopped after300metadata entries predating project",
+    "method": "Metadata title/summary keywords only; unrelated titles and contents not retained.",
+    "archived_results": 0
+  },
+  "explicit_named_chat": {
+    "id": "6aec9e54-185c-83e9-8b29-6aa02bbb0729",
+    "title": "Troubleshoot dot issues",
+    "kind": "chatgpt",
+    "source": "Human named this project-history reference; directly retrieved even though keyword filter produced no candidate."
+  },
+  "exclusions": [
+    "Pre-clean/solution-comparison portions of the main trojan chat were not opened.",
+    "Presentation chats excluded as outside requested record/cipher scope.",
+    "Coordinating chat handles its own history and Claude/Qwen records.",
+    "Published/shared solutions, Jordan/shared Claude sources and attachments were not opened."
+  ],
+  "limits": [
+    "Metadata matching does not search every message body and cannot establish that no relevant content exists in nondescript chats.",
+    "300active ChatGPT metadata entries reviewed; older account metadata remains outside this bounded search."
+  ]
+}
+

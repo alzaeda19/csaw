@@ -1,0 +1,30 @@
+{
+  "scope": "Recovered-record integration and explanation/readiness documentation only",
+  "events": [
+    {
+      "step": "Source collection verification",
+      "outcome": "101 fetched files verified and copied byte-identically; original 262 files pinned."
+    },
+    {
+      "step": "Documentation rewrite",
+      "error": "One apply_patch call rejected a delete-and-add operation targeting the same path. The earlier independent README/guide/status edits succeeded; SUBMISSION_GAPS.md was unchanged by the rejected patch.",
+      "refinement": "Replaced SUBMISSION_GAPS.md in a single write with the intended complete document."
+    },
+    {
+      "step": "Trojan orchestrator review",
+      "outcome": "Applied distinctions between unavailable reviewer prompt text and intentionally excluded internal content; added unverified physical-pin mapping as a future-hardware-detail limit without imposing board programming; clarified original challenge-quality requirements and optional scoring strengths."
+    },
+    {
+      "step": "Final four-document review",
+      "finding": "New explanation incorrectly abbreviated write-clock enable as write enable. The separate WE input is high, while WCLK and WCLKE are low.",
+      "refinement": "Corrected the wording, preserving the fixed-storage conclusion. Sealed source-line evidence and pre-correction snapshots retained in final_wording_review."
+    },
+    {
+      "step": "Final-review receipt integration",
+      "error": "First copy verifier assumed a dictionary manifest; this review uses a list of path/bytes/hash entries. That failed before copying. A later dependent receipt copy also failed because the receipt was absent. An intermediate archive was rebuilt but was not published.",
+      "refinement": "Inspected the actual list schema, verified every entry, copied the 14-file sealed review, and created the missing receipt. Final archive/link/integrity checks follow all completed copies."
+    }
+  ],
+  "design_code_executed": false,
+  "published_solutions_used": false
+}

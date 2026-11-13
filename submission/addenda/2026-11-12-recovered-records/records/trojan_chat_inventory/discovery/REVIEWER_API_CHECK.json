@@ -1,0 +1,89 @@
+{
+  "queried_utc": "2026-11-13T01:40:50.626Z",
+  "include_outputs": false,
+  "results": [
+    {
+      "label": "protocol_reviewer_api",
+      "source_thread_id": "01a1d245-26de-7730-8903-654a1eb4004d",
+      "page": {
+        "order": "newest_first",
+        "limit": 10,
+        "nextCursor": null,
+        "hasMore": false
+      },
+      "turns": [
+        {
+          "turn_id": "01a1d25d-97e0-7cf1-90c8-621f694be80a",
+          "status": "completed",
+          "user_message_count": 0,
+          "visible_assistant_count": 1
+        },
+        {
+          "turn_id": "01a1d25a-f923-7553-b5fc-0ebb8359d29a",
+          "status": "completed",
+          "user_message_count": 0,
+          "visible_assistant_count": 1
+        },
+        {
+          "turn_id": "01a1d24d-7c39-72e1-bc0c-69111e40c1fd",
+          "status": "completed",
+          "user_message_count": 0,
+          "visible_assistant_count": 1
+        },
+        {
+          "turn_id": "01a1d248-c06a-7843-90fc-21ef47d594c3",
+          "status": "completed",
+          "user_message_count": 0,
+          "visible_assistant_count": 1
+        },
+        {
+          "turn_id": "01a1d245-2704-79d1-a305-f315a16334bb",
+          "status": "completed",
+          "user_message_count": 0,
+          "visible_assistant_count": 1
+        }
+      ],
+      "finding": "No userMessage or delegation prompt body returned by this API. Existing visible finals are already covered by the published reviewer recovery."
+    },
+    {
+      "label": "report_reviewer_api",
+      "source_thread_id": "01a1d245-3808-71b3-a696-a4f14fca0a76",
+      "page": {
+        "order": "newest_first",
+        "limit": 10,
+        "nextCursor": null,
+        "hasMore": false
+      },
+      "turns": [
+        {
+          "turn_id": "01a1d25f-d0b3-78e2-8959-429ec689173c",
+          "status": "completed",
+          "user_message_count": 0,
+          "visible_assistant_count": 1
+        },
+        {
+          "turn_id": "01a1d25b-1220-7e73-a91e-cf0a302c15d9",
+          "status": "completed",
+          "user_message_count": 0,
+          "visible_assistant_count": 1
+        },
+        {
+          "turn_id": "01a1d247-4c5c-75f1-a171-d22909f3e518",
+          "status": "completed",
+          "user_message_count": 0,
+          "visible_assistant_count": 1
+        },
+        {
+          "turn_id": "01a1d245-380f-7651-b792-3700395b74a1",
+          "status": "completed",
+          "user_message_count": 0,
+          "visible_assistant_count": 1
+        }
+      ],
+      "finding": "No userMessage or delegation prompt body returned by this API. Existing visible finals are already covered by the published reviewer recovery."
+    }
+  ],
+  "new_instruction_bodies": 0,
+  "limits": "No decryption; missing tool argument bodies are not reconstructed from response summaries."
+}
+

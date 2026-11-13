@@ -1,0 +1,228 @@
+{
+  "runs": [
+    {
+      "run": "20261112T234659Z_mx_qh1n7",
+      "status": "FAILED",
+      "exit_code": 1,
+      "tool_calls": 0,
+      "copied_files": [
+        "prompt.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": []
+    },
+    {
+      "run": "20261112T234755Z_n6kf7520",
+      "status": "INTERRUPTED",
+      "exit_code": 130,
+      "tool_calls": 14,
+      "copied_files": [
+        "prompt.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261112T234755Z_n6kf7520/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261112T234936Z_o8n3e8oh",
+      "status": "FAILED",
+      "exit_code": 1,
+      "tool_calls": 0,
+      "copied_files": [
+        "prompt.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": []
+    },
+    {
+      "run": "20261112T234958Z_ory2a9er",
+      "status": "INTERRUPTED",
+      "exit_code": 130,
+      "tool_calls": 6,
+      "copied_files": [
+        "prompt.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261112T234958Z_ory2a9er/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261112T235035Z_kwa102aw",
+      "status": "INTERRUPTED",
+      "exit_code": 130,
+      "tool_calls": 6,
+      "copied_files": [
+        "prompt.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261112T235035Z_kwa102aw/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261112T235153Z__aa_qgq4",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "tool_calls": 4,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261112T235153Z__aa_qgq4/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261112T235340Z_1a80em9l",
+      "status": "RESPONSE_COMPLETED",
+      "exit_code": 0,
+      "tool_calls": 2,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261112T235340Z_1a80em9l/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261112T235536Z_zrobi66p",
+      "status": "RESPONSE_COMPLETED",
+      "exit_code": 0,
+      "tool_calls": 1,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261112T235536Z_zrobi66p/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261113T000617Z_digvp1qp",
+      "status": "RESPONSE_COMPLETED",
+      "exit_code": 0,
+      "tool_calls": 0,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261113T000617Z_digvp1qp/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261113T000843Z_u6ypyg9r",
+      "status": "RESPONSE_COMPLETED",
+      "exit_code": 0,
+      "tool_calls": 0,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261113T000843Z_u6ypyg9r/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261113T000851Z_kg8q87zy",
+      "status": "RESPONSE_COMPLETED",
+      "exit_code": 0,
+      "tool_calls": 0,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261113T000851Z_kg8q87zy/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261113T000908Z_g2o3nikf",
+      "status": "RESPONSE_COMPLETED",
+      "exit_code": 0,
+      "tool_calls": 0,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261113T000908Z_g2o3nikf/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261113T000922Z_b8kiv0ws",
+      "status": "RESPONSE_COMPLETED",
+      "exit_code": 0,
+      "tool_calls": 0,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261113T000922Z_b8kiv0ws/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261113T000954Z__yd8trf7",
+      "status": "RESPONSE_COMPLETED",
+      "exit_code": 0,
+      "tool_calls": 0,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261113T000954Z__yd8trf7/native-session-0.jsonl"
+      ]
+    },
+    {
+      "run": "20261113T001024Z_p5y7bom_",
+      "status": "RESPONSE_WITH_TOOL_ERRORS",
+      "exit_code": 2,
+      "tool_calls": 5,
+      "copied_files": [
+        "prompt.txt",
+        "response.txt",
+        "receipt.json",
+        "stderr.log"
+      ],
+      "native_transcript_source_paths": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/ai_logs/20261113T001024Z_p5y7bom_/native-session-0.jsonl"
+      ]
+    }
+  ],
+  "counts": {
+    "FAILED": 2,
+    "INTERRUPTED": 3,
+    "COMPLETED": 1,
+    "RESPONSE_COMPLETED": 8,
+    "RESPONSE_WITH_TOOL_ERRORS": 1
+  },
+  "note": "No old setup programs, model calls, or saved design code were run."
+}

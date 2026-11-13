@@ -1,0 +1,125 @@
+{
+  "created_at_utc": "2026-11-13T01:38:20.224184+00:00",
+  "api_source": {
+    "api": "mcp__codex_app__read_thread",
+    "hostId": "local",
+    "threadId": "01a1b6fe-5489-7612-9a8b-f043dfd9321e",
+    "title": "Verify regenerated CSAW bitstream",
+    "page": {
+      "order": "newest_first",
+      "limit": 10,
+      "nextCursor": null,
+      "hasMore": false
+    },
+    "turn_ids": [
+      "01a1cb96-32be-7031-ad91-66382a092f27",
+      "01a1b703-949a-71a2-9ad2-30a88cc02301",
+      "01a1b701-0f95-79e0-9222-2a5be5ed3cf6",
+      "01a1b6fe-54ec-73e2-953d-76a6262662c8"
+    ]
+  },
+  "consulted_local_sources": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_AI_Log_Recovery_2026-11-10_125845Z/bitstream_and_mac/INDEX.md",
+      "bytes": 2209,
+      "sha256": "9ba82cedaff33da730833313c9ee5fa848178b71024062d241e32bd958e93477",
+      "role": "bounded known-record comparison or index/source verification"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_AI_Log_Recovery_2026-11-10_125845Z/bitstream_and_mac/MANIFEST.json",
+      "bytes": 10710,
+      "sha256": "feffe491722813a223393f93dd4b1feb1828d0aac5aa425b24d032c56bb7c7bd",
+      "role": "bounded known-record comparison or index/source verification"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_AI_Log_Recovery_2026-11-10_125845Z/bitstream_and_mac/prior_bitstream_export/MANIFEST.json",
+      "bytes": 16402,
+      "sha256": "83cbd062dc094a15bd5fcd0f34ad83ef6349376ff981298a8e73ec932077eebd",
+      "role": "bounded known-record comparison or index/source verification"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_AI_Log_Recovery_2026-11-10_125845Z/bitstream_and_mac/bitstream_root_tail/assistant_final.txt",
+      "bytes": 1616,
+      "sha256": "06a67d398a9143613850989efd1d1513c791e712e794a2c92cb29e7481d10542",
+      "role": "bounded known-record comparison or index/source verification"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_AI_Log_Recovery_2026-11-10_125845Z/bitstream_and_mac/bitstream_root_tail/VISIBLE_MESSAGES.md",
+      "bytes": 3743,
+      "sha256": "1e7807ff532a7b1a8566b28a366f5b07b3ae2c7eea152efeb4fd529d6e1a2304",
+      "role": "bounded known-record comparison or index/source verification"
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/root_current_task/VISIBLE_MESSAGES.md",
+      "bytes": 18657,
+      "sha256": "14728749a2aad56ec79b93bc8ae60df5cebcc7388b8835c432cef90dd197282f",
+      "role": "bounded known-record comparison or index/source verification",
+      "expected_manifest_sha256": "14728749a2aad56ec79b93bc8ae60df5cebcc7388b8835c432cef90dd197282f",
+      "matches_expected_manifest": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_bitstream_simulation/VISIBLE_MESSAGES.md",
+      "bytes": 5876,
+      "sha256": "24592e3f684a41903ed88ffa1dc35c1b1327c625d438e3b84945f3a99183efdd",
+      "role": "bounded known-record comparison or index/source verification",
+      "expected_manifest_sha256": "24592e3f684a41903ed88ffa1dc35c1b1327c625d438e3b84945f3a99183efdd",
+      "matches_expected_manifest": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/baseline_mapped_formal/VISIBLE_MESSAGES.md",
+      "bytes": 3140,
+      "sha256": "88a47e3c2ace2cad55d8749e73a13c2754d5f00e48368e6655fb22f827d5638f",
+      "role": "bounded known-record comparison or index/source verification",
+      "expected_manifest_sha256": "88a47e3c2ace2cad55d8749e73a13c2754d5f00e48368e6655fb22f827d5638f",
+      "matches_expected_manifest": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/baseline_bitstream_equivalence_2026-11-07_20261107T172039Z/records/current_task_transcripts/snapshot_20261107T173219129900Z/decode_regenerated_baseline/VISIBLE_MESSAGES.md",
+      "bytes": 2954,
+      "sha256": "80ac9ee2dd35d896e2fee976a3e476ebb6cbd130531a637dd2df6af98b763a67",
+      "role": "bounded known-record comparison or index/source verification",
+      "expected_manifest_sha256": "80ac9ee2dd35d896e2fee976a3e476ebb6cbd130531a637dd2df6af98b763a67",
+      "matches_expected_manifest": true
+    }
+  ],
+  "outputs": [
+    {
+      "file": "SAFE_VISIBLE_MESSAGES.json",
+      "bytes": 17304,
+      "sha256": "5ff42f5153b91a4da4ace84c1448be3672a0b484fbd7552679762554b02c412e"
+    },
+    {
+      "file": "VISIBLE_MESSAGES.md",
+      "bytes": 15492,
+      "sha256": "6ea5577b4c96644c57eb9b787d3bd6fa0b08405b8e5b6ab545014f3575208f5e"
+    },
+    {
+      "file": "SEARCH_PAGINATION_INVENTORY.json",
+      "bytes": 4059,
+      "sha256": "8f9e4a6223e165380e4594e80a9395e08ca47127bd1c38209f1c943cf8098a16"
+    },
+    {
+      "file": "COMPARISON.json",
+      "bytes": 8931,
+      "sha256": "10020dc413193dd1543517fe957b7c11c1525afaaf6f8d274ae76d56a5e5ade4"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 6090,
+      "sha256": "bdb9bad944de20276f8e2a93ddf50c1fcb0034aa479390fbeff4a9ce467c2c9b"
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "visible_messages": 14,
+    "user_messages": 3,
+    "assistant_messages": 11,
+    "one_exact_excerpt": true,
+    "all_texts_in_readable_export": true,
+    "per_text_hashes_match_comparison": true,
+    "four_manifest_listed_message_hashes_match": true,
+    "no_cached_preview_or_tool_records_saved": true,
+    "complete_api_page": true
+  },
+  "hash_limit": "SHA-256 values attest the inspected local bytes and output consistency only; not provider attestation or engineering execution verification."
+}

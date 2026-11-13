@@ -6,8 +6,12 @@
   "visibility_authorization": "public, explicitly confirmed by user",
   "files": {
     "CURRENT_GUIDE.md": {
-      "bytes": 6117,
-      "sha256": "7434ac60bd8a13b6bb183833cbfd9978ac6249a8fa94bdb2885f0d5c39767cf2"
+      "bytes": 8188,
+      "sha256": "3db857a77beb1651a9bef5c117ded5822534890149233768145e89076ba37c9c"
+    },
+    "ENCRYPTION_EXPLANATION.md": {
+      "bytes": 6621,
+      "sha256": "0087d25ac5564806f3d0b17dabf53a9d1ad59260d770719d2e8373cd74f74167"
     },
     "HANDOFF_SIMPLE.md": {
       "bytes": 1821,
@@ -34,12 +38,12 @@
       "sha256": "d862a858ace381d57f3127da5824a3950e5dde15c3905fd3c0ed9f592c8d1549"
     },
     "PUBLICATION_REVIEW.md": {
-      "bytes": 6593,
-      "sha256": "c36280f92db608777e929b8032fc94e78e0418f6879a9859d8dddc847f9dde1d"
+      "bytes": 7453,
+      "sha256": "1b977f886f402a51cd0273cf53dd7003b063a009379e9d59cbf581e6f57eb330"
     },
     "PUBLICATION_STATUS.md": {
-      "bytes": 1472,
-      "sha256": "819c49e1c92c08164d008a48756edd9333f2930e65018d62540c65c6584be559"
+      "bytes": 1873,
+      "sha256": "73456766760729d181ae95a9188c9cf974c845cdbf6d45d1a363553220ce5138"
     },
     "README.md": {
       "bytes": 14443,
@@ -212,6 +216,562 @@
     "addenda/2026-11-12/verification/verify_reviewer_export.py": {
       "bytes": 3203,
       "sha256": "3a45e387591024b95632f151999ec0a1644aed77d75d0ee8645ed68dc340f408"
+    },
+    "addenda/2026-11-12-recovered-records/COPY_RECEIPT.json": {
+      "bytes": 19085,
+      "sha256": "476f21683f91464e0a35a18b4a22d887e07552629f33f948bfb9b482bc836b3d"
+    },
+    "addenda/2026-11-12-recovered-records/FINAL_WORDING_REVIEW_COPY_RECEIPT.json": {
+      "bytes": 502,
+      "sha256": "830b277c990f93ab41f0d55d8101392285e55cca30283517a1e4fd71761c32f4"
+    },
+    "addenda/2026-11-12-recovered-records/MANIFEST.json": {
+      "bytes": 24520,
+      "sha256": "79cf1bc90546ff914ce8686c7e05ef9b7a728824e9c2406e44abf83f833fa238"
+    },
+    "addenda/2026-11-12-recovered-records/ORCHESTRATOR_REVIEW_COPY_RECEIPT.json": {
+      "bytes": 500,
+      "sha256": "d4ada7927559db78531f7a08ec82d4c5a3c09fa90102dadf6ea4812ce451301e"
+    },
+    "addenda/2026-11-12-recovered-records/README.md": {
+      "bytes": 4634,
+      "sha256": "da96438baa4a9027ddfe196622382fff3d44f44cfa3c2db0e6df83ecba61a8e1"
+    },
+    "addenda/2026-11-12-recovered-records/TASK_JOURNAL.json": {
+      "bytes": 2036,
+      "sha256": "5029069b1672d9f81b2778e4cac8900f03d8062a1a333895b8df7bac3a1689f9"
+    },
+    "addenda/2026-11-12-recovered-records/documentation_history/EXPORT_MANIFEST.json": {
+      "bytes": 1415,
+      "sha256": "9df458a99396b5ff615b106627db4bc052e754644a5aca3f098281552a6a2fc0"
+    },
+    "addenda/2026-11-12-recovered-records/documentation_history/omitted_records.jsonl": {
+      "bytes": 28713,
+      "sha256": "386c8e2386dc59c9011d8b3d8f8ff7cb9b8e115a9f3224a5f96b3ea125253f9f"
+    },
+    "addenda/2026-11-12-recovered-records/documentation_history/visible_messages_and_tool_inputs.jsonl": {
+      "bytes": 79783,
+      "sha256": "f7bbaa0dde28ecda69d7ad960977aa7d396771796c9b12b7da057edc9a24fb44"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/LATEST_SOURCE_RECEIPT.json": {
+      "bytes": 1542,
+      "sha256": "3eef66be392c480233bf47b5cddbebe48adb860619648555704391bd66aa8e08"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/MANIFEST.json": {
+      "bytes": 2293,
+      "sha256": "5bbf37e77afe37e402937ffa20ddab273899b60df619fbda6ca29ad4de820566"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/MEMORY_CONTROL_EVIDENCE.json": {
+      "bytes": 1557,
+      "sha256": "5e4761d0c6a9edc818d18e260ff5a76e893ddd38945df56013ff4d60c5060a1c"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/REVIEW.md": {
+      "bytes": 1499,
+      "sha256": "bdec6fc27db8fc4d09f903e0a7f72759dd722d078261a7bca0e87ee02e5d43ee"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/SOURCE_RECEIPT.json": {
+      "bytes": 1514,
+      "sha256": "376db34a7e698457530d393d565ac6c1bbfdadbedcfd6138dc621e750e8a183b"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/VERIFICATION.json": {
+      "bytes": 237,
+      "sha256": "dffb1d347ba9a20fa89d920dac18b5a22a0813fef025cb724e4f1b90d7ef0067"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/latest_sources/SUBMISSION_GAPS.md": {
+      "bytes": 5680,
+      "sha256": "737c67b9f8b6a512655f40496e7ea8cec4fca8dc0bfdf87f50dee4134536384f"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/latest_sources/submission/CURRENT_GUIDE.md": {
+      "bytes": 8188,
+      "sha256": "3db857a77beb1651a9bef5c117ded5822534890149233768145e89076ba37c9c"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/latest_sources/submission/ENCRYPTION_EXPLANATION.md": {
+      "bytes": 6615,
+      "sha256": "9644ba05acd58b25178839002c118c283633d589b91f53cc1e60f5defa84443a"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/latest_sources/submission/addenda/2026-11-12-recovered-records/README.md": {
+      "bytes": 4247,
+      "sha256": "96e9d9876f1086633e8e71436398baa49f5b3173b35ee419c4e406fc12a80b5f"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/sources/SUBMISSION_GAPS.md": {
+      "bytes": 5447,
+      "sha256": "4bd9c6de4751b896573e1df82106a216c2dbb65cb675733d91a707c6132d3045"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/sources/submission/CURRENT_GUIDE.md": {
+      "bytes": 7899,
+      "sha256": "2f17879dfac7a15eb375c6ad0a77ac9698b178c93af34100b75b7c975c382716"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/sources/submission/ENCRYPTION_EXPLANATION.md": {
+      "bytes": 6308,
+      "sha256": "31cef06a8dbbe72c9607fbf8adeb0848cf93d8fc1c76de7415260d329790ede0"
+    },
+    "addenda/2026-11-12-recovered-records/final_wording_review/sources/submission/addenda/2026-11-12-recovered-records/README.md": {
+      "bytes": 3319,
+      "sha256": "8215f5d6446d301cea900c939390dabe11173d6fd97a33187e64bfea2a2d1b06"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/CONVERSATION_INVENTORY_REFERENCE.json": {
+      "bytes": 313,
+      "sha256": "7bb23e9ded09d79fac385a97096bc1b19ebde4c53d4c12f10e0878fae2339304"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/FETCHED_BUNDLE_REFERENCE.json": {
+      "bytes": 352,
+      "sha256": "55d678ef084ca9d3becbcd1963e20f97af17487c79d485f0fc90eb67087c709d"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/MANIFEST.json": {
+      "bytes": 2292,
+      "sha256": "f8e9bbfec30d7c5c52aa3af330c19ae65f8807936f1d7d04235543f02be821d4"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/PROPOSED_ENCRYPTION_WORDING.md": {
+      "bytes": 2351,
+      "sha256": "3791d5b24fd237d3251f18aa33fbe9af6330b35bbe57435d71010cf31e1ac538"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/READINESS_WORDING_REVIEW.md": {
+      "bytes": 4135,
+      "sha256": "3ffccc9dcfdeb72d872692ea35dc9210b6ebb657debd235cd7b190606fa6c9ac"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/README.md": {
+      "bytes": 1728,
+      "sha256": "5866308a0f94cbfd33d4ef0bbc1c1ec043f64bc4c5df9d8db36ff25f8494ae06"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/REQUIREMENTS_REVIEW.md": {
+      "bytes": 3543,
+      "sha256": "d0533e586dcb506d35dbb62e0b652811db8b827e4a6281aa17deb6f85ccf0b41"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/SOURCE_RECEIPT.json": {
+      "bytes": 2220,
+      "sha256": "515a4ba57927b70a04e8b0d2297bd1d669584b374e740ac2fe8961d427a0570e"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/TECHNICAL_SOURCE_REFERENCES.json": {
+      "bytes": 935,
+      "sha256": "0fa104dae42da86ec70687b7581fa4ff1d7f98866a12b07d1e9f07750f7bce0c"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/VERIFICATION.json": {
+      "bytes": 1469,
+      "sha256": "6e6e8c2492495b2828d89597c9849e9bb5ccffadbb92f0113da7ea27f9922740"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/sources/README.md": {
+      "bytes": 5995,
+      "sha256": "650b9ea893a968c88b9bdaff2e29db78b24b3ff731bff7605e2f4cd7f8e28758"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/sources/SUBMISSION_GAPS.md": {
+      "bytes": 3901,
+      "sha256": "3165247c45d042d0f3b523ad629e97329a28941e9040b676b9987cd4644fb806"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/sources/submission/CURRENT_GUIDE.md": {
+      "bytes": 6117,
+      "sha256": "7434ac60bd8a13b6bb183833cbfd9978ac6249a8fa94bdb2885f0d5c39767cf2"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/sources/submission/addenda/2026-11-12/explanation/PROPOSED_ENCRYPTION_EXPLANATION.md": {
+      "bytes": 7000,
+      "sha256": "2acfdef57152dd0474ee554f9d7b5ef682c470a8f55ef20a2d2d82e85efdd861"
+    },
+    "addenda/2026-11-12-recovered-records/orchestrator_review/sources/submission/evidence/original_qualifier_README.md": {
+      "bytes": 9206,
+      "sha256": "72833c7880d7c4ea2af74bdeff9c001716ea087bca609f8d53699546b6ff4e08"
+    },
+    "addenda/2026-11-12-recovered-records/records/COLLECTION_NOTES.md": {
+      "bytes": 3050,
+      "sha256": "8ad1ed72d7c1f00bcd023ae9e4f00e1bddef3d9b2de507a4e156d695f8ba2e3e"
+    },
+    "addenda/2026-11-12-recovered-records/records/CONVERSATION_INVENTORY_RECEIPT.json": {
+      "bytes": 692,
+      "sha256": "abcd03a24cc6355904e096cc6121fabc2244a0f4f70cf7493a4e77e87610c335"
+    },
+    "addenda/2026-11-12-recovered-records/records/CURRENT_QWEN_COMPARISON.json": {
+      "bytes": 1614,
+      "sha256": "3676acb9f2cb791ad1e8db3346a3456155afc8058c33e2da2a19468a803b96c2"
+    },
+    "addenda/2026-11-12-recovered-records/records/FETCH_VERIFICATION.json": {
+      "bytes": 600,
+      "sha256": "a1e3ba12833f599284cc56f497e907e04554650b649164e4f23948a0fb353742"
+    },
+    "addenda/2026-11-12-recovered-records/records/MANIFEST.json": {
+      "bytes": 17227,
+      "sha256": "f6b3ba4ae7d8d05eb8d017d66c8d4dfd435ac88a4876f36019acd0d37399c3e9"
+    },
+    "addenda/2026-11-12-recovered-records/records/QWEN_SETUP_INVENTORY.json": {
+      "bytes": 6619,
+      "sha256": "49c5a0980a8d7f7683bccade686c6f05dea8b0f627cbf6b906f28ab85b3ac1d2"
+    },
+    "addenda/2026-11-12-recovered-records/records/README.md": {
+      "bytes": 7824,
+      "sha256": "cbc511f068adb8a6c1bfb7c1a4f44bff08e664dda2dc836156f80dfe953760cf"
+    },
+    "addenda/2026-11-12-recovered-records/records/SOURCE_COPY_RECEIPTS.json": {
+      "bytes": 136820,
+      "sha256": "56e4be29afd4e7401953d2774d15c5e9ee36057c944c037dae7aa8a49f8d0371"
+    },
+    "addenda/2026-11-12-recovered-records/records/claude_code_reviews/opus55-readiness-review-stdout.json": {
+      "bytes": 9934,
+      "sha256": "85a81ac18303185abb2ed683ceb95b66c36b33b5f75dda5a8b259eb16d561f52"
+    },
+    "addenda/2026-11-12-recovered-records/records/claude_code_reviews/readiness-review-stdout.json": {
+      "bytes": 8792,
+      "sha256": "c1072697375af85ac101671a4ef45871df1bd30b76eaad42f3fef3df5b5255c9"
+    },
+    "addenda/2026-11-12-recovered-records/records/claude_code_reviews/requested-model-probe-stdout.json": {
+      "bytes": 885,
+      "sha256": "929613f8927ada8fa442455537d6d686f4ba2b9088435db77375e331f40e59b2"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234659Z_mx_qh1n7/prompt.txt": {
+      "bytes": 602,
+      "sha256": "6b6147f5a8686bfb2c90a372423f5b7480ac5bba7f323f98ccd49b7dfab9888c"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234659Z_mx_qh1n7/receipt.json": {
+      "bytes": 6218,
+      "sha256": "7ec104efbf791d212c92ee81079d405f54180dcefe8d430edad7548401a10b20"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234659Z_mx_qh1n7/stderr.log": {
+      "bytes": 5580,
+      "sha256": "4c9502f177acc1784e53662d9d1b190a18af58a747cabe14054f8bef9912164e"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234755Z_n6kf7520/prompt.txt": {
+      "bytes": 602,
+      "sha256": "6b6147f5a8686bfb2c90a372423f5b7480ac5bba7f323f98ccd49b7dfab9888c"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234755Z_n6kf7520/receipt.json": {
+      "bytes": 9455,
+      "sha256": "8e119ab929627c5629d0e801191174e3e58e62cc0f99489234e805418214bbb9"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234755Z_n6kf7520/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234936Z_o8n3e8oh/prompt.txt": {
+      "bytes": 528,
+      "sha256": "58e5f491bc714eb53261cc6962e6124950169ba3d0dcf0b3607a5fb3685bc4f3"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234936Z_o8n3e8oh/receipt.json": {
+      "bytes": 6813,
+      "sha256": "8424c64de1ba9763b882e6019bf39c799d06e215c42d0f4822cb121d20ed8c6c"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234936Z_o8n3e8oh/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234958Z_ory2a9er/prompt.txt": {
+      "bytes": 528,
+      "sha256": "58e5f491bc714eb53261cc6962e6124950169ba3d0dcf0b3607a5fb3685bc4f3"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234958Z_ory2a9er/receipt.json": {
+      "bytes": 8462,
+      "sha256": "ab351d49704d14099c486e5e587241ede948ca6157d9ab3781fb7e422ed6e41f"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T234958Z_ory2a9er/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235035Z_kwa102aw/prompt.txt": {
+      "bytes": 528,
+      "sha256": "6e89221b7ded2b0359af021ae1633a7a486488b6e6884468794ad43ace3d67f1"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235035Z_kwa102aw/receipt.json": {
+      "bytes": 8731,
+      "sha256": "7b6a07994648e369665a00e445b0f836b14dbd649f6cacd32cca81bff3f3cf53"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235035Z_kwa102aw/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235153Z__aa_qgq4/prompt.txt": {
+      "bytes": 684,
+      "sha256": "1c4bd160b09275505f1b7ce6eab51e41e42b79b64aea3b07353b87a609b243f7"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235153Z__aa_qgq4/receipt.json": {
+      "bytes": 11434,
+      "sha256": "3c5cc106afbe1b36390acd6b8cb5b31977a08f4a9a30f222a2266fde8bcce63d"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235153Z__aa_qgq4/response.txt": {
+      "bytes": 342,
+      "sha256": "d8035992fffe357a04a197ca2fc166bec6f154e1c037febf6f42002f9b633544"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235153Z__aa_qgq4/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235340Z_1a80em9l/prompt.txt": {
+      "bytes": 531,
+      "sha256": "c28b868ac3bcdb453302840c2be3b4f6af842ccd21e39626c5d8153c25584761"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235340Z_1a80em9l/receipt.json": {
+      "bytes": 11181,
+      "sha256": "78e9668bdcc8ec7263d38be46f8e6fd1358b3ab60f7032529fce44ad6f88e141"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235340Z_1a80em9l/response.txt": {
+      "bytes": 141,
+      "sha256": "19d4ee13a4c739e6debc724c50dc7fddf62820460c3a974ce616807e6620b5e5"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235340Z_1a80em9l/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235536Z_zrobi66p/prompt.txt": {
+      "bytes": 323,
+      "sha256": "5aade7f824cb8d8baa340ec09df2b233e26329b7f1c616b6cc72cb6243b18303"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235536Z_zrobi66p/receipt.json": {
+      "bytes": 10725,
+      "sha256": "52add4194bfaf0dba0c0d3d21bd40e00dab48657d2f0d842a02864339365fc07"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235536Z_zrobi66p/response.txt": {
+      "bytes": 64,
+      "sha256": "105b5450fa8287985eadfd95a017d3844cc2e9360ddf01599f40debc668d9d12"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261112T235536Z_zrobi66p/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000617Z_digvp1qp/prompt.txt": {
+      "bytes": 31,
+      "sha256": "6964cd62e98b23d82ce07eda5b66a9cd7c4b2b5c06346f0b2a8445f222fda8f0"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000617Z_digvp1qp/receipt.json": {
+      "bytes": 10942,
+      "sha256": "c3427305e6c301436dc903a341762fdb95e8667b9b233d3abe457dda15772b75"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000617Z_digvp1qp/response.txt": {
+      "bytes": 268,
+      "sha256": "ba923b7d14706f791366e98d9e21e83367b19f0fba2687124c99051ca1ec6369"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000617Z_digvp1qp/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000843Z_u6ypyg9r/prompt.txt": {
+      "bytes": 26,
+      "sha256": "4875b226cc04b0bdb255493f149cd70c30e8191ada5d7e628fb1b0469de91fe8"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000843Z_u6ypyg9r/receipt.json": {
+      "bytes": 11020,
+      "sha256": "ccd45a75754494dc1b17705c82f7a7ff9ed51504ebc7d5363a91dada68a310af"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000843Z_u6ypyg9r/response.txt": {
+      "bytes": 327,
+      "sha256": "0be85b92077564aed5aeea6d58a5b830a071ad20ff89e6a1dd6ab628773ee8ee"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000843Z_u6ypyg9r/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000851Z_kg8q87zy/prompt.txt": {
+      "bytes": 227,
+      "sha256": "8c1c3ec97d98a14be513d44568105a4b5a63e0f5f7bcb40c9333fd11bb07d7b0"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000851Z_kg8q87zy/receipt.json": {
+      "bytes": 11349,
+      "sha256": "a8810daf855f27e985ab4790b6d6c5b6147f3875e4ef052f0b2f86986929517a"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000851Z_kg8q87zy/response.txt": {
+      "bytes": 667,
+      "sha256": "fb0cb34203641ea2a5ce88e206145d4bb394c072a231e6b13fa0dca81b787a09"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000851Z_kg8q87zy/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000908Z_g2o3nikf/prompt.txt": {
+      "bytes": 132,
+      "sha256": "2f17139a8dfd9059bb956b581224264bc59d97577ef3bbd20536287118f622ff"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000908Z_g2o3nikf/receipt.json": {
+      "bytes": 11511,
+      "sha256": "232781fd445e9a9478e69001b8d28d546cb04565379764530bbbb3590853ac96"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000908Z_g2o3nikf/response.txt": {
+      "bytes": 811,
+      "sha256": "ab3be809702b3517be316a4cbbbda835b54852d47bb33774229d5272cb4ea49c"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000908Z_g2o3nikf/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000922Z_b8kiv0ws/prompt.txt": {
+      "bytes": 156,
+      "sha256": "5c96ea7ca09287d13bc389060d427a3b3583ad8cbbaee49b3664c8cc01f850da"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000922Z_b8kiv0ws/receipt.json": {
+      "bytes": 14371,
+      "sha256": "ff73d5291a4ab11c67d68c7145ddb8b57b802d80a28473db3ea7bb8585a492b5"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000922Z_b8kiv0ws/response.txt": {
+      "bytes": 3647,
+      "sha256": "b41dc62bf376dd617f1bde5c8ac5bc29f3b67ac7e700e1cb78397580988cefcc"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000922Z_b8kiv0ws/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000954Z__yd8trf7/prompt.txt": {
+      "bytes": 175,
+      "sha256": "0f49d43e1990f797b84bf9408d4fa5be64af1d28de55d24d448a9debb9c3b3c6"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000954Z__yd8trf7/receipt.json": {
+      "bytes": 12225,
+      "sha256": "707ac0cb734f4ea72cc5b4a59b4143d662780329f4c1b11457d3c931d6f794df"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000954Z__yd8trf7/response.txt": {
+      "bytes": 1486,
+      "sha256": "386825f50384b5a8300f10f8bd241129fab709c0c97b3ce3c2a18a5fdfab2dc1"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T000954Z__yd8trf7/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T001024Z_p5y7bom_/prompt.txt": {
+      "bytes": 151,
+      "sha256": "2e8c42243d5a4ef72ad4fb72d3223523589bfc89800e430bd70852318b52927f"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T001024Z_p5y7bom_/receipt.json": {
+      "bytes": 14604,
+      "sha256": "8cab6e86f02895da8cc422a534bda443e9be48b18978149a8df1184b01c67885"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T001024Z_p5y7bom_/response.txt": {
+      "bytes": 846,
+      "sha256": "002dcdb338f2d27779234ddb9e8c815f786a472f2d46a41bc5bdb9ca4ee8f7f9"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/20261113T001024Z_p5y7bom_/stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/AI_RECORDS_INDEX.md": {
+      "bytes": 3512,
+      "sha256": "6376c90382de040aef198c67092d9bd9654860f83fa0f81159a30ec4f6366885"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_setup/SETUP_RESULT.json": {
+      "bytes": 4757,
+      "sha256": "65a7e5c1ca618001c30cc5eb5123d42a61bfa60b0c32a187dce3330104991dd3"
+    },
+    "addenda/2026-11-12-recovered-records/records/qwen_terminal/ollama_prompt_history.txt": {
+      "bytes": 9105,
+      "sha256": "05f43395956af688d43541056f5292dddd71147342aa54555c8922bd5f257705"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/MANIFEST.json": {
+      "bytes": 4424,
+      "sha256": "163d805396acfeeed2193297bc003ff87aa7e8e5d410a001390a5397f03e71a9"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/README.md": {
+      "bytes": 7458,
+      "sha256": "61ed80e115b92035a129ee1c4ffc96a87c326a9307710e560b1a2df36d6709d1"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/SCOPE.md": {
+      "bytes": 497,
+      "sha256": "a4f822c134d40ad4880c0a8d0d1ede14b498b6c3fc9153e46efd70ec4cd426ea"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/discovery/PROMPT_FORK_SCOPE.json": {
+      "bytes": 2422,
+      "sha256": "8801b0fd06df8e58e274b38cffea9856e47221df766cc9aa651b99c5c7167193"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/discovery/REVIEWER_API_CHECK.json": {
+      "bytes": 2808,
+      "sha256": "caedd7b275f30036a0b6dba28d492d5b775fbfd9e0868360d91e025278df2f60"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/discovery/SEARCH_SCOPE.json": {
+      "bytes": 5522,
+      "sha256": "c0ca3b27beaa823a2304dd0ffb9abf39fa7de5e9946fac9efc79e77c4e8b16f5"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/TROUBLESHOOT_DOT_SAFE_EXCERPTS.json": {
+      "bytes": 3995,
+      "sha256": "bb4f46f58b21a064cb6753866edcdb7b14182169d5640a913ca7ec1f5d220264"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/bitstream_history/COMPARISON.json": {
+      "bytes": 8931,
+      "sha256": "10020dc413193dd1543517fe957b7c11c1525afaaf6f8d274ae76d56a5e5ade4"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/bitstream_history/REPORT.md": {
+      "bytes": 6090,
+      "sha256": "bdb9bad944de20276f8e2a93ddf50c1fcb0034aa479390fbeff4a9ce467c2c9b"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/bitstream_history/SAFE_VISIBLE_MESSAGES.json": {
+      "bytes": 17304,
+      "sha256": "5ff42f5153b91a4da4ace84c1448be3672a0b484fbd7552679762554b02c412e"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/bitstream_history/SEARCH_PAGINATION_INVENTORY.json": {
+      "bytes": 4059,
+      "sha256": "8f9e4a6223e165380e4594e80a9395e08ca47127bd1c38209f1c943cf8098a16"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/bitstream_history/SOURCE_AND_OUTPUT_MANIFEST.json": {
+      "bytes": 5998,
+      "sha256": "3155b747ac644a0afed89d0cff26c37acbd8da05e1f5918d887538cb82b6597b"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/bitstream_history/VISIBLE_MESSAGES.md": {
+      "bytes": 15492,
+      "sha256": "6ea5577b4c96644c57eb9b787d3bd6fa0b08405b8e5b6ab545014f3575208f5e"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/clean_protocol_history/ADDITIONAL_NOV11_STATUS_RECORDS.jsonl": {
+      "bytes": 5383,
+      "sha256": "125f7e2c6b292cfff49413d5048e20802ba4237cf0114198a6c0c26dd03041ae"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/clean_protocol_history/API_VISIBLE_MESSAGES.json": {
+      "bytes": 80536,
+      "sha256": "b3b874040d253a88f88b4b1310cb271288d33d148b4489c00559ea027ff97ad9"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/clean_protocol_history/INVENTORY.json": {
+      "bytes": 4816,
+      "sha256": "c150d47b775c13576cf50725b1aeee936f0aae6acb0621ef569951e297205704"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/clean_protocol_history/OUTPUT_HASHES.json": {
+      "bytes": 1025,
+      "sha256": "5bdba6ad65d0186a47bab62c4018a6134da9b0b1326c6126980e8b630e064193"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/clean_protocol_history/REPORT.md": {
+      "bytes": 6627,
+      "sha256": "bba47fc620b2f2514ab5280a341bb8a41c76eba4ccaeab1f26b076bf50891d3e"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/clean_protocol_history/SELECTED_EXCERPTS.json": {
+      "bytes": 8415,
+      "sha256": "ca0962ff44ff8854475ee6f7070762231e9ec5ab878317418118e9d85adc7ece"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/records/clean_protocol_history/VISIBLE_PROJECT_RECORDS.jsonl": {
+      "bytes": 200848,
+      "sha256": "f81941432317961396807413876045973e5363e90a46346145c440da75654d32"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/verification/DOT_EXCERPT_VALIDATION.json": {
+      "bytes": 1347,
+      "sha256": "6f1ce39b551d31dd825d437eefb01e5de3440c2c07ed452146f47d29eea5f352"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/verification/FINAL_VERIFICATION.json": {
+      "bytes": 1910,
+      "sha256": "bfc2c6453047eb117ae1de1483525e72dbe3fb872e255b015db06288d61c2b25"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/verification/INITIAL_MANIFEST_SCHEMA_CHECK.json": {
+      "bytes": 344,
+      "sha256": "a7c6cb8839819c13d70adb9abe1f9d5ea22134bd8af0c3c6b774256da3537803"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/verification/PUBLISHED_ZIP_TEXT_OVERLAP.json": {
+      "bytes": 6259,
+      "sha256": "b0f0fcfd75fae503d6cf3f5c93a446d37b1f212dfc454a7172645dcda614c467"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/verification/PUBLISHED_ZIP_TEXT_OVERLAP_initial_scope7.json": {
+      "bytes": 2562,
+      "sha256": "e595b6b36ef5e3aff77d5b1dcbdba2ce734ae591509cf61783087106f40c0752"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/verification/original_zip_before.json": {
+      "bytes": 221,
+      "sha256": "47a29a7e8f03b0a391096feef9372d0f488c18d905f4716d270cf5a8690c5d4c"
+    },
+    "addenda/2026-11-12-recovered-records/records/trojan_chat_inventory/verification/published_addendum_manifest_before.json": {
+      "bytes": 228,
+      "sha256": "1255703953dc1ba134773cfd03f8237b7fe2d43ebe4311955a106375e622ca38"
+    },
+    "addenda/2026-11-12-recovered-records/records/ui_observations/PROVENANCE.json": {
+      "bytes": 3401,
+      "sha256": "42e0ab14171899cda5b7bddccaa10c5cd816d4a84fb5806a9d88be3876c33d8d"
+    },
+    "addenda/2026-11-12-recovered-records/records/ui_observations/claude_csaw_audit_visible_messages_16_to_18.txt": {
+      "bytes": 19965,
+      "sha256": "13a6eebb8e7761511fbdb5c1883cc3c32533235d0d69fccec254fbcff2e951ee"
+    },
+    "addenda/2026-11-12-recovered-records/records/unverified_qwen_drafts/README.md": {
+      "bytes": 830,
+      "sha256": "826ea193bbf8c01fb3c1d3883507089ef987441ca2d28b02ed9dae319f368ab0"
+    },
+    "addenda/2026-11-12-recovered-records/records/unverified_qwen_drafts/submission_receipt.md": {
+      "bytes": 366,
+      "sha256": "1aca5636a0aeeaca1c28e9d0a5806c735dbe417cb74cfa3d70c817c1e584b94c"
+    },
+    "addenda/2026-11-12-recovered-records/records/unverified_qwen_drafts/technical_brief.md": {
+      "bytes": 872,
+      "sha256": "7a8b07316e4c09b408aac92ee6984dc32eea463352a902116141a7410496728b"
     },
     "ai/AI_RECORDS_INDEX.md": {
       "bytes": 5119,

@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-11-13T01:40:50.270018+00:00",
+  "source_native_session": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/11/rollout-2026-11-11T22-38-22-01a1c563-aa79-7e12-ae2f-72d867d1e3da_01a1cdd5-c9db-7581-b129-a9c84bd76091.jsonl",
+  "method": "Read-only UI observations retrieved by authorized computer-use tools; selected exact tool-result text retained with source line hashes. Not a complete Claude-native transcript export.",
+  "records": [
+    {
+      "native_line": 959,
+      "native_line_sha256": "3827c05eb29afe6a90c0d4d15195a0251bb372277baf4a205a59e2d9d37dc8c4",
+      "source_url": "https://claude.ai/chat/64d9407c-24b9-4f6f-8b54-263129c8e87d",
+      "title": "CSAW 2026 AI hardware challenge",
+      "coverage": "Rendered visible messages16\u201318 of18, not full native chat export. Historical earlier-package audit.",
+      "file": "claude_csaw_audit_visible_messages_16_to_18.txt"
+    },
+    {
+      "native_line": 966,
+      "native_line_sha256": "523af2f8b28879c3607cb28db0085b28c9b15fc5a49b21f06624783dde262828",
+      "source_url": "https://claude.ai/chat/3807e226-0291-4c44-bd24-e8fb9a54ca35",
+      "title": "CSAW 2026 AI hardware qualifier plan",
+      "coverage": "Latest visible messages11\u201316 inspected for provenance; source declared reliance on published architecture. No attachments or earlier solution details fetched.",
+      "classification": "Excluded from clean-design explanation and code evidence.",
+      "exact_provenance_excerpt": "Baseline RTL  generated from the published architecture",
+      "excerpt_scope": "Exact short provenance fragment only; technical solution-bearing content omitted."
+    },
+    {
+      "native_line": 933,
+      "native_line_sha256": "27ae448db8ad7d62f3b6337fbb5dad6796c791e60553fd995f78cb0cc1d3e76b",
+      "source_url": "https://claude.ai/chat/94fbfffe-9daf-4af5-8805-273e0d575a6d",
+      "title": "Cybersecurity specialist RTL role",
+      "coverage": "Visible messages26\u201330, and later1\u20134; middle portion not fully exported. Lecture discussion, refusals and user-quoted Qwen claims are not evidence of final code or cipher correctness.",
+      "exact_scope_excerpt_lines": [
+        "\t\t\t\t\t\t\t\t\t\t\t\t22 heading Cybersecurity specialist RTL role",
+        "\t\t\t\t\t\t\t\t\t\t\t\t\t\t55 container Message 27 of 30",
+        "\t\t\t\t\t\t\t\t\t\t\t\t\t\t78 container Message 29 of 30",
+        "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t81 text i want you. to draft a prompt to do the Required demonstration testbench now that rtl has been done by qwen"
+      ]
+    },
+    {
+      "native_line": 1025,
+      "native_line_sha256": "eac5d571089e6b43aedf6dd8b260b1031901dd3914fb9b462c30a2f92f4d2615",
+      "source_url": "https://claude.ai/code/sessions",
+      "finding": "Active list showed no own sessions; archived view had one unrelated session, whose content was not opened.",
+      "exact_excerpt_lines": [
+        "~\t\t\t\t\t\t\t\t56 text Sessions you start will show up here."
+      ]
+    },
+    {
+      "native_line": 1110,
+      "native_line_sha256": "cbb8bb0de6ebcd218d122b3934958345c49c8284b200b2d37c683865e22eea06",
+      "finding": "Live Terminal window could not be inspected; computer-use tool denied app access. No bypass attempted.",
+      "exact_result": "Wall time: 0.0070 seconds\nOutput:\nComputer Use is not allowed to use the app 'com.apple.Terminal' for safety reasons."
+    }
+  ]
+}

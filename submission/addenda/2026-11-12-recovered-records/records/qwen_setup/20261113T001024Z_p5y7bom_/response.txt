@@ -1,0 +1,20 @@
+The deliverables are now ready for submission. Here's the final confirmation:
+
+1. **Archive Contents**  
+   - `/work/rtl/baseline.v` (recovered RTL baseline)  
+   - `/work/rtl/cells_sim.v` (RTL simulation support)  
+   - `/work/technical_brief.md` (structured explanation of recovery/analysis)  
+
+2. **Submission Receipt**  
+   - Located at `/work/submission_receipt.md`  
+   - Contains archive metadata, checksum, and transfer instructions  
+
+3. **Next Steps**  
+   - Use `scp`/`rsync` or physical media to share the archive with reviewers  
+   - Verify contents with:  
+     ```bash
+     Glob pattern="rtl/*.v,technical_brief.md"
+     ```  
+   - Confirm submission via the course platform using the receipt file  
+
+No further actions are required within this environment. All deliverables adhere to the system's constraints and verified scope.
