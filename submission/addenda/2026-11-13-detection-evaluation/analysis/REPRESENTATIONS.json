@@ -1,0 +1,154 @@
+{
+  "prepared_utc": "2026-11-13T06:02:54.880748+00:00",
+  "identical_flow_for_both": true,
+  "preprocessing_note": "topModule.v explicitly supplies the canonical top and bypasses HW2VEC global underscore stripping; detector backend and checkpoints unchanged. No classification outcome was used to choose representation.",
+  "behavioral_validation": "Separate Icarus representation comparison required before interpreting classifier results.",
+  "representations": [
+    {
+      "design": "clean",
+      "wrapper_sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "raw_file": "detectors/raw_clean/topModule.v",
+      "raw_sha256": "102b6d43217278778f3d530ed4fde5507caf7bd50b4d9a3acc9f4392615ce95a",
+      "raw_modules": [
+        "top",
+        "chip",
+        "SB_RAM40_4K"
+      ],
+      "flat_file": "detectors/flat_clean/topModule.v",
+      "flat_sha256": "09ae379b85ca6c629d117dd88902bf48299fedeb40280aaedf6397998b3027dc",
+      "flat_module_count": 1,
+      "flat_no_unresolved_hierarchy": true,
+      "flat_memories_mapped_to_logic": true,
+      "flat_cell_count": 4727,
+      "ports": {
+        "SCK": {
+          "direction": "input",
+          "bits": [
+            2
+          ]
+        },
+        "RST_N": {
+          "direction": "input",
+          "bits": [
+            3
+          ]
+        },
+        "MOSI": {
+          "direction": "input",
+          "bits": [
+            4
+          ]
+        },
+        "NORM_CS_N": {
+          "direction": "input",
+          "bits": [
+            5
+          ]
+        },
+        "START": {
+          "direction": "input",
+          "bits": [
+            6
+          ]
+        },
+        "ENC_DEC": {
+          "direction": "input",
+          "bits": [
+            7
+          ]
+        },
+        "MISO": {
+          "direction": "output",
+          "bits": [
+            8
+          ]
+        },
+        "BUSY": {
+          "direction": "output",
+          "bits": [
+            9
+          ]
+        },
+        "ICE_LED": {
+          "direction": "output",
+          "bits": [
+            9
+          ]
+        }
+      }
+    },
+    {
+      "design": "modified",
+      "wrapper_sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+      "raw_file": "detectors/raw_modified/topModule.v",
+      "raw_sha256": "c93cc766665eea0da89d6633cf2081a971426b144869be82abb4cc6622cc6133",
+      "raw_modules": [
+        "top",
+        "chip",
+        "SB_RAM40_4K"
+      ],
+      "flat_file": "detectors/flat_modified/topModule.v",
+      "flat_sha256": "acb0d6c15dff2e1abfac218746c962940f7bfcb0ae3165b86f9e4795b10f2190",
+      "flat_module_count": 1,
+      "flat_no_unresolved_hierarchy": true,
+      "flat_memories_mapped_to_logic": true,
+      "flat_cell_count": 4771,
+      "ports": {
+        "SCK": {
+          "direction": "input",
+          "bits": [
+            2
+          ]
+        },
+        "RST_N": {
+          "direction": "input",
+          "bits": [
+            3
+          ]
+        },
+        "MOSI": {
+          "direction": "input",
+          "bits": [
+            4
+          ]
+        },
+        "NORM_CS_N": {
+          "direction": "input",
+          "bits": [
+            5
+          ]
+        },
+        "START": {
+          "direction": "input",
+          "bits": [
+            6
+          ]
+        },
+        "ENC_DEC": {
+          "direction": "input",
+          "bits": [
+            7
+          ]
+        },
+        "MISO": {
+          "direction": "output",
+          "bits": [
+            8
+          ]
+        },
+        "BUSY": {
+          "direction": "output",
+          "bits": [
+            9
+          ]
+        },
+        "ICE_LED": {
+          "direction": "output",
+          "bits": [
+            9
+          ]
+        }
+      }
+    }
+  ]
+}

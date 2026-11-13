@@ -1,0 +1,211 @@
+{
+  "scope": "Independent read-only review of existing outputs; no detector/model/synthesis/simulation rerun or source changes.",
+  "detectors": [
+    {
+      "candidate": "raw_clean",
+      "route": "heuristic_fallback",
+      "predictions": {
+        "HT1": "CLEAN",
+        "HT2": "CLEAN",
+        "HT3": "CLEAN",
+        "HT4": "CLEAN"
+      },
+      "ensemble": {
+        "trojan_votes": 0,
+        "triggered_models": [],
+        "verdict": "CLEAN",
+        "rule": "any model votes 1"
+      },
+      "valid_whole_design_result": false,
+      "source_hash_matches": true,
+      "extraction_error_lines": [
+        "[HW2GRAPH] DFG generation failed, will fallback to heuristic:  line:45770: before: \"case\"",
+        "[HW2GRAPH] Using heuristic DFG fallback (syntax may be wrong)."
+      ]
+    },
+    {
+      "candidate": "raw_modified",
+      "route": "heuristic_fallback",
+      "predictions": {
+        "HT1": "TROJAN",
+        "HT2": "CLEAN",
+        "HT3": "CLEAN",
+        "HT4": "CLEAN"
+      },
+      "ensemble": {
+        "trojan_votes": 1,
+        "triggered_models": [
+          "HT1"
+        ],
+        "verdict": "TROJAN",
+        "rule": "any model votes 1"
+      },
+      "valid_whole_design_result": false,
+      "source_hash_matches": true,
+      "extraction_error_lines": [
+        "[HW2GRAPH] DFG generation failed, will fallback to heuristic:  line:45827: before: \"case\"",
+        "[HW2GRAPH] Using heuristic DFG fallback (syntax may be wrong)."
+      ]
+    },
+    {
+      "candidate": "flat_clean",
+      "route": "exact_DFG",
+      "predictions": {
+        "HT1": "CLEAN",
+        "HT2": "CLEAN",
+        "HT3": "CLEAN",
+        "HT4": "CLEAN"
+      },
+      "ensemble": {
+        "trojan_votes": 0,
+        "triggered_models": [],
+        "verdict": "CLEAN",
+        "rule": "any model votes 1"
+      },
+      "valid_whole_design_result": false,
+      "source_hash_matches": true,
+      "extraction_error_lines": []
+    },
+    {
+      "candidate": "flat_modified",
+      "route": "exact_DFG",
+      "predictions": {
+        "HT1": "CLEAN",
+        "HT2": "CLEAN",
+        "HT3": "CLEAN",
+        "HT4": "CLEAN"
+      },
+      "ensemble": {
+        "trojan_votes": 0,
+        "triggered_models": [],
+        "verdict": "CLEAN",
+        "rule": "any model votes 1"
+      },
+      "valid_whole_design_result": false,
+      "source_hash_matches": true,
+      "extraction_error_lines": []
+    }
+  ],
+  "graph_coverage": [
+    {
+      "candidate": "flat_clean",
+      "nodes": 18841,
+      "edges": 19839,
+      "weak_components_reported": 606,
+      "paired_underscore_names": 4722,
+      "separate_definition_roots_reference_leaves": 4722,
+      "model_input_edges_exactly_equal_saved_graph": true,
+      "neighborhood_evidence": "GRAPH_NEIGHBORHOODS.json",
+      "interpretation": "Current naming/normalization flow leaves references disconnected from their definitions. Successful exact-backend completion does not establish complete design semantics."
+    },
+    {
+      "candidate": "flat_modified",
+      "nodes": 19014,
+      "edges": 20018,
+      "weak_components_reported": 611,
+      "paired_underscore_names": 4765,
+      "separate_definition_roots_reference_leaves": 4765,
+      "model_input_edges_exactly_equal_saved_graph": true,
+      "neighborhood_evidence": "GRAPH_NEIGHBORHOODS.json",
+      "interpretation": "Current naming/normalization flow leaves references disconnected from their definitions. Successful exact-backend completion does not establish complete design semantics."
+    }
+  ],
+  "simulation_review": {
+    "runs": [
+      {
+        "candidate": "original_clean",
+        "sample_triples": 39960,
+        "transactions": 270,
+        "pass_line_present": true
+      },
+      {
+        "candidate": "original_modified",
+        "sample_triples": 39960,
+        "transactions": 270,
+        "pass_line_present": true
+      },
+      {
+        "candidate": "raw_clean",
+        "sample_triples": 39960,
+        "transactions": 270,
+        "pass_line_present": true
+      },
+      {
+        "candidate": "raw_modified",
+        "sample_triples": 39960,
+        "transactions": 270,
+        "pass_line_present": true
+      },
+      {
+        "candidate": "flat_clean",
+        "sample_triples": 39960,
+        "transactions": 270,
+        "pass_line_present": true
+      },
+      {
+        "candidate": "flat_modified",
+        "sample_triples": 39960,
+        "transactions": 270,
+        "pass_line_present": true
+      }
+    ],
+    "representation_comparisons": [
+      {
+        "candidate": "raw_clean",
+        "reference": "original_clean",
+        "exact_T_and_R_lines_equal": true
+      },
+      {
+        "candidate": "raw_modified",
+        "reference": "original_modified",
+        "exact_T_and_R_lines_equal": true
+      },
+      {
+        "candidate": "flat_clean",
+        "reference": "original_clean",
+        "exact_T_and_R_lines_equal": true
+      },
+      {
+        "candidate": "flat_modified",
+        "reference": "original_modified",
+        "exact_T_and_R_lines_equal": true
+      }
+    ],
+    "transaction_differences": [
+      {
+        "row": 8,
+        "clean": "R 8 c5a02026 0 a9ddcba5",
+        "modified": "R 8 c5a02026 0 29ddcba5"
+      }
+    ],
+    "sample_differences": [
+      {
+        "row": 1267,
+        "clean": "T 8 1267 100",
+        "modified": "T 8 1267 000"
+      },
+      {
+        "row": 1268,
+        "clean": "T 8 1268 100",
+        "modified": "T 8 1268 000"
+      }
+    ],
+    "scope": "Finite digital trace consistency does not validate graph semantic coverage or stealth."
+  },
+  "qwen_review": {
+    "responses": [
+      {
+        "candidate": "candidate_R",
+        "finding": "extra_output_behavior",
+        "recorded_limitations": "The behavior of the `chip` module and the exact conditions under which `fault_active` is set are not visible. The `MISO` signal is modified based on `fault_active`, which depends on internal state and logic within the `chip` module."
+      },
+      {
+        "candidate": "candidate_S",
+        "finding": "pass_through",
+        "recorded_limitations": "The behavior of the `chip` module is opaque and cannot be determined from the provided source. Therefore, while the wrapper appears to be a pass-through, the actual behavior of the `chip` may introduce additional control or state changes that are not visible in this module."
+      }
+    ],
+    "assessment": "Classifications match the wrapper sources. R limitations incorrectly place visible fault_active-setting logic inside chip; it is present in the provided wrapper. Label-masked is not double-blind or an independent certification."
+  },
+  "overall": "Agree with the bounded interpretation: raw fallback predictions are diagnostics; flat CLEAN labels are valid outputs for incomplete graphs and do not establish full-design stealth. No inference that the naming gap caused the model verdict or that a complete graph would change it."
+}

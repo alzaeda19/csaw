@@ -1,0 +1,192 @@
+{
+  "sealed_utc": "2026-11-13T05:59:34.078364+00:00",
+  "manifested_files": 37,
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "ANALYSIS.json",
+      "bytes": 2902,
+      "sha256": "d267c156a3657cf9d888c6000f48de883e1c6bffefead5cfaf83bc258dbb64ba"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 5854,
+      "sha256": "ae07a02177fa5ed23ee0e8c1d523f5ba2e6affe1a72311837443760b29b1ce90"
+    },
+    {
+      "path": "ai_records/EXPORT_RECEIPT.json",
+      "bytes": 817,
+      "sha256": "241f61a7fa737a81f138b6d3d8fe9dd8e327815a8d887052f7df5bd14c21a5f0"
+    },
+    {
+      "path": "ai_records/omitted_records.jsonl",
+      "bytes": 17702,
+      "sha256": "07281496509a9fd79e09ad16950388b67ad8503b765110cab5af727e283d5bcb"
+    },
+    {
+      "path": "ai_records/visible_exact_fields.jsonl",
+      "bytes": 124570,
+      "sha256": "0a456dc4300989e620de130c3244a20ee3870d44f2e1067a82c8030811ca33f5"
+    },
+    {
+      "path": "analyze_evidence.py",
+      "bytes": 8675,
+      "sha256": "4a0ddf0dcca571146dbb5dbbf3dc78ab1e0927b6ab9fff59f531b568239cf40c"
+    },
+    {
+      "path": "export_records.py",
+      "bytes": 3988,
+      "sha256": "e92b7f9a31f37f152d6bc2ca2d973fdae6151f1acfc7cf868a10ecba0a474d31"
+    },
+    {
+      "path": "formal/edge_control/counterexample.json",
+      "bytes": 29819,
+      "sha256": "a81b72583eaa6836be336dbcc7defa30c55577b1000faac13e2ccf1af39f8a97"
+    },
+    {
+      "path": "formal/edge_control/receipt.json",
+      "bytes": 693,
+      "sha256": "a0a8fd9ca4f159df32af98d2aabb6d9bd8fc2219d59c5d5cf700377324d2f543"
+    },
+    {
+      "path": "formal/edge_control/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formal/edge_control/stdout.log",
+      "bytes": 595215,
+      "sha256": "da3bf69fc34703f0d6f3e0f8525a1c324b68311b2b21d63650aa287641fc778c"
+    },
+    {
+      "path": "formal/edge_control.ys",
+      "bytes": 350,
+      "sha256": "a1f006acc1f3b8f89705e234a8b0f04dcb1d171e2504f72b4cc58b78c46c34c7"
+    },
+    {
+      "path": "formal/edge_protocol_harness.sv",
+      "bytes": 2027,
+      "sha256": "f091722112c16e44d276e965d7a8f75a1f63f09b3a0972be80cd03405a955783"
+    },
+    {
+      "path": "historical/formal_counterexample.json",
+      "bytes": 29819,
+      "sha256": "a81b72583eaa6836be336dbcc7defa30c55577b1000faac13e2ccf1af39f8a97"
+    },
+    {
+      "path": "historical/formal_receipt.json",
+      "bytes": 753,
+      "sha256": "e7859e789efc680a10d7fd7633b69598531e7e04065afb2af3015d58b6bdb519"
+    },
+    {
+      "path": "historical/simulation/RESULT.json",
+      "bytes": 3885,
+      "sha256": "18bd9c42e9d4d61ae85827a75a81b0bf438d2e4f8893077cb674525ee628351f"
+    },
+    {
+      "path": "historical/simulation/compile.command.json",
+      "bytes": 1907,
+      "sha256": "79a62d265e0c0bb8185effeaf7d161699a591debdbea3315f64ed5d06d350fd5"
+    },
+    {
+      "path": "historical/simulation/compile.stderr.log",
+      "bytes": 944,
+      "sha256": "5f631e8903861134bf4ce0aa8dd59be3fa8e586be6b6d3fea450a577d47a0726"
+    },
+    {
+      "path": "historical/simulation/compile.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "historical/simulation/demo_trace.csv",
+      "bytes": 562793,
+      "sha256": "2ea5c835afc7933a98ff60571757bfa0e02f9e16e37ebc0c7be1d82f16080d2e"
+    },
+    {
+      "path": "historical/simulation/simulate.command.json",
+      "bytes": 1051,
+      "sha256": "1efbf6e0a297077307a8f87c23b98402f2c04c08b45fc5407c51f317fd91dd63"
+    },
+    {
+      "path": "historical/simulation/simulate.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "historical/simulation/simulate.stdout.log",
+      "bytes": 12844,
+      "sha256": "4f67bbf91dcb0b0626d2f5a102d85590823f552f2214d913cd5f8347caac01e6"
+    },
+    {
+      "path": "historical/simulation/sources/demo_tb.sv",
+      "bytes": 7752,
+      "sha256": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a"
+    },
+    {
+      "path": "records/MATCHING_SIMULATION_CASE.json",
+      "bytes": 26933,
+      "sha256": "94c18deab8052fe069d0fe7b2ea59c5d51cac3a0d73803c0d464ce79aedede6b"
+    },
+    {
+      "path": "records/PARSING_ERRORS.json",
+      "bytes": 1275,
+      "sha256": "884dcd33bb3dc06b36143ee7421adc72cee87a7b833b031fd7dce951b8455e54"
+    },
+    {
+      "path": "records/PRESERVATION.json",
+      "bytes": 3638,
+      "sha256": "8561ad5b5e5882fae6e19138918a6fe9a52d8d164bb872fc9d0bed82184e54fe"
+    },
+    {
+      "path": "records/SELECTED_WITNESS_SIGNALS.json",
+      "bytes": 7192,
+      "sha256": "461d74e0d29906d8cb99bafbcf4c5a811190624afee009b9e450daece07e6954"
+    },
+    {
+      "path": "records/SETUP.json",
+      "bytes": 729,
+      "sha256": "2ed4d056c8d71949e6add7fed2d2886415e078c432a898a6c03593303f3b365e"
+    },
+    {
+      "path": "records/SOURCE_MANIFEST.json",
+      "bytes": 6879,
+      "sha256": "f49a9fb04a0588e4d33d4c763c03c6a6b36fdb9ef9e35dae8e61e01fe10514ad"
+    },
+    {
+      "path": "records/yosys_version.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/yosys_version.stdout",
+      "bytes": 123,
+      "sha256": "6a8f43eec7c8c62478ccc91570484997418c476877c8afce2d37d19010d4a2fc"
+    },
+    {
+      "path": "scripts/run_yosys.py",
+      "bytes": 1673,
+      "sha256": "3d8d02bb454b2fc25775f3004f315d11aa5feb23b054e2424309a9c8d4e7cbac"
+    },
+    {
+      "path": "sources/baseline.v",
+      "bytes": 1213314,
+      "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765"
+    },
+    {
+      "path": "sources/baseline_protocol_dut.sv",
+      "bytes": 465,
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089"
+    },
+    {
+      "path": "sources/cells_sim.v",
+      "bytes": 153943,
+      "sha256": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527"
+    },
+    {
+      "path": "sources/modified_protocol_dut.sv",
+      "bytes": 2664,
+      "sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e"
+    }
+  ]
+}

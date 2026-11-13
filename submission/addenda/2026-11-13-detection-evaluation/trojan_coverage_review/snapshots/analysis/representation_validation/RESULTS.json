@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "representation_comparisons": [
+    {
+      "candidate": "raw_clean",
+      "reference": "original_clean",
+      "exact_observed_trace_match": true,
+      "samples": 39960,
+      "transactions": 270,
+      "first_mismatches": []
+    },
+    {
+      "candidate": "flat_clean",
+      "reference": "original_clean",
+      "exact_observed_trace_match": true,
+      "samples": 39960,
+      "transactions": 270,
+      "first_mismatches": []
+    },
+    {
+      "candidate": "raw_modified",
+      "reference": "original_modified",
+      "exact_observed_trace_match": true,
+      "samples": 39960,
+      "transactions": 270,
+      "first_mismatches": []
+    },
+    {
+      "candidate": "flat_modified",
+      "reference": "original_modified",
+      "exact_observed_trace_match": true,
+      "samples": 39960,
+      "transactions": 270,
+      "first_mismatches": []
+    }
+  ],
+  "simulator_runs": 6,
+  "transactions_per_run": 270,
+  "full_core_positive_control": [
+    {
+      "case": 8,
+      "word": "c5a02026",
+      "mode": 0,
+      "clean": "a9ddcba5",
+      "modified": "29ddcba5",
+      "xor": "80000000"
+    }
+  ],
+  "ordinary_transactions_without_serial_difference": 269,
+  "outputs_checked": [
+    "MISO",
+    "BUSY",
+    "ICE_LED"
+  ],
+  "observations": "After rising/falling edges and chip-select changes, after two reset edges; unknowns rejected",
+  "scope_limit": "Finite exact trace validation under listed reset/transaction schedule. Not universal HDL equivalence, timing analysis, or stealth evidence. Formal witness timing not replayed exactly.",
+  "output_hashes": {
+    "flat_clean_compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "flat_clean_simulate.stdout": "b5aa02adc79e971ba8c7a220fca798e9ce9b263b0052e236e9641cac70c310b0",
+    "flat_modified_compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "flat_modified_simulate.stdout": "666a9a2d5d3046575818887e21c97c0c3e76c9384a89bc1ca56a1dcf31672e69",
+    "original_clean_compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "original_clean_simulate.stdout": "504fae41f0e08b0f4be3259df8e60e66c9a2306b1bd13c16e98d092c51dc3a18",
+    "original_modified_compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "original_modified_simulate.stdout": "aef7a9d90ea5729c64143c2f509b96a0876faa14195f2004158197ea4d8c0b4a",
+    "raw_clean_compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_clean_simulate.stdout": "46d5e2b8dd094ce628064f5ba6e47ae58a7cda5944e6e74eaebbb076f220b53c",
+    "raw_modified_compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_modified_simulate.stdout": "5a14d3777f38415ecb01d1cd39f56214a4c3740334ce3657eb77592e6cb432cb"
+  }
+}

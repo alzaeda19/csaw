@@ -1,0 +1,13 @@
+read_verilog -sv -DNO_ICE40_DEFAULT_ASSIGNMENTS sources/cells_sim.v sources/baseline.v sources/modified_protocol_dut.sv
+hierarchy -check -top protocol_dut
+flatten
+proc
+opt
+memory
+opt
+check -assert
+rename -top top
+rename -unescape
+write_verilog -noattr -nodec detectors/flat_modified/topModule.v
+write_json synthesis/modified.json
+tee -o synthesis/modified_stats.json stat -json

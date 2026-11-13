@@ -1,0 +1,78 @@
+{
+  "candidate": "flat_clean",
+  "candidate_sha256": "09ae379b85ca6c629d117dd88902bf48299fedeb40280aaedf6397998b3027dc",
+  "per_model": {
+    "HT1": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9547585844993591,
+      "prob_trojan": 0.045241452753543854,
+      "log_probabilities": [
+        -0.04629678651690483,
+        -3.0957415103912354
+      ],
+      "logits": [
+        1.5942151546478271,
+        -1.455229640007019
+      ]
+    },
+    "HT2": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.7981163263320923,
+      "prob_trojan": 0.2018837034702301,
+      "log_probabilities": [
+        -0.2255009263753891,
+        -1.600063443183899
+      ],
+      "logits": [
+        0.6376867294311523,
+        -0.7368757724761963
+      ]
+    },
+    "HT3": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9476512670516968,
+      "prob_trojan": 0.052348777651786804,
+      "log_probabilities": [
+        -0.053768713027238846,
+        -2.949826717376709
+      ],
+      "logits": [
+        1.4125354290008545,
+        -1.4835225343704224
+      ]
+    },
+    "HT4": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9563314914703369,
+      "prob_trojan": 0.043668486177921295,
+      "log_probabilities": [
+        -0.04465067759156227,
+        -3.1311285495758057
+      ],
+      "logits": [
+        1.5395129919052124,
+        -1.5469647645950317
+      ]
+    }
+  },
+  "ensemble": {
+    "trojan_votes": 0,
+    "triggered_models": [],
+    "verdict": "CLEAN",
+    "rule": "any model votes 1"
+  },
+  "preprocessing_route": "exact_DFG",
+  "source_unchanged": true,
+  "valid_whole_design_result": false,
+  "qualification": "Exact graph classification only; coverage/applicability reviewed separately",
+  "limits": [
+    "Scores are not calibrated compromise probabilities.",
+    "Same four checkpoints are not four independent security certificates.",
+    "One frozen clean/modified pair does not estimate general detection accuracy.",
+    "No model tuning, generation, design feedback, or training."
+  ]
+}

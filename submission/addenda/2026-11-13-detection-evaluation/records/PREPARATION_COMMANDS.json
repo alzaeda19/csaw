@@ -1,0 +1,43 @@
+[
+  {
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-g2012",
+      "-E",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/preparation/cells_preprocessed.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/sources/cells_sim.v"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/preparation",
+    "exit_code": 0,
+    "elapsed_seconds": 0.036670709028840065,
+    "label": "primitive_preprocess"
+  },
+  {
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "-Q",
+      "-T",
+      "-s",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/synthesis/clean.ys"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13",
+    "exit_code": 0,
+    "elapsed_seconds": 11.094561042031273,
+    "label": "synthesis/clean"
+  },
+  {
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/yosys",
+      "-Q",
+      "-T",
+      "-s",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/synthesis/modified.ys"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13",
+    "exit_code": 0,
+    "elapsed_seconds": 11.016643667127937,
+    "label": "synthesis/modified"
+  }
+]

@@ -1,0 +1,168 @@
+[
+  {
+    "label": "original_clean_compile",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-g2012",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/original_clean.vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/sources/cells_sim.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/sources/baseline.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/sources/baseline_protocol_dut.sv",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/original_clean_tb.sv"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 0.19958258396945894
+  },
+  {
+    "label": "original_clean_simulate",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/original_clean.vvp"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 3.1061383329797536
+  },
+  {
+    "label": "raw_clean_compile",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-g2012",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/raw_clean.vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/raw_clean/topModule.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/raw_clean_tb.sv"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 0.13636895781382918
+  },
+  {
+    "label": "raw_clean_simulate",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/raw_clean.vvp"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 3.105293167056516
+  },
+  {
+    "label": "flat_clean_compile",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-g2012",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/flat_clean.vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/flat_clean/topModule.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/flat_clean_tb.sv"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 0.1392725829500705
+  },
+  {
+    "label": "flat_clean_simulate",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/flat_clean.vvp"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 2.8251789580099285
+  },
+  {
+    "label": "original_modified_compile",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-g2012",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/original_modified.vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/sources/cells_sim.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/sources/baseline.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/sources/modified_protocol_dut.sv",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/original_modified_tb.sv"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 0.14236883400008082
+  },
+  {
+    "label": "original_modified_simulate",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/original_modified.vvp"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 3.050748750101775
+  },
+  {
+    "label": "raw_modified_compile",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-g2012",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/raw_modified.vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/raw_modified/topModule.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/raw_modified_tb.sv"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 0.1362057919614017
+  },
+  {
+    "label": "raw_modified_simulate",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/raw_modified.vvp"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 3.121058874996379
+  },
+  {
+    "label": "flat_modified_compile",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+      "-g2012",
+      "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+      "-s",
+      "tb",
+      "-o",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/flat_modified.vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/flat_modified/topModule.v",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/flat_modified_tb.sv"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 0.1499234160874039
+  },
+  {
+    "label": "flat_modified_simulate",
+    "command": [
+      "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+      "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/runtime/sim/flat_modified.vvp"
+    ],
+    "cwd": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation",
+    "exit_code": 0,
+    "seconds": 2.7915640419814736
+  }
+]

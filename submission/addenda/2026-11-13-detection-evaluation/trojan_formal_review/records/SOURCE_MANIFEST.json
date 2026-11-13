@@ -1,0 +1,110 @@
+[
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12-qwen-verification/sources/baseline.v",
+    "copy": "sources/baseline.v",
+    "bytes": 1213314,
+    "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12-qwen-verification/sources/cells_sim.v",
+    "copy": "sources/cells_sim.v",
+    "bytes": 153943,
+    "sha256": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12-qwen-verification/sources/baseline_protocol_dut.sv",
+    "copy": "sources/baseline_protocol_dut.sv",
+    "bytes": 465,
+    "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12-qwen-verification/sources/modified_protocol_dut.sv",
+    "copy": "sources/modified_protocol_dut.sv",
+    "bytes": 2664,
+    "sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12-qwen-verification/formal/edge_protocol_harness.sv",
+    "copy": "formal/edge_protocol_harness.sv",
+    "bytes": 2027,
+    "sha256": "f091722112c16e44d276e965d7a8f75a1f63f09b3a0972be80cd03405a955783"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12-qwen-verification/formal/edge_control.ys",
+    "copy": "formal/edge_control.ys",
+    "bytes": 350,
+    "sha256": "a1f006acc1f3b8f89705e234a8b0f04dcb1d171e2504f72b4cc58b78c46c34c7"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12-qwen-verification/scripts/run_yosys.py",
+    "copy": "scripts/run_yosys.py",
+    "bytes": 1673,
+    "sha256": "3d8d02bb454b2fc25775f3004f315d11aa5feb23b054e2424309a9c8d4e7cbac"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12-qwen-verification/formal/edge_control/receipt.json",
+    "copy": "historical/formal_receipt.json",
+    "bytes": 753,
+    "sha256": "e7859e789efc680a10d7fd7633b69598531e7e04065afb2af3015d58b6bdb519"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/addenda/2026-11-12-qwen-verification/formal/edge_control/counterexample.json",
+    "copy": "historical/formal_counterexample.json",
+    "bytes": 29819,
+    "sha256": "a81b72583eaa6836be336dbcc7defa30c55577b1000faac13e2ccf1af39f8a97"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/RESULT.json",
+    "copy": "historical/simulation/RESULT.json",
+    "bytes": 3885,
+    "sha256": "18bd9c42e9d4d61ae85827a75a81b0bf438d2e4f8893077cb674525ee628351f"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/simulate.command.json",
+    "copy": "historical/simulation/simulate.command.json",
+    "bytes": 1051,
+    "sha256": "1efbf6e0a297077307a8f87c23b98402f2c04c08b45fc5407c51f317fd91dd63"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/compile.command.json",
+    "copy": "historical/simulation/compile.command.json",
+    "bytes": 1907,
+    "sha256": "79a62d265e0c0bb8185effeaf7d161699a591debdbea3315f64ed5d06d350fd5"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/simulate.stdout.log",
+    "copy": "historical/simulation/simulate.stdout.log",
+    "bytes": 12844,
+    "sha256": "4f67bbf91dcb0b0626d2f5a102d85590823f552f2214d913cd5f8347caac01e6"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/simulate.stderr.log",
+    "copy": "historical/simulation/simulate.stderr.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/compile.stdout.log",
+    "copy": "historical/simulation/compile.stdout.log",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/compile.stderr.log",
+    "copy": "historical/simulation/compile.stderr.log",
+    "bytes": 944,
+    "sha256": "5f631e8903861134bf4ce0aa8dd59be3fa8e586be6b6d3fea450a577d47a0726"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/demo_trace.csv",
+    "copy": "historical/simulation/demo_trace.csv",
+    "bytes": 562793,
+    "sha256": "2ea5c835afc7933a98ff60571757bfa0e02f9e16e37ebc0c7be1d82f16080d2e"
+  },
+  {
+    "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/work/csaw-github/fresh-clone/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/demonstration/sources/demo_tb.sv",
+    "copy": "historical/simulation/sources/demo_tb.sv",
+    "bytes": 7752,
+    "sha256": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a"
+  }
+]

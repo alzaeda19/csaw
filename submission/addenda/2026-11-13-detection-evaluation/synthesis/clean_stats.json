@@ -1,0 +1,61 @@
+{
+   "creator": "Yosys 0.70+344 (git sha1 2f2307ad6, Release, Clang /usr/local/osxcross/target/bin/aarch64-apple-darwin25.5-clang++ 21.1.8)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\top": {
+         "num_wires":         6164,
+         "num_wire_bits":     14528,
+         "num_pub_wires":     2949,
+         "num_pub_wire_bits": 3573,
+         "num_ports":         9,
+         "num_port_bits":     9,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4727,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$and": 4,
+            "$dff": 1,
+            "$dffe": 5,
+            "$logic_not": 436,
+            "$mux": 4165,
+            "$not": 5,
+            "$reduce_and": 1,
+            "$reduce_bool": 1,
+            "$reduce_or": 35,
+            "$scopeinfo": 5,
+            "$sdff": 1,
+            "$sdffce": 68
+         }
+      }
+   },
+      "design": {
+         "num_wires":         6164,
+         "num_wire_bits":     14528,
+         "num_pub_wires":     2949,
+         "num_pub_wire_bits": 3573,
+         "num_ports":         9,
+         "num_port_bits":     9,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4727,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$and": 4,
+            "$dff": 1,
+            "$dffe": 5,
+            "$logic_not": 436,
+            "$mux": 4165,
+            "$not": 5,
+            "$reduce_and": 1,
+            "$reduce_bool": 1,
+            "$reduce_or": 35,
+            "$scopeinfo": 5,
+            "$sdff": 1,
+            "$sdffce": 68
+         }
+      }
+}
+

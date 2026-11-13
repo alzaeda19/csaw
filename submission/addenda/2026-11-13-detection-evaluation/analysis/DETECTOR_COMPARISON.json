@@ -1,0 +1,82 @@
+[
+  {
+    "candidate": "raw_clean",
+    "route": "heuristic_fallback",
+    "models": {
+      "HT1": "CLEAN",
+      "HT2": "CLEAN",
+      "HT3": "CLEAN",
+      "HT4": "CLEAN"
+    },
+    "trojan_scores": {
+      "HT1": 0.05777086690068245,
+      "HT2": 0.2901308834552765,
+      "HT3": 0.14490777254104614,
+      "HT4": 0.04644026607275009
+    },
+    "nodes": 5799,
+    "edges": 11038,
+    "whole_design_evidence_valid": false,
+    "limitation": "Syntax failure invokes incomplete heuristic graph"
+  },
+  {
+    "candidate": "raw_modified",
+    "route": "heuristic_fallback",
+    "models": {
+      "HT1": "TROJAN",
+      "HT2": "CLEAN",
+      "HT3": "CLEAN",
+      "HT4": "CLEAN"
+    },
+    "trojan_scores": {
+      "HT1": 0.9053398370742798,
+      "HT2": 0.2901308834552765,
+      "HT3": 0.14490777254104614,
+      "HT4": 0.04644026607275009
+    },
+    "nodes": 5840,
+    "edges": 11100,
+    "whole_design_evidence_valid": false,
+    "limitation": "Syntax failure invokes incomplete heuristic graph"
+  },
+  {
+    "candidate": "flat_clean",
+    "route": "exact_DFG",
+    "models": {
+      "HT1": "CLEAN",
+      "HT2": "CLEAN",
+      "HT3": "CLEAN",
+      "HT4": "CLEAN"
+    },
+    "trojan_scores": {
+      "HT1": 0.045241452753543854,
+      "HT2": 0.2018837034702301,
+      "HT3": 0.052348777651786804,
+      "HT4": 0.043668486177921295
+    },
+    "nodes": 18841,
+    "edges": 19839,
+    "whole_design_evidence_valid": false,
+    "limitation": "Backend completes but unresolved reference/definition joins fragment graph"
+  },
+  {
+    "candidate": "flat_modified",
+    "route": "exact_DFG",
+    "models": {
+      "HT1": "CLEAN",
+      "HT2": "CLEAN",
+      "HT3": "CLEAN",
+      "HT4": "CLEAN"
+    },
+    "trojan_scores": {
+      "HT1": 0.07045428454875946,
+      "HT2": 0.2013215571641922,
+      "HT3": 0.06976958364248276,
+      "HT4": 0.010623231530189514
+    },
+    "nodes": 19014,
+    "edges": 20018,
+    "whole_design_evidence_valid": false,
+    "limitation": "Backend completes but unresolved reference/definition joins fragment graph"
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "frozen_base_commit": "65d4f51506d3cb09b49b16875bc3d9d833d89949",
+  "objective": "Characterize detection/observability of the existing frozen modification; positive stealth not presumed.",
+  "no_design_changes": true,
+  "no_threshold_or_checkpoint_tuning": true,
+  "checks": [
+    {
+      "id": "A",
+      "method": "Two isolated Qwen source reviews with class labels withheld, comments removed solely in review presentation; identifiers and logic retained.",
+      "control": "Clean adapter; common identical chip implementation treated as black box for wrapper-scope review.",
+      "limit": "Not double-blind, not independent model certification, no statistical accuracy claim from one pair."
+    },
+    {
+      "id": "B",
+      "method": "Fixed-flow complete-source elaboration/synthesis; report added state/output logic and exact resource differences.",
+      "control": "Same clean core and adapter/settings.",
+      "limit": "Structural difference is not itself maliciousness; no threshold for negligible overhead invented."
+    },
+    {
+      "id": "C",
+      "method": "Generic differential formal detection with data unconstrained and intentional fault case allowed; independent Trojan-chat check of existing harness.",
+      "limit": "Protocol scope/zero-core abstraction documented; observed counterexample checked against actual existing simulation evidence."
+    },
+    {
+      "id": "D",
+      "method": "Four unchanged HT1-HT4 checkpoints on two predeclared complete-source representations: original hierarchy with supplied RAM model; identical Yosys flattened/ROM-mapped representation for each design.",
+      "control": "Same pipeline, models, top, vocabulary and ensemble rule; valid clean candidate required.",
+      "validity_gate": "No missing module or heuristic fallback may be called a valid whole-design detection result. Representation and transformation checks saved; learned-model applicability remains limited.",
+      "time_bounds": "120s exact graph attempt per candidate; process-level timeout recorded. Fallback may be saved as diagnostic only; no retries chosen for favorable score."
+    }
+  ],
+  "interpretation": "Detection/miss/failure are all reported. Missing detection in any test only supports that test-specific result. No universal invisibility or grade guarantee. Existing normal proofs are functional evidence, not repeated random stealth experiments."
+}

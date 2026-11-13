@@ -1,0 +1,228 @@
+{
+  "sources": {
+    "TEST_PLAN.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/TEST_PLAN.json",
+      "bytes": 2406,
+      "sha256": "6f04c0f582763389b77dafc4826404aeeeed83b89a904b383a176d6b2ff3e617",
+      "copied": true
+    },
+    "analysis/REPRESENTATIONS.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/REPRESENTATIONS.json",
+      "bytes": 3784,
+      "sha256": "42699b6158ffd3f67d2e3b2ce82f1fa79b6255ea86a5bf5fde38cba35debb01b",
+      "copied": true
+    },
+    "analysis/representation_validation/RESULTS.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/RESULTS.json",
+      "bytes": 2852,
+      "sha256": "b2568b105afd1e363d8d7fa564a6a4d1e08f565faaf6c21ca3def0a748f11d13",
+      "copied": true
+    },
+    "records/QWEN_LABEL_KEY.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/records/QWEN_LABEL_KEY.json",
+      "bytes": 552,
+      "sha256": "a6789e069f68b71491db847273b0e94195d9409ac31ca18ff238bb0e7ad02755",
+      "copied": true
+    },
+    "package/hw2vec/hw2vec/hw2graph.py": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/package/hw2vec/hw2vec/hw2graph.py",
+      "bytes": 29890,
+      "sha256": "456ef034f9d5517b8b0b507585c142c57914cf6dd06a392eea7589ce7eba72f8",
+      "copied": false
+    },
+    "detectors/result_raw_clean/RESULTS.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_raw_clean/RESULTS.json",
+      "bytes": 2039,
+      "sha256": "ee5f54bf8b6322891a57b2c5e797d19d3f530f58586111d0fd047576304195d8",
+      "copied": true
+    },
+    "detectors/result_raw_clean/preprocessing.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_raw_clean/preprocessing.json",
+      "bytes": 800,
+      "sha256": "89d9a16e3b6c1879cc50cf525cb063d1ef6b416e2c91f43485a7dc18881482ff",
+      "copied": false
+    },
+    "detectors/result_raw_clean/extraction.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_raw_clean/extraction.stdout",
+      "bytes": 361,
+      "sha256": "c4f5823637c208ce45cf45452461083ba86d9725615f5204611fcce841c18b10",
+      "copied": true
+    },
+    "detectors/raw_clean/topModule.v": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/raw_clean/topModule.v",
+      "bytes": 1221341,
+      "sha256": "102b6d43217278778f3d530ed4fde5507caf7bd50b4d9a3acc9f4392615ce95a",
+      "copied": false
+    },
+    "detectors/result_raw_modified/RESULTS.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_raw_modified/RESULTS.json",
+      "bytes": 2060,
+      "sha256": "7b61ec3a662555ec8579b2a9a2cf3cf498416dfe37d23352516b18347091c1a3",
+      "copied": true
+    },
+    "detectors/result_raw_modified/preprocessing.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_raw_modified/preprocessing.json",
+      "bytes": 859,
+      "sha256": "40310fd0c438b2d73400df1847bf1f6aa4bb10550cdc0d0f7b3162b9b64975ba",
+      "copied": false
+    },
+    "detectors/result_raw_modified/extraction.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_raw_modified/extraction.stdout",
+      "bytes": 364,
+      "sha256": "9db10b54f5543eddd402e1cbb199054cad39a8cc76abb789efe4d4054b97d93a",
+      "copied": true
+    },
+    "detectors/raw_modified/topModule.v": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/raw_modified/topModule.v",
+      "bytes": 1223540,
+      "sha256": "c93cc766665eea0da89d6633cf2081a971426b144869be82abb4cc6622cc6133",
+      "copied": false
+    },
+    "detectors/result_flat_clean/RESULTS.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_clean/RESULTS.json",
+      "bytes": 2084,
+      "sha256": "6e2cd25c8d304a2e45915cc1958f6d7c4c459b8658490437a613894c70f4c29c",
+      "copied": true
+    },
+    "detectors/result_flat_clean/preprocessing.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_clean/preprocessing.json",
+      "bytes": 157606,
+      "sha256": "3006a303ef07e340cc3aa289ee204e934f853c6d428e191569970957815a4e58",
+      "copied": false
+    },
+    "detectors/result_flat_clean/extraction.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_clean/extraction.stdout",
+      "bytes": 210,
+      "sha256": "6c02dda30d7ed84aa859ae2b6df4bac6e994d08fdd12eea41d1d7b4c7fc3574f",
+      "copied": true
+    },
+    "detectors/flat_clean/topModule.v": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/flat_clean/topModule.v",
+      "bytes": 448999,
+      "sha256": "09ae379b85ca6c629d117dd88902bf48299fedeb40280aaedf6397998b3027dc",
+      "copied": false
+    },
+    "detectors/result_flat_clean/graph_before_normalization.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_clean/graph_before_normalization.json",
+      "bytes": 2938174,
+      "sha256": "1f4bdef32b43feff74ba90d94f8171194068a5a80b1858dfd6597e56151c2ef6",
+      "copied": false
+    },
+    "detectors/result_flat_clean/model_input.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_clean/model_input.json",
+      "bytes": 628041,
+      "sha256": "aa5ea8fa520dd85f5e025c3a0fa2b094d8f540929437bdb24fa3d6f746c2e3ad",
+      "copied": false
+    },
+    "detectors/result_flat_modified/RESULTS.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_modified/RESULTS.json",
+      "bytes": 2086,
+      "sha256": "1b76956b3922e619772dba46e713ef45cfc4c884ff7a690eed3583a68285eb00",
+      "copied": true
+    },
+    "detectors/result_flat_modified/preprocessing.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_modified/preprocessing.json",
+      "bytes": 158853,
+      "sha256": "b7387d5ba8486fd27e1a98a97ced18def098b162b201dee6563fa49d6aa81edd",
+      "copied": false
+    },
+    "detectors/result_flat_modified/extraction.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_modified/extraction.stdout",
+      "bytes": 212,
+      "sha256": "1a825c800df53a634228d1a50d844641a5e8ad0fcc96a348ef8ba2a150a823ea",
+      "copied": true
+    },
+    "detectors/flat_modified/topModule.v": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/flat_modified/topModule.v",
+      "bytes": 451998,
+      "sha256": "acb0d6c15dff2e1abfac218746c962940f7bfcb0ae3165b86f9e4795b10f2190",
+      "copied": false
+    },
+    "detectors/result_flat_modified/graph_before_normalization.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_modified/graph_before_normalization.json",
+      "bytes": 2963904,
+      "sha256": "877db14f425099129665ff930cc353c66286f980dbc151de40f02c71e5e81d93",
+      "copied": false
+    },
+    "detectors/result_flat_modified/model_input.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/detectors/result_flat_modified/model_input.json",
+      "bytes": 634387,
+      "sha256": "5e80f41fb3a85b9827b04108e37b7b1d80e1e821184472a03e288e07d4a51ef8",
+      "copied": false
+    },
+    "analysis/representation_validation/original_clean_simulate.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/original_clean_simulate.stdout",
+      "bytes": 619152,
+      "sha256": "504fae41f0e08b0f4be3259df8e60e66c9a2306b1bd13c16e98d092c51dc3a18",
+      "copied": false
+    },
+    "analysis/representation_validation/original_modified_simulate.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/original_modified_simulate.stdout",
+      "bytes": 619155,
+      "sha256": "aef7a9d90ea5729c64143c2f509b96a0876faa14195f2004158197ea4d8c0b4a",
+      "copied": false
+    },
+    "analysis/representation_validation/raw_clean_simulate.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/raw_clean_simulate.stdout",
+      "bytes": 619147,
+      "sha256": "46d5e2b8dd094ce628064f5ba6e47ae58a7cda5944e6e74eaebbb076f220b53c",
+      "copied": false
+    },
+    "analysis/representation_validation/raw_modified_simulate.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/raw_modified_simulate.stdout",
+      "bytes": 619150,
+      "sha256": "5a14d3777f38415ecb01d1cd39f56214a4c3740334ce3657eb77592e6cb432cb",
+      "copied": false
+    },
+    "analysis/representation_validation/flat_clean_simulate.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/flat_clean_simulate.stdout",
+      "bytes": 619148,
+      "sha256": "b5aa02adc79e971ba8c7a220fca798e9ce9b263b0052e236e9641cac70c310b0",
+      "copied": false
+    },
+    "analysis/representation_validation/flat_modified_simulate.stdout": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/analysis/representation_validation/flat_modified_simulate.stdout",
+      "bytes": 619151,
+      "sha256": "666a9a2d5d3046575818887e21c97c0c3e76c9384a89bc1ca56a1dcf31672e69",
+      "copied": false
+    },
+    "ai_logs/candidate_R/request.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/ai_logs/candidate_R/request.json",
+      "bytes": 3817,
+      "sha256": "b8b04e371ff39d37bf5a4b1ba7af1a2af624f0b0b9aa99387410000f642f04c0",
+      "copied": true
+    },
+    "ai_logs/candidate_R/response.txt": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/ai_logs/candidate_R/response.txt",
+      "bytes": 427,
+      "sha256": "ab39cd960deee6aa9f9a2628cddfa9f704ded5270e27719c2903de1cf39df3cc",
+      "copied": true
+    },
+    "ai_logs/candidate_S/request.json": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/ai_logs/candidate_S/request.json",
+      "bytes": 1908,
+      "sha256": "99340b19d26031c16a7cc43ccbb2080a8229608b920a1b9520121faa5b992576",
+      "copied": true
+    },
+    "ai_logs/candidate_S/response.txt": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/ai_logs/candidate_S/response.txt",
+      "bytes": 953,
+      "sha256": "3853896ca851bb442eaf11b874bf8fe16c083e1d8ccb763711509b30065497c5",
+      "copied": true
+    },
+    "sources/modified_protocol_dut.sv": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/sources/modified_protocol_dut.sv",
+      "bytes": 2664,
+      "sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+      "copied": true
+    },
+    "sources/baseline_protocol_dut.sv": {
+      "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detection_evaluation_2026-11-13/sources/baseline_protocol_dut.sv",
+      "bytes": 465,
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "copied": true
+    }
+  },
+  "all_read_sources_unchanged_at_completion": true,
+  "large_inputs": "Full graphs/model tensors/simulation logs are identified by source hashes, not recopied. Selected graph neighborhoods and exact small source snapshots are preserved. Reproduction needs the original evaluation bundle."
+}

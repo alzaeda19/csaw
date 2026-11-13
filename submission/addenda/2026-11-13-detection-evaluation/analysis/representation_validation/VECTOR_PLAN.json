@@ -1,0 +1,9 @@
+{
+  "seed": 20261113,
+  "vectors": 270,
+  "words": 135,
+  "construction": "seven declared cases, walking ones/zeros, 64 seeded pseudorandom words; both modes; fixed before these simulations",
+  "positive_control": "Existing disclosed fault word in mode 0 included as a declared positive control, not independently discovered",
+  "reset": "Two synchronous reset clocks before each transaction",
+  "scope": "Fixed legal protocol only; finite representation validation, not universal equivalence or stealth"
+}

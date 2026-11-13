@@ -1,0 +1,241 @@
+{
+  "source": "package/hw2vec/hw2vec/hw2graph.py",
+  "lines": [
+    {
+      "line": 362,
+      "text": "class DFGGenerator:"
+    },
+    {
+      "line": 363,
+      "text": "    def __init__(self):"
+    },
+    {
+      "line": 364,
+      "text": "        pass"
+    },
+    {
+      "line": 365,
+      "text": ""
+    },
+    {
+      "line": 366,
+      "text": "    def process(self, verilog_file):"
+    },
+    {
+      "line": 367,
+      "text": "        dataflow_analyzer = VerilogDataflowAnalyzer(verilog_file, \"top\")"
+    },
+    {
+      "line": 368,
+      "text": "        dataflow_analyzer.generate()"
+    },
+    {
+      "line": 369,
+      "text": "        binddict = dataflow_analyzer.getBinddict()"
+    },
+    {
+      "line": 370,
+      "text": "        terms = dataflow_analyzer.getTerms()"
+    },
+    {
+      "line": 371,
+      "text": "        "
+    },
+    {
+      "line": 372,
+      "text": "        dataflow_optimizer = VerilogDataflowOptimizer(terms, binddict)"
+    },
+    {
+      "line": 373,
+      "text": "        dataflow_optimizer.resolveConstant()"
+    },
+    {
+      "line": 374,
+      "text": "        resolved_terms = dataflow_optimizer.getResolvedTerms()"
+    },
+    {
+      "line": 375,
+      "text": "        resolved_binddict = dataflow_optimizer.getResolvedBinddict()"
+    },
+    {
+      "line": 376,
+      "text": "        constlist = dataflow_optimizer.getConstlist()"
+    },
+    {
+      "line": 377,
+      "text": "        dfg_graph_generator = VerilogGraphGenerator(\"top\", terms, binddict, resolved_terms, "
+    },
+    {
+      "line": 378,
+      "text": "                                                    resolved_binddict, constlist, './seperate_modules.pdf')"
+    },
+    {
+      "line": 379,
+      "text": ""
+    },
+    {
+      "line": 380,
+      "text": "        # binddict with string keys"
+    },
+    {
+      "line": 381,
+      "text": "        signals = [str(bind) for bind in dfg_graph_generator.binddict]"
+    },
+    {
+      "line": 382,
+      "text": ""
+    },
+    {
+      "line": 383,
+      "text": "        for num, signal in enumerate(sorted(signals, key=str.casefold), start=1):"
+    },
+    {
+      "line": 384,
+      "text": "            dfg_graph_generator.generate(signal, walk=False)"
+    },
+    {
+      "line": 385,
+      "text": "            # print(f'\\rProgress : {num} / {len(signals)}', end='', flush=True)"
+    },
+    {
+      "line": 386,
+      "text": ""
+    },
+    {
+      "line": 387,
+      "text": "        label_to_node = dict()"
+    },
+    {
+      "line": 388,
+      "text": "        for node in dfg_graph_generator.graph.nodes():"
+    },
+    {
+      "line": 389,
+      "text": "            if dfg_graph_generator.graph.in_degree(node) == 0:"
+    },
+    {
+      "line": 390,
+      "text": "                label = node.attr['label'] if node.attr['label'] != '\\\\N' else str(node)"
+    },
+    {
+      "line": 391,
+      "text": "                label_to_node[label] = node"
+    },
+    {
+      "line": 392,
+      "text": "        "
+    },
+    {
+      "line": 393,
+      "text": "        num_nodes = len(dfg_graph_generator.graph.nodes())"
+    },
+    {
+      "line": 394,
+      "text": "        for num, node in enumerate(dfg_graph_generator.graph.nodes(), start=1):"
+    },
+    {
+      "line": 395,
+      "text": "            label = node.attr['label'] if node.attr['label'] != '\\\\N' else str(node)"
+    },
+    {
+      "line": 396,
+      "text": "            if '_' in label and label.replace('_', '.') in label_to_node:"
+    },
+    {
+      "line": 397,
+      "text": "                parents = dfg_graph_generator.graph.predecessors(node)"
+    },
+    {
+      "line": 398,
+      "text": "                dfg_graph_generator.graph.delete_node(node)"
+    },
+    {
+      "line": 399,
+      "text": "                for parent in parents:"
+    },
+    {
+      "line": 400,
+      "text": "                    dfg_graph_generator.graph.add_edge(parent, label_to_node[label.replace('_', '.')])"
+    },
+    {
+      "line": 401,
+      "text": ""
+    },
+    {
+      "line": 402,
+      "text": "        "
+    },
+    {
+      "line": 403,
+      "text": "        nx_graph = nx.DiGraph()"
+    },
+    {
+      "line": 404,
+      "text": "        "
+    },
+    {
+      "line": 405,
+      "text": "        for node in dfg_graph_generator.graph.nodes():"
+    },
+    {
+      "line": 406,
+      "text": "            node_name = node.name"
+    },
+    {
+      "line": 407,
+      "text": "            if '_graphrename' in node.name:"
+    },
+    {
+      "line": 408,
+      "text": "                node_name = node.name[:node.name.index('_graphrename')]"
+    },
+    {
+      "line": 409,
+      "text": "            if '.' in node_name: "
+    },
+    {
+      "line": 410,
+      "text": "                type_of_node = node_name.split('.')[-1]"
+    },
+    {
+      "line": 411,
+      "text": "            elif '_' in node_name:"
+    },
+    {
+      "line": 412,
+      "text": "                type_of_node = node_name.split('_')[-1]"
+    },
+    {
+      "line": 413,
+      "text": "            else:"
+    },
+    {
+      "line": 414,
+      "text": "                type_of_node = node_name.lower()"
+    },
+    {
+      "line": 415,
+      "text": "            nx_graph.add_node(node.name, label=type_of_node) "
+    },
+    {
+      "line": 416,
+      "text": "            for child in dfg_graph_generator.graph.successors(node):"
+    },
+    {
+      "line": 417,
+      "text": "                # edgeLabel = dfg_graph_generator.graph.get_edge(node, child).attr['label']"
+    },
+    {
+      "line": 418,
+      "text": "                nx_graph.add_edge(node.name, child.name)"
+    },
+    {
+      "line": 419,
+      "text": ""
+    },
+    {
+      "line": 420,
+      "text": "        return nx_graph"
+    }
+  ]
+}

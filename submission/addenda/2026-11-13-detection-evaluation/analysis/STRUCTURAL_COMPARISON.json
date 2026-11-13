@@ -1,0 +1,59 @@
+{
+  "designs": [
+    {
+      "candidate": "clean",
+      "generic_cell_types": {
+        "$sdffce": 68,
+        "$dffe": 5,
+        "$sdff": 1,
+        "$reduce_bool": 1,
+        "$reduce_and": 1,
+        "$reduce_or": 35,
+        "$not": 5,
+        "$logic_not": 436,
+        "$mux": 4165,
+        "$and": 4,
+        "$dff": 1,
+        "$scopeinfo": 5
+      },
+      "generic_cells_excluding_scope_metadata": 4722,
+      "state_Q_bits_including_mapped_RAM_model": 135,
+      "no_unresolved_cells": true,
+      "mapped_memories_remaining": 0
+    },
+    {
+      "candidate": "modified",
+      "generic_cell_types": {
+        "$sdffce": 68,
+        "$dffe": 5,
+        "$sdff": 2,
+        "$adffe": 1,
+        "$sdffe": 5,
+        "$reduce_bool": 4,
+        "$ne": 1,
+        "$reduce_and": 3,
+        "$reduce_or": 36,
+        "$not": 5,
+        "$logic_not": 439,
+        "$mux": 4173,
+        "$and": 4,
+        "$dff": 1,
+        "$eq": 4,
+        "$logic_and": 9,
+        "$xor": 1,
+        "$lt": 1,
+        "$add": 2,
+        "$ge": 1,
+        "$logic_or": 1,
+        "$scopeinfo": 5
+      },
+      "generic_cells_excluding_scope_metadata": 4766,
+      "state_Q_bits_including_mapped_RAM_model": 183,
+      "no_unresolved_cells": true,
+      "mapped_memories_remaining": 0
+    }
+  ],
+  "added_state_bits": 48,
+  "added_generic_cells": 44,
+  "meaning": "Same-flow structural difference, not physical area/timing or a maliciousness classifier. Generic-cell and RAM-mapped-state counts differ from previously recorded FPGA primitives. Previous actual FPGA resource differences remain +36 LUT4, +48 registers, +13 carry, RAM unchanged."
+}

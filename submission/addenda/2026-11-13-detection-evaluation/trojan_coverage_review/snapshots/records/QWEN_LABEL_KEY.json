@@ -1,0 +1,14 @@
+{
+  "candidate_R": {
+    "source": "modified_protocol_dut.sv",
+    "truth": "modified",
+    "original_sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+    "presentation_sha256": "21a2b3baead1058f81e7a6a4751a5644a83b3955597390f401538dcb2b7c34f6"
+  },
+  "candidate_S": {
+    "source": "baseline_protocol_dut.sv",
+    "truth": "clean",
+    "original_sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+    "presentation_sha256": "bb7f86c607e61082a84dc3c1d0251f331539351caacac815b4adc84422de1154"
+  }
+}

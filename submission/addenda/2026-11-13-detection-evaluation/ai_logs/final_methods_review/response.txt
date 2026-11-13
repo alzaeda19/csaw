@@ -1,0 +1,14 @@
+{
+  "supported_conclusion": "Evaluation complete; modification is detected by source review and the scoped formal comparison. The four-model outputs are documented diagnostic results with failed graph completeness; they do not establish stealth. The original challenge stealth objective remains unestablished.",
+  "invalid_claims": [
+    "The modified review falsely claimed the fault state and qualification conditions were hidden in chip; they are explicitly in the visible wrapper.",
+    "The fault state and qualification conditions are explicitly in the visible wrapper."
+  ],
+  "remaining_limitations": [
+    "Full-graph validity gate FAILS for both representations.",
+    "Raw source exact parser fails and uses incomplete heuristic.",
+    "Flattened sources simulate correctly but exact backend completes with unresolved reference/definition joins.",
+    "MISO dependency graph has only 1 / 3 descendant nodes respectively; modified MISO does not reach the visible fault state's definition.",
+    "No valid whole-design miss rate, false-positive rate, calibrated confidence or stealth certificate."
+  ]
+}

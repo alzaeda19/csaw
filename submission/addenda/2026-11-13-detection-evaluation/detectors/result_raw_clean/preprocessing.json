@@ -1,0 +1,34 @@
+{
+  "candidate_sha256": "102b6d43217278778f3d530ed4fde5507caf7bd50b4d9a3acc9f4392615ce95a",
+  "candidate_bytes": 1221341,
+  "canonical_top": "top",
+  "global_underscore_removal_bypassed": true,
+  "route": "heuristic_fallback",
+  "exact_timeout_seconds": 120,
+  "elapsed_seconds": 0.818214250029996,
+  "graph_nodes": 5799,
+  "graph_edges": 11038,
+  "weakly_connected_components": 5,
+  "raw_label_counts": {
+    "signal": 2881,
+    "branch": 2904,
+    "eq": 6,
+    "concat": 3,
+    "or": 3,
+    "times": 1,
+    "and": 1
+  },
+  "feature_counts": {
+    "5": 2775,
+    "13": 2904,
+    "1": 59,
+    "16": 47,
+    "18": 6,
+    "0": 3,
+    "14": 3,
+    "28": 1,
+    "11": 1
+  },
+  "dataset_cache_loaded": false,
+  "full_design_validity": "INVALID: heuristic graph does not preserve complete HDL semantics"
+}

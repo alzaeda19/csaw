@@ -6,6 +6,12 @@ The current simulation package is in [submission/](submission/). Download [submi
 
 **November 13 closeout:** [Required versus optional submission checklist](submission/SUBMISSION_CHECKLIST.md) and [plain-English explanation of stealth evidence](submission/addenda/2026-11-13-submission-closeout/STEALTH_IN_PLAIN_ENGLISH.md). One previously incomplete reviewer tool output is now fully assembled from authentic captures; twelve reviewer inputs and one output gap remain. All four artifact types are present; stealth and complete relevant logs remain unresolved.
 
+## Latest frozen-design detection evaluation
+
+The [Qwen/Trojan-chat evaluation](submission/addenda/2026-11-13-detection-evaluation/README.md) is complete. Qwen identified the added output behavior, and an independent scoped formal comparison found a mismatch. Six fresh full-core simulations passed: 270 transactions and 39,960 observed output triples each, with all raw/flattened representation traces matching their respective originals. These tests validate the analysis inputs; they do not establish stealth.
+
+All four supplied detectors ran on both clean and modified designs in two predeclared representations. Raw-source parsing fails and uses an incomplete fallback: HT1 flags the modified design. Flattened graphs receive all-CLEAN labels, but thousands of signal references remain unjoined; the independent review confirms the model actually received those incomplete edges. Both routes fail whole-design coverage. All sixteen scores, failures, exact prompts, Qwen errors and limitations are retained. **The modification is detectable under source/formal review; stealth remains unestablished.** No design or detector was tuned to obtain a favorable result.
+
 ## Review the current package
 
 1. [Current submission guide and exact remaining gaps](submission/CURRENT_GUIDE.md).

@@ -1,0 +1,37 @@
+{
+  "base_commit": "65d4f51506d3cb09b49b16875bc3d9d833d89949",
+  "source_files": {
+    "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+    "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+    "modified_protocol_dut.sv": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+    "SOURCE_HASHES.json": "d0a60e1268a20e6ba41a9221f2f6ade4d481385729d2c292a13b21452e1f3762",
+    "baseline_protocol_dut.sv": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089"
+  },
+  "detector_package_files": {
+    "LICENSE-HW2VEC.txt": "3ed1838d3d019317bc7bd60715d16f232253fc49bc4317bda5e5680984c13bf2",
+    "model_HT1/model.cfg": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+    "model_HT1/model.pth": "5e75ed6a97c5019ee4526178c08eadb086a47bcc919086cbdfd54b7691b7a8b6",
+    "model_HT4/model.cfg": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+    "model_HT4/model.pth": "a7208ee7e5e5a6567d51a7e102af26758337206be7c6880a7ba79599cf36f7ea",
+    "model_HT3/model.cfg": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+    "model_HT3/model.pth": "4cc70e4d3c534cdacd5b740fb88f1fd5f0f8f9aa3a213ff5798074ffcc3a0264",
+    "model_HT2/model.cfg": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+    "model_HT2/model.pth": "5da0f0c15091eb1f371c50a1a2323136dfee7145318afba0801e903823c02a33",
+    "hw2vec/hw2vec/config.py": "35e5556e0973b37e52fa3f2604c7d9020f433025d66ac5d50ff56be9cc99e89e",
+    "hw2vec/hw2vec/_version.py": "2b94a20dd10660ca5da974e1aeac13a84089241390353403ae7a5cd8ae66ccab",
+    "hw2vec/hw2vec/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hw2vec/hw2vec/hw2graph.py": "456ef034f9d5517b8b0b507585c142c57914cf6dd06a392eea7589ce7eba72f8",
+    "hw2vec/hw2vec/utilities.py": "89c7bb6c45f84851283368fbfb22fdf40265f2b3bf3b40a4658209ab612fc465",
+    "hw2vec/examples/example_gnn4tj.yaml": "5c58296c606c3972fa6f2bbc6aaa03b91f547455d4b62f72d2936accf54dea5c",
+    "hw2vec/hw2vec/graph2vec/models.py": "0202896d3c7d2093c689d16808e8c47e9e28bd0e59ac6bd987f2ac06099860e2",
+    "hw2vec/hw2vec/graph2vec/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "hw2vec/hw2vec/graph2vec/trainers.py": "e7b881a7f3ea828041c84c71f76951174728511d088f3bf686cc04211915f2b3",
+    "hw2vec/hw2vec/configs/DFG-IP-NetList.yaml": "2a3af6e43b5f36534c0c0227d38464e1c9149870d2be0a8c2d104f27e5834961",
+    "hw2vec/hw2vec/configs/TJ-RTL.yaml": "5c58296c606c3972fa6f2bbc6aaa03b91f547455d4b62f72d2936accf54dea5c",
+    "hw2vec/hw2vec/configs/IP-RTL.yaml": "71c2bcabc78282e4a063367e68e55c7f94ece88c907f671bca7d9f5d4deb2453",
+    "hw2vec/hw2vec/scripts/graph_processer.py": "fb9f79a0434c6808c5579757165c13664920df1877d62e460548a10dfbfb890f",
+    "hw2vec/hw2vec/scripts/exp1.sh": "7a20fb62690dca3fae58c6f7633b412bf53a87ff356ed14f8c3386fd23009775"
+  },
+  "source_root": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/package",
+  "scope": "Frozen clean/modified designs and unchanged provided detector models; no original project mutations."
+}

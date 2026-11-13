@@ -1,0 +1,62 @@
+{
+  "check": "One fresh run of unchanged edge_control.ys / edge_protocol_harness.sv",
+  "result": "Modification flagged: output-equality assertion has a counterexample.",
+  "tool_exit_code": 0,
+  "assertion_result": "FAIL: counterexample found, not a tool execution failure.",
+  "elapsed_seconds": 2.625,
+  "bound_global_steps": 325,
+  "transaction_slots": 2,
+  "active_assumptions": [
+    "SCK == formal_clock_phase"
+  ],
+  "word_and_mode_constraints": "No data/mode restriction or supplied trigger assumption. Two arbitrary 32-bit words and two arbitrary stable direction bits; extraction MOSI arbitrary.",
+  "genericity_limit": "The tool has white-box access to the unchanged modified RTL. Reviewers know the disclosed design. This is not a blind detector benchmark.",
+  "witness": {
+    "word_a_hex": "c5a02026",
+    "mode_a": 0,
+    "word_b_hex": "00000000",
+    "mode_b": 0,
+    "different_samples": [
+      {
+        "wave_index": 86,
+        "cycle": 43,
+        "abstract_miso": 1
+      },
+      {
+        "wave_index": 87,
+        "cycle": 43,
+        "abstract_miso": 1
+      }
+    ]
+  },
+  "source_coupling": {
+    "six_core_inputs_identical": true,
+    "busy_and_led_direct_identical_connections": true,
+    "miso_relation": "raw_miso ^ (fault_active && !NORM_CS_N && read_count == 6'd1)",
+    "underlying_baseline_sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765"
+  },
+  "abstraction": "The existing harness substitutes a zero-output chip. The result detects the XOR mask. Since actual core inputs are unchanged and mask logic does not depend on core outputs, a mask-one event implies a different sampled MISO for a coupled determinate core output. This is compositional evidence, not a fresh full-crypto RTL miter.",
+  "historical_full_core_corroboration": {
+    "case": "trigger_no_gap",
+    "input_hex": "c5a02026",
+    "mode": 0,
+    "baseline_result_hex": "a9ddcba5",
+    "modified_result_hex": "29ddcba5",
+    "xor_hex": "80000000",
+    "differing_extraction_indices": [
+      0
+    ],
+    "same_frozen_source_hashes": true,
+    "historical_simulation_failures": 0,
+    "fresh_simulation": false,
+    "exact_formal_trace_replayed": false
+  },
+  "limits": [
+    "Protocol schedule is prescribed, with a reset and two transaction slots; clock phases are explicit.",
+    "Normal protocol here means legal framing/timing; all data includes the disclosed exceptional case excluded by earlier normal-operation proofs.",
+    "No arbitrary-protocol, physical timing, board, power, statistical stealth or all-detector claim.",
+    "One counterexample is enough to refute equality in this check, but does not measure detector recall or a universal stealth score.",
+    "No frozen source/harness changes; no generation, concealment or optimization. No published solutions. No Qwen call in this independently run subtask."
+  ],
+  "preserved_analysis_error_count": 1
+}

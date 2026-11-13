@@ -1,0 +1,78 @@
+{
+  "candidate": "raw_clean",
+  "candidate_sha256": "102b6d43217278778f3d530ed4fde5507caf7bd50b4d9a3acc9f4392615ce95a",
+  "per_model": {
+    "HT1": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9422290921211243,
+      "prob_trojan": 0.05777086690068245,
+      "log_probabilities": [
+        -0.0595068521797657,
+        -2.8512706756591797
+      ],
+      "logits": [
+        1.4327285289764404,
+        -1.3590352535247803
+      ]
+    },
+    "HT2": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.7098692059516907,
+      "prob_trojan": 0.2901308834552765,
+      "log_probabilities": [
+        -0.3426745533943176,
+        -1.2374231815338135
+      ],
+      "logits": [
+        0.4073179066181183,
+        -0.48743075132369995
+      ]
+    },
+    "HT3": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.8550922274589539,
+      "prob_trojan": 0.14490777254104614,
+      "log_probabilities": [
+        -0.15654592216014862,
+        -1.9316577911376953
+      ],
+      "logits": [
+        0.8637683391571045,
+        -0.911343514919281
+      ]
+    },
+    "HT4": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9535597562789917,
+      "prob_trojan": 0.04644026607275009,
+      "log_probabilities": [
+        -0.04755321145057678,
+        -3.0695884227752686
+      ],
+      "logits": [
+        1.5072299242019653,
+        -1.5148050785064697
+      ]
+    }
+  },
+  "ensemble": {
+    "trojan_votes": 0,
+    "triggered_models": [],
+    "verdict": "CLEAN",
+    "rule": "any model votes 1"
+  },
+  "preprocessing_route": "heuristic_fallback",
+  "source_unchanged": true,
+  "valid_whole_design_result": false,
+  "qualification": "Fallback diagnostic only",
+  "limits": [
+    "Scores are not calibrated compromise probabilities.",
+    "Same four checkpoints are not four independent security certificates.",
+    "One frozen clean/modified pair does not estimate general detection accuracy.",
+    "No model tuning, generation, design feedback, or training."
+  ]
+}

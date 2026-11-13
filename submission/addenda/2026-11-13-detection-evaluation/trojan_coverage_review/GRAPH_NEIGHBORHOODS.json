@@ -1,0 +1,254 @@
+{
+  "flat_clean": [
+    {
+      "definition": "top._0000__graphrename_0",
+      "reference": "top__0000_",
+      "definition_in_degree": 0,
+      "definition_out_degree": 1,
+      "reference_in_degree": 3,
+      "reference_out_degree": 0,
+      "underscore_to_dot_lookup": "top..0000.",
+      "actual_definition_label": "top._0000_",
+      "definition_node": {
+        "id": "top._0000__graphrename_0",
+        "label": "_0000_"
+      },
+      "reference_node": {
+        "id": "top__0000_",
+        "label": ""
+      },
+      "definition_incoming": [],
+      "definition_outgoing": [
+        "Unot_graphrename_1"
+      ],
+      "reference_incoming": [
+        "Concat_graphrename_10",
+        "Concat_graphrename_13",
+        "Concat_graphrename_16"
+      ],
+      "reference_outgoing": []
+    },
+    {
+      "definition": "top._0001__graphrename_2",
+      "reference": "top__0001_",
+      "definition_in_degree": 0,
+      "definition_out_degree": 1,
+      "reference_in_degree": 1,
+      "reference_out_degree": 0,
+      "underscore_to_dot_lookup": "top..0001.",
+      "actual_definition_label": "top._0001_",
+      "definition_node": {
+        "id": "top._0001__graphrename_2",
+        "label": "_0001_"
+      },
+      "reference_node": {
+        "id": "top__0001_",
+        "label": ""
+      },
+      "definition_incoming": [],
+      "definition_outgoing": [
+        "Uor_graphrename_3"
+      ],
+      "reference_incoming": [
+        "Concat_graphrename_7"
+      ],
+      "reference_outgoing": []
+    },
+    {
+      "definition": "top._0002__graphrename_5",
+      "reference": "top__0002_",
+      "definition_in_degree": 0,
+      "definition_out_degree": 1,
+      "reference_in_degree": 1,
+      "reference_out_degree": 0,
+      "underscore_to_dot_lookup": "top..0002.",
+      "actual_definition_label": "top._0002_",
+      "definition_node": {
+        "id": "top._0002__graphrename_5",
+        "label": "_0002_"
+      },
+      "reference_node": {
+        "id": "top__0002_",
+        "label": ""
+      },
+      "definition_incoming": [],
+      "definition_outgoing": [
+        "Uand_graphrename_6"
+      ],
+      "reference_incoming": [
+        "Branch_graphrename_13416"
+      ],
+      "reference_outgoing": []
+    }
+  ],
+  "flat_modified": [
+    {
+      "definition": "top._0000__graphrename_0",
+      "reference": "top__0000_",
+      "definition_in_degree": 0,
+      "definition_out_degree": 1,
+      "reference_in_degree": 1,
+      "reference_out_degree": 0,
+      "underscore_to_dot_lookup": "top..0000.",
+      "actual_definition_label": "top._0000_",
+      "definition_node": {
+        "id": "top._0000__graphrename_0",
+        "label": "_0000_"
+      },
+      "reference_node": {
+        "id": "top__0000_",
+        "label": ""
+      },
+      "definition_incoming": [],
+      "definition_outgoing": [
+        "Branch_graphrename_1"
+      ],
+      "reference_incoming": [
+        "Branch_graphrename_8788"
+      ],
+      "reference_outgoing": []
+    },
+    {
+      "definition": "top._0001__graphrename_3",
+      "reference": "top__0001_",
+      "definition_in_degree": 0,
+      "definition_out_degree": 1,
+      "reference_in_degree": 4,
+      "reference_out_degree": 0,
+      "underscore_to_dot_lookup": "top..0001.",
+      "actual_definition_label": "top._0001_",
+      "definition_node": {
+        "id": "top._0001__graphrename_3",
+        "label": "_0001_"
+      },
+      "reference_node": {
+        "id": "top__0001_",
+        "label": ""
+      },
+      "definition_incoming": [],
+      "definition_outgoing": [
+        "Unot_graphrename_4"
+      ],
+      "reference_incoming": [
+        "Concat_graphrename_32",
+        "Concat_graphrename_35",
+        "Concat_graphrename_38",
+        "Concat_graphrename_41"
+      ],
+      "reference_outgoing": []
+    },
+    {
+      "definition": "top._0002__graphrename_5",
+      "reference": "top__0002_",
+      "definition_in_degree": 0,
+      "definition_out_degree": 1,
+      "reference_in_degree": 1,
+      "reference_out_degree": 0,
+      "underscore_to_dot_lookup": "top..0002.",
+      "actual_definition_label": "top._0002_",
+      "definition_node": {
+        "id": "top._0002__graphrename_5",
+        "label": "_0002_"
+      },
+      "reference_node": {
+        "id": "top__0002_",
+        "label": ""
+      },
+      "definition_incoming": [],
+      "definition_outgoing": [
+        "Uor_graphrename_6"
+      ],
+      "reference_incoming": [
+        "Concat_graphrename_23"
+      ],
+      "reference_outgoing": []
+    },
+    {
+      "definition": "top.fault_active_graphrename_8775",
+      "reference": "top_fault_active",
+      "definition_in_degree": 0,
+      "definition_out_degree": 1,
+      "reference_in_degree": 2,
+      "reference_out_degree": 0,
+      "underscore_to_dot_lookup": "top.fault.active",
+      "actual_definition_label": "top.fault_active",
+      "definition_node": {
+        "id": "top.fault_active_graphrename_8775",
+        "label": "fault_active"
+      },
+      "reference_node": {
+        "id": "top_fault_active",
+        "label": "active"
+      },
+      "definition_incoming": [],
+      "definition_outgoing": [
+        "Branch_graphrename_8776"
+      ],
+      "reference_incoming": [
+        "Land_graphrename_8744",
+        "Branch_graphrename_8779"
+      ],
+      "reference_outgoing": []
+    },
+    {
+      "definition": "top.ingress_count_graphrename_8785",
+      "reference": "top_ingress_count",
+      "definition_in_degree": 0,
+      "definition_out_degree": 1,
+      "reference_in_degree": 6,
+      "reference_out_degree": 0,
+      "underscore_to_dot_lookup": "top.ingress.count",
+      "actual_definition_label": "top.ingress_count",
+      "definition_node": {
+        "id": "top.ingress_count_graphrename_8785",
+        "label": "ingress_count"
+      },
+      "reference_node": {
+        "id": "top_ingress_count",
+        "label": "count"
+      },
+      "definition_incoming": [],
+      "definition_outgoing": [
+        "Branch_graphrename_8786"
+      ],
+      "reference_incoming": [
+        "Eq_graphrename_8732",
+        "LessThan_graphrename_8750",
+        "Plus_graphrename_8753",
+        "Ulnot_graphrename_8756",
+        "GreaterEq_graphrename_8758",
+        "Branch_graphrename_8788"
+      ],
+      "reference_outgoing": []
+    },
+    {
+      "definition": "top.read_count_graphrename_8801",
+      "reference": "top_read_count",
+      "definition_in_degree": 0,
+      "definition_out_degree": 1,
+      "reference_in_degree": 4,
+      "reference_out_degree": 0,
+      "underscore_to_dot_lookup": "top.read.count",
+      "actual_definition_label": "top.read_count",
+      "definition_node": {
+        "id": "top.read_count_graphrename_8801",
+        "label": "read_count"
+      },
+      "reference_node": {
+        "id": "top_read_count",
+        "label": "count"
+      },
+      "definition_incoming": [],
+      "definition_outgoing": [
+        "Branch_graphrename_8802"
+      ],
+      "reference_incoming": [
+        "Eq_graphrename_8710",
+        "Eq_graphrename_8741",
+        "Plus_graphrename_8772",
+        "Branch_graphrename_8804"
+      ],
+      "reference_outgoing": []
+    }
+  ]
+}

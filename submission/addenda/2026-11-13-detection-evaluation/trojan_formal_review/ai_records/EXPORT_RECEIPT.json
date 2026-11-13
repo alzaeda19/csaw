@@ -1,0 +1,15 @@
+{
+  "source_thread_id": "01a1b0ad-f593-7f90-a689-b621984f7cb4",
+  "native_source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-12-19-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1d23f-7ed7-7fa1-9afd-64875b8a6cf8.jsonl",
+  "source_interval": [
+    2276,
+    2367
+  ],
+  "source_prefix_sha256": "2230747e23931f0964c1245206106b717beb5591c64bf6bda3bb093bfe46cc54",
+  "source_prefix_bytes": 10997309,
+  "snapshot_last_timestamp": "2026-11-13T05:59:20.850Z",
+  "retained_records": 28,
+  "omitted_records": 64,
+  "exact_scalar_fields_verified": 185,
+  "policy": "Exact ordinary fields only. Opaque payloads are not decoded. Hidden reasoning, platform/context records and event duplicates excluded. Snapshot excludes future sealing/handoff messages. Does not restore historical missing dialogue."
+}

@@ -1,0 +1,8 @@
+{
+  "candidate": "candidate_R",
+  "finding": "extra_output_behavior",
+  "evidence": [
+    "assign MISO = raw_miso ^ (fault_active && !NORM_CS_N && read_count == 6'd1);"
+  ],
+  "limitations": "The behavior of the `chip` module and the exact conditions under which `fault_active` is set are not visible. The `MISO` signal is modified based on `fault_active`, which depends on internal state and logic within the `chip` module."
+}

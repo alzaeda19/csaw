@@ -1,0 +1,101 @@
+{
+  "checked_sources": [
+    {
+      "copy": "sources/baseline.v",
+      "source_and_copy_unchanged": true,
+      "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765"
+    },
+    {
+      "copy": "sources/cells_sim.v",
+      "source_and_copy_unchanged": true,
+      "sha256": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527"
+    },
+    {
+      "copy": "sources/baseline_protocol_dut.sv",
+      "source_and_copy_unchanged": true,
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089"
+    },
+    {
+      "copy": "sources/modified_protocol_dut.sv",
+      "source_and_copy_unchanged": true,
+      "sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e"
+    },
+    {
+      "copy": "formal/edge_protocol_harness.sv",
+      "source_and_copy_unchanged": true,
+      "sha256": "f091722112c16e44d276e965d7a8f75a1f63f09b3a0972be80cd03405a955783"
+    },
+    {
+      "copy": "formal/edge_control.ys",
+      "source_and_copy_unchanged": true,
+      "sha256": "a1f006acc1f3b8f89705e234a8b0f04dcb1d171e2504f72b4cc58b78c46c34c7"
+    },
+    {
+      "copy": "scripts/run_yosys.py",
+      "source_and_copy_unchanged": true,
+      "sha256": "3d8d02bb454b2fc25775f3004f315d11aa5feb23b054e2424309a9c8d4e7cbac"
+    },
+    {
+      "copy": "historical/formal_receipt.json",
+      "source_and_copy_unchanged": true,
+      "sha256": "e7859e789efc680a10d7fd7633b69598531e7e04065afb2af3015d58b6bdb519"
+    },
+    {
+      "copy": "historical/formal_counterexample.json",
+      "source_and_copy_unchanged": true,
+      "sha256": "a81b72583eaa6836be336dbcc7defa30c55577b1000faac13e2ccf1af39f8a97"
+    },
+    {
+      "copy": "historical/simulation/RESULT.json",
+      "source_and_copy_unchanged": true,
+      "sha256": "18bd9c42e9d4d61ae85827a75a81b0bf438d2e4f8893077cb674525ee628351f"
+    },
+    {
+      "copy": "historical/simulation/simulate.command.json",
+      "source_and_copy_unchanged": true,
+      "sha256": "1efbf6e0a297077307a8f87c23b98402f2c04c08b45fc5407c51f317fd91dd63"
+    },
+    {
+      "copy": "historical/simulation/compile.command.json",
+      "source_and_copy_unchanged": true,
+      "sha256": "79a62d265e0c0bb8185effeaf7d161699a591debdbea3315f64ed5d06d350fd5"
+    },
+    {
+      "copy": "historical/simulation/simulate.stdout.log",
+      "source_and_copy_unchanged": true,
+      "sha256": "4f67bbf91dcb0b0626d2f5a102d85590823f552f2214d913cd5f8347caac01e6"
+    },
+    {
+      "copy": "historical/simulation/simulate.stderr.log",
+      "source_and_copy_unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "copy": "historical/simulation/compile.stdout.log",
+      "source_and_copy_unchanged": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "copy": "historical/simulation/compile.stderr.log",
+      "source_and_copy_unchanged": true,
+      "sha256": "5f631e8903861134bf4ce0aa8dd59be3fa8e586be6b6d3fea450a577d47a0726"
+    },
+    {
+      "copy": "historical/simulation/demo_trace.csv",
+      "source_and_copy_unchanged": true,
+      "sha256": "2ea5c835afc7933a98ff60571757bfa0e02f9e16e37ebc0c7be1d82f16080d2e"
+    },
+    {
+      "copy": "historical/simulation/sources/demo_tb.sv",
+      "source_and_copy_unchanged": true,
+      "sha256": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a"
+    }
+  ],
+  "git_head_after": "65d4f51506d3cb09b49b16875bc3d9d833d89949",
+  "git_status_after": "",
+  "writes_by_this_task": "Isolated evaluation folder only",
+  "native_task_start": [
+    2276,
+    "2026-11-13T05:55:51.633Z"
+  ]
+}

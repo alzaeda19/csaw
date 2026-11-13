@@ -1,0 +1,97 @@
+Read-only methods review of a completed, fixed-design academic detection evaluation. You have no tools and did not run these tests. Do not suggest modifying any circuit, hiding changes, bypassing a detector, retraining, or further attack tests. Assess ONLY which conclusions the supplied evidence supports. Return concise JSON with supported_conclusion, invalid_claims, remaining_limitations.
+
+The design is frozen at recorded hashes. Two isolated label-masked Qwen reviews classified modified wrapper as extra_output_behavior and clean as pass_through. The modified review correctly cited the output XOR but falsely claimed the fault state and qualification conditions were hidden in chip; they are explicitly in the visible wrapper. Comments were removed but identifiers were retained; no double-blind or general accuracy claim.
+
+Same Yosys flow on both found 48 additional state bits and 44 generic cells. These include mapped RAM model state and are not physical FPGA resource percentages; prior FPGA synthesis separately measured +36 LUT, +48 registers, +13 carry, unchanged RAM. Structural difference alone does not identify malicious intent.
+
+Fresh original/raw/flat simulation on each design: six runs, 270 transactions and 39,960 observed output triples each, zero unknown outputs or trace mismatches in each representation-vs-its-original comparison. Clean/modified serial results differ only at the declared positive control; other 269 sampled cases agree. These cases do not establish universal equivalence or stealth.
+
+Independent scoped white-box formal check found a mismatch with data and mode unconstrained, only alternating clock assumption; bounded 325 samples/two slots. Existing zero-core abstraction plus same real inputs and independent XOR mask support compositional divergence. Actual full-core simulation corroborates word/mode and one bit difference, not the precise formal witness timing.
+
+Four supplied checkpoint results, no tuning/training/iteration after scores:
+[
+  {
+    "candidate": "raw_clean",
+    "route": "heuristic_fallback",
+    "models": {
+      "HT1": "CLEAN",
+      "HT2": "CLEAN",
+      "HT3": "CLEAN",
+      "HT4": "CLEAN"
+    },
+    "trojan_scores": {
+      "HT1": 0.05777086690068245,
+      "HT2": 0.2901308834552765,
+      "HT3": 0.14490777254104614,
+      "HT4": 0.04644026607275009
+    },
+    "nodes": 5799,
+    "edges": 11038,
+    "whole_design_evidence_valid": false,
+    "limitation": "Syntax failure invokes incomplete heuristic graph"
+  },
+  {
+    "candidate": "raw_modified",
+    "route": "heuristic_fallback",
+    "models": {
+      "HT1": "TROJAN",
+      "HT2": "CLEAN",
+      "HT3": "CLEAN",
+      "HT4": "CLEAN"
+    },
+    "trojan_scores": {
+      "HT1": 0.9053398370742798,
+      "HT2": 0.2901308834552765,
+      "HT3": 0.14490777254104614,
+      "HT4": 0.04644026607275009
+    },
+    "nodes": 5840,
+    "edges": 11100,
+    "whole_design_evidence_valid": false,
+    "limitation": "Syntax failure invokes incomplete heuristic graph"
+  },
+  {
+    "candidate": "flat_clean",
+    "route": "exact_DFG",
+    "models": {
+      "HT1": "CLEAN",
+      "HT2": "CLEAN",
+      "HT3": "CLEAN",
+      "HT4": "CLEAN"
+    },
+    "trojan_scores": {
+      "HT1": 0.045241452753543854,
+      "HT2": 0.2018837034702301,
+      "HT3": 0.052348777651786804,
+      "HT4": 0.043668486177921295
+    },
+    "nodes": 18841,
+    "edges": 19839,
+    "whole_design_evidence_valid": false,
+    "limitation": "Backend completes but unresolved reference/definition joins fragment graph"
+  },
+  {
+    "candidate": "flat_modified",
+    "route": "exact_DFG",
+    "models": {
+      "HT1": "CLEAN",
+      "HT2": "CLEAN",
+      "HT3": "CLEAN",
+      "HT4": "CLEAN"
+    },
+    "trojan_scores": {
+      "HT1": 0.07045428454875946,
+      "HT2": 0.2013215571641922,
+      "HT3": 0.06976958364248276,
+      "HT4": 0.010623231530189514
+    },
+    "nodes": 19014,
+    "edges": 20018,
+    "whole_design_evidence_valid": false,
+    "limitation": "Backend completes but unresolved reference/definition joins fragment graph"
+  }
+]
+
+Full-graph validity gate FAILS for both representations. Raw source exact parser fails and uses incomplete heuristic. Flattened sources simulate correctly and exact backend completes, but the unchanged graph joiner replaces all underscores with dots: 4,722 clean and 4,765 modified reference/definition pairs remain unjoined. MISO dependency graph has only 1 / 3 descendant nodes respectively; modified MISO does not reach the visible fault state's definition. Thus all four CLEAN labels on flat graphs mean only these particular incomplete graphs were labeled CLEAN. No valid whole-design miss rate, false-positive rate, calibrated confidence or stealth certificate. No fixes/tuning to obtain a favorable result were attempted.
+
+Proposed conclusion: Evaluation complete; modification is detected by source review and the scoped formal comparison. The four-model outputs are documented diagnostic results with failed graph completeness; they do not establish stealth. The original challenge stealth objective remains unestablished. Missing older logs remain honestly disclosed and unaffected. Staff determine rubric acceptance.

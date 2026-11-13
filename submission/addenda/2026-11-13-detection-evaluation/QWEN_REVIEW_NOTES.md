@@ -1,0 +1,9 @@
+# Qwen review: accepted findings and corrections
+
+Three completed calls used the existing local `qwen3-csaw-agent:20261112234518` model. Exact model/base digests are saved in `records/QWEN_MODEL_IDENTITIES.json`. Calls used separate messages, no tools, temperature 0.1, seed 42 and thinking disabled. Shared local runtime caching does not make the calls independent human reviews. No Qwen response is a security certificate or evidence that Qwen ran the tests.
+
+1. **candidate_R (modified):** `extra_output_behavior` is supported by the exact output-XOR expression it cites. Its limitations paragraph is wrong: the qualification conditions and `fault_active` state are visible in the supplied wrapper; they are not hidden inside `chip`. This error does not erase the correctly identified output alteration.
+2. **candidate_S (clean):** `pass_through` matches the direct connections in the clean adapter. The shared core was opaque in this review. This does not certify the internal core or estimate general classifier accuracy.
+3. **final_methods_review:** the stated conclusion matches the independently verified evidence: evaluation complete, source/formal detection, graph-limited classifier results, stealth unestablished. Its `invalid_claims` array is internally confused: it repeats the true correction that state is visible as though that correction were invalid. That second entry is rejected; the state is visibly in the wrapper. The supplied facts and verified artifacts, rather than the model's agreement, support the report.
+
+All original responses are unchanged. The final methods prompt disclosed the results and the proposed conclusion, so that call is an advisory consistency review, not a blind assessment. No request asks for concealment, design improvement, detector evasion or published solutions.

@@ -1,0 +1,22 @@
+{
+  "model": "qwen3-csaw-agent:20261112234518",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an evidence-focused reviewer of an authorized local hardware project. Provide concise final conclusions with source references, uncertainty and verification checks. You have no tools or file-write permissions. Do not claim to have run tests. Do not create or improve malicious behavior, concealment, evasion or attack-generation systems. No published challenge solutions."
+    },
+    {
+      "role": "user",
+      "content": "Perform a read-only source review of this serial protocol wrapper. The module named chip is identical in all candidates and should be treated as an opaque provided accelerator. You have no tools. The candidate label carries no class information. Determine whether this wrapper simply forwards the protocol or introduces additional data-dependent control/state or output alteration. Quote exact existing expressions to support your answer, distinguish visibility from functionality, and state what cannot be concluded about unseen core behavior. Do not generate code, infer a desired verdict, suggest hiding changes, improve a trigger/payload, or offer evasion methods. Return concise JSON with candidate, finding (pass_through / extra_output_behavior / inconclusive), evidence, and limitations. No grade or universal security claims.\n\nCandidate: candidate_S\n\n\n\nmodule protocol_dut(input SCK,RST_N,MOSI,NORM_CS_N,START,ENC_DEC,\n output MISO,BUSY,ICE_LED);\n chip recovered(\n  .io_9_31_1(SCK), .io_13_31_1(RST_N), .io_16_31_0(MOSI),\n  .io_17_31_0(NORM_CS_N), .io_18_31_1(START), .io_19_31_1(ENC_DEC),\n  .io_16_31_1(MISO), .io_8_31_1(BUSY), .io_19_31_0(ICE_LED));\nendmodule\n"
+    }
+  ],
+  "think": false,
+  "stream": true,
+  "options": {
+    "temperature": 0.1,
+    "seed": 42,
+    "num_ctx": 16384,
+    "num_predict": 2000
+  },
+  "keep_alive": "10m"
+}
