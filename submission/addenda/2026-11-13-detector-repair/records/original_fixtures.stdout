@@ -1,0 +1,123 @@
+[
+  {
+    "fixture": "plain",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 5,
+    "edges": 4,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "underscores",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 6,
+    "edges": 4,
+    "missing": [
+      "top.mid_word",
+      "top_in_a",
+      "top_in_b"
+    ],
+    "pass_check": false
+  },
+  {
+    "fixture": "generated_names",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 6,
+    "edges": 4,
+    "missing": [
+      "top._0001_",
+      "top_in_a",
+      "top_in_b"
+    ],
+    "pass_check": false
+  },
+  {
+    "fixture": "escaped_dot",
+    "expected": "correct_dependency_graph",
+    "status": "error",
+    "error_type": "DefinitionError",
+    "error": "No such signals: top.\\unit.inner_word",
+    "pass_check": false
+  },
+  {
+    "fixture": "hierarchy",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 9,
+    "edges": 5,
+    "missing": [
+      "top.u_child.mid_word",
+      "top.u_child.out_y",
+      "top_in_a"
+    ],
+    "pass_check": false
+  },
+  {
+    "fixture": "feedback",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 8,
+    "edges": 7,
+    "missing": [
+      "top.state_q",
+      "top_rst",
+      "top_in_a",
+      "state_feedback_cycle"
+    ],
+    "pass_check": false
+  },
+  {
+    "fixture": "shared_fanin",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 9,
+    "edges": 9,
+    "missing": [
+      "top.mid_word",
+      "top_in_b",
+      "shared_out_z_dependency"
+    ],
+    "pass_check": false
+  },
+  {
+    "fixture": "slices",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 12,
+    "edges": 11,
+    "missing": [
+      "top.mid_bus",
+      "top_in_a"
+    ],
+    "pass_check": false
+  },
+  {
+    "fixture": "constant",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 4,
+    "edges": 2,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "ambiguous_names",
+    "expected": "explicit_error",
+    "status": "graph_returned",
+    "nodes": 7,
+    "edges": 6,
+    "missing": [],
+    "pass_check": false
+  },
+  {
+    "fixture": "malformed",
+    "expected": "explicit_error",
+    "status": "error",
+    "error_type": "ParseError",
+    "error": " line:1: before: \";\"",
+    "pass_check": true
+  }
+]

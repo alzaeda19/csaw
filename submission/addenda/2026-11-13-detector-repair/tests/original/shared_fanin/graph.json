@@ -1,0 +1,78 @@
+{
+  "nodes": [
+    {
+      "id": "top.mid_word_graphrename_0",
+      "label": "mid_word"
+    },
+    {
+      "id": "Xor_graphrename_1",
+      "label": "xor"
+    },
+    {
+      "id": "top_in_a",
+      "label": "a"
+    },
+    {
+      "id": "top_in_b",
+      "label": "b"
+    },
+    {
+      "id": "top.out_y_graphrename_2",
+      "label": "out_y"
+    },
+    {
+      "id": "Or_graphrename_3",
+      "label": "or"
+    },
+    {
+      "id": "top_mid_word",
+      "label": "word"
+    },
+    {
+      "id": "top.out_z_graphrename_4",
+      "label": "out_z"
+    },
+    {
+      "id": "And_graphrename_5",
+      "label": "and"
+    }
+  ],
+  "edges": [
+    [
+      "top.mid_word_graphrename_0",
+      "Xor_graphrename_1"
+    ],
+    [
+      "Xor_graphrename_1",
+      "top_in_a"
+    ],
+    [
+      "Xor_graphrename_1",
+      "top_in_b"
+    ],
+    [
+      "top.out_y_graphrename_2",
+      "Or_graphrename_3"
+    ],
+    [
+      "Or_graphrename_3",
+      "top_in_a"
+    ],
+    [
+      "Or_graphrename_3",
+      "top_mid_word"
+    ],
+    [
+      "top.out_z_graphrename_4",
+      "And_graphrename_5"
+    ],
+    [
+      "And_graphrename_5",
+      "top_in_b"
+    ],
+    [
+      "And_graphrename_5",
+      "top_mid_word"
+    ]
+  ]
+}

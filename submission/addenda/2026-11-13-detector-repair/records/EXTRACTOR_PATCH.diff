@@ -1,0 +1,116 @@
+--- supplied/hw2vec/hw2graph.py
++++ repaired/hw2vec/hw2graph.py
+@@ -19,6 +19,8 @@
+ from json import dumps
+ from collections import defaultdict
+ from pyverilog.dataflow.optimizer import VerilogDataflowOptimizer
++from pyverilog.dataflow.dataflow import DFTerminal
++from pyverilog.dataflow import replace as df_replace
+ from pyverilog.dataflow.graphgen import VerilogGraphGenerator
+ from pyverilog.controlflow.controlflow_analyzer import VerilogControlflowAnalyzer
+ from pyverilog.vparser.parser import parse
+@@ -377,28 +379,83 @@
+         dfg_graph_generator = VerilogGraphGenerator("top", terms, binddict, resolved_terms, 
+                                                     resolved_binddict, constlist, './seperate_modules.pdf')
+ 
+-        # binddict with string keys
+-        signals = [str(bind) for bind in dfg_graph_generator.binddict]
+-
++        # Match reference labels using the parser's actual symbol encoding.
++        # Replacing underscores with dots cannot distinguish literal underscores
++        # from hierarchy separators, and can silently join the wrong signal.
++        label_symbols = defaultdict(list)
++        symbols = {}
++        for termname, term in terms.items():
++            name = str(termname)
++            label = DFTerminal(termname).tolabel()
++            label_symbols[label].append(name)
++            symbols[name] = {'reference_label': label,
++                             'term_types': sorted(str(t) for t in term.termtype)}
++        ambiguous = {label: names for label, names in label_symbols.items()
++                     if len(names) != 1}
++        if ambiguous:
++            raise ValueError('Ambiguous flattened terminal labels: ' + json.dumps(ambiguous, sort_keys=True))
++
++        # Capture definition identities directly while they are generated;
++        # graph degree is not a reliable indicator after references are joined.
++        bound_terms = {str(bind): bind for bind in dfg_graph_generator.binddict}
++        if len(bound_terms) != len(dfg_graph_generator.binddict):
++            raise ValueError('Ambiguous textual definition identities')
++        signals = list(bound_terms)
++        roots = {}
+         for num, signal in enumerate(sorted(signals, key=str.casefold), start=1):
+-            dfg_graph_generator.generate(signal, walk=False)
+-            # print(f'\rProgress : {num} / {len(signals)}', end='', flush=True)
+-
+-        label_to_node = dict()
+-        for node in dfg_graph_generator.graph.nodes():
+-            if dfg_graph_generator.graph.in_degree(node) == 0:
+-                label = node.attr['label'] if node.attr['label'] != '\\N' else str(node)
+-                label_to_node[label] = node
+-        
+-        num_nodes = len(dfg_graph_generator.graph.nodes())
+-        for num, node in enumerate(dfg_graph_generator.graph.nodes(), start=1):
+-            label = node.attr['label'] if node.attr['label'] != '\\N' else str(node)
+-            if '_' in label and label.replace('_', '.') in label_to_node:
+-                parents = dfg_graph_generator.graph.predecessors(node)
+-                dfg_graph_generator.graph.delete_node(node)
+-                for parent in parents:
+-                    dfg_graph_generator.graph.add_edge(parent, label_to_node[label.replace('_', '.')])
+-
++            root = signal + '_graphrename_' + str(dfg_graph_generator.renamecounter)
++            # Same walk=False graph-generation steps as PyVerilog, but retain
++            # the typed ScopeChain instead of splitting its display string.
++            # String reparsing loses the identity of escaped dotted names.
++            termname = bound_terms[signal]
++            tree = dfg_graph_generator.treewalker.getTree(termname)
++            if tree is None:
++                raise ValueError('Missing dataflow tree: ' + signal)
++            tree = dfg_graph_generator.optimizer.optimize(tree)
++            tree = df_replace.replaceUndefined(tree, termname)
++            generated_name = dfg_graph_generator.rename(signal)
++            dfg_graph_generator.identical = False
++            dfg_graph_generator.add_node(generated_name, label=signal)
++            dfg_graph_generator.visit(tree, generated_name)
++            if not dfg_graph_generator.graph.has_node(root):
++                raise ValueError('Missing generated definition root: ' + signal)
++            if str(dfg_graph_generator.graph.get_node(root).attr['label']) != signal:
++                raise ValueError('Definition identity mismatch: ' + signal)
++            roots[signal] = root
++
++        graph = dfg_graph_generator.graph
++        joined = []
++        unbound = []
++        for node in list(graph.nodes()):
++            label = str(node)
++            if label not in label_symbols:
++                continue
++            symbol = label_symbols[label][0]
++            if symbol not in roots:
++                unbound.append({'symbol': symbol, 'reference_node': label,
++                                'term_types': symbols[symbol]['term_types']})
++                continue
++            target = roots[symbol]
++            if label == target or graph.out_degree(node) != 0:
++                raise ValueError('Unexpected terminal-node shape: ' + label)
++            parents = [str(parent) for parent in graph.predecessors(node)]
++            for parent in parents:
++                attrs = dict(graph.get_edge(parent, node).attr)
++                graph.add_edge(parent, target, **attrs)
++            graph.delete_node(node)
++            joined.append({'symbol': symbol, 'reference_node': label,
++                           'definition_node': target, 'parents': parents})
++        unresolved = [info for info in joined if graph.has_node(info['reference_node'])]
++        if unresolved:
++            raise ValueError('Unresolved bound terminal references after joining')
++        self.last_report = {
++            'method': 'Exact DFTerminal(termname).tolabel identity; no character substitution',
++            'symbols': symbols, 'definition_roots': roots,
++            'joined_references': joined, 'unbound_references': unbound,
++            'ambiguous_labels': ambiguous, 'unresolved_bound_references': unresolved,
++            'unbound_noninput_references': [x for x in unbound
++                if not set(x['term_types']).intersection({'Input', 'Inout', 'Parameter', 'Localparam'})],
++            'limits': 'Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof.'}
+         
+         nx_graph = nx.DiGraph()
+         

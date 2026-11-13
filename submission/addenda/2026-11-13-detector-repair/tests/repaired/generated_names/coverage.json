@@ -1,0 +1,63 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.in_a": {
+      "reference_label": "top_in_a",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.in_b": {
+      "reference_label": "top_in_b",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.out_y": {
+      "reference_label": "top_out_y",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top._0001_": {
+      "reference_label": "top__0001_",
+      "term_types": [
+        "Wire"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top._0001_": "top._0001__graphrename_0",
+    "top.out_y": "top.out_y_graphrename_2"
+  },
+  "joined_references": [
+    {
+      "symbol": "top._0001_",
+      "reference_node": "top__0001_",
+      "definition_node": "top._0001__graphrename_0",
+      "parents": [
+        "top.out_y_graphrename_2"
+      ]
+    }
+  ],
+  "unbound_references": [
+    {
+      "symbol": "top.in_a",
+      "reference_node": "top_in_a",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.in_b",
+      "reference_node": "top_in_b",
+      "term_types": [
+        "Input"
+      ]
+    }
+  ],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

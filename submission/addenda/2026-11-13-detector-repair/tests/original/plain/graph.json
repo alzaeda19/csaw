@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "top.mid_graphrename_0",
+      "label": "mid"
+    },
+    {
+      "id": "And_graphrename_1",
+      "label": "and"
+    },
+    {
+      "id": "top_a",
+      "label": "a"
+    },
+    {
+      "id": "top_b",
+      "label": "b"
+    },
+    {
+      "id": "top.y_graphrename_2",
+      "label": "y"
+    }
+  ],
+  "edges": [
+    [
+      "top.mid_graphrename_0",
+      "And_graphrename_1"
+    ],
+    [
+      "And_graphrename_1",
+      "top_a"
+    ],
+    [
+      "And_graphrename_1",
+      "top_b"
+    ],
+    [
+      "top.y_graphrename_2",
+      "top.mid_graphrename_0"
+    ]
+  ]
+}

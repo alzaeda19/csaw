@@ -1,0 +1,80 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.in_a": {
+      "reference_label": "top_in_a",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.out_y": {
+      "reference_label": "top_out_y",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.u_child.in_a": {
+      "reference_label": "top_u_child_in_a",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.u_child.out_y": {
+      "reference_label": "top_u_child_out_y",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.u_child.mid_word": {
+      "reference_label": "top_u_child_mid_word",
+      "term_types": [
+        "Wire"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top.out_y": "top.out_y_graphrename_0",
+    "top.u_child.in_a": "top.u_child.in_a_graphrename_1",
+    "top.u_child.mid_word": "top.u_child.mid_word_graphrename_2",
+    "top.u_child.out_y": "top.u_child.out_y_graphrename_4"
+  },
+  "joined_references": [
+    {
+      "symbol": "top.u_child.out_y",
+      "reference_node": "top_u_child_out_y",
+      "definition_node": "top.u_child.out_y_graphrename_4",
+      "parents": [
+        "top.out_y_graphrename_0"
+      ]
+    },
+    {
+      "symbol": "top.u_child.in_a",
+      "reference_node": "top_u_child_in_a",
+      "definition_node": "top.u_child.in_a_graphrename_1",
+      "parents": [
+        "Unot_graphrename_3"
+      ]
+    },
+    {
+      "symbol": "top.u_child.mid_word",
+      "reference_node": "top_u_child_mid_word",
+      "definition_node": "top.u_child.mid_word_graphrename_2",
+      "parents": [
+        "top.u_child.out_y_graphrename_4"
+      ]
+    }
+  ],
+  "unbound_references": [
+    {
+      "symbol": "top.in_a",
+      "reference_node": "top_in_a",
+      "term_types": [
+        "Input"
+      ]
+    }
+  ],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

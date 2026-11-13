@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-11-13T06:42:30.116054+00:00",
+  "purpose": "Repair defensive detector representation; no stealth optimization",
+  "changes_allowed": [
+    "Isolated copied graph extractor join logic",
+    "Fail-closed extraction runner",
+    "Validation fixtures and coverage audit"
+  ],
+  "frozen": [
+    "Original and modified HDL",
+    "Flattened input Verilog",
+    "Model checkpoints/configs",
+    "37-feature normalization",
+    "Seed 0, CPU, one thread, any-positive ensemble rule"
+  ],
+  "pre_inference_gates": [
+    "Demonstrate original join bug on benign small fixture",
+    "Underscore/generated identifier dependencies resolve exactly",
+    "Hierarchy separator collisions rejected explicitly before graph output",
+    "Self-feedback preserved",
+    "Reference/root coverage audit for each target with no dangling bound terms",
+    "Saved model tensor edges exactly match repaired graph",
+    "Outputs reach expected input/control/state definitions under dependency orientation"
+  ],
+  "target_inference": "One run of each unchanged HT1-HT4 checkpoint on each unchanged flat clean/modified design, after fixture and graph gates. No score-driven edits, no training or threshold tuning.",
+  "limits": [
+    "Dataflow dependencies are an abstraction, not cycle-accurate or physical semantics.",
+    "Restoring graph connectivity does not validate training distribution or calibrated probabilities.",
+    "One pair cannot estimate general accuracy or certify stealth.",
+    "Raw-source parser remains unsupported; use the previously simulation-validated complete flattened inputs."
+  ]
+}

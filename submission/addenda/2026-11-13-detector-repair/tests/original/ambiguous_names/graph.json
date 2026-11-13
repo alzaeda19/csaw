@@ -1,0 +1,58 @@
+{
+  "nodes": [
+    {
+      "id": "top.h_graphrename_0",
+      "label": "h"
+    },
+    {
+      "id": "top.u.b_graphrename_1",
+      "label": "b"
+    },
+    {
+      "id": "top.u.x_graphrename_2",
+      "label": "x"
+    },
+    {
+      "id": "top_a",
+      "label": "a"
+    },
+    {
+      "id": "top_b",
+      "label": "b"
+    },
+    {
+      "id": "top.y_graphrename_4",
+      "label": "y"
+    },
+    {
+      "id": "Xor_graphrename_5",
+      "label": "xor"
+    }
+  ],
+  "edges": [
+    [
+      "top.h_graphrename_0",
+      "top.u.b_graphrename_1"
+    ],
+    [
+      "top.u.b_graphrename_1",
+      "top.u.x_graphrename_2"
+    ],
+    [
+      "top.u.x_graphrename_2",
+      "top_a"
+    ],
+    [
+      "top.y_graphrename_4",
+      "Xor_graphrename_5"
+    ],
+    [
+      "Xor_graphrename_5",
+      "top.h_graphrename_0"
+    ],
+    [
+      "Xor_graphrename_5",
+      "top.u.b_graphrename_1"
+    ]
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "top._0001__graphrename_0",
+      "label": "_0001_"
+    },
+    {
+      "id": "Or_graphrename_1",
+      "label": "or"
+    },
+    {
+      "id": "top_in_a",
+      "label": "a"
+    },
+    {
+      "id": "top_in_b",
+      "label": "b"
+    },
+    {
+      "id": "top.out_y_graphrename_2",
+      "label": "out_y"
+    }
+  ],
+  "edges": [
+    [
+      "top._0001__graphrename_0",
+      "Or_graphrename_1"
+    ],
+    [
+      "Or_graphrename_1",
+      "top_in_a"
+    ],
+    [
+      "Or_graphrename_1",
+      "top_in_b"
+    ],
+    [
+      "top.out_y_graphrename_2",
+      "top._0001__graphrename_0"
+    ]
+  ]
+}

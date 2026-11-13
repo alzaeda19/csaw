@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detector_repair_2026-11-13/scripts/test_extractor.py", line 27, in <module>
+    with (case/'stdout.txt').open('w') as out,(case/'stderr.txt').open('w') as err,contextlib.redirect_stdout(out),contextlib.redirect_stderr(err):g=gen.process(file)
+                                                                                                                                                     ^^^^^^^^^^^^^^^^^
+  File "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detector_repair_2026-11-13/package/hw2vec/hw2vec/hw2graph.py", line 369, in process
+    dataflow_analyzer.generate()
+  File "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detector_repair_2026-11-13/package/hw2vec/hw2vec/utilities.py", line 111, in generate
+    ast = self.parse()
+          ^^^^^^^^^^^^
+  File "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/lib/python3.12/site-packages/pyverilog/vparser/parser.py", line 2316, in parse
+    ast = self.parser.parse(text, debug=debug)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/lib/python3.12/site-packages/pyverilog/vparser/parser.py", line 77, in parse
+    return self.parser.parse(text, lexer=self.lexer, debug=debug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/lib/python3.12/site-packages/ply/yacc.py", line 333, in parse
+    return self.parseopt_notrack(input, lexer, debug, tracking, tokenfunc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/lib/python3.12/site-packages/ply/yacc.py", line 1201, in parseopt_notrack
+    tok = call_errorfunc(self.errorfunc, errtoken, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/lib/python3.12/site-packages/ply/yacc.py", line 192, in call_errorfunc
+    r = errorfunc(token)
+        ^^^^^^^^^^^^^^^^
+  File "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/lib/python3.12/site-packages/pyverilog/vparser/parser.py", line 2268, in p_error
+    self._raise_error(p)
+  File "/Users/al-zayedal-hassan/Documents/CSAW_2026_Detector_Baseline_2026-11-10_122045Z/runtime/venv/lib/python3.12/site-packages/pyverilog/vparser/parser.py", line 2279, in _raise_error
+    raise ParseError("%s: %s" % (coord, msg))
+pyverilog.vparser.parser.ParseError:  line:1: before: ";"

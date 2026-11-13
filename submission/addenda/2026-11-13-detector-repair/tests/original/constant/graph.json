@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "id": "top.mid_word_graphrename_0",
+      "label": "mid_word"
+    },
+    {
+      "id": "4'd10_graphrename_1",
+      "label": "4'd10"
+    },
+    {
+      "id": "top.out_y_graphrename_2",
+      "label": "out_y"
+    },
+    {
+      "id": "top_mid_word",
+      "label": "word"
+    }
+  ],
+  "edges": [
+    [
+      "top.mid_word_graphrename_0",
+      "4'd10_graphrename_1"
+    ],
+    [
+      "top.out_y_graphrename_2",
+      "top_mid_word"
+    ]
+  ]
+}

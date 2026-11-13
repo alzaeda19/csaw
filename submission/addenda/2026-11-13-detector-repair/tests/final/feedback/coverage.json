@@ -1,0 +1,70 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.clk": {
+      "reference_label": "top_clk",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.rst": {
+      "reference_label": "top_rst",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.in_a": {
+      "reference_label": "top_in_a",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.out_y": {
+      "reference_label": "top_out_y",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.state_q": {
+      "reference_label": "top_state_q",
+      "term_types": [
+        "Reg"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top.out_y": "top.out_y_graphrename_0",
+    "top.state_q": "top.state_q_graphrename_1"
+  },
+  "joined_references": [
+    {
+      "symbol": "top.state_q",
+      "reference_node": "top_state_q",
+      "definition_node": "top.state_q_graphrename_1",
+      "parents": [
+        "top.out_y_graphrename_0",
+        "Xor_graphrename_4"
+      ]
+    }
+  ],
+  "unbound_references": [
+    {
+      "symbol": "top.rst",
+      "reference_node": "top_rst",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.in_a",
+      "reference_node": "top_in_a",
+      "term_types": [
+        "Input"
+      ]
+    }
+  ],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

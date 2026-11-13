@@ -1,0 +1,38 @@
+[
+  {
+    "model": "HT1",
+    "checkpoint_sha256": "5e75ed6a97c5019ee4526178c08eadb086a47bcc919086cbdfd54b7691b7a8b6",
+    "config_sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+    "strict_load": true,
+    "weights_only": true,
+    "device": "cpu",
+    "training": false
+  },
+  {
+    "model": "HT2",
+    "checkpoint_sha256": "5da0f0c15091eb1f371c50a1a2323136dfee7145318afba0801e903823c02a33",
+    "config_sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+    "strict_load": true,
+    "weights_only": true,
+    "device": "cpu",
+    "training": false
+  },
+  {
+    "model": "HT3",
+    "checkpoint_sha256": "4cc70e4d3c534cdacd5b740fb88f1fd5f0f8f9aa3a213ff5798074ffcc3a0264",
+    "config_sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+    "strict_load": true,
+    "weights_only": true,
+    "device": "cpu",
+    "training": false
+  },
+  {
+    "model": "HT4",
+    "checkpoint_sha256": "a7208ee7e5e5a6567d51a7e102af26758337206be7c6880a7ba79599cf36f7ea",
+    "config_sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf",
+    "strict_load": true,
+    "weights_only": true,
+    "device": "cpu",
+    "training": false
+  }
+]

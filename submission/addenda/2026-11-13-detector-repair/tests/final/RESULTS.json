@@ -1,0 +1,99 @@
+[
+  {
+    "fixture": "plain",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 5,
+    "edges": 4,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "underscores",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 5,
+    "edges": 4,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "generated_names",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 5,
+    "edges": 4,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "escaped_dot",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 4,
+    "edges": 3,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "hierarchy",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 6,
+    "edges": 5,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "feedback",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 7,
+    "edges": 7,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "shared_fanin",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 8,
+    "edges": 9,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "slices",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 11,
+    "edges": 11,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "constant",
+    "expected": "correct_dependency_graph",
+    "status": "graph_returned",
+    "nodes": 3,
+    "edges": 2,
+    "missing": [],
+    "pass_check": true
+  },
+  {
+    "fixture": "ambiguous_names",
+    "expected": "explicit_error",
+    "status": "error",
+    "error_type": "ValueError",
+    "error": "Ambiguous flattened terminal labels: {\"top_u_b\": [\"top.u_b\", \"top.u.b\"]}",
+    "pass_check": true
+  },
+  {
+    "fixture": "malformed",
+    "expected": "explicit_error",
+    "status": "error",
+    "error_type": "ParseError",
+    "error": " line:1: before: \";\"",
+    "pass_check": true
+  }
+]

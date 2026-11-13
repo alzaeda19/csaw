@@ -1,0 +1,33 @@
+{
+  "source": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detector_repair_2026-11-13",
+  "destination": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/CSAW_detector_repair_publication_2026-11-13/prepared-replay",
+  "frozen_inputs_verified": true,
+  "known_extractor_change_only": [
+    "package/hw2vec/hw2vec/hw2graph.py"
+  ],
+  "models_or_extraction_run": false,
+  "baseline_control": "Preserved original plain-name graph, not rerun by preparation",
+  "run_in_destination_in_order": [
+    [
+      "python3",
+      "scripts/run_python.py",
+      "final_fixtures",
+      "scripts/test_extractor.py",
+      "--label",
+      "final",
+      "--expect-repaired"
+    ],
+    [
+      "python3",
+      "scripts/run_python.py",
+      "target_extraction",
+      "scripts/extract_targets.py"
+    ],
+    [
+      "python3",
+      "scripts/run_python.py",
+      "repaired_inference",
+      "scripts/infer_repaired.py"
+    ]
+  ]
+}

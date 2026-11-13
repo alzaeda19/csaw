@@ -1,0 +1,30 @@
+[
+  {
+    "candidate": "flat_clean",
+    "main_component_contains_all_observed_outputs": true,
+    "constant_definition_components": 77,
+    "constant_values": {
+      "'d16": 4,
+      "1'd0": 42,
+      "1'd1": 11,
+      "11'd0": 4,
+      "16'd0": 12,
+      "16'd43690": 4
+    },
+    "clock_alias_component_nodes": 6
+  },
+  {
+    "candidate": "flat_modified",
+    "main_component_contains_all_observed_outputs": true,
+    "constant_definition_components": 77,
+    "constant_values": {
+      "'d16": 4,
+      "1'd0": 42,
+      "1'd1": 11,
+      "11'd0": 4,
+      "16'd0": 12,
+      "16'd43690": 4
+    },
+    "clock_alias_component_nodes": 6
+  }
+]

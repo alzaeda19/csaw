@@ -1,0 +1,51 @@
+{
+  "candidate": "flat_modified",
+  "source_sha256": "acb0d6c15dff2e1abfac218746c962940f7bfcb0ae3165b86f9e4795b10f2190",
+  "extractor_sha256": "dbf6914590546ff3cbacf6423c79ab281a9f998180684d800032a774915aae5f",
+  "graph_sha256": "8fcce80bb278668d09e73bdd59ef78f99e109c6969a5a9b83778aa99a81499e0",
+  "model_input_sha256": "02e314526d622e48bb31449312a0217b6a054be6c4956c6dad49e86ed6d4b242",
+  "nodes": 14249,
+  "edges": 20018,
+  "weak_components": 79,
+  "bound_definitions": 6202,
+  "joined_reference_nodes": 4765,
+  "unresolved_bound_references": 0,
+  "ambiguous_symbols": 0,
+  "unbound_noninput_references": 0,
+  "outputs": {
+    "MISO": {
+      "root": "top.MISO_graphrename_8798",
+      "dependency_nodes": 12686,
+      "reachable_primary_inputs": [
+        "top.ENC_DEC",
+        "top.MOSI",
+        "top.NORM_CS_N",
+        "top.RST_N",
+        "top.START"
+      ],
+      "reachable_definitions": 4765
+    },
+    "BUSY": {
+      "root": "top.BUSY_graphrename_8774",
+      "dependency_nodes": 88,
+      "reachable_primary_inputs": [
+        "top.RST_N",
+        "top.START"
+      ],
+      "reachable_definitions": 30
+    },
+    "ICE_LED": {
+      "root": "top.ICE_LED_graphrename_8784",
+      "dependency_nodes": 88,
+      "reachable_primary_inputs": [
+        "top.RST_N",
+        "top.START"
+      ],
+      "reachable_definitions": 30
+    }
+  },
+  "model_edge_set_matches_graph": true,
+  "feature_vocabulary_count": 37,
+  "seconds": 3.25875295791775,
+  "coverage_gate": "PASS for audited dataflow abstraction; not full temporal/physical semantics"
+}

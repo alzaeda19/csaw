@@ -1,0 +1,30 @@
+{
+  "scope": "Current detector-repair turn only, starting at the latest exact user approval yes; includes visible tool inputs, not hidden reasoning or reconstructed generation history.",
+  "created_utc": "2026-11-13T06:56:08.988474+00:00",
+  "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/11/rollout-2026-11-11T22-38-22-01a1c563-aa79-7e12-ae2f-72d867d1e3da_01a1cdd5-c9db-7581-b129-a9c84bd76091.jsonl",
+  "first_native_line": 3202,
+  "last_native_line": 3467,
+  "source_snapshot_prefix_sha256": "0bd929b5b3f9c8495a45c2a61ec14e7fa9db469e2f5e85faa10439b4c28ef39d",
+  "source_snapshot_prefix_bytes": 14987926,
+  "last_timestamp": "2026-11-13T06:56:08.873Z",
+  "retained_records": 36,
+  "omitted_records": 230,
+  "visible_text_changed": false,
+  "hidden_reasoning_exported": false,
+  "block_metadata_including_annotations_and_logprobs_excluded": true,
+  "earlier_turns_exported": false,
+  "limitations": [
+    "Tool results are intentionally omitted; task journal and integrity/publication receipts document outcomes.",
+    "This snapshot predates the final push verification and user-facing completion message. It does not claim to contain future messages."
+  ],
+  "files": {
+    "omitted_records.jsonl": {
+      "bytes": 38047,
+      "sha256": "f304ba4d27a3d7dd55879ed7a9f2bda4e37c7ae2f4a572755fa857f82cc39477"
+    },
+    "visible_messages_and_tool_inputs.jsonl": {
+      "bytes": 100152,
+      "sha256": "5ec31905b00cbf989e46e768db21d8dd190f9bb0c9fe9b78d922edcd7ad2e6e1"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "method": "Exact DFTerminal(termname).tolabel identity; no character substitution",
+  "symbols": {
+    "top.a": {
+      "reference_label": "top_a",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.b": {
+      "reference_label": "top_b",
+      "term_types": [
+        "Input"
+      ]
+    },
+    "top.y": {
+      "reference_label": "top_y",
+      "term_types": [
+        "Output"
+      ]
+    },
+    "top.mid": {
+      "reference_label": "top_mid",
+      "term_types": [
+        "Wire"
+      ]
+    }
+  },
+  "definition_roots": {
+    "top.mid": "top.mid_graphrename_0",
+    "top.y": "top.y_graphrename_2"
+  },
+  "joined_references": [
+    {
+      "symbol": "top.mid",
+      "reference_node": "top_mid",
+      "definition_node": "top.mid_graphrename_0",
+      "parents": [
+        "top.y_graphrename_2"
+      ]
+    }
+  ],
+  "unbound_references": [
+    {
+      "symbol": "top.a",
+      "reference_node": "top_a",
+      "term_types": [
+        "Input"
+      ]
+    },
+    {
+      "symbol": "top.b",
+      "reference_node": "top_b",
+      "term_types": [
+        "Input"
+      ]
+    }
+  ],
+  "ambiguous_labels": {},
+  "unresolved_bound_references": [],
+  "unbound_noninput_references": [],
+  "limits": "Data-dependency graph only; clock/event timing, widths and cycle semantics are not a full HDL proof."
+}

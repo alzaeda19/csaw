@@ -1,5 +1,5 @@
 {
-  "scope": "Self-excluding repository inventory, original package and prior evidence preserved.",
+  "scope": "Self-excluding repository inventory; original package and seven earlier sealed addenda preserved.",
   "files": [
     {
       "path": ".gitignore",
@@ -53,13 +53,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 11106,
-      "sha256": "8cbf01173d235ed49f8ddca04becf36a8eeba22b1161e5539aff3c2389a9c08b"
+      "bytes": 12628,
+      "sha256": "6e17bd49dc6c487efcf24bd6e98b3aac8bfaeecf8abaa675095ae91ae2d5540e"
     },
     {
       "path": "SUBMISSION_GAPS.md",
-      "bytes": 4280,
-      "sha256": "35a478782d53c3451e59fe0f8616c521ecf6e34cd96be8582b12d82cf491cf04"
+      "bytes": 4433,
+      "sha256": "53dd4b9701dd3863f81efa83be567fef5feb92f984b4a975753f77fd4cb9292c"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -4257,6 +4257,16 @@
       "sha256": "573e34148bb1498982508b5d0d74d3bb69544176347e3b27445913f1da74d57a"
     },
     {
+      "path": "publication/nov13-detector-repair/COPY_RECEIPT.json",
+      "bytes": 467,
+      "sha256": "9b1315b9c21d85c0fdec183879017c97d5c87378854637ae1ef1f787d571e899"
+    },
+    {
+      "path": "publication/nov13-detector-repair/INTEGRATION_CHECKS.json",
+      "bytes": 1365,
+      "sha256": "00788d179325eebfa8c7d90be1f99311e97f7b6b41ba77c6ac3830bc3c002bdd"
+    },
+    {
       "path": "publication/nov13-shared-chat-review/COPY_RECEIPT.json",
       "bytes": 360,
       "sha256": "093ecbf968298369c1c16a3769786abe65f1573874f4d2c56de574ee069bade7"
@@ -4283,8 +4293,8 @@
     },
     {
       "path": "submission/CURRENT_GUIDE.md",
-      "bytes": 14061,
-      "sha256": "b57cc18fdfbe1141d6b75b35328808925aaff122f3e1553f77c3fadca282d0cd"
+      "bytes": 15239,
+      "sha256": "2bf9effb614f3a71066533dd6546f78d1f0435fd47f9a221179136531b1d7707"
     },
     {
       "path": "submission/ENCRYPTION_EXPLANATION.md",
@@ -4323,8 +4333,8 @@
     },
     {
       "path": "submission/PUBLICATION_MANIFEST.json",
-      "bytes": 208516,
-      "sha256": "703baf14d73646f832088ea647bfac762146b9d7165accb7cc038c735b1ef588"
+      "bytes": 266790,
+      "sha256": "d2886019ad5915ff9da7d30688c57a11bb0a91c59dc365b55f019a0bfc8a8b8b"
     },
     {
       "path": "submission/PUBLICATION_REVIEW.md",
@@ -4333,8 +4343,8 @@
     },
     {
       "path": "submission/PUBLICATION_STATUS.md",
-      "bytes": 3781,
-      "sha256": "cd692eb85b1a028e77ca9a0ab5a2d20a03a9ad365de88a5346bdf17ee36269ee"
+      "bytes": 4583,
+      "sha256": "1632e98dc739cfcf75e4bde44f656e428674cf13369ad52e34fd98172b814c94"
     },
     {
       "path": "submission/README.md",
@@ -4348,8 +4358,8 @@
     },
     {
       "path": "submission/SUBMISSION_CHECKLIST.md",
-      "bytes": 7629,
-      "sha256": "d05bec7be37527556c915994195ddfb18d698181e12ad48334c5042808b33b58"
+      "bytes": 7967,
+      "sha256": "0ec9202bfd44d5bd647555b2499809e154a6f67dd17ff06ad0dad688d939588f"
     },
     {
       "path": "submission/addenda/2026-11-12/MANIFEST.json",
@@ -7842,6 +7852,1536 @@
       "sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e"
     },
     {
+      "path": "submission/addenda/2026-11-13-detector-repair/MANIFEST.json",
+      "bytes": 47767,
+      "sha256": "46cf395bd9e23ba3a1b9529b8b148df9c9574ce2404082c5bd1cac807e87963e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/README.md",
+      "bytes": 11474,
+      "sha256": "883e31f529ba87e7cc014eb38618467bfc779cb91f5405aa34b5cbb561950dd3"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/TEST_PLAN.json",
+      "bytes": 1606,
+      "sha256": "517788ae04fb5cbc0f3cebb37c91fa21455aaa2f154e6edbda475636a3218a32"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/ai_logs/codex_detector_repair/EXPORT_MANIFEST.json",
+      "bytes": 1494,
+      "sha256": "3c0c88b336e017a1e6df396cb0ae9f7bf0625f194a9523511851097343480752"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/ai_logs/codex_detector_repair/omitted_records.jsonl",
+      "bytes": 38047,
+      "sha256": "f304ba4d27a3d7dd55879ed7a9f2bda4e37c7ae2f4a572755fa857f82cc39477"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/ai_logs/codex_detector_repair/visible_messages_and_tool_inputs.jsonl",
+      "bytes": 100152,
+      "sha256": "5ec31905b00cbf989e46e768db21d8dd190f9bb0c9fe9b78d922edcd7ad2e6e1"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/analysis/COMPONENT_CLASSIFICATION.json",
+      "bytes": 646,
+      "sha256": "cc781fb963363f09e3b2955c798fd9689340eed0ac9046e0535c1e7251248d83"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/analysis/FINAL_AUDIT.json",
+      "bytes": 411580,
+      "sha256": "2b06cad63b48c0e00db7f5b2dd4c10021276966cfd2562a3f9309b8f6893675e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/analysis/PRE_INFERENCE_GATES.json",
+      "bytes": 3679,
+      "sha256": "1ed3176b6869c4f3d7c1f2d565896ce88ff0443b9b0ba94f07710f3f8827aed9"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/analysis/inference/MODEL_IDENTITIES.json",
+      "bytes": 1223,
+      "sha256": "105986cfe66d8eb44df7a4a025d4cfbe399c8fb9e1978145884fd00888155f2e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/analysis/inference/RESULTS.json",
+      "bytes": 4297,
+      "sha256": "55298a5e0169004f0c93caf238067b687bde18b86d818134dd830f49ce18bb02"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/analysis/inference/VERSIONS.json",
+      "bytes": 143,
+      "sha256": "e667360398a86d277c584081fbc09726ae08ab2cbad3dc2c43818ac108478621"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/analysis/inference/flat_clean.json",
+      "bytes": 1766,
+      "sha256": "401c8592b27ca3022257cfbc9f33c488643c10f23b9c9ee9a03b9c4107ccce1b"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/analysis/inference/flat_modified.json",
+      "bytes": 1781,
+      "sha256": "8bd1c5043f01e6e4deaadb505c7172229e06d61a68f8937b9ada0c59c4e5f1a9"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/capture_current_history.py",
+      "bytes": 4977,
+      "sha256": "bcb8c9a456aa627529fac7f00a83c7b32bd45a53dc8b7cd83b36718da910e145"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/flat_clean/topModule.v",
+      "bytes": 448999,
+      "sha256": "09ae379b85ca6c629d117dd88902bf48299fedeb40280aaedf6397998b3027dc"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/flat_modified/topModule.v",
+      "bytes": 451998,
+      "sha256": "acb0d6c15dff2e1abfac218746c962940f7bfcb0ae3165b86f9e4795b10f2190"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_clean/COVERAGE_GATE.json",
+      "bytes": 1554,
+      "sha256": "cfb2446f49e70702555ac52efb8d66eb8210c72903eacd313df73e3de09da36d"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_clean/SYMBOL_COVERAGE.json",
+      "bytes": 2331387,
+      "sha256": "11c50510e6bc4c5b30937e15daad2c2c5f871bad430d8e8a3319b23411c225fc"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_clean/extraction.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_clean/extraction.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_clean/feature_vocabulary.json",
+      "bytes": 545,
+      "sha256": "e6253f19b4da253f98076a64dd67472301c675d70d97dae574729dbcfe7ba7f9"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_clean/graph_before_normalization.json",
+      "bytes": 2853251,
+      "sha256": "d038ab94d765dc9e6ea7671afaada8de36480e77a01e835dd1cbb50e620f2b31"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_clean/model_input.json",
+      "bytes": 583014,
+      "sha256": "96451f2532ffaeb3571f73703ff43e3fcb1db1c05b6c3361d32691adf3727baa"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_modified/COVERAGE_GATE.json",
+      "bytes": 1555,
+      "sha256": "5bf164ba02d4f9b7bceffb2bab9a810c0b0b5d18b7ae598c0699e7f54cdca4a7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_modified/SYMBOL_COVERAGE.json",
+      "bytes": 2348774,
+      "sha256": "2bc096d730c7e782b085fb6350492e6ed4bb1483669a914ae7f387bda2b0dffc"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_modified/extraction.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_modified/extraction.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_modified/feature_vocabulary.json",
+      "bytes": 545,
+      "sha256": "e6253f19b4da253f98076a64dd67472301c675d70d97dae574729dbcfe7ba7f9"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_modified/graph_before_normalization.json",
+      "bytes": 2877947,
+      "sha256": "8fcce80bb278668d09e73bdd59ef78f99e109c6969a5a9b83778aa99a81499e0"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/detectors/repaired_flat_modified/model_input.json",
+      "bytes": 589139,
+      "sha256": "02e314526d622e48bb31449312a0217b6a054be6c4956c6dad49e86ed6d4b242"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/LICENSE-HW2VEC.txt",
+      "bytes": 1065,
+      "sha256": "3ed1838d3d019317bc7bd60715d16f232253fc49bc4317bda5e5680984c13bf2"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/examples/example_gnn4tj.yaml",
+      "bytes": 610,
+      "sha256": "5c58296c606c3972fa6f2bbc6aaa03b91f547455d4b62f72d2936accf54dea5c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/_version.py",
+      "bytes": 21,
+      "sha256": "2b94a20dd10660ca5da974e1aeac13a84089241390353403ae7a5cd8ae66ccab"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/config.py",
+      "bytes": 2005,
+      "sha256": "35e5556e0973b37e52fa3f2604c7d9020f433025d66ac5d50ff56be9cc99e89e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/configs/DFG-IP-NetList.yaml",
+      "bytes": 613,
+      "sha256": "2a3af6e43b5f36534c0c0227d38464e1c9149870d2be0a8c2d104f27e5834961"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/configs/IP-RTL.yaml",
+      "bytes": 615,
+      "sha256": "71c2bcabc78282e4a063367e68e55c7f94ece88c907f671bca7d9f5d4deb2453"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/configs/TJ-RTL.yaml",
+      "bytes": 610,
+      "sha256": "5c58296c606c3972fa6f2bbc6aaa03b91f547455d4b62f72d2936accf54dea5c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/graph2vec/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/graph2vec/models.py",
+      "bytes": 5370,
+      "sha256": "0202896d3c7d2093c689d16808e8c47e9e28bd0e59ac6bd987f2ac06099860e2"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/graph2vec/trainers.py",
+      "bytes": 11864,
+      "sha256": "e7b881a7f3ea828041c84c71f76951174728511d088f3bf686cc04211915f2b3"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/hw2graph.py",
+      "bytes": 33301,
+      "sha256": "dbf6914590546ff3cbacf6423c79ab281a9f998180684d800032a774915aae5f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/scripts/exp1.sh",
+      "bytes": 1330,
+      "sha256": "7a20fb62690dca3fae58c6f7633b412bf53a87ff356ed14f8c3386fd23009775"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/scripts/graph_processer.py",
+      "bytes": 1078,
+      "sha256": "fb9f79a0434c6808c5579757165c13664920df1877d62e460548a10dfbfb890f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/hw2vec/hw2vec/utilities.py",
+      "bytes": 5035,
+      "sha256": "89c7bb6c45f84851283368fbfb22fdf40265f2b3bf3b40a4658209ab612fc465"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/model_HT1/model.cfg",
+      "bytes": 113,
+      "sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/model_HT1/model.pth",
+      "bytes": 197685,
+      "sha256": "5e75ed6a97c5019ee4526178c08eadb086a47bcc919086cbdfd54b7691b7a8b6"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/model_HT2/model.cfg",
+      "bytes": 113,
+      "sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/model_HT2/model.pth",
+      "bytes": 197685,
+      "sha256": "5da0f0c15091eb1f371c50a1a2323136dfee7145318afba0801e903823c02a33"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/model_HT3/model.cfg",
+      "bytes": 113,
+      "sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/model_HT3/model.pth",
+      "bytes": 197685,
+      "sha256": "4cc70e4d3c534cdacd5b740fb88f1fd5f0f8f9aa3a213ff5798074ffcc3a0264"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/model_HT4/model.cfg",
+      "bytes": 113,
+      "sha256": "b278f253cc8c3aff072e58ca6c1a39e16f492daa7c62a94e605f74a874189bdf"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/package/model_HT4/model.pth",
+      "bytes": 197685,
+      "sha256": "a7208ee7e5e5a6567d51a7e102af26758337206be7c6880a7ba79599cf36f7ea"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/COORDINATION_ERROR.json",
+      "bytes": 724,
+      "sha256": "0742536f4a9fcd427e4be9d271fdd878bad5f1879712961e046b2f62513ca2bd"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/EXTRACTOR_PATCH.diff",
+      "bytes": 6499,
+      "sha256": "01c57b32c1b25cdc43f8e5990c5c3a3bc6ed6c4471a542c0dc789f79de37768d"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/INFERENCE_FREEZE.json",
+      "bytes": 1749,
+      "sha256": "c52c4b2271b82ba4c0adfb61abd729fe7587bd3ae152b5c7572c5fa2ccc5ef5b"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/INPUT_HASHES.json",
+      "bytes": 4043,
+      "sha256": "710f394c745be762a1dbf22bbf0922914ab5099f96f2d957cc9be197e88d2dc7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/POST_RUN_REPORTING_ERROR_NATIVE.json",
+      "bytes": 2354,
+      "sha256": "5256e2e9d2761cfe654da0d3a0965157c731fd6053bf99adab3430bdfe54f797"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/REFINEMENTS.md",
+      "bytes": 1836,
+      "sha256": "0ed8aac43077e2049b65cb5a65a901837c211d3ec2c7377cac1c09bad3aabc9f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/REPLAY_PREPARATION.json",
+      "bytes": 1037,
+      "sha256": "1f32571e284dd7e84bd307e2ee7d4d5d03c0eb9c07cb5b03b7b7836a1fadfc92"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/USER_REQUEST.txt",
+      "bytes": 4,
+      "sha256": "5040625b1fb6fa4af07226683f6e6003b29e5e70b16f8cfb24be7a752393f0ee"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/final_audit.json",
+      "bytes": 366,
+      "sha256": "c89ae9588bc506bf8f32293f8f1b821f4d6d6b5e4b3966192d16a31e3a8c13e8"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/final_audit.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/final_audit.stdout",
+      "bytes": 3095,
+      "sha256": "56bbbde5dd9ef5890f911a2200e862c2602bc593a34aab1db31b0eb185f0f46e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/final_fixtures.json",
+      "bytes": 418,
+      "sha256": "0daff76d5f6daa8361fc76b934e9dd27b948a2fbf3bf4f67d03134db9044584c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/final_fixtures.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/final_fixtures.stdout",
+      "bytes": 2130,
+      "sha256": "859ac511cb2657728534ac702c86d7daf1ffcd18f31360f62a5c2ad27c3000b4"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/hw2graph_original.py",
+      "bytes": 29890,
+      "sha256": "456ef034f9d5517b8b0b507585c142c57914cf6dd06a392eea7589ce7eba72f8"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/hw2graph_repair_v1.py",
+      "bytes": 32315,
+      "sha256": "1b4a3c7dcbdf349c5b7aa528d2697f012e29256a682adbdc766502dba2f39177"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/original_fixtures.json",
+      "bytes": 396,
+      "sha256": "c4b7c195225a36935978151c6fa9e47ddd82de022f217751ebebc8847aedfd99"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/original_fixtures.stderr",
+      "bytes": 63,
+      "sha256": "cace1071573ef725e762e8856427937617c8c67e5d0784c45c0e854e56a803a8"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/original_fixtures.stdout",
+      "bytes": 2514,
+      "sha256": "b5b42a5e116e76e2a41f48671b1418518d366ed0c79529fa34586c4e44ed6d41"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/repaired_fixtures.json",
+      "bytes": 421,
+      "sha256": "f323eb983d485c08277148c2b47eba5ffc6315412142abb7f109d44eb64242af"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/repaired_fixtures.stderr",
+      "bytes": 441,
+      "sha256": "2348fc16e77a19cb28e0f06559606d468e99e497617058e8d68ee155553df040"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/repaired_fixtures.stdout",
+      "bytes": 2163,
+      "sha256": "63a46828c91c024e567279c365e9f4c346950a644fc7fa193833747b59fa8560"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/repaired_inference.json",
+      "bytes": 366,
+      "sha256": "6822ee59466cff162c5aa8ec8cea925d628097d4139bffb429fba8e69959edd8"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/repaired_inference.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/repaired_inference.stdout",
+      "bytes": 512,
+      "sha256": "d3dcb7abffe32d1ff66f4106eb4ccec23bc13a081a0589a8985f232e04427b14"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/repaired_v2_fixtures.json",
+      "bytes": 424,
+      "sha256": "f4ed8f3eae8696f29b324b1f9a41a05687d1ffa1f05989b1da9d62a5ca0145a9"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/repaired_v2_fixtures.stderr",
+      "bytes": 441,
+      "sha256": "2348fc16e77a19cb28e0f06559606d468e99e497617058e8d68ee155553df040"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/repaired_v2_fixtures.stdout",
+      "bytes": 2164,
+      "sha256": "f851167c60c0c4333f40d86a5bf5ee6655bb4c9283f40c0c338ce307a46d2ffc"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/target_extraction.json",
+      "bytes": 366,
+      "sha256": "ce225298826250d743611440b29bbde019c5a05722b91e25cf0e84b5b16ca48c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/target_extraction.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/target_extraction.stdout",
+      "bytes": 3318,
+      "sha256": "230f5c2a38ffb2e78ebf7060d52114f355fc85d1b693562e7da9aaae4988fb4c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/records/test_extractor_before_escaped_name_correction.py",
+      "bytes": 4553,
+      "sha256": "34a3d5fd2969d73a4d70335dd5c7ae362946029a7327ab0d60822d82deeb32ad"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/scripts/ask_qwen.py",
+      "bytes": 3151,
+      "sha256": "cdbdb70600314be1dd51009c9c43796bbf844c2cf1f0912fc715455cac654978"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/scripts/audit_results.py",
+      "bytes": 3618,
+      "sha256": "2741137304b5eddea639409f2abe59ad58ebeddca8bb38971ac5fc72b5227a32"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/scripts/extract_targets.py",
+      "bytes": 5185,
+      "sha256": "d1169a336226d4be3314c372ef1baa458111566032e3bda420f1f5f804d41b1c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/scripts/infer_repaired.py",
+      "bytes": 4713,
+      "sha256": "9637114c166851bad2b1e130aaa7fddc8940d01a9ff416142b4b0526dbf3deca"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/scripts/prepare_replay.py",
+      "bytes": 2269,
+      "sha256": "b87f879f9b0a9d0e51165afa4f71b9d655e7b208dae57e4e75538859e6ae8425"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/scripts/run_detectors.py",
+      "bytes": 6487,
+      "sha256": "2bd0e45ccad8b0b8b0f2786772a1911b91a8a3662c6f0965104ccc3de56f0304"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/scripts/run_matrix.py",
+      "bytes": 1767,
+      "sha256": "a8d9f3335f77858976683cc899bce38f00a0fc1d4af856910c1ddc2bcd6ebd36"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/scripts/run_python.py",
+      "bytes": 1299,
+      "sha256": "e2d63d3b8540003c67bd776b48f6121201f5bff224626aae265e10a6e443b155"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/scripts/test_extractor.py",
+      "bytes": 4555,
+      "sha256": "f450370e15500f8759a0acae6e3687b1fcd5326423e454b80c92dc7ff05ca08c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/sources/SOURCE_HASHES.json",
+      "bytes": 666,
+      "sha256": "d0a60e1268a20e6ba41a9221f2f6ade4d481385729d2c292a13b21452e1f3762"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/sources/baseline.v",
+      "bytes": 1213314,
+      "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/sources/baseline_protocol_dut.sv",
+      "bytes": 465,
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/sources/cells_sim.v",
+      "bytes": 153943,
+      "sha256": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/sources/modified_protocol_dut.sv",
+      "bytes": 2664,
+      "sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/RESULTS.json",
+      "bytes": 2130,
+      "sha256": "859ac511cb2657728534ac702c86d7daf1ffcd18f31360f62a5c2ad27c3000b4"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/ambiguous_names/error.txt",
+      "bytes": 948,
+      "sha256": "99d098b967d99acde6c887756c649e75a0e2687fe5fe23b4c62d8cc24c997b86"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/ambiguous_names/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/ambiguous_names/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/ambiguous_names/topModule.v",
+      "bytes": 153,
+      "sha256": "392d9d515f44f894c0593a54edfdec42df8e70fbd53a4ffdee3fdf7505ab9075"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/constant/coverage.json",
+      "bytes": 930,
+      "sha256": "7534112b578424264b49f7fb8fc68c5dc3b7984b41745ffec7319064625aa193"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/constant/graph.json",
+      "bytes": 422,
+      "sha256": "a71fcf70354ccf2442f4a771d9551ba97d268c70c801678a717e63d28f8cb93b"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/constant/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/constant/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/constant/topModule.v",
+      "bytes": 107,
+      "sha256": "1b016e6cdf3ee3117e770211b31d83da6d3d17e72a853fd8d96eb83019ed71d2"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/escaped_dot/coverage.json",
+      "bytes": 1226,
+      "sha256": "a308bc7a510117654802124fae01398e51a5817ff1d86e9db0d97758bdc56647"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/escaped_dot/graph.json",
+      "bytes": 562,
+      "sha256": "c4fc5419236ac2c70843faa4ac281e0422e2273bfd2c70b5e84d08972ecaa43f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/escaped_dot/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/escaped_dot/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/escaped_dot/topModule.v",
+      "bytes": 132,
+      "sha256": "c9d5a05792a4cd7cd06826dc02664e9fc08f7f7b9eb225d4e51324c50320b1d7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/feedback/coverage.json",
+      "bytes": 1517,
+      "sha256": "531813da2a3e6a9ef6483c4d68114cee5565c0a0f4f18659fd57e728de2af68e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/feedback/graph.json",
+      "bytes": 996,
+      "sha256": "9beea6e7451127eb98899a106d07f33dd7e6200bc78caa1d4b3b06ec5ec8c214"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/feedback/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/feedback/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/feedback/topModule.v",
+      "bytes": 155,
+      "sha256": "09c29d1fc6900378ec2f30fea2c0aa57c80c5616781e46ce8f944ff2c819a6e0"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/generated_names/coverage.json",
+      "bytes": 1380,
+      "sha256": "8630729092a91b0563e45de7162be590d75aa53c68c8d8cee57412d129f53339"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/generated_names/graph.json",
+      "bytes": 629,
+      "sha256": "7e02ab45a73a2e7c25eb1250ed7ba7df79531b9ff3b49244c082d689a1a7d4fe"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/generated_names/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/generated_names/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/generated_names/topModule.v",
+      "bytes": 107,
+      "sha256": "2c53ac09d15e7b44deccac6917a45bb9d29f775e17125fcf75881505b4d16b79"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/hierarchy/coverage.json",
+      "bytes": 2020,
+      "sha256": "ae400ff9bcc3c4bba82fd0efe15942dbfe5f0f7a531d8fce7e06c8096f5bc2f3"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/hierarchy/graph.json",
+      "bytes": 907,
+      "sha256": "f87b325d2c05590401977cc3fbbcaee278cb7b00253f2df0a10a96520a796427"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/hierarchy/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/hierarchy/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/hierarchy/topModule.v",
+      "bytes": 193,
+      "sha256": "90753d254b6d261d38ef2b54d8ca581e801dcc0399b632509c50c01d19ea535c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/malformed/error.txt",
+      "bytes": 2962,
+      "sha256": "50fe5d739ba20adf2c97d70e7b8325c022fba423182a6a82b7006c48c71400ca"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/malformed/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/malformed/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/malformed/topModule.v",
+      "bytes": 51,
+      "sha256": "2ae05167284a1fd22266eff4cc9d80d744c69f947195727011420d627557d5b7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/plain/coverage.json",
+      "bytes": 1315,
+      "sha256": "37019e85137ea6014af7de0b5129e5bd88be73295d4680a502d621b69765f241"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/plain/graph.json",
+      "bytes": 598,
+      "sha256": "ee7064895a38aa4fa8af2536f4d292413e65faba8a83535aa16b0322d3c57099"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/plain/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/plain/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/plain/topModule.v",
+      "bytes": 78,
+      "sha256": "d7e345309ea4883629d878710b6b9c88ee4a89f5514b0007c4b246ba44660f49"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/shared_fanin/coverage.json",
+      "bytes": 1571,
+      "sha256": "6865af435160c1f1651511302428ad2db3ff2cce5b2a48f3afd3900f7ff345e6"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/shared_fanin/graph.json",
+      "bytes": 1173,
+      "sha256": "18b0c7c2967897f8bc4c84dac75934189cd66e9a331375cd8b03b17f71fdcee4"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/shared_fanin/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/shared_fanin/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/shared_fanin/topModule.v",
+      "bytes": 151,
+      "sha256": "17d4a85f5bcd66f0f073b1db53a9c7c74eeae587511393670bdcab33e8bbb1b4"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/slices/coverage.json",
+      "bytes": 1193,
+      "sha256": "40b38ee02815fe5e235768b8bfa318530574aa5f58e736a5fb6cbcfb500269f5"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/slices/graph.json",
+      "bytes": 1633,
+      "sha256": "71b507d160759bc7e4d060a6975c22e233781f031b918c96de5660e513fd4e14"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/slices/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/slices/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/slices/topModule.v",
+      "bytes": 139,
+      "sha256": "14232432c735f6c7923505b2f558da65c3268df4ca9efab0eda468dc50500bdc"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/underscores/coverage.json",
+      "bytes": 1394,
+      "sha256": "d3ad569456cf1774c70c154473a2d8209922816537dfbaca4ba9f461ee1f5b40"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/underscores/graph.json",
+      "bytes": 642,
+      "sha256": "29805059883da63b5a81b8f02c9dfa4a0b98e0e216435b0cf29ead3e38fc1066"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/underscores/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/underscores/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/final/underscores/topModule.v",
+      "bytes": 113,
+      "sha256": "9c12ca9968b2d87af3eca8d5eb33ec9e20b183e7c788702c4bb9982bfe159e7f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/RESULTS.json",
+      "bytes": 2514,
+      "sha256": "b5b42a5e116e76e2a41f48671b1418518d366ed0c79529fa34586c4e44ed6d41"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/ambiguous_names/graph.json",
+      "bytes": 892,
+      "sha256": "8597de15f250da55b229f3516a97ef291c8db2e44c86b9ea05010fe5b0c3d3c8"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/ambiguous_names/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/ambiguous_names/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/ambiguous_names/topModule.v",
+      "bytes": 153,
+      "sha256": "392d9d515f44f894c0593a54edfdec42df8e70fbd53a4ffdee3fdf7505ab9075"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/constant/graph.json",
+      "bytes": 471,
+      "sha256": "4c41dfe83b5ea2b8263df98774392d4b3b6808fcba99b77742a06f945a26ecec"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/constant/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/constant/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/constant/topModule.v",
+      "bytes": 107,
+      "sha256": "1b016e6cdf3ee3117e770211b31d83da6d3d17e72a853fd8d96eb83019ed71d2"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/escaped_dot/error.txt",
+      "bytes": 1152,
+      "sha256": "03f48ac9562afc8510dc563efb82699886b12d6ccb6cace776a9926558879275"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/escaped_dot/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/escaped_dot/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/escaped_dot/topModule.v",
+      "bytes": 132,
+      "sha256": "c9d5a05792a4cd7cd06826dc02664e9fc08f7f7b9eb225d4e51324c50320b1d7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/feedback/graph.json",
+      "bytes": 1027,
+      "sha256": "d0eea05c3ed5583b78eb4e5072c442692f446e796ee0497d1bd29d353f887a6c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/feedback/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/feedback/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/feedback/topModule.v",
+      "bytes": 155,
+      "sha256": "09c29d1fc6900378ec2f30fea2c0aa57c80c5616781e46ce8f944ff2c819a6e0"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/generated_names/graph.json",
+      "bytes": 672,
+      "sha256": "d482e2a7c43641d9b8153241c887da7523087a6a83c658dc099b12d04f348909"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/generated_names/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/generated_names/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/generated_names/topModule.v",
+      "bytes": 107,
+      "sha256": "2c53ac09d15e7b44deccac6917a45bb9d29f775e17125fcf75881505b4d16b79"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/hierarchy/graph.json",
+      "bytes": 1065,
+      "sha256": "0660ece503c0643c837b420deb10ce2e702872057cd811c4797ade5b0c79430c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/hierarchy/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/hierarchy/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/hierarchy/topModule.v",
+      "bytes": 193,
+      "sha256": "90753d254b6d261d38ef2b54d8ca581e801dcc0399b632509c50c01d19ea535c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/malformed/error.txt",
+      "bytes": 2962,
+      "sha256": "5d71e39686937e8f7d7db51a7411da9af63f110d41ac5e4a5710331701c39285"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/malformed/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/malformed/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/malformed/topModule.v",
+      "bytes": 51,
+      "sha256": "2ae05167284a1fd22266eff4cc9d80d744c69f947195727011420d627557d5b7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/plain/graph.json",
+      "bytes": 598,
+      "sha256": "ee7064895a38aa4fa8af2536f4d292413e65faba8a83535aa16b0322d3c57099"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/plain/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/plain/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/plain/topModule.v",
+      "bytes": 78,
+      "sha256": "d7e345309ea4883629d878710b6b9c88ee4a89f5514b0007c4b246ba44660f49"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/shared_fanin/graph.json",
+      "bytes": 1208,
+      "sha256": "968567f9a24b7d67b329ca6384686d2da2ccdcf2282f1cd2e7c0f345d6ac508d"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/shared_fanin/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/shared_fanin/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/shared_fanin/topModule.v",
+      "bytes": 151,
+      "sha256": "17d4a85f5bcd66f0f073b1db53a9c7c74eeae587511393670bdcab33e8bbb1b4"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/slices/graph.json",
+      "bytes": 1666,
+      "sha256": "6da5f618006a8b4d27129fbf2a1ab66c766c801e170d27368582314614b088a0"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/slices/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/slices/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/slices/topModule.v",
+      "bytes": 139,
+      "sha256": "14232432c735f6c7923505b2f558da65c3268df4ca9efab0eda468dc50500bdc"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/underscores/graph.json",
+      "bytes": 691,
+      "sha256": "6fb28120a6114f796694dfba653104ec7d661e10ad040a1fff2f8124b55961fd"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/underscores/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/underscores/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/original/underscores/topModule.v",
+      "bytes": 113,
+      "sha256": "9c12ca9968b2d87af3eca8d5eb33ec9e20b183e7c788702c4bb9982bfe159e7f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/RESULTS.json",
+      "bytes": 2163,
+      "sha256": "63a46828c91c024e567279c365e9f4c346950a644fc7fa193833747b59fa8560"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/ambiguous_names/error.txt",
+      "bytes": 948,
+      "sha256": "a1ccdc4a64facd0d9bc8aa08f1f63ff5b76d9355402de545cf506c26c41069a1"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/ambiguous_names/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/ambiguous_names/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/ambiguous_names/topModule.v",
+      "bytes": 153,
+      "sha256": "392d9d515f44f894c0593a54edfdec42df8e70fbd53a4ffdee3fdf7505ab9075"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/constant/coverage.json",
+      "bytes": 930,
+      "sha256": "7534112b578424264b49f7fb8fc68c5dc3b7984b41745ffec7319064625aa193"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/constant/graph.json",
+      "bytes": 422,
+      "sha256": "a71fcf70354ccf2442f4a771d9551ba97d268c70c801678a717e63d28f8cb93b"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/constant/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/constant/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/constant/topModule.v",
+      "bytes": 107,
+      "sha256": "1b016e6cdf3ee3117e770211b31d83da6d3d17e72a853fd8d96eb83019ed71d2"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/escaped_dot/error.txt",
+      "bytes": 1152,
+      "sha256": "bcf2676427f3a506c5ad62d5e5792c9fb92c489bbe18cd38ae7410b7bf787618"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/escaped_dot/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/escaped_dot/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/escaped_dot/topModule.v",
+      "bytes": 132,
+      "sha256": "c9d5a05792a4cd7cd06826dc02664e9fc08f7f7b9eb225d4e51324c50320b1d7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/feedback/coverage.json",
+      "bytes": 1517,
+      "sha256": "531813da2a3e6a9ef6483c4d68114cee5565c0a0f4f18659fd57e728de2af68e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/feedback/graph.json",
+      "bytes": 996,
+      "sha256": "9beea6e7451127eb98899a106d07f33dd7e6200bc78caa1d4b3b06ec5ec8c214"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/feedback/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/feedback/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/feedback/topModule.v",
+      "bytes": 155,
+      "sha256": "09c29d1fc6900378ec2f30fea2c0aa57c80c5616781e46ce8f944ff2c819a6e0"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/generated_names/coverage.json",
+      "bytes": 1380,
+      "sha256": "8630729092a91b0563e45de7162be590d75aa53c68c8d8cee57412d129f53339"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/generated_names/graph.json",
+      "bytes": 629,
+      "sha256": "7e02ab45a73a2e7c25eb1250ed7ba7df79531b9ff3b49244c082d689a1a7d4fe"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/generated_names/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/generated_names/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/generated_names/topModule.v",
+      "bytes": 107,
+      "sha256": "2c53ac09d15e7b44deccac6917a45bb9d29f775e17125fcf75881505b4d16b79"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/hierarchy/coverage.json",
+      "bytes": 2020,
+      "sha256": "ae400ff9bcc3c4bba82fd0efe15942dbfe5f0f7a531d8fce7e06c8096f5bc2f3"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/hierarchy/graph.json",
+      "bytes": 907,
+      "sha256": "f87b325d2c05590401977cc3fbbcaee278cb7b00253f2df0a10a96520a796427"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/hierarchy/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/hierarchy/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/hierarchy/topModule.v",
+      "bytes": 193,
+      "sha256": "90753d254b6d261d38ef2b54d8ca581e801dcc0399b632509c50c01d19ea535c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/malformed/error.txt",
+      "bytes": 2962,
+      "sha256": "5ecf5e9ef02e0ab1375c5ca4c461968586362706aa890d377549f796258e4f17"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/malformed/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/malformed/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/malformed/topModule.v",
+      "bytes": 51,
+      "sha256": "2ae05167284a1fd22266eff4cc9d80d744c69f947195727011420d627557d5b7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/plain/coverage.json",
+      "bytes": 1315,
+      "sha256": "37019e85137ea6014af7de0b5129e5bd88be73295d4680a502d621b69765f241"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/plain/graph.json",
+      "bytes": 598,
+      "sha256": "ee7064895a38aa4fa8af2536f4d292413e65faba8a83535aa16b0322d3c57099"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/plain/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/plain/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/plain/topModule.v",
+      "bytes": 78,
+      "sha256": "d7e345309ea4883629d878710b6b9c88ee4a89f5514b0007c4b246ba44660f49"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/shared_fanin/coverage.json",
+      "bytes": 1571,
+      "sha256": "6865af435160c1f1651511302428ad2db3ff2cce5b2a48f3afd3900f7ff345e6"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/shared_fanin/graph.json",
+      "bytes": 1173,
+      "sha256": "18b0c7c2967897f8bc4c84dac75934189cd66e9a331375cd8b03b17f71fdcee4"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/shared_fanin/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/shared_fanin/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/shared_fanin/topModule.v",
+      "bytes": 151,
+      "sha256": "17d4a85f5bcd66f0f073b1db53a9c7c74eeae587511393670bdcab33e8bbb1b4"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/slices/coverage.json",
+      "bytes": 1193,
+      "sha256": "40b38ee02815fe5e235768b8bfa318530574aa5f58e736a5fb6cbcfb500269f5"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/slices/graph.json",
+      "bytes": 1633,
+      "sha256": "71b507d160759bc7e4d060a6975c22e233781f031b918c96de5660e513fd4e14"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/slices/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/slices/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/slices/topModule.v",
+      "bytes": 139,
+      "sha256": "14232432c735f6c7923505b2f558da65c3268df4ca9efab0eda468dc50500bdc"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/underscores/coverage.json",
+      "bytes": 1394,
+      "sha256": "d3ad569456cf1774c70c154473a2d8209922816537dfbaca4ba9f461ee1f5b40"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/underscores/graph.json",
+      "bytes": 642,
+      "sha256": "29805059883da63b5a81b8f02c9dfa4a0b98e0e216435b0cf29ead3e38fc1066"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/underscores/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/underscores/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired/underscores/topModule.v",
+      "bytes": 113,
+      "sha256": "9c12ca9968b2d87af3eca8d5eb33ec9e20b183e7c788702c4bb9982bfe159e7f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/RESULTS.json",
+      "bytes": 2164,
+      "sha256": "f851167c60c0c4333f40d86a5bf5ee6655bb4c9283f40c0c338ce307a46d2ffc"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/ambiguous_names/error.txt",
+      "bytes": 948,
+      "sha256": "99d098b967d99acde6c887756c649e75a0e2687fe5fe23b4c62d8cc24c997b86"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/ambiguous_names/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/ambiguous_names/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/ambiguous_names/topModule.v",
+      "bytes": 153,
+      "sha256": "392d9d515f44f894c0593a54edfdec42df8e70fbd53a4ffdee3fdf7505ab9075"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/constant/coverage.json",
+      "bytes": 930,
+      "sha256": "7534112b578424264b49f7fb8fc68c5dc3b7984b41745ffec7319064625aa193"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/constant/graph.json",
+      "bytes": 422,
+      "sha256": "a71fcf70354ccf2442f4a771d9551ba97d268c70c801678a717e63d28f8cb93b"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/constant/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/constant/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/constant/topModule.v",
+      "bytes": 107,
+      "sha256": "1b016e6cdf3ee3117e770211b31d83da6d3d17e72a853fd8d96eb83019ed71d2"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/escaped_dot/coverage.json",
+      "bytes": 1226,
+      "sha256": "a308bc7a510117654802124fae01398e51a5817ff1d86e9db0d97758bdc56647"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/escaped_dot/graph.json",
+      "bytes": 562,
+      "sha256": "c4fc5419236ac2c70843faa4ac281e0422e2273bfd2c70b5e84d08972ecaa43f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/escaped_dot/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/escaped_dot/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/escaped_dot/topModule.v",
+      "bytes": 132,
+      "sha256": "c9d5a05792a4cd7cd06826dc02664e9fc08f7f7b9eb225d4e51324c50320b1d7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/feedback/coverage.json",
+      "bytes": 1517,
+      "sha256": "531813da2a3e6a9ef6483c4d68114cee5565c0a0f4f18659fd57e728de2af68e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/feedback/graph.json",
+      "bytes": 996,
+      "sha256": "9beea6e7451127eb98899a106d07f33dd7e6200bc78caa1d4b3b06ec5ec8c214"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/feedback/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/feedback/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/feedback/topModule.v",
+      "bytes": 155,
+      "sha256": "09c29d1fc6900378ec2f30fea2c0aa57c80c5616781e46ce8f944ff2c819a6e0"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/generated_names/coverage.json",
+      "bytes": 1380,
+      "sha256": "8630729092a91b0563e45de7162be590d75aa53c68c8d8cee57412d129f53339"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/generated_names/graph.json",
+      "bytes": 629,
+      "sha256": "7e02ab45a73a2e7c25eb1250ed7ba7df79531b9ff3b49244c082d689a1a7d4fe"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/generated_names/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/generated_names/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/generated_names/topModule.v",
+      "bytes": 107,
+      "sha256": "2c53ac09d15e7b44deccac6917a45bb9d29f775e17125fcf75881505b4d16b79"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/hierarchy/coverage.json",
+      "bytes": 2020,
+      "sha256": "ae400ff9bcc3c4bba82fd0efe15942dbfe5f0f7a531d8fce7e06c8096f5bc2f3"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/hierarchy/graph.json",
+      "bytes": 907,
+      "sha256": "f87b325d2c05590401977cc3fbbcaee278cb7b00253f2df0a10a96520a796427"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/hierarchy/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/hierarchy/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/hierarchy/topModule.v",
+      "bytes": 193,
+      "sha256": "90753d254b6d261d38ef2b54d8ca581e801dcc0399b632509c50c01d19ea535c"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/malformed/error.txt",
+      "bytes": 2962,
+      "sha256": "50fe5d739ba20adf2c97d70e7b8325c022fba423182a6a82b7006c48c71400ca"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/malformed/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/malformed/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/malformed/topModule.v",
+      "bytes": 51,
+      "sha256": "2ae05167284a1fd22266eff4cc9d80d744c69f947195727011420d627557d5b7"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/plain/coverage.json",
+      "bytes": 1315,
+      "sha256": "37019e85137ea6014af7de0b5129e5bd88be73295d4680a502d621b69765f241"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/plain/graph.json",
+      "bytes": 598,
+      "sha256": "ee7064895a38aa4fa8af2536f4d292413e65faba8a83535aa16b0322d3c57099"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/plain/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/plain/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/plain/topModule.v",
+      "bytes": 78,
+      "sha256": "d7e345309ea4883629d878710b6b9c88ee4a89f5514b0007c4b246ba44660f49"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/shared_fanin/coverage.json",
+      "bytes": 1571,
+      "sha256": "6865af435160c1f1651511302428ad2db3ff2cce5b2a48f3afd3900f7ff345e6"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/shared_fanin/graph.json",
+      "bytes": 1173,
+      "sha256": "18b0c7c2967897f8bc4c84dac75934189cd66e9a331375cd8b03b17f71fdcee4"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/shared_fanin/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/shared_fanin/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/shared_fanin/topModule.v",
+      "bytes": 151,
+      "sha256": "17d4a85f5bcd66f0f073b1db53a9c7c74eeae587511393670bdcab33e8bbb1b4"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/slices/coverage.json",
+      "bytes": 1193,
+      "sha256": "40b38ee02815fe5e235768b8bfa318530574aa5f58e736a5fb6cbcfb500269f5"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/slices/graph.json",
+      "bytes": 1633,
+      "sha256": "71b507d160759bc7e4d060a6975c22e233781f031b918c96de5660e513fd4e14"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/slices/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/slices/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/slices/topModule.v",
+      "bytes": 139,
+      "sha256": "14232432c735f6c7923505b2f558da65c3268df4ca9efab0eda468dc50500bdc"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/underscores/coverage.json",
+      "bytes": 1394,
+      "sha256": "d3ad569456cf1774c70c154473a2d8209922816537dfbaca4ba9f461ee1f5b40"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/underscores/graph.json",
+      "bytes": 642,
+      "sha256": "29805059883da63b5a81b8f02c9dfa4a0b98e0e216435b0cf29ead3e38fc1066"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/underscores/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/underscores/stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-detector-repair/tests/repaired_v2/underscores/topModule.v",
+      "bytes": 113,
+      "sha256": "9c12ca9968b2d87af3eca8d5eb33ec9e20b183e7c788702c4bb9982bfe159e7f"
+    },
+    {
       "path": "submission/addenda/2026-11-13-shared-chat-review/MANIFEST.json",
       "bytes": 4257,
       "sha256": "6171c9f4cb059d711d0707ffff0bcd211b5a6f0a4beb2f5d4872dbdc9c452885"
@@ -9608,13 +11148,13 @@
     },
     {
       "path": "submission.zip",
-      "bytes": 16517979,
-      "sha256": "24e4484283cace4dd25b7a6783c693a0070c593425a37f9091625361011b351a"
+      "bytes": 18943018,
+      "sha256": "ba9735be41d40773e33d0acd1fc35de8d22a0d79e7f20e286c09ffbcc302a0b2"
     },
     {
       "path": "submission.zip.sha256",
       "bytes": 81,
-      "sha256": "e99ab1b2e8672c7335622663a7a755704b348431cd47db58b7e82228ab4fd0bc"
+      "sha256": "92122c1824b0830546218abbff79aa707b8f5a492740c227fd507264d2ad8a25"
     },
     {
       "path": "supplementary_clean_verification/LATEST_STATUS.md",

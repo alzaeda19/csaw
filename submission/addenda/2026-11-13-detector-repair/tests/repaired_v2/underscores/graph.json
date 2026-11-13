@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "top.mid_word_graphrename_0",
+      "label": "mid_word"
+    },
+    {
+      "id": "Xor_graphrename_1",
+      "label": "xor"
+    },
+    {
+      "id": "top_in_a",
+      "label": "a"
+    },
+    {
+      "id": "top_in_b",
+      "label": "b"
+    },
+    {
+      "id": "top.out_y_graphrename_2",
+      "label": "out_y"
+    }
+  ],
+  "edges": [
+    [
+      "top.mid_word_graphrename_0",
+      "Xor_graphrename_1"
+    ],
+    [
+      "Xor_graphrename_1",
+      "top_in_a"
+    ],
+    [
+      "Xor_graphrename_1",
+      "top_in_b"
+    ],
+    [
+      "top.out_y_graphrename_2",
+      "top.mid_word_graphrename_0"
+    ]
+  ]
+}

@@ -1,0 +1,2 @@
+{"candidate": "flat_clean", "ensemble": {"verdict": "TROJAN", "triggered_models": ["HT4"], "rule": "Any model votes 1"}, "trojan_scores": {"HT1": 0.009021414443850517, "HT2": 0.43025586009025574, "HT3": 0.16328798234462738, "HT4": 0.9258360862731934}}
+{"candidate": "flat_modified", "ensemble": {"verdict": "TROJAN", "triggered_models": ["HT2", "HT4"], "rule": "Any model votes 1"}, "trojan_scores": {"HT1": 0.08855298161506653, "HT2": 0.7473418712615967, "HT3": 0.16328798234462738, "HT4": 0.9567672610282898}}

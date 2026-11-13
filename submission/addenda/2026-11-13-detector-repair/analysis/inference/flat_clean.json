@@ -1,0 +1,71 @@
+{
+  "candidate": "flat_clean",
+  "input_sha256": "96451f2532ffaeb3571f73703ff43e3fcb1db1c05b6c3361d32691adf3727baa",
+  "graph_input_loaded_without_changes": true,
+  "scores": {
+    "HT1": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.9909785985946655,
+      "prob_trojan": 0.009021414443850517,
+      "log_probabilities": [
+        -0.009062348864972591,
+        -4.708154201507568
+      ],
+      "logits": [
+        2.425645589828491,
+        -2.2734460830688477
+      ]
+    },
+    "HT2": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.5697441697120667,
+      "prob_trojan": 0.43025586009025574,
+      "log_probabilities": [
+        -0.5625678300857544,
+        -0.8433752059936523
+      ],
+      "logits": [
+        0.04342144727706909,
+        -0.23738595843315125
+      ]
+    },
+    "HT3": {
+      "prediction": 0,
+      "label": "CLEAN",
+      "prob_clean": 0.8367120623588562,
+      "prob_trojan": 0.16328798234462738,
+      "log_probabilities": [
+        -0.17827530205249786,
+        -1.8122398853302002
+      ],
+      "logits": [
+        0.7931451797485352,
+        -0.8408193588256836
+      ]
+    },
+    "HT4": {
+      "prediction": 1,
+      "label": "TROJAN",
+      "prob_clean": 0.07416398078203201,
+      "prob_trojan": 0.9258360862731934,
+      "log_probabilities": [
+        -2.6014766693115234,
+        -0.0770580992102623
+      ],
+      "logits": [
+        -1.295805811882019,
+        1.2286127805709839
+      ]
+    }
+  },
+  "ensemble": {
+    "verdict": "TROJAN",
+    "triggered_models": [
+      "HT4"
+    ],
+    "rule": "Any model votes 1"
+  },
+  "scope": "Classification of the repaired validated dataflow representation; no full temporal/physical proof, calibration or universal stealth claim."
+}

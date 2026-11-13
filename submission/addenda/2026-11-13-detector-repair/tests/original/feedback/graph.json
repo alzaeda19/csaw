@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "id": "top.out_y_graphrename_0",
+      "label": "out_y"
+    },
+    {
+      "id": "top_state_q",
+      "label": "q"
+    },
+    {
+      "id": "top.state_q_graphrename_1",
+      "label": "state_q"
+    },
+    {
+      "id": "Branch_graphrename_2",
+      "label": "branch"
+    },
+    {
+      "id": "top_rst",
+      "label": "rst"
+    },
+    {
+      "id": "'d0_graphrename_3",
+      "label": "'d0"
+    },
+    {
+      "id": "Xor_graphrename_4",
+      "label": "xor"
+    },
+    {
+      "id": "top_in_a",
+      "label": "a"
+    }
+  ],
+  "edges": [
+    [
+      "top.out_y_graphrename_0",
+      "top_state_q"
+    ],
+    [
+      "top.state_q_graphrename_1",
+      "Branch_graphrename_2"
+    ],
+    [
+      "Branch_graphrename_2",
+      "top_rst"
+    ],
+    [
+      "Branch_graphrename_2",
+      "'d0_graphrename_3"
+    ],
+    [
+      "Branch_graphrename_2",
+      "Xor_graphrename_4"
+    ],
+    [
+      "Xor_graphrename_4",
+      "top_state_q"
+    ],
+    [
+      "Xor_graphrename_4",
+      "top_in_a"
+    ]
+  ]
+}

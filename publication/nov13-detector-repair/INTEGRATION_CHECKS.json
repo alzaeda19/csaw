@@ -1,0 +1,32 @@
+{
+  "checked_utc": "2026-11-13T06:56:11.325671+00:00",
+  "base_commit": "d304f7534200b0cba17ae768fbdfcdaf7b4e1b9e",
+  "original_files_unchanged": 262,
+  "pinned_source_test_runner_files_unchanged": 7,
+  "prior_sealed_addenda_unchanged": 7,
+  "new_bundle_files": 306,
+  "archive_files": 1371,
+  "archive_bytes": 18943018,
+  "archive_sha256": "ba9735be41d40773e33d0acd1fc35de8d22a0d79e7f20e286c09ffbcc302a0b2",
+  "archive_crc_and_all_bytes_verified": true,
+  "changed_detector_package_files": [
+    "package/hw2vec/hw2vec/hw2graph.py"
+  ],
+  "other_package_files_unchanged": 22,
+  "fixture_checks_passed": 11,
+  "expected_error_fixtures_included": 2,
+  "target_coverage_gates_passed": 2,
+  "checkpoint_candidate_classifications": 8,
+  "hardware_or_flattened_source_changed": false,
+  "checkpoints_or_model_configuration_changed": false,
+  "extractor_changed_after_inference_freeze": false,
+  "new_model_training_or_tuning": false,
+  "new_simulation_runs": 0,
+  "new_qwen_reviews": 0,
+  "new_independent_reviews": 0,
+  "coordination_attempt": "Trojan-chat review blocked before a response; no retry or alternate route",
+  "representation_scope": "Validated symbol-joining/data-dependency abstraction; not full temporal or physical semantics",
+  "stealth_established": false,
+  "new_trojan_generation_or_evasion": false,
+  "published_challenge_solutions_used": false
+}

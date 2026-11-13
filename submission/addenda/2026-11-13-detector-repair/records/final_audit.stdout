@@ -1,0 +1,128 @@
+{
+  "freeze_verified": true,
+  "changed_initial_inputs": [
+    "package/hw2vec/hw2vec/hw2graph.py"
+  ],
+  "components": [
+    {
+      "candidate": "flat_clean",
+      "sizes": {
+        "13959": 1,
+        "6": 1,
+        "2": 77
+      },
+      "small_components": [
+        {
+          "nodes": 6,
+          "edges": 5,
+          "output_roots": [],
+          "definitions": [
+            "top.recovered_io_9_31_1",
+            "top.recovered_ram40_6_11_RCLK",
+            "top.recovered_ram40_6_5_RCLK",
+            "top.recovered_ram40_6_7_RCLK",
+            "top.recovered_ram40_6_9_RCLK"
+          ],
+          "labels": {
+            "recovered_ram40_6_11_RCLK": 1,
+            "recovered_io_9_31_1": 1,
+            "recovered_ram40_6_5_RCLK": 1,
+            "SCK": 1,
+            "recovered_ram40_6_9_RCLK": 1,
+            "recovered_ram40_6_7_RCLK": 1
+          }
+        },
+        {
+          "nodes": 2,
+          "edges": 1,
+          "output_roots": [],
+          "definitions": [
+            "top.recovered_ram40_6_11_i"
+          ],
+          "labels": {
+            "recovered_ram40_6_11_i": 1,
+            "'d16": 1
+          }
+        },
+        {
+          "nodes": 2,
+          "edges": 1,
+          "output_roots": [],
+          "definitions": [
+            "top.recovered_ram40_6_5_i"
+          ],
+          "labels": {
+            "recovered_ram40_6_5_i": 1,
+            "'d16": 1
+          }
+        }
+      ],
+      "model_outcomes": {
+        "HT1": "true_negative",
+        "HT2": "true_negative",
+        "HT3": "true_negative",
+        "HT4": "false_positive"
+      }
+    },
+    {
+      "candidate": "flat_modified",
+      "sizes": {
+        "14089": 1,
+        "6": 1,
+        "2": 77
+      },
+      "small_components": [
+        {
+          "nodes": 6,
+          "edges": 5,
+          "output_roots": [],
+          "definitions": [
+            "top.recovered_io_9_31_1",
+            "top.recovered_ram40_6_11_RCLK",
+            "top.recovered_ram40_6_5_RCLK",
+            "top.recovered_ram40_6_7_RCLK",
+            "top.recovered_ram40_6_9_RCLK"
+          ],
+          "labels": {
+            "recovered_io_9_31_1": 1,
+            "recovered_ram40_6_5_RCLK": 1,
+            "recovered_ram40_6_9_RCLK": 1,
+            "SCK": 1,
+            "recovered_ram40_6_7_RCLK": 1,
+            "recovered_ram40_6_11_RCLK": 1
+          }
+        },
+        {
+          "nodes": 2,
+          "edges": 1,
+          "output_roots": [],
+          "definitions": [
+            "top.recovered_ram40_6_11_i"
+          ],
+          "labels": {
+            "'d16": 1,
+            "recovered_ram40_6_11_i": 1
+          }
+        },
+        {
+          "nodes": 2,
+          "edges": 1,
+          "output_roots": [],
+          "definitions": [
+            "top.recovered_ram40_6_5_i"
+          ],
+          "labels": {
+            "recovered_ram40_6_5_i": 1,
+            "'d16": 1
+          }
+        }
+      ],
+      "model_outcomes": {
+        "HT1": "false_negative",
+        "HT2": "true_positive",
+        "HT3": "false_negative",
+        "HT4": "true_positive"
+      }
+    }
+  ]
+}

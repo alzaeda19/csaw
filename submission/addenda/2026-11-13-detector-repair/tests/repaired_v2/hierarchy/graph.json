@@ -1,0 +1,50 @@
+{
+  "nodes": [
+    {
+      "id": "top.out_y_graphrename_0",
+      "label": "out_y"
+    },
+    {
+      "id": "top.u_child.out_y_graphrename_4",
+      "label": "out_y"
+    },
+    {
+      "id": "top.u_child.in_a_graphrename_1",
+      "label": "in_a"
+    },
+    {
+      "id": "top_in_a",
+      "label": "a"
+    },
+    {
+      "id": "top.u_child.mid_word_graphrename_2",
+      "label": "mid_word"
+    },
+    {
+      "id": "Unot_graphrename_3",
+      "label": "unot"
+    }
+  ],
+  "edges": [
+    [
+      "top.out_y_graphrename_0",
+      "top.u_child.out_y_graphrename_4"
+    ],
+    [
+      "top.u_child.out_y_graphrename_4",
+      "top.u_child.mid_word_graphrename_2"
+    ],
+    [
+      "top.u_child.in_a_graphrename_1",
+      "top_in_a"
+    ],
+    [
+      "top.u_child.mid_word_graphrename_2",
+      "Unot_graphrename_3"
+    ],
+    [
+      "Unot_graphrename_3",
+      "top.u_child.in_a_graphrename_1"
+    ]
+  ]
+}

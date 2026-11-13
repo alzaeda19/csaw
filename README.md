@@ -6,11 +6,26 @@ The current simulation package is in [submission/](submission/). Download [submi
 
 **November 13 closeout:** [Required versus optional submission checklist](submission/SUBMISSION_CHECKLIST.md) and [plain-English explanation of stealth evidence](submission/addenda/2026-11-13-submission-closeout/STEALTH_IN_PLAIN_ENGLISH.md). One previously incomplete reviewer tool output is now fully assembled from authentic captures; twelve reviewer inputs and one output gap remain. All four artifact types are present; stealth and complete relevant logs remain unresolved.
 
-## Latest frozen-design detection evaluation
+## Latest detector repair and evaluation
+
+The [defensive detector repair](submission/addenda/2026-11-13-detector-repair/README.md) fixes broken signal-reference connections in a separate extractor copy. All 11 benign fixture checks and both target coverage gates passed before the unchanged models ran. Hardware sources, flattened inputs, weights, normalization and decision rules remain unchanged.
+
+| Detector | Clean control | Existing modified design |
+|---|---|---|
+| HT1 | CLEAN | CLEAN |
+| HT2 | CLEAN | TROJAN |
+| HT3 | CLEAN | CLEAN |
+| HT4 | TROJAN | TROJAN |
+
+HT2 detects the modification while passing the control. HT4 detects it but also falsely flags the clean design; HT1 and HT3 miss it. The existing any-positive ensemble flags both. These are results for one pair under a validated data-dependency abstraction, not a general accuracy estimate, complete clock/physical model or stealth certificate. The earlier all-CLEAN results used broken graphs and are retained as historical diagnostic evidence. The repair was frozen before classification and was not adjusted to the scores.
+
+The code, tests, errors, refinements, hashes and visible AI records are included in the repository and ZIP. The attempted Trojan-chat review was blocked before a response; this update makes no new independent-review or Qwen-review claim. **Stealth and complete historical AI records remain unresolved.**
+
+## Earlier frozen-design detection evaluation
 
 The [Qwen/Trojan-chat evaluation](submission/addenda/2026-11-13-detection-evaluation/README.md) is complete. Qwen identified the added output behavior, and an independent scoped formal comparison found a mismatch. Six fresh full-core simulations passed: 270 transactions and 39,960 observed output triples each, with all raw/flattened representation traces matching their respective originals. These tests validate the analysis inputs; they do not establish stealth.
 
-All four supplied detectors ran on both clean and modified designs in two predeclared representations. Raw-source parsing fails and uses an incomplete fallback: HT1 flags the modified design. Flattened graphs receive all-CLEAN labels, but thousands of signal references remain unjoined; the independent review confirms the model actually received those incomplete edges. Both routes fail whole-design coverage. All sixteen scores, failures, exact prompts, Qwen errors and limitations are retained. **The modification is detectable under source/formal review; stealth remains unestablished.** No design or detector was tuned to obtain a favorable result.
+All four supplied detectors ran on both clean and modified designs in two predeclared representations. Raw-source parsing fails and uses an incomplete fallback: HT1 flags the modified design. Flattened graphs receive all-CLEAN labels, but thousands of signal references remain unjoined; the independent review confirms the model actually received those incomplete edges. Both earlier routes fail whole-design coverage; the later repair above addresses the flattened graph's reference-joining defect within its stated abstraction. All sixteen scores, failures, exact prompts, Qwen errors and limitations are retained. **The modification is detectable under source/formal review; stealth remains unestablished.** No design or detector was tuned to obtain a favorable result.
 
 The later [review of the three shared Claude chats](submission/addenda/2026-11-13-shared-chat-review/README.md) supplies no new evidence of stealth. It distinguishes the excluded solution-derived plan, the older package audit and unsupported model descriptions. It also clarifies that the rules require neither universal undetectability nor a particular detector result; source/formal discovery is not an automatic grading verdict. The stealth objective and historical log gaps remain unestablished/disclosed.
 
