@@ -1,0 +1,180 @@
+{
+  "verified_utc": "2026-11-12T23:57:15.767389+00:00",
+  "status": "SETUP_VERIFIED",
+  "working_folder": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Agent_20261112T234518Z_cwib3p7a/work",
+  "model": "qwen3-csaw-agent:20261112234518",
+  "checks": {
+    "repositories_head_and_status_unchanged": true,
+    "input_snapshots_and_working_rtl_unchanged": true,
+    "original_model_digest_unchanged": true,
+    "new_file_write": true,
+    "resumed_read_then_edit": true,
+    "explicit_saved_file_readback": true,
+    "same_session_resumed": true,
+    "delivered_launcher_matches_last_executed": true,
+    "synthetic_verilog_2_of_2": true,
+    "access_scope_7_of_7": true
+  },
+  "input_hash_checks": {
+    "baseline.v": {
+      "source_unchanged": true,
+      "preserved_baseline_matches": true,
+      "working_copy_matches": true
+    },
+    "baseline_protocol_dut.sv": {
+      "source_unchanged": true,
+      "preserved_baseline_matches": true,
+      "working_copy_matches": true
+    },
+    "paired_normal_tb.sv": {
+      "source_unchanged": true,
+      "preserved_baseline_matches": true,
+      "working_copy_matches": true
+    },
+    "cells_sim.v": {
+      "source_unchanged": true,
+      "preserved_baseline_matches": true,
+      "working_copy_matches": true
+    }
+  },
+  "turns": [
+    {
+      "run": "20261112T234659Z_mx_qh1n7",
+      "session_id": "f22d84a2-7f8a-4a8b-ab99-67e8dcbe2808",
+      "resume": false,
+      "status": "FAILED",
+      "process_returncode": 1,
+      "wrapper_exit_code": 1,
+      "tools": [],
+      "changed_paths": [],
+      "native_transcript_count": 0
+    },
+    {
+      "run": "20261112T234755Z_n6kf7520",
+      "session_id": "46024d8d-9a5f-4622-b8f5-c7d4a0b7fff9",
+      "resume": false,
+      "status": "INTERRUPTED",
+      "process_returncode": -9,
+      "wrapper_exit_code": 130,
+      "tools": [
+        "Read",
+        "Read",
+        "Edit",
+        "Read",
+        "Edit",
+        "Read",
+        "Edit",
+        "Read",
+        "Edit",
+        "Read",
+        "Edit",
+        "Read",
+        "Edit",
+        "Read"
+      ],
+      "changed_paths": [
+        "agent_check/agent_probe.sv"
+      ],
+      "native_transcript_count": 1
+    },
+    {
+      "run": "20261112T234936Z_o8n3e8oh",
+      "session_id": "b58792ea-1475-44f7-a51f-2774f83773f5",
+      "resume": false,
+      "status": "FAILED",
+      "process_returncode": 0,
+      "wrapper_exit_code": 1,
+      "tools": [],
+      "changed_paths": [],
+      "native_transcript_count": 0
+    },
+    {
+      "run": "20261112T234958Z_ory2a9er",
+      "session_id": "f0cb3b4e-d82c-4b33-8330-64be21e21fbd",
+      "resume": false,
+      "status": "INTERRUPTED",
+      "process_returncode": -9,
+      "wrapper_exit_code": 130,
+      "tools": [
+        "Read",
+        "Read",
+        "Edit",
+        "Read",
+        "Edit",
+        "Read"
+      ],
+      "changed_paths": [
+        "agent_check/agent_probe_v2.sv"
+      ],
+      "native_transcript_count": 1
+    },
+    {
+      "run": "20261112T235035Z_kwa102aw",
+      "session_id": "7b9fd7a3-510e-4e43-8882-fc486dd76e08",
+      "resume": false,
+      "status": "INTERRUPTED",
+      "process_returncode": -9,
+      "wrapper_exit_code": 130,
+      "tools": [
+        "Read",
+        "Read",
+        "Edit",
+        "Read",
+        "Write",
+        "Read"
+      ],
+      "changed_paths": [],
+      "native_transcript_count": 1
+    },
+    {
+      "run": "20261112T235153Z__aa_qgq4",
+      "session_id": "f3414c93-5ef8-4018-b789-26e7286a4666",
+      "resume": false,
+      "status": "COMPLETED",
+      "process_returncode": 0,
+      "wrapper_exit_code": 0,
+      "tools": [
+        "Edit",
+        "Read",
+        "Write",
+        "Read"
+      ],
+      "changed_paths": [
+        "agent_check/QWEN_TOOL_CHECK_V4.md"
+      ],
+      "native_transcript_count": 1
+    },
+    {
+      "run": "20261112T235340Z_1a80em9l",
+      "session_id": "f3414c93-5ef8-4018-b789-26e7286a4666",
+      "resume": true,
+      "status": "RESPONSE_COMPLETED",
+      "process_returncode": 0,
+      "wrapper_exit_code": 0,
+      "tools": [
+        "Read",
+        "Edit"
+      ],
+      "changed_paths": [
+        "agent_check/agent_probe_v4.sv"
+      ],
+      "native_transcript_count": 1
+    },
+    {
+      "run": "20261112T235536Z_zrobi66p",
+      "session_id": "f3414c93-5ef8-4018-b789-26e7286a4666",
+      "resume": true,
+      "status": "RESPONSE_COMPLETED",
+      "process_returncode": 0,
+      "wrapper_exit_code": 0,
+      "tools": [
+        "Read"
+      ],
+      "changed_paths": [],
+      "native_transcript_count": 1
+    }
+  ],
+  "native_codex_transcript_exported": false,
+  "old_ollama_transcript_gaps_resolved": false,
+  "note": "Tool setup and synthetic Verilog check only. No recovered cryptographic RTL was edited; no solutions were used."
+}

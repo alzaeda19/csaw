@@ -1,0 +1,19 @@
+TECHNICAL BRIEF — COMPLETED VERIFICATION AND UNFINISHED DELIVERABLES
+
+Artifact origin: the clean project uses preserved original qualifier materials. The professor's AES course package is a separate reference; its AES design and expected values are not evidence of the recovered CSAW algorithm. No published solutions are included or used.
+
+Recovered baseline: baseline.v (SHA256 180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765) and its ordinary interface adapter are included in rtl/baseline_reference.
+
+Build/equivalence: a regenerated binary exists (SHA256 fa823078f0fef95a3b093b3db547a50030864c81c80a17ef445e86206cbc5fb7). Preserved proofs compare the recovered baseline against a model decoded from that binary. Equality is conditional on the documented digital primitive models and state relation; bounded full transactions cover two modes under the recorded original-host schedule. This is not independent proof of the cipher algorithm or physical board behavior.
+
+Functional evidence: paired simulations recorded 352 transactions per model and original-host known-answer checks passed 24/24 per model. Immediate reads at the first BUSY-low failed 8/8 known-answer checks per model. Equality preserves this failure. The simulation all_cases_pass value denotes model agreement/protocol assertions, not universal correctness. The preserved report describes the exact scope.
+
+Professor AES reference: all five supplied ordinary AES test vectors pass in the separate clean runner. Its source files match the supplied ZIP. It is not an attack demonstration and does not establish equivalence to the recovered baseline.
+
+Defensive detector evaluation: HT1-HT4 classified the AES reference and recovered baseline CLEAN (zero Trojan votes each). P(Trojan) scores, AES then baseline: HT1 0.04823842 / 0.07584280; HT2 0.04757138 / 0.35516843; HT3 0.16328798 / 0.21610928; HT4 0.02378227 / 0.04644027. These are uncalibrated model outputs, not security guarantees or accuracy estimates. AES used the large-table heuristic shortcut; baseline exact extraction failed on missing RAM definitions and used fallback. Both graphs omit important semantics. Model identities, preprocessing, logs and limitations are retained separately.
+
+AI use: Codex coordinated clean verification, evidence organization and independent review. Available project-visible interaction records and command evidence are in ai/. Claude Code performed a tool-disabled review of the earlier evidence packet; it did not review the subsequently generated AES detector scores. Native records, authored summaries and reconstructed indexes are labeled separately. No missing dialogue is invented.
+
+Unfinished core requirements: a verified AI-generated Trojan-modified RTL artifact and its demonstration testbench are absent from this submission. No trigger/payload demonstration or independent key recovery is claimed. Key recovery is bonus under the original qualifier. Physical-board testing is not a prerequisite for that original simulation-only phase. Instructor-specific requirements or an acceptable alternative need confirmation.
+
+Submission limitations: the package does not claim completion of the full assignment or complete authentic AI-transcript coverage. Consult ai/LOG_RECOVERY_STATUS.txt for the latest recovery results. Prior proof and detector results were not rerun during this packaging task.

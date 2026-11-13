@@ -1,0 +1,388 @@
+{
+  "status": "PASS",
+  "run_dir": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei",
+  "cases": [
+    {
+      "name": "baseline_normal",
+      "negative_control": false,
+      "compile": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+          "-g2012",
+          "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+          "-Wall",
+          "-s",
+          "paired_normal_tb",
+          "-o",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/sim.vvp",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/sources/paired_normal_tb.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/sources/baseline.v",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/sources/baseline_protocol_dut.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/sources/cells_sim.v"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal",
+        "start_utc": "2026-11-13T00:48:12.295214+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/compile.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/compile.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.137598
+      },
+      "source_hashes": {
+        "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+        "paired_normal_tb.sv": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+        "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+        "baseline_protocol_dut.sv": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089"
+      },
+      "meets_expectation": true,
+      "simulate": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+          "-n",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/sim.vvp",
+          "+half_ps=500000",
+          "+sample_ps=1000",
+          "+immediate=0",
+          "+pauses=0"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal",
+        "start_utc": "2026-11-13T00:48:12.434021+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/simulate.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/baseline_normal/simulate.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.999002
+      },
+      "summary_lines": [
+        "transactions=88 checks=6726 failures=0"
+      ],
+      "counts": {
+        "transactions": 88,
+        "checks": 6726,
+        "failures": 0
+      }
+    },
+    {
+      "name": "modified_normal",
+      "negative_control": false,
+      "compile": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+          "-g2012",
+          "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+          "-Wall",
+          "-s",
+          "paired_normal_tb",
+          "-o",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/sim.vvp",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/sources/paired_normal_tb.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/sources/baseline.v",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/sources/modified_protocol_dut.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/sources/cells_sim.v"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal",
+        "start_utc": "2026-11-13T00:48:13.440162+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/compile.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/compile.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.141306
+      },
+      "source_hashes": {
+        "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+        "paired_normal_tb.sv": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+        "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+        "modified_protocol_dut.sv": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e"
+      },
+      "meets_expectation": true,
+      "simulate": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+          "-n",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/sim.vvp",
+          "+half_ps=500000",
+          "+sample_ps=1000",
+          "+immediate=0",
+          "+pauses=0"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal",
+        "start_utc": "2026-11-13T00:48:13.583513+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/simulate.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/modified_normal/simulate.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.989571
+      },
+      "summary_lines": [
+        "transactions=88 checks=6726 failures=0"
+      ],
+      "counts": {
+        "transactions": 88,
+        "checks": 6726,
+        "failures": 0
+      }
+    },
+    {
+      "name": "demonstration",
+      "negative_control": false,
+      "compile": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+          "-g2012",
+          "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+          "-Wall",
+          "-s",
+          "demo_tb",
+          "-o",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/sim.vvp",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/sources/demo_tb.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/sources/baseline.v",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/sources/modified_protocol_dut.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/sources/cells_sim.v"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration",
+        "start_utc": "2026-11-13T00:48:14.576700+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/compile.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/compile.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.198879
+      },
+      "source_hashes": {
+        "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+        "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+        "modified_protocol_dut.sv": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+        "demo_tb.sv": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a"
+      },
+      "meets_expectation": true,
+      "simulate": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+          "-n",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/sim.vvp"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration",
+        "start_utc": "2026-11-13T00:48:14.776722+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/simulate.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/demonstration/simulate.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 1.959342
+      },
+      "summary_lines": [
+        "checks=39718 failures=0 reads=120 normal_reads=114 fault_reads=6 known_operations=10 expected_flips=7 observed_flips=7"
+      ],
+      "counts": {
+        "checks": 39718,
+        "failures": 0,
+        "reads": 120,
+        "normal_reads": 114,
+        "fault_reads": 6,
+        "known_operations": 10,
+        "expected_flips": 7,
+        "observed_flips": 7
+      }
+    },
+    {
+      "name": "negative_no_fault",
+      "negative_control": true,
+      "compile": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+          "-g2012",
+          "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+          "-Wall",
+          "-s",
+          "demo_tb",
+          "-o",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/sim.vvp",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/sources/demo_tb.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/sources/baseline.v",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/sources/modified_protocol_dut.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/sources/cells_sim.v"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault",
+        "start_utc": "2026-11-13T00:48:16.739775+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/compile.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/compile.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.198906
+      },
+      "source_hashes": {
+        "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+        "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+        "modified_protocol_dut.sv": "d0e1a896cb22fda608f6e33db467b05996ebf4415e9b31f8db73be37cd26422a",
+        "demo_tb.sv": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a"
+      },
+      "meets_expectation": true,
+      "simulate": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+          "-n",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/sim.vvp"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault",
+        "start_utc": "2026-11-13T00:48:16.939840+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/simulate.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_no_fault/simulate.stderr.log",
+        "returncode": 1,
+        "timed_out": false,
+        "elapsed_seconds": 2.001596
+      },
+      "summary_lines": [
+        "checks=39718 failures=14 reads=120 normal_reads=114 fault_reads=6 known_operations=10 expected_flips=7 observed_flips=0"
+      ],
+      "counts": {
+        "checks": 39718,
+        "failures": 14,
+        "reads": 120,
+        "normal_reads": 114,
+        "fault_reads": 6,
+        "known_operations": 10,
+        "expected_flips": 7,
+        "observed_flips": 0
+      }
+    },
+    {
+      "name": "negative_always_fault",
+      "negative_control": true,
+      "compile": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+          "-g2012",
+          "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+          "-Wall",
+          "-s",
+          "demo_tb",
+          "-o",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/sim.vvp",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/sources/demo_tb.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/sources/baseline.v",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/sources/modified_protocol_dut.sv",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/sources/cells_sim.v"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault",
+        "start_utc": "2026-11-13T00:48:18.944022+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/compile.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/compile.stderr.log",
+        "returncode": 0,
+        "timed_out": false,
+        "elapsed_seconds": 0.203261
+      },
+      "source_hashes": {
+        "cells_sim.v": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+        "baseline.v": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+        "modified_protocol_dut.sv": "2ea1f10f1409032b0f1812625784b53afb40f938d10e6032c43b25e0b5a2fb03",
+        "demo_tb.sv": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a"
+      },
+      "meets_expectation": true,
+      "simulate": {
+        "argv": [
+          "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+          "-n",
+          "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/sim.vvp"
+        ],
+        "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault",
+        "start_utc": "2026-11-13T00:48:19.148535+00:00",
+        "timeout_seconds": 60,
+        "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/simulate.stdout.log",
+        "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/negative_always_fault/simulate.stderr.log",
+        "returncode": 1,
+        "timed_out": false,
+        "elapsed_seconds": 1.956224
+      },
+      "summary_lines": [
+        "checks=39718 failures=9209 reads=120 normal_reads=114 fault_reads=6 known_operations=10 expected_flips=7 observed_flips=8843"
+      ],
+      "counts": {
+        "checks": 39718,
+        "failures": 9209,
+        "reads": 120,
+        "normal_reads": 114,
+        "fault_reads": 6,
+        "known_operations": 10,
+        "expected_flips": 7,
+        "observed_flips": 8843
+      }
+    }
+  ],
+  "versions": [
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+        "-V"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei",
+      "start_utc": "2026-11-13T00:48:12.182028+00:00",
+      "timeout_seconds": 20,
+      "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/iverilog_version.stdout.log",
+      "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/iverilog_version.stderr.log",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.086161
+    },
+    {
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+        "-V"
+      ],
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei",
+      "start_utc": "2026-11-13T00:48:12.268597+00:00",
+      "timeout_seconds": 20,
+      "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/vvp_version.stdout.log",
+      "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/portable_reproduction/20261113T004812Z_7tzi1eei/vvp_version.stderr.log",
+      "returncode": 0,
+      "timed_out": false,
+      "elapsed_seconds": 0.024052
+    }
+  ],
+  "source_checks": {
+    "rtl/baseline.v": {
+      "expected": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "actual": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "matches": true
+    },
+    "rtl/cells_sim.v": {
+      "expected": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+      "actual": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+      "matches": true
+    },
+    "rtl/modified_protocol_dut.sv": {
+      "expected": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+      "actual": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e",
+      "matches": true
+    },
+    "reference/baseline_protocol_dut.sv": {
+      "expected": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "actual": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "matches": true
+    },
+    "reference/paired_normal_tb.sv": {
+      "expected": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+      "actual": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+      "matches": true
+    },
+    "tb/demo_tb.sv": {
+      "expected": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a",
+      "actual": "b67e6d085a02239e551732627cfb136f6271e5d16678c8d385754a4436ca175a",
+      "matches": true
+    },
+    "run_tests.py": {
+      "expected": "2d8703b76839a01c7d9894b6d4cffa0d9c31ada9f0281c083deaad5a591012dd",
+      "actual": "2d8703b76839a01c7d9894b6d4cffa0d9c31ada9f0281c083deaad5a591012dd",
+      "matches": true
+    }
+  },
+  "sources_preserved": true,
+  "finished_utc": "2026-11-13T00:48:21.108977+00:00"
+}

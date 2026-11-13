@@ -1,0 +1,81 @@
+{
+  "schema": "original-materials-source-receipt-v1",
+  "repository": "JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026",
+  "repository_url": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026",
+  "selected_commit": "9913ac31aa47a46de9cfb8f928be21ae4e249ad4",
+  "selected_commit_url": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/commit/9913ac31aa47a46de9cfb8f928be21ae4e249ad4",
+  "commit_date_utc": "2026-09-18T16:43:32Z",
+  "commit_message": "Qualifying challenge release.",
+  "root_tree_git_id": "119084f694cf5b4f98c983194d49ae5802f8a7de",
+  "retrieval_recorded_utc": "2026-11-06T13:59:03Z",
+  "retrieval_method": "GitHub connector fetch_file with explicit commit ref and base64 encoding; Git data endpoints used only for metadata and tree entries.",
+  "preservation": "Original bytes preserved without normalization. No downloaded code or bitstream was executed.",
+  "selection_assessment": {
+    "status": "original qualifier release; pre-solution snapshot",
+    "evidence": [
+      "The selected commit is the initial qualifying challenge release.",
+      "Its only parent is the repository initial commit, whose complete tree contains only the original root README and LICENSE.",
+      "The selected complete recursive tree contains only the six preserved files, a .gitignore file, and the qualifier directory.",
+      "There are no solution documents or diagrams in the selected tree. The preserved Markdown files contain no solution section headings."
+    ],
+    "limits": "Assessment concerns this repository's recorded history and this selected snapshot; it does not assert when any external or unpublished material was created.",
+    "content_boundary": "No solution documents, solution diagrams, current README bodies, commit patches, or existing local project/audit materials were read. No repository history was copied into this package."
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5194,
+      "source_git_blob_id": "0476ba0ff2498a3b335670d9c77bfc7e0a6415fa",
+      "sha256": "5044d9558161e7fec40ae7d4cb8c15b678cfda982afcf914f9e318ac3bb76902",
+      "source_url": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/blob/9913ac31aa47a46de9cfb8f928be21ae4e249ad4/README.md",
+      "retrieval_recorded_utc": "2026-11-06T13:59:03Z",
+      "verification": "Local byte count and Git blob SHA-1 match official historical tree and fetch response; local bytes re-read and compared after writing."
+    },
+    {
+      "path": "qualifier/README.md",
+      "bytes": 9206,
+      "source_git_blob_id": "422bfdca83fe0246458d56b6c579e3f04320f969",
+      "sha256": "72833c7880d7c4ea2af74bdeff9c001716ea087bca609f8d53699546b6ff4e08",
+      "source_url": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/blob/9913ac31aa47a46de9cfb8f928be21ae4e249ad4/qualifier/README.md",
+      "retrieval_recorded_utc": "2026-11-06T13:59:03Z",
+      "verification": "Local byte count and Git blob SHA-1 match official historical tree and fetch response; local bytes re-read and compared after writing."
+    },
+    {
+      "path": "qualifier/ice40_cryptographic_IP.md",
+      "bytes": 3339,
+      "source_git_blob_id": "1b8f6e77cd526630bef68eb96a5b3355d745bdb3",
+      "sha256": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25",
+      "source_url": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/blob/9913ac31aa47a46de9cfb8f928be21ae4e249ad4/qualifier/ice40_cryptographic_IP.md",
+      "retrieval_recorded_utc": "2026-11-06T13:59:03Z",
+      "verification": "Local byte count and Git blob SHA-1 match official historical tree and fetch response; local bytes re-read and compared after writing."
+    },
+    {
+      "path": "qualifier/spi_ice40_crypto_ip_test.py",
+      "bytes": 3661,
+      "source_git_blob_id": "16cbac2352901f952aefeb5993d077ea33f53d36",
+      "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+      "source_url": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/blob/9913ac31aa47a46de9cfb8f928be21ae4e249ad4/qualifier/spi_ice40_crypto_ip_test.py",
+      "retrieval_recorded_utc": "2026-11-06T13:59:03Z",
+      "verification": "Local byte count and Git blob SHA-1 match official historical tree and fetch response; local bytes re-read and compared after writing."
+    },
+    {
+      "path": "qualifier/ice40_bitstream.bin",
+      "bytes": 104090,
+      "source_git_blob_id": "b309965e3c1519d3e54d5f87b2b45f2e0431ecb2",
+      "sha256": "5fa5fda9768c36808780398d8e24d125d860aacc62b61af8b4c5124dd759ddbe",
+      "source_url": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/blob/9913ac31aa47a46de9cfb8f928be21ae4e249ad4/qualifier/ice40_bitstream.bin",
+      "retrieval_recorded_utc": "2026-11-06T13:59:03Z",
+      "verification": "Local byte count and Git blob SHA-1 match official historical tree and fetch response; local bytes re-read and compared after writing."
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 19342,
+      "source_git_blob_id": "428e59536b10170c4e7412b803db164f0002e4c6",
+      "sha256": "0afca3145596cd005f6f6ed977313ea31928094fc5b4aaabc21bb765ea369d09",
+      "source_url": "https://github.com/JBlocklove/CSAW-AI-Hardware-Attack-Challenge-2026/blob/9913ac31aa47a46de9cfb8f928be21ae4e249ad4/LICENSE",
+      "retrieval_recorded_utc": "2026-11-06T13:59:03Z",
+      "verification": "Local byte count and Git blob SHA-1 match official historical tree and fetch response; local bytes re-read and compared after writing."
+    }
+  ],
+  "local_verification_utc": "2026-11-06T13:59:50.752250Z"
+}

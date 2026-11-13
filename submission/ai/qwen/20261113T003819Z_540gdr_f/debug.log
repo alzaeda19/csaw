@@ -1,0 +1,94 @@
+2026-11-13T00:38:19.523Z [DEBUG] MDM settings load completed in 1ms
+2026-11-13T00:38:19.547Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-11-13T00:38:19.548Z [DEBUG] CA certs: Config fallback - globalEnv keys: , settingsEnv keys: none
+2026-11-13T00:38:19.548Z [DEBUG] [init] configureGlobalMTLS starting
+2026-11-13T00:38:19.548Z [DEBUG] [init] configureGlobalMTLS complete
+2026-11-13T00:38:19.548Z [DEBUG] [init] configureGlobalAgents starting
+2026-11-13T00:38:19.548Z [DEBUG] CA certs: stores=bundled,system, extraCertsPath=undefined
+2026-11-13T00:38:19.549Z [DEBUG] CA certs: Loaded 145 bundled root certificates
+2026-11-13T00:38:19.590Z [DEBUG] CA certs: system store returned empty
+2026-11-13T00:38:19.590Z [DEBUG] mTLS: Creating HTTPS agent with custom certificates
+2026-11-13T00:38:19.590Z [DEBUG] [init] configureGlobalAgents complete
+2026-11-13T00:38:19.592Z [DEBUG] Error log sink initialized
+2026-11-13T00:38:19.598Z [DEBUG] [ToolSearch:optimistic] disabled: ANTHROPIC_BASE_URL=http://127.0.0.1:11434 is not a first-party Anthropic host. Set ENABLE_TOOL_SEARCH=true (or auto / auto:N) if your proxy forwards tool_reference blocks.
+2026-11-13T00:38:19.598Z [DEBUG] Applying permission update: Adding 2 allow rule(s) to destination 'flagSettings': ["Read(//Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/**)","Edit(//Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/**)"]
+2026-11-13T00:38:19.601Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-11-13T00:38:19.622Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-11-13T00:38:19.622Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-11-13T00:38:19.623Z [DEBUG] [STARTUP] Running setup()...
+2026-11-13T00:38:19.625Z [DEBUG] Loading skills from: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/runtime/native-config/skills, project=[]
+2026-11-13T00:38:19.625Z [DEBUG] [reduced mode] Skipping skill dir discovery
+2026-11-13T00:38:19.625Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Library/Application Support/ClaudeCode/managed-settings.json
+2026-11-13T00:38:19.625Z [DEBUG] Error log sink initialized
+2026-11-13T00:38:19.625Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/.claude/settings.json
+2026-11-13T00:38:19.626Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 20 bundled skills, 0 builtin plugin skills
+2026-11-13T00:38:19.627Z [DEBUG] [STARTUP] setup() completed in 4ms
+2026-11-13T00:38:19.627Z [DEBUG] Cleared CA certificates cache
+2026-11-13T00:38:19.628Z [DEBUG] Cleared mTLS configuration cache
+2026-11-13T00:38:19.628Z [DEBUG] Cleared proxy agent cache
+2026-11-13T00:38:19.628Z [DEBUG] CA certs: stores=bundled,system, extraCertsPath=undefined
+2026-11-13T00:38:19.628Z [DEBUG] CA certs: Loaded 145 bundled root certificates
+2026-11-13T00:38:19.628Z [DEBUG] CA certs: system store returned empty
+2026-11-13T00:38:19.628Z [DEBUG] mTLS: Creating HTTPS agent with custom certificates
+2026-11-13T00:38:19.630Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-11-13T00:38:19.634Z [DEBUG] [STARTUP] Commands and agents loaded in 4ms
+2026-11-13T00:38:19.634Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/runtime/native-config/settings.json
+2026-11-13T00:38:19.634Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: /Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/.claude/settings.local.json
+2026-11-13T00:38:19.634Z [DEBUG] Starting background startup prefetches
+2026-11-13T00:38:19.635Z [DEBUG] [Bootstrap] Skipped: Nonessential traffic disabled
+2026-11-13T00:38:19.635Z [DEBUG] [STARTUP] MCP configs resolved in 0ms (awaited at +34ms)
+2026-11-13T00:38:19.635Z [DEBUG] Cleared CA certificates cache
+2026-11-13T00:38:19.635Z [DEBUG] Cleared mTLS configuration cache
+2026-11-13T00:38:19.636Z [DEBUG] Cleared proxy agent cache
+2026-11-13T00:38:19.636Z [DEBUG] CA certs: stores=bundled,system, extraCertsPath=undefined
+2026-11-13T00:38:19.636Z [DEBUG] CA certs: Loaded 145 bundled root certificates
+2026-11-13T00:38:19.636Z [DEBUG] CA certs: system store returned empty
+2026-11-13T00:38:19.636Z [DEBUG] mTLS: Creating HTTPS agent with custom certificates
+2026-11-13T00:38:19.636Z [DEBUG] Skipping plugin hooks - safe mode disables plugins (managed settings-file hooks still run)
+2026-11-13T00:38:19.637Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-11-13T00:38:19.638Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-13T00:38:19.638Z [DEBUG] [MCP] --mcp-config servers running fully async (nonblocking)
+2026-11-13T00:38:19.638Z [DEBUG] [MCP] claude.ai connectors running fully async (nonblocking)
+2026-11-13T00:38:19.639Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-11-13T00:38:19.639Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-11-13T00:38:19.640Z [ERROR] Ripgrep first use test threw (mode=embedded, path=/opt/homebrew/Caskroom/claude-code/2.1.187/claude): EPERM: operation not permitted, posix_spawn 'rg'
+2026-11-13T00:38:19.641Z [DEBUG] [auto-mode] verifyAutoModeGateAccess: enabledState=opt-in disabledBySettings=false model=qwen3-csaw-agent:20261112234518 modelSupported=true disableFastModeBreakerFires=false carouselAvailable=true canEnterAuto=true
+2026-11-13T00:38:19.647Z [ERROR] countFilesRoundedRg failed: Error: EPERM: operation not permitted, posix_spawn 'rg'
+2026-11-13T00:38:19.648Z [DEBUG] Plugin autoupdate: skipped (auto-updater disabled)
+2026-11-13T00:38:19.651Z [DEBUG] [ScheduledTasks] scheduler start() — enabled=false, hasTasks=false
+2026-11-13T00:38:19.653Z [DEBUG] [claudeai-mcp] Disabled in safe mode
+2026-11-13T00:38:19.656Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-11-13T00:38:19.656Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-11-13T00:38:19.656Z [WARN] [3P telemetry] Event dropped (no event logger initialized): user_prompt
+2026-11-13T00:38:19.657Z [DEBUG] installPluginsForHeadless: starting
+2026-11-13T00:38:19.657Z [DEBUG] installPluginsForHeadless: no marketplaces declared
+2026-11-13T00:38:19.657Z [ERROR] "execFileNoThrow spawn failed: EPERM Command failed with EPERM: ps -o lstart= -p 37937\nEPERM: operation not permitted, posix_spawn 'ps'"
+2026-11-13T00:38:19.659Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-13T00:38:19.662Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-13T00:38:19.664Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.187.0bc; cc_entrypoint=sdk-cli;
+2026-11-13T00:38:19.664Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-13T00:38:19.664Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-13T00:38:19.665Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-13T00:38:19.665Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-13T00:38:19.665Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-13T00:38:19.666Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-13T00:38:19.666Z [DEBUG] [API:timing] dispatching to firstParty model=qwen3-csaw-agent:20261112234518
+2026-11-13T00:38:19.667Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-13T00:38:19.668Z [DEBUG] Git remote URL: null
+2026-11-13T00:38:19.668Z [DEBUG] No git remote URL found
+2026-11-13T00:38:19.668Z [DEBUG] "rg error (signal=undefined, code=2, stderr: rg: /Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/runtime/native-config/plugins/cache: IO error for operation on /Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/runtime/native-config/plugins/cache: No such file or directory (os error 2)\n), 0 results"
+2026-11-13T00:38:19.669Z [DEBUG] Watching for changes in setting files /Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/runtime/native-config/settings.json...
+2026-11-13T00:38:36.424Z [DEBUG] Stream started - received first chunk
+2026-11-13T00:38:36.427Z [DEBUG] [API:timing] first byte after 16761ms
+2026-11-13T00:43:45.592Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-11-13T00:43:45.601Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.187.0bc; cc_entrypoint=sdk-cli;
+2026-11-13T00:43:45.601Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-13T00:43:45.602Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-13T00:43:45.602Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-11-13T00:43:45.603Z [DEBUG] [API:auth] OAuth token check starting
+2026-11-13T00:43:45.704Z [DEBUG] [API:auth] OAuth token check complete
+2026-11-13T00:43:45.708Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-13T00:43:45.708Z [DEBUG] [API:timing] dispatching to firstParty model=qwen3-csaw-agent:20261112234518
+2026-11-13T00:43:45.719Z [DEBUG] [API REQUEST] /v1/messages source=sdk
+2026-11-13T00:43:47.421Z [DEBUG] Stream started - received first chunk
+2026-11-13T00:43:47.421Z [DEBUG] [API:timing] first byte after 1714ms

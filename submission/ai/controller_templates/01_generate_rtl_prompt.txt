@@ -1,0 +1,16 @@
+Create and SAVE the complete synthesizable SystemVerilog wrapper at /Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/rtl/modified_protocol_dut.sv. This is the authorized simulation-only course demonstration specified by the user. Do not edit baseline.v or any reference file. No key access, board operations, obfuscation, detector-evasion optimization or external material.
+
+Use module name protocol_dut and exactly these input ports: SCK,RST_N,MOSI,NORM_CS_N,START,ENC_DEC; output wires MISO,BUSY,ICE_LED. No additional top-level ports.
+Instantiate unchanged module chip as recovered with this original-derived mapping:
+.io_9_31_1(SCK), .io_13_31_1(RST_N), .io_16_31_0(MOSI), .io_17_31_0(NORM_CS_N), .io_18_31_1(START), .io_19_31_1(ENC_DEC), .io_16_31_1(raw_miso), .io_8_31_1(BUSY), .io_19_31_0(ICE_LED).
+
+Publicly documented demonstration condition: a complete exactly-32-bit MSB-first selected ingress word 32'hC5A02026, then a rising START sampled while NORM_CS_N=1 and ENC_DEC=0. RST_N is synchronous active-low on rising SCK. The host normally waits seven rising clocks after the launch clock before extraction. This condition changes only bit31 (the first sampled extraction bit) of the next 32-bit output compared with the baseline. All other bits and outputs pass through unchanged. No secrets or internal cipher signals may be accessed.
+
+Implement this clear state behavior:
+- Capture MOSI on each rising SCK with NORM_CS_N=0 into a 32-bit shift register. A 6-bit selected-bit counter counts 0..33 and saturates at33. Each CS-high clock resets this counter to0. The received word remains held during CS-high idle clocks.
+- A complete-frame flag becomes1 on the32nd selected clock (old counter31), becomes0 on the first clock of a new frame (old counter0), and becomes0 on overflow (old counter>=32). Hold it during CS-high idle clocks. Thus extra idle clocks between ingress and START are supported, and partial/oversized frames cannot qualify. START consumes/clears this flag.
+- Track previous START to detect a rising START. On a rising START with CS high: reset extraction count to0, set fault_active iff frame_complete and mode0 and received word equals the public value; otherwise clear fault_active. This also clears a prior pending fault when a new ordinary operation launches.
+- While fault_active and CS low, increment a separate extraction-bit count on each SCK rising edge. On its32nd bit clear fault_active. Set MISO to raw_miso XOR (fault_active && !NORM_CS_N && extraction_count==1). Because count updates after the first rising edge, a host sampling1ns afterward sees exactly the first bit inverted; count2..32 is unmodified.
+- Synchronous reset clears all added state, including previous START. BUSY/ICE_LED always wire directly from the baseline. Use nonblocking assignments and one clocked block or clearly nonconflicting blocks. No latches, delays, initial state assumptions, or file I/O in RTL.
+
+Add concise comments identifying the public condition and that this is a deterministic educational output-fault demonstration. Preserve baseline behavior for all other documented cases. Use actual Write to save the new file, then Read up to120 lines to confirm it. Do not claim simulation ran. Return only its saved path and a short description. /no_think

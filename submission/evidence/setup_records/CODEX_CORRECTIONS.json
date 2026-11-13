@@ -1,0 +1,7 @@
+{
+  "rtl_v1": "Qwen initial draft; compiled but failed9 ordinary checks",
+  "rtl_v2": "Qwen applied Codex template but introduced code fences/missing end; compile failed",
+  "rtl_v3": "Codex generated and saved correction, including explicit CS-edge frame delimiting verified against a reproduced boundary failure",
+  "demo_template": "Codex independent pin-level comparison bench; Qwen will be asked to save/review it; sole-Qwen authorship is not claimed",
+  "v2_compile_exit": 2
+}

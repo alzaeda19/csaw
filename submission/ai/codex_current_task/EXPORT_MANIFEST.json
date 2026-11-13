@@ -1,0 +1,113 @@
+{
+  "export_created_utc": "2026-11-13T00:48:03.084301+00:00",
+  "scope": "Authorized current-generation task only, filtered native snapshot; not full history.",
+  "source": "/Users/al-zayedal-hassan/.codex/sessions/2026/11/12/rollout-2026-11-12T19-12-19-01a1b0ad-f593-7f90-a689-b621984f7cb4_01a1d23f-7ed7-7fa1-9afd-64875b8a6cf8.jsonl",
+  "source_open_mode": "read-only binary",
+  "snapshot": {
+    "prefix_bytes": 2371665,
+    "complete_lines": 573,
+    "prefix_sha256": "579f234195fef4e71bb92b2965cf6e63f00c57cbb17382cf17a75fbe901b493d",
+    "last_timestamp": "2026-11-13T00:45:21.850Z",
+    "last_record": "assistant commentary",
+    "includes_later_final_reply": false
+  },
+  "selected_turn_ids": [
+    "01a1d242-c430-7f82-b027-686debd939f6",
+    "01a1d254-6a62-7ac2-8865-04c80eae105c"
+  ],
+  "turn_markers": [
+    {
+      "line": 32,
+      "turn_id": "01a1d242-c430-7f82-b027-686debd939f6",
+      "record_type": "event_msg"
+    },
+    {
+      "line": 33,
+      "turn_id": "01a1d242-c430-7f82-b027-686debd939f6",
+      "record_type": "turn_context"
+    },
+    {
+      "line": 284,
+      "turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+      "record_type": "event_msg"
+    },
+    {
+      "line": 285,
+      "turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+      "record_type": "turn_context"
+    },
+    {
+      "line": 373,
+      "turn_id": "01a1d254-6a62-7ac2-8865-04c80eae105c",
+      "record_type": "turn_context"
+    }
+  ],
+  "boundary": {
+    "native_line": 34,
+    "user_request_matches_after_removing_trailing_newline": true,
+    "original_request_in_export_is_unaltered": true
+  },
+  "earlier_history": {
+    "native_lines_excluded": [
+      1,
+      31
+    ],
+    "contents_exported": false,
+    "processing": "Only record type and turn identifiers were examined for boundary selection."
+  },
+  "counts": {
+    "eligible_native_records": 542,
+    "retained_records": 155,
+    "omitted_records": 387,
+    "retained_by_kind": {
+      "response_item:message": 14,
+      "response_item:custom_tool_call": 42,
+      "event_msg:item_completed": 41,
+      "response_item:function_call": 9,
+      "response_item:function_call_output": 9,
+      "response_item:custom_tool_call_output": 25,
+      "response_item:agent_message": 15
+    }
+  },
+  "omission_policy": [
+    "Hidden reasoning records and blocks",
+    "Encrypted payload fields, including encrypted text stored inside delegation arguments",
+    "System/developer/context/compaction/inherited context records",
+    "Skill and instruction-file outputs",
+    "Nested read_thread snapshots and thread/sidebar/list-agent metadata",
+    "Earlier provenance/handoff document outputs",
+    "Redundant visible-message events and internal metadata"
+  ],
+  "authenticity": {
+    "line_hash_definition": "SHA-256 of the complete original native JSONL line bytes, including its trailing newline",
+    "retained_strings_changed": false,
+    "omitted_content_reconstructed": false,
+    "original_source_prefix_unchanged_at_completion": true,
+    "json_serialization_normalized": true,
+    "native_and_nested_tool_evidence_may_overlap": true
+  },
+  "limitations": [
+    "This cutoff predates the final completion reply and any subsequent packaging work.",
+    "Encrypted delegation messages cannot be exported as plaintext from this native file; their fields are omitted.",
+    "Any truncation already present in native tool outputs remains unchanged.",
+    "No earlier session history or compacted inherited history is included."
+  ],
+  "files": {
+    "visible_task_records.jsonl": {
+      "bytes": 400713,
+      "sha256": "2f5933d047c8987db7cdef522eb41843da93794307a9b6abd12c09317f7947d2"
+    },
+    "omitted_records.jsonl": {
+      "bytes": 221385,
+      "sha256": "752c2a6aa5cadb8bc911c8e232ac9ff4896964ad20b0c359a8e94a422ab72af5"
+    },
+    "VISIBLE_TASK_TRANSCRIPT.md": {
+      "bytes": 337197,
+      "sha256": "c1a3f4bc21c13b8d2a36b1cf098e912c85644c219353c0afc7e9316057449866"
+    },
+    "export_bounded_native.py": {
+      "bytes": 15139,
+      "sha256": "c239d5bb7aad54465a4f605f50f5ec361d8fed5a6dcc9a3e0daa83d837b21b88"
+    }
+  }
+}

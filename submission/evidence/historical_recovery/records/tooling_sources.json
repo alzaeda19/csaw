@@ -1,0 +1,27 @@
+{
+  "access_date": "2026-11-06",
+  "role": "Generic official tooling/model references only; no target implementation evidence",
+  "references": [
+    {
+      "url": "https://prjicestorm.readthedocs.io/en/latest/",
+      "used_for": "IceStorm documentation entrypoint"
+    },
+    {
+      "url": "https://prjicestorm.readthedocs.io/en/latest/overview.html",
+      "used_for": "Official installation, unpack and Verilog recovery tool descriptions"
+    },
+    {
+      "url": "https://github.com/YosysHQ/icestorm.git",
+      "commit": "00da9c3e6ceff056248e3451dd6fd3210d6ceec9",
+      "local": "tooling/icestorm",
+      "used_for": "icepack/iceunpack, icebox_vlog, device database; local-only build"
+    },
+    {
+      "url": "https://github.com/YosysHQ/yosys.git",
+      "commit": "5e740962d0c7b8c21b6701fe7a70a5e7ebe28661",
+      "local": "tooling/yosys",
+      "used_for": "Official ice40 cells_sim.v primitive model only, Yosys not built/run",
+      "model_sha256": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527"
+    }
+  ]
+}

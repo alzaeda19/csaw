@@ -1,0 +1,2 @@
+Saved file: /Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/rtl/modified_protocol_dut.sv  
+**Description**: Complete synthesizable SystemVerilog wrapper with deterministic 1-bit output fault under specified conditions (32'hC5A02026 ingress + START@NORM_CS_N=1/ENC_DEC=0). Implements shift register, frame tracking, fault detection, and inversion logic as per requirements. Baseline behavior preserved for all other cases.

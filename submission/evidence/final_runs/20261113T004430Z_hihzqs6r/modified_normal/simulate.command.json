@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+    "-n",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/sim.vvp",
+    "+half_ps=500000",
+    "+sample_ps=1000",
+    "+immediate=0",
+    "+pauses=0"
+  ],
+  "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal",
+  "start_utc": "2026-11-13T00:44:31.850034+00:00",
+  "timeout_seconds": 60,
+  "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/simulate.stdout.log",
+  "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/modified_normal/simulate.stderr.log",
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.991988
+}

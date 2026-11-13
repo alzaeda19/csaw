@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+    "-g2012",
+    "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+    "-s",
+    "protocol_dut",
+    "-o",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/rtl_v2/failed.vvp",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/rtl/baseline.v",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/rtl_v2/modified_protocol_dut.sv",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/rtl/cells_sim.v"
+  ],
+  "returncode": 2,
+  "description": "Actual Qwen copy contains Markdown fences and a missing end; preserved before Codex correction."
+}

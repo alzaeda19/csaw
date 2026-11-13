@@ -1,0 +1,6 @@
+(version 1)
+(allow default)
+(deny file-read* (require-all (require-any (subpath "/Users") (subpath "/Volumes")) (require-not (subpath "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work")) (require-not (subpath "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/config")) (require-not (subpath "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/runtime")) ))
+(deny file-write* (require-all (require-not (subpath "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work")) (require-not (subpath "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/runtime")) ))
+(deny network*)
+(allow network-outbound (remote ip "localhost:11434"))

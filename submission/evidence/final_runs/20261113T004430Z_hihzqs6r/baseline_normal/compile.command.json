@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+    "-g2012",
+    "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+    "-Wall",
+    "-s",
+    "paired_normal_tb",
+    "-o",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/baseline_normal/sim.vvp",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/baseline_normal/sources/paired_normal_tb.sv",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/baseline_normal/sources/baseline.v",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/baseline_normal/sources/baseline_protocol_dut.sv",
+    "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/baseline_normal/sources/cells_sim.v"
+  ],
+  "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/baseline_normal",
+  "start_utc": "2026-11-13T00:44:30.588094+00:00",
+  "timeout_seconds": 60,
+  "stdout": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/baseline_normal/compile.stdout.log",
+  "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/baseline_normal/compile.stderr.log",
+  "returncode": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.131796
+}

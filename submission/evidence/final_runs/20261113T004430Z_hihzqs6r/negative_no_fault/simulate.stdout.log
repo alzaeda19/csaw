@@ -1,0 +1,138 @@
+VCD info: dumpfile demo_pins.vcd opened for output.
+RESULT case=original_pair_00 mode=0 baseline=9cd84392 modified=9cd84392 xor=00000000 expected_fault=0
+RESULT case=original_pair_00 mode=0 baseline=9cd84392 modified=9cd84392 xor=00000000 expected_fault=0
+RESULT case=original_pair_01 mode=0 baseline=9cd84392 modified=9cd84392 xor=00000000 expected_fault=0
+RESULT case=original_pair_01 mode=1 baseline=59c359c3 modified=59c359c3 xor=00000000 expected_fault=0
+RESULT case=original_pair_10 mode=1 baseline=59c359c3 modified=59c359c3 xor=00000000 expected_fault=0
+RESULT case=original_pair_10 mode=0 baseline=9cd84392 modified=9cd84392 xor=00000000 expected_fault=0
+RESULT case=original_pair_11 mode=1 baseline=59c359c3 modified=59c359c3 xor=00000000 expected_fault=0
+RESULT case=original_pair_11 mode=1 baseline=59c359c3 modified=59c359c3 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=f74e3bb2 modified=f74e3bb2 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=4fdd00ef modified=4fdd00ef xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=bf8beff7 modified=bf8beff7 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=edac6493 modified=edac6493 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=21504f57 modified=21504f57 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=2198aa7d modified=2198aa7d xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=34a3ea16 modified=34a3ea16 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=448267bf modified=448267bf xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=5df25404 modified=5df25404 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=be9fcda5 modified=be9fcda5 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=ef81bfc6 modified=ef81bfc6 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=742dcbf3 modified=742dcbf3 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=8e98f722 modified=8e98f722 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=b6241387 modified=b6241387 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=5621b2d6 modified=5621b2d6 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=584bc583 modified=584bc583 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=2f01d9f8 modified=2f01d9f8 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=33675c6c modified=33675c6c xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=90097ea4 modified=90097ea4 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=ebb0a0f5 modified=ebb0a0f5 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=91234440 modified=91234440 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=7b08fa26 modified=7b08fa26 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=e6a0850e modified=e6a0850e xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=b0069671 modified=b0069671 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=14e39b36 modified=14e39b36 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=1db4f512 modified=1db4f512 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=fb3e60e0 modified=fb3e60e0 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=c1a6be44 modified=c1a6be44 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=c8766a83 modified=c8766a83 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=997ab223 modified=997ab223 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=dd9f0aa5 modified=dd9f0aa5 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=a3f11baa modified=a3f11baa xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=28aaf001 modified=28aaf001 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=5ad00af0 modified=5ad00af0 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=5fc92fc5 modified=5fc92fc5 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=75928872 modified=75928872 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=b7b61cae modified=b7b61cae xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=b2cddbf6 modified=b2cddbf6 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=0a69aa73 modified=0a69aa73 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=24e283c1 modified=24e283c1 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=43bd3a7c modified=43bd3a7c xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=966aa1d6 modified=966aa1d6 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=3f971462 modified=3f971462 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=8107b9d7 modified=8107b9d7 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=fd2975fb modified=fd2975fb xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=898f2397 modified=898f2397 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=76004570 modified=76004570 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=aedad658 modified=aedad658 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=3d9e225a modified=3d9e225a xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=7f4ded39 modified=7f4ded39 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=e83fe061 modified=e83fe061 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=39b1d92d modified=39b1d92d xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=a8e64bf6 modified=a8e64bf6 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=090cc80a modified=090cc80a xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=4853f96a modified=4853f96a xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=189a719c modified=189a719c xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=1ebb1551 modified=1ebb1551 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=af09f12b modified=af09f12b xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=3ec792da modified=3ec792da xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=d0939d38 modified=d0939d38 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=224e7bb5 modified=224e7bb5 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=c8152cd8 modified=c8152cd8 xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=0 baseline=418bf36c modified=418bf36c xor=00000000 expected_fault=0
+RESULT case=ordinary_sequence mode=1 baseline=17a8bc20 modified=17a8bc20 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_0 mode=0 baseline=a9ddcb49 modified=a9ddcb49 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_1 mode=0 baseline=a9ddcb22 modified=a9ddcb22 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_2 mode=0 baseline=a9ddcb5b modified=a9ddcb5b xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_3 mode=0 baseline=a9ddcb28 modified=a9ddcb28 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_4 mode=0 baseline=a9ddcb45 modified=a9ddcb45 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_5 mode=0 baseline=a9ddcb08 modified=a9ddcb08 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_6 mode=0 baseline=a9ddcb2c modified=a9ddcb2c xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_7 mode=0 baseline=a9ddcb67 modified=a9ddcb67 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_8 mode=0 baseline=a9dd31a5 modified=a9dd31a5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_9 mode=0 baseline=a9dd16a5 modified=a9dd16a5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_10 mode=0 baseline=a9dd54a5 modified=a9dd54a5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_11 mode=0 baseline=a9ddcca5 modified=a9ddcca5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_12 mode=0 baseline=a9ddeaa5 modified=a9ddeaa5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_13 mode=0 baseline=a9ddd0a5 modified=a9ddd0a5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_14 mode=0 baseline=a9ddeca5 modified=a9ddeca5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_15 mode=0 baseline=a9dd5fa5 modified=a9dd5fa5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_16 mode=0 baseline=a932cba5 modified=a932cba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_17 mode=0 baseline=a946cba5 modified=a946cba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_18 mode=0 baseline=a9d7cba5 modified=a9d7cba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_19 mode=0 baseline=a9dbcba5 modified=a9dbcba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_20 mode=0 baseline=a952cba5 modified=a952cba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_21 mode=0 baseline=a984cba5 modified=a984cba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_22 mode=0 baseline=a97bcba5 modified=a97bcba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_23 mode=0 baseline=a954cba5 modified=a954cba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_24 mode=0 baseline=00ddcba5 modified=00ddcba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_25 mode=0 baseline=34ddcba5 modified=34ddcba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_26 mode=0 baseline=c2ddcba5 modified=c2ddcba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_27 mode=0 baseline=4addcba5 modified=4addcba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_28 mode=0 baseline=6eddcba5 modified=6eddcba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_29 mode=0 baseline=95ddcba5 modified=95ddcba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_30 mode=0 baseline=39ddcba5 modified=39ddcba5 xor=00000000 expected_fault=0
+RESULT case=one_bit_neighbor_31 mode=0 baseline=4dddcba5 modified=4dddcba5 xor=00000000 expected_fault=0
+RESULT case=same_word_other_mode mode=1 baseline=c8f8b250 modified=c8f8b250 xor=00000000 expected_fault=0
+FAIL case=trigger_no_gap phase=extract check=MISO_RELATION time=7676501211
+FAIL case=trigger_no_gap phase=extract check=WORD_RELATION time=7708000212
+RESULT case=trigger_no_gap mode=0 baseline=a9ddcba5 modified=a9ddcba5 xor=00000000 expected_fault=1
+RESULT case=normal_after_trigger mode=0 baseline=9cd84392 modified=9cd84392 xor=00000000 expected_fault=0
+FAIL case=trigger_idle_and_pauses phase=extract check=MISO_RELATION time=7833501215
+FAIL case=trigger_idle_and_pauses phase=extract check=WORD_RELATION time=7875000216
+RESULT case=trigger_idle_and_pauses mode=0 baseline=a9ddcba5 modified=a9ddcba5 xor=00000000 expected_fault=1
+RESULT case=second_extraction_without_start mode=0 baseline=00000000 modified=00000000 xor=00000000 expected_fault=0
+FAIL case=consecutive_trigger_a phase=extract check=MISO_RELATION time=7947501218
+FAIL case=consecutive_trigger_a phase=extract check=WORD_RELATION time=7979000219
+RESULT case=consecutive_trigger_a mode=0 baseline=a9ddcba5 modified=a9ddcba5 xor=00000000 expected_fault=1
+FAIL case=consecutive_trigger_b phase=extract check=MISO_RELATION time=8019501220
+FAIL case=consecutive_trigger_b phase=extract check=WORD_RELATION time=8051000221
+RESULT case=consecutive_trigger_b mode=0 baseline=a9ddcba5 modified=a9ddcba5 xor=00000000 expected_fault=1
+FAIL case=extraction_not_ingress phase=extract check=MISO_RELATION time=8093501222
+FAIL case=extraction_not_ingress phase=extract check=WORD_RELATION time=8125000223
+RESULT case=extraction_not_ingress mode=0 baseline=a9ddcba5 modified=a9ddcba5 xor=00000000 expected_fault=1
+RESULT case=no_rearm_from_readout mode=0 baseline=a9ddcba5 modified=a9ddcba5 xor=00000000 expected_fault=0
+RESULT case=bad_length_31 mode=0 baseline=4dddcba5 modified=4dddcba5 xor=00000000 expected_fault=0
+RESULT case=bad_length_33 mode=0 baseline=a9ddcba5 modified=a9ddcba5 xor=00000000 expected_fault=0
+RESULT case=bad_length_67 mode=0 baseline=a9ddcba5 modified=a9ddcba5 xor=00000000 expected_fault=0
+RESULT case=reset_cancels_pending mode=0 baseline=00000000 modified=00000000 xor=00000000 expected_fault=0
+FAIL case=reset_during_extraction phase=partial_extract check=MISO_RELATION time=8639501236
+RESULT case=reset_during_extraction mode=0 baseline=00000000 modified=00000000 xor=00000000 expected_fault=0
+FAIL case=held_start phase=extract check=MISO_RELATION time=8722501239
+FAIL case=held_start phase=extract check=WORD_RELATION time=8754000240
+RESULT case=held_start mode=0 baseline=a9ddcba5 modified=a9ddcba5 xor=00000000 expected_fault=1
+RESULT case=final_normal_after_reset mode=1 baseline=59c359c3 modified=59c359c3 xor=00000000 expected_fault=0
+FAIL case=final_normal_after_reset phase=extract check=FAULT_COUNT_MATCH time=8863000243
+COMPLETE checks=39718 failures=14 reads=120 normal_reads=114 fault_reads=6 known_operations=10 expected_flips=7 observed_flips=0
+FATAL: /Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission/evidence/final_runs/20261113T004430Z_hihzqs6r/negative_no_fault/sources/demo_tb.sv:144: demonstration checks failed
+       Time: 8863000243  Scope: demo_tb

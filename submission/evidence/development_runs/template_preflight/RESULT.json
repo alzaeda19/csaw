@@ -1,0 +1,43 @@
+{
+  "kind": "Preflight of Codex-authored correction/demo templates, not final packaged Qwen artifacts",
+  "commands": [
+    {
+      "stage": "compile",
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+        "-g2012",
+        "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+        "-Wall",
+        "-s",
+        "demo_tb",
+        "-o",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/template_preflight/sim.vvp",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/config/03_codex_demo_template.sv.txt",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/rtl/baseline.v",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/config/02_codex_correction_template.sv.txt",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/rtl/cells_sim.v"
+      ],
+      "returncode": 0,
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/template_preflight"
+    },
+    {
+      "stage": "simulate",
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+        "-n",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/template_preflight/sim.vvp"
+      ],
+      "returncode": 1,
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/template_preflight"
+    }
+  ],
+  "summary": [
+    "COMPLETE checks=38878 failures=3 reads=118 normal_reads=113 fault_reads=5 known_operations=10 expected_flips=5 observed_flips=4"
+  ],
+  "failures": [
+    "FAIL case=consecutive_trigger_a phase=extract check=MISO_RELATION time=7947501218",
+    "FAIL case=consecutive_trigger_a phase=extract check=WORD_RELATION time=7979000219",
+    "FAIL case=final_normal_after_reset phase=extract check=FAULT_COUNT_MATCH time=8671000237"
+  ],
+  "stderr": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/rtl/baseline.v:3: warning: timescale for chip inherited from another file.\n/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/config/03_codex_demo_template.sv.txt:1: ...: The inherited timescale is here.\n/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/config/02_codex_correction_template.sv.txt:3: warning: timescale for protocol_dut inherited from another file.\n/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/config/03_codex_demo_template.sv.txt:1: ...: The inherited timescale is here.\n"
+}

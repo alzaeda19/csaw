@@ -1,0 +1,168 @@
+{
+  "checked_utc": "2026-11-13T00:58:18.418723+00:00",
+  "source_package": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/package/submission",
+  "original_archive_sha256": "0c053f3595079dbe7aa11789e69b1e26d359619b7af72d7535d1da004ce0ca83",
+  "archive_bytes": 5709601,
+  "archive_files": 262,
+  "manifest_entries_verified": 261,
+  "crc_pass": true,
+  "archive_directory_bytes_match": true,
+  "frozen_source_files_verified": 7,
+  "saved_results_and_logs": [
+    {
+      "record": "evidence/final_runs/20261113T004430Z_hihzqs6r/result.json",
+      "cases": [
+        {
+          "name": "baseline_normal",
+          "counts": {
+            "transactions": 88,
+            "checks": 6726,
+            "failures": 0
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 0,
+          "summary_matches_saved_log": true
+        },
+        {
+          "name": "modified_normal",
+          "counts": {
+            "transactions": 88,
+            "checks": 6726,
+            "failures": 0
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 0,
+          "summary_matches_saved_log": true
+        },
+        {
+          "name": "demonstration",
+          "counts": {
+            "checks": 39718,
+            "failures": 0,
+            "reads": 120,
+            "normal_reads": 114,
+            "fault_reads": 6,
+            "known_operations": 10,
+            "expected_flips": 7,
+            "observed_flips": 7
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 0,
+          "summary_matches_saved_log": true
+        },
+        {
+          "name": "negative_no_fault",
+          "counts": {
+            "checks": 39718,
+            "failures": 14,
+            "reads": 120,
+            "normal_reads": 114,
+            "fault_reads": 6,
+            "known_operations": 10,
+            "expected_flips": 7,
+            "observed_flips": 0
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 1,
+          "summary_matches_saved_log": true
+        },
+        {
+          "name": "negative_always_fault",
+          "counts": {
+            "checks": 39718,
+            "failures": 9209,
+            "reads": 120,
+            "normal_reads": 114,
+            "fault_reads": 6,
+            "known_operations": 10,
+            "expected_flips": 7,
+            "observed_flips": 8843
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 1,
+          "summary_matches_saved_log": true
+        }
+      ]
+    },
+    {
+      "record": "evidence/portable_reproduction/result.json",
+      "cases": [
+        {
+          "name": "baseline_normal",
+          "counts": {
+            "transactions": 88,
+            "checks": 6726,
+            "failures": 0
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 0,
+          "summary_matches_saved_log": true
+        },
+        {
+          "name": "modified_normal",
+          "counts": {
+            "transactions": 88,
+            "checks": 6726,
+            "failures": 0
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 0,
+          "summary_matches_saved_log": true
+        },
+        {
+          "name": "demonstration",
+          "counts": {
+            "checks": 39718,
+            "failures": 0,
+            "reads": 120,
+            "normal_reads": 114,
+            "fault_reads": 6,
+            "known_operations": 10,
+            "expected_flips": 7,
+            "observed_flips": 7
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 0,
+          "summary_matches_saved_log": true
+        },
+        {
+          "name": "negative_no_fault",
+          "counts": {
+            "checks": 39718,
+            "failures": 14,
+            "reads": 120,
+            "normal_reads": 114,
+            "fault_reads": 6,
+            "known_operations": 10,
+            "expected_flips": 7,
+            "observed_flips": 0
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 1,
+          "summary_matches_saved_log": true
+        },
+        {
+          "name": "negative_always_fault",
+          "counts": {
+            "checks": 39718,
+            "failures": 9209,
+            "reads": 120,
+            "normal_reads": 114,
+            "fault_reads": 6,
+            "known_operations": 10,
+            "expected_flips": 7,
+            "observed_flips": 8843
+          },
+          "compile_returncode": 0,
+          "simulation_returncode": 1,
+          "summary_matches_saved_log": true
+        }
+      ]
+    }
+  ],
+  "secret_pattern_hits": [],
+  "reproduction_instruction_review": "Entry point, compatible external tools, original tool versions, path option and same-toolchain relocation limitation are documented; entry point not executed in this review.",
+  "modified_design_executed": false,
+  "modified_design_changed": false,
+  "coverage_or_grade_proved": false
+}

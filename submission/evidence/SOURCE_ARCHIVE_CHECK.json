@@ -1,0 +1,15 @@
+{
+  "archive": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/source_reproduction.zip",
+  "extracted": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/fresh extracted sources",
+  "all_hashes_match": true,
+  "checks": {
+    "rtl/baseline.v": true,
+    "rtl/cells_sim.v": true,
+    "rtl/modified_protocol_dut.sv": true,
+    "reference/baseline_protocol_dut.sv": true,
+    "reference/paired_normal_tb.sv": true,
+    "tb/demo_tb.sv": true,
+    "run_tests.py": true
+  },
+  "scope": "Fresh extraction of the seven frozen runner/RTL/testbench files, not a claim to have tested every documentation or AI record."
+}

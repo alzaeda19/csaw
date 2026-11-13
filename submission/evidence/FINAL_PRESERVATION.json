@@ -1,0 +1,103 @@
+{
+  "time_utc": "2026-11-13T00:45:36.580883+00:00",
+  "original_files": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/README.md",
+      "bytes": 5194,
+      "sha256": "5044d9558161e7fec40ae7d4cb8c15b678cfda982afcf914f9e318ac3bb76902",
+      "git_blob_id": "0476ba0ff2498a3b335670d9c77bfc7e0a6415fa",
+      "matches": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/README.md",
+      "bytes": 9206,
+      "sha256": "72833c7880d7c4ea2af74bdeff9c001716ea087bca609f8d53699546b6ff4e08",
+      "git_blob_id": "422bfdca83fe0246458d56b6c579e3f04320f969",
+      "matches": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/ice40_cryptographic_IP.md",
+      "bytes": 3339,
+      "sha256": "9a0cd92e6607062a3b3f36d6249037fc9bd01f4f8c40d2e7081957b43876cf25",
+      "git_blob_id": "1b8f6e77cd526630bef68eb96a5b3355d745bdb3",
+      "matches": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/spi_ice40_crypto_ip_test.py",
+      "bytes": 3661,
+      "sha256": "f47bd1783747da483526475fe3e61475c83b85d346672a8dd408980498df4a99",
+      "git_blob_id": "16cbac2352901f952aefeb5993d077ea33f53d36",
+      "matches": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/qualifier/ice40_bitstream.bin",
+      "bytes": 104090,
+      "sha256": "5fa5fda9768c36808780398d8e24d125d860aacc62b61af8b4c5124dd759ddbe",
+      "git_blob_id": "b309965e3c1519d3e54d5f87b2b45f2e0431ecb2",
+      "matches": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/original_materials/LICENSE",
+      "bytes": 19342,
+      "sha256": "0afca3145596cd005f6f6ed977313ea31928094fc5b4aaabc21bb765ea369d09",
+      "git_blob_id": "428e59536b10170c4e7412b803db164f0002e4c6",
+      "matches": true
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Normal_Verification_20261112T233345Z_l0jc6zzt/runs/20261112T233503Z_s4av1jce/sources/baseline.v",
+      "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765",
+      "matches": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Normal_Verification_20261112T233345Z_l0jc6zzt/runs/20261112T233503Z_s4av1jce/sources/baseline_protocol_dut.sv",
+      "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089",
+      "matches": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Normal_Verification_20261112T233345Z_l0jc6zzt/runs/20261112T233503Z_s4av1jce/sources/paired_normal_tb.sv",
+      "sha256": "4da6d1535692a3f04bc69ec9a2036c90c7e875607eadf419cd337b388641bff5",
+      "matches": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/CSAW_2026_Normal_Verification_20261112T233345Z_l0jc6zzt/runs/20261112T233503Z_s4av1jce/sources/cells_sim.v",
+      "sha256": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527",
+      "matches": true
+    }
+  ],
+  "repositories": [
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/llm4chipdesign-hw",
+      "exists": true,
+      "head": {
+        "returncode": 0,
+        "stdout": "a3006f61f55fd8b6a232377d292fcec3138bf1ae\n",
+        "stderr": ""
+      },
+      "status": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "matches_before": true
+    },
+    {
+      "path": "/Users/al-zayedal-hassan/Documents/Codex/2026-11-10/referenced-chatgpt-conversation-this-is-an/outputs/csaw",
+      "exists": true,
+      "head": {
+        "returncode": 0,
+        "stdout": "f452cf5b5d713b04ff660f5fc53a74035cca37f9\n",
+        "stderr": ""
+      },
+      "status": {
+        "returncode": 0,
+        "stdout": " M AUDIT_SESSION_RECORD.md\n?? AUDIT_FOLLOWUP_2026-11-11.md\n",
+        "stderr": ""
+      },
+      "matches_before": true
+    }
+  ],
+  "all_checks_pass": true,
+  "scope": "Read-only byte/hash checks for original material/source inputs and Git HEAD/status checks for both repos; not a complete content hash of every repo file."
+}

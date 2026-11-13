@@ -1,0 +1,26 @@
+{
+  "raw/recovered_default.v": {
+    "bytes": 1213306,
+    "sha256": "8203748cf74b6d969f8f42e07a5ce21407bfa640e5f9c8f6ab9c1886820ae902"
+  },
+  "adapters/recovered_iverilog.v": {
+    "bytes": 1213314,
+    "sha256": "180b895d9e3ada5f662ee502277db1eedcfd80bd53fbf29d9a612fcc3e1b1765"
+  },
+  "adapters/protocol_dut.sv": {
+    "bytes": 465,
+    "sha256": "5c841870a9c4735e35f0dc1b07f6dfb7881898729ecf24e2408f73bb1b800089"
+  },
+  "tooling/yosys/techlibs/ice40/cells_sim.v": {
+    "bytes": 153943,
+    "sha256": "b5b2bcd86c0d6eea269015aaebff1d5fb66e7ec3f7eded0bde07406e5ac99527"
+  },
+  "harness/run.py": {
+    "bytes": 10074,
+    "sha256": "4daa97ee1b6adc7dc5cd1bb658fe1021e3abf8089590a8e440e9a19c6851c925"
+  },
+  "harness/tb/protocol_tb.sv": {
+    "bytes": 3960,
+    "sha256": "3d61e2540669c8961046beca0c67f66c420b79146de3fbe39611fdeb371398c2"
+  }
+}

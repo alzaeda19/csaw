@@ -1,0 +1,42 @@
+{
+  "case": "baseline_control",
+  "commands": [
+    {
+      "stage": "compile",
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/iverilog",
+        "-g2012",
+        "-DNO_ICE40_DEFAULT_ASSIGNMENTS",
+        "-Wall",
+        "-s",
+        "paired_normal_tb",
+        "-o",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/rtl_v1/baseline_control/sim.vvp",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/reference/paired_normal_tb.sv",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/rtl/baseline.v",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/reference/baseline_protocol_dut.sv",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/work/rtl/cells_sim.v"
+      ],
+      "returncode": 0,
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/rtl_v1/baseline_control"
+    },
+    {
+      "stage": "simulate",
+      "argv": [
+        "/Users/al-zayedal-hassan/Documents/CSAW_2026_Restart_2026-11-06/synthesis_fit_timing_2026-11-06/tooling/oss-cad-suite/bin/vvp",
+        "-n",
+        "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/rtl_v1/baseline_control/sim.vvp",
+        "+half_ps=500000",
+        "+sample_ps=1000",
+        "+immediate=0",
+        "+pauses=0"
+      ],
+      "returncode": 0,
+      "cwd": "/Users/al-zayedal-hassan/Documents/CSAW_Qwen_Submission_20261113T001822Z_9sj2k3k6/verification/rtl_v1/baseline_control"
+    }
+  ],
+  "summary": [
+    "COMPLETE transactions=88 checks=6726 failures=0"
+  ],
+  "failures": []
+}

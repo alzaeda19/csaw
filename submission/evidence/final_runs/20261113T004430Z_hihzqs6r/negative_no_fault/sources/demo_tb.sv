@@ -1,0 +1,146 @@
+`timescale 1ps/1ps
+// AI-authored independent pin-level oracle: expected faults come from test cases,
+// never from reading the modified DUT's internal trigger state.
+module demo_tb;
+  reg SCK=0,RST_N=1,MOSI=0,NORM_CS_N=1,START=0,ENC_DEC=0;
+  wire MISO,BUSY,ICE_LED,ref_miso,ref_busy,ref_led;
+  protocol_dut dut(.*);
+  chip reference_core(.io_9_31_1(SCK),.io_13_31_1(RST_N),.io_16_31_0(MOSI),
+    .io_17_31_0(NORM_CS_N),.io_18_31_1(START),.io_19_31_1(ENC_DEC),
+    .io_16_31_1(ref_miso),.io_8_31_1(ref_busy),.io_19_31_0(ref_led));
+  localparam [31:0] P=32'h59c359c3,C=32'h9cd84392,T=32'hc5a02026;
+  integer checks=0,failures=0,reads=0,fault_reads=0,normal_reads=0;
+  integer expected_flips=0,observed_flips=0,known_operations=0,fd,j,a,b;
+  reg sampled_m,sampled_r,pause_mode=0;
+  reg [31:0] discard_m,discard_r,out_m,out_r,word_value;
+  string case_name="initial",phase="idle";
+
+  task check(input string label,input bit good);
+    begin checks=checks+1;if(!good)begin failures=failures+1;
+      $display("FAIL case=%s phase=%s check=%s time=%0t",case_name,phase,label,$time);
+    end end
+  endtask
+  task pulse(input bit expected_flip);
+    reg [5:0] held;
+    begin
+      #500000;SCK=1;#1000;
+      sampled_m=MISO;sampled_r=ref_miso;
+      check("MISO_RELATION",MISO===(ref_miso ^ expected_flip));
+      check("BUSY_EQUAL",BUSY===ref_busy);check("LED_EQUAL",ICE_LED===ref_led);
+      expected_flips=expected_flips+expected_flip;
+      if((MISO ^ ref_miso)===1'b1)observed_flips=observed_flips+1;
+      $fdisplay(fd,"%0t,%s,%s,%b,%b,%b,%b,%b,%b,%b,%b,%b,%b,%b,%b,%b",
+        $time,case_name,phase,SCK,RST_N,MOSI,NORM_CS_N,START,ENC_DEC,
+        MISO,ref_miso,BUSY,ref_busy,ICE_LED,ref_led,expected_flip);
+      held={MISO,BUSY,ICE_LED,ref_miso,ref_busy,ref_led};
+      #498999;check("HIGH_HOLD",held==={MISO,BUSY,ICE_LED,ref_miso,ref_busy,ref_led});
+      SCK=0;#1;
+    end
+  endtask
+  task tick;begin pulse(0);end endtask
+  task reset_idle;
+    begin phase="reset";NORM_CS_N=1;START=0;RST_N=0;tick();RST_N=1;tick();end
+  endtask
+  task paused_hold;
+    reg [5:0] held;
+    begin held={MISO,BUSY,ICE_LED,ref_miso,ref_busy,ref_led};#5000000;
+      check("NO_CLOCK_HOLD",held==={MISO,BUSY,ICE_LED,ref_miso,ref_busy,ref_led});end
+  endtask
+  task transfer(input reg [31:0] tx,input integer bits_n,input bit is_read,input bit fault,
+                output reg [31:0] rx_m,output reg [31:0] rx_r);
+    integer k;
+    begin
+      rx_m=0;rx_r=0;NORM_CS_N=0;
+      for(k=bits_n-1;k>=0;k=k-1)begin
+        MOSI=tx[k%32];pulse(is_read && fault && k==bits_n-1);
+        rx_m={rx_m[30:0],sampled_m};rx_r={rx_r[30:0],sampled_r};
+        if(is_read)check("READ_BITS_KNOWN",
+          (sampled_m===1'b0 || sampled_m===1'b1) && (sampled_r===1'b0 || sampled_r===1'b1));
+        if(pause_mode && (k==31 || k==16))paused_hold();
+      end
+      NORM_CS_N=1;#1;check("CS_HIGH_PASSTHROUGH",MISO===ref_miso);
+    end
+  endtask
+  task launch;
+    begin phase="launch";START=1;tick();START=0;phase="completion";repeat(7)tick();
+      check("COMPLETE_BUSY_LOW",BUSY===1'b0 && ref_busy===1'b0);end
+  endtask
+  task extract(input reg [31:0] tx,input bit fault,output reg [31:0] rx_m,output reg [31:0] rx_r);
+    begin
+      phase="extract";transfer(tx,32,1,fault,rx_m,rx_r);reads=reads+1;
+      if(fault)fault_reads=fault_reads+1;else normal_reads=normal_reads+1;
+      check("WORD_RELATION",rx_m===(rx_r ^ (fault?32'h80000000:32'h0)));
+      $display("RESULT case=%s mode=%0d baseline=%08h modified=%08h xor=%08h expected_fault=%0d",
+        case_name,ENC_DEC,rx_r,rx_m,rx_r^rx_m,fault);
+    end
+  endtask
+  task operation(input bit mode,input reg [31:0] tx,input bit fault,input bit known_value,
+                 input reg [31:0] expected,input integer idle_clocks);
+    reg [31:0] m,r;
+    begin
+      ENC_DEC=mode;phase="ingest";transfer(tx,32,0,0,discard_m,discard_r);
+      phase="idle_gap";repeat(idle_clocks)tick();launch();extract(0,fault,m,r);
+      if(known_value)begin known_operations=known_operations+1;
+        check("ORIGINAL_REFERENCE_VALUE",r===expected);
+        check("ORIGINAL_MODIFIED_VALUE",m===(expected ^ (fault?32'h80000000:32'h0)));
+      end
+    end
+  endtask
+  initial begin #1000000000000;$fatal(1,"watchdog");end
+  initial begin
+    fd=$fopen("demo_trace.csv","w");if(fd==0)$fatal(1,"cannot open trace");
+    $fdisplay(fd,"time_ps,case,phase,SCK,RST_N,MOSI,CS_N,START,ENC_DEC,MISO,REF_MISO,BUSY,REF_BUSY,LED,REF_LED,expected_flip");
+    $dumpfile("demo_pins.vcd");$dumpvars(0,SCK,RST_N,MOSI,NORM_CS_N,START,ENC_DEC,MISO,ref_miso,BUSY,ref_busy,ICE_LED,ref_led);
+    // All four mode pairs, no reset between the two operations in each pair.
+    for(a=0;a<2;a=a+1)for(b=0;b<2;b=b+1)begin
+      case_name=$sformatf("original_pair_%0d%0d",a,b);reset_idle();
+      operation(a,a?C:P,0,1,a?P:C,0);operation(b,b?C:P,0,1,b?P:C,0);
+    end
+    case_name="ordinary_sequence";reset_idle();
+    for(j=0;j<64;j=j+1)begin
+      word_value=(32'h9e3779b9*j)+32'h12345678;
+      if(word_value==T)word_value=word_value^1;
+      operation(j%2,word_value,0,0,0,j%3);
+    end
+    for(j=0;j<32;j=j+1)begin
+      case_name=$sformatf("one_bit_neighbor_%0d",j);operation(0,T^(32'h1<<j),0,0,0,0);
+    end
+    case_name="same_word_other_mode";operation(1,T,0,0,0,3);
+    case_name="trigger_no_gap";operation(0,T,1,0,0,0);
+    case_name="normal_after_trigger";operation(0,P,0,1,C,0);
+    case_name="trigger_idle_and_pauses";pause_mode=1;operation(0,T,1,0,0,3);pause_mode=0;
+    case_name="second_extraction_without_start";extract(0,0,out_m,out_r);
+    case_name="consecutive_trigger_a";operation(0,T,1,0,0,0);
+    case_name="consecutive_trigger_b";operation(0,T,1,0,0,0);
+    // A readout carrying the public word must not qualify another START.
+    case_name="extraction_not_ingress";reset_idle();ENC_DEC=0;
+    phase="ingest";transfer(T,32,0,0,discard_m,discard_r);launch();extract(T,1,out_m,out_r);
+    case_name="no_rearm_from_readout";launch();extract(0,0,out_m,out_r);
+    // Malformed lengths cannot qualify even when the final 32 bits equal T.
+    for(j=0;j<3;j=j+1)begin
+      case_name=$sformatf("bad_length_%0d",j==0?31:(j==1?33:67));reset_idle();ENC_DEC=0;
+      phase="seed_known_state";transfer(0,32,0,0,discard_m,discard_r);tick();
+      phase="malformed_ingress";transfer(T,j==0?31:(j==1?33:67),0,0,discard_m,discard_r);
+      launch();extract(0,0,out_m,out_r);
+    end
+    case_name="reset_cancels_pending";reset_idle();ENC_DEC=0;
+    phase="ingest";transfer(T,32,0,0,discard_m,discard_r);launch();reset_idle();extract(0,0,out_m,out_r);
+    case_name="reset_during_extraction";reset_idle();ENC_DEC=0;
+    phase="ingest";transfer(T,32,0,0,discard_m,discard_r);launch();
+    phase="partial_extract";NORM_CS_N=0;MOSI=0;
+    for(j=0;j<5;j=j+1)pulse(j==0);
+    NORM_CS_N=1;#1;reset_idle();extract(0,0,out_m,out_r);
+    case_name="held_start";reset_idle();ENC_DEC=0;
+    phase="ingest";transfer(T,32,0,0,discard_m,discard_r);
+    phase="held_start";START=1;repeat(3)tick();START=0;repeat(7)tick();extract(0,1,out_m,out_r);
+    case_name="start_while_selected_ignored";reset_idle();ENC_DEC=0;START=1;
+    phase="invalid_start_ingress";transfer(T,32,0,0,discard_m,discard_r);START=0;tick();
+    case_name="final_normal_after_reset";reset_idle();operation(1,C,0,1,P,0);
+    check("FAULT_COUNT_MATCH",expected_flips==observed_flips);
+    check("COVERAGE",normal_reads>=100 && fault_reads==6 && known_operations==10);
+    $fclose(fd);
+    $display("COMPLETE checks=%0d failures=%0d reads=%0d normal_reads=%0d fault_reads=%0d known_operations=%0d expected_flips=%0d observed_flips=%0d",
+      checks,failures,reads,normal_reads,fault_reads,known_operations,expected_flips,observed_flips);
+    if(failures)$fatal(1,"demonstration checks failed");$finish;
+  end
+endmodule
