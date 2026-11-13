@@ -1,0 +1,8 @@
+[
+  {
+    "operation": "Read current local detection report at guessed REPORT.md filename",
+    "exit_code": 1,
+    "stderr": "cat: submission/addenda/2026-11-13-detection-evaluation/REPORT.md: No such file or directory\n",
+    "resolution": "Listed only the specified addendum directory and read its actual README.md. No missing source content was inferred."
+  }
+]

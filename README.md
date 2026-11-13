@@ -12,6 +12,8 @@ The [Qwen/Trojan-chat evaluation](submission/addenda/2026-11-13-detection-evalua
 
 All four supplied detectors ran on both clean and modified designs in two predeclared representations. Raw-source parsing fails and uses an incomplete fallback: HT1 flags the modified design. Flattened graphs receive all-CLEAN labels, but thousands of signal references remain unjoined; the independent review confirms the model actually received those incomplete edges. Both routes fail whole-design coverage. All sixteen scores, failures, exact prompts, Qwen errors and limitations are retained. **The modification is detectable under source/formal review; stealth remains unestablished.** No design or detector was tuned to obtain a favorable result.
 
+The later [review of the three shared Claude chats](submission/addenda/2026-11-13-shared-chat-review/README.md) supplies no new evidence of stealth. It distinguishes the excluded solution-derived plan, the older package audit and unsupported model descriptions. It also clarifies that the rules require neither universal undetectability nor a particular detector result; source/formal discovery is not an automatic grading verdict. The stealth objective and historical log gaps remain unestablished/disclosed.
+
 ## Review the current package
 
 1. [Current submission guide and exact remaining gaps](submission/CURRENT_GUIDE.md).

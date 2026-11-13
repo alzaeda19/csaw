@@ -1,0 +1,6 @@
+{
+  "conclusion": "The new shared-chat observations do not close the stealth requirement. The current submission's stealth claim remains unestablished.",
+  "what_is_verified": "The submission includes six fresh simulations, a known-baseline compositional check, and synthesis findings of added state/logic. The raw parser and flat graphs show discrepancies under specific conditions, but these are detection findings in specified settings, not universal stealth tests.",
+  "what_is_not_proved": "No simulation runs, detector logs, hardware measurements, or version-bound proofs are provided to substantiate stealth claims. The side-channel and TrojanGYM discussions lack source hashes, test runs, or implementation details. The current example is output corruption, not stealthy behavior.",
+  "rubric_interpretation_caution": "Treating discovery under full-source/known-baseline inspection as equivalent to failing stealth is an overstatement. Stealth is not defined by a four-checkpoint detector or a passing score, but by the absence of detectable modification under normal operation. The current evidence does not meet the rubric's requirements for comprehensive generation logs or numeric key recovery."
+}

@@ -1,5 +1,5 @@
 {
-  "scope": "Self-excluding repository inventory. Original package and sealed addenda preserved; current frozen-design evaluation separately labeled.",
+  "scope": "Self-excluding repository inventory, original package and prior evidence preserved.",
   "files": [
     {
       "path": ".gitignore",
@@ -53,8 +53,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10595,
-      "sha256": "0836173599164ea33abd10e2f08d64efd7e3833895bcb28e20c634aa3069007d"
+      "bytes": 11106,
+      "sha256": "8cbf01173d235ed49f8ddca04becf36a8eeba22b1161e5539aff3c2389a9c08b"
     },
     {
       "path": "SUBMISSION_GAPS.md",
@@ -4257,6 +4257,16 @@
       "sha256": "573e34148bb1498982508b5d0d74d3bb69544176347e3b27445913f1da74d57a"
     },
     {
+      "path": "publication/nov13-shared-chat-review/COPY_RECEIPT.json",
+      "bytes": 360,
+      "sha256": "093ecbf968298369c1c16a3769786abe65f1573874f4d2c56de574ee069bade7"
+    },
+    {
+      "path": "publication/nov13-shared-chat-review/INTEGRATION_CHECKS.json",
+      "bytes": 739,
+      "sha256": "4d1a7d180e3b1be5c49fa54c447ee9274421f19904156f121bcd9a38e44cb35b"
+    },
+    {
       "path": "publication/nov13-submission-closeout/COPY_RECEIPT.json",
       "bytes": 362,
       "sha256": "ca690bc92466997d54117e9dbaef81ff6d7cf2ca8eee770a48bc290f8e09d8d7"
@@ -4273,8 +4283,8 @@
     },
     {
       "path": "submission/CURRENT_GUIDE.md",
-      "bytes": 13584,
-      "sha256": "c95fc3bff3132bfd2a2251b348346c1774e329c036d4bb7f2ed0d49bb4ad2e41"
+      "bytes": 14061,
+      "sha256": "b57cc18fdfbe1141d6b75b35328808925aaff122f3e1553f77c3fadca282d0cd"
     },
     {
       "path": "submission/ENCRYPTION_EXPLANATION.md",
@@ -4313,8 +4323,8 @@
     },
     {
       "path": "submission/PUBLICATION_MANIFEST.json",
-      "bytes": 203322,
-      "sha256": "c0f2adf76c1c1328976f50fb0349a6b01cee4e662b5cded7ef561a288a78cc87"
+      "bytes": 208516,
+      "sha256": "703baf14d73646f832088ea647bfac762146b9d7165accb7cc038c735b1ef588"
     },
     {
       "path": "submission/PUBLICATION_REVIEW.md",
@@ -7832,6 +7842,141 @@
       "sha256": "f33c3b76159632c3395415701c2cf41b3ef72428b388ca0e38b85eb59f6d4e6e"
     },
     {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/MANIFEST.json",
+      "bytes": 4257,
+      "sha256": "6171c9f4cb059d711d0707ffff0bcd211b5a6f0a4beb2f5d4872dbdc9c452885"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/README.md",
+      "bytes": 7916,
+      "sha256": "50110429a1cef6dd68b974497e33bd8832e4bc7b723515ada348a72312884784"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/ai_logs/claims_review/HASHES.json",
+      "bytes": 356,
+      "sha256": "7d4e5041bf0f98128b553aeb756790e5c4a6cdc966118ff947e3937229403d1e"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/ai_logs/claims_review/receipt.json",
+      "bytes": 657,
+      "sha256": "2f10c5639e4eca4fc90ec7698482a102e410782858b563cc75f065ce53a4fcaf"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/ai_logs/claims_review/received_stream.jsonl",
+      "bytes": 36848,
+      "sha256": "30528442ec4946bd4bba51c4a2c9bc3b56b441dc0a65149e41908000f133da36"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/ai_logs/claims_review/request.json",
+      "bytes": 4527,
+      "sha256": "8cd117dea2684ea68098e326b643d4202baec43cc24df26faeed00d9fb5f413d"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/ai_logs/claims_review/response.txt",
+      "bytes": 1209,
+      "sha256": "417b7a5b7f423e9907605672f25a9a18fb23c7a6df9275957269bc67abb88410"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/ai_logs/claims_review_prompt.txt",
+      "bytes": 3791,
+      "sha256": "361cf7fe83684aafe60b98208d9d51760455a7e4e2c516fd589c8f1a8169b397"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/ai_logs/codex_shared_review/EXPORT_MANIFEST.json",
+      "bytes": 1466,
+      "sha256": "a6d7748f4345939dfccde141268f981ac5b46ae6f88d23d5c5d3e0c9a168263f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/ai_logs/codex_shared_review/omitted_records.jsonl",
+      "bytes": 17216,
+      "sha256": "e10ce7d1e7ec4918cf9871b50226d8d50253fbd6d05d1925cd8c74e0e4ed2231"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/ai_logs/codex_shared_review/visible_messages_and_tool_inputs.jsonl",
+      "bytes": 36869,
+      "sha256": "84bd8db2cb5cd6eb68e8af71606c331325254da65a572e1b5b6017b7ac69456f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/capture_current_history.py",
+      "bytes": 4410,
+      "sha256": "5ccfa59835753a5cdaf89bb03d9e5ad28ff62ca9f3a58674f437b95f7046b607"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/records/QWEN_MODEL_IDENTITIES.json",
+      "bytes": 1264,
+      "sha256": "44a9ff858c437ab45a72e18042e59a8c5eede4b700ae404c18edda4809ea8b35"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/records/SOURCE_REVIEW.json",
+      "bytes": 1063,
+      "sha256": "a509c7ac84023e62d1226e853ef4219ee6d14f45396b8f7863f0c225af2ca83a"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/records/USER_REQUEST.txt",
+      "bytes": 521,
+      "sha256": "43ceed252422bfc548a6bf1c0b0242b0007a8df731ac04c88103dd89acd7b076"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/scripts/ask_qwen.py",
+      "bytes": 3151,
+      "sha256": "cdbdb70600314be1dd51009c9c43796bbf844c2cf1f0912fc715455cac654978"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/ASSESSMENT.md",
+      "bytes": 6145,
+      "sha256": "d332ec4433f37dbb67beaa527ae4caed342bfc444745614a3a969fa26104e2f3"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/ERRORS.json",
+      "bytes": 366,
+      "sha256": "c529f1ccca0fd1113f8b4fa023a051c856366b088a6ca65aca8983fd0037703b"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/MANIFEST.json",
+      "bytes": 1722,
+      "sha256": "b6ed2cd723e2afc1e2777844f30807ab5d85bfb04d677d647b3b31eedf1f85bb"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/SOURCE_EXCERPTS.json",
+      "bytes": 7575,
+      "sha256": "3cdaf6125b049df7ce25b2fc4394ecd2856e11fc57e5c237df8d8828ce83e6ff"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/SOURCE_MANIFEST.json",
+      "bytes": 739,
+      "sha256": "64975b2ba1163d43a6f21a5048c7fab39f895fa6dea5e31c346d074fef4f807f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/ai_records/EXPORT_RECEIPT.json",
+      "bytes": 816,
+      "sha256": "2c9c0b2a2f1f8277db2d38950e358a6e19a778af7c4e002b7144904bf2ccd14a"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/ai_records/omitted_records.jsonl",
+      "bytes": 8038,
+      "sha256": "640bb2c0f94109a283bcdfcb3d67f3054132def13b2b41e52cb6e6e75d725165"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/ai_records/visible_exact_fields.jsonl",
+      "bytes": 46273,
+      "sha256": "5675d8e38ac5db04617a00a3556a5f48b2654256e323e6401c2c2a76ca60d97f"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/export_records.py",
+      "bytes": 3988,
+      "sha256": "19d6447ff437493a2093881a27fce72857ddcbf24532f2129184e2ed6a8c5475"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/sources/current_detection_report.md",
+      "bytes": 9100,
+      "sha256": "c7ac11427ba60c818a0060a3ffc4d056d121fcb267c55f1018019df8f6c66e54"
+    },
+    {
+      "path": "submission/addenda/2026-11-13-shared-chat-review/trojan_review/sources/original_qualifier_README.md",
+      "bytes": 9206,
+      "sha256": "72833c7880d7c4ea2af74bdeff9c001716ea087bca609f8d53699546b6ff4e08"
+    },
+    {
       "path": "submission/addenda/2026-11-13-submission-closeout/MANIFEST.json",
       "bytes": 10667,
       "sha256": "a0d01d886b13e37fde9860b0339a1a4764473c8a4ef272aa61f456c57dd502ae"
@@ -9463,13 +9608,13 @@
     },
     {
       "path": "submission.zip",
-      "bytes": 16443828,
-      "sha256": "1fb892c4e139f3342941dab37afaf9dc1ee4c2f16f74b6691cac54e290c02dc7"
+      "bytes": 16517979,
+      "sha256": "24e4484283cace4dd25b7a6783c693a0070c593425a37f9091625361011b351a"
     },
     {
       "path": "submission.zip.sha256",
       "bytes": 81,
-      "sha256": "137261fb889fc93a5a52451dbe54076c2572e41790dbfb87eb4eba3c7edda0cf"
+      "sha256": "e99ab1b2e8672c7335622663a7a755704b348431cd47db58b7e82228ab4fd0bc"
     },
     {
       "path": "supplementary_clean_verification/LATEST_STATUS.md",

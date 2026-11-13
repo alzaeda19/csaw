@@ -10,6 +10,8 @@ The [frozen-design evaluation](addenda/2026-11-13-detection-evaluation/README.md
 
 All four checkpoints ran on clean/modified inputs in both predeclared representations. Raw inputs fail exact parsing and use incomplete fallback graphs; HT1 flags the modified design. Flat graphs are labeled CLEAN by all four but have thousands of unjoined signal references, confirmed by the independent Trojan-chat review. These diagnostic scores do not establish whole-design stealth. This is a completed negative/limited evaluation, not a positive stealth certificate. The design, thresholds and checkpoints were never tuned to the results. Missing older AI messages remain missing.
 
+The [shared-Claude-chat review](addenda/2026-11-13-shared-chat-review/README.md) reconciles those older conversations with the current package and preserves a new Qwen response with its errors corrected. None supplies verified current stealth evidence. The rubric does not require universal undetectability or all-four-CLEAN labels, and source/formal detection alone is not an automatic failure decision. The recorded limitations and instructor-acceptance uncertainty remain.
+
 ## Read these documents together
 
 - [Original technical brief and reproduction directions](README.md): unchanged account of the tested package, including mixed Qwen/Codex authorship, the demonstration, failures and final results.
